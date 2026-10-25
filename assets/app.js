@@ -250,8 +250,8 @@ function curatedImage(w) {
       if (url) break;
     }
     if (!url && w.wiki && w.wiki.q) { try { url = await wikiLookup('ko', 'generator=search&gsrlimit=1&gsrsearch=' + enc(w.wiki.q)); } catch {} }
-    imgCache[w.id] = url || '';
-    store.set('q_img', imgCache);
+    if (url) { imgCache[w.id] = url; store.set('q_img', imgCache); } // cache successes only, so a failed lookup retries next visit
+    delete imgPending[w.id];
     return url;
   })();
 }
@@ -815,7 +815,8 @@ addEventListener('keydown', e => { if (e.key === 'Escape') { $('#modal').hidden 
 
 (async function boot() {
   try {
-    const [works, daily] = await Promise.all([getJSON('data/works.json'), getJSON('data/daily.json').catch(() => ({}))]);
+    const fresh = { cache: 'no-cache' }; // always revalidate so new daily picks appear immediately
+    const [works, daily] = await Promise.all([getJSON('data/works.json', fresh), getJSON('data/daily.json', fresh).catch(() => ({}))]);
     S.works = works; S.daily = daily; works.forEach(w => S.byId[w.id] = w);
   } catch (e) { app().innerHTML = '<div class="empty">Failed to load data.</div>'; return; }
   route();
