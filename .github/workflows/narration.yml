@@ -41,6 +41,8 @@ jobs:
         run: |
           pip install --quiet torch --index-url https://download.pytorch.org/whl/cpu
           pip install --quiet "kokoro>=0.9.4" soundfile numpy
+          python -m spacy download en_core_web_sm
+          python -c "import spacy; spacy.load('en_core_web_sm'); print('spacy ok')"
       - name: Generate narration
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
