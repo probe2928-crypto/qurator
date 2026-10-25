@@ -80,7 +80,7 @@ const T = {
   subscribe: ['구독 시작하기', 'Start membership'], inquire: ['문의하기', 'Get in touch'],
   f_eyebrow: ['Why us', 'Why us'],
   f_quote: ['전시를 직접 세 번 열어 보면 압니다. 관람객이 작품 앞에 머무는 시간은 해설 한 줄에 달려 있다는 것을.', 'Run three exhibitions yourself and you learn this: how long a visitor stays in front of a work depends on a single line of interpretation.'],
-  f_body: ['역사학을 전공하고 인사동·코엑스·인천에서 세 번의 전시를 직접 기획한 운영자가 모든 해설 원고를 감수합니다. 기술보다 해설의 질로 승부합니다.', 'Every text is reviewed by a founder who studied history and organized three exhibitions in Insadong, COEX and Incheon. We compete on the quality of interpretation, not gadgets.'],
+  f_body: ['미술사를 전공하고 인사동·코엑스·인천에서 세 번의 전시를 직접 기획한 운영자가 모든 해설 원고를 감수합니다. 기술보다 해설의 질로 승부합니다.', 'Every text is reviewed by a founder trained in art history who organized three exhibitions in Insadong, COEX and Incheon. We compete on the quality of interpretation, not gadgets.'],
   fa1: ['전시 기획', 'Exhibitions organized'], fa2: ['해설 언어', 'Languages'], fa3: ['열람 가능 작품', 'Works searchable'],
   cta_h: ['다음 전시, 관람객의 휴대폰을 도슨트로.', 'Make every visitor\'s phone your docent.'],
   cta_btn: ['텔레그램으로 상담하기', 'Talk to us on Telegram'],
