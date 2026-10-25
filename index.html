@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>QURATOR — QR 도슨트 · 오늘의 작품</title>
+<meta name="description" content="QR 한 번이면 작품 해설이 텍스트·음성·다국어로. 갤러리용 QR 도슨트와 매일 3점의 영문 미술 해설 구독.">
+<meta name="theme-color" content="#14120F">
+<meta property="og:title" content="QURATOR — QR Docent & Daily Art">
+<meta property="og:description" content="Scan a QR code, hear the story behind the artwork. Daily art commentary in English and Korean.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/icon-192.png">
+<link rel="apple-touch-icon" href="assets/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Serif+KR:wght@400;600;700&family=IBM+Plex+Sans+KR:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<header class="top" id="top">
+  <a class="brand" href="#/" aria-label="QURATOR home">
+    <span class="seal">큐</span><span class="word">QURATOR</span>
+  </a>
+  <nav class="nav" id="nav"></nav>
+  <div class="top-right">
+    <div class="lang" role="group" aria-label="Language">
+      <button data-lang="ko">KO</button><button data-lang="en">EN</button>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span></button>
+  </div>
+</header>
+<main id="app" tabindex="-1"></main>
+<footer class="foot" id="foot"></footer>
+<div class="toast" id="toast" role="status"></div>
+<div class="modal" id="modal" hidden></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
