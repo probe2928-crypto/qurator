@@ -8,10 +8,14 @@ on:
         required: false
   push:
     branches: [main]
-    paths: ["data/works.json"]
+    paths:
+      - "data/works.json"
+      - "scripts/narrate.py"
+      - ".github/workflows/narration.yml"
 
 permissions:
   contents: write
+  pages: write
 
 concurrency:
   group: narration
@@ -20,11 +24,24 @@ concurrency:
 jobs:
   narrate:
     runs-on: ubuntu-latest
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: "3.11"
+          cache: pip
+      - name: System packages
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq espeak-ng ffmpeg
+      - name: Cache voice model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: kokoro-hf-v1
+      - name: Install TTS
+        run: |
+          pip install --quiet torch --index-url https://download.pytorch.org/whl/cpu
+          pip install --quiet "kokoro>=0.9.4" soundfile numpy
       - name: Generate narration
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -33,6 +50,7 @@ jobs:
           ELEVENLABS_VOICE_EN: ${{ vars.ELEVENLABS_VOICE_EN }}
           OPENAI_VOICE_KO: ${{ vars.OPENAI_VOICE_KO }}
           OPENAI_VOICE_EN: ${{ vars.OPENAI_VOICE_EN }}
+          KOKORO_VOICE: ${{ vars.KOKORO_VOICE || 'af_heart' }}
           ONLY: ${{ github.event.inputs.only }}
         run: python scripts/narrate.py
       - name: Commit audio
@@ -40,4 +58,9 @@ jobs:
           git config user.name "qurator-bot"
           git config user.email "qurator-bot@users.noreply.github.com"
           git add audio
-          git diff --cached --quiet || (git commit -m "Narration: update docent audio" && git push)
+          if git diff --cached --quiet; then echo "no changes"; exit 0; fi
+          git commit -m "Narration: update docent audio"
+          for i in 1 2 3; do git pull --rebase origin main && git push origin main && break; sleep 5; done
+          # pushes made with GITHUB_TOKEN don't start a Pages build on their own
+          curl -s -X POST -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${{ github.repository }}/pages/builds || true
