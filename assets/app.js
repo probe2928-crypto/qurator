@@ -228,37 +228,38 @@ async function translate(text, target) {
 /* ---------------- curated images via Wikipedia ---------------- */
 const imgCache = store.get('q_img', {});
 const imgPending = {};
-async function wikiLookup(lang, params) {
-  const u = `https://${lang}.wikipedia.org/w/api.php?action=query&format=json&origin=*&redirects=1&prop=pageimages&piprop=thumbnail&pithumbsize=1600&${params}`;
+async function wikiLookup(lang, params, size = 1200) {
+  const u = `https://${lang}.wikipedia.org/w/api.php?action=query&format=json&origin=*&redirects=1&prop=pageimages&piprop=thumbnail&pithumbsize=${size}&${params}`;
   const r = await getJSON(u);
   const pages = r.query && r.query.pages ? Object.values(r.query.pages) : [];
   const pg = pages.find(p => p.thumbnail);
   return pg ? pg.thumbnail.source : null;
 }
-function curatedImage(w) {
+function curatedImage(w, size = 1200) {
   if (w.img) return Promise.resolve(w.img);
-  if (imgCache[w.id] !== undefined) return Promise.resolve(imgCache[w.id]);
-  if (imgPending[w.id]) return imgPending[w.id];
-  return imgPending[w.id] = (async () => {
+  const key = w.id + '@' + size;
+  if (imgCache[key]) return Promise.resolve(imgCache[key]);
+  if (imgPending[key]) return imgPending[key];
+  return imgPending[key] = (async () => {
     const order = w.region === 'kr' ? ['ko', 'en'] : ['en', 'ko'];
     let url = null;
     for (const lg of order) {
       for (const title of (w.wiki && w.wiki[lg]) || []) {
-        try { url = await wikiLookup(lg, 'titles=' + enc(title)); } catch {}
+        try { url = await wikiLookup(lg, 'titles=' + enc(title), size); } catch {}
         if (url) break;
       }
       if (url) break;
     }
-    if (!url && w.wiki && w.wiki.q) { try { url = await wikiLookup('ko', 'generator=search&gsrlimit=1&gsrsearch=' + enc(w.wiki.q)); } catch {} }
-    if (url) { imgCache[w.id] = url; store.set('q_img', imgCache); } // cache successes only, so a failed lookup retries next visit
-    delete imgPending[w.id];
+    if (!url && w.wiki && w.wiki.q) { try { url = await wikiLookup('ko', 'generator=search&gsrlimit=1&gsrsearch=' + enc(w.wiki.q), size); } catch {} }
+    if (url) { imgCache[key] = url; store.set('q_img', imgCache); } // cache successes only, so a failed lookup retries next visit
+    delete imgPending[key];
     return url;
   })();
 }
-function artBox(w, cls = '') {
+function artBox(w, cls = '', size) {
   const title = w.title && typeof w.title === 'object' ? pick(w.title) : w.title;
   const direct = w.image ? ` data-src="${esc(w.image)}"` : '';
-  return `<div class="art ${cls}" ${w.id ? `data-wid="${esc(w.id)}"` : ''}${direct}><span class="ph">${esc(title || '')}</span></div>`;
+  return `<div class="art ${cls}" ${w.id ? `data-wid="${esc(w.id)}"` : ''}${size ? ` data-size="${size}"` : ''}${direct}><span class="ph">${esc(title || '')}</span></div>`;
 }
 function hydrate(root = document) {
   $$('.art[data-src]:not(.h), .art[data-wid]:not(.h)', root).forEach(el => {
@@ -267,11 +268,11 @@ function hydrate(root = document) {
       if (!src) return;
       const img = new Image();
       img.alt = ''; img.decoding = 'async'; img.referrerPolicy = 'no-referrer';
-      img.onload = () => { el.appendChild(img); requestAnimationFrame(() => img.classList.add('in')); const ph = $('.ph', el); if (ph) setTimeout(() => ph.remove(), 900); };
+      img.onload = () => { el.appendChild(img); const vs = el.closest('.v-stage'); if (vs) vs.style.setProperty('--bg', `url("${img.src}")`); requestAnimationFrame(() => img.classList.add('in')); const ph = $('.ph', el); if (ph) setTimeout(() => ph.remove(), 900); };
       img.src = src;
     };
     if (el.dataset.src) put(el.dataset.src);
-    else { const w = S.byId[el.dataset.wid]; if (w) curatedImage(w).then(put); }
+    else { const w = S.byId[el.dataset.wid]; if (w) curatedImage(w, +el.dataset.size || 1200).then(put); }
   });
 }
 function reveal(root = document) {
@@ -362,31 +363,17 @@ function viewHome(scrollTo) {
   const today = seoulDate(), ids = dailyIds(today), w0 = S.byId[ids[0]];
   const n = L();
   app().innerHTML = `
-  <section class="hero"><div class="wrap hero-grid">
-    <div class="rv">
-      <p class="eyebrow">${t('hero_eyebrow')}</p>
-      <h1>${t('hero_h')}</h1>
-      <p class="lead">${esc(t('hero_lead'))}</p>
-      <div class="hero-ctas">
-        <a class="btn btn-ink" href="#/today">${t('cta_today')} <span class="arrow">→</span></a>
-        <a class="btn btn-line" href="#/pricing">${t('cta_gallery')}</a>
-      </div>
-    </div>
-    <div class="hero-art rv">
-      <a href="#/w/${w0.id}">${artBox(w0)}</a>
-      <div class="hero-cap"><span>${esc(pick(w0.artist))}, ${esc(pick(w0.title))}</span><span>${esc(w0.date)}</span></div>
-      <div class="wall-label"><div><b>${esc(pick(w0.title))}</b><small>${esc(pick(w0.artist))}<br>${esc(w0.date)}</small></div>
-        <div class="qr-mini" id="heroQr"></div><div class="scan">${t('scan_label')}</div></div>
-    </div>
-  </div></section>
-  <div class="marquee" aria-hidden="true"><div class="marquee-in">${(new Array(2)).fill(['Art Institute of Chicago', 'The Metropolitan Museum of Art', 'Cleveland Museum of Art', '국립중앙박물관 소장 명품 해설', 'Kansong · Leeum · Louvre · Prado · Uffizi', 'Text · Voice · Multilingual']).flat().map(s => `<span>${s}</span>`).join('')}</div></div>
+  ${heroBlock()}
+  <div class="marquee" aria-hidden="true"><div class="marquee-in">${(new Array(2)).fill(['Louvre', 'Prado', 'Uffizi', 'Rijksmuseum', '국립중앙박물관', '간송미술관', 'Cleveland Museum of Art', 'Text · Voice · Multilingual']).flat().map(s => `<span>${s}</span>`).join('')}</div></div>
 
-  <section class="sec"><div class="wrap">
+  <section class="sec" id="products"><div class="wrap">
     <div class="products rv">
       ${productCard('p1', '₩30,000', t('per_month'), '#/today', t('cta_today'))}
       ${productCard('p2', '₩300,000', t('per_show') + ' ' + t('from'), '#/studio', t('nav_studio'))}
     </div>
   </div></section>
+
+  ${ribbonBlock()}
 
   <section class="sec dark"><div class="wrap">
     <div class="sec-head rv"><div><p class="eyebrow">${t('how_eyebrow')}</p><h2>${t('how_h')}</h2></div><p>${t('how_p')}</p></div>
@@ -409,8 +396,7 @@ function viewHome(scrollTo) {
   </div></section>
 
   <section class="cta-band"><div class="wrap"><h2>${t('cta_h')}</h2><a class="btn" href="${TG}" target="_blank" rel="noopener">${t('cta_btn')} <span class="arrow">→</span></a></div></section>`;
-  makeQR($('#heroQr'), BASE() + '#/w/' + w0.id, 64);
-  hydrate(); reveal();
+  hydrate(); reveal(); startStage();
   if (scrollTo) setTimeout(() => { const el = document.getElementById(scrollTo); if (el) el.scrollIntoView({ behavior: 'smooth' }); }, 60);
   function productCard(p, price, per, href, cta) {
     return `<div class="product"><span class="tag">${t(p + '_tag')}</span><h3>${t(p + '_h')}</h3><p>${t(p + '_p')}</p>
@@ -418,6 +404,94 @@ function viewHome(scrollTo) {
       <div class="price"><b>${price}</b><span>${per}</span></div>
       <a class="btn btn-ink" style="align-self:flex-start" href="${href}">${cta} <span class="arrow">→</span></a></div>`;
   }
+}
+/* ---------------- hero stage: slow cross-fading masterpieces ---------------- */
+const HERO = [
+  ['w-starry', '50% 40%'], ['k-inwang', '50% 45%'], ['w-greatwave', '32% 50%'],
+  ['w-venus', '50% 34%'], ['k-mongyu', '82% 50%'], ['w-grandejatte', '50% 62%'], ['w-impression', '55% 50%']
+];
+const STAGE_MS = 7600;
+let stageTimer = null, stageCleanup = null;
+function heroBlock() {
+  return `<section class="stage" id="stage" style="--dur:${STAGE_MS}ms">
+    <div class="slides">${HERO.map(([id, pos], i) => `<figure class="slide${i === 0 ? ' on' : ''}" data-i="${i}"><div class="kb kb${i % 4}" style="background-position:${pos}"></div></figure>`).join('')}</div>
+    <div class="stage-shade"></div>
+    <div class="stage-copy wrap"><div class="sc-in">
+      <p class="eyebrow">${t('hero_eyebrow')}</p>
+      <h1>${t('hero_h')}</h1>
+      <p class="lead">${esc(t('hero_lead'))}</p>
+      <div class="hero-ctas">
+        <a class="btn btn-cream" href="#/today">${t('cta_today')} <span class="arrow">→</span></a>
+        <a class="btn btn-ghost" href="#/pricing">${t('cta_gallery')}</a>
+      </div>
+    </div></div>
+    <div class="stage-foot wrap">
+      <a class="stage-cap" id="stageCap" href="#/w/${HERO[0][0]}"></a>
+      <div class="stage-ctrl">
+        <span class="stage-idx" id="stageIdx"></span>
+        <div class="bars">${HERO.map((_, i) => `<button class="bar" data-i="${i}" aria-label="${i + 1}"><i></i></button>`).join('')}</div>
+      </div>
+    </div>
+    <div class="wall-label stage-label" id="stageLabel"><div><b id="wlT"></b><small id="wlA"></small></div><div class="qr-mini" id="heroQr"></div><div class="scan">${t('scan_label')}</div></div>
+    <button class="scroll-cue" id="scrollCue" aria-label="Scroll down"><span></span></button>
+  </section>`;
+}
+function startStage() {
+  const st = $('#stage'); if (!st) return;
+  const slides = $$('.slide', st), bars = $$('.bar', st), cap = $('#stageCap'), idx = $('#stageIdx');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let cur = 0, paused = false;
+  HERO.forEach(([id], i) => {
+    const w = S.byId[id]; if (!w) return;
+    curatedImage(w, 1920).then(src => {
+      if (!src) return;
+      const im = new Image(); im.referrerPolicy = 'no-referrer';
+      im.onload = () => { $('.kb', slides[i]).style.backgroundImage = `url("${src}")`; slides[i].classList.add('ready'); if (i === 0) st.classList.add('ready'); };
+      im.src = src;
+    });
+  });
+  function caption() {
+    const w = S.byId[HERO[cur][0]];
+    cap.classList.remove('in'); void cap.offsetWidth;
+    cap.href = '#/w/' + w.id;
+    cap.innerHTML = `<span class="cap-k">${esc(pick(w.collection))}</span><b>${esc(pick(w.title))}</b><span class="cap-a">${esc(pick(w.artist))}, ${esc(w.date)}</span><span class="cap-go">${S.lang === 'ko' ? '작품 해설 듣기' : 'Hear the story'} →</span>`;
+    cap.classList.add('in');
+    idx.innerHTML = `<b>${String(cur + 1).padStart(2, '0')}</b> / ${String(HERO.length).padStart(2, '0')}`;
+    $('#wlT').textContent = pick(w.title);
+    $('#wlA').innerHTML = `${esc(pick(w.artist))}<br>${esc(w.date)}`;
+    makeQR($('#heroQr'), BASE() + '#/w/' + w.id, 64);
+  }
+  function arm() { clearTimeout(stageTimer); if (!reduce && !paused) stageTimer = setTimeout(() => show(cur + 1), STAGE_MS); }
+  function runBar() { bars.forEach((b, k) => { b.classList.toggle('done', k < cur); b.classList.remove('run'); }); void bars[cur].offsetWidth; if (!reduce) bars[cur].classList.add('run'); }
+  function show(i) {
+    const prev = cur; cur = (i + HERO.length) % HERO.length; if (prev === cur) return;
+    slides[prev].classList.remove('on'); slides[prev].classList.add('off');
+    setTimeout(() => slides[prev].classList.remove('off'), 2600);
+    const kb = $('.kb', slides[cur]); kb.style.animation = 'none'; void kb.offsetWidth; kb.style.animation = '';
+    slides[cur].classList.add('on');
+    runBar(); caption(); arm();
+  }
+  bars.forEach(b => b.onclick = () => show(+b.dataset.i));
+  $('#scrollCue').onclick = () => { const el = document.getElementById('products'); if (el) el.scrollIntoView({ behavior: 'smooth' }); };
+  let x0 = null;
+  st.addEventListener('touchstart', e => { x0 = e.touches[0].clientX; }, { passive: true });
+  st.addEventListener('touchend', e => { if (x0 == null) return; const dx = e.changedTouches[0].clientX - x0; if (Math.abs(dx) > 50) show(cur + (dx < 0 ? 1 : -1)); x0 = null; });
+  const onVis = () => { paused = document.hidden; if (paused) clearTimeout(stageTimer); else { runBar(); arm(); } };
+  document.addEventListener('visibilitychange', onVis);
+  const onKey = e => { if (e.key === 'ArrowRight') show(cur + 1); else if (e.key === 'ArrowLeft') show(cur - 1); };
+  addEventListener('keydown', onKey);
+  stageCleanup = () => { clearTimeout(stageTimer); document.removeEventListener('visibilitychange', onVis); removeEventListener('keydown', onKey); };
+  runBar(); caption(); arm();
+}
+function ribbonBlock() {
+  const kr = S.works.filter(w => w.region === 'kr'), wo = S.works.filter(w => w.region !== 'kr');
+  const row1 = [...wo.slice(0, 7), ...kr.slice(0, 5)], row2 = [...kr.slice(5), ...wo.slice(7)];
+  const item = (w, cls) => `<a class="rib ${cls}" href="#/w/${w.id}">${artBox(w, '', 800)}<span><b>${esc(pick(w.title))}</b>${esc(pick(w.artist))}</span></a>`;
+  const row = (list, cls, rev) => `<div class="rib-row${rev ? ' rev' : ''}"><div class="rib-track">${[...list, ...list].map(w => item(w, cls)).join('')}</div></div>`;
+  return `<section class="ribbon-sec"><div class="wrap sec-head rv"><div><p class="eyebrow">The Collection · ${S.works.length}</p>
+      <h2>${S.lang === 'ko' ? '미술사가 고른 명작, 한 점씩 깊게' : 'Masterpieces chosen by an art historian, told in depth'}</h2></div>
+      <a class="link" href="#/explore">${t('nav_explore')} <span class="arrow">→</span></a></div>
+    ${row(row1, 'tall')}${row(row2, 'wide', true)}</section>`;
 }
 function pricingBlock() {
   const n = L();
@@ -784,13 +858,17 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.se
 /* ---------------- router ---------------- */
 async function route() {
   Speech.stop(); Speech.onUpdate = null;
-  document.body.classList.remove('v', 'menu-open');
+  if (stageCleanup) { stageCleanup(); stageCleanup = null; }
+  document.body.classList.remove('v', 'menu-open', 'home');
   $('#modal').hidden = true;
   const raw = location.hash.replace(/^#/, '') || '/';
   const parts = raw.split('?')[0].split('/').filter(Boolean);
   const r = parts[0] || '';
   renderShell(r);
+  if (r === '' || r === 'pricing') document.body.classList.add('home');
   window.scrollTo(0, 0);
+  const A = $('#app'); A.classList.remove('enter'); void A.offsetWidth; A.classList.add('enter');
+  onScroll();
   if (r === '' ) viewHome();
   else if (r === 'pricing') viewHome('pricing');
   else if (r === 'today') viewToday(parts[1]);
@@ -810,6 +888,8 @@ document.addEventListener('click', e => {
   if (lb) { S.lang = lb.dataset.lang; store.set('q_lang', S.lang); route(); }
 });
 $('#menuBtn').onclick = () => document.body.classList.toggle('menu-open');
+function onScroll() { $('#top').classList.toggle('solid', scrollY > 40 || !document.body.classList.contains('home')); }
+addEventListener('scroll', onScroll, { passive: true });
 addEventListener('hashchange', route);
 addEventListener('keydown', e => { if (e.key === 'Escape') { $('#modal').hidden = true; const z = $('.zoom-layer'); if (z) z.remove(); } });
 
