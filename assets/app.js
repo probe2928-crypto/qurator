@@ -266,7 +266,7 @@ function hydrate(root = document) {
     const put = src => {
       if (!src) return;
       const img = new Image();
-      img.alt = ''; img.decoding = 'async'; img.loading = 'lazy'; img.referrerPolicy = 'no-referrer';
+      img.alt = ''; img.decoding = 'async'; img.referrerPolicy = 'no-referrer';
       img.onload = () => { el.appendChild(img); requestAnimationFrame(() => img.classList.add('in')); const ph = $('.ph', el); if (ph) setTimeout(() => ph.remove(), 900); };
       img.src = src;
     };
