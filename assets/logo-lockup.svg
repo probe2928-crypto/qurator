@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 200"><rect width="520" height="200" fill="#F3EFE6"/>
+<g transform="translate(240 22) scale(1)"><path fill="#14120F" fill-rule="evenodd" d="M20 4C12.5 4 6.5 10.7 6.5 19S12.5 34 20 34 33.5 27.3 33.5 19 27.5 4 20 4Zm0 .7c-5.4 0-9.9 6.4-9.9 14.3S14.6 33.3 20 33.3 29.9 26.9 29.9 19 25.4 4.7 20 4.7Z"/><path fill="#14120F" d="M18.4 31.3c4.3-.6 9.6 1.6 17.1 6.8l-.6.8c-7-4.5-12-6.5-16.3-6.3Z"/></g>
+<text x="260" y="120" text-anchor="middle" font-family="Bodoni Moda, Didot, 'Bodoni 72', serif" font-size="46" letter-spacing="17" fill="#14120F">QURATOR</text>
+<line x1="200" y1="146" x2="320" y2="146" stroke="#14120F" stroke-width=".6"/>
+<text x="260" y="170" text-anchor="middle" font-family="Bodoni Moda, Didot, serif" font-size="11" letter-spacing="6" fill="#6F685C">MAISON DE DOCENT · SÉOUL</text></svg>

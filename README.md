@@ -25,3 +25,21 @@
 ## 멤버십 (MVP)
 결제 연동 전 베타 단계 — 텔레그램 신청 후 멤버 코드 발급 (`assets/app.js` 의 `MEMBER_CODES`).
 다음 단계: 토스페이먼츠 정기결제 + 로그인(Supabase 등) 연동.
+
+## 고객센터 · 문의
+카카오톡 오픈채팅: https://open.kakao.com/o/gQLZj9Ti  (`assets/app.js` 의 `KAKAO`)
+고객센터 `#/support`, 약관 `#/policy/terms`, 개인정보 `#/policy/privacy`, 환불·해지 `#/policy/refund`
+
+## 결제
+- 지금: 결제 페이지 `#/checkout` → 계좌이체 선택 → 주문번호 발급 → 카카오톡으로 입금 안내 → 확인 후 멤버 코드 발급
+  (멤버 코드는 `MEMBER_CODES` 에 추가, 결제 서버 연결 후에는 서버가 자동 발급)
+- 카드 자동결제 (토스페이먼츠): 테스트는 `#/checkout?paytest=1`
+  1. 사업자등록 + 통신판매업 신고 → 토스페이먼츠 가입·심사 → 자동결제(빌링) 계약
+  2. Cloudflare 가입 → `cd worker && npx wrangler kv namespace create SUBS` → id를 wrangler.toml에 입력
+  3. `npx wrangler secret put TOSS_SECRET_KEY` → `npx wrangler deploy`
+  4. `assets/app.js` 의 `PAY` 에 `live: true, clientKey: '라이브 클라이언트 키', apiBase: '워커 주소'`
+
+## 도슨트 음성 (녹음 품질)
+GitHub 레포 Settings → Secrets and variables → Actions 에 `OPENAI_API_KEY` (또는 `ELEVENLABS_API_KEY` + 변수 `ELEVENLABS_VOICE_KO/EN`) 등록 →
+Actions → "Docent narration" → Run workflow. 작품별 문장 단위 mp3가 `audio/` 에 생성되고, 녹음이 있는 작품은 기기 음성 대신 녹음을 재생합니다.
+works.json 이 바뀌면 바뀐 작품만 자동으로 다시 녹음합니다.

@@ -14,7 +14,9 @@ const store = {
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const stripHtml = s => { if (!s) return ''; const d = document.createElement('div'); d.innerHTML = s; return (d.textContent || '').replace(/\s+\n/g, '\n').replace(/[ \t]+/g, ' ').trim(); };
 const BASE = () => location.href.split('#')[0];
-const TG = 'https://t.me/btcbullit';
+const KAKAO = 'https://open.kakao.com/o/gQLZj9Ti';
+/* Payments: set live:true + clientKey (토스페이먼츠 라이브 클라이언트 키) + apiBase (worker URL) when the merchant contract is ready. ?paytest=1 runs the Toss test flow. */
+const PAY = { live: false, clientKey: '', apiBase: '', testClientKey: 'test_ck_D5GePWvyJnrK0W0k6q8gLzN97Eoq', price: 30000 };
 const seoulDate = (d = new Date()) => d.toLocaleDateString('sv-SE', { timeZone: 'Asia/Seoul' });
 async function getJSON(url, opt) { const r = await fetch(url, opt); if (!r.ok) throw new Error(r.status + ' ' + url); return r.json(); }
 
@@ -62,12 +64,12 @@ const T = {
   p1_l: [['매일 3점 · 영문 해설 + 한국어 번역', '감상 포인트 3가지와 오늘의 영어 표현', '원어민 음성으로 듣는 해설', '지난 작품 아카이브 무제한'], ['3 works daily · English commentary + Korean', 'Three things to look for, plus words to know', 'Listen to every commentary', 'Unlimited archive']],
   p2_tag: ['For galleries · B2B', 'For galleries · B2B'], p2_h: ['QR 도슨트 — 앱 없는 오디오 가이드', 'QR Docent — the audio guide with no app'],
   p2_p: ['작품 옆 라벨에 QR 하나. 관람객의 휴대폰이 곧 도슨트가 됩니다. 해설 원고 작성부터 라벨 인쇄까지 한 번에.', 'One QR on each wall label, and every visitor\'s phone becomes a docent. From writing the texts to printing the labels.'],
-  p2_l: [['작품별 해설 페이지 · 텍스트/음성', '한국어 · 영어 기본, 다국어 확장', 'QR 벽 라벨 인쇄 파일 자동 생성', '전시 입구용 전체 안내 QR'], ['A page per artwork, text and audio', 'Korean and English, more on request', 'Print-ready QR wall labels', 'One entrance QR for the whole show']],
+  p2_l: [['작품별 해설 페이지 · 텍스트/음성', '한국어 · 영어 기본, 다국어 확장', 'QR 캡션(명제표) 인쇄 파일 자동 생성', '전시 입구용 전체 안내 QR'], ['A page per artwork, text and audio', 'Korean and English, more on request', 'Print-ready QR caption cards', 'One entrance QR for the whole show']],
   per_month: ['/ 월', '/ month'], per_show: ['/ 전시', '/ exhibition'], from: ['부터', 'from'],
   how_eyebrow: ['How it works', 'How it works'], how_h: ['라벨 하나로 시작하는 전시 해설', 'Exhibition interpretation, starting with a label'],
-  how_p: ['설치할 장비도, 내려받을 앱도 없습니다. 인쇄한 라벨을 벽에 붙이면 끝.', 'No hardware, no app downloads. Print the labels, put them on the wall, done.'],
+  how_p: ['설치할 장비도, 내려받을 앱도 없습니다. 작품 옆 캡션(명제표)에 QR을 함께 인쇄해 붙이면 준비가 끝납니다.', 'No hardware, no app downloads. Print a QR onto the caption card beside each work, and you are ready.'],
   s1h: ['작품을 고르거나 등록', 'Choose or add works'], s1p: ['큐레이션 명작, 해외 미술관 공개 소장품, 혹은 갤러리의 작품을 직접 등록합니다.', 'Pick from curated masterpieces, open museum collections, or add your own works.'],
-  s2h: ['QR 라벨 인쇄', 'Print QR labels'], s2p: ['작품명·작가·연도와 QR이 들어간 벽 라벨이 A4로 바로 출력됩니다.', 'Wall labels with title, artist, date and QR print straight to A4.'],
+  s2h: ['QR 캡션 인쇄', 'Print QR captions'], s2p: ['작품명·작가·연도와 QR이 들어간 작품 캡션(명제표)이 A4로 바로 출력됩니다. 잘라서 작품 옆에 붙이면 됩니다.', 'Caption cards with title, artist, date and QR print straight to A4. Cut them out and place them beside each work.'],
   s3h: ['스캔하고, 듣고, 읽는다', 'Scan, listen, read'], s3p: ['관람객은 카메라로 찍기만 하면 됩니다. 문장 단위로 따라가는 음성 해설이 재생됩니다.', 'Visitors just point their camera. Audio plays sentence by sentence, highlighted as it reads.'],
   today_eyebrow: ["Today's three", "Today's three"], today_h: ['오늘 아침 도착한 세 점', 'This morning\'s three works'], today_p: ['첫 번째 작품은 누구나 무료로 볼 수 있습니다.', 'The first work is free for everyone.'],
   see_all: ['전체 보기', 'See all'],
@@ -79,14 +81,14 @@ const T = {
   pl4l: [['상설 작품 무제한 등록', '해설 수정 무제한', '한국어 · 영어', '소규모 갤러리·공방용'], ['Unlimited permanent works', 'Unlimited text edits', 'Korean & English', 'For small galleries & studios']],
   subscribe: ['구독 시작하기', 'Start membership'], inquire: ['문의하기', 'Get in touch'],
   f_eyebrow: ['Why us', 'Why us'],
-  f_quote: ['전시를 직접 세 번 열어 보면 압니다. 관람객이 작품 앞에 머무는 시간은 해설 한 줄에 달려 있다는 것을.', 'Run three exhibitions yourself and you learn this: how long a visitor stays in front of a work depends on a single line of interpretation.'],
-  f_body: ['미술사를 전공하고 인사동·코엑스·인천에서 세 번의 전시를 직접 기획한 운영자가 모든 해설 원고를 감수합니다. 기술보다 해설의 질로 승부합니다.', 'Every text is reviewed by a founder trained in art history who organized three exhibitions in Insadong, COEX and Incheon. We compete on the quality of interpretation, not gadgets.'],
-  fa1: ['전시 기획', 'Exhibitions organized'], fa2: ['해설 언어', 'Languages'], fa3: ['열람 가능 작품', 'Works searchable'],
+  f_quote: ['전시를 직접 수십 차례 열어 보며 알게 됐습니다. 관람객이 작품 앞에 머무는 시간은 해설 한 줄에 달려 있다는 것을.', 'After opening dozens of exhibitions ourselves, we learned one thing: how long a visitor stays in front of a work depends on a single line of interpretation.'],
+  f_body: ['미술사를 전공하고, 20회가 넘는 전시를 직접 열고 기획에 참여해 온 운영진이 모든 해설 원고를 감수합니다. 기술보다 해설의 질로 승부합니다.', 'Every text is reviewed by a team trained in art history that has opened and helped organize more than twenty exhibitions. We compete on the quality of interpretation, not gadgets.'],
+  fa1: ['전시 개최·기획 참여', 'Exhibitions opened & organized'], fa2: ['해설 언어', 'Languages'], fa3: ['열람 가능 작품', 'Works searchable'],
   cta_h: ['다음 전시, 관람객의 휴대폰을 도슨트로.', 'Make every visitor\'s phone your docent.'],
-  cta_btn: ['텔레그램으로 상담하기', 'Talk to us on Telegram'],
+  cta_btn: ['카카오톡으로 상담하기', 'Chat with us on KakaoTalk'],
   foot_note: ['작품 이미지와 데이터: 시카고 미술관, 메트로폴리탄 미술관, 클리블랜드 미술관 오픈 액세스(CC0), 위키미디어 커먼즈.', 'Images & data: Art Institute of Chicago, The Met, Cleveland Museum of Art Open Access (CC0), Wikimedia Commons.'],
   // today
-  daily_h: ['오늘의 작품', 'Daily Art'], daily_p: ['매일 아침 9시, 세 점의 명작과 영어 해설. 미술과 영어를 함께 읽는 하루 10분.', 'Every morning, three masterpieces with English commentary. Ten minutes of art and English a day.'],
+  daily_h: ['오늘의 작품', 'Daily Art'], daily_p: ['매일 아침, 세 점의 명작과 영어 해설. 미술과 영어를 함께 읽는 하루 10분.', 'Every morning, three masterpieces with English commentary. Ten minutes of art and English a day.'],
   ko_trans: ['한국어 해설 보기', 'Korean commentary'], words_h: ['Words to know · 오늘의 표현', 'Words to know'],
   open_v: ['작품 페이지 · 음성 해설', 'Artwork page · audio'], locked_h: ['멤버 전용 해설입니다', 'Members only'],
   locked_p: ['나머지 두 점의 영문 해설, 한국어 번역, 음성과 오늘의 표현은 Daily Art 멤버에게 열립니다.', 'The full commentary, translation, audio and words for the other two works are for Daily Art members.'],
@@ -95,7 +97,7 @@ const T = {
   // modal
   m_h: ['Daily Art 멤버십', 'Daily Art Membership'], m_p: ['매일 세 점의 명작을 영어 해설로. 언제든 해지할 수 있습니다.', 'Three masterpieces a day in English. Cancel anytime.'],
   m_l: [['매일 3점 영문 해설 + 한국어 번역', '음성 해설 · 감상 포인트 · 오늘의 표현', '지난 작품 아카이브 무제한', '앱처럼 홈 화면에 설치'], ['3 English commentaries daily + Korean', 'Audio · what to look for · words to know', 'Unlimited archive', 'Install on your home screen']],
-  m_cta: ['텔레그램으로 구독 신청', 'Subscribe via Telegram'], m_code: ['멤버 코드 입력', 'Member code'], m_apply: ['확인', 'Apply'],
+  m_cta: ['구독 신청하기', 'Subscribe now'], m_code: ['멤버 코드 입력', 'Member code'], m_apply: ['확인', 'Apply'],
   m_ok: ['멤버십이 활성화되었습니다', 'Membership activated'], m_bad: ['코드를 다시 확인해 주세요', 'Please check the code'],
   // explore
   ex_h: ['작품 탐색', 'Explore'], ex_p: ['큐레이션 명작 24점과 클리블랜드·시카고 미술관 공개 소장품 약 18만 점을 검색하세요. +를 누르면 QR 스튜디오에 담깁니다.', 'Search 24 curated masterpieces and about 180,000 open-access works from Cleveland and Chicago. Tap + to add to QR Studio.'],
@@ -104,12 +106,12 @@ const T = {
   searching: ['미술관 소장품 검색 중', 'Searching museum collections'], noresult: ['결과가 없습니다. 영어로도 검색해 보세요.', 'No results. Try another term in English.'],
   results: ['검색 결과', 'Results'], added: ['QR 스튜디오에 추가했습니다', 'Added to QR Studio'], removed: ['스튜디오에서 뺐습니다', 'Removed from studio'],
   // studio
-  st_h: ['QR 스튜디오', 'QR Studio'], st_p: ['전시를 구성하고 작품별 QR 벽 라벨을 인쇄하세요. 입구용 전시 안내 QR도 함께 만들어집니다.', 'Build an exhibition and print a QR wall label for each work, plus one entrance QR for the whole show.'],
+  st_h: ['QR 스튜디오', 'QR Studio'], st_p: ['전시를 구성하고 작품별 QR 캡션(명제표)을 인쇄하세요. 입구용 전시 안내 QR도 함께 만들어집니다.', 'Build an exhibition and print a QR caption card for each work, plus one entrance QR for the whole show.'],
   st_name: ['전시 제목', 'Exhibition title'], st_sub: ['부제 · 기간 · 장소', 'Subtitle · dates · venue'],
   st_custom: ['직접 작품 등록', 'Add your own work'], st_t: ['작품명', 'Title'], st_a: ['작가', 'Artist'], st_y: ['연도', 'Year'], st_m: ['재료·크기', 'Medium & size'],
   st_img: ['이미지 URL (선택)', 'Image URL (optional)'], st_ko: ['한국어 해설', 'Korean text'], st_en: ['영어 해설', 'English text'], st_add: ['라벨에 추가', 'Add label'],
   st_hint: ['갤러리 작품 해설은 QR 안에 담기므로 서버가 필요 없습니다. 해설이 길수록 QR이 촘촘해지니 1,000자 이내를 권장합니다.', 'Your text is stored inside the QR itself, so no server is needed. Keep it under ~1,000 characters for an easy-to-scan code.'],
-  st_print: ['라벨 인쇄 (A4)', 'Print labels (A4)'], st_copy: ['전시 링크 복사', 'Copy exhibition link'], st_clear: ['모두 비우기', 'Clear all'],
+  st_print: ['캡션 인쇄 (A4)', 'Print captions (A4)'], st_copy: ['전시 링크 복사', 'Copy exhibition link'], st_clear: ['모두 비우기', 'Clear all'],
   st_empty: ['아직 담긴 작품이 없습니다. 작품 탐색에서 + 를 누르거나 왼쪽에서 직접 등록하세요.', 'No works yet. Tap + in Explore or add your own on the left.'],
   st_xqr: ['전시 입구용 QR — 관람객이 전체 작품 목록을 봅니다.', 'Entrance QR — visitors see the full list of works.'],
   st_count: ['점', 'works'], copied: ['링크를 복사했습니다', 'Link copied'], go_explore: ['작품 탐색으로', 'Go to Explore'],
@@ -122,7 +124,25 @@ const T = {
   v_basic: ['이 작품은 아직 큐레이터 해설이 준비되지 않아 소장처 기록을 바탕으로 안내합니다.', 'A curator\'s text is not ready yet; this guide is based on the museum record.'],
   v_loading: ['작품을 불러오는 중', 'Loading artwork'], v_unknown: ['작가 미상', 'Unknown artist'],
   x_works: ['작품', 'works'], x_scan: ['각 작품 옆 QR을 찍거나 아래 목록에서 선택하세요.', 'Scan the QR beside each work, or choose from the list.'],
-  back: ['← 돌아가기', '← Back']
+  back: ['← 돌아가기', '← Back'],
+  nav_support: ['고객센터', 'Support'],
+  sp_h: ['고객센터', 'Support'], sp_p: ['구독, 결제, 해지, 갤러리 도입까지 카카오톡 오픈채팅으로 문의를 받습니다.', 'Subscriptions, billing, cancellations and gallery projects: talk to us on KakaoTalk.'],
+  sp_kakao: ['카카오톡으로 문의하기', 'Message us on KakaoTalk'], sp_kakao_s: ['오픈채팅 · QURATOR 고객센터', 'Open chat · QURATOR Support'],
+  sp_faq: ['자주 묻는 질문', 'Frequently asked'], sp_docs: ['약관 및 정책', 'Policies'],
+  terms: ['이용약관', 'Terms of Service'], privacy: ['개인정보처리방침', 'Privacy Policy'], refund: ['환불·해지 규정', 'Refund & Cancellation'],
+  biz: ['상호 QURATOR(큐레이터) · 사업자등록번호·통신판매업 신고번호·대표자 정보는 등록 완료 후 게시됩니다.', 'QURATOR. Business registration details will be published once registration is complete.'],
+  co_h: ['Daily Art 구독 신청', 'Subscribe to Daily Art'], co_name: ['이름', 'Name'], co_email: ['이메일 (멤버 코드 수신)', 'Email (for your member code)'],
+  co_method: ['결제 방법', 'Payment method'], co_card: ['카드 자동결제', 'Card, billed monthly'], co_card_s: ['토스페이먼츠 · 매월 자동 결제', 'Toss Payments · renews monthly'],
+  co_soon: ['곧 오픈', 'Coming soon'], co_bank: ['계좌이체', 'Bank transfer'], co_bank_s: ['카카오톡으로 입금 안내 · 확인 후 멤버 코드 발급', 'We send account details on KakaoTalk, then your member code'],
+  co_agree: ['이용약관, 개인정보 수집·이용, 정기결제 및 환불·해지 규정을 확인했으며 동의합니다.', 'I agree to the Terms, Privacy Policy, recurring billing and refund policy.'],
+  co_pay: ['결제하기', 'Pay'], co_apply: ['신청하기', 'Place order'], co_need: ['이름, 이메일, 동의 항목을 확인해 주세요', 'Please fill in your name, email and consent'],
+  co_order: ['신청이 접수되었습니다', 'Order received'], co_order_p: ['카카오톡 오픈채팅에 아래 주문번호를 보내 주세요. 입금 계좌를 안내해 드리고, 입금이 확인되면 멤버 코드를 보내 드립니다.', 'Send this order number on KakaoTalk. We will reply with account details and send your member code once payment is confirmed.'],
+  co_copy: ['주문번호 복사', 'Copy order number'], co_open: ['카카오톡 열기', 'Open KakaoTalk'], co_have: ['멤버 코드를 받으셨나요?', 'Got your member code?'],
+  co_month: ['월', 'month'], co_vat: ['부가세 포함 · 언제든 해지 가능', 'VAT included · cancel anytime'], co_test: ['테스트 결제 모드 — 실제 청구되지 않습니다', 'Test mode — no real charge'],
+  pay_ok: ['구독이 시작되었습니다', 'Your membership is active'], pay_ok_p: ['아래 멤버 코드를 꼭 저장해 두세요. 다른 기기에서도 이 코드로 열람할 수 있습니다.', 'Keep this member code. Use it to unlock Daily Art on any device.'],
+  pay_test_ok: ['카드 등록이 확인되었습니다 (테스트)', 'Card registered (test)'], pay_test_p: ['결제 서버가 연결되면 이 단계에서 첫 달 결제와 멤버 코드 발급이 자동으로 진행됩니다.', 'Once the billing server is connected, the first charge and member code happen automatically here.'],
+  pay_fail: ['결제가 완료되지 않았습니다', 'Payment was not completed'], pay_fail_p: ['다시 시도하시거나 카카오톡으로 문의해 주세요.', 'Please try again or contact us on KakaoTalk.'],
+  pay_wait: ['결제를 확인하는 중', 'Confirming your payment']
 };
 const L = () => S.lang === 'ko' ? 0 : 1;
 const t = k => (T[k] ? T[k][L()] : k);
@@ -302,13 +322,37 @@ const Speech = {
   ok: 'speechSynthesis' in self,
   idx: 0, sents: [], lang: 'ko', playing: false, rate: store.get('q_rate', 1), onUpdate: null,
   voice(lang) {
-    const vs = speechSynthesis.getVoices().filter(v => v.lang && v.lang.toLowerCase().startsWith(lang));
-    const pref = [/natural/i, /google/i, /yuna|sora|samantha|ava|serena|daniel/i];
-    for (const p of pref) { const v = vs.find(x => p.test(x.name)); if (v) return v; }
-    return vs[0] || null;
+    const vs = speechSynthesis.getVoices().filter(v => v.lang && v.lang.toLowerCase().replace('_', '-').startsWith(lang));
+    const fav = lang === 'ko' ? /sunhi|injoon|hyunsu|yuna|sora|jian|seoyeon/i : /aria|jenny|ava|andrew|emma|brian|sonia|ryan|libby|samantha|daniel|serena|allison/i;
+    const score = v => {
+      const n = v.name + ' ' + (v.voiceURI || '');
+      let k = 0;
+      if (/natural|neural|online/i.test(n)) k += 100;
+      if (/premium/i.test(n)) k += 90; else if (/enhanced/i.test(n)) k += 70;
+      if (/google/i.test(n)) k += 55;
+      if (fav.test(n)) k += 25;
+      if (lang === 'en' && /en-(us|gb)/i.test(v.lang)) k += 5;
+      if (/compact|espeak|heami|zira|david|mark|novelty|bells|whisper|bad news|good news|organ|bahh|boing|bubbles|cellos|jester|superstar|trinoids|wobble|zarvox|albert|fred|junior|kathy|ralph/i.test(n)) k -= 200;
+      return k;
+    };
+    return vs.sort((a, b) => score(b) - score(a))[0] || null;
   },
-  load(sents, lang) { this.stop(); this.sents = sents; this.lang = lang; this.idx = 0; this.emit(); },
+  urls: null, audio: null,
+  load(sents, lang, urls) { this.stop(); this.sents = sents; this.lang = lang; this.urls = urls || null; this.idx = 0; this.emit(); },
+  playFile(i) {
+    this.idx = Math.max(0, Math.min(i, this.urls.length - 1));
+    if (this.audio) { this.audio.onended = null; this.audio.pause(); }
+    this.playing = true;
+    const a = this.audio = new Audio(this.urls[this.idx]);
+    a.playbackRate = this.rate; a.preload = 'auto';
+    a.onended = () => { if (!this.playing) return; if (this.idx + 1 >= this.urls.length) { this.playing = false; this.idx = 0; this.emit(true); return; } this.playFile(this.idx + 1); };
+    a.onerror = () => { this.playing = false; this.emit(); };
+    a.play().catch(() => { this.playing = false; this.emit(); });
+    if (this.urls[this.idx + 1]) { const n = new Audio(); n.preload = 'auto'; n.src = this.urls[this.idx + 1]; }
+    this.emit();
+  },
   speakFrom(i) {
+    if (this.urls) return this.playFile(i);
     if (!this.ok || !this.sents.length) return;
     speechSynthesis.cancel();
     this.idx = Math.max(0, Math.min(i, this.sents.length - 1));
@@ -328,8 +372,8 @@ const Speech = {
     go();
   },
   toggle() { if (this.playing) this.pause(); else this.speakFrom(this.idx); },
-  pause() { this.playing = false; if (this.ok) speechSynthesis.cancel(); this.emit(); },
-  stop() { this.playing = false; if (this.ok) speechSynthesis.cancel(); this.idx = 0; },
+  pause() { this.playing = false; if (this.audio) this.audio.pause(); if (this.ok) speechSynthesis.cancel(); this.emit(); },
+  stop() { this.playing = false; if (this.audio) { this.audio.onended = null; this.audio.pause(); this.audio = null; } if (this.ok) speechSynthesis.cancel(); this.idx = 0; },
   emit(done) { this.onUpdate && this.onUpdate(done); }
 };
 if (Speech.ok) { speechSynthesis.getVoices(); speechSynthesis.onvoiceschanged = () => speechSynthesis.getVoices(); }
@@ -348,12 +392,15 @@ function splitSentences(text) {
 
 /* ---------------- shell ---------------- */
 function renderShell(route) {
-  $('#nav').innerHTML = [['today', '#/today'], ['explore', '#/explore'], ['studio', '#/studio'], ['pricing', '#/pricing']]
+  $('#nav').innerHTML = [['today', '#/today'], ['explore', '#/explore'], ['studio', '#/studio'], ['pricing', '#/pricing'], ['support', '#/support']]
     .map(([k, h]) => `<a href="${h}" class="${route === k ? 'on' : ''}">${t('nav_' + k)}</a>`).join('');
   $$('.lang button').forEach(b => b.classList.toggle('on', b.dataset.lang === S.lang));
   document.documentElement.lang = S.lang;
-  $('#foot').innerHTML = `<div class="foot-in"><div><b style="color:var(--ink);letter-spacing:.2em;font-family:var(--serif-en);font-size:16px">QURATOR</b><br>© 2026 QURATOR · ${esc(t('foot_note'))}</div>
-    <div><a href="${TG}" target="_blank" rel="noopener">Telegram @btcbullit</a> &nbsp;·&nbsp; <a href="#/pricing">${t('nav_pricing')}</a></div></div>`;
+  $('#foot').innerHTML = `<div class="foot-in">
+    <div class="foot-brand">${LOGO_MARK}<div><div class="fw">QURATOR</div><div class="fs">MAISON DE DOCENT · SÉOUL</div></div></div>
+    <nav class="foot-links"><a href="#/support">${t('nav_support')}</a><a href="${KAKAO}" target="_blank" rel="noopener">${S.lang === 'ko' ? '카카오톡 문의' : 'KakaoTalk'}</a><a href="#/policy/terms">${t('terms')}</a><a href="#/policy/privacy"><b>${t('privacy')}</b></a><a href="#/policy/refund">${t('refund')}</a></nav>
+  </div>
+  <div class="foot-in foot-legal"><span>${esc(t('biz'))}</span><span>© 2026 QURATOR · ${esc(t('foot_note'))}</span></div>`;
 }
 
 /* ---------------- views ---------------- */
@@ -392,10 +439,10 @@ function viewHome(scrollTo) {
   <section class="sec" style="padding-top:0"><div class="wrap founder">
     <div class="rv"><p class="eyebrow">${t('f_eyebrow')}</p><blockquote>${esc(t('f_quote'))}</blockquote></div>
     <div class="rv"><p style="color:var(--ink-2);font-size:17px;margin:0 0 32px">${esc(t('f_body'))}</p>
-      <div class="facts"><div class="fact"><b>3</b><span>${t('fa1')}</span></div><div class="fact"><b>2+</b><span>${t('fa2')}</span></div><div class="fact"><b>180K</b><span>${t('fa3')}</span></div></div></div>
+      <div class="facts"><div class="fact"><b>20+</b><span>${t('fa1')}</span></div><div class="fact"><b>2+</b><span>${t('fa2')}</span></div><div class="fact"><b>180K</b><span>${t('fa3')}</span></div></div></div>
   </div></section>
 
-  <section class="cta-band"><div class="wrap"><h2>${t('cta_h')}</h2><a class="btn" href="${TG}" target="_blank" rel="noopener">${t('cta_btn')} <span class="arrow">→</span></a></div></section>`;
+  <section class="cta-band"><div class="wrap"><h2>${t('cta_h')}</h2><a class="btn" href="${KAKAO}" target="_blank" rel="noopener">${t('cta_btn')} <span class="arrow">→</span></a></div></section>`;
   hydrate(); reveal(); startStage();
   if (scrollTo) setTimeout(() => { const el = document.getElementById(scrollTo); if (el) el.scrollIntoView({ behavior: 'smooth' }); }, 60);
   function productCard(p, price, per, href, cta) {
@@ -501,9 +548,9 @@ function pricingBlock() {
     <div class="sec-head rv"><div><p class="eyebrow">${t('pr_eyebrow')}</p><h2>${t('pr_h')}</h2></div></div>
     <div class="pricing rv">
       ${plan('pl1', '₩30,000', t('per_month'), 'feat', `<button class="btn btn-seal" data-act="subscribe">${t('subscribe')}</button>`)}
-      ${plan('pl2', '₩300,000', t('per_show'), '', `<a class="btn btn-line" href="${TG}" target="_blank" rel="noopener">${t('inquire')}</a>`)}
-      ${plan('pl3', '₩1,000,000', t('per_show'), '', `<a class="btn btn-line" href="${TG}" target="_blank" rel="noopener">${t('inquire')}</a>`)}
-      ${plan('pl4', '₩99,000', t('per_month'), '', `<a class="btn btn-line" href="${TG}" target="_blank" rel="noopener">${t('inquire')}</a>`)}
+      ${plan('pl2', '₩300,000', t('per_show'), '', `<a class="btn btn-line" href="${KAKAO}" target="_blank" rel="noopener">${t('inquire')}</a>`)}
+      ${plan('pl3', '₩1,000,000', t('per_show'), '', `<a class="btn btn-line" href="${KAKAO}" target="_blank" rel="noopener">${t('inquire')}</a>`)}
+      ${plan('pl4', '₩99,000', t('per_month'), '', `<a class="btn btn-line" href="${KAKAO}" target="_blank" rel="noopener">${t('inquire')}</a>`)}
     </div></div></section>`;
 }
 
@@ -768,6 +815,12 @@ async function viewWork(uid, custom) {
   const textCache = {};
   async function textFor(l) {
     if (textCache[l]) return textCache[l];
+    if (model.kind === 'curated') {
+      try {
+        const n = await getJSON(`audio/${model.w.id}/${l}.json`, { cache: 'no-cache' });
+        if (n && n.sentences && n.files) return textCache[l] = { text: model.text[l], note: '', rec: n };
+      } catch {}
+    }
     if (model.kind !== 'api') return textCache[l] = { text: model.text[l], note: '' };
     const w = model.api;
     if (l === 'en') return textCache[l] = { text: model.text.en, note: model.basic ? t('v_basic') : '' };
@@ -786,7 +839,7 @@ async function viewWork(uid, custom) {
     if (model.tagline) { const g = $('#vtag'); g.textContent = model.tagline[l]; g.className = 'v-tag ' + l; }
     if (model.look) $('#vlook').innerHTML = model.look[l].map(x => `<li>${esc(x)}</li>`).join('');
     const r = await textFor(l);
-    const sents = splitSentences(r.text || '');
+    const sents = r.rec ? r.rec.sentences : splitSentences(r.text || '');
     const vt = $('#vtext');
     vt.className = 'v-text ' + (l === 'en' ? 'en' : '');
     let k = 0;
@@ -794,8 +847,9 @@ async function viewWork(uid, custom) {
     $('#vnote').innerHTML = r.note || '';
     const speakSents = sents.filter(s => s !== '\n');
     // for mixed (ko header + english original) speak in English except header line
-    Speech.load(speakSents, r.mixed ? 'en' : l);
-    $('#plang').textContent = (l === 'ko' && !r.mixed) ? '한국어 음성' : 'English voice';
+    if (r.rec) Speech.load(speakSents, l, r.rec.files.map(f => `audio/${model.w.id}/${f}`));
+    else Speech.load(speakSents, r.mixed ? 'en' : l);
+    $('#plang').textContent = r.rec ? (S.lang === 'ko' ? 'QURATOR 도슨트 녹음' : 'QURATOR docent recording') : ((l === 'ko' && !r.mixed) ? '한국어 음성' : 'English voice');
   }
   Speech.onUpdate = done => {
     const p = $('#play'); if (!p) return;
@@ -808,10 +862,10 @@ async function viewWork(uid, custom) {
     const cur = $('#vtext .s.cur');
     if (cur && Speech.playing) { const r = cur.getBoundingClientRect(); if (r.top < 80 || r.bottom > innerHeight - 110) cur.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
   };
-  $('#play').onclick = () => { if (!Speech.ok) { toast('Audio is not supported on this browser'); return; } Speech.toggle(); };
-  $('#vtext').onclick = e => { const s = e.target.closest('.s'); if (s && Speech.ok) Speech.speakFrom(+s.dataset.i); };
+  $('#play').onclick = () => { if (!Speech.ok && !Speech.urls) { toast('Audio is not supported on this browser'); return; } Speech.toggle(); };
+  $('#vtext').onclick = e => { const s = e.target.closest('.s'); if (s && (Speech.ok || Speech.urls)) Speech.speakFrom(+s.dataset.i); };
   $('#vtabs').onclick = e => { const b = e.target.closest('button'); if (b) showLang(b.dataset.l); };
-  $('#rate').onclick = () => { const rs = [0.85, 1, 1.15, 1.3]; Speech.rate = rs[(rs.indexOf(Speech.rate) + 1) % rs.length]; store.set('q_rate', Speech.rate); $('#rate').textContent = Speech.rate + '×'; if (Speech.playing) Speech.speakFrom(Speech.idx); };
+  $('#rate').onclick = () => { const rs = [0.9, 1, 1.15, 1.3]; Speech.rate = rs[(rs.indexOf(Speech.rate) + 1) % rs.length]; store.set('q_rate', Speech.rate); $('#rate').textContent = Speech.rate + '×'; if (Speech.audio) Speech.audio.playbackRate = Speech.rate; else if (Speech.playing) Speech.speakFrom(Speech.idx); };
   $('#zoom').onclick = async () => {
     let src = model.imageLg || model.image;
     if (model.kind === 'curated') src = await curatedImage(model.w);
@@ -826,6 +880,162 @@ async function viewWork(uid, custom) {
   function row(k, v) { return v ? `<tr><th>${esc(k)}</th><td>${esc(v)}</td></tr>` : ''; }
 }
 
+/* ---------------- brand ---------------- */
+const LOGO_MARK = '<svg class="mono" viewBox="0 0 40 40" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M20 4C12.5 4 6.5 10.7 6.5 19S12.5 34 20 34 33.5 27.3 33.5 19 27.5 4 20 4Zm0 .7c-5.4 0-9.9 6.4-9.9 14.3S14.6 33.3 20 33.3 29.9 26.9 29.9 19 25.4 4.7 20 4.7Z"/><path fill="currentColor" d="M18.4 31.3c4.3-.6 9.6 1.6 17.1 6.8l-.6.8c-7-4.5-12-6.5-16.3-6.3Z"/></svg>';
+
+/* ---------------- membership ---------------- */
+async function checkCode(code) {
+  if (!code) return false;
+  if (PAY.apiBase) {
+    try { const r = await getJSON(PAY.apiBase + '/member/verify?code=' + enc(code)); return !!r.active; } catch { return false; }
+  }
+  return MEMBER_CODES.includes(code);
+}
+function activateMember(code) { S.member = true; store.set('q_member', true); store.set('q_code', code); }
+
+/* ---------------- support / CS ---------------- */
+const FAQ = [
+  ['오늘의 작품은 언제 올라오나요?', 'When do the daily works arrive?', '매일 아침(한국 시간) 세 점이 새로 올라옵니다. 첫 번째 작품은 누구나 무료로 볼 수 있고, 나머지 두 점과 아카이브는 멤버에게 열립니다.', 'Three new works go up every morning, Korea time. The first is free for everyone; the other two and the archive are for members.'],
+  ['앱을 설치해야 하나요?', 'Do I need to install an app?', '아니요. 브라우저에서 바로 열립니다. 오늘의 작품 페이지에서 홈 화면에 추가하면 앱처럼 쓸 수 있습니다.', 'No. It runs in your browser. Add it to your home screen from the Daily Art page to use it like an app.'],
+  ['결제는 어떻게 하나요?', 'How do I pay?', '구독 신청 페이지에서 계좌이체를 선택하면 카카오톡으로 입금 계좌를 안내해 드리고, 입금 확인 후 멤버 코드를 보내 드립니다. 카드 자동결제(토스페이먼츠)는 곧 열립니다.', 'Choose bank transfer on the checkout page; we send account details on KakaoTalk and your member code after payment. Card billing via Toss Payments opens soon.'],
+  ['멤버 코드는 어디에 입력하나요?', 'Where do I enter my member code?', '오늘의 작품 페이지의 구독 버튼을 누르면 아래쪽에 멤버 코드 입력칸이 있습니다. 한 번 입력하면 그 기기에서는 계속 열람됩니다.', 'Tap Subscribe on the Daily Art page; the code field is at the bottom. Once entered, that device stays unlocked.'],
+  ['해지는 어떻게 하나요?', 'How do I cancel?', '카카오톡으로 해지를 요청하시면 다음 결제일부터 청구되지 않으며, 이미 결제한 기간이 끝날 때까지 계속 이용하실 수 있습니다.', 'Message us on KakaoTalk. You will not be billed again and keep access until the end of the paid period.'],
+  ['환불되나요?', 'Can I get a refund?', '결제 후 7일 이내이고 멤버 전용 해설을 열람하지 않았다면 전액 환불됩니다. 자세한 기준은 환불·해지 규정을 확인해 주세요.', 'Within 7 days of payment, if you have not opened member content, you get a full refund. See the Refund & Cancellation policy for details.'],
+  ['갤러리 도입은 어떻게 진행되나요?', 'How does a gallery project work?', '카카오톡으로 전시 일정과 작품 목록을 보내 주시면 견적을 드립니다. 해설 작성(Premium)부터 QR 캡션 인쇄 파일, 전시 입구 QR까지 한 번에 준비됩니다.', 'Send your dates and list of works on KakaoTalk for a quote. We prepare texts (Premium), QR caption files and an entrance QR.'],
+  ['갤러리가 해설을 직접 수정할 수 있나요?', 'Can a gallery edit the texts itself?', '네. QR 스튜디오에서 작품과 해설을 직접 등록하고 캡션을 바로 인쇄할 수 있습니다.', 'Yes. Add works and texts in QR Studio and print captions immediately.']
+];
+function viewSupport() {
+  const k = L();
+  app().innerHTML = `<section class="phead"><div class="wrap"><p class="eyebrow">Service client</p><h1>${t('sp_h')}</h1><p>${t('sp_p')}</p></div></section>
+  <div class="wrap support">
+    <a class="kakao-card" href="${KAKAO}" target="_blank" rel="noopener">
+      <span class="kk-ico"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3.5c-5 0-9 3.1-9 7 0 2.5 1.7 4.7 4.2 6l-.9 3.4c-.1.3.3.5.5.3l4-2.7c.4 0 .8.1 1.2.1 5 0 9-3.1 9-7s-4-7.1-9-7.1Z"/></svg></span>
+      <span class="kk-t"><b>${t('sp_kakao')}</b><small>${t('sp_kakao_s')}</small></span><span class="arrow">→</span></a>
+    <div class="sp-grid">
+      ${[['구독 신청 · 결제', 'Subscribe & billing', '#/checkout'], ['해지 · 환불', 'Cancel & refund', '#/policy/refund'], ['갤러리 도입 상담', 'Gallery projects', KAKAO], ['멤버 코드 입력', 'Enter member code', 'code']].map(([a, b, h]) =>
+        h === 'code' ? `<button class="sp-cell" data-act="subscribe"><span>${k ? b : a}</span><i>→</i></button>` :
+        `<a class="sp-cell" href="${h}" ${h.startsWith('http') ? 'target="_blank" rel="noopener"' : ''}><span>${k ? b : a}</span><i>→</i></a>`).join('')}
+    </div>
+    <h2 class="sp-h">${t('sp_faq')}</h2>
+    <div class="faq">${FAQ.map(f => `<details><summary>${esc(f[k])}</summary><p>${esc(f[2 + k])}</p></details>`).join('')}</div>
+    <h2 class="sp-h">${t('sp_docs')}</h2>
+    <div class="sp-grid"><a class="sp-cell" href="#/policy/terms"><span>${t('terms')}</span><i>→</i></a><a class="sp-cell" href="#/policy/privacy"><span>${t('privacy')}</span><i>→</i></a><a class="sp-cell" href="#/policy/refund"><span>${t('refund')}</span><i>→</i></a></div>
+  </div>`;
+}
+
+/* ---------------- policies (Korean text governs) ---------------- */
+const POLICY = {
+  terms: ['이용약관', [
+    ['제1조 (목적)', '이 약관은 QURATOR(이하 "회사")가 제공하는 Daily Art 구독 서비스와 QR 도슨트 서비스(이하 "서비스")의 이용 조건과 절차, 회사와 이용자의 권리·의무를 정합니다.'],
+    ['제2조 (서비스 내용)', 'Daily Art는 매일 선정된 미술 작품의 해설(영어·한국어), 음성 해설, 감상 포인트를 제공하는 월 구독 서비스입니다. QR 도슨트는 전시 작품별 해설 페이지와 QR 캡션 인쇄 파일을 제공하는 기업·기관용 서비스입니다.'],
+    ['제3조 (구독과 결제)', 'Daily Art 구독료는 월 30,000원(부가세 포함)이며, 구독 신청 시 안내된 방법으로 결제합니다. 카드 자동결제를 선택한 경우 최초 결제일을 기준으로 매월 같은 날 자동 결제됩니다.'],
+    ['제4조 (해지)', '이용자는 언제든 고객센터(카카오톡)를 통해 해지할 수 있으며, 해지 시 다음 결제일부터 요금이 청구되지 않고 이미 결제한 기간이 끝날 때까지 서비스를 이용할 수 있습니다.'],
+    ['제5조 (청약철회 및 환불)', '청약철회와 환불은 「전자상거래 등에서의 소비자보호에 관한 법률」과 회사의 환불·해지 규정에 따릅니다.'],
+    ['제6조 (콘텐츠의 권리)', '서비스에서 제공하는 해설 원고의 저작권은 회사에 있으며, 이용자는 개인적인 감상 목적 외에 복제·배포할 수 없습니다. 작품 이미지는 각 소장처와 위키미디어 커먼즈의 공개 라이선스에 따라 표시됩니다.'],
+    ['제7조 (멤버 코드)', '멤버 코드는 구독자 본인만 사용할 수 있으며, 타인과 공유하거나 판매하는 경우 이용이 제한될 수 있습니다.'],
+    ['제8조 (서비스 변경 및 중단)', '회사는 운영상·기술상 필요에 따라 서비스 내용을 변경할 수 있으며, 이용자에게 불리한 변경은 시행 7일 전까지 공지합니다.'],
+    ['부칙', '이 약관은 2026년 11월 1일부터 시행합니다.']]],
+  privacy: ['개인정보처리방침', [
+    ['1. 수집하는 항목', '구독 신청 시 이름, 이메일 주소를 수집합니다. 카드 결제 정보는 결제대행사(토스페이먼츠)가 직접 처리하며 회사는 카드 번호를 저장하지 않습니다.'],
+    ['2. 이용 목적', '구독 신청 확인, 멤버 코드 발송, 결제 및 정기결제 처리, 해지·환불 처리, 고객 문의 응대에 이용합니다.'],
+    ['3. 보유 기간', '구독 해지 후 1년간 보관 후 파기합니다. 다만 전자상거래법에 따라 계약·결제 기록은 5년, 소비자 불만·분쟁 처리 기록은 3년간 보관합니다.'],
+    ['4. 제3자 제공 및 위탁', '결제 처리를 위해 토스페이먼츠에 결제에 필요한 정보를 위탁하며, 그 외에는 이용자의 동의 없이 제3자에게 제공하지 않습니다.'],
+    ['5. 브라우저 저장소', '언어 설정, 음성 속도, QR 스튜디오 작업 내용, 멤버 상태는 이용자 기기의 브라우저 저장소(localStorage)에만 저장되며 서버로 전송되지 않습니다.'],
+    ['6. 이용자의 권리', '이용자는 언제든 고객센터(카카오톡)를 통해 개인정보 열람·정정·삭제·처리정지를 요청할 수 있습니다.'],
+    ['7. 개인정보 보호책임자', 'QURATOR 고객센터 (카카오톡 오픈채팅)'],
+    ['부칙', '이 방침은 2026년 11월 1일부터 시행합니다.']]],
+  refund: ['환불·해지 규정', [
+    ['1. 해지', '언제든 카카오톡 고객센터로 해지를 요청할 수 있습니다. 해지하면 다음 결제일부터 청구되지 않으며, 이미 결제한 기간이 끝날 때까지 계속 이용할 수 있습니다.'],
+    ['2. 7일 이내 전액 환불', '결제일로부터 7일 이내이고 멤버 전용 해설(오늘의 작품 두 번째·세 번째 작품, 아카이브)을 열람하지 않은 경우 전액 환불합니다.'],
+    ['3. 열람 후 환불', '디지털 콘텐츠의 특성상 멤버 전용 해설을 열람한 이후에는 청약철회가 제한될 수 있습니다. 다만 서비스 장애 등 회사 사정으로 이용하지 못한 경우 이용하지 못한 기간만큼 환불합니다.'],
+    ['4. 환불 방법', '카드 결제는 결제 취소로, 계좌이체는 이용자가 알려 준 계좌로 영업일 기준 3일 이내에 환불합니다.'],
+    ['5. 갤러리·기관 상품', '전시 단위 상품은 해설 작성 착수 전에는 전액, 착수 후에는 작업 진행 정도에 따라 별도 협의한 계약 조건에 따릅니다.'],
+    ['부칙', '이 규정은 2026년 11월 1일부터 시행합니다.']]]
+};
+function viewPolicy(kind) {
+  const P = POLICY[kind] || POLICY.terms;
+  app().innerHTML = `<section class="phead"><div class="wrap"><p class="eyebrow"><a href="#/support">${t('nav_support')}</a> / Policy</p><h1>${P[0]}</h1>
+    ${S.lang === 'en' ? '<p>This policy is provided in Korean, and the Korean text governs. Contact us on KakaoTalk with any questions.</p>' : ''}</div></section>
+    <div class="wrap policy">${P[1].map(([h, b]) => `<section><h3>${esc(h)}</h3><p>${esc(b)}</p></section>`).join('')}
+    <p class="note">QURATOR · <a href="${KAKAO}" target="_blank" rel="noopener">${S.lang === 'ko' ? '카카오톡 고객센터' : 'KakaoTalk support'}</a></p></div>`;
+}
+
+/* ---------------- checkout ---------------- */
+function loadScript(src) { return new Promise((res, rej) => { if ($$(`script[src="${src}"]`).length) return res(); const s = document.createElement('script'); s.src = src; s.onload = res; s.onerror = rej; document.head.appendChild(s); }); }
+const payBase = () => location.origin + location.pathname;
+function viewCheckout() {
+  const test = new URLSearchParams(location.hash.split('?')[1] || '').get('paytest') === '1' || store.get('q_paytest', false);
+  if (test) store.set('q_paytest', true);
+  const cardOn = PAY.live || test, n = L();
+  app().innerHTML = `<section class="phead"><div class="wrap"><p class="eyebrow">Membership · Daily Art</p><h1>${t('co_h')}</h1></div></section>
+  <div class="wrap checkout">
+    <aside class="co-sum">
+      <div class="co-mark">${LOGO_MARK}</div>
+      <p class="eyebrow">Daily Art Membership</p>
+      <div class="co-amt">₩${PAY.price.toLocaleString()}<small> / ${t('co_month')}</small></div>
+      <p class="co-vat">${t('co_vat')}</p>
+      <ul>${T.m_l[n].map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+    </aside>
+    <form class="co-form" id="coForm" novalidate>
+      ${test ? `<p class="co-testbar">${t('co_test')}</p>` : ''}
+      <div class="field"><label>${t('co_name')}</label><input name="name" autocomplete="name" required></div>
+      <div class="field"><label>${t('co_email')}</label><input name="email" type="email" autocomplete="email" required></div>
+      <p class="co-lab">${t('co_method')}</p>
+      <label class="co-opt ${cardOn ? '' : 'off'}"><input type="radio" name="m" value="card" ${cardOn ? 'checked' : 'disabled'}><span><b>${t('co_card')}</b><small>${t('co_card_s')}</small></span>${cardOn ? '' : `<em>${t('co_soon')}</em>`}</label>
+      <label class="co-opt"><input type="radio" name="m" value="bank" ${cardOn ? '' : 'checked'}><span><b>${t('co_bank')}</b><small>${t('co_bank_s')}</small></span></label>
+      <label class="co-agree"><input type="checkbox" name="agree"><span>${t('co_agree')} <a href="#/policy/terms" target="_blank">${t('terms')}</a> · <a href="#/policy/privacy" target="_blank">${t('privacy')}</a> · <a href="#/policy/refund" target="_blank">${t('refund')}</a></span></label>
+      <button class="btn btn-ink co-btn" type="submit" id="coBtn"></button>
+    </form>
+  </div>`;
+  const f = $('#coForm'), btn = $('#coBtn');
+  const label = () => { const m = f.m.value; btn.innerHTML = `₩${PAY.price.toLocaleString()} · ${m === 'card' ? t('co_pay') : t('co_apply')} <span class="arrow">→</span>`; };
+  f.onchange = label; label();
+  f.onsubmit = async e => {
+    e.preventDefault();
+    const o = { name: f.name.value.trim(), email: f.email.value.trim(), plan: 'daily' };
+    if (!o.name || !/^\S+@\S+\.\S+$/.test(o.email) || !f.agree.checked) { toast(t('co_need')); return; }
+    if (f.m.value === 'card') {
+      btn.disabled = true;
+      try {
+        await loadScript('https://js.tosspayments.com/v2/standard');
+        const customerKey = 'q_' + (crypto.randomUUID ? crypto.randomUUID() : Date.now() + Math.random().toString(36).slice(2));
+        store.set('q_pending', { ...o, customerKey });
+        const toss = TossPayments(PAY.live ? PAY.clientKey : PAY.testClientKey);
+        await toss.payment({ customerKey }).requestBillingAuth({ method: 'CARD', successUrl: payBase() + '?pay=success', failUrl: payBase() + '?pay=fail', customerEmail: o.email, customerName: o.name });
+      } catch (err) { btn.disabled = false; toast((err && err.message) || t('pay_fail')); }
+      return;
+    }
+    const d = seoulDate().slice(2).replace(/-/g, '');
+    const id = `Q-${d}-${Math.random().toString(36).slice(2, 6).toUpperCase()}`;
+    store.set('q_order', { id, ...o, at: new Date().toISOString() });
+    showOrder(id, o);
+  };
+}
+function showOrder(id, o) {
+  const msg = `[QURATOR Daily Art 구독 신청]\n주문번호: ${id}\n이름: ${o.name}\n이메일: ${o.email}\n금액: 월 ${PAY.price.toLocaleString()}원`;
+  $('.checkout').innerHTML = `<div class="co-done">
+    <div class="co-mark">${LOGO_MARK}</div><p class="eyebrow">Order</p><h2>${t('co_order')}</h2>
+    <div class="co-id">${esc(id)}</div><p>${t('co_order_p')}</p>
+    <div class="co-acts"><button class="btn btn-line" id="cpo">${t('co_copy')}</button><a class="btn btn-kakao" href="${KAKAO}" target="_blank" rel="noopener">${t('co_open')} →</a></div>
+    <form class="code-row" id="codeF2"><input id="code2" placeholder="${t('m_code')}" autocomplete="off"><button class="btn btn-ink btn-sm">${t('m_apply')}</button></form>
+    <p class="note">${t('co_have')}</p></div>`;
+  $('#cpo').onclick = async () => { try { await navigator.clipboard.writeText(msg); toast(t('copied')); } catch { prompt('', msg); } };
+  $('#codeF2').onsubmit = e => { e.preventDefault(); const v = $('#code2').value.trim().toUpperCase(); checkCode(v).then(ok => { if (ok) { activateMember(v); toast(t('m_ok')); location.hash = '#/today'; } else toast(t('m_bad')); }); };
+}
+async function viewPayResult(q) {
+  const ok = q.get('pay') === 'success', pend = store.get('q_pending', {});
+  const box = c => { app().innerHTML = `<div class="wrap checkout"><div class="co-done"><div class="co-mark">${LOGO_MARK}</div>${c}</div></div>`; };
+  if (!ok) { box(`<h2>${t('pay_fail')}</h2><p>${esc(q.get('message') || '')}</p><p>${t('pay_fail_p')}</p><div class="co-acts"><a class="btn btn-ink" href="#/checkout">${t('co_pay')}</a><a class="btn btn-kakao" href="${KAKAO}" target="_blank" rel="noopener">${t('co_open')}</a></div>`); return; }
+  if (!PAY.apiBase) { box(`<p class="eyebrow">Toss Payments</p><h2>${t('pay_test_ok')}</h2><p>${t('pay_test_p')}</p><div class="co-acts"><a class="btn btn-ink" href="#/today">${t('nav_today')} →</a></div>`); return; }
+  box(`<p class="note"><span class="spinner"></span> ${t('pay_wait')}</p>`);
+  try {
+    const r = await fetch(PAY.apiBase + '/billing/confirm', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ authKey: q.get('authKey'), customerKey: q.get('customerKey') || pend.customerKey, name: pend.name, email: pend.email, plan: pend.plan || 'daily' }) }).then(r => r.json());
+    if (!r.code) throw new Error(r.error || 'error');
+    activateMember(r.code); store.set('q_pending', null);
+    box(`<p class="eyebrow">Welcome</p><h2>${t('pay_ok')}</h2><div class="co-id">${esc(r.code)}</div><p>${t('pay_ok_p')}</p><div class="co-acts"><a class="btn btn-ink" href="#/today">${t('nav_today')} →</a></div>`);
+  } catch (e) { box(`<h2>${t('pay_fail')}</h2><p>${esc(e.message)}</p><p>${t('pay_fail_p')}</p><div class="co-acts"><a class="btn btn-kakao" href="${KAKAO}" target="_blank" rel="noopener">${t('co_open')}</a></div>`); }
+}
+
 /* ---------------- modal ---------------- */
 function openSubscribe() {
   const m = $('#modal'), n = L();
@@ -833,15 +1043,14 @@ function openSubscribe() {
     <p class="eyebrow" style="color:var(--seal)">Membership</p><h3>${t('m_h')}</h3><p>${t('m_p')}</p>
     <div class="amt">₩30,000<small> ${t('per_month')}</small></div>
     <ul>${T.m_l[n].map(x => `<li>${esc(x)}</li>`).join('')}</ul>
-    <a class="btn btn-ink" style="width:100%;justify-content:center" href="${TG}" target="_blank" rel="noopener">${t('m_cta')} →</a>
+    <a class="btn btn-ink" style="width:100%;justify-content:center" href="#/checkout">${t('m_cta')} →</a>
     <form class="code-row" id="codeF"><input id="code" placeholder="${t('m_code')}" autocomplete="off"><button class="btn btn-line btn-sm" type="submit">${t('m_apply')}</button></form></div>`;
   m.hidden = false;
   m.onclick = e => { if (e.target === m || e.target.classList.contains('close')) m.hidden = true; };
   $('#codeF').onsubmit = e => {
     e.preventDefault();
     const v = $('#code').value.trim().toUpperCase();
-    if (MEMBER_CODES.includes(v)) { S.member = true; store.set('q_member', true); m.hidden = true; toast(t('m_ok')); route(); }
-    else toast(t('m_bad'));
+    checkCode(v).then(ok => { if (ok) { activateMember(v); m.hidden = true; toast(t('m_ok')); route(); } else toast(t('m_bad')); });
   };
 }
 const MEMBER_CODES = ['QURATOR-BETA', 'DAILYART2026'];
@@ -875,9 +1084,13 @@ async function route() {
   else if (r === 'archive') viewArchive();
   else if (r === 'explore') viewExplore();
   else if (r === 'studio') viewStudio();
+  else if (r === 'support') viewSupport();
+  else if (r === 'policy') viewPolicy(parts[1]);
+  else if (r === 'checkout') viewCheckout();
   else if (r === 'w' && parts[1]) await viewWork(decodeURIComponent(parts[1]));
   else if (r === 'c' && parts[1]) await viewWork(null, parts[1]);
   else if (r === 'x' && parts[1]) await viewExhibition(parts[1]);
+  else if (r === 'pay') viewToday();
   else viewHome();
   $('#app').focus({ preventScroll: true });
 }
@@ -899,6 +1112,14 @@ addEventListener('keydown', e => { if (e.key === 'Escape') { $('#modal').hidden 
     const [works, daily] = await Promise.all([getJSON('data/works.json', fresh), getJSON('data/daily.json', fresh).catch(() => ({}))]);
     S.works = works; S.daily = daily; works.forEach(w => S.byId[w.id] = w);
   } catch (e) { app().innerHTML = '<div class="empty">Failed to load data.</div>'; return; }
+  const q = new URLSearchParams(location.search);
+  if (q.get('pay')) {
+    renderShell('');
+    history.replaceState(null, '', location.pathname + '#/pay');
+    await viewPayResult(q);
+    addEventListener('hashchange', () => {}, { once: true });
+    return;
+  }
   route();
 })();
 })();

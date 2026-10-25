@@ -1,0 +1,15 @@
+name = "qurator-billing"
+main = "index.js"
+compatibility_date = "2026-10-01"
+
+[vars]
+ALLOW_ORIGIN = "https://probe2928-crypto.github.io"
+
+# wrangler kv namespace create SUBS  → paste the id below
+[[kv_namespaces]]
+binding = "SUBS"
+id = "REPLACE_WITH_KV_ID"
+
+# 매일 오전 10시(KST) 결제일 도래 구독 청구
+[triggers]
+crons = ["0 1 * * *"]

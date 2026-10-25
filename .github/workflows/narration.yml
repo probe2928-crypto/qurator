@@ -1,0 +1,43 @@
+name: Docent narration
+
+on:
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Work ids to (re)generate, comma separated (empty = all changed)"
+        required: false
+  push:
+    branches: [main]
+    paths: ["data/works.json"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: narration
+  cancel-in-progress: false
+
+jobs:
+  narrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generate narration
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ELEVENLABS_VOICE_KO: ${{ vars.ELEVENLABS_VOICE_KO }}
+          ELEVENLABS_VOICE_EN: ${{ vars.ELEVENLABS_VOICE_EN }}
+          OPENAI_VOICE_KO: ${{ vars.OPENAI_VOICE_KO }}
+          OPENAI_VOICE_EN: ${{ vars.OPENAI_VOICE_EN }}
+          ONLY: ${{ github.event.inputs.only }}
+        run: python scripts/narrate.py
+      - name: Commit audio
+        run: |
+          git config user.name "qurator-bot"
+          git config user.email "qurator-bot@users.noreply.github.com"
+          git add audio
+          git diff --cached --quiet || (git commit -m "Narration: update docent audio" && git push)
