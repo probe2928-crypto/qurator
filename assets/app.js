@@ -125,7 +125,11 @@ const T = {
   v_loading: ['작품을 불러오는 중', 'Loading artwork'], v_unknown: ['작가 미상', 'Unknown artist'],
   x_works: ['작품', 'works'], x_scan: ['각 작품 옆 QR을 찍거나 아래 목록에서 선택하세요.', 'Scan the QR beside each work, or choose from the list.'],
   back: ['← 돌아가기', '← Back'],
-  nav_support: ['고객센터', 'Support'],
+  nav_support: ['고객센터', 'Support'], nav_features: ['특집', 'Features'],
+  ft_h: ['특집', 'Features'], ft_p: ['지금 미술계에서 가장 뜨거운 작품들을 미술사의 눈으로 읽습니다. 가격과 기록 너머의 의미까지.', 'The works everyone is talking about, read through art history: beyond the price tags and records.'],
+  ft_read: ['특집 읽기', 'Read the feature'], ft_works: ['점', 'works'], ft_src: ['출처', 'Sources'],
+  ft_cr: ['저작권 보호 작품 — 이미지는 소장처·경매사 페이지에서 볼 수 있습니다.', 'In copyright: see the image on the auction house or museum page.'],
+  ft_toc: ['목차', 'Contents'], ft_asof: ['기준', 'as of'], ft_more: ['다른 특집', 'More features'],
   sp_h: ['고객센터', 'Support'], sp_p: ['구독, 결제, 해지, 갤러리 도입까지 카카오톡 오픈채팅으로 문의를 받습니다.', 'Subscriptions, billing, cancellations and gallery projects: talk to us on KakaoTalk.'],
   sp_kakao: ['카카오톡으로 문의하기', 'Message us on KakaoTalk'], sp_kakao_s: ['오픈채팅 · QURATOR 고객센터', 'Open chat · QURATOR Support'],
   sp_faq: ['자주 묻는 질문', 'Frequently asked'], sp_docs: ['약관 및 정책', 'Policies'],
@@ -392,7 +396,7 @@ function splitSentences(text) {
 
 /* ---------------- shell ---------------- */
 function renderShell(route) {
-  $('#nav').innerHTML = [['today', '#/today'], ['explore', '#/explore'], ['studio', '#/studio'], ['pricing', '#/pricing'], ['support', '#/support']]
+  $('#nav').innerHTML = [['today', '#/today'], ['features', '#/features'], ['explore', '#/explore'], ['studio', '#/studio'], ['pricing', '#/pricing'], ['support', '#/support']]
     .map(([k, h]) => `<a href="${h}" class="${route === k ? 'on' : ''}">${t('nav_' + k)}</a>`).join('');
   $$('.lang button').forEach(b => b.classList.toggle('on', b.dataset.lang === S.lang));
   document.documentElement.lang = S.lang;
@@ -434,6 +438,8 @@ function viewHome(scrollTo) {
       <h3>${esc(pick(w.title))}</h3><div class="by">${esc(pick(w.artist))} · ${esc(w.date)}</div>${i && !S.member ? `<span class="lock-chip">● Members</span>` : ''}</div></a>`; }).join('')}</div>
   </div></section>
 
+  <div id="homeFeature"></div>
+
   ${pricingBlock()}
 
   <section class="sec" style="padding-top:0"><div class="wrap founder">
@@ -444,6 +450,10 @@ function viewHome(scrollTo) {
 
   <section class="cta-band"><div class="wrap"><h2>${t('cta_h')}</h2><a class="btn" href="${KAKAO}" target="_blank" rel="noopener">${t('cta_btn')} <span class="arrow">→</span></a></div></section>`;
   hydrate(); reveal(); startStage();
+  loadFeatures().then(list => { const f = list[0], box = $('#homeFeature'); if (!f || !box) return;
+    box.innerHTML = `<section class="sec ft-home"><div class="wrap"><div class="sec-head rv"><div><p class="eyebrow">${t('nav_features')} · ${esc(pick(f.kicker))}</p><h2>${esc(pick(f.title))}</h2></div><a class="link" href="#/features/${esc(f.id)}">${t('ft_read')} <span class="arrow">→</span></a></div>
+      <a class="ft-card rv" href="#/features/${esc(f.id)}">${featCover(f)}<div class="ft-meta"><p>${esc(pick(f.dek))}</p><span class="link">${t('ft_read')} <span class="arrow">→</span></span></div></a></div></section>`;
+    hydrate(box); reveal(box); });
   if (scrollTo) setTimeout(() => { const el = document.getElementById(scrollTo); if (el) el.scrollIntoView({ behavior: 'smooth' }); }, 60);
   function productCard(p, price, per, href, cta) {
     return `<div class="product"><span class="tag">${t(p + '_tag')}</span><h3>${t(p + '_h')}</h3><p>${t(p + '_p')}</p>
@@ -880,6 +890,64 @@ async function viewWork(uid, custom) {
   function row(k, v) { return v ? `<tr><th>${esc(k)}</th><td>${esc(v)}</td></tr>` : ''; }
 }
 
+/* ---------------- features (editorial lists) ---------------- */
+let FEATURES = null;
+async function loadFeatures() {
+  if (FEATURES) return FEATURES;
+  try { FEATURES = await getJSON('data/features.json', { cache: 'no-cache' }); } catch { FEATURES = []; }
+  return FEATURES;
+}
+const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI'];
+function featCover(f, cls = '') {
+  const imgs = f.sections.flatMap(s => s.items).filter(i => i.img).slice(0, 4);
+  return `<div class="ft-cover ${cls}">${imgs.map(i => `<div class="art" data-src="${esc(i.img)}"><span class="ph"></span></div>`).join('')}</div>`;
+}
+async function viewFeatures() {
+  app().innerHTML = `<div class="wrap"><div class="empty"><span class="spinner"></span></div></div>`;
+  const list = await loadFeatures();
+  app().innerHTML = `<section class="phead"><div class="wrap"><p class="eyebrow">Éditions · Features</p><h1>${t('ft_h')}</h1><p>${t('ft_p')}</p></div></section>
+    <div class="wrap ft-list">${list.length ? list.map(f => {
+      const n = f.sections.reduce((a, s) => a + s.items.length, 0);
+      return `<a class="ft-card rv" href="#/features/${esc(f.id)}">${featCover(f)}
+        <div class="ft-meta"><p class="eyebrow">${esc(pick(f.kicker))} · ${esc(f.asof)} ${t('ft_asof')}</p><h2>${esc(pick(f.title))}</h2><p>${esc(pick(f.dek))}</p>
+        <span class="link">${t('ft_read')} · ${n}${S.lang === 'ko' ? t('ft_works') : ' ' + t('ft_works')} <span class="arrow">→</span></span></div></a>`;
+    }).join('') : `<div class="empty">${S.lang === 'ko' ? '첫 특집을 준비하고 있습니다.' : 'Our first feature is on its way.'}</div>`}</div>`;
+  hydrate(); reveal();
+}
+async function viewFeature(id) {
+  app().innerHTML = `<div class="wrap"><div class="empty"><span class="spinner"></span></div></div>`;
+  const list = await loadFeatures(), f = list.find(x => x.id === id);
+  if (!f) { viewFeatures(); return; }
+  let k = 0;
+  const item = it => {
+    k++;
+    const img = it.img ? `<div class="art ft-art" data-src="${esc(it.img)}"><span class="ph">${esc(pick(it.title))}</span></div>`
+      : `<div class="ft-art ft-type"><span class="ft-type-a">${esc(pick(it.artist))}</span><span class="ft-type-t">${esc(pick(it.title))}</span><span class="ft-type-y">${esc(it.year || '')}</span><small>©</small></div>`;
+    return `<article class="ft-item rv" id="w${k}">
+      <div class="ft-num">${String(k).padStart(2, '0')}</div>
+      <div class="ft-fig">${img}${it.imgCredit ? `<a class="ft-credit" href="${esc(it.imgCredit.url)}" target="_blank" rel="noopener">${esc(it.imgCredit.text)}</a>` : ''}${!it.img ? `<p class="ft-crnote">${t('ft_cr')}</p>` : ''}</div>
+      <div class="ft-body">
+        ${it.record ? `<p class="ft-record">${esc(pick(it.record))}</p>` : ''}
+        <h3>${esc(pick(it.title))}</h3>
+        <p class="ft-by">${esc(pick(it.artist))}${it.year ? ', ' + esc(it.year) : ''}${it.medium ? ` · <span>${esc(pick(it.medium))}</span>` : ''}</p>
+        <p class="ft-head">${esc(pick(it.headline))}</p>
+        <p class="ft-why">${esc(pick(it.why))}</p>
+        ${it.sources && it.sources.length ? `<p class="ft-src">${t('ft_src')} · ${it.sources.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>`).join(' · ')}</p>` : ''}
+      </div></article>`;
+  };
+  app().innerHTML = `<header class="ft-hero">${featCover(f, 'big')}<div class="ft-hero-shade"></div>
+      <div class="wrap ft-hero-in"><p class="eyebrow">${esc(pick(f.kicker))} · ${esc(f.asof)} ${t('ft_asof')}</p><h1>${esc(pick(f.title))}</h1><p>${esc(pick(f.dek))}</p></div></header>
+    <div class="wrap ft-wrap">
+      <div class="ft-intro rv">${pick(f.intro).split('\n').map(p => `<p>${esc(p)}</p>`).join('')}</div>
+      <nav class="ft-toc rv"><p class="eyebrow">${t('ft_toc')}</p>${f.sections.map((s, i) => `<a href="javascript:void 0" data-sec="${i}"><span>${ROMAN[i]}</span>${esc(pick(s.title))}<em>${s.items.length}</em></a>`).join('')}</nav>
+      ${f.sections.map((s, i) => `<section class="ft-sec" id="sec${i}"><div class="ft-sec-h rv"><span>${ROMAN[i]}</span><div><h2>${esc(pick(s.title))}</h2>${s.dek ? `<p>${esc(pick(s.dek))}</p>` : ''}</div></div>${s.items.map(item).join('')}</section>`).join('')}
+      ${f.note ? `<p class="note ft-note">${esc(pick(f.note))}</p>` : ''}
+      <div class="ft-end rv"><a class="btn btn-ink" href="#/today">${t('cta_today')} <span class="arrow">→</span></a><a class="btn btn-line" href="#/features">${t('ft_more')}</a></div>
+    </div>`;
+  $$('.ft-toc a').forEach(a => a.onclick = () => { const el = document.getElementById('sec' + a.dataset.sec); if (el) el.scrollIntoView({ behavior: 'smooth' }); });
+  hydrate(); reveal();
+}
+
 /* ---------------- brand ---------------- */
 const LOGO_MARK = '<svg class="mono" viewBox="0 0 40 40" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M20 4C12.5 4 6.5 10.7 6.5 19S12.5 34 20 34 33.5 27.3 33.5 19 27.5 4 20 4Zm0 .7c-5.4 0-9.9 6.4-9.9 14.3S14.6 33.3 20 33.3 29.9 26.9 29.9 19 25.4 4.7 20 4.7Z"/><path fill="currentColor" d="M18.4 31.3c4.3-.6 9.6 1.6 17.1 6.8l-.6.8c-7-4.5-12-6.5-16.3-6.3Z"/></svg>';
 
@@ -1085,6 +1153,7 @@ async function route() {
   else if (r === 'explore') viewExplore();
   else if (r === 'studio') viewStudio();
   else if (r === 'support') viewSupport();
+  else if (r === 'features') parts[1] ? await viewFeature(decodeURIComponent(parts[1])) : await viewFeatures();
   else if (r === 'policy') viewPolicy(parts[1]);
   else if (r === 'checkout') viewCheckout();
   else if (r === 'w' && parts[1]) await viewWork(decodeURIComponent(parts[1]));
