@@ -693,3 +693,11 @@ body{word-break:keep-all;overflow-wrap:break-word}
 .ft-img{position:absolute;inset:0;z-index:2;aspect-ratio:auto;background:transparent}
 .ft-img img{object-fit:cover}
 .ft-type .ft-img:has(img.in)~*{visibility:hidden}
+
+/* share actions (viewer) */
+.v-acts{display:flex;gap:8px;margin-top:18px;flex-wrap:wrap}
+.v-acts button{display:inline-flex;align-items:center;gap:7px;padding:7px 13px 7px 11px;font-size:12.5px;letter-spacing:.04em;color:var(--cream-2);border:1px solid rgba(237,230,216,.16);border-radius:2px;transition:color .25s,border-color .25s,background .25s}
+.v-acts button:hover{color:var(--cream);border-color:rgba(237,230,216,.42);background:rgba(237,230,216,.04)}
+.v-acts button:disabled{opacity:.5;cursor:progress}
+.v-acts svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+@media (prefers-reduced-motion:reduce){.v-acts button{transition:none}}

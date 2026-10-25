@@ -117,6 +117,7 @@ const T = {
   st_xqr: ['전시 입구용 QR — 관람객이 전체 작품 목록을 봅니다.', 'Entrance QR — visitors see the full list of works.'],
   st_count: ['점', 'works'], copied: ['링크를 복사했습니다', 'Link copied'], go_explore: ['작품 탐색으로', 'Go to Explore'],
   // viewer
+  v_card: ['카드 이미지', 'Share card'], v_copy: ['링크 복사', 'Copy link'], v_copied: ['링크를 복사했어요', 'Link copied'], v_card_ok: ['카드 이미지를 저장했어요', 'Card image saved'], v_card_wait: ['카드를 만드는 중…', 'Making your card…'],
   v_listen: ['해설 듣기', 'Listen'], v_look: ['이것을 찾아보세요', 'Look closer'], v_words: ['Words to know', 'Words to know'], v_info: ['작품 정보', 'Details'],
   v_more: ['함께 보면 좋은 작품', 'You may also like'], v_artist: ['작가', 'Artist'], v_date: ['연도', 'Date'], v_medium: ['재료', 'Medium'],
   v_coll: ['소장', 'Collection'], v_src: ['출처', 'Source'], v_notfound: ['작품을 찾을 수 없습니다.', 'Artwork not found.'],
@@ -572,7 +573,7 @@ function viewToday(date) {
   const isToday = date === today;
   app().innerHTML = `
   <section class="phead"><div class="wrap">
-    <p class="eyebrow">${t('daily_h')} · Daily Art</p>
+    <p class="eyebrow">${S.lang === 'ko' ? t('daily_h') + ' · Daily Art' : 'Daily Art'}</p>
     <div class="today-date"><span class="d">${f.d}</span><span class="m">${esc(f.m)}</span></div>
     <p style="margin-top:18px">${t('daily_p')}</p>
     ${S.member ? `<div class="member-bar"><span>● ${t('member_on')}</span><a class="link" href="#/archive">${t('archive')} →</a></div>` : ''}
@@ -797,6 +798,7 @@ async function viewWork(uid, custom) {
       <p class="eyebrow">${esc(model.collection || 'QURATOR')}</p>
       <h1>${esc(model.title)}</h1>${model.titleAlt ? `<div class="alt">${esc(model.titleAlt)}</div>` : ''}
       <div class="who"><span>${esc(model.artist || '')}</span>${model.date ? `<span>${esc(model.date)}</span>` : ''}</div>
+      <div class="v-acts">${model.kind === 'curated' ? `<button id="vcard"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3.5" width="14" height="17" rx="1"/><path d="M8 7.5h8v6H8zM8 16.5h5"/></svg>${t('v_card')}</button>` : ''}<button id="vcopy"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>${t('v_copy')}</button></div>
     </div>
     ${model.tagline ? `<p class="v-tag ${tl}" id="vtag">${esc(model.tagline[tl])}</p>` : ''}
     <div class="v-tabs" id="vtabs">${avail.map(l => `<button data-l="${l}" class="${l === tl ? 'on' : ''}">${l === 'ko' ? '한국어' : 'English'}</button>`).join('')}</div>
@@ -877,6 +879,12 @@ async function viewWork(uid, custom) {
   $('#vtext').onclick = e => { const s = e.target.closest('.s'); if (s && (Speech.ok || Speech.urls)) Speech.speakFrom(+s.dataset.i); };
   $('#vtabs').onclick = e => { const b = e.target.closest('button'); if (b) showLang(b.dataset.l); };
   $('#rate').onclick = () => { const rs = [0.9, 1, 1.15, 1.3]; Speech.rate = rs[(rs.indexOf(Speech.rate) + 1) % rs.length]; store.set('q_rate', Speech.rate); $('#rate').textContent = Speech.rate + '×'; if (Speech.audio) Speech.audio.playbackRate = Speech.rate; else if (Speech.playing) Speech.speakFrom(Speech.idx); };
+  $('#vcopy').onclick = () => copyLink(location.href);
+  if ($('#vcard')) $('#vcard').onclick = async e => {
+    const b = e.currentTarget; if (b.disabled) return; b.disabled = true; toast(t('v_card_wait'));
+    try { await saveCard(model.w); } catch (err) { console.warn(err); }
+    b.disabled = false;
+  };
   $('#zoom').onclick = async () => {
     let src = model.imageLg || model.image;
     if (model.kind === 'curated') src = await curatedImage(model.w);
@@ -889,6 +897,95 @@ async function viewWork(uid, custom) {
   await showLang(tl);
   Speech.emit();
   function row(k, v) { return v ? `<tr><th>${esc(k)}</th><td>${esc(v)}</td></tr>` : ''; }
+}
+
+/* ---------------- share: link + 1080×1350 card ---------------- */
+async function copyLink(url) {
+  try { await navigator.clipboard.writeText(url); toast(t('v_copied')); }
+  catch { const i = document.createElement('input'); i.value = url; document.body.appendChild(i); i.select(); try { document.execCommand('copy'); toast(t('v_copied')); } catch {} i.remove(); }
+}
+function loadCorsImage(src) {
+  return new Promise(res => { if (!src) return res(null); const im = new Image(); im.crossOrigin = 'anonymous'; im.referrerPolicy = 'no-referrer'; im.onload = () => res(im); im.onerror = () => res(null); im.src = src; });
+}
+async function drawCard(w, lang) {
+  const W = 1080, H = 1350, M = 84, PAPER = '#F3EFE6', INK = '#16140F', INK2 = '#3B372F', MUTED = '#7A7264', SEAL = '#A8361F';
+  const c = document.createElement('canvas'); c.width = W; c.height = H;
+  const x = c.getContext('2d');
+  const BOD = '"Bodoni Moda", Didot, "Bodoni 72", Georgia, serif', COR = '"Cormorant Garamond", Georgia, serif', KR = '"Noto Serif KR", serif', SANS = '"IBM Plex Sans KR", system-ui, sans-serif';
+  try { await Promise.all([`500 30px ${BOD}`, `italic 400 30px ${COR}`, `600 30px ${KR}`, `400 30px ${KR}`, `500 20px ${SANS}`].map(f => document.fonts.load(f, 'Q가'))); } catch {}
+  const spaced = (str, px, py, gap, align = 'left') => {
+    const widths = [...str].map(ch => x.measureText(ch).width);
+    const total = widths.reduce((a, b) => a + b, 0) + gap * (str.length - 1);
+    let cx = align === 'right' ? px - total : align === 'center' ? px - total / 2 : px;
+    x.textAlign = 'left'; [...str].forEach((ch, i) => { x.fillText(ch, cx, py); cx += widths[i] + gap; });
+  };
+  const wrap = (str, maxW, maxLines) => {
+    const words = String(str).split(/\s+/), lines = []; let cur = '';
+    for (const wd of words) { const tryL = cur ? cur + ' ' + wd : wd; if (x.measureText(tryL).width > maxW && cur) { lines.push(cur); cur = wd; } else cur = tryL; }
+    if (cur) lines.push(cur);
+    if (lines.length > maxLines) { lines.length = maxLines; let l = lines[maxLines - 1]; while (l && x.measureText(l + '…').width > maxW) l = l.slice(0, -1); lines[maxLines - 1] = l.trim() + '…'; }
+    return lines;
+  };
+  x.fillStyle = PAPER; x.fillRect(0, 0, W, H);
+  // masthead: Didone Q + wordmark | Daily Art
+  x.save(); x.translate(M - 4, 52); x.scale(1.5, 1.5); x.fillStyle = INK;
+  x.fill(new Path2D('M20 4C12.5 4 6.5 10.7 6.5 19S12.5 34 20 34 33.5 27.3 33.5 19 27.5 4 20 4Zm0 .7c-5.4 0-9.9 6.4-9.9 14.3S14.6 33.3 20 33.3 29.9 26.9 29.9 19 25.4 4.7 20 4.7Z'), 'evenodd');
+  x.fill(new Path2D('M18.4 31.3c4.3-.6 9.6 1.6 17.1 6.8l-.6.8c-7-4.5-12-6.5-16.3-6.3Z')); x.restore();
+  x.fillStyle = INK; x.font = `500 27px ${BOD}`; x.textBaseline = 'alphabetic'; spaced('QURATOR', M + 64, 92, 9);
+  x.fillStyle = MUTED; x.font = `500 17px ${SANS}`; spaced('DAILY ART', W - M, 90, 5, 'right');
+  x.fillStyle = 'rgba(22,20,15,.16)'; x.fillRect(M, 128, W - 2 * M, 1);
+  // artwork, contained in a soft mat
+  const fx = M, fy = 160, fw = W - 2 * M, fh = 760;
+  x.fillStyle = '#EAE4D7'; x.fillRect(fx, fy, fw, fh);
+  let im = null; try { im = await loadCorsImage(await curatedImage(w, 1200)); } catch {}
+  let ok = false;
+  if (im && im.naturalWidth) {
+    const pad = 28, s = Math.min((fw - pad * 2) / im.naturalWidth, (fh - pad * 2) / im.naturalHeight);
+    const dw = im.naturalWidth * s, dh = im.naturalHeight * s;
+    x.save(); x.shadowColor = 'rgba(22,20,15,.22)'; x.shadowBlur = 28; x.shadowOffsetY = 10;
+    x.drawImage(im, fx + (fw - dw) / 2, fy + (fh - dh) / 2, dw, dh); x.restore();
+    try { x.getImageData(0, 0, 1, 1); ok = true; } catch { ok = false; }
+    if (!ok) { x.fillStyle = '#EAE4D7'; x.fillRect(fx, fy, fw, fh); }
+  }
+  if (!ok) {
+    x.fillStyle = 'rgba(22,20,15,.38)'; x.font = `italic 400 64px ${COR}`; x.textAlign = 'center';
+    wrap(w.title.en, fw - 160, 3).forEach((l, i, a) => x.fillText(l, W / 2, fy + fh / 2 - (a.length - 1) * 38 + i * 76));
+    x.textAlign = 'left';
+  }
+  // label
+  let y = fy + fh + 74;
+  const isKo = lang === 'ko';
+  x.fillStyle = INK; x.font = isKo ? `600 50px ${KR}` : `500 54px ${BOD}`;
+  wrap(w.title[lang], fw, 2).forEach(l => { x.fillText(l, M, y); y += 62; });
+  y -= 8;
+  x.fillStyle = MUTED; x.font = `italic 400 30px ${COR}`;
+  if (isKo) { x.fillText(wrap(w.title.en, fw, 1)[0], M, y); y += 44; }
+  x.fillStyle = INK2; x.font = `400 24px ${isKo ? KR : COR}`;
+  x.fillText(wrap(`${w.artist[lang]}  ·  ${w.date}`, fw, 1)[0], M, y); y += 34;
+  if (w.tagline && y < 1180) {
+    x.font = isKo ? `400 25px ${KR}` : `italic 400 30px ${COR}`;
+    const tl = wrap(w.tagline[lang], fw - 26, y < 1150 ? 2 : 1);
+    x.fillStyle = SEAL; x.fillRect(M, y + 8, 2, tl.length * 38 - 6);
+    x.fillStyle = INK2; tl.forEach((l, i) => x.fillText(l, M + 22, y + 34 + i * 38));
+  }
+  // footer
+  x.fillStyle = 'rgba(22,20,15,.16)'; x.fillRect(M, H - 104, W - 2 * M, 1);
+  x.fillStyle = INK; x.font = `400 20px ${KR}`; x.textAlign = 'left';
+  x.fillText(isKo ? '매일 아침 명작 세 점 — QURATOR Daily Art' : 'Three masterpieces every morning — QURATOR Daily Art', M, H - 58);
+  x.fillStyle = MUTED; x.font = `500 15px ${SANS}`; spaced(((location.host + location.pathname).replace(/\/(index\.html)?$/, '') || 'QURATOR').toUpperCase(), W - M, H - 58, 2, 'right');
+  return c;
+}
+async function saveCard(w) {
+  const c = await drawCard(w, S.lang === 'en' ? 'en' : 'ko');
+  const blob = await new Promise(r => c.toBlob(r, 'image/png'));
+  const name = `qurator-${w.id}.png`;
+  if (!blob) { window.open(c.toDataURL('image/png'), '_blank'); return; }
+  const file = new File([blob], name, { type: 'image/png' });
+  if (navigator.canShare && matchMedia('(pointer:coarse)').matches && navigator.canShare({ files: [file] })) {
+    try { await navigator.share({ files: [file], title: pick(w.title) }); return; } catch (e) { if (e && e.name === 'AbortError') return; }
+  }
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name; document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 4000); toast(t('v_card_ok'));
 }
 
 /* ---------------- features (editorial lists) ---------------- */
