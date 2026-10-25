@@ -1,1 +1,1302 @@
-[]
+[
+ {
+  "id": "hot-30-2026",
+  "asof": "2026.10.26",
+  "kicker": {
+   "ko": "2026 결산 특집",
+   "en": "2026 Year in Art"
+  },
+  "title": {
+   "ko": "2026년 가장 뜨거웠던 미술작품 30선",
+   "en": "The 30 Hottest Artworks of 2026"
+  },
+  "dek": {
+   "ko": "경매장을 뒤흔든 낙찰, 기록을 갈아치운 작품, 올해 전시장의 주인공까지. 가격표 너머의 미술사를 함께 읽습니다.",
+   "en": "The lots that shook the salerooms, the records that fell and the stars of this year's exhibitions, read for the art history behind the price tags."
+  },
+  "intro": {
+   "ko": "올해 세계 미술계에서 가장 많이 이야기된 작품 서른 점을 골랐습니다. 단순히 유명한 그림을 늘어놓는 대신, 2026년 실제 경매에서 화제가 된 작품, 작가나 시장의 기록을 새로 쓴 작품, 그리고 올해 주요 전시에서 관람객을 불러 모은 작품을 세 갈래로 나누어 담았습니다.\n서양미술사를 공부하는 분이라면 숫자만 기억하지 말고, 그 작품이 왜 지금 다시 주목받는지까지 함께 읽어 두기를 권합니다. 가격은 시장의 언어일 뿐, 작품이 미술사에서 차지하는 자리는 그보다 훨씬 오래 남기 때문입니다.",
+   "en": "We picked the thirty works the art world talked about most this year. Rather than a list of famous paintings, they fall into three groups: the lots that made headlines at auction in 2026, the works that set new records for an artist or a market, and the pieces that drew the crowds at this year's major exhibitions.\nIf you study Western art history, remember more than the numbers: read why each work matters again now. Price is the market's language, but a work's place in art history outlasts it."
+  },
+  "cover": [
+   "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Raphael%2C_The_Alba_Madonna%2C_c._1510%2C_NGA_26.jpg/1280px-Raphael%2C_The_Alba_Madonna%2C_c._1510%2C_NGA_26.jpg",
+   "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Rembrandt_-_Zacharius-vis-high-res-sRGB.jpg/1280px-Rembrandt_-_Zacharius-vis-high-res-sRGB.jpg",
+   "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Bayeux_Tapestry_scene57_Harold_death.jpg/1280px-Bayeux_Tapestry_scene57_Harold_death.jpg",
+   "https://upload.wikimedia.org/wikipedia/commons/8/8a/Amedeo_Modigliani_-_Nu_assis_au_collier.jpg"
+  ],
+  "sections": [
+   {
+    "title": {
+     "ko": "올해 경매시장을 뒤흔든 작품",
+     "en": "The lots that shook the auction market"
+    },
+    "dek": {
+     "ko": "2026년 1월부터 10월까지 세계 경매에서 가장 높은 값에 낙찰된 작품들. 가격 순서입니다.",
+     "en": "The highest prices paid at auction from January to October 2026, in order of price."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "넘버 7A, 1948",
+       "en": "Number 7A, 1948"
+      },
+      "artist": {
+       "ko": "잭슨 폴록",
+       "en": "Jackson Pollock"
+      },
+      "year": "1948",
+      "medium": {
+       "ko": "캔버스에 유채와 에나멜",
+       "en": "Oil and enamel on canvas"
+      },
+      "headline": {
+       "ko": "크리스티 뉴욕 · 2026년 5월 18일 · 수수료 포함 1억 8,120만 달러",
+       "en": "Christie's New York · 18 May 2026 · $181.2 million with fees"
+      },
+      "why": {
+       "ko": "콘데나스트를 이끈 S.I. 뉴하우스의 컬렉션 경매에서 여섯 명이 7분가량 경합한 끝에 낙찰되며, 2021년 약 6,100만 달러였던 폴록의 경매 기록을 세 배 가까이 끌어올렸다. 가로 3m를 넘는 이 화면은 개인이 소장한 폴록의 드리핑 회화 가운데 가장 큰 작품으로 꼽힌다. 1948년은 폴록이 붓을 캔버스에서 떼고 물감을 흘려 뿌리는 방식을 완성해 가던 해로, 추상표현주의가 형태를 이룬 순간을 보여 주는 작품이다.",
+       "en": "Six bidders chased this canvas from the S.I. Newhouse collection for roughly seven minutes, and the result nearly tripled Pollock's previous auction high of about $61 million, set in 2021. More than three metres wide, it is described as the largest Pollock drip painting still privately owned. It dates from 1948, the year Pollock was perfecting his poured-paint method, so it captures the moment Abstract Expressionism found its defining form."
+      },
+      "img": null,
+      "sources": [
+       {
+        "label": "Christie's — official post on the result (X)",
+        "url": "https://x.com/ChristiesInc/status/2056511523774767278"
+       },
+       {
+        "label": "Christie's — Newhouse sale page",
+        "url": "https://www.christies.com/auction/masterpieces-the-private-collection-of-s-i-newhouse-24923-nyr"
+       },
+       {
+        "label": "Artnet News",
+        "url": "https://news.artnet.com/market/pollock-brancusi-newhouse-christies-record-2774133"
+       },
+       {
+        "label": "Smithsonian Magazine",
+        "url": "https://www.smithsonianmag.com/smart-news/what-did-jackson-pollock-hope-to-accomplish-with-this-dizzying-drip-painting-which-just-sold-for-a-record-breaking-181-million-180988794/"
+       },
+       {
+        "label": "Artsy",
+        "url": "https://www.artsy.net/article/artsy-editorial-17-new-artist-auction-records-set-2026"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "다나이드",
+       "en": "Danaïde"
+      },
+      "artist": {
+       "ko": "콩스탕탱 브랑쿠시",
+       "en": "Constantin Brâncuși"
+      },
+      "year": "c. 1913",
+      "medium": {
+       "ko": "금박을 입힌 브론즈",
+       "en": "Bronze with gold leaf"
+      },
+      "headline": {
+       "ko": "크리스티 뉴욕 · 2026년 5월 18일 · 수수료 포함 1억 760만 달러",
+       "en": "Christie's New York · 18 May 2026 · $107.6 million with fees"
+      },
+      "why": {
+       "ko": "높이 30cm도 안 되는 작은 두상이 1억 달러를 넘기며 브랑쿠시 기록(2018년 약 7,100만 달러)을 갈아치웠고, 경매에 나온 조각으로는 자코메티 다음가는 역대 2위 가격을 기록했다. 다만 응찰자는 사전 보증을 선 제3자 한 명뿐이어서 시장의 열기에 대한 해석은 엇갈렸다. 인물의 얼굴을 매끈한 타원으로 압축한 이 작품은 형태를 본질만 남기는 브랑쿠시 모더니즘 조각의 핵심을 보여 준다.",
+       "en": "A head under 30 cm tall cleared $100 million, overturning Brâncuși's 2018 record of about $71 million and becoming the second-priciest sculpture ever sold at auction, behind only Giacometti. The only bidder was the third-party guarantor, though, so observers read the result in different ways. Reducing a face to a polished oval, it shows Brâncuși's modernist habit of paring form down to its essence."
+      },
+      "img": null,
+      "sources": [
+       {
+        "label": "Christie's — lot page",
+        "url": "https://www.christies.com/en/lot/lot-6585085"
+       },
+       {
+        "label": "Christie's — Newhouse sale page",
+        "url": "https://www.christies.com/auction/masterpieces-the-private-collection-of-s-i-newhouse-24923-nyr"
+       },
+       {
+        "label": "Artnet News",
+        "url": "https://news.artnet.com/market/pollock-brancusi-newhouse-christies-record-2774133"
+       },
+       {
+        "label": "Artsy",
+        "url": "https://www.artsy.net/article/artsy-editorial-17-new-artist-auction-records-set-2026"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "No. 15 (두 개의 초록과 붉은 띠)",
+       "en": "No. 15 (Two Greens and Red Stripe)"
+      },
+      "artist": {
+       "ko": "마크 로스코",
+       "en": "Mark Rothko"
+      },
+      "year": "1964",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "크리스티 뉴욕 · 2026년 5월 18일 · 수수료 포함 9,840만 달러",
+       "en": "Christie's New York · 18 May 2026 · $98.4 million with fees"
+      },
+      "why": {
+       "ko": "MoMA 이사장을 지낸 컬렉터 애그니스 건드가 작가에게서 직접 사들인 뒤 한 번도 시장에 나오지 않았던 작품으로, 2012년 이후 깨지지 않던 로스코 경매 기록(약 8,690만 달러)을 새로 썼다. 불과 나흘 전 소더비에서 다른 로스코가 8,580만 달러에 팔린 직후라 더욱 주목받았다. 빛이 번지는 듯한 색면이 겹쳐진 1960년대 작품은 로스코가 점점 어둡고 명상적인 화면으로 옮겨 가던 시기를 보여 준다.",
+       "en": "Bought straight from the artist by collector and former MoMA president Agnes Gund and never offered before, it broke the Rothko auction record of about $86.9 million that had stood since 2012. It landed just four days after another Rothko made $85.8 million at Sotheby's, which sharpened the attention. The glowing, stacked colour fields belong to the 1960s, when Rothko was moving toward darker, more contemplative canvases."
+      },
+      "img": null,
+      "sources": [
+       {
+        "label": "Artnet News",
+        "url": "https://news.artnet.com/market/pollock-brancusi-newhouse-christies-record-2774133"
+       },
+       {
+        "label": "Artsy",
+        "url": "https://www.artsy.net/article/artsy-editorial-17-new-artist-auction-records-set-2026"
+       },
+       {
+        "label": "HENI News",
+        "url": "https://heni.com/news/article/mark-rothko-no-15-two-greens-and-red-stripe-2026-05-18"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "붉은 바탕 위의 갈색과 검정",
+       "en": "Brown and Blacks in Reds"
+      },
+      "artist": {
+       "ko": "마크 로스코",
+       "en": "Mark Rothko"
+      },
+      "year": "1957",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "소더비 뉴욕 · 2026년 5월 14일 · 수수료 포함 8,580만 달러",
+       "en": "Sotheby's New York · 14 May 2026 · $85.8 million with fees"
+      },
+      "why": {
+       "ko": "뉴욕의 대표적 딜러 로버트 머누친의 개인 소장품 11점만으로 꾸린 이브닝 세일의 대표작으로, 뉴욕 5월 경매 주간 초반 분위기를 이끌었다. 높이 2.3m의 화면에 붉은 바탕과 짙은 갈색·검정 색면이 맞물리며, 낙찰가는 당시 로스코 작품 중 역대 두 번째였다. 1950년대 후반 로스코가 밝은 색에서 무겁고 깊은 색조로 넘어가는 전환점을 담고 있다.",
+       "en": "The headline lot of an 11-work evening sale drawn from the private collection of New York dealer Robert Mnuchin, it set the tone early in New York's May sales week. On a canvas about 2.3 metres tall, deep browns and blacks press against a red ground, and the price stood as the second-highest ever paid for a Rothko at the time. It marks the late-1950s shift in his palette from luminous hues toward heavier, deeper tones."
+      },
+      "img": null,
+      "sources": [
+       {
+        "label": "Sotheby's — lot page",
+        "url": "https://www.sothebys.com/en/buy/auction/2026/robert-mnuchin-collector-at-heart-evening-auction/brown-and-blacks-in-reds"
+       },
+       {
+        "label": "Sotheby's — New York spring season results",
+        "url": "https://www.sothebys.com/en/articles/editorial-new-york-2026-spring-season-wrap-up"
+       },
+       {
+        "label": "Artnet News",
+        "url": "https://news.artnet.com/market/mnuchin-rothko-sothebys-2773274"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "목걸이를 한 앉은 누드",
+       "en": "Nu assis au collier"
+      },
+      "artist": {
+       "ko": "아메데오 모딜리아니",
+       "en": "Amedeo Modigliani"
+      },
+      "year": "1917–18",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "소더비 런던 · 2026년 6월 24일 · 수수료 포함 4,820만 파운드(약 6,390만 달러)",
+       "en": "Sotheby's London · 24 June 2026 · £48.2 million ($63.9 million) with fees"
+      },
+      "why": {
+       "ko": "영국 투자가 조 루이스의 컬렉션 경매에서 최고가를 기록하며 모딜리아니 작품이 유럽에서 팔린 가격 중 가장 높았고, 이날 경매는 유럽 단일 소장가 경매 최고액(2억 9,630만 파운드)을 세웠다. 1917년 파리에서 경찰이 모딜리아니의 처음이자 유일한 개인전을 닫게 만든 누드 연작에 속하는 작품이다. 길게 늘인 몸과 단순한 윤곽으로 고전 누드를 현대적으로 다시 쓴 그의 대표 양식이 잘 드러난다.",
+       "en": "The top lot of Joe Lewis's collection, it set the highest price for a Modigliani sold in Europe, and the sale overall became the most valuable single-owner auction ever held on the continent (£296.3 million). It belongs to the nude series that led Paris police to shut down Modigliani's only solo show in 1917. Its elongated body and pared-back contours show how he recast the classical nude in a modern idiom."
+      },
+      "img": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Amedeo_Modigliani_-_Nu_assis_au_collier.jpg",
+      "sources": [
+       {
+        "label": "Sotheby's — lot page",
+        "url": "https://www.sothebys.com/buy/6bed180a-7afe-4e43-af45-ef860f87acea/lots/019e3a2c-8e59-71ce-bd4e-634aa7f5bf18"
+       },
+       {
+        "label": "Sotheby's — London summer season results",
+        "url": "https://www.sothebys.com/en/articles/editorial-the-london-sales-summer-season-achieve-the-highest-total-ever-in-europe"
+       },
+       {
+        "label": "The Art Newspaper",
+        "url": "https://www.theartnewspaper.com/2026/06/25/in-a-boost-for-london-sothebys-evening-sale-of-joe-lewis-collection-becomes-most-expensive-sold-in-uk"
+       },
+       {
+        "label": "Artnet News",
+        "url": "https://news.artnet.com/market/392-6-m-lewis-collection-sale-smashes-records-led-by-63-9-m-modigliani-2783495"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "붓꽃",
+       "en": "Iris"
+      },
+      "artist": {
+       "ko": "클로드 모네",
+       "en": "Claude Monet"
+      },
+      "year": "c. 1924–25",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "소더비 파리 · 2026년 10월 22일 · 수수료 포함 5,000만 유로(약 5,620만 달러)",
+       "en": "Sotheby's Paris · 22 October 2026 · €50 million ($56.2 million) with fees"
+      },
+      "why": {
+       "ko": "모네의 유족에게서 슐룸베르제 가문으로 넘어간 뒤 약 한 세기 동안 파리의 저택 거실에만 걸려 있던 작품으로, 추정가(2,200만~3,000만 유로)를 크게 넘기며 프랑스 경매 사상 최고가를 기록했다(물가 보정 없이 기준). 가로 약 1.8m의 대형 캔버스는 복원이나 바니시 처리를 거친 적이 없어 원래 상태가 거의 그대로다. 말년의 모네가 지베르니 정원의 꽃을 거의 추상에 가까운 붓질로 풀어낸 시기의 작품이다.",
+       "en": "Passed from Monet's family to the Schlumberger collection, it hung in a Paris family home for around a century before soaring past its €22–30 million estimate to become the most expensive work ever auctioned in France (not adjusting for inflation). The roughly 1.8-metre-wide canvas has never been varnished or restored, so it survives in near-original condition. It comes from Monet's final years, when his Giverny flowers dissolved into brushwork bordering on abstraction."
+      },
+      "img": null,
+      "sources": [
+       {
+        "label": "Sotheby's — lot page",
+        "url": "https://www.sothebys.com/en/buy/auction/2026/la-collection-schlumberger-le-temps-retrouve/iris"
+       },
+       {
+        "label": "The Art Newspaper",
+        "url": "https://www.theartnewspaper.com/2026/10/23/monets-monumental-iris-makes-56m-in-paris"
+       },
+       {
+        "label": "Artsy",
+        "url": "https://www.artsy.net/article/artsy-editorial-562-million-claude-monet-iris-painting-sets-french-auction-record-sothebys"
+       },
+       {
+        "label": "Reuters (via Daily Maverick)",
+        "url": "https://www.dailymaverick.co.za/article/2026-10-23-claude-monets-iris-becomes-most-expensive-artwork-sold-at-auction-in-france-sothebys-says/"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "수련",
+       "en": "Nymphéas"
+      },
+      "artist": {
+       "ko": "클로드 모네",
+       "en": "Claude Monet"
+      },
+      "year": "1907",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "소더비 런던 · 2026년 6월 24일 · 수수료 포함 4,080만 파운드(약 5,400만 달러)",
+       "en": "Sotheby's London · 24 June 2026 · £40.8 million ($54 million) with fees"
+      },
+      "why": {
+       "ko": "유럽 경매에서 10여 년 만에 가장 비싸게 팔린 인상주의 작품으로, 루이스 컬렉션 경매와 같은 날 열린 근현대 이브닝 세일을 이끌었다. 다만 2022년 크리스티 뉴욕에서 기록한 약 5,650만 달러보다 낮은 가격이어서, 최고급 작품도 재판매 때 손해를 볼 수 있다는 점이 화제가 됐다. 연못 수면에 비친 하늘과 수련을 하나의 화면으로 녹여 낸 1907년 연작은 모네 후기 대작 〈수련〉 장식화로 이어지는 출발점이다.",
+       "en": "The most valuable Impressionist work sold at auction in Europe in more than a decade, it led Sotheby's modern and contemporary evening sale on the same night as the Lewis auction. Yet it fetched less than the roughly $56.5 million it made at Christie's New York in 2022, a reminder that even trophy works can lose value on resale. The 1907 series, fusing reflected sky and lilies into a single surface, set the path toward Monet's late monumental water-lily decorations."
+      },
+      "img": null,
+      "sources": [
+       {
+        "label": "Sotheby's — London summer season results",
+        "url": "https://www.sothebys.com/en/articles/editorial-the-london-sales-summer-season-achieve-the-highest-total-ever-in-europe"
+       },
+       {
+        "label": "The Art Newspaper",
+        "url": "https://www.theartnewspaper.com/2026/06/25/in-a-boost-for-london-sothebys-evening-sale-of-joe-lewis-collection-becomes-most-expensive-sold-in-uk"
+       },
+       {
+        "label": "Artnet News",
+        "url": "https://news.artnet.com/market/392-6-m-lewis-collection-sale-smashes-records-led-by-63-9-m-modigliani-2783495"
+       },
+       {
+        "label": "HENI News",
+        "url": "https://heni.com/news/article/claude-monet-nympheas-2026-06-24"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "K 부인의 초상",
+       "en": "Portrait de Madame K."
+      },
+      "artist": {
+       "ko": "호안 미로",
+       "en": "Joan Miró"
+      },
+      "year": "1924",
+      "medium": {
+       "ko": "캔버스에 혼합 재료",
+       "en": "Mixed media on canvas"
+      },
+      "headline": {
+       "ko": "크리스티 뉴욕 · 2026년 5월 18일 · 수수료 포함 5,350만 달러",
+       "en": "Christie's New York · 18 May 2026 · $53.5 million with fees"
+      },
+      "why": {
+       "ko": "추정가 하한(2,500만 달러)의 두 배를 넘기며 2012년 런던에서 세운 미로의 경매 기록(약 3,700만 달러)을 크게 넘어섰다. 첫 소장자가 초현실주의 화가 막스 에른스트였다는 이력도 관심을 모았다. 1924년은 앙드레 브르통이 초현실주의 선언을 발표한 해로, 사실적 묘사를 버리고 기호와 선으로 인물을 표현하기 시작한 미로의 전환기를 보여 준다.",
+       "en": "It more than doubled its $25 million low estimate and far surpassed Miró's previous auction high of about $37 million, set in London in 2012. Its first owner was the Surrealist painter Max Ernst, which added to the interest. Painted in 1924, the year André Breton issued the Surrealist manifesto, it shows Miró trading realistic depiction for signs and lines."
+      },
+      "img": null,
+      "sources": [
+       {
+        "label": "Christie's — Newhouse sale page",
+        "url": "https://www.christies.com/auction/masterpieces-the-private-collection-of-s-i-newhouse-24923-nyr"
+       },
+       {
+        "label": "Artsy",
+        "url": "https://www.artsy.net/article/artsy-editorial-17-new-artist-auction-records-set-2026"
+       },
+       {
+        "label": "Galerie Magazine",
+        "url": "https://galeriemagazine.com/brancusis-danaide-smashes-record-at-christies-s-i-newhouse-sale/"
+       },
+       {
+        "label": "Artnet News",
+        "url": "https://news.artnet.com/market/pollock-brancusi-newhouse-christies-record-2774133"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "뮤지엄 시큐리티 (브로드웨이 멜트다운)",
+       "en": "Museum Security (Broadway Meltdown)"
+      },
+      "artist": {
+       "ko": "장미셸 바스키아",
+       "en": "Jean-Michel Basquiat"
+      },
+      "year": "1983",
+      "medium": {
+       "ko": "캔버스에 아크릴, 오일스틱, 콜라주",
+       "en": "Acrylic, oilstick and collage on canvas"
+      },
+      "headline": {
+       "ko": "소더비 뉴욕 · 2026년 5월 14일 · 수수료 포함 5,270만 달러",
+       "en": "Sotheby's New York · 14 May 2026 · $52.7 million with fees"
+      },
+      "why": {
+       "ko": "2013년 크리스티 런던에서 약 1,450만 달러에 팔렸던 작품이 13년 만에 세 배 이상 오른 가격에 다시 주인을 찾으며, 소더비 뉴욕 현대미술 이브닝 세일의 주요 작품으로 꼽혔다. 가로세로 2m가 넘는 정사각 화면에 글자와 기호, 콜라주가 빽빽하게 들어차 있다. 1983년은 바스키아가 텍스트와 이미지를 겹쳐 쌓는 특유의 화면을 가장 왕성하게 밀어붙이던 절정기로, ‘미술관 경비’라는 제목에서도 미술 제도를 바라보는 그의 시선이 엿보인다.",
+       "en": "Sold for about $14.5 million at Christie's London in 2013, it came back 13 years later at more than three times that sum and was one of the star lots of Sotheby's contemporary evening sale in New York. The square canvas, over two metres on each side, is crowded with words, symbols and collage. It dates from 1983, when Basquiat was pushing his layered mix of text and image hardest, and its title hints at his view of the art institution."
+      },
+      "img": null,
+      "sources": [
+       {
+        "label": "Sotheby's — The Now & Contemporary Evening Auction",
+        "url": "https://www.sothebys.com/en/buy/auction/2026/the-now-contemporary-evening-auction"
+       },
+       {
+        "label": "Artnet News",
+        "url": "https://news.artnet.com/market/mnuchin-rothko-sothebys-2773274"
+       },
+       {
+        "label": "HENI News",
+        "url": "https://heni.com/news/article/jean-michel-basquiat-museum-security-broadway-meltdown-2026-05-14"
+       },
+       {
+        "label": "Artlyst",
+        "url": "https://artlyst.com/?p=197056"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "로렌 의자",
+       "en": "La Chaise lorraine"
+      },
+      "artist": {
+       "ko": "앙리 마티스",
+       "en": "Henri Matisse"
+      },
+      "year": "c. 1919",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "소더비 뉴욕 · 2026년 5월 19일 · 수수료 포함 4,840만 달러",
+       "en": "Sotheby's New York · 19 May 2026 · $48.4 million with fees"
+      },
+      "why": {
+       "ko": "50년 가까이 시장에 나오지 않았던 작품으로, 약 10분간 이어진 경합 끝에 추정가(약 2,500만 달러)의 두 배 가까운 가격에 낙찰돼 마티스 경매 사상 두 번째로 높은 가격을 기록했다. 소더비 근대미술 이브닝 세일의 최고가 작품이기도 했다. 1919년 무렵 니스에 머물던 마티스가 그린 대형 실내화 연작 중 하나로, 평범한 의자 하나로 공간과 색의 관계를 실험한 시기의 성과를 보여 준다.",
+       "en": "Off the market for nearly 50 years, it drew a bidding contest of about ten minutes and finished at almost double its roughly $25 million estimate, the second-highest price for a Matisse at auction and the top lot of Sotheby's modern evening sale. Painted around 1919 during Matisse's Nice period, it belongs to a small group of large interiors. It uses an ordinary chair to probe the relationship between space and colour."
+      },
+      "img": null,
+      "sources": [
+       {
+        "label": "Sotheby's — lot page",
+        "url": "https://www.sothebys.com/buy/c11be70d-5448-4ef7-bdbe-254023b9b984/lots/019da1cb-5364-791e-9f8b-9eaf29f6df9b"
+       },
+       {
+        "label": "Sotheby's — New York spring season results",
+        "url": "https://www.sothebys.com/en/articles/editorial-new-york-2026-spring-season-wrap-up"
+       },
+       {
+        "label": "Artnet News",
+        "url": "https://news.artnet.com/market/sothebys-modern-art-evening-sale-by-the-numbers-2774818"
+       },
+       {
+        "label": "HENI News",
+        "url": "https://heni.com/news/article/sotheby-s-modern-evening-auction-in-new-york-2026-05-19"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": {
+     "ko": "기록을 새로 쓴 작품",
+     "en": "Works that set new records"
+    },
+    "dek": {
+     "ko": "작가 최고가, 국가·장르 최고가처럼 시장의 기준선을 다시 그은 낙찰들. 의미가 큰 순서로 골랐습니다.",
+     "en": "Sales that redrew a benchmark: artist, national and category records, ranked by significance."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "리비아 무녀의 발 연구 (시스티나 예배당 천장화 습작)",
+       "en": "Study for the Foot of the Libyan Sibyl"
+      },
+      "artist": {
+       "ko": "미켈란젤로 부오나로티",
+       "en": "Michelangelo Buonarroti"
+      },
+      "year": "c. 1508–1512",
+      "medium": {
+       "ko": "종이에 붉은 초크 (양면 드로잉)",
+       "en": "Red chalk on paper (recto and verso)"
+      },
+      "record": {
+       "ko": "미켈란젤로 작품 경매 최고가",
+       "en": "Auction record for Michelangelo"
+      },
+      "headline": {
+       "ko": "크리스티 뉴욕 · 2026년 2월 5일 · 수수료 포함 2,720만 달러",
+       "en": "Christie's New York · 5 February 2026 · $27.2 million with fees"
+      },
+      "why": {
+       "ko": "추정가 150만~200만 달러짜리 손바닥만 한 붉은 초크 소묘가 스무 배 가까운 값에 팔리며, 2022년 파리에서 세운 2,430만 달러 기록을 넘어섰습니다. 소장자가 온라인 감정 신청서에 사진을 올린 뒤에야 시스티나 천장의 리비아 무녀 오른발 습작으로 밝혀졌다는 사연까지 더해졌습니다. 거장이 프레스코를 그리기 전 인체를 어떻게 다듬었는지 보여 주는 드문 증거라는 점이 시장의 열기를 정당화합니다.",
+       "en": "A red-chalk sketch only a few centimetres across, estimated at $1.5–2 million, sold for nearly twenty times that and topped the $24.3 million Michelangelo record set in Paris in 2022. Its importance went unrecognised until the owner submitted a photo through Christie's online estimate form. The sheet records how Michelangelo worked out anatomy for the Sistine ceiling before committing it to fresco."
+      },
+      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Study_of_a_Right_Foot%2C_Preparatory_for_the_Libyan_Sibyl_on_the_Sistine_Ceiling.png/1280px-Study_of_a_Right_Foot%2C_Preparatory_for_the_Libyan_Sibyl_on_the_Sistine_Ceiling.png",
+      "sources": [
+       {
+        "label": "Artprice",
+        "url": "https://news.artprice.com/en/13310/record-sale-of-a-michelangelo-drawing-for-the-sistine-chapel-at-christie-s-fetches-27-2-million"
+       },
+       {
+        "label": "CNN (via ABC17)",
+        "url": "https://abc17news.com/entertainment/cnn-style/2026/02/06/tiny-michelangelo-sketch-of-a-foot-sells-for-more-than-27-million-an-auction-record/"
+       },
+       {
+        "label": "Medievalists.net",
+        "url": "https://www.medievalists.net/2026/02/michelangelo-drawing-sells-for-27-2-million/"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "야쇼다와 크리슈나",
+       "en": "Yashoda and Krishna"
+      },
+      "artist": {
+       "ko": "라자 라비 바르마",
+       "en": "Raja Ravi Varma"
+      },
+      "year": "1890s",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "record": {
+       "ko": "인도 미술품 경매 최고가",
+       "en": "Auction record for any Indian artwork"
+      },
+      "headline": {
+       "ko": "사프란아트 뭄바이 · 2026년 4월 1일 · 16억 7,200만 루피(약 1,800만 달러, 수수료 포함 여부 출처 미기재)",
+       "en": "Saffronart, Mumbai · 1 April 2026 · ₹167.2 crore (about $18 million; sources do not state whether fees are included)"
+      },
+      "why": {
+       "ko": "2025년 3월 크리스티에서 M.F. 후세인이 세운 118크로르(약 11억 8,000만 루피) 기록을 크게 넘어서며, 인도 미술 최고가의 주인이 현대 작가에서 19세기 거장으로 바뀌었습니다. 라비 바르마는 유럽식 유화와 인도 신화를 결합해 근대 인도 시각문화의 원형을 만든 화가로, 그의 대작은 개인 소장이 극히 드뭅니다. 국제 경매사가 아닌 인도 현지 경매에서 나온 기록이라 자국 시장의 체급 상승을 보여 줍니다.",
+       "en": "The sale comfortably beat the ₹118 crore paid for M.F. Husain's Untitled (Gram Yatra) at Christie's in 2025, moving India's top auction price from a modernist to a 19th-century master. Ravi Varma fused European oil technique with Hindu mythology and shaped modern Indian visual culture, and major canvases rarely leave private hands. That the record came at a Mumbai house rather than in London or New York marks the domestic market's growing depth."
+      },
+      "img": null,
+      "sources": [
+       {
+        "label": "Business Today",
+        "url": "https://www.businesstoday.in/amp/india/story/rs-167-crore-for-yashoda-and-krishna-raja-ravi-varmas-masterpiece-becomes-highest-value-modern-indian-painting-523740-2026-04-02"
+       },
+       {
+        "label": "ETV Bharat",
+        "url": "https://www.etvbharat.com/en/business/raja-ravi-varma-yashoda-and-krishna-sells-at-record-breaking-rs-167-dot-20-crore-enn26040203644"
+       },
+       {
+        "label": "Artprice",
+        "url": "https://news.artprice.com/en/14183/world-record-a-painting-by-raja-ravi-varma-sold-for-nearly-18-million-dollars-in-mumbai"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "알렉산드리아의 성녀 카타리나로 분한 자화상",
+       "en": "Self-Portrait as Saint Catherine of Alexandria"
+      },
+      "artist": {
+       "ko": "아르테미시아 젠틸레스키",
+       "en": "Artemisia Gentileschi"
+      },
+      "year": "c. 1613–1614",
+      "medium": {
+       "ko": "패널에 유채",
+       "en": "Oil on panel"
+      },
+      "record": {
+       "ko": "작가 경매 최고가 (여성 올드 마스터)",
+       "en": "Auction record for the artist (woman Old Master)"
+      },
+      "headline": {
+       "ko": "크리스티 뉴욕 · 2026년 2월 4일 · 568만 7,000달러 (수수료 포함 여부 출처 미기재)",
+       "en": "Christie's New York · 4 February 2026 · $5.69 million (sources do not state whether fees are included)"
+      },
+      "why": {
+       "ko": "2019년 아르퀴리알 파리에서 「루크레티아」가 세운 526만 달러를 약 8% 넘어선 새 기록입니다. 피렌체 시절 스무 살 남짓의 작가가 순교 성녀의 모습에 자신을 겹쳐 그린 작품으로, 고통을 견딘 여성의 주체성을 화면에 새긴 그의 대표적 주제가 담겨 있습니다. 바로크 미술사에서 재평가가 이어지는 여성 화가의 시장 가치가 한 단계 올라섰음을 확인시켜 줍니다.",
+       "en": "The price edged past the $5.26 million paid for Lucretia at Artcurial in 2019 by about 8%. Painted in Florence when Artemisia was around twenty, it casts the artist as a martyred saint, a recurring way she gave suffering women agency on canvas. It confirms how far the market has followed the scholarly rehabilitation of the leading woman painter of the Baroque."
+      },
+      "img": null,
+      "sources": [
+       {
+        "label": "HENI News",
+        "url": "https://heni.com/news/article/artemisia-gentileschi-self-portrait-as-saint-catherine-of-alexandria-2026-02-04"
+       },
+       {
+        "label": "ANSA",
+        "url": "https://www.ansa.it/english/news/2026/02/05/artemisia-gentileschi-sets-record-at-new-york-auction_7b92c328-2240-4857-a385-a25fde2f9099.html"
+       },
+       {
+        "label": "Apollo Magazine",
+        "url": "https://apollo-magazine.com/?p=1038793"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "라 그랑드 발레 VII",
+       "en": "La Grande Vallée VII"
+      },
+      "artist": {
+       "ko": "조안 미첼",
+       "en": "Joan Mitchell"
+      },
+      "year": "1983",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "record": {
+       "ko": "아시아 경매 사상 여성 작가 최고가",
+       "en": "Most expensive work by a woman artist ever sold at auction in Asia"
+      },
+      "headline": {
+       "ko": "소더비 홍콩 · 2026년 3월 29일 · 수수료 포함 1억 3,740만 홍콩달러(약 1,760만 달러)",
+       "en": "Sotheby's Hong Kong · 29 March 2026 · HK$137.4 million ($17.6 million) with fees"
+      },
+      "why": {
+       "ko": "프랑스 베퇴유 시절 '그랑드 발레' 연작의 한 점이 온라인 응찰자에게 낙찰되며 아시아에서 팔린 여성 작가 작품 가운데 가장 비싼 작품이 됐습니다. 서구 추상표현주의, 그것도 여성 작가의 대작을 아시아 컬렉터가 최상위 가격으로 받아들였다는 점에서 지역 시장의 취향 변화를 보여 줍니다.",
+       "en": "A canvas from Mitchell's Vétheuil-period Grande Vallée series went to an online bidder and became the priciest work by a woman sold at auction in Asia. It shows Asian collectors now paying top prices for Western abstraction by women, a shift in the region's taste."
+      },
+      "img": null,
+      "sources": [
+       {
+        "label": "Artnet News",
+        "url": "https://news.artnet.com/market/hong-kong-sales-march-2026-2759804"
+       },
+       {
+        "label": "Infobae",
+        "url": "https://www.infobae.com/cultura/2026/03/31/con-una-cifra-millonaria-una-obra-de-joan-mitchell-se-convirtio-en-la-mas-cara-en-una-subasta-de-asia/"
+       },
+       {
+        "label": "HENI News",
+        "url": "https://heni.com/news/article/modern-contemporary-sothebys-hong-kong-spring-2026"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "낫싱 어바웃 잇",
+       "en": "Nothing about It"
+      },
+      "artist": {
+       "ko": "나라 요시토모",
+       "en": "Yoshitomo Nara"
+      },
+      "year": "2016",
+      "medium": {
+       "ko": "회화",
+       "en": "Painting"
+      },
+      "record": {
+       "ko": "국내 미술품 경매 사상 최고가 (첫 100억 원 돌파)",
+       "en": "Highest price ever at a Korean art auction (first above ₩10 billion)"
+      },
+      "headline": {
+       "ko": "서울옥션 강남센터 · 2026년 3월 31일 · 낙찰가 150억 원 (수수료 별도)",
+       "en": "Seoul Auction, Gangnam · 31 March 2026 · ₩15 billion hammer (excluding fees)"
+      },
+      "why": {
+       "ko": "2025년 11월 샤갈 「꽃다발」의 94억 원을 단숨에 넘어서며, 국내 경매에서 처음으로 100억 원 벽을 깬 작품이 됐습니다. 같은 날 구사마 야요이의 「호박」도 104억 5,000만 원에 팔려 한국 시장의 최상단을 일본 현대미술이 차지했습니다. 김환기 중심이던 국내 고가 시장이 아시아 동시대 미술로 넓어지는 전환점으로 읽을 만합니다.",
+       "en": "The large girl portrait cleared the ₩9.4 billion paid for Chagall's Bouquet in November 2025 and became the first lot to pass ₩10 billion at a Korean auction. The same evening, Yayoi Kusama's Pumpkin made ₩10.45 billion, putting Japanese contemporary art at the top of the Korean market. Korea's top-end auction market, long led by Kim Whanki, is widening to take in contemporary art from elsewhere in Asia."
+      },
+      "img": null,
+      "sources": [
+       {
+        "label": "경향신문",
+        "url": "https://www.khan.co.kr/article/202603311732001"
+       },
+       {
+        "label": "아시아경제",
+        "url": "https://view.asiae.co.kr/article/2026040114165330838"
+       },
+       {
+        "label": "서울신문",
+        "url": "https://www.seoul.co.kr/news/life/2026/03/31/20260331500300"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "쉬고 있는 어린 사자",
+       "en": "Young Lion Resting"
+      },
+      "artist": {
+       "ko": "렘브란트 하르먼손 판 레인",
+       "en": "Rembrandt Harmensz. van Rijn"
+      },
+      "year": "c. 1638–1642",
+      "medium": {
+       "ko": "갈색 레이드지에 검은 초크·흰 초크 하이라이트·회색 담채, 11.5×15cm",
+       "en": "Black chalk heightened with white, grey wash on brown laid paper, 11.5 × 15 cm"
+      },
+      "record": {
+       "ko": "렘브란트 드로잉 경매 최고가",
+       "en": "Auction record for a Rembrandt drawing"
+      },
+      "headline": {
+       "ko": "소더비 뉴욕 · 2026년 2월 4일 · 1,786만 달러 (수수료 포함 여부 출처 미기재)",
+       "en": "Sotheby's New York · 4 February 2026 · $17.86 million (sources do not state whether fees are included)"
+      },
+      "why": {
+       "ko": "기존 렘브란트 드로잉 최고가 370만 달러의 다섯 배 가까운 값으로, 종이 작품 시장의 상한선을 크게 끌어올렸습니다. 엽서만 한 종이 위에 몇 번의 초크와 담채만으로 맹수의 무게와 긴장을 잡아낸 솜씨는 렘브란트가 왜 소묘의 거장으로 불리는지 보여 줍니다. 같은 주 미켈란젤로 소묘의 기록과 맞물려, 2026년 올드 마스터 드로잉이 재조명된 상징적 순간이 됐습니다.",
+       "en": "The price nearly quintupled the previous $3.7 million high for a Rembrandt drawing and raised the ceiling for the works-on-paper market. With a few strokes of chalk and wash on a postcard-sized sheet, Rembrandt catches the weight and coiled alertness of a lion, which is why he is ranked among the great draughtsmen. Coming the same week as the Michelangelo record, it made early 2026 a moment for Old Master drawings."
+      },
+      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Young_Lion_Resting.jpg/1280px-Young_Lion_Resting.jpg",
+      "sources": [
+       {
+        "label": "Artnet News",
+        "url": "https://news.artnet.com/market/rembrandt-saudi-arabia-2738322"
+       },
+       {
+        "label": "ArtDependence",
+        "url": "https://artdependence.com/articles/sothebys-sets-record-for-rembrandt-drawing-with-18m-young-lion-resting/"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "왕과 왕비",
+       "en": "King and Queen"
+      },
+      "artist": {
+       "ko": "헨리 무어",
+       "en": "Henry Moore"
+      },
+      "year": "1952–1953",
+      "medium": {
+       "ko": "청동 (에디션 4점 + 작가 소장본 1점)",
+       "en": "Bronze (edition of four plus one artist's cast)"
+      },
+      "record": {
+       "ko": "헨리 무어 작품 경매 최고가",
+       "en": "Auction record for Henry Moore"
+      },
+      "headline": {
+       "ko": "크리스티 런던 · 2026년 3월 5일 · 수수료 포함 2,630만 파운드(약 3,520만 달러)",
+       "en": "Christie's London · 5 March 2026 · £26.3 million ($35.2 million) with fees"
+      },
+      "why": {
+       "ko": "추정가 1,000만~1,500만 파운드였지만 다섯 명이 경합해 낙찰가 2,250만 파운드, 수수료 포함 2,630만 파운드까지 올랐습니다. 2016년 크리스티 런던에서 「누운 인물: 페스티벌」이 세운 2,470만 파운드를 근소하게 넘어선 기록입니다. 작가에게 직접 사들인 뒤 처음 시장에 나온 주물이고, 같은 판본의 다른 주물은 테이트와 헨리 무어 재단이 소장하고 있습니다. 전후 영국 조각을 대표하는 이 군상이 근현대 조각의 가치를 다시 확인시켰습니다.",
+       "en": "Five bidders pushed it from a £10–15 million estimate to a £22.5 million hammer, or £26.3 million with fees. That just topped the £24.7 million paid for Reclining Figure: Festival at Christie's London in 2016. This cast had been bought directly from the artist and was offered for the first time; other casts from the edition belong to Tate and the Henry Moore Foundation. The result reaffirms the standing of a defining image of post-war British sculpture."
+      },
+      "img": null,
+      "sources": [
+       {
+        "label": "Artnet News",
+        "url": "https://news.artnet.com/market/christies-london-sales-2026-2751457"
+       },
+       {
+        "label": "Ocula",
+        "url": "https://ocula.com/magazine/art-news/brits-reign-supreme-at-london-march-auctions/"
+       },
+       {
+        "label": "HENI News",
+        "url": "https://heni.com/news/article/henry-moore-king-and-queen-2026-03-05"
+       },
+       {
+        "label": "Il Sole 24 Ore",
+        "url": "https://en.ilsole24ore.com/art/record-henry-moore-and-surrealism-christie-s-AIAjAqoB"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "회화적 건축",
+       "en": "Painterly Architectonic"
+      },
+      "artist": {
+       "ko": "류보프 포포바",
+       "en": "Liubov Popova"
+      },
+      "year": "1918",
+      "medium": {
+       "ko": "회화",
+       "en": "Painting"
+      },
+      "record": {
+       "ko": "작가 경매 최고가 (이전 기록의 약 4배)",
+       "en": "Auction record for the artist (nearly 4× the previous high)"
+      },
+      "headline": {
+       "ko": "크리스티 런던 · 2026년 10월 14일 · 수수료 포함 764만 파운드",
+       "en": "Christie's London · 14 October 2026 · £7.64 million with fees"
+      },
+      "why": {
+       "ko": "낮은 추정가 180만 파운드에서 출발해 약 8분간의 경합 끝에 2007년 세운 기존 기록의 네 배 가까운 값에 낙찰됐습니다. 포포바는 말레비치·타틀린과 함께 러시아 아방가르드를 이끈 여성 작가로, '회화적 건축' 연작은 평면 위에서 색면이 맞물리며 공간을 짓는 실험의 정점입니다. 그동안 남성 동료에 가려 저평가됐던 여성 아방가르드에 대한 시장의 재평가를 상징합니다.",
+       "en": "Bidding ran close to eight minutes from a £1.8 million low estimate, and the final price came in at nearly four times her 2007 record. Popova stood with Malevich and Tatlin at the front of the Russian avant-garde, and her Painterly Architectonics, with their interlocking planes of colour building space on a flat surface, are the core of that work. The price reflects a belated revaluation of women in the avant-garde."
+      },
+      "img": null,
+      "sources": [
+       {
+        "label": "The Art Newspaper",
+        "url": "https://www.theartnewspaper.com/2026/10/15/christies-achieves-%C2%A3219m-in-steady-solid-london-sales"
+       },
+       {
+        "label": "Ocula",
+        "url": "https://ocula.com/magazine/art-news/christies-frieze-week-sales-london-auction/"
+       },
+       {
+        "label": "We Wealth",
+        "url": "https://www.we-wealth.com/?p=150080"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "어머니와 아이 (낸시와 올리비아)",
+       "en": "Mother and Child (Nancy and Olivia)"
+      },
+      "artist": {
+       "ko": "앨리스 닐",
+       "en": "Alice Neel"
+      },
+      "year": "1967",
+      "medium": {
+       "ko": "회화",
+       "en": "Painting"
+      },
+      "record": {
+       "ko": "앨리스 닐 작품 경매 최고가",
+       "en": "Auction record for Alice Neel"
+      },
+      "headline": {
+       "ko": "크리스티 뉴욕 · 2026년 5월 18일 · 수수료 포함 569만 달러",
+       "en": "Christie's New York · 18 May 2026 · $5.69 million with fees"
+      },
+      "why": {
+       "ko": "추정가 120만~180만 달러의 세 배를 넘긴 값으로, 2021년 「핑거 박사의 대기실」이 세운 303만 달러를 약 87% 웃돌았습니다. 화면 속 인물은 작가의 며느리 낸시와 첫 손녀 올리비아로, 이상화된 성모자 대신 갓 엄마가 된 여성의 긴장과 피로까지 숨기지 않고 그렸습니다. 추상이 주류이던 시대에 사람을 그리는 일을 고집한 닐의 초상화가 이제 시장에서도 본격적인 평가를 받기 시작했다는 신호입니다.",
+       "en": "The painting tripled its $1.2–1.8 million estimate and beat the $3.03 million paid for Dr. Finger's Waiting Room in 2021 by about 87%. It shows Neel's daughter-in-law Nancy with her first grandchild, Olivia, and records the strain and fatigue of new motherhood instead of an idealised Madonna and Child. Neel kept painting people when abstraction dominated, and her portraits are now being priced accordingly."
+      },
+      "img": null,
+      "sources": [
+       {
+        "label": "Artsy",
+        "url": "https://www.artsy.net/article/artsy-editorial-17-new-artist-auction-records-set-2026"
+       },
+       {
+        "label": "HENI News",
+        "url": "https://heni.com/news/article/alice-neel-mother-and-child-nancy-and-olivia-2026-05-18"
+       },
+       {
+        "label": "Econique",
+        "url": "https://econique.art/en/art-market-four-new-records-redefine-the-trends/"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "백인당중유태화 (百忍堂中有泰和)",
+       "en": "Baekindang Jungyu Taehwa (Harmony Dwells in a House of a Hundred Forbearances)"
+      },
+      "artist": {
+       "ko": "안중근",
+       "en": "Ahn Jung-geun"
+      },
+      "year": "1910",
+      "medium": {
+       "ko": "종이에 먹, 136.5×33cm (보물)",
+       "en": "Ink on paper, 136.5 × 33 cm (designated Treasure)"
+      },
+      "record": {
+       "ko": "국내 경매 서예 작품 최고가 · 안중근 유묵 최고가",
+       "en": "Highest price for calligraphy at a Korean auction; record for Ahn Jung-geun"
+      },
+      "headline": {
+       "ko": "케이옥션 · 2026년 6월 24일 · 낙찰가 27억 원 (수수료 별도)",
+       "en": "K Auction, Seoul · 24 June 2026 · ₩2.7 billion hammer (excluding fees)"
+      },
+      "why": {
+       "ko": "시작가 16억 원에서 경합이 붙어, 2023년 서울옥션에서 낙찰된 안중근 유묵의 19억 5,000만 원을 7억 5,000만 원 넘어섰습니다. 1910년 2월 뤼순 감옥에서 사형 선고 직후 쓴 글씨로, 약지 한 마디가 잘린 왼손 장인이 낙관을 대신합니다. 보물로 지정된 안중근 유묵이 국내 경매에 나온 것도 처음이라, 미술품을 넘어 근대사의 증언이 시장에서 어떻게 평가되는지 보여 준 사례입니다.",
+       "en": "Bidding from a ₩1.6 billion start passed the ₩1.95 billion paid for another Ahn calligraphy at Seoul Auction in 2023 by ₩750 million. Ahn wrote it in Lüshun Prison in February 1910, just after his death sentence, and stamped it with his left palm, missing the tip of the ring finger, in place of a seal. It was the first state-designated Treasure by Ahn offered at a Korean auction, a test of how the market values a document of modern history."
+      },
+      "img": null,
+      "sources": [
+       {
+        "label": "세계일보",
+        "url": "https://www.segye.com/newsView/20260624519473"
+       },
+       {
+        "label": "전국매일신문(JKN)",
+        "url": "https://news.jkn.co.kr/post/933090"
+       },
+       {
+        "label": "문화일보 (출품 정보)",
+        "url": "https://www.munhwa.com/article/11595393"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": {
+     "ko": "올해 전시장의 주인공",
+     "en": "The stars of this year's exhibitions"
+    },
+    "dek": {
+     "ko": "2026년 주요 미술관 전시와 비엔날레에서 가장 큰 화제를 모은 작품들.",
+     "en": "The works that drew the most attention in 2026's major museum shows and biennials."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "알바 마돈나 (풍경 속의 성모자와 어린 세례 요한)",
+       "en": "The Alba Madonna"
+      },
+      "artist": {
+       "ko": "라파엘로 산치오",
+       "en": "Raphael (Raffaello Sanzio)"
+      },
+      "year": "c. 1509–1511",
+      "medium": {
+       "ko": "캔버스에 유채(목판에서 옮김)",
+       "en": "Oil on canvas, transferred from wood"
+      },
+      "headline": {
+       "ko": "라파엘로: 숭고한 시 · 메트로폴리탄 미술관, 뉴욕 · 2026.3.29–6.28",
+       "en": "Raphael: Sublime Poetry · The Metropolitan Museum of Art, New York · 29 Mar–28 Jun 2026"
+      },
+      "why": {
+       "ko": "미국에서 처음 열린 라파엘로 대형 회고전으로 237점이 모였고, 워싱턴 국립미술관에서 건너온 이 둥근 화면의 성모자가 전시의 얼굴 역할을 맡았다. 석 달 동안 56만 2천여 명이 찾아 메트로폴리탄 미술관에서 2018년 이후 가장 많은 관객을 모은 전시가 됐다. 둥근 틀 안에 인물을 피라미드형으로 안정되게 앉힌 구성은 전성기 르네상스가 도달한 조화의 이상을 가장 맑게 보여 주는 사례로 꼽힌다.",
+       "en": "The Met's first full-scale Raphael retrospective in the U.S. gathered 237 works, and this tondo lent by the National Gallery of Art in Washington served as the show's emblem. More than 562,000 visitors came in three months, making it the museum's best-attended exhibition since 2018. Its calm pyramidal grouping inside a circular frame is often cited as a purest statement of High Renaissance harmony."
+      },
+      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Raphael%2C_The_Alba_Madonna%2C_c._1510%2C_NGA_26.jpg/1280px-Raphael%2C_The_Alba_Madonna%2C_c._1510%2C_NGA_26.jpg",
+      "sources": [
+       {
+        "label": "The Met – Raphael: Sublime Poetry",
+        "url": "https://www.metmuseum.org/exhibitions/raphael-sublime-poetry"
+       },
+       {
+        "label": "The Met press release – most attended since 2018",
+        "url": "https://www.metmuseum.org/press-releases/raphael-visitorship"
+       },
+       {
+        "label": "Galerie Magazine review",
+        "url": "https://galeriemagazine.com/raphael-sublime-poetry-at-the-met-awes-in-renaissance-stars-first-u-s-retrospective/"
+       },
+       {
+        "label": "Studio International review",
+        "url": "https://www.studiointernational.com/index.php/raphael-sublime-poetry-review-metropolitan-museum-of-art-new-york"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "살아있는 자의 마음속에 있는 죽음의 물리적 불가능성",
+       "en": "The Physical Impossibility of Death in the Mind of Someone Living"
+      },
+      "artist": {
+       "ko": "데이미언 허스트",
+       "en": "Damien Hirst"
+      },
+      "year": "1991",
+      "medium": {
+       "ko": "유리, 도장한 강철, 실리콘, 모노필라멘트, 상어, 포름알데히드 용액",
+       "en": "Glass, painted steel, silicone, monofilament, shark and formaldehyde solution"
+      },
+      "headline": {
+       "ko": "데이미언 허스트: 진실은 없어 그러나 모든 것은 가능하지 · 국립현대미술관 서울, 서울 · 2026.3.20–6.28",
+       "en": "Damien Hirst: Nothing Is True But Everything Is Possible · MMCA Seoul, Seoul · 20 Mar–28 Jun 2026"
+      },
+      "why": {
+       "ko": "허스트의 아시아 첫 대규모 개인전으로, 포름알데히드 수조에 떠 있는 뱀상어가 다이아몬드 해골과 함께 전시의 상징이 됐다. 96일간 54만 1,889명이 다녀가 2025년 론 뮤익전을 넘어서며 국립현대미술관이 전시별 관객을 집계한 이래 최다 기록을 세웠다. '철 지난 전시'라는 비판도 적지 않았지만, 죽음을 눈앞의 실물로 들이민 이 작품은 1990년대 yBa가 미술의 재료와 충격의 문법을 어떻게 바꿨는지 여전히 증언한다.",
+       "en": "Hirst's first major solo show in Asia made his tiger shark suspended in formaldehyde, alongside the diamond skull, its defining image. Over 96 days it drew 541,889 visitors, overtaking the 2025 Ron Mueck show to become MMCA's best-attended exhibition since per-show counts began. Critics called the show dated, yet the work still shows how the YBAs of the 1990s rewrote what art could be made of and how it could shock."
+      },
+      "img": null,
+      "sources": [
+       {
+        "label": "MMCA – exhibition page",
+        "url": "https://www.mmca.go.kr/exhibitions/exhibitionsDetail.do?exhFlag=1&exhId=202601060002023"
+       },
+       {
+        "label": "경향신문 – 국현 역대 최고 흥행",
+        "url": "https://www.khan.co.kr/article/202606291606001"
+       },
+       {
+        "label": "뉴스핌 – 96일간 54만명 관람",
+        "url": "https://www.newspim.com/news/view/20260629001071"
+       },
+       {
+        "label": "The Korea Herald review",
+        "url": "https://www.koreaherald.com/article/10697326"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "바이외 태피스트리",
+       "en": "The Bayeux Tapestry"
+      },
+      "artist": {
+       "ko": "작자 미상",
+       "en": "Unknown makers"
+      },
+      "year": "Late 11th century",
+      "medium": {
+       "ko": "리넨 바탕에 모직 자수",
+       "en": "Wool embroidery on linen"
+      },
+      "headline": {
+       "ko": "바이외 태피스트리 · 대영박물관, 런던 · 2026.9.10–2027.7.11",
+       "en": "The Bayeux Tapestry · The British Museum, London · 10 Sep 2026–11 Jul 2027"
+      },
+      "why": {
+       "ko": "노르만 정복을 그린 약 70m 길이의 자수 화폭이 노르망디 바이외 박물관의 리노베이션을 계기로 영국에 대여됐다. 언론은 약 900년 만의 귀환이라 불렀고, 대영박물관은 처음으로 이 작품을 한 줄로 길게 눕혀 전시했다. 첫 회차 표가 매진됐으며 온라인 대기가 아홉 시간에 이르렀다는 보도도 나왔다. 1066년의 사건을 장면마다 이어 풀어낸 이 작품은 중세 시각 서사의 대표작으로 꼽힌다.",
+       "en": "The nearly 70-metre embroidery of the Norman Conquest came to Britain because its home museum in Bayeux is closed for renovation. The press called it a return after some 900 years, and the British Museum is showing it laid flat in one continuous run for the first time. The first ticket release sold out, with reports of nine-hour online queues. Telling the events of 1066 scene by scene, it is a landmark of medieval visual narrative."
+      },
+      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Bayeux_Tapestry_scene57_Harold_death.jpg/1280px-Bayeux_Tapestry_scene57_Harold_death.jpg",
+      "sources": [
+       {
+        "label": "British Museum press release",
+        "url": "https://www.britishmuseum.org/about-us/press/press-releases/first-look-bayeux-tapestry-experience"
+       },
+       {
+        "label": "NPR – returns to England after 900 years",
+        "url": "https://www.npr.org/2026/09/09/nx-s1-5891555/bayeux-tapestry-british-museum-opening"
+       },
+       {
+        "label": "Medievalists.net – opening report",
+        "url": "https://www.medievalists.net/2026/09/bayeux-tapestry-exhibition-opens-at-british-museum/"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "시월드 베니스",
+       "en": "Seaworld Venice"
+      },
+      "artist": {
+       "ko": "플로렌티나 홀칭거",
+       "en": "Florentina Holzinger"
+      },
+      "year": "2026",
+      "medium": {
+       "ko": "퍼포먼스, 설치(물·재활용 정화 시스템)",
+       "en": "Performance and installation with water and a recycling system"
+      },
+      "headline": {
+       "ko": "제61회 베네치아 비엔날레 오스트리아관 · 자르디니, 베네치아 · 2026.5.9–11.22",
+       "en": "61st Venice Biennale, Austrian Pavilion · Giardini, Venice · 9 May–22 Nov 2026"
+      },
+      "why": {
+       "ko": "관객의 배설물을 정화한 물로 전시관을 채운 뒤 나체 퍼포머들이 하루 여덟 시간 공연하는 작품으로, The Art Newspaper는 올해 가장 많이 회자된 국가관으로 꼽았다. 개막 초에는 입장까지 두 시간을 기다려야 했다. 오염과 정화를 둘로 나누는 사고를 뒤집고 기후위기로 잠기는 베네치아를 몸으로 보여 주는 이 작품은 퍼포먼스가 비엔날레의 중심 장르로 자리 잡았음을 보여 준다.",
+       "en": "Holzinger flooded the pavilion with water recycled from visitors' waste, and nude performers work in it eight hours a day. The Art Newspaper called it the most talked-about pavilion of the year, and opening-week queues reached two hours. By collapsing the line between purity and pollution and staging a drowning Venice in live bodies, it confirmed performance as a central genre of the Biennale."
+      },
+      "img": null,
+      "sources": [
+       {
+        "label": "La Biennale di Venezia – Austria 2026",
+        "url": "https://www.labiennale.org/en/art/2026/austria"
+       },
+       {
+        "label": "The Art Newspaper – best pavilions",
+        "url": "https://www.theartnewspaper.com/2026/05/06/our-pick-of-the-best-pavilions-at-the-61st-venice-biennale"
+       },
+       {
+        "label": "The Nation – Biennale review",
+        "url": "https://www.thenation.com/article/culture/2026-venice-biennale-review/"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "무한 거울의 방 — 무한 속에 묻힌 물방울무늬의 희망이 영원히 우주를 덮으리라",
+       "en": "Infinity Mirrored Room—The Hope of the Polka Dots Buried in Infinity Will Eternally Cover the Universe"
+      },
+      "artist": {
+       "ko": "쿠사마 야요이",
+       "en": "Yayoi Kusama"
+      },
+      "year": "2025",
+      "medium": {
+       "ko": "거울 설치",
+       "en": "Mirrored room installation"
+      },
+      "headline": {
+       "ko": "쿠사마 야요이 · 루트비히 미술관, 쾰른 · 2026.3.14–8.2",
+       "en": "Yayoi Kusama · Museum Ludwig, Cologne · 14 Mar–2 Aug 2026"
+      },
+      "why": {
+       "ko": "미술관 개관 50주년을 맞아 300점 넘게 모은 회고전에서 이번 전시를 위해 새로 제작한 무한 거울의 방이 중심에 놓였다. 전시는 폐막 직전까지 47만 명 가까운 관객을 모아 2004–05년 에드워드 호퍼전을 제치고 이 미술관 50년 역사상 최다 기록을 세웠다. 폐막 12일 뒤 작가가 97세로 세상을 떠나면서 이 전시는 쿠사마 생전 마지막 대형 회고전으로 남았다.",
+       "en": "A newly made Infinity Mirrored Room anchored this 300-plus-work retrospective staged for the museum's 50th anniversary. By its final days the show had drawn nearly 470,000 visitors, beating a 2004–05 Edward Hopper exhibition as the most visited in the museum's history. Kusama died 12 days after it closed, at 97, so this became the last major retrospective held in her lifetime."
+      },
+      "img": null,
+      "sources": [
+       {
+        "label": "Museum Ludwig – Yayoi Kusama",
+        "url": "https://www.museum-ludwig.de/en/home/exhibitions/yayoi-kusama"
+       },
+       {
+        "label": "Euronews – attendance record in Cologne",
+        "url": "https://www.euronews.com/2026/08/04/germany-yayoi-kusama-exhibition-breaks-attendance-record-in-cologne"
+       },
+       {
+        "label": "Hyperallergic – art world reacts to Kusama's passing",
+        "url": "https://hyperallergic.com/the-art-world-reacts-to-yayoi-kusamas-passing/"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "계단을 내려가는 나부 No. 2",
+       "en": "Nude Descending a Staircase, No. 2"
+      },
+      "artist": {
+       "ko": "마르셀 뒤샹",
+       "en": "Marcel Duchamp"
+      },
+      "year": "1912",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "마르셀 뒤샹 · 뉴욕 현대미술관(MoMA), 뉴욕 · 2026.4.12–8.22",
+       "en": "Marcel Duchamp · The Museum of Modern Art, New York · 12 Apr–22 Aug 2026"
+      },
+      "why": {
+       "ko": "북미에서 50여 년 만에 열린 뒤샹 회고전으로 300점 넘는 작품이 나왔고, 필라델피아 미술관이 1973년 이후 처음으로 이 그림을 MoMA에 빌려줬다. 1913년 아모리 쇼에서 조롱과 화제를 함께 몰고 왔던 이 그림은 입체주의와 미래주의를 넘나들며 움직임을 한 화면에 쌓아 올렸다. 뒤샹이 그림을 접고 레디메이드로 넘어가기 직전, 회화의 마지막 실험을 보여 주는 작품이다.",
+       "en": "The first North American Duchamp retrospective in more than 50 years brought together over 300 works, and the Philadelphia Museum of Art lent this painting to MoMA for the first time since 1973. Mocked and celebrated at the 1913 Armory Show, it stacks successive moments of movement in a language between Cubism and Futurism. It marks his last major experiment in painting before he turned to the readymade."
+      },
+      "img": null,
+      "sources": [
+       {
+        "label": "MoMA press – Marcel Duchamp",
+        "url": "https://press.moma.org/exhibition/marcel-duchamp/"
+       },
+       {
+        "label": "ARTnews review",
+        "url": "https://www.artnews.com/art-news/reviews/marcel-duchamp-moma-retrospective-review-1234780609/"
+       },
+       {
+        "label": "Philadelphia Inquirer",
+        "url": "https://www.inquirer.com/arts/philadelphia-museum-of-art-moma-duchamp-show-20260404.html"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "시그램 벽화 습작",
+       "en": "Seagram Murals Study"
+      },
+      "artist": {
+       "ko": "마크 로스코",
+       "en": "Mark Rothko"
+      },
+      "year": "1958",
+      "medium": {
+       "ko": "수채화지에 수채와 유채",
+       "en": "Watercolor and oil on watercolor paper"
+      },
+      "headline": {
+       "ko": "피렌체의 로스코 · 팔라초 스트로치 외, 피렌체 · 2026.3.14–8.23",
+       "en": "Rothko in Florence · Palazzo Strozzi and satellite venues, Florence · 14 Mar–23 Aug 2026"
+      },
+      "why": {
+       "ko": "로스코가 1950년 처음 보고 깊은 인상을 받았던 미켈란젤로의 라우렌치아나 도서관 전실에 시그램 벽화 습작 두 점이 걸리면서, 이 작품에 영감을 준 공간과 그 결과물이 한자리에서 만났다. The Art Newspaper는 별 다섯 개를 줬고, 팔라초 스트로치에만 30만 1,730명이 찾아 재단 20년 역사상 최다 관객을 기록했다. 공간이 감정을 가둔다는 미켈란젤로의 건축적 경험이 로스코의 색면 회화로 이어졌다는 사실을 눈으로 확인할 수 있는 전시였다.",
+       "en": "Two studies for the Seagram Murals were hung in Michelangelo's Laurentian Library vestibule, the space Rothko said gave him the feeling he wanted after seeing it in 1950, putting the source and the result side by side. The Art Newspaper gave the show five stars, and Palazzo Strozzi alone logged 301,730 visitors, the most in the foundation's 20-year history. It made visible how an architectural sense of enclosure fed into his colour-field painting."
+      },
+      "img": null,
+      "sources": [
+       {
+        "label": "Palazzo Strozzi – press kit",
+        "url": "https://www.palazzostrozzi.org/wp-content/uploads/2026/03/Press-Kit_Rothko-in-Florence_EN_DEF.pdf"
+       },
+       {
+        "label": "The Art Newspaper – Big Review ★★★★★",
+        "url": "https://www.theartnewspaper.com/2026/04/17/the-big-review-rothko-in-florence"
+       },
+       {
+        "label": "Finestre sull'Arte – record attendance",
+        "url": "https://www.finestresullarte.info/en/exhibitions/rothko-in-florence-closes-with-over-300-000-visitors-it-is-the-palazzo-strozzi-foundation-s-most-visited-exhibition"
+       },
+       {
+        "label": "Wallpaper* – Rothko in Florence",
+        "url": "https://www.wallpaper.com/art/exhibitions-shows/mark-rothko-florence-2026"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "러빙/러빙: 서울 집",
+       "en": "Rubbing/Loving: Seoul Home"
+      },
+      "artist": {
+       "ko": "서도호",
+       "en": "Do Ho Suh"
+      },
+      "year": "2013–2022",
+      "medium": {
+       "ko": "한지에 흑연 탁본",
+       "en": "Graphite rubbing on hanji (Korean paper)"
+      },
+      "headline": {
+       "ko": "서도호 · 국립현대미술관 서울, 서울 · 2026.8.27–2027.2.9",
+       "en": "Do Ho Suh · MMCA Seoul, Seoul · 27 Aug 2026–9 Feb 2027"
+      },
+      "why": {
+       "ko": "작가가 자란 성북동 한옥의 안팎을 한지에 흑연으로 문질러 실물 크기 그대로 옮긴 작업으로, 500점 넘게 나온 작가 생애 최대 규모 전시의 중심을 차지한다. 국내에서 그의 작업 세계 전반을 아우른 첫 전시이며, 내년 도쿄 현대미술관과 홍콩 M+로 순회할 예정이다. 집을 옮겨 다니는 천 조각으로 만들던 작가가 이번에는 집 표면의 기억 자체를 종이에 떠냈다는 점에서, 이주와 기억을 다뤄 온 30년 작업이 도달한 지점을 보여 준다.",
+       "en": "Suh rubbed graphite over hanji to record the Seongbuk-dong hanok he grew up in at full scale, and the result anchors his largest exhibition to date, with more than 500 works. It is the first show in Korea to survey his whole practice and will travel to MOT Tokyo and Hong Kong's M+ next year. Having long made portable fabric houses, here he lifts the memory of a home's very surfaces onto paper, a culmination of three decades of work on migration and memory."
+      },
+      "img": null,
+      "sources": [
+       {
+        "label": "MMCA – Do Ho Suh",
+        "url": "https://www.mmca.go.kr/exhibitions/exhibitionsDetail.do?exhFlag=2&exhId=202601200002041"
+       },
+       {
+        "label": "한국경제 – 집의 작가 서도호가 집으로 돌아왔다",
+        "url": "https://www.hankyung.com/article/202608264545i"
+       },
+       {
+        "label": "The Korea Times",
+        "url": "https://www.koreatimes.co.kr/lifestyle/arts-theater/20260826/do-ho-suh-returns-to-seoul-with-exhibition-beyond-fabric-walls"
+       },
+       {
+        "label": "Korea JoongAng Daily",
+        "url": "https://www.koreajoongangdaily.com/lifestyle/do-ho-suh-on-homecoming-a-coat-that-made-him-cry-and-a-house-in-the-void/12847469"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "성전에서 환상을 보는 즈가리야",
+       "en": "The Vision of Zacharias in the Temple"
+      },
+      "artist": {
+       "ko": "렘브란트 판 레인",
+       "en": "Rembrandt van Rijn"
+      },
+      "year": "1633",
+      "medium": {
+       "ko": "패널에 유채",
+       "en": "Oil on panel"
+      },
+      "headline": {
+       "ko": "새로 확인된 렘브란트 특별 공개 · 레이크스뮤지엄, 암스테르담 · 2026.3.4–",
+       "en": "Rediscovered Rembrandt on view · Rijksmuseum, Amsterdam · from 4 Mar 2026"
+      },
+      "why": {
+       "ko": "1960년 렘브란트 작품 목록에서 빠진 뒤 개인 소장가 손에서 60여 년간 자취를 감췄던 그림이, 2년에 걸친 레이크스뮤지엄의 조사 끝에 진품으로 다시 인정받았다. 연구진은 '야경' 연구에 쓴 매크로 X선 형광 분석과 목판 연대 측정으로 근거를 쌓았고, 그림은 발표 이틀 뒤 장기 대여 형태로 공개됐다. 27세의 렘브란트가 빛 하나로 성서의 극적인 순간을 붙잡던 방식을 새로 확인시켜 준 발견이다.",
+       "en": "Dropped from Rembrandt's catalogue in 1960 and held out of sight by a private buyer for six decades, the panel was reattributed after two years of Rijksmuseum research. Scientists used the macro-XRF scanning developed for the Night Watch and dendrochronology of the panel, and the work went on public view on long-term loan two days after the announcement. It adds a fresh example of how the 27-year-old Rembrandt used a single source of light to stage a biblical moment."
+      },
+      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Rembrandt_-_Zacharius-vis-high-res-sRGB.jpg/1280px-Rembrandt_-_Zacharius-vis-high-res-sRGB.jpg",
+      "sources": [
+       {
+        "label": "PBS NewsHour (AP)",
+        "url": "https://www.pbs.org/newshour/arts/this-painting-was-dismissed-for-years-now-a-dutch-museum-has-confirmed-its-a-genuine-rembrandt"
+       },
+       {
+        "label": "NL Times – on display from today",
+        "url": "https://nltimes.nl/2026/03/04/rediscovered-rembrandt-painting-display-rijksmuseum-today"
+       },
+       {
+        "label": "Euronews",
+        "url": "https://euronews.com/culture/2026/03/02/new-rembrandt-found-rijksmuseum-reveals-dutch-master-made-vision-of-zacharias-in-the-templ"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "죽어가는 노예",
+       "en": "Dying Slave"
+      },
+      "artist": {
+       "ko": "미켈란젤로 부오나로티",
+       "en": "Michelangelo Buonarroti"
+      },
+      "year": "1513–1515",
+      "medium": {
+       "ko": "대리석",
+       "en": "Marble"
+      },
+      "headline": {
+       "ko": "미켈란젤로/로댕: 살아 있는 몸 · 루브르 박물관, 파리 · 2026.4.15–7.20",
+       "en": "Michelangelo / Rodin: Living Bodies · Musée du Louvre, Paris · 15 Apr–20 Jul 2026"
+      },
+      "why": {
+       "ko": "루브르와 로댕 미술관이 함께 꾸린 이 전시는 두 조각가의 작품 약 200점을 처음으로 한자리에 모았고, 입구에서 로댕의 '청동시대'와 마주 선 '죽어가는 노예'가 관객을 맞았다. 두 인체상이 콘트라포스토 자세로 서로를 비추도록 배치해, 네 세기를 사이에 둔 두 거장의 대화를 단번에 보여 줬다. 율리우스 2세 묘를 위해 깎았으나 끝내 쓰이지 않은 이 조각은 미완성의 힘을 근대 조각의 언어로 이어 준 로댕의 출발점으로 다시 읽혔다.",
+       "en": "Co-organised with the Musée Rodin, the show brought some 200 works by the two sculptors together for the first time, and the Dying Slave greeted visitors at the entrance opposite Rodin's Age of Bronze. Set so that the two figures mirror each other in contrapposto, the pairing staged a dialogue across four centuries in a single glance. Carved for the never-completed tomb of Julius II, the marble was reread as a starting point for Rodin's modern use of the unfinished."
+      },
+      "img": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Dying_slave_Louvre_MR_1590%2C_Louvre.jpg/1280px-Dying_slave_Louvre_MR_1590%2C_Louvre.jpg",
+      "sources": [
+       {
+        "label": "Louvre – Michelangelo Rodin: Living Bodies",
+        "url": "https://www.louvre.fr/en/what-s-on/exhibitions/michelangelo-rodin"
+       },
+       {
+        "label": "Apollo Magazine preview",
+        "url": "https://apollo-magazine.com/michelangelo-and-rodin-living-bodies-louvre-paris-preview/"
+       },
+       {
+        "label": "The New Criterion – Unfinished magic",
+        "url": "https://newcriterion.com/dispatch/unfinished-magic/"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "note": {
+   "ko": "가격은 원칙적으로 구매자 수수료를 포함한 금액이며, 출처가 수수료 포함 여부를 밝히지 않았거나 낙찰가만 공개된 경우(국내 경매 등)는 각 항목에 따로 적었습니다. 순위와 선정은 QURATOR 편집부의 판단이며, 모든 사실은 두 곳 이상의 출처로 확인했습니다. 저작권이 남아 있는 작품은 이미지를 싣지 않았습니다.",
+   "en": "Prices include buyer's premium unless the item notes otherwise (some sources give hammer prices only, including Korean sales). Rankings are QURATOR's editorial choice; every fact was checked against at least two sources. Works still in copyright are shown without images."
+  }
+ }
+]

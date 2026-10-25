@@ -688,3 +688,5 @@ body.home .top.solid .lang button.on,body.home.menu-open .top .lang button.on{ba
 .co-bank small{color:var(--muted);font-size:12px}
 .co-mini{font-size:12px;border:1px solid var(--line);padding:4px 9px;border-radius:99px;color:var(--ink-2);background:#fff}
 .co-mini:hover{border-color:var(--ink)}
+/* Korean: break lines between words, never inside a word */
+body{word-break:keep-all;overflow-wrap:break-word}
