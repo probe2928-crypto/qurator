@@ -107,7 +107,7 @@ def main():
             if tts is None:
                 continue
             text = w['text'][lang].strip()
-            digest = hashlib.sha1((text + tts.__name__ + os.environ.get('KOKORO_VOICE', '')).encode()).hexdigest()[:12]
+            digest = hashlib.sha1((text + tts.__name__ + os.environ.get('KOKORO_VOICE', '') + 'misaki-g2p').encode()).hexdigest()[:12]
             d = os.path.join(ROOT, 'audio', w['id']); os.makedirs(d, exist_ok=True)
             mf = os.path.join(d, f'{lang}.json')
             if os.path.exists(mf) and json.load(open(mf, encoding='utf-8')).get('hash') == digest:

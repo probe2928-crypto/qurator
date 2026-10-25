@@ -29,7 +29,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.12"
       - name: System packages
         run: sudo apt-get update -qq && sudo apt-get install -y -qq espeak-ng ffmpeg
       - name: Cache voice model
@@ -41,9 +41,10 @@ jobs:
         run: |
           pip install --quiet torch --index-url https://download.pytorch.org/whl/cpu
           pip install --quiet "kokoro>=0.9.4" soundfile numpy
-          # spaCy (used by Kokoro's English G2P) — pin a known-good pair; narrate.py falls back to espeak if it still fails
-          pip install --quiet "spacy==3.7.5" "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl" || true
-          python -c "import spacy; spacy.load('en_core_web_sm'); print('spacy ok')" || echo "spacy unavailable, espeak fallback will be used"
+          # spaCy powers Kokoro's English G2P; this pinned set is verified to load on ubuntu-latest (compat test 2026-10-26)
+          pip install --quiet "spacy==3.8.2" "thinc==8.3.4" "preshed==3.0.9" "cymem==2.0.10"
+          python -m spacy download en_core_web_sm
+          python -c "import spacy; spacy.load('en_core_web_sm'); print('spacy ok')"
       - name: Generate narration
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
