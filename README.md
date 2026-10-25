@@ -23,7 +23,7 @@
 3. 지정 안 된 날짜는 큐레이션 풀에서 자동 순환
 
 ## 멤버십 (MVP)
-결제 연동 전 베타 단계 — 텔레그램 신청 후 멤버 코드 발급 (`assets/app.js` 의 `MEMBER_CODES`).
+결제 연동 전 베타 단계 — 계좌이체(우리은행) + 카카오톡 주문번호 확인 후 멤버 코드 발급 (`assets/app.js` 의 `MEMBER_CODES`).
 다음 단계: 토스페이먼츠 정기결제 + 로그인(Supabase 등) 연동.
 
 ## 고객센터 · 문의
@@ -31,7 +31,7 @@
 고객센터 `#/support`, 약관 `#/policy/terms`, 개인정보 `#/policy/privacy`, 환불·해지 `#/policy/refund`
 
 ## 결제
-- 지금: 결제 페이지 `#/checkout` → 계좌이체 선택 → 주문번호 발급 → 카카오톡으로 입금 안내 → 확인 후 멤버 코드 발급
+- 지금: 결제 페이지 `#/checkout` → 계좌이체 선택 → 주문번호·입금 계좌 안내(`BANK`) → 손님이 카카오톡으로 주문번호 전송 → 입금 확인 후 멤버 코드 발급
   (멤버 코드는 `MEMBER_CODES` 에 추가, 결제 서버 연결 후에는 서버가 자동 발급)
 - 카드 자동결제 (토스페이먼츠): 테스트는 `#/checkout?paytest=1`
   1. 사업자등록 + 통신판매업 신고 → 토스페이먼츠 가입·심사 → 자동결제(빌링) 계약
@@ -43,3 +43,10 @@
 GitHub 레포 Settings → Secrets and variables → Actions 에 `OPENAI_API_KEY` (또는 `ELEVENLABS_API_KEY` + 변수 `ELEVENLABS_VOICE_KO/EN`) 등록 →
 Actions → "Docent narration" → Run workflow. 작품별 문장 단위 mp3가 `audio/` 에 생성되고, 녹음이 있는 작품은 기기 음성 대신 녹음을 재생합니다.
 works.json 이 바뀌면 바뀐 작품만 자동으로 다시 녹음합니다.
+
+## 특집 (Features)
+`data/features.json` — 배열, 맨 앞이 최신(메인 화면에 노출). 주 3회(월·수·금) 1편씩 추가.
+특집: `{id, asof, kicker{ko,en}, title{ko,en}, dek{ko,en}, intro{ko,en}(문단은 \n), cover[이미지 URL 최대 4], sections[{title, dek, items[]}], note}`
+항목: `{title, artist, year, medium, headline{ko,en}, why{ko,en}, record?{ko,en}, pd(bool), img?(검증된 URL), commons?(Commons 파일명), imgCredit?{text,url}, sources[{label,url}]}`
+- `pd: true`(작가 사후 70년 경과)일 때만 이미지 사용. `img` 또는 `commons` 파일명 → 실패하면 타이포 카드가 자동으로 보임.
+- 저작권 작품(`pd: false`)은 이미지 없이 타이포 카드 + '저작권 보호 작품' 안내.
