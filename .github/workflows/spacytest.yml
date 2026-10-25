@@ -1,0 +1,27 @@
+name: spacy compat test
+on:
+  push:
+    branches: [main]
+    paths: [".github/workflows/spacytest.yml"]
+jobs:
+  t:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { py: "3.12", pins: "" }
+          - { py: "3.10", pins: "" }
+          - { py: "3.11", pins: "numpy<2" }
+          - { py: "3.11", pins: "preshed==3.0.9 cymem==2.0.8 murmurhash==1.0.10 thinc==8.2.5 spacy==3.7.5" }
+          - { py: "3.12", pins: "spacy==3.8.2 thinc==8.3.4 preshed==3.0.9 cymem==2.0.10" }
+    steps:
+      - uses: actions/setup-python@v5
+        with: { python-version: "${{ matrix.py }}" }
+      - run: |
+          pip install --quiet torch --index-url https://download.pytorch.org/whl/cpu
+          pip install --quiet "kokoro>=0.9.4" soundfile ${{ matrix.pins }}
+          python -m spacy download en_core_web_sm || pip install --quiet "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl"
+          pip list 2>/dev/null | grep -iE "^(spacy|thinc|preshed|cymem|murmurhash|numpy|misaki|kokoro|srsly|blis) "
+          python -c "import spacy; n=spacy.load('en_core_web_sm'); print('SPACY_OK', [t.pos_ for t in n('The painter read the book.')])"
+          python -c "from kokoro import KPipeline; p=KPipeline(lang_code='a', repo_id='hexgrad/Kokoro-82M'); print('KOKORO_OK', next(iter(p('Hello from the museum.', voice='af_heart')))[1])"
