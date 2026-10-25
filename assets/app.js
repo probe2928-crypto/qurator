@@ -98,7 +98,7 @@ const T = {
   m_cta: ['텔레그램으로 구독 신청', 'Subscribe via Telegram'], m_code: ['멤버 코드 입력', 'Member code'], m_apply: ['확인', 'Apply'],
   m_ok: ['멤버십이 활성화되었습니다', 'Membership activated'], m_bad: ['코드를 다시 확인해 주세요', 'Please check the code'],
   // explore
-  ex_h: ['작품 탐색', 'Explore'], ex_p: ['큐레이션 명작 24점과 해외 미술관 공개 소장품 수십만 점을 검색하세요. +를 누르면 QR 스튜디오에 담깁니다.', 'Search 24 curated masterpieces and hundreds of thousands of open-access museum works. Tap + to add to QR Studio.'],
+  ex_h: ['작품 탐색', 'Explore'], ex_p: ['큐레이션 명작 24점과 클리블랜드·시카고 미술관 공개 소장품 약 18만 점을 검색하세요. +를 누르면 QR 스튜디오에 담깁니다.', 'Search 24 curated masterpieces and about 180,000 open-access works from Cleveland and Chicago. Tap + to add to QR Studio.'],
   ex_ph: ['작가, 작품명, 주제 — 예: Monet, landscape, 청자', 'Artist, title, subject — e.g. Monet, landscape'],
   all: ['전체', 'All'], curated: ['큐레이션', 'Curated'], kr: ['한국 미술', 'Korean art'], world: ['세계 명작', 'World'],
   searching: ['미술관 소장품 검색 중', 'Searching museum collections'], noresult: ['결과가 없습니다. 영어로도 검색해 보세요.', 'No results. Try another term in English.'],
@@ -179,6 +179,9 @@ const Src = {
     async get(id) { const r = await getJSON(`https://openaccess-api.clevelandart.org/api/artworks/${id}`); return Src.cma.norm(r.data); }
   }
 };
+
+/* The Met retired its public search endpoint on 2026-10-01; single objects (met-ID) still load. */
+const SEARCHABLE = ['cma', 'aic'];
 
 /* compose a guide from metadata when a museum has no narrative text */
 function composeText(w, lang) {
@@ -402,7 +405,7 @@ function viewHome(scrollTo) {
   <section class="sec" style="padding-top:0"><div class="wrap founder">
     <div class="rv"><p class="eyebrow">${t('f_eyebrow')}</p><blockquote>${esc(t('f_quote'))}</blockquote></div>
     <div class="rv"><p style="color:var(--ink-2);font-size:17px;margin:0 0 32px">${esc(t('f_body'))}</p>
-      <div class="facts"><div class="fact"><b>3</b><span>${t('fa1')}</span></div><div class="fact"><b>2+</b><span>${t('fa2')}</span></div><div class="fact"><b>700K</b><span>${t('fa3')}</span></div></div></div>
+      <div class="facts"><div class="fact"><b>3</b><span>${t('fa1')}</span></div><div class="fact"><b>2+</b><span>${t('fa2')}</span></div><div class="fact"><b>180K</b><span>${t('fa3')}</span></div></div></div>
   </div></section>
 
   <section class="cta-band"><div class="wrap"><h2>${t('cta_h')}</h2><a class="btn" href="${TG}" target="_blank" rel="noopener">${t('cta_btn')} <span class="arrow">→</span></a></div></section>`;
@@ -490,7 +493,7 @@ function viewExplore() {
   <div class="wrap" style="padding-bottom:90px">
     <form class="searchbar" id="sform"><input id="sq" type="search" value="${esc(st.q)}" placeholder="${esc(t('ex_ph'))}" autocomplete="off" enterkeyhint="search">
       <button class="btn btn-ink btn-sm" type="submit">Search</button></form>
-    <div class="chips" id="chips">${['all', 'kr', 'world', 'aic', 'met', 'cma'].map(k => `<button class="chip ${st.filter === k ? 'on' : ''}" data-f="${k}">${k.length === 3 && Src[k] ? Src[k].label : t(k)}</button>`).join('')}</div>
+    <div class="chips" id="chips">${['all', 'kr', 'world', 'cma', 'aic'].map(k => `<button class="chip ${st.filter === k ? 'on' : ''}" data-f="${k}">${k.length === 3 && Src[k] ? Src[k].label : t(k)}</button>`).join('')}</div>
     <div id="res"></div></div>`;
   $('#sform').onsubmit = e => { e.preventDefault(); st.q = $('#sq').value.trim(); runSearch(); };
   $('#chips').onclick = e => { const b = e.target.closest('.chip'); if (!b) return; st.filter = b.dataset.f; $$('.chip').forEach(c => c.classList.toggle('on', c === b)); drawResults(); };
@@ -500,9 +503,9 @@ function viewExplore() {
 async function runSearch() {
   const st = exploreState;
   if (!st.q) { st.results = null; drawResults(); return; }
-  st.loading = true; st.results = { aic: null, met: null, cma: null }; drawResults();
+  st.loading = true; st.results = { aic: null, cma: null }; drawResults();
   const q = st.q;
-  await Promise.all(Object.keys(Src).map(async k => {
+  await Promise.all(SEARCHABLE.map(async k => {
     try { st.results[k] = await Src[k].search(q); } catch { st.results[k] = []; }
     if (exploreState.q === q) drawResults();
   }));
@@ -519,8 +522,8 @@ function drawResults() {
   let cur = curatedMatch(st.q);
   if (f === 'kr') cur = cur.filter(w => w.region === 'kr'); else if (f === 'world') cur = cur.filter(w => w.region !== 'kr'); else if (f !== 'all') cur = [];
   const api = [];
-  if (st.results) for (const k of Object.keys(Src)) if ((f === 'all' || f === k) && st.results[k]) api.push(...st.results[k]);
-  const pending = st.results && Object.keys(Src).some(k => (f === 'all' || f === k) && st.results[k] === null);
+  if (st.results) for (const k of SEARCHABLE) if ((f === 'all' || f === k) && st.results[k]) api.push(...st.results[k]);
+  const pending = st.results && SEARCHABLE.some(k => (f === 'all' || f === k) && st.results[k] === null);
   const cards = [
     ...cur.map(w => gcard({ uid: w.id, id: w.id, title: pick(w.title), artist: pick(w.artist), date: w.date, srcLabel: t('curated') })),
     ...api.map(w => gcard({ uid: w.uid, title: w.title, artist: w.artist || t('v_unknown'), date: w.date, image: w.image, srcLabel: Src[w.source].label }))
@@ -642,7 +645,7 @@ async function viewWork(uid, custom) {
         text: { ko: c.ko || '', en: c.en || '' }, collection: '' };
     } else if (S.byId[uid]) {
       const w = S.byId[uid];
-      model = { kind: 'curated', w, title: pick(w.title), titleAlt: S.lang === 'ko' ? w.title.en : w.title.ko, artist: pick(w.artist), date: w.date,
+      model = { kind: 'curated', w, imgCredit: w.imgCredit, title: pick(w.title), titleAlt: S.lang === 'ko' ? w.title.en : w.title.ko, artist: pick(w.artist), date: w.date,
         medium: pick(w.medium), collection: pick(w.collection), text: w.text, tagline: w.tagline, look: w.look, words: w.words };
     } else if (/^(aic|met|cma)-\d+$/.test(uid)) {
       const w = await getApiWork(uid);
@@ -671,7 +674,7 @@ async function viewWork(uid, custom) {
     ${model.words ? `<div class="v-sec"><h3>${t('v_words')}</h3><div class="v-words">${model.words.map(x => `<div><b>${esc(x.en)}</b><span>${esc(x.ko)}</span></div>`).join('')}</div></div>` : ''}
     <div class="v-sec"><h3>${t('v_info')}</h3><table class="meta-t">
       ${row(t('v_artist'), model.artist)}${row(t('v_date'), model.date)}${row(t('v_medium'), model.medium)}${row(t('v_coll'), model.collection)}
-      ${model.place ? row('Origin', model.place) : ''}${model.credit ? row('Credit', model.credit) : ''}
+      ${model.place ? row('Origin', model.place) : ''}${model.imgCredit ? `<tr><th>Image</th><td><a href="${esc(model.imgCredit.url)}" target="_blank" rel="noopener">${esc(model.imgCredit.text)} ↗</a></td></tr>` : ''}${model.credit ? row('Credit', model.credit) : ''}
       ${model.link ? `<tr><th>${t('v_src')}</th><td><a href="${esc(model.link)}" target="_blank" rel="noopener">${esc(model.collection)} ↗</a></td></tr>` : ''}
     </table></div>
     ${model.kind === 'curated' ? `<div class="v-sec"><h3>${t('v_more')}</h3><div class="v-more">${S.works.filter(w => w.region === model.w.region && w.id !== model.w.id).sort(() => Math.random() - .5).slice(0, 3)

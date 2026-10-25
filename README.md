@@ -11,7 +11,7 @@
 |---|---|---|
 | `data/works.json` 큐레이션 | 24점 (국내 10, 해외 14) | 한·영 도슨트 해설, 감상 포인트, 영어 표현 |
 | Art Institute of Chicago API | 약 12만 점 | 미술관 원문 해설 → 브라우저 번역 |
-| The Met Collection API | 약 47만 점 | 메타데이터 기반 안내 |
+| The Met Collection API | 개별 작품만 (검색 API는 2026-10-01 종료) | 메타데이터 기반 안내 |
 | Cleveland Museum of Art Open Access | 약 6만 점 | 벽면 해설 원문 |
 
 - 큐레이션 작품 이미지는 위키백과/위키미디어 커먼즈에서 자동으로 불러옵니다. 특정 이미지를 고정하려면 해당 작품에 `"img": "https://..."` 를 추가하세요.

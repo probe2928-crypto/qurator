@@ -128,7 +128,8 @@
     "en": "demeanor",
     "ko": "몸가짐, 태도"
    }
-  ]
+  ],
+  "img": "https://upload.wikimedia.org/wikipedia/commons/6/69/Hyewon-Miindo.jpg"
  },
  {
   "id": "k-wolha",
@@ -191,7 +192,8 @@
     "en": "understated",
     "ko": "절제된"
    }
-  ]
+  ],
+  "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Hyewon-Wolha.jeongin-3.jpg/1920px-Hyewon-Wolha.jeongin-3.jpg"
  },
  {
   "id": "k-inwang",
@@ -383,7 +385,8 @@
     "en": "colophon",
     "ko": "발문, 감상글"
    }
-  ]
+  ],
+  "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/%EC%84%B8%ED%95%9C%EB%8F%84_%EA%B7%B8%EB%A6%BC.jpg/1920px-%EC%84%B8%ED%95%9C%EB%8F%84_%EA%B7%B8%EB%A6%BC.jpg"
  },
  {
   "id": "k-mongyu",
@@ -574,7 +577,12 @@
     "en": "glaze",
     "ko": "유약"
    }
-  ]
+  ],
+  "img": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Goryeo_Celadon.jpg",
+  "imgCredit": {
+   "text": "Photo: Wikimedia Commons, CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/File:Goryeo_Celadon.jpg"
+  }
  },
  {
   "id": "k-moonjar",
