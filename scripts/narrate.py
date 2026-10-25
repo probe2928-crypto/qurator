@@ -68,7 +68,13 @@ def tts_kokoro(text, lang):
     from kokoro import KPipeline
     voice = os.environ.get('KOKORO_VOICE', 'af_heart')
     if _kokoro is None:
-        _kokoro = KPipeline(lang_code=voice[0])  # 'a' American / 'b' British
+        try:
+            _kokoro = KPipeline(lang_code=voice[0], repo_id='hexgrad/Kokoro-82M')  # 'a' American / 'b' British
+        except Exception as e:  # misaki's English G2P needs spaCy; fall back to espeak phonemes
+            print('English G2P unavailable, using espeak-ng phonemes:', repr(e)[:200])
+            from misaki.espeak import EspeakG2P
+            _kokoro = KPipeline(lang_code='e', repo_id='hexgrad/Kokoro-82M')
+            _kokoro.g2p = EspeakG2P(language='en-gb' if voice[0] == 'b' else 'en-us')
     parts = []
     for _, _, audio in _kokoro(text, voice=voice, speed=float(os.environ.get('KOKORO_SPEED', '0.94'))):
         a = audio.numpy() if hasattr(audio, 'numpy') else np.asarray(audio)
