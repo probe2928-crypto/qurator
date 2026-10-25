@@ -680,3 +680,11 @@ body.home .top.solid .lang button.on,body.home.menu-open .top .lang button.on{ba
   .ft-cover.big{grid-template-columns:1fr 1fr}
   .ft-cover.big .art:nth-child(3){display:none}
 }
+.co-bank{margin:22px auto 6px;max-width:440px;border-top:2px solid var(--ink);text-align:left}
+.co-bank div{display:grid;grid-template-columns:96px 1fr;gap:12px;padding:12px 2px;border-bottom:1px solid var(--line);align-items:center}
+.co-bank dt{font-size:12.5px;color:var(--muted)}
+.co-bank dd{margin:0;font-size:15px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.co-bank dd b{font-family:"Bodoni Moda",var(--serif-en);font-size:18px;font-weight:500;letter-spacing:.02em}
+.co-bank small{color:var(--muted);font-size:12px}
+.co-mini{font-size:12px;border:1px solid var(--line);padding:4px 9px;border-radius:99px;color:var(--ink-2);background:#fff}
+.co-mini:hover{border-color:var(--ink)}
