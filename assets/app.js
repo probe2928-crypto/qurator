@@ -922,11 +922,13 @@ async function viewFeature(id) {
   let k = 0;
   const item = it => {
     k++;
-    const img = it.img ? `<div class="art ft-art" data-src="${esc(it.img)}"><span class="ph">${esc(pick(it.title))}</span></div>`
-      : `<div class="ft-art ft-type"><span class="ft-type-a">${esc(pick(it.artist))}</span><span class="ft-type-t">${esc(pick(it.title))}</span><span class="ft-type-y">${esc(it.year || '')}</span><small>©</small></div>`;
+    const src = it.img || (it.pd && it.commons ? `https://commons.wikimedia.org/wiki/Special:FilePath/${enc(it.commons)}?width=1200` : '');
+    const type = `<span class="ft-type-a">${esc(pick(it.artist))}</span><span class="ft-type-t">${esc(pick(it.title))}</span><span class="ft-type-y">${esc(it.year || '')}</span>${it.pd ? '' : '<small>©</small>'}`;
+    // typographic card always underneath; a verified image fades in on top, and if it fails to load the card stays
+    const img = `<div class="ft-art ft-type">${type}${src ? `<div class="art ft-img" data-src="${esc(src)}"></div>` : ''}</div>`;
     return `<article class="ft-item rv" id="w${k}">
       <div class="ft-num">${String(k).padStart(2, '0')}</div>
-      <div class="ft-fig">${img}${it.imgCredit ? `<a class="ft-credit" href="${esc(it.imgCredit.url)}" target="_blank" rel="noopener">${esc(it.imgCredit.text)}</a>` : ''}${!it.img ? `<p class="ft-crnote">${t('ft_cr')}</p>` : ''}</div>
+      <div class="ft-fig">${img}${it.imgCredit ? `<a class="ft-credit" href="${esc(it.imgCredit.url)}" target="_blank" rel="noopener">${esc(it.imgCredit.text)}</a>` : ''}${it.pd === false ? `<p class="ft-crnote">${t('ft_cr')}</p>` : ''}</div>
       <div class="ft-body">
         ${it.record ? `<p class="ft-record">${esc(pick(it.record))}</p>` : ''}
         <h3>${esc(pick(it.title))}</h3>

@@ -690,3 +690,6 @@ body.home .top.solid .lang button.on,body.home.menu-open .top .lang button.on{ba
 .co-mini:hover{border-color:var(--ink)}
 /* Korean: break lines between words, never inside a word */
 body{word-break:keep-all;overflow-wrap:break-word}
+.ft-img{position:absolute;inset:0;z-index:2;aspect-ratio:auto;background:transparent}
+.ft-img img{object-fit:cover}
+.ft-type .ft-img:has(img.in)~*{visibility:hidden}
