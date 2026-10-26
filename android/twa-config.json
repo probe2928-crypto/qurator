@@ -1,0 +1,12 @@
+{
+  "manifestUrl": "https://probe2928-crypto.github.io/qurator/manifest.webmanifest",
+  "packageId": "kr.qurator.dailyart",
+  "name": "QURATOR — Daily Art",
+  "launcherName": "QURATOR",
+  "startUrl": "/qurator/?src=twa",
+  "appVersionCode": 1,
+  "appVersionName": "1.0.0",
+  "themeColor": "#14120F",
+  "navigationColor": "#14120F",
+  "backgroundColor": "#F3EFE6"
+}

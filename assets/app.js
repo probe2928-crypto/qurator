@@ -18,6 +18,15 @@ const KAKAO = 'https://open.kakao.com/o/gQLZj9Ti';
 /* Payments: set live:true + clientKey (토스페이먼츠 라이브 클라이언트 키) + apiBase (worker URL) when the merchant contract is ready. ?paytest=1 runs the Toss test flow. */
 const BANK = { name: '우리은행', number: '56731673402101', holder: '박*준' };
 const PAY = { live: false, clientKey: '', apiBase: '', testClientKey: 'test_ck_D5GePWvyJnrK0W0k6q8gLzN97Eoq', price: 30000 };
+/* Google Play app (TWA) = consumption-only: no prices, checkout, bank details or links to them (Play payments policy).
+   Launched with ?src=twa; kept in sessionStorage so the same site opened in a normal browser tab is unaffected. */
+const PLAY = (() => {
+  try {
+    if (new URLSearchParams(location.search).get('src') === 'twa' || document.referrer.startsWith('android-app://')) sessionStorage.setItem('q_play', '1');
+    return sessionStorage.getItem('q_play') === '1';
+  } catch { return false; }
+})();
+if (PLAY) document.documentElement.classList.add('play');
 const seoulDate = (d = new Date()) => d.toLocaleDateString('sv-SE', { timeZone: 'Asia/Seoul' });
 async function getJSON(url, opt) { const r = await fetch(url, opt); if (!r.ok) throw new Error(r.status + ' ' + url); return r.json(); }
 
@@ -98,6 +107,8 @@ const T = {
   // modal
   m_h: ['Daily Art 멤버십', 'Daily Art Membership'], m_p: ['매일 세 점의 명작을 영어 해설로. 언제든 해지할 수 있습니다.', 'Three masterpieces a day in English. Cancel anytime.'],
   m_l: [['매일 3점 영문 해설 + 한국어 번역', '음성 해설 · 감상 포인트 · 오늘의 표현', '지난 작품 아카이브 무제한', '앱처럼 홈 화면에 설치'], ['3 English commentaries daily + Korean', 'Audio · what to look for · words to know', 'Unlimited archive', 'Install on your home screen']],
+  play_unlock: ['멤버 코드로 열기', 'Unlock with member code'], play_h: ['멤버 전용 해설', 'Members-only commentary'],
+  play_p: ['Daily Art 멤버십은 QURATOR 웹사이트에서 신청할 수 있습니다. 받은 멤버 코드를 아래에 입력하면 이 기기에서 계속 열람됩니다.', 'Daily Art membership is available on the QURATOR website. Enter the member code you received below and this device stays unlocked.'],
   m_cta: ['구독 신청하기', 'Subscribe now'], m_code: ['멤버 코드 입력', 'Member code'], m_apply: ['확인', 'Apply'],
   m_ok: ['멤버십이 활성화되었습니다', 'Membership activated'], m_bad: ['코드를 다시 확인해 주세요', 'Please check the code'],
   // explore
@@ -398,13 +409,13 @@ function splitSentences(text) {
 
 /* ---------------- shell ---------------- */
 function renderShell(route) {
-  $('#nav').innerHTML = [['today', '#/today'], ['features', '#/features'], ['explore', '#/explore'], ['studio', '#/studio'], ['pricing', '#/pricing'], ['support', '#/support']]
+  $('#nav').innerHTML = [['today', '#/today'], ['features', '#/features'], ['explore', '#/explore'], ['studio', '#/studio'], ['pricing', '#/pricing'], ['support', '#/support']].filter(([k]) => !(PLAY && k === 'pricing'))
     .map(([k, h]) => `<a href="${h}" class="${route === k ? 'on' : ''}">${t('nav_' + k)}</a>`).join('');
   $$('.lang button').forEach(b => b.classList.toggle('on', b.dataset.lang === S.lang));
   document.documentElement.lang = S.lang;
   $('#foot').innerHTML = `<div class="foot-in">
     <div class="foot-brand">${LOGO_MARK}<div><div class="fw">QURATOR</div><div class="fs">MAISON DE DOCENT · SÉOUL</div></div></div>
-    <nav class="foot-links"><a href="#/galleries">${S.lang === 'ko' ? '갤러리 도입 안내' : 'For galleries'}</a><a href="#/support">${t('nav_support')}</a><a href="${KAKAO}" target="_blank" rel="noopener">${S.lang === 'ko' ? '카카오톡 문의' : 'KakaoTalk'}</a><a href="#/policy/terms">${t('terms')}</a><a href="#/policy/privacy"><b>${t('privacy')}</b></a><a href="#/policy/refund">${t('refund')}</a></nav>
+    <nav class="foot-links">${PLAY ? '' : `<a href="#/galleries">${S.lang === 'ko' ? '갤러리 도입 안내' : 'For galleries'}</a>`}<a href="#/support">${t('nav_support')}</a><a href="${KAKAO}" target="_blank" rel="noopener">${S.lang === 'ko' ? '카카오톡 문의' : 'KakaoTalk'}</a><a href="#/policy/terms">${t('terms')}</a><a href="#/policy/privacy"><b>${t('privacy')}</b></a><a href="#/policy/refund">${t('refund')}</a></nav>
   </div>
   <div class="foot-in foot-legal"><span>${esc(t('biz'))}</span><span>© 2026 QURATOR · ${esc(t('foot_note'))}</span></div>`;
 }
@@ -419,12 +430,12 @@ function viewHome(scrollTo) {
   ${heroBlock()}
   <div class="marquee" aria-hidden="true"><div class="marquee-in">${(new Array(2)).fill(['Louvre', 'Prado', 'Uffizi', 'Rijksmuseum', '국립중앙박물관', '간송미술관', 'Cleveland Museum of Art', 'Text · Voice · Multilingual']).flat().map(s => `<span>${s}</span>`).join('')}</div></div>
 
-  <section class="sec" id="products"><div class="wrap">
+  ${PLAY ? '' : `<section class="sec" id="products"><div class="wrap">
     <div class="products rv">
       ${productCard('p1', '₩30,000', t('per_month'), '#/today', t('cta_today'))}
       ${productCard('p2', '₩300,000', t('per_show') + ' ' + t('from'), '#/galleries', S.lang === 'ko' ? '갤러리 도입 안내' : 'For galleries')}
     </div>
-  </div></section>
+  </div></section>`}
 
   ${ribbonBlock()}
 
@@ -481,7 +492,7 @@ function heroBlock() {
       <p class="lead">${esc(t('hero_lead'))}</p>
       <div class="hero-ctas">
         <a class="btn btn-cream" href="#/today">${t('cta_today')} <span class="arrow">→</span></a>
-        <a class="btn btn-ghost" href="#/pricing">${t('cta_gallery')}</a>
+        ${PLAY ? `<a class="btn btn-ghost" href="#/explore">${t('nav_explore')}</a>` : `<a class="btn btn-ghost" href="#/pricing">${t('cta_gallery')}</a>`}
       </div>
     </div></div>
     <div class="stage-foot wrap">
@@ -553,6 +564,7 @@ function ribbonBlock() {
     ${row(row1, 'tall')}${row(row2, 'wide', true)}</section>`;
 }
 function pricingBlock() {
+  if (PLAY) return '';
   const n = L();
   const plan = (k, amt, per, cls, btn) => `<div class="plan ${cls}"><h4>${t(k)}</h4><div class="amt">${amt}<small>${per}</small></div>
     <ul>${T[k + 'l'][n].map(x => `<li>${esc(x)}</li>`).join('')}</ul>${btn}</div>`;
@@ -601,14 +613,14 @@ function dayCard(w, i, open) {
         <a class="btn btn-ink" href="#/w/${w.id}">♪ ${t('open_v')} <span class="arrow">→</span></a>`
       : `<div class="locked"><div class="fade commentary" lang="en"><p>${esc(first)}</p></div>
         <div class="lock-box"><h4>${t('locked_h')}</h4><p>${t('locked_p')}</p>
-        <button class="btn btn-seal" data-act="subscribe">${t('subscribe')} — ₩30,000${t('per_month')}</button></div></div>`}
+        <button class="btn btn-seal" data-act="subscribe">${PLAY ? t('play_unlock') : `${t('subscribe')} — ₩30,000${t('per_month')}`}</button></div></div>`}
     </div></article>`;
 }
 function viewArchive() {
   const today = seoulDate(), days = [];
   for (let i = 0; i < 21; i++) { const d = new Date(Date.parse(today + 'T00:00:00Z') - i * 864e5).toISOString().slice(0, 10); days.push(d); }
   app().innerHTML = `<section class="phead"><div class="wrap"><p class="eyebrow">Daily Art</p><h1>${t('archive')}</h1>
-    <p>${S.member ? t('member_on') : t('locked_p')}</p>${S.member ? '' : `<button class="btn btn-seal" style="margin-top:20px" data-act="subscribe">${t('subscribe')}</button>`}</div></section>
+    <p>${S.member ? t('member_on') : t('locked_p')}</p>${S.member ? '' : `<button class="btn btn-seal" style="margin-top:20px" data-act="subscribe">${PLAY ? t('play_unlock') : t('subscribe')}</button>`}</div></section>
     <div class="wrap" style="padding-bottom:90px">${days.map(d => {
       const f = fmtDate(d, S.lang);
       return `<div style="border-top:1px solid var(--line);padding:26px 0">
@@ -1146,6 +1158,9 @@ const FAQ = [
   ['갤러리 도입은 어떻게 진행되나요?', 'How does a gallery project work?', '카카오톡으로 전시 일정과 작품 목록을 보내 주시면 견적을 드립니다. 해설 작성(Premium)부터 QR 캡션 인쇄 파일, 전시 입구 QR까지 한 번에 준비됩니다.', 'Send your dates and list of works on KakaoTalk for a quote. We prepare texts (Premium), QR caption files and an entrance QR.'],
   ['갤러리가 해설을 직접 수정할 수 있나요?', 'Can a gallery edit the texts itself?', '네. QR 스튜디오에서 작품과 해설을 직접 등록하고 캡션을 바로 인쇄할 수 있습니다.', 'Yes. Add works and texts in QR Studio and print captions immediately.']
 ];
+const FAQ_PLAY = [
+  ['멤버십은 어떻게 이용하나요?', 'How does membership work?', 'Daily Art 멤버십은 QURATOR 웹사이트에서 신청할 수 있습니다. 받은 멤버 코드를 앱의 \'멤버 코드로 열기\'에 입력하면 이 기기에서 계속 열람됩니다.', 'Daily Art membership is available on the QURATOR website. Enter the member code you receive under "Unlock with member code" and this device stays unlocked.']
+];
 function viewSupport() {
   const k = L();
   app().innerHTML = `<section class="phead"><div class="wrap"><p class="eyebrow">Service client</p><h1>${t('sp_h')}</h1><p>${t('sp_p')}</p></div></section>
@@ -1154,12 +1169,12 @@ function viewSupport() {
       <span class="kk-ico"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3.5c-5 0-9 3.1-9 7 0 2.5 1.7 4.7 4.2 6l-.9 3.4c-.1.3.3.5.5.3l4-2.7c.4 0 .8.1 1.2.1 5 0 9-3.1 9-7s-4-7.1-9-7.1Z"/></svg></span>
       <span class="kk-t"><b>${t('sp_kakao')}</b><small>${t('sp_kakao_s')}</small></span><span class="arrow">→</span></a>
     <div class="sp-grid">
-      ${[['구독 신청 · 결제', 'Subscribe & billing', '#/checkout'], ['해지 · 환불', 'Cancel & refund', '#/policy/refund'], ['갤러리 도입 상담', 'Gallery projects', KAKAO], ['멤버 코드 입력', 'Enter member code', 'code']].map(([a, b, h]) =>
+      ${[['구독 신청 · 결제', 'Subscribe & billing', '#/checkout'], ['해지 · 환불', 'Cancel & refund', '#/policy/refund'], ['갤러리 도입 상담', 'Gallery projects', KAKAO], ['멤버 코드 입력', 'Enter member code', 'code']].filter(c => !(PLAY && (c[2] === '#/checkout' || c[2] === KAKAO))).map(([a, b, h]) =>
         h === 'code' ? `<button class="sp-cell" data-act="subscribe"><span>${k ? b : a}</span><i>→</i></button>` :
         `<a class="sp-cell" href="${h}" ${h.startsWith('http') ? 'target="_blank" rel="noopener"' : ''}><span>${k ? b : a}</span><i>→</i></a>`).join('')}
     </div>
     <h2 class="sp-h">${t('sp_faq')}</h2>
-    <div class="faq">${FAQ.map(f => `<details><summary>${esc(f[k])}</summary><p>${esc(f[2 + k])}</p></details>`).join('')}</div>
+    <div class="faq">${(PLAY ? FAQ_PLAY.concat(FAQ.filter(f => !/결제는|앱을 설치|갤러리/.test(f[0]))) : FAQ).map(f => `<details><summary>${esc(f[k])}</summary><p>${esc(f[2 + k])}</p></details>`).join('')}</div>
     <h2 class="sp-h">${t('sp_docs')}</h2>
     <div class="sp-grid"><a class="sp-cell" href="#/policy/terms"><span>${t('terms')}</span><i>→</i></a><a class="sp-cell" href="#/policy/privacy"><span>${t('privacy')}</span><i>→</i></a><a class="sp-cell" href="#/policy/refund"><span>${t('refund')}</span><i>→</i></a></div>
   </div>`;
@@ -1290,7 +1305,9 @@ async function viewPayResult(q) {
 /* ---------------- modal ---------------- */
 function openSubscribe() {
   const m = $('#modal'), n = L();
-  m.innerHTML = `<div class="modal-box" role="dialog" aria-modal="true"><button class="close" aria-label="close">×</button>
+  m.innerHTML = PLAY ? `<div class="modal-box" role="dialog" aria-modal="true"><button class="close" aria-label="close">×</button>
+    <p class="eyebrow" style="color:var(--seal)">Membership</p><h3>${t('play_h')}</h3><p>${t('play_p')}</p>
+    <form class="code-row" id="codeF"><input id="code" placeholder="${t('m_code')}" autocomplete="off"><button class="btn btn-line btn-sm" type="submit">${t('m_apply')}</button></form></div>` : `<div class="modal-box" role="dialog" aria-modal="true"><button class="close" aria-label="close">×</button>
     <p class="eyebrow" style="color:var(--seal)">Membership</p><h3>${t('m_h')}</h3><p>${t('m_p')}</p>
     <div class="amt">₩30,000<small> ${t('per_month')}</small></div>
     <ul>${T.m_l[n].map(x => `<li>${esc(x)}</li>`).join('')}</ul>
@@ -1331,6 +1348,7 @@ async function route() {
   const A = $('#app'); A.classList.remove('enter'); void A.offsetWidth; A.classList.add('enter');
   onScroll();
   if (r === '' ) viewHome();
+  else if (PLAY && (r === 'pricing' || r === 'checkout' || r === 'galleries')) viewToday();
   else if (r === 'pricing') viewHome('pricing');
   else if (r === 'today') viewToday(parts[1]);
   else if (r === 'archive') viewArchive();
