@@ -55,3 +55,9 @@ works.json 이 바뀌면 바뀐 작품만 자동으로 다시 녹음합니다.
 항목: `{title, artist, year, medium, headline{ko,en}, why{ko,en}, record?{ko,en}, pd(bool), img?(검증된 URL), commons?(Commons 파일명), imgCredit?{text,url}, sources[{label,url}]}`
 - `pd: true`(작가 사후 70년 경과)일 때만 이미지 사용. `img` 또는 `commons` 파일명 → 실패하면 타이포 카드가 자동으로 보임.
 - 저작권 작품(`pd: false`)은 이미지 없이 타이포 카드 + '저작권 보호 작품' 안내.
+
+## Google Play 앱 (TWA)
+- 패키지 `kr.qurator.dailyart`, 설정 `android/twa-config.json` (버전 올리면 CI가 새 AAB 빌드 → `android-build` 브랜치)
+- AAB는 서명 없이 빌드됩니다. 업로드 키(공개 저장소에 없음)로 `jarsigner -sigalg SHA256withRSA -digestalg SHA-256 -keystore qurator-upload.keystore app.aab qurator` 서명 후 업로드
+- 앱은 `?src=twa`로 열리고, 이때 가격·결제·계좌가 숨겨집니다(구글 결제 정책: 앱 밖에서 산 멤버십을 앱에서 이용만 하는 방식). 같은 사이트를 브라우저로 열면 결제가 그대로 보입니다
+- 스토어 이미지: `scripts/store_assets.py` (Actions "Play store images") → `android-build` 브랜치 `store/`

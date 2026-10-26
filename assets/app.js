@@ -634,7 +634,7 @@ function viewArchive() {
 let exploreState = { q: '', filter: 'all', results: null, loading: false };
 function viewExplore() {
   const st = exploreState;
-  app().innerHTML = `<section class="phead"><div class="wrap"><p class="eyebrow">Open collections</p><h1>${t('ex_h')}</h1><p>${t('ex_p')}</p></div></section>
+  app().innerHTML = `<section class="phead"><div class="wrap"><p class="eyebrow">Open collections</p><h1>${t('ex_h')}</h1><p>${t('ex_p').replace('24', S.works.length)}</p></div></section>
   <div class="wrap" style="padding-bottom:90px">
     <form class="searchbar" id="sform"><input id="sq" type="search" value="${esc(st.q)}" placeholder="${esc(t('ex_ph'))}" autocomplete="off" enterkeyhint="search">
       <button class="btn btn-ink btn-sm" type="submit">Search</button></form>
