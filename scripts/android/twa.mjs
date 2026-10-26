@@ -7,10 +7,12 @@ const { TwaManifest, TwaGenerator, ConsoleLog } = require('@bubblewrap/core');
 
 const cfg = JSON.parse(fs.readFileSync('android/twa-config.json', 'utf8'));
 const out = process.argv[2] || 'build/twa';
-const m = await TwaManifest.fromWebManifest(cfg.manifestUrl);
-Object.assign(m, {
+const base = (await TwaManifest.fromWebManifest(cfg.manifestUrl)).toJson();
+// rebuild through the constructor so colours become Color objects
+const m = new TwaManifest({
+  ...base,
   packageId: cfg.packageId, name: cfg.name, launcherName: cfg.launcherName, startUrl: cfg.startUrl,
-  appVersionCode: cfg.appVersionCode, appVersionName: cfg.appVersionName,
+  appVersionCode: cfg.appVersionCode, appVersion: cfg.appVersionName,
   themeColor: cfg.themeColor, themeColorDark: cfg.themeColor,
   navigationColor: cfg.navigationColor, navigationColorDark: cfg.navigationColor,
   navigationDividerColor: cfg.navigationColor, navigationDividerColorDark: cfg.navigationColor,
