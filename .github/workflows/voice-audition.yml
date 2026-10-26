@@ -22,10 +22,13 @@ jobs:
           git -C /tmp/supertonic checkout -q 1e9799e964ea4c0dad7cde993b65c3c813a7b373
           pip install --quiet "onnxruntime==1.23.1" numpy soundfile huggingface_hub faster-whisper
           hf download supertone-oss-archive/supertonic-3 --revision aafc6e32416a594460b32413efc49d7fe4ce6d46 --local-dir /tmp/supertonic/assets
-          ls /tmp/supertonic/assets /tmp/supertonic/assets/voice_styles
       - name: Audition
-        run: python scripts/voice_audition.py
+        run: |
+          mkdir -p audio/_audition
+          { ls -R /tmp/supertonic/assets | head -40; python scripts/voice_audition.py; } > audio/_audition/log.txt 2>&1 || echo FAILED >> audio/_audition/log.txt
+          tail -30 audio/_audition/log.txt
       - name: Commit samples
+        if: always()
         run: |
           git config user.name "qurator-bot"; git config user.email "qurator-bot@users.noreply.github.com"
           git add audio/_audition
