@@ -36,7 +36,10 @@ for v in voices:
     mp3, _ = n.tts_supertonic(passage, 'ko')
     synth = time.time() - t0
     path = os.path.join(out, f'ko-{v}.mp3'); open(path, 'wb').write(mp3)
-    segs, info = asr.transcribe(path, language='ko', beam_size=5)
+    import subprocess, numpy as np
+    pcm = subprocess.run(['ffmpeg', '-loglevel', 'error', '-i', path, '-f', 's16le', '-ac', '1', '-ar', '16000', '-'],
+                         check=True, capture_output=True).stdout
+    segs, info = asr.transcribe(np.frombuffer(pcm, np.int16).astype(np.float32) / 32768.0, language='ko', beam_size=5)
     hyp = ' '.join(s.text for s in segs)
     report['voices'][v] = {'cer': round(cer(ref, hyp), 4), 'seconds': round(info.duration, 1),
                            'chars_per_sec': round(len(clean(ref)) / info.duration, 2), 'synth_sec': round(synth, 1), 'asr': hyp}
