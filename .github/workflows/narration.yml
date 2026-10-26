@@ -31,7 +31,10 @@ jobs:
         with:
           python-version: "3.12"
       - name: System packages
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq espeak-ng ffmpeg
+        timeout-minutes: 10
+        run: |
+          for i in 1 2 3; do sudo timeout 240 apt-get update -qq && sudo timeout 300 apt-get install -y -qq --no-install-recommends espeak-ng ffmpeg && break; echo "apt retry $i"; sleep 10; done
+          command -v ffmpeg
       - name: Cache voice model
         uses: actions/cache@v4
         with:
@@ -45,6 +48,12 @@ jobs:
           pip install --quiet "spacy==3.8.2" "thinc==8.3.4" "preshed==3.0.9" "cymem==2.0.10"
           python -m spacy download en_core_web_sm
           python -c "import spacy; spacy.load('en_core_web_sm'); print('spacy ok')"
+      - name: Korean voice — Supertonic 3 (Supertone, OpenRAIL-M; code + archived model pinned)
+        run: |
+          git clone -q https://github.com/supertone-oss-archive/supertonic.git /tmp/supertonic
+          git -C /tmp/supertonic checkout -q 1e9799e964ea4c0dad7cde993b65c3c813a7b373
+          pip install --quiet "onnxruntime==1.23.1" huggingface_hub
+          hf download supertone-oss-archive/supertonic-3 --revision aafc6e32416a594460b32413efc49d7fe4ce6d46 --local-dir /tmp/supertonic/assets
       - name: Generate narration
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -54,6 +63,8 @@ jobs:
           OPENAI_VOICE_KO: ${{ vars.OPENAI_VOICE_KO }}
           OPENAI_VOICE_EN: ${{ vars.OPENAI_VOICE_EN }}
           KOKORO_VOICE: ${{ vars.KOKORO_VOICE || 'af_heart' }}
+          SUPERTONIC_DIR: /tmp/supertonic
+          SUPERTONIC_VOICE_KO: ${{ vars.SUPERTONIC_VOICE_KO }}
           ONLY: ${{ github.event.inputs.only }}
         run: python scripts/narrate.py
       - name: Commit audio

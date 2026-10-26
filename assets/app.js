@@ -862,7 +862,7 @@ async function viewWork(uid, custom) {
     // for mixed (ko header + english original) speak in English except header line
     if (r.rec) Speech.load(speakSents, l, r.rec.files.map(f => `audio/${model.w.id}/${f}`));
     else Speech.load(speakSents, r.mixed ? 'en' : l);
-    $('#plang').textContent = r.rec ? (S.lang === 'ko' ? 'QURATOR 도슨트 녹음' : 'QURATOR docent recording') : ((l === 'ko' && !r.mixed) ? '한국어 음성' : 'English voice');
+    $('#plang').textContent = r.rec ? (S.lang === 'ko' ? 'AI 도슨트 음성' : 'AI docent voice') : ((l === 'ko' && !r.mixed) ? '한국어 음성' : 'English voice');
   }
   Speech.onUpdate = done => {
     const p = $('#play'); if (!p) return;
