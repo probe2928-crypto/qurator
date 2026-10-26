@@ -1,4 +1,5 @@
 """Google Play store listing images: phone screenshots of the app (Play mode) + 1024x500 feature graphic."""
+# Run after the Pages deploy finishes: the screenshots use the live site.
 import asyncio, os
 from playwright.async_api import async_playwright
 SITE = 'https://probe2928-crypto.github.io/qurator/'
