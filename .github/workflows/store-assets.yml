@@ -1,0 +1,28 @@
+name: Play store images
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["scripts/android/store_assets.py", ".github/workflows/store-assets.yml"]
+permissions:
+  contents: write
+jobs:
+  shots:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: |
+          pip install --quiet playwright==1.48.0
+          python -m playwright install --with-deps chromium > /dev/null
+          sudo apt-get install -y -qq fonts-noto-cjk > /dev/null || true
+      - run: OUT=/tmp/store python scripts/android/store_assets.py
+      - name: Commit to android-build branch
+        run: |
+          git config user.name "qurator-bot"; git config user.email "qurator-bot@users.noreply.github.com"
+          git fetch -q origin android-build && git checkout -q android-build
+          mkdir -p store && cp /tmp/store/*.png store/
+          git add store && git commit -qm "Play store images" && git push -q origin android-build
