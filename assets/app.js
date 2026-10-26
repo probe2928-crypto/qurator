@@ -404,7 +404,7 @@ function renderShell(route) {
   document.documentElement.lang = S.lang;
   $('#foot').innerHTML = `<div class="foot-in">
     <div class="foot-brand">${LOGO_MARK}<div><div class="fw">QURATOR</div><div class="fs">MAISON DE DOCENT · SÉOUL</div></div></div>
-    <nav class="foot-links"><a href="#/support">${t('nav_support')}</a><a href="${KAKAO}" target="_blank" rel="noopener">${S.lang === 'ko' ? '카카오톡 문의' : 'KakaoTalk'}</a><a href="#/policy/terms">${t('terms')}</a><a href="#/policy/privacy"><b>${t('privacy')}</b></a><a href="#/policy/refund">${t('refund')}</a></nav>
+    <nav class="foot-links"><a href="#/galleries">${S.lang === 'ko' ? '갤러리 도입 안내' : 'For galleries'}</a><a href="#/support">${t('nav_support')}</a><a href="${KAKAO}" target="_blank" rel="noopener">${S.lang === 'ko' ? '카카오톡 문의' : 'KakaoTalk'}</a><a href="#/policy/terms">${t('terms')}</a><a href="#/policy/privacy"><b>${t('privacy')}</b></a><a href="#/policy/refund">${t('refund')}</a></nav>
   </div>
   <div class="foot-in foot-legal"><span>${esc(t('biz'))}</span><span>© 2026 QURATOR · ${esc(t('foot_note'))}</span></div>`;
 }
@@ -422,7 +422,7 @@ function viewHome(scrollTo) {
   <section class="sec" id="products"><div class="wrap">
     <div class="products rv">
       ${productCard('p1', '₩30,000', t('per_month'), '#/today', t('cta_today'))}
-      ${productCard('p2', '₩300,000', t('per_show') + ' ' + t('from'), '#/studio', t('nav_studio'))}
+      ${productCard('p2', '₩300,000', t('per_show') + ' ' + t('from'), '#/galleries', S.lang === 'ko' ? '갤러리 도입 안내' : 'For galleries')}
     </div>
   </div></section>
 
@@ -1048,6 +1048,80 @@ async function viewFeature(id) {
   hydrate(); reveal();
 }
 
+/* ---------------- for galleries (B2B sales page, printable as a brochure) ---------------- */
+const GAL = {
+  ko: {
+    eyebrow: 'For galleries · 갤러리 도입 안내', h: '관람객의 휴대폰이<br>당신의 <em>도슨트</em>가 됩니다.',
+    lead: '작품 옆 캡션에 QR 하나. 앱도, 장비도, 상주 인력도 없이 모든 작품에 해설·음성·영어 안내가 붙습니다. 해설 원고는 미술사를 전공하고 20회 넘는 전시를 직접 열어 온 운영진이 쓰고 감수합니다.',
+    why: '왜 QR 도슨트인가', whyItems: [
+      ['작품 앞에 더 오래', '캡션 한 줄로 끝나던 감상이 작품의 배경, 기법, 감상 포인트까지 이어집니다.'],
+      ['외국인 관람객까지', '한국어와 영어 해설이 기본입니다. 영어 해설은 자연스러운 녹음 음성으로 들려 드립니다.'],
+      ['설치는 인쇄 한 번', '앱 설치도, 오디오 가이드 기기 대여도 필요 없습니다. 인쇄한 캡션을 붙이면 끝입니다.'],
+      ['전시가 끝나도 남는 기록', '전시 링크 하나로 작품 목록과 해설이 온라인에 남아 홍보와 아카이브로 이어집니다.']],
+    steps: '진행 순서', stepItems: [
+      ['상담', '카카오톡으로 전시 일정과 작품 목록(작품명·작가·연도·이미지)을 보내 주세요.'],
+      ['해설 작성', '작품별 해설을 작성해 검토용 링크로 보내 드립니다. 수정 요청을 반영합니다.'],
+      ['캡션 인쇄', '작품명·작가·연도와 QR이 들어간 캡션(명제표) A4 인쇄 파일과 입구용 전시 안내 QR을 드립니다.'],
+      ['전시 운영', '관람객은 카메라로 QR을 찍기만 하면 됩니다. 전시 기간 동안 해설 수정도 바로 반영됩니다.']],
+    sample: '실제 캡션과 해설 화면', sampleP: '위 캡션의 QR을 휴대폰 카메라로 찍어 보세요. 관람객이 보게 될 해설 화면이 열립니다.',
+    plans: '요금', who: '운영진', whoP: '미술사를 전공했고, 20회가 넘는 전시를 직접 열거나 기획에 참여해 왔습니다. 전시를 여는 쪽의 사정을 알기에, 일정과 예산에 맞춰 함께 준비합니다.',
+    faq: '자주 묻는 질문', faqItems: [
+      ['작품 이미지는 어떻게 하나요?', '갤러리가 보유한 작품 이미지를 받아 해설 화면에 사용합니다. 이미지 없이 해설만 운영할 수도 있습니다.'],
+      ['해설을 우리가 직접 써도 되나요?', '네. QR 스튜디오에서 직접 등록하고 수정할 수 있습니다. 원고 작성까지 맡기려면 Premium을 선택하세요.'],
+      ['인터넷이 안 되는 공간이면요?', '관람객 휴대폰의 모바일 데이터로 열리므로 갤러리 와이파이가 없어도 됩니다.'],
+      ['전시가 끝나면 링크는 어떻게 되나요?', '전시 기간 동안 운영하며, 이후 보관 여부는 상담으로 정합니다.']],
+    cta: '도입 상담하기', print: '소개서 PDF로 저장', back: '요금 자세히 보기'
+  },
+  en: {
+    eyebrow: 'For galleries', h: 'Every visitor\'s phone<br>becomes your <em>docent.</em>',
+    lead: 'One QR on each caption card. No app, no hardware, no extra staff: every work gets interpretation, audio and an English guide. Texts are written and reviewed by a team trained in art history that has opened more than twenty exhibitions.',
+    why: 'Why a QR docent', whyItems: [
+      ['Longer looking', 'A one-line caption becomes the story, technique and what to look for.'],
+      ['Ready for international visitors', 'Korean and English as standard, with natural recorded English narration.'],
+      ['Set up by printing', 'No app downloads, no audio-guide rentals. Print the captions and you are done.'],
+      ['A record that lasts', 'One exhibition link keeps the works and texts online for promotion and archive.']],
+    steps: 'How it works', stepItems: [
+      ['Talk to us', 'Send your dates and list of works (title, artist, year, image) on KakaoTalk.'],
+      ['We write', 'We draft a text per work and send a review link; your edits are applied.'],
+      ['Print', 'You receive A4 caption files with QR codes and an entrance QR for the whole show.'],
+      ['Open the show', 'Visitors just point their camera. Edits during the show go live immediately.']],
+    sample: 'A real caption and guide', sampleP: 'Scan the QR on the caption above with your phone camera to open the page your visitors will see.',
+    plans: 'Pricing', who: 'Who we are', whoP: 'We trained in art history and have opened or helped organize more than twenty exhibitions. We know the organizer\'s side, so we prepare everything around your schedule and budget.',
+    faq: 'FAQ', faqItems: [
+      ['What about artwork images?', 'We use the images you provide; you can also run texts without images.'],
+      ['Can we write the texts ourselves?', 'Yes, in QR Studio. Choose Premium if you want us to write them.'],
+      ['What if the space has no Wi-Fi?', 'Pages open on visitors\' mobile data; gallery Wi-Fi is not required.'],
+      ['What happens after the show?', 'The guide runs for the exhibition period; archiving afterwards is agreed with you.']],
+    cta: 'Talk to us', print: 'Save as PDF brochure', back: 'See pricing'
+  }
+};
+function viewGalleries() {
+  const g = GAL[S.lang] || GAL.ko, w = S.byId['k-sehando'] || S.works[0];
+  app().innerHTML = `<section class="gal-hero"><div class="wrap gal-hero-in">
+      <div class="rv"><p class="eyebrow">${g.eyebrow}</p><h1>${g.h}</h1><p class="lead">${esc(g.lead)}</p>
+        <div class="hero-ctas"><a class="btn btn-kakao" href="${KAKAO}" target="_blank" rel="noopener">${g.cta} <span class="arrow">→</span></a><button class="btn btn-line" id="galPrint">⎙ ${g.print}</button></div></div>
+      <div class="gal-sample rv">
+        <div class="label gal-label"><div><div class="lt">${esc(w.title.ko)}</div><div class="le">${esc(w.title.en)}</div>
+          <div class="la">${esc(S.lang === 'ko' ? w.artist.ko : w.artist.en)}, ${esc(w.date)}</div><div class="lm">${esc(pick(w.medium))}</div></div>
+          <div class="lq" id="galQr"></div><div class="ls"><span>Scan · 음성 해설 · Audio guide</span><span>01</span></div></div>
+        <p class="note">${esc(g.sampleP)}</p></div>
+    </div></section>
+    <div class="wrap gal">
+      <section class="gal-sec rv"><h2>${g.why}</h2><div class="gal-grid">${g.whyItems.map(([h, p], i) => `<div class="gal-cell"><span>${String(i + 1).padStart(2, '0')}</span><h3>${esc(h)}</h3><p>${esc(p)}</p></div>`).join('')}</div></section>
+      <section class="gal-sec rv"><h2>${g.steps}</h2><ol class="gal-steps">${g.stepItems.map(([h, p]) => `<li><b>${esc(h)}</b><p>${esc(p)}</p></li>`).join('')}</ol></section>
+      <section class="gal-sec rv gal-plans"><h2>${g.plans}</h2>
+        <div class="gal-grid">${[['pl2', '₩300,000', t('per_show')], ['pl3', '₩1,000,000', t('per_show')], ['pl4', '₩99,000', t('per_month')]].map(([k, a, per]) => `<div class="gal-cell"><h3>${t(k)}</h3><div class="gal-amt">${a}<small> ${per}</small></div><ul>${T[k + 'l'][L()].map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>`).join('')}</div></section>
+      <section class="gal-sec rv gal-who"><h2>${g.who}</h2><p>${esc(g.whoP)}</p><div class="facts"><div class="fact"><b>20+</b><span>${t('fa1')}</span></div><div class="fact"><b>KO·EN</b><span>${t('fa2')}</span></div><div class="fact"><b>QR</b><span>${S.lang === 'ko' ? '앱 설치 없음' : 'No app needed'}</span></div></div></section>
+      <section class="gal-sec rv"><h2>${g.faq}</h2><div class="faq">${g.faqItems.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join('')}</div></section>
+      <section class="gal-end rv"><h2>${S.lang === 'ko' ? '다음 전시, 관람객의 휴대폰을 도슨트로.' : 'Make every visitor\'s phone your docent.'}</h2>
+        <div class="hero-ctas"><a class="btn btn-kakao" href="${KAKAO}" target="_blank" rel="noopener">${g.cta} <span class="arrow">→</span></a><a class="btn btn-line" href="#/pricing">${g.back}</a></div>
+        <p class="note gal-contact">QURATOR · ${S.lang === 'ko' ? '카카오톡 오픈채팅' : 'KakaoTalk open chat'} open.kakao.com/o/gQLZj9Ti · probe2928-crypto.github.io/qurator</p></section>
+    </div>`;
+  makeQR($('#galQr'), BASE() + '#/w/' + w.id, 192);
+  $('#galPrint').onclick = () => { $$('.rv').forEach(e => e.classList.add('in')); $$('.faq details').forEach(d => d.open = true); setTimeout(() => window.print(), 150); };
+  reveal();
+}
+
 /* ---------------- brand ---------------- */
 const LOGO_MARK = '<svg class="mono" viewBox="0 0 40 40" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M20 4C12.5 4 6.5 10.7 6.5 19S12.5 34 20 34 33.5 27.3 33.5 19 27.5 4 20 4Zm0 .7c-5.4 0-9.9 6.4-9.9 14.3S14.6 33.3 20 33.3 29.9 26.9 29.9 19 25.4 4.7 20 4.7Z"/><path fill="currentColor" d="M18.4 31.3c4.3-.6 9.6 1.6 17.1 6.8l-.6.8c-7-4.5-12-6.5-16.3-6.3Z"/></svg>';
 
@@ -1252,6 +1326,7 @@ async function route() {
   const r = parts[0] || '';
   renderShell(r);
   if (r === '' || r === 'pricing') document.body.classList.add('home');
+  document.body.classList.toggle('gal-page', r === 'galleries');
   window.scrollTo(0, 0);
   const A = $('#app'); A.classList.remove('enter'); void A.offsetWidth; A.classList.add('enter');
   onScroll();
@@ -1262,6 +1337,7 @@ async function route() {
   else if (r === 'explore') viewExplore();
   else if (r === 'studio') viewStudio();
   else if (r === 'support') viewSupport();
+  else if (r === 'galleries') viewGalleries();
   else if (r === 'features') parts[1] ? await viewFeature(decodeURIComponent(parts[1])) : await viewFeatures();
   else if (r === 'policy') viewPolicy(parts[1]);
   else if (r === 'checkout') viewCheckout();
