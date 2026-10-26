@@ -26,7 +26,7 @@ async def main():
         pg = await ctx.new_page()
         await pg.goto(SITE + '?src=twa#/', wait_until='networkidle'); await pg.wait_for_timeout(2500)
         for name, h in SHOTS:
-            await pg.evaluate(f"location.hash = '{h}'"); await pg.wait_for_timeout(6000)
+            await pg.evaluate(f"location.hash = '{h}'"); await pg.wait_for_timeout(6000); await pg.evaluate('window.scrollTo(0, 0)')
             await pg.evaluate("document.querySelectorAll('.rv').forEach(e=>e.classList.add('in'))"); await pg.wait_for_timeout(1500)
             await pg.screenshot(path=f'{OUT}/phone-{name}.png')
             print('shot', name)

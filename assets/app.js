@@ -26,7 +26,7 @@ const PLAY = (() => {
     return sessionStorage.getItem('q_play') === '1';
   } catch { return false; }
 })();
-if (PLAY) document.documentElement.classList.add('play');
+if (PLAY) document.documentElement.classList.add('q-play-app');
 const seoulDate = (d = new Date()) => d.toLocaleDateString('sv-SE', { timeZone: 'Asia/Seoul' });
 async function getJSON(url, opt) { const r = await fetch(url, opt); if (!r.ok) throw new Error(r.status + ' ' + url); return r.json(); }
 

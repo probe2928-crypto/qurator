@@ -42,6 +42,7 @@ jobs:
           git config user.name "qurator-bot"; git config user.email "qurator-bot@users.noreply.github.com"
           git fetch origin android-build && git checkout android-build || git checkout --orphan android-build
           git rm -rq --cached . 2>/dev/null || true
-          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          find . -mindepth 1 -maxdepth 1 ! -name .git ! -name store -exec rm -rf {} +
           cp /tmp/out/* . && printf '# QURATOR Android build output\nUnsigned bundles built by CI. Sign with the upload key before uploading to Google Play.\n' > README.md
-          git add -A && git commit -qm "Android build $V ($C)" && git push -q origin android-build
+          git add -A && git commit -qm "Android build $V ($C)"
+          for i in 1 2 3 4; do git pull -q --rebase origin android-build && git push -q origin android-build && break; sleep 8; done
