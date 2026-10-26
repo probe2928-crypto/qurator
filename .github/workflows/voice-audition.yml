@@ -15,7 +15,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: ffmpeg
+        timeout-minutes: 6
+        run: command -v ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq --no-install-recommends ffmpeg)
       - name: Supertonic 3 (code + archived model, pinned)
         run: |
           git clone -q https://github.com/supertone-oss-archive/supertonic.git /tmp/supertonic
