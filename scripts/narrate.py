@@ -8,8 +8,9 @@ Provider per language:
   ELEVENLABS_API_KEY  -> ElevenLabs eleven_multilingual_v2 (needs ELEVENLABS_VOICE_KO / ELEVENLABS_VOICE_EN)
   OPENAI_API_KEY      -> OpenAI gpt-4o-mini-tts
   (no key, English)   -> Kokoro-82M, open-weight neural TTS (Apache-2.0), runs locally on the CI runner
-  (no key, Korean)    -> skipped; the site falls back to the visitor's device voice
-Only works whose text changed (hash) are regenerated. Stdlib only.
+  (no key, Korean)    -> Supertonic 3 by Supertone (OpenRAIL-M), ONNX on CPU; Korean text is normalised
+                         first (numbers -> Sino-Korean readings, hanja glosses dropped)
+Only works whose text changed (hash) are regenerated.
 """
 import hashlib, json, os, re, sys, time, urllib.request
 
@@ -59,12 +60,75 @@ def tts_eleven(text, lang):
                   'voice_settings': {'stability': 0.55, 'similarity_boost': 0.8, 'style': 0.15}})
     return audio, f'elevenlabs:{voice}'
 
+def to_mp3(samples, rate):
+    import subprocess, tempfile
+    import soundfile as sf
+    with tempfile.TemporaryDirectory() as td:
+        wav, mp3 = os.path.join(td, 'a.wav'), os.path.join(td, 'a.mp3')
+        sf.write(wav, samples, rate)
+        subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', wav, '-af', 'loudnorm=I=-18:TP=-1.5:LRA=11',
+                        '-ar', '44100', '-codec:a', 'libmp3lame', '-b:a', '112k', mp3], check=True)
+        return open(mp3, 'rb').read()
+
+# ---------- Korean text normalisation (what the narrator says, not what the page shows) ----------
+_D = '영일이삼사오육칠팔구'
+def sino(n):
+    n = int(n)
+    if n == 0:
+        return '영'
+    out, groups = '', ['', '만', '억', '조']
+    g = 0
+    while n:
+        n, chunk = divmod(n, 10000)
+        if chunk:
+            word = ''
+            for unit, val in (('천', 1000), ('백', 100), ('십', 10), ('', 1)):
+                d, chunk = divmod(chunk, val)
+                if d:
+                    word += ('' if (d == 1 and unit) else _D[d]) + unit
+            if groups[g] == '만' and word == '일':
+                word = ''
+            out = word + groups[g] + out
+        g += 1
+    return out
+
+def norm_ko(t):
+    t = re.sub(r'\(([\u3400-\u9fff]+)\)', '', t)                # 파적(破寂) -> 파적
+    t = re.sub(r'\b6월', '유월', t); t = re.sub(r'\b10월', '시월', t)
+    t = re.sub(r'(\d+)\s*%', lambda m: sino(m.group(1)) + ' 퍼센트', t)
+    t = re.sub(r'\d+', lambda m: sino(m.group()), t)
+    t = t.replace('X선', '엑스선').replace('·', ', ')
+    t = re.sub('[‘’“”"\']', '', t)
+    return re.sub(r'\s+', ' ', t).strip()
+
+_st = None
+def tts_supertonic(text, lang):
+    """Korean narration with Supertonic 3 (Supertone, OpenRAIL-M). Returns MP3 bytes."""
+    global _st
+    base = os.environ.get('SUPERTONIC_DIR', '/tmp/supertonic')
+    voice = os.environ.get('SUPERTONIC_VOICE_KO') or 'F1'
+    if _st is None:
+        sys.path.insert(0, os.path.join(base, 'py'))
+        from helper import load_text_to_speech
+        _st = {'tts': load_text_to_speech(os.path.join(base, 'assets', 'onnx')), 'styles': {}}
+    if voice not in _st['styles']:
+        from helper import load_voice_style
+        _st['styles'][voice] = load_voice_style([os.path.join(base, 'assets', 'voice_styles', voice + '.json')])
+    eng = _st['tts']
+    wav, dur = eng(norm_ko(text) if lang == 'ko' else text, lang, _st['styles'][voice],
+                   int(os.environ.get('SUPERTONIC_STEPS', '16')), float(os.environ.get('SUPERTONIC_SPEED', '0.97')))
+    a = wav[0, :int(eng.sample_rate * float(dur[0]))]
+    return to_mp3(a, eng.sample_rate), f'supertonic3:{voice}'
+
+def st_available():
+    base = os.environ.get('SUPERTONIC_DIR', '/tmp/supertonic')
+    return os.path.isdir(os.path.join(base, 'assets', 'onnx'))
+
 _kokoro = None
 def tts_kokoro(text, lang):
     """Natural English narration with Kokoro-82M (Apache-2.0). Returns MP3 bytes."""
     global _kokoro
-    import subprocess, tempfile
-    import numpy as np, soundfile as sf
+    import numpy as np
     from kokoro import KPipeline
     voice = os.environ.get('KOKORO_VOICE', 'af_heart')
     if _kokoro is None:
@@ -80,12 +144,7 @@ def tts_kokoro(text, lang):
         a = audio.numpy() if hasattr(audio, 'numpy') else np.asarray(audio)
         parts.append(a)
         parts.append(np.zeros(int(24000 * 0.12), dtype=a.dtype))  # short breath between clauses
-    with tempfile.TemporaryDirectory() as td:
-        wav, mp3 = os.path.join(td, 'a.wav'), os.path.join(td, 'a.mp3')
-        sf.write(wav, np.concatenate(parts), 24000)
-        subprocess.run(['ffmpeg', '-loglevel', 'error', '-y', '-i', wav, '-af', 'loudnorm=I=-18:TP=-1.5:LRA=11',
-                        '-ar', '44100', '-codec:a', 'libmp3lame', '-b:a', '112k', mp3], check=True)
-        return open(mp3, 'rb').read(), f'kokoro:{voice}'
+    return to_mp3(np.concatenate(parts), 24000), f'kokoro:{voice}'
 
 def provider(lang):
     if os.environ.get('ELEVENLABS_API_KEY') and os.environ.get('ELEVENLABS_VOICE_' + lang.upper()):
@@ -94,6 +153,8 @@ def provider(lang):
         return tts_openai
     if lang == 'en':
         return tts_kokoro
+    if lang == 'ko' and st_available():
+        return tts_supertonic
     return None
 
 def main():
@@ -107,7 +168,11 @@ def main():
             if tts is None:
                 continue
             text = w['text'][lang].strip()
-            digest = hashlib.sha1((text + tts.__name__ + os.environ.get('KOKORO_VOICE', '') + 'misaki-g2p').encode()).hexdigest()[:12]
+            if tts is tts_supertonic:
+                salt = 'st3' + (os.environ.get('SUPERTONIC_VOICE_KO') or 'F1') + os.environ.get('SUPERTONIC_SPEED', '') + os.environ.get('SUPERTONIC_STEPS', '')
+            else:
+                salt = os.environ.get('KOKORO_VOICE', '') + 'misaki-g2p'
+            digest = hashlib.sha1((text + tts.__name__ + salt).encode()).hexdigest()[:12]
             d = os.path.join(ROOT, 'audio', w['id']); os.makedirs(d, exist_ok=True)
             mf = os.path.join(d, f'{lang}.json')
             if os.path.exists(mf) and json.load(open(mf, encoding='utf-8')).get('hash') == digest:
