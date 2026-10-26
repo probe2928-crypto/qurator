@@ -106,7 +106,7 @@ def tts_supertonic(text, lang):
     """Korean narration with Supertonic 3 (Supertone, OpenRAIL-M). Returns MP3 bytes."""
     global _st
     base = os.environ.get('SUPERTONIC_DIR', '/tmp/supertonic')
-    voice = os.environ.get('SUPERTONIC_VOICE_KO') or 'F1'
+    voice = os.environ.get('SUPERTONIC_VOICE_KO') or 'M5'
     if _st is None:
         sys.path.insert(0, os.path.join(base, 'py'))
         from helper import load_text_to_speech
@@ -169,7 +169,7 @@ def main():
                 continue
             text = w['text'][lang].strip()
             if tts is tts_supertonic:
-                salt = 'st3' + (os.environ.get('SUPERTONIC_VOICE_KO') or 'F1') + os.environ.get('SUPERTONIC_SPEED', '') + os.environ.get('SUPERTONIC_STEPS', '')
+                salt = 'st3' + (os.environ.get('SUPERTONIC_VOICE_KO') or 'M5') + os.environ.get('SUPERTONIC_SPEED', '') + os.environ.get('SUPERTONIC_STEPS', '')
             else:
                 salt = os.environ.get('KOKORO_VOICE', '') + 'misaki-g2p'
             digest = hashlib.sha1((text + tts.__name__ + salt).encode()).hexdigest()[:12]

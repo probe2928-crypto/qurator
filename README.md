@@ -40,7 +40,7 @@
   4. `assets/app.js` 의 `PAY` 에 `live: true, clientKey: '라이브 클라이언트 키', apiBase: '워커 주소'`
 
 ## 도슨트 음성 (녹음 품질)
-키 없이 기본 작동: 영어는 Kokoro-82M(af_heart), 한국어는 Supertonic 3(Supertone, 목소리 F1 — 차분하고 약간 낮은 톤).
+키 없이 기본 작동: 영어는 Kokoro-82M(af_heart), 한국어는 Supertonic 3(Supertone, 목소리 M5 — 따뜻하고 차분한 이야기꾼 톤 남성).
 둘 다 오픈 웨이트 모델을 GitHub Actions에서 직접 돌려 문장 단위 mp3로 녹음합니다. 한국어는 숫자를 한글 읽기로 바꿔 녹음합니다(1889년 → 천팔백팔십구년, 6월 → 유월).
 한국어 목소리를 바꾸려면 레포 Settings → Variables 에 `SUPERTONIC_VOICE_KO` (F1~F5, M1~M5) 추가 → 전체 재녹음. 비교 샘플: `audio/_audition/ko-*.mp3`.
 Supertonic 모델 라이선스(OpenRAIL-M)에 따라 플레이어에 'AI 도슨트 음성'으로 표기합니다.
