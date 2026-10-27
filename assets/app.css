@@ -742,9 +742,9 @@ body{word-break:keep-all;overflow-wrap:break-word}
   body.gal-page .gal-grid{grid-template-columns:repeat(2,1fr)}
 }
 
-/* ---------- v6 · giving · First Brick Foundation (금색은 첫 벽돌 하나에만) ---------- */
-:root{--brick:#B8862D;--navy:#141B2E}
-.brick{width:26px;height:18px;flex:0 0 26px;color:currentColor}
+/* ---------- v6 · giving · Oriel Foundation (금색은 창 하나에만) ---------- */
+:root{--glass:#B8862D;--navy:#141B2E}
+.brick{width:16px;height:22px;flex:0 0 16px;color:currentColor}
 .give-note{display:flex;gap:14px;align-items:flex-start;margin:28px 0 0;padding:18px 0 0;border-top:1px solid var(--line);font-size:14px;line-height:1.7;color:var(--ink-2)}
 .give-note .brick{margin-top:3px}
 .give-note a{color:var(--seal);white-space:nowrap;font-weight:500}
@@ -763,7 +763,7 @@ body{word-break:keep-all;overflow-wrap:break-word}
 .give-hero-in{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(28px,5vw,80px);align-items:center}
 .give-hero .eyebrow{display:flex;align-items:center;gap:12px}
 .give-hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(34px,5.4vw,70px);line-height:1.12;letter-spacing:-.04em;margin:18px 0 22px}
-.give-hero h1 em{font-family:var(--serif-en);font-style:italic;font-weight:500;color:var(--brick)}
+.give-hero h1 em{font-family:var(--serif-en);font-style:italic;font-weight:500;color:var(--glass)}
 .give-hero .lead{font-size:clamp(15.5px,1.5vw,18px);color:var(--ink-2);max-width:34em;margin:0 0 30px;line-height:1.8}
 .give-mark{margin:0;color:var(--ink)}
 .give-mark svg{width:100%;max-width:360px;display:block;margin:0 auto}
@@ -776,10 +776,10 @@ body{word-break:keep-all;overflow-wrap:break-word}
 .give-phases li{padding:20px 20px 4px 0;border-right:1px solid var(--line);margin-right:20px}
 .give-phases li:last-child{border-right:0;margin-right:0}
 .give-phases .when{display:block;font-size:12.5px;letter-spacing:.06em;color:var(--muted);margin-bottom:10px}
-.give-phases .when b{color:var(--brick);font-weight:600}
+.give-phases .when b{color:var(--glass);font-weight:600}
 .give-phases li>b{display:block;font-family:var(--serif);font-size:19px;margin-bottom:8px}
 .give-phases p{margin:0;font-size:14px;line-height:1.7;color:var(--ink-2)}
-.give-phases li.now>b::before{content:"";display:inline-block;width:12px;height:8px;background:var(--brick);margin-right:8px;vertical-align:middle}
+.give-phases li.now>b::before{content:"";display:inline-block;width:12px;height:8px;background:var(--glass);margin-right:8px;vertical-align:middle}
 .give-sec .give-status{margin:24px 0 0;font-size:14px;color:var(--muted)}
 .give-log{width:100%;border-collapse:collapse;font-size:14.5px}
 .give-log th{text-align:left;font-weight:500;font-size:12.5px;letter-spacing:.06em;color:var(--muted);border-bottom:1px solid var(--ink);padding:10px 12px 10px 0}

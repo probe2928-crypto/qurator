@@ -2,8 +2,8 @@
 
 ## 운영 원칙
 - 두 상품: Daily Art(개인 구독, 월 30,000원) · QR 도슨트(갤러리 B2B, 전시 30만~100만원, 갤러리 월 9.9만원)
-- 나눔: 수익(구독·갤러리 프로젝트)의 일부를 퍼스트브릭 재단(First Brick Foundation, 설립 준비 중)에 기부. 재단 등록 전엔 '할 예정'으로만 표기, 기부 시 data/giving.json에 {date, amount, note{ko,en}, proof} 추가. 비율(GIVE.share) 미정. 구독료는 기부금 아님(세액공제 X)
-- 홍보 문구(인스타 캡션·네이버 블로그 원고·특집 소개) 끝에 나눔 한 줄: 'QURATOR 수익의 일부는 퍼스트브릭 재단에 기부되어 동남아시아 아이들의 배움에 쓰입니다.' 재단 등록 전에는 기부 금액·수혜 인원 등 숫자를 쓰지 않음, 링크는 https://probe2928-crypto.github.io/qurator/#/giving
+- 나눔: 수익(구독·갤러리 프로젝트)의 일부를 오리엘 재단(Oriel Foundation · 明窗基金會, 설립 준비 중, 2026-10-27 퍼스트브릭에서 이름 변경)에 기부. 재단 등록 전엔 '할 예정'으로만 표기, 기부 시 data/giving.json에 {date, amount, note{ko,en}, proof} 추가. 비율(GIVE.share) 미정. 구독료는 기부금 아님(세액공제 X)
+- 홍보 문구(인스타 캡션·네이버 블로그 원고·특집 소개) 끝에 나눔 한 줄: 'QURATOR 수익의 일부는 오리엘 재단에 기부되어 동남아시아 아이들의 배움에 쓰입니다.' 재단 등록 전에는 기부 금액·수혜 인원 등 숫자를 쓰지 않음, 링크는 https://probe2928-crypto.github.io/qurator/#/giving
 - 문의·CS: 카카오톡 오픈채팅 https://open.kakao.com/o/gQLZj9Ti
 - 디자인: 프랑스 메종 톤 — 종이 #F3EFE6, 잉크 #16140F, 인주 #A8361F, Didone Q 모노그램 + Bodoni Moda 워드마크. 촌스러운 요소·AI 같은 허접함 금지.
 - 해설: 미술사 기반, 사실 확인된 내용만. 지어낸 수치·후기 금지. 작품 이미지는 퍼블릭 도메인 또는 자유 라이선스만(CC BY는 imgCredit 표기).
@@ -31,7 +31,7 @@
 ## 완료
 - 2026-10-27 멤버십 프로세스 개편: 평문 공용 코드(사이트 소스 노출) 제거 → 개인별 서명 링크 + 만료일, 만료 시 자동 잠금·5일 전 연장 안내, 비공개 멤버 장부(입금 확인·발급·연장·정지·월 입금 합계), 기존 코드는 해시로 유지(QURATOR-BETA 2027-06-30, DAILYART2026 2026-12-31)
 - 2026-10-27 루트 저장소 probe2928-crypto.github.io 생성, /.well-known/assetlinks.json(kr.qurator.dailyart, 업로드 키 지문) 게시 + _config.yml(include .well-known). 기존 프로젝트 사이트(/qurator, /firstbrick, /chainbrief) 정상
-- 2026-10-27 나눔(퍼스트브릭 재단) 연동: #/giving 페이지(연결 방식·재단 계획·기부 기록·고지), 홈 남색 배너, 오늘의 작품·요금·결제·갤러리 안내 문구, 고객센터 FAQ·바로가기, 푸터 링크 — 웹·앱 공통
+- 2026-10-27 나눔(오리엘 재단) 연동: #/giving 페이지(연결 방식·재단 계획·기부 기록·고지), 홈 남색 배너, 오늘의 작품·요금·결제·갤러리 안내 문구, 고객센터 FAQ·바로가기, 푸터 링크 — 웹·앱 공통
 - 2026-10-27 Google Play 앱(TWA, kr.qurator.dailyart 1.0.0) — Bubblewrap CI 빌드(android-build 브랜치, 서명 안 된 AAB) + 업로드 키 오프라인 서명, 앱 모드 consumption-only(?src=twa: 가격·결제·계좌 숨김, 멤버 코드로 열기), 스토어 스크린샷·대표 그래픽 자동 생성
 - 2026-10-26 한국어 도슨트 음성 교체: Supertonic 3(Supertone, OpenRAIL-M) — 10개 목소리를 Whisper 받아쓰기로 비교, 세준 선택으로 M5(따뜻한 이야기꾼 톤 남성), 숫자 한글 읽기 전처리, 29점 문장 단위 녹음. 플레이어 'AI 도슨트 음성' 표기
 - 2026-10-26 영어 도슨트 음성 전면 교체: Kokoro-82M(Apache-2.0, af_heart) 신경망 음성으로 29점 문장 단위 녹음, works.json 변경 시 GitHub Actions가 자동 재녹음
