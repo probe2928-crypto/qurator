@@ -27,11 +27,11 @@ const PLAY = (() => {
   } catch { return false; }
 })();
 if (PLAY) document.documentElement.classList.add('q-play-app');
-/* Giving: a share of QURATOR's revenue goes to Oriel Foundation (오리엘 재단 · 明窗基金會, the founders' foundation in formation; renamed on 2026-10-27, site still at /firstbrick/).
+/* Giving: a share of QURATOR's revenue goes to Oriel Foundation (오리엘 재단 · 明窗基金會, the founders' foundation in formation; renamed on 2026-10-27, site at /oriel/).
    Facts only: the foundation is preparing its nonprofit registration; the first gift is sent after it registers and is logged in
    data/giving.json + the foundation's public ledger. `share` stays '' until a percentage is decided. The foundation site has no
    donation links while it is unregistered, so linking to it from the Play app is fine; revisit if it ever takes donations. */
-const GIVE = { url: 'https://probe2928-crypto.github.io/firstbrick/', urlKo: 'https://probe2928-crypto.github.io/firstbrick/ko/', share: '' };
+const GIVE = { url: 'https://probe2928-crypto.github.io/oriel/', urlKo: 'https://probe2928-crypto.github.io/oriel/ko/', share: '' };
 const BRICK = '<svg class="brick" viewBox="0 0 40 56" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M20 6.5a15.5 21.5 0 1 0 .001 0zM20 8.1a9.6 19.9 0 1 1-.001 0z"/><ellipse cx="20" cy="28" rx="9.6" ry="19.9" fill="#B8862D"/><path d="M20 8v40M10.4 28h19.2" stroke="rgba(255,255,255,.78)" stroke-width="1.8" fill="none"/></svg>'; // Oriel Foundation mark: the O with a lit window
 const seoulDate = (d = new Date()) => d.toLocaleDateString('sv-SE', { timeZone: 'Asia/Seoul' });
 async function getJSON(url, opt) { const r = await fetch(url, opt); if (!r.ok) throw new Error(r.status + ' ' + url); return r.json(); }
