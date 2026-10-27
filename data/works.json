@@ -1846,5 +1846,385 @@
     "ko": "글레이즈, 얇게 덧입힌 투명한 물감층"
    }
   ]
+ },
+ {
+  "id": "k-seodang",
+  "region": "kr",
+  "title": {
+   "ko": "서당",
+   "en": "Seodang (The Village School)"
+  },
+  "artist": {
+   "ko": "김홍도",
+   "en": "Kim Hong-do (Danwon)"
+  },
+  "date": "18세기 후반 · late 18th c.",
+  "medium": {
+   "ko": "종이에 수묵담채, 26.9×22.2cm",
+   "en": "Ink and light color on paper, 26.9 × 22.2 cm"
+  },
+  "collection": {
+   "ko": "국립중앙박물관, 《단원 풍속도첩》 (보물)",
+   "en": "National Museum of Korea, Danwon Genre Album (Treasure)"
+  },
+  "wiki": {
+   "ko": [
+    "김홍도 필 풍속도 화첩",
+    "김홍도"
+   ],
+   "en": [
+    "Danwon pungsokdo cheop",
+    "Kim Hongdo"
+   ]
+  },
+  "tagline": {
+   "ko": "훈장님 앞에서 훌쩍이는 아이, 그리고 웃음을 참지 못하는 친구들",
+   "en": "One boy in tears, and a room full of classmates trying not to laugh"
+  },
+  "text": {
+   "ko": "조선 서당의 한 장면입니다. 훈장님을 축으로 학동들이 둥글게 둘러앉았고, 그 한가운데 한 아이가 등을 돌린 채 쪼그려 앉아 눈물을 훔치고 있습니다. 책을 등 뒤에 두고 외우는 시험에서 막혔던 모양인지, 아이는 종아리를 맞고 바짓단을 추스르는 듯합니다. 둘러앉은 친구들은 입을 가리거나 몸을 비틀며 웃음을 참고, 훈장님의 얼굴에도 곤란함인지 안쓰러움인지 모를 표정이 스칩니다. 배경을 거의 그리지 않고 인물의 몸짓과 옷 주름만으로 방 안의 공기를 살려 낸 것이 김홍도 풍속화의 힘입니다. 이 그림은 스물다섯 장으로 이루어진 《단원 풍속도첩》 가운데 한 장으로, 손바닥 두 개만 한 크기입니다.",
+   "en": "Here is a morning at a Joseon village school. The pupils sit in a ring around their teacher, and at the center one small boy crouches with his back to us, wiping away tears. He seems to have stumbled in a recitation, the kind of test where the book stays behind your back, and he is tugging his trouser hem down over a freshly switched calf. Around him his classmates cover their mouths or twist away, trying hard not to laugh. Even the teacher wears a look somewhere between awkward and sorry. Kim Hong-do paints almost no background at all: the gestures and the folds of the robes carry the whole room. This leaf, about the size of two open hands, is one of twenty-five in his famous Genre Album."
+  },
+  "look": {
+   "ko": [
+    "등을 돌리고 눈물을 훔치는 아이",
+    "웃음을 참느라 몸을 비트는 학동들",
+    "배경 없이 인물만으로 채운 화면"
+   ],
+   "en": [
+    "The boy with his back turned, wiping his eyes",
+    "The classmates twisting to hold in their laughter",
+    "An empty background: only people fill the page"
+   ]
+  },
+  "words": [
+   {
+    "en": "recite",
+    "ko": "외워서 말하다, 암송하다"
+   },
+   {
+    "en": "hold back a laugh",
+    "ko": "웃음을 참다"
+   },
+   {
+    "en": "genre painting",
+    "ko": "풍속화"
+   }
+  ]
+ },
+ {
+  "id": "k-seolsong",
+  "region": "kr",
+  "title": {
+   "ko": "설송도",
+   "en": "Snow-Covered Pines (Seolsongdo)"
+  },
+  "artist": {
+   "ko": "이인상",
+   "en": "Yi In-sang (Neunghogwan)"
+  },
+  "date": "18세기 · 18th c.",
+  "medium": {
+   "ko": "종이에 수묵, 117.3×52.6cm",
+   "en": "Ink on paper, 117.3 × 52.6 cm"
+  },
+  "collection": {
+   "ko": "국립중앙박물관",
+   "en": "National Museum of Korea"
+  },
+  "wiki": {
+   "ko": [
+    "이인상"
+   ],
+   "en": [
+    "Yi Insang"
+   ]
+  },
+  "tagline": {
+   "ko": "눈 속에서도 꺾이지 않는, 선비가 그린 자기 자신",
+   "en": "A pine that will not bend in the snow, painted by a scholar who would not either"
+  },
+  "text": {
+   "ko": "눈 내린 언덕에 소나무 한 그루가 곧게 서 있고, 그 앞을 뿌리가 드러난 다른 소나무가 비스듬히 가로지릅니다. 곧은 나무의 가지는 직각으로 꺾이며 뻗어 나가고, 줄기 아래는 모난 바위들이 지키고 있습니다. 눈은 따로 칠하지 않았습니다. 바위 윗면과 가지 위를 종이 그대로 비워 두고, 옅은 먹으로 잿빛 하늘을 깔아 쌓인 눈을 떠오르게 했습니다. 마른 붓으로 긁듯이 그은 솔잎과 짙은 먹 한 점 없는 담담한 먹빛이 차갑고 맑은 공기를 만듭니다. 이인상은 서얼 집안 출신이라 높은 벼슬에 오르지 못했지만, 원칙에 엄격한 선비로 이름이 높았습니다. 겨울에도 시들지 않는 소나무는 그가 지키고자 한 지조 그 자체였습니다.",
+   "en": "On a snowy slope, one pine stands bolt upright while a second, its roots laid bare, leans across in front of it. The straight tree's branches break off at sharp right angles, and angular rocks guard the base of its trunk. Yi In-sang never painted the snow at all. He left the tops of the rocks and branches as bare paper and laid a pale ink wash over the sky, so the white seems to settle on its own. Dry, scratchy needles and an ink tone with no dark accents give the scene its cold, clear air. Born into a branch of a noble family barred from high office, Yi rose no higher than a county magistrate, yet he was known as a scholar of unbending principle. A pine that stays green through winter was his portrait of that ideal."
+  },
+  "look": {
+   "ko": [
+    "곧은 소나무와 비스듬히 가로지르는 소나무",
+    "칠하지 않고 비워 둔 눈",
+    "직각으로 꺾인 가지와 모난 바위"
+   ],
+   "en": [
+    "One upright pine, one leaning across it",
+    "Snow made of untouched paper",
+    "Branches bent at right angles, and sharp-edged rocks"
+   ]
+  },
+  "words": [
+   {
+    "en": "integrity",
+    "ko": "지조, 고결함"
+   },
+   {
+    "en": "ink wash",
+    "ko": "먹의 번짐, 담묵 바림"
+   },
+   {
+    "en": "evergreen",
+    "ko": "상록의, 늘 푸른"
+   }
+  ]
+ },
+ {
+  "id": "w-sunflowers",
+  "region": "world",
+  "title": {
+   "ko": "해바라기",
+   "en": "Sunflowers"
+  },
+  "artist": {
+   "ko": "빈센트 반 고흐",
+   "en": "Vincent van Gogh"
+  },
+  "date": "1888",
+  "medium": {
+   "ko": "캔버스에 유채, 92.1×73cm",
+   "en": "Oil on canvas, 92.1 × 73 cm"
+  },
+  "collection": {
+   "ko": "내셔널 갤러리, 런던",
+   "en": "The National Gallery, London"
+  },
+  "wiki": {
+   "en": [
+    "Sunflowers (Van Gogh series)"
+   ],
+   "ko": [
+    "해바라기 (고흐)"
+   ]
+  },
+  "tagline": {
+   "ko": "친구를 기다리며 그린, 온통 노란 그림",
+   "en": "A picture all in yellow, painted while waiting for a friend"
+  },
+  "text": {
+   "ko": "1888년 8월, 남프랑스 아를의 '노란 집'에서 반 고흐는 곧 찾아올 화가 고갱의 방을 꾸미려고 해바라기를 그렸습니다. 꽃병에는 해바라기 열다섯 송이가 꽂혀 있는데, 아직 피지 않은 봉오리부터 활짝 핀 꽃, 꽃잎을 떨구고 씨앗만 남은 꽃까지 한 송이의 일생이 모두 담겨 있습니다. 배경과 탁자, 꽃병까지 거의 모든 것이 노란색이라 고흐 스스로 '온통 노란 그림'이라고 불렀습니다. 물감을 두껍게 올린 꽃 머리는 손으로 만질 수 있을 것처럼 도드라집니다. 꽃병에는 파란색으로 'Vincent'라는 서명이 적혀 있습니다. 같은 해 12월 두 화가는 크게 다투었고, 함께 살던 시간은 두 달 만에 끝났습니다.",
+   "en": "In August 1888, in the Yellow House at Arles in the south of France, Van Gogh painted sunflowers to decorate the room where his fellow painter Gauguin would soon stay. The vase holds fifteen blooms covering a whole life cycle: a tight bud, flowers in full glow, and heads that have dropped their petals and gone to seed. Background, table and vase are nearly all yellow, and Van Gogh himself called it a picture all in yellow. The flower heads are built up in paint so thick they seem to rise off the canvas. On the vase he signed simply \"Vincent\" in blue. That December the two artists quarrelled badly, and their life together ended after just two months."
+  },
+  "look": {
+   "ko": [
+    "봉오리부터 씨앗만 남은 꽃까지, 열다섯 송이",
+    "꽃병 위의 파란 서명 'Vincent'",
+    "두껍게 쌓아 올린 꽃 머리의 물감"
+   ],
+   "en": [
+    "Fifteen flowers, from bud to seed head",
+    "The blue signature \"Vincent\" on the vase",
+    "Paint piled thick on the flower heads"
+   ]
+  },
+  "words": [
+   {
+    "en": "bloom",
+    "ko": "꽃, 꽃이 피다"
+   },
+   {
+    "en": "go to seed",
+    "ko": "(꽃이) 지고 씨앗이 맺히다"
+   },
+   {
+    "en": "impasto",
+    "ko": "임파스토, 물감을 두껍게 바르는 기법"
+   }
+  ]
+ },
+ {
+  "id": "w-folies",
+  "region": "world",
+  "title": {
+   "ko": "폴리베르제르의 술집",
+   "en": "A Bar at the Folies-Bergère"
+  },
+  "artist": {
+   "ko": "에두아르 마네",
+   "en": "Édouard Manet"
+  },
+  "date": "1882",
+  "medium": {
+   "ko": "캔버스에 유채, 96×130cm",
+   "en": "Oil on canvas, 96 × 130 cm"
+  },
+  "collection": {
+   "ko": "코톨드 갤러리, 런던",
+   "en": "The Courtauld Gallery, London"
+  },
+  "wiki": {
+   "en": [
+    "A Bar at the Folies-Bergère"
+   ],
+   "ko": [
+    "폴리베르제르의 술집"
+   ]
+  },
+  "tagline": {
+   "ko": "화려한 밤의 한가운데, 혼자만 멈춰 선 얼굴",
+   "en": "In the middle of a dazzling night, one face stands perfectly still"
+  },
+  "text": {
+   "ko": "파리의 화려한 극장식 술집 폴리베르제르의 바 뒤에 한 여인이 서 있습니다. 그녀 뒤에 펼쳐진 샹들리에와 군중은 모두 커다란 거울에 비친 모습이니, 사실 그 소란은 우리가 서 있는 쪽에 있는 셈입니다. 그런데 거울 속 그녀의 뒷모습은 오른쪽으로 훌쩍 비켜나 있고, 한 남자 손님과 마주하고 있습니다. 이 어긋난 반사는 1882년 처음 공개된 뒤로 지금까지 논쟁거리입니다. 왼쪽 위 구석에는 공중그네 곡예사의 초록 신발을 신은 두 발이 살짝 보이고, 대리석 바 위에는 빨간 삼각형 상표의 영국 맥주병과 샴페인, 오렌지가 놓여 있습니다. 실제로 이곳에서 일하던 쉬종이라는 여성이 마네의 작업실에서 포즈를 취했습니다. 이 그림은 마네가 세상을 떠나기 1년 전에 완성한 마지막 대작입니다.",
+   "en": "A young woman stands behind the bar at the Folies-Bergère, one of the most glittering music halls in Paris. The chandeliers and the crowd behind her are all a reflection in a huge mirror, which means the noisy room is really on our side of the bar. Yet her reflected back has slipped far off to the right, where she seems to face a male customer. That misplaced reflection has been argued over ever since the picture was first shown in 1882. In the top left corner, the green-booted feet of a trapeze artist dangle into view, and the marble counter holds champagne, oranges and bottles of English beer marked with a red triangle. The model was Suzon, a real barmaid there, who posed in Manet's studio. It was his last major painting, finished a year before he died."
+  },
+  "look": {
+   "ko": [
+    "어긋나 있는 거울 속 뒷모습",
+    "왼쪽 위 공중그네 곡예사의 두 발",
+    "빨간 삼각형 상표의 맥주병"
+   ],
+   "en": [
+    "Her reflection, strangely shifted to the right",
+    "The trapeze artist's feet in the top left corner",
+    "Beer bottles with a red triangle label"
+   ]
+  },
+  "words": [
+   {
+    "en": "reflection",
+    "ko": "반사, 비친 모습"
+   },
+   {
+    "en": "barmaid",
+    "ko": "바의 여종업원"
+   },
+   {
+    "en": "music hall",
+    "ko": "뮤직홀, 공연과 술을 함께 즐기던 극장"
+   }
+  ]
+ },
+ {
+  "id": "w-temeraire",
+  "region": "world",
+  "title": {
+   "ko": "전함 테메레르",
+   "en": "The Fighting Temeraire"
+  },
+  "artist": {
+   "ko": "J. M. W. 터너",
+   "en": "J. M. W. Turner"
+  },
+  "date": "1839",
+  "medium": {
+   "ko": "캔버스에 유채, 90.7×121.6cm",
+   "en": "Oil on canvas, 90.7 × 121.6 cm"
+  },
+  "collection": {
+   "ko": "내셔널 갤러리, 런던",
+   "en": "The National Gallery, London"
+  },
+  "wiki": {
+   "en": [
+    "The Fighting Temeraire"
+   ],
+   "ko": [
+    "전함 테메레르"
+   ]
+  },
+  "tagline": {
+   "ko": "영웅의 배가 마지막 항해를 떠나는 저녁",
+   "en": "The evening a hero ship made her final voyage"
+  },
+  "text": {
+   "ko": "1805년 트라팔가르 해전에서 넬슨 제독의 기함을 지켜 낸 전함 테메레르가 해체되기 위해 템스강을 거슬러 끌려가고 있습니다. 앞장선 것은 검고 땅딸막한 증기 예인선입니다. 터너는 예인선의 굴뚝을 돛대 앞에 그려 넣어, 검은 연기가 유령처럼 창백한 범선의 돛대 사이로 흘러가게 했습니다. 화면 오른쪽에는 불타는 듯한 석양이, 왼쪽 위에는 희미한 초승달이 떠 있습니다. 돛의 시대가 저물고 증기의 시대가 오는 순간을 하늘 전체로 그린 셈입니다. 터너는 이 그림을 '내 사랑'이라 부르며 끝내 팔지 않았고, 국가에 유산으로 남겼습니다. 2005년 영국인이 가장 사랑하는 그림을 뽑는 투표에서 1위에 올랐고, 지금은 영국 20파운드 지폐에도 실려 있습니다.",
+   "en": "The warship Temeraire, which had helped protect Nelson's flagship at the Battle of Trafalgar in 1805, is being towed up the Thames to be broken up for scrap. Leading her is a squat, dark steam tug. Turner placed the tug's funnel in front of its mast so that the black smoke drifts back past the pale, ghostly masts of the old sailing ship. A blazing sunset fills the right side of the sky, and a faint crescent moon rises at the upper left. The whole sky becomes a picture of the age of sail giving way to the age of steam. Turner called the painting his darling, refused to sell it and left it to the nation. In 2005 it was voted Britain's favorite painting, and it now appears on the Bank of England's £20 note."
+  },
+  "look": {
+   "ko": [
+    "유령처럼 창백한 옛 전함",
+    "앞장선 검은 증기 예인선과 연기",
+    "불타는 석양과 반대편의 초승달"
+   ],
+   "en": [
+    "The old warship, pale as a ghost",
+    "The dark steam tug and its smoke",
+    "The blazing sunset, and the crescent moon opposite"
+   ]
+  },
+  "words": [
+   {
+    "en": "tow",
+    "ko": "(배를) 끌다, 예인하다"
+   },
+   {
+    "en": "tugboat",
+    "ko": "예인선"
+   },
+   {
+    "en": "give way to",
+    "ko": "~에 자리를 내주다"
+   }
+  ]
+ },
+ {
+  "id": "w-matthew",
+  "region": "world",
+  "title": {
+   "ko": "성 마태오의 소명",
+   "en": "The Calling of Saint Matthew"
+  },
+  "artist": {
+   "ko": "카라바조",
+   "en": "Caravaggio"
+  },
+  "date": "1599–1600",
+  "medium": {
+   "ko": "캔버스에 유채, 322×340cm",
+   "en": "Oil on canvas, 322 × 340 cm"
+  },
+  "collection": {
+   "ko": "산 루이지 데이 프란체시 성당 콘타렐리 예배당, 로마",
+   "en": "Contarelli Chapel, San Luigi dei Francesi, Rome"
+  },
+  "wiki": {
+   "en": [
+    "The Calling of Saint Matthew"
+   ],
+   "ko": [
+    "성 마태오의 소명"
+   ]
+  },
+  "tagline": {
+   "ko": "어두운 방을 가르는 한 줄기 빛, 그리고 '나 말입니까?'",
+   "en": "A single shaft of light cuts the dark room, asking: me?"
+  },
+  "text": {
+   "ko": "어둑한 방에서 세리 마태오가 동료들과 탁자에 둘러앉아 돈을 세고 있습니다. 오른쪽 문간으로 그리스도가 들어와 손을 뻗어 그를 가리킵니다. 그 손은 미켈란젤로의 〈아담의 창조〉 속 아담의 손을 닮아, 새로운 창조가 시작되는 순간임을 암시합니다. 그리스도 머리 위에서 들어온 빛이 사선으로 방을 가르며 탁자의 얼굴들을 차례로 비춥니다. 수염 난 남자가 자기 가슴을 가리키며 '저 말입니까?' 하고 묻는 것처럼 보여 보통 그를 마태오로 보지만, 탁자 끝에서 고개를 숙이고 동전을 세는 젊은이가 마태오라는 해석도 있습니다. 인물들은 화가가 살던 시대의 옷을 입고 있어, 성경 이야기가 로마의 뒷골목에서 벌어지는 듯합니다. 카라바조가 처음 맡은 공공 주문작으로, 400년이 지난 지금도 처음 걸린 예배당에 그대로 있습니다.",
+   "en": "In a dim room, the tax collector Matthew sits at a table with his companions, counting money. Through a doorway on the right, Christ enters and stretches out his hand to point at him. That hand echoes Adam's in Michelangelo's Creation of Adam, hinting that a new creation is beginning. Light falls from above Christ's head in a sharp diagonal, catching the faces at the table one by one. A bearded man points to his own chest as if to ask \"Me?\", and he is usually taken to be Matthew, though some argue Matthew is the young man hunched over his coins at the end of the table. Everyone wears the clothes of Caravaggio's own day, so the Bible story seems to happen in a Roman back street. It was his first public commission, and it still hangs in the chapel it was painted for."
+  },
+  "look": {
+   "ko": [
+    "어둠을 사선으로 가르는 빛",
+    "아담의 손을 닮은 그리스도의 손",
+    "자기 가슴을 가리키는 수염 난 남자"
+   ],
+   "en": [
+    "The diagonal beam of light cutting the dark",
+    "Christ's hand, echoing Adam's",
+    "The bearded man pointing to himself"
+   ]
+  },
+  "words": [
+   {
+    "en": "tax collector",
+    "ko": "세리, 세금 징수원"
+   },
+   {
+    "en": "calling",
+    "ko": "소명, 부르심"
+   },
+   {
+    "en": "chiaroscuro",
+    "ko": "키아로스쿠로, 명암 대비법"
+   }
+  ]
  }
 ]

@@ -631,6 +631,10 @@ body.home .top.solid .lang button.on,body.home.menu-open .top .lang button.on{ba
 .ft-cover.big .art:first-child{grid-row:auto}
 .ft-cover.big .art:nth-child(4){display:none}
 .ft-cover.big img{filter:saturate(.9)}
+/* covers with fewer than 3 images: fill the frame instead of leaving dark empty columns */
+.ft-cover.n1,.ft-cover.big.n1{grid-template-columns:1fr;grid-template-rows:1fr}
+.ft-cover.n1 .art:first-child{grid-row:auto}
+.ft-cover.big.n2{grid-template-columns:1.2fr 1fr}
 .ft-hero-shade{position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,9,7,.92) 0%,rgba(10,9,7,.55) 45%,rgba(10,9,7,.25) 100%)}
 .ft-hero-in{position:relative;z-index:2;padding-top:140px;padding-bottom:clamp(40px,6vw,72px)}
 .ft-hero .eyebrow{color:rgba(237,230,216,.7)}

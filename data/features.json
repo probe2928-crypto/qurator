@@ -1,5 +1,620 @@
 [
  {
+  "id": "korea-exhibitions-2026-autumn",
+  "asof": "2026.10.27",
+  "kicker": {
+   "ko": "전시 가이드",
+   "en": "Exhibition Guide"
+  },
+  "title": {
+   "ko": "지금 꼭 봐야 할 국내 전시 14",
+   "en": "14 Exhibitions to See in Korea Right Now"
+  },
+  "dek": {
+   "ko": "겸재 정선 350주년 회고전부터 서도호, 솔 르윗, 두 비엔날레의 막바지까지. 이번 가을 미술관에서 놓치면 아쉬울 전시를 대표작 한 점씩과 함께 골랐습니다.",
+   "en": "From the Jeong Seon 350th-anniversary retrospective to Do Ho Suh, Sol LeWitt and the final days of two biennales: the shows worth your autumn, each with one key work."
+  },
+  "intro": {
+   "ko": "가을은 한국 미술관이 가장 바쁜 계절입니다. 10월 27일 현재 열려 있거나 곧 문을 닫는 전시 가운데, 미술사적으로 의미가 크고 실제로 발걸음을 옮길 가치가 있는 열네 곳을 골랐습니다. 각 전시마다 대표작 한 점을 앞에 세우고, 장소와 기간, 그리고 왜 지금 봐야 하는지를 짧게 적었습니다.\n고전과 서양 거장, 한국 동시대 미술, 비엔날레의 세 갈래로 나누었고, 폐막이 가까운 전시는 따로 표시했습니다. 관람 시간과 휴관일, 예약 여부는 방문 전 각 기관 공지를 한 번 더 확인해 주세요.",
+   "en": "Autumn is the busiest season in Korean museums. From the shows open as of 27 October, or about to close, we picked fourteen that matter for art history and are worth the trip. Each one leads with a single key work, followed by the venue, the dates and a short note on why it matters now.\nThey fall into three groups: classics and Western masters, Korean contemporary art, and the biennales. Shows closing soon are flagged. Please check each venue's opening hours, closing days and booking rules before you go."
+  },
+  "cover": [
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Jeong%20Seon-Geumgangjeondo.jpg?width=1600"
+  ],
+  "sections": [
+   {
+    "title": {
+     "ko": "고전과 거장",
+     "en": "Classics and masters"
+    },
+    "dek": {
+     "ko": "조선 회화의 정점부터 인상주의, 미국 정물, 개념미술까지.",
+     "en": "From the peak of Joseon painting to Impressionism, American still life and Conceptual art."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "금강전도",
+       "en": "General View of Mt. Geumgang"
+      },
+      "artist": {
+       "ko": "정선",
+       "en": "Jeong Seon"
+      },
+      "year": "1734",
+      "medium": {
+       "ko": "종이에 수묵담채",
+       "en": "Ink and light color on paper"
+      },
+      "headline": {
+       "ko": "겸재 정선 · 대구간송미술관 · 2026.09.16–12.27",
+       "en": "Gyeomjae Jeong Seon · Daegu Kansong Art Museum · 16 Sep – 27 Dec 2026"
+      },
+      "why": {
+       "ko": "정선 탄신 350주년을 맞아 간송미술문화재단과 삼성문화재단이 216점(국보 1점, 보물 71점)을 한자리에 모았다. 반세기 만의 최대 규모 겸재전으로 꼽힌다. 중국 화보를 따르는 대신 조선의 산천을 직접 보고 그린 '진경산수'가 1711년 신묘년풍악도첩부터 1747년 해악전신첩까지 어떻게 무르익었는지 한 흐름으로 볼 수 있다.",
+       "en": "For the 350th anniversary of Jeong Seon's birth, the Kansong and Samsung foundations have gathered 216 works, among them one National Treasure and 71 Treasures. It is billed as the largest Jeong Seon show in about half a century. From the 1711 Sinmyonyeon album to the 1747 Haeak Jeonsin album, you can follow how he stopped copying Chinese painting manuals and learned to paint Korea's mountains as he actually saw them."
+      },
+      "record": {
+       "ko": "국보 · 개인 소장",
+       "en": "National Treasure · private collection"
+      },
+      "pd": true,
+      "commons": "Jeong Seon-Geumgangjeondo.jpg",
+      "sources": [
+       {
+        "label": "파이낸셜뉴스",
+        "url": "https://www.fnnews.com/news/202609160509423551"
+       },
+       {
+        "label": "헤럴드경제",
+        "url": "https://www.heraldk.com/article/2026091422002462236"
+       },
+       {
+        "label": "The Korea Herald",
+        "url": "https://biz.heraldcorp.com/article/10873987"
+       },
+       {
+        "label": "공식 예매 페이지",
+        "url": "https://nol.yanolja.com/ticket/products/26011790"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "직성수구 행서 대련",
+       "en": "'Jikseong Sugu' couplet in semi-cursive script"
+      },
+      "artist": {
+       "ko": "김정희",
+       "en": "Kim Jeong-hui (Chusa)"
+      },
+      "year": "19세기 · 19th c.",
+      "medium": {
+       "ko": "종이에 먹, 대련",
+       "en": "Ink on paper, couplet"
+      },
+      "headline": {
+       "ko": "상서, 컬렉션을 읽다 · 간송미술관(서울 성북동) · 2026.10.07–12.06",
+       "en": "Sangseo: Reading the Collection · Kansong Art Museum, Seoul · 7 Oct – 6 Dec 2026"
+      },
+      "why": {
+       "ko": "간송 전형필 탄신 120주년 특별전으로, 작품을 담아 두던 오동나무 상자 위의 먹글씨 '상서'를 실마리로 삼는다. 간송이 무엇을 어떻게 모으고 감정하고 보관했는지를 보여 주며, 걸작보다 '수집의 역사'를 앞세운 드문 전시다. 한국 근대 컬렉션이 어떻게 지켜졌는지를 다시 읽을 기회다.",
+       "en": "Marking 120 years since Kansong Jeon Hyeong-pil's birth, this show takes as its clue the ink inscriptions, called sangseo, on the paulownia boxes that held each work. It shows what Kansong collected and how he authenticated and stored it, putting the history of collecting ahead of the masterpieces themselves. It is a rare chance to see how Korea's great modern collection was kept safe."
+      },
+      "pd": true,
+      "img": null,
+      "sources": [
+       {
+        "label": "공식 예매 페이지",
+        "url": "https://nol.yanolja.com/ticket/products/26013749"
+       },
+       {
+        "label": "YTN",
+        "url": "https://www.ytn.co.kr/_ln/0106_202610100415546371"
+       },
+       {
+        "label": "아시아경제",
+        "url": "https://view.asiae.co.kr/article/2026071012295329988"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "강가의 시골저택",
+       "en": "Country House by a River"
+      },
+      "artist": {
+       "ko": "폴 세잔",
+       "en": "Paul Cézanne"
+      },
+      "year": "c. 1890",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "인상파, 찬란한 순간들 · 국립아시아문화전당(광주) · 2026.09.23–2027.02.21",
+       "en": "Impressionism, Dazzling Moments · Asia Culture Center, Gwangju · 23 Sep 2026 – 21 Feb 2027"
+      },
+      "why": {
+       "ko": "모네 서거 100주년에 맞춰 이스라엘 박물관이 소장한 인상주의·후기인상주의 원화 21점(작가 11명)이 광주에 왔다. 반 고흐의 〈양귀비 들판〉은 국내 첫 공개다. 빛과 물, 반사를 붙잡던 인상주의가 세잔의 단단한 화면 구성으로 넘어가는 과정을 원화로 따라갈 수 있다.",
+       "en": "For the centenary of Monet's death, 21 Impressionist and Post-Impressionist originals by 11 artists have travelled to Gwangju from the Israel Museum, including Van Gogh's Poppy Field, shown in Korea for the first time. You can follow, in real paint, how Impressionism's chase after light, water and reflection gave way to Cézanne's solidly built canvases."
+      },
+      "pd": true,
+      "img": null,
+      "sources": [
+       {
+        "label": "서울신문",
+        "url": "https://twig24.com/news/2026/09/22/20260922500311"
+       },
+       {
+        "label": "공식 예매 페이지",
+        "url": "https://nol.yanolja.com/ticket/products/26011839"
+       },
+       {
+        "label": "Google Arts & Culture — Israel Museum",
+        "url": "https://artsandculture.google.com/asset/country-house-by-a-river/ogELT1B3t3lsJw"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "샐러드, 샌드위치, 그리고 디저트",
+       "en": "Salads, Sandwiches, and Desserts"
+      },
+      "artist": {
+       "ko": "웨인 티보",
+       "en": "Wayne Thiebaud"
+      },
+      "year": "1962",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "현대카드 컬처프로젝트 31 웨인 티보 전 · 동대문디자인플라자(DDP) · 2026.09.19–2027.02.21",
+       "en": "Hyundai Card Culture Project 31: Wayne Thiebaud · DDP, Seoul · 19 Sep 2026 – 21 Feb 2027"
+      },
+      "why": {
+       "ko": "105점으로 70년 화업을 훑는 티보의 국내 첫 회고전이다. 두꺼운 물감으로 그린 케이크와 디저트는 흔히 팝아트로 묶이지만, 전시는 반복과 배열, 빛이 만드는 형식의 '질서'에 주목한다. 그를 미국 정물화의 긴 전통 안에 다시 놓아 보는 자리다.",
+       "en": "With 105 works spanning seven decades, this is Thiebaud's first retrospective in Korea. His thickly painted cakes and desserts are usually filed under Pop art, but the show looks instead at the formal order he built from repetition, arrangement and light. It sets him back inside the long tradition of American still life."
+      },
+      "pd": false,
+      "img": null,
+      "sources": [
+       {
+        "label": "The Korea Herald",
+        "url": "https://www.koreaherald.com/article/10879566"
+       },
+       {
+        "label": "Korea JoongAng Daily",
+        "url": "https://www.koreajoongangdaily.com/lifestyle/wayne-thiebauds-cakes-arrive-in-seoul-revealing-an-artist-who-painted-order-beneath-every-sweet-surface/12881438"
+       },
+       {
+        "label": "데일리안",
+        "url": "https://www.dailian.co.kr/news/view/1692292"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "월 드로잉 #784",
+       "en": "Wall Drawing #784"
+      },
+      "artist": {
+       "ko": "솔 르윗",
+       "en": "Sol LeWitt"
+      },
+      "year": "1995",
+      "medium": {
+       "ko": "컬러 잉크 워시",
+       "en": "Color ink wash"
+      },
+      "headline": {
+       "ko": "솔 르윗: 열린 구조 · 아모레퍼시픽미술관 · 2026.09.01–2027.02.28",
+       "en": "Sol LeWitt: Open Structure · Amorepacific Museum of Art, Seoul · 1 Sep 2026 – 28 Feb 2027"
+      },
+      "why": {
+       "ko": "개념미술을 연 작가 가운데 한 명인 솔 르윗의 국내 첫 대규모 개인전으로, 월 드로잉 13점을 포함해 45점이 나왔다. 작가가 남긴 지시문에 따라 다른 사람들이 미술관 벽에 직접 그리는 월 드로잉은 '아이디어가 곧 작품'이라는 개념미술의 명제를 눈앞에서 확인하게 한다.",
+       "en": "This is the first major Korean solo show for Sol LeWitt, one of the founders of Conceptual art, with 45 works including 13 wall drawings. Other hands paint those drawings straight onto the museum walls from his written instructions, so you see Conceptual art's core claim, that the idea is the artwork, carried out in front of you."
+      },
+      "pd": false,
+      "img": null,
+      "sources": [
+       {
+        "label": "아모레퍼시픽 공식 뉴스",
+        "url": "https://www.apgroup.com/int/ko/news/2026-08-21-2.html"
+       },
+       {
+        "label": "뉴시스",
+        "url": "https://www.newsis.com/view/NISX20260521_0003638753"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "나뉜 소 두 마리 I",
+       "en": "Divided Cows I"
+      },
+      "artist": {
+       "ko": "게오르그 바젤리츠",
+       "en": "Georg Baselitz"
+      },
+      "year": "1966",
+      "medium": {
+       "ko": "회화",
+       "en": "Painting"
+      },
+      "headline": {
+       "ko": "게오르그 바젤리츠 · 세화미술관(광화문) · 2026.08.13–12.27",
+       "en": "Georg Baselitz · Sehwa Museum of Art, Seoul · 13 Aug – 27 Dec 2026"
+      },
+      "why": {
+       "ko": "2026년 4월 세상을 떠난 독일 신표현주의 거장의 사후 첫 대규모 회고전이다. 1960년대 초기작부터 마지막 작품 〈그보다 더〉까지 46점이 나왔고, 그중 39점은 국내에 처음 소개된다. 그림을 거꾸로 뒤집어 그려 회화를 '무엇을 그렸나'에서 '어떻게 그렸나'로 돌려놓은 실험을 처음부터 끝까지 볼 수 있다.",
+       "en": "The first major retrospective since the German Neo-Expressionist died in April 2026 brings 46 works, 39 of them new to Korea, from the 1960s to his final painting, Even More. You can follow from start to finish the experiment of painting images upside down, which turned the question of painting from what is shown to how it is made."
+      },
+      "pd": false,
+      "img": null,
+      "sources": [
+       {
+        "label": "한국경제",
+        "url": "https://www.hankyung.com/article/2026081399501"
+       },
+       {
+        "label": "스마트투데이",
+        "url": "https://www.smarttoday.co.kr/ko-kr/articles/110423"
+       },
+       {
+        "label": "아시아경제",
+        "url": "https://view.asiae.co.kr/article/2026071509272440153"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": {
+     "ko": "한국 동시대 미술의 지금",
+     "en": "Korean contemporary art now"
+    },
+    "dek": {
+     "ko": "국공립·사립 미술관이 공들인 한국 작가 개인전과 올해의 작가상.",
+     "en": "Major solo shows of Korean artists and the Korea Artist Prize."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "둥지_들",
+       "en": "Nest/s"
+      },
+      "artist": {
+       "ko": "서도호",
+       "en": "Do Ho Suh"
+      },
+      "year": "2024",
+      "medium": {
+       "ko": "반투명 천 설치",
+       "en": "Translucent fabric installation"
+      },
+      "headline": {
+       "ko": "서도호 · 국립현대미술관 서울 · 2026.08.27–2027.02.09",
+       "en": "Do Ho Suh · MMCA Seoul · 27 Aug 2026 – 9 Feb 2027"
+      },
+      "why": {
+       "ko": "서울·뉴욕·런던·베를린 등 자신이 살았던 집을 반투명 천으로 떠 온 서도호의 대규모 미술관 개인전이다. 길이 22m의 〈둥지_들〉과 처음 공개되는 〈완벽한 집〉을 지나며 이주와 기억, '집'이 몸에 새겨지는 방식을 묻는다. 서울박스에서는 12월 18일부터 〈아파트 A〉가 처음으로 전체 유닛을 갖춰 공개된다.",
+       "en": "A major museum survey of Do Ho Suh, who recreates the homes he has lived in, from Seoul and New York to London and Berlin, in translucent fabric. Walking through the 22-meter Nest/s and the newly shown Perfect Home, you face his questions about migration, memory and how a home is carried in the body. From 18 December the Seoul Box will show Apartment A with all its units for the first time."
+      },
+      "pd": false,
+      "img": null,
+      "sources": [
+       {
+        "label": "헤럴드경제",
+        "url": "https://www.heraldk.com/article/2026082601513445426"
+       },
+       {
+        "label": "경향신문",
+        "url": "https://www.khan.co.kr/article/202608052033005"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "농원",
+       "en": "Farm"
+      },
+      "artist": {
+       "ko": "이대원",
+       "en": "Lee Dai-won"
+      },
+      "year": "1987",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "이대원: 당신을 슬프게 하는 것은 하나도 없다 · 국립현대미술관 덕수궁 · 2026.08.06–11.08",
+       "en": "Lee Dai-won: Nothing Here Will Make You Sad · MMCA Deoksugung · 6 Aug – 8 Nov 2026"
+      },
+      "why": {
+       "ko": "유화 120여 점과 아카이브 100여 점으로 70년 화업을 되짚는 회고전이다. 열두 살에 그린 〈백일홍〉(1933)부터 5m가 넘는 말년의 대작까지 보여 주며, '과수원 화가'라는 친숙한 이미지 뒤에 있는 색점과 색선의 추상적 실험을 드러낸다. 11월 8일 폐막이니 서두르는 편이 좋다.",
+       "en": "Some 120 oil paintings and about 100 archival items trace Lee's seventy-year career, from a still life of zinnias he painted at twelve in 1933 to late canvases more than five meters wide. Behind his friendly image as the 'orchard painter,' the show reveals a near-abstract practice built from dots and strokes of color. It closes on 8 November, so go soon."
+      },
+      "record": {
+       "ko": "11월 8일 폐막",
+       "en": "Closes 8 November"
+      },
+      "pd": false,
+      "img": null,
+      "sources": [
+       {
+        "label": "뉴시스",
+        "url": "https://www.newsis.com/view/NISX20260805_0003737481"
+       },
+       {
+        "label": "보그 코리아",
+        "url": "https://www.vogue.co.kr/?p=877932"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "토끼도 굴을 두 개 판다",
+       "en": "Rabbits Also Dig Two Holes"
+      },
+      "artist": {
+       "ko": "전현선",
+       "en": "Jeon Hyun-sun"
+      },
+      "year": "2026",
+      "medium": {
+       "ko": "캔버스 30점(각 2×2m)의 회화 설치",
+       "en": "Painting installation of 30 canvases, each 2 × 2 m"
+      },
+      "headline": {
+       "ko": "올해의 작가상 2026 · 국립현대미술관 서울 · 2026.07.24–12.06",
+       "en": "Korea Artist Prize 2026 · MMCA Seoul · 24 Jul – 6 Dec 2026"
+      },
+      "why": {
+       "ko": "한국 동시대 미술의 흐름을 가늠하는 올해의 작가상, 2026년 후원 작가 네 명(이해민선·이정우·전현선·홍진훤)이 신작 약 100점을 선보인다. 회화는 어디까지 넓어질 수 있는지, 생성형 AI와 데이터 시스템, 이미지가 가진 권력 등 지금 한국 작가들이 붙들고 있는 질문을 한자리에서 볼 수 있다.",
+       "en": "The Korea Artist Prize is a key barometer of Korean contemporary art. This year's four nominees, Lee Hae-min-sun, Lee Jung-woo, Jeon Hyun-sun and Hong Jin-hwon, show about 100 new works. Together they map the questions Korean artists are wrestling with now: how far painting can stretch, generative AI and data systems, and the power of images."
+      },
+      "pd": false,
+      "img": null,
+      "sources": [
+       {
+        "label": "뉴시스",
+        "url": "https://www.newsis.com/view/NISX20260723_0003720709"
+       },
+       {
+        "label": "디자인프레스",
+        "url": "https://design.co.kr/article/171862/"
+       },
+       {
+        "label": "뉴스1",
+        "url": "https://www.news1.kr/life-culture/performance-exhibition/6237464"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "[그라비타]",
+       "en": "[GRAVITTA]"
+      },
+      "artist": {
+       "ko": "구정아",
+       "en": "Koo Jeong A"
+      },
+      "year": "2025",
+      "medium": {
+       "ko": "축광 페인트를 칠한 강화 섬유유리 구조물",
+       "en": "Reinforced fiberglass structure with glow-in-the-dark paint"
+      },
+      "headline": {
+       "ko": "구정아: 우스모스 · 리움미술관 · 2026.09.05–12.27",
+       "en": "KOO JEONG A: OUSSSMOS · Leeum Museum of Art, Seoul · 5 Sep – 27 Dec 2026"
+      },
+      "why": {
+       "ko": "1990년대 초기작부터 신작까지 약 35점을 모은, 구정아의 국내 최대 규모 개인전이다. 옹벽 틈의 작은 크리스털, 향, 어둠 속에서 빛나는 구조물처럼 '놓치기 쉬운' 미세한 개입으로 미술관 전체를 감각의 장으로 바꾼다. 관람 자체가 조용한 보물찾기가 된다.",
+       "en": "About 35 works, from the 1990s to new commissions, make this Koo Jeong A's largest solo show in Korea. Through tiny interventions that are easy to miss, such as crystals tucked into retaining walls, scent and structures that glow in the dark, she turns the whole museum into a field of the senses. Visiting becomes a quiet treasure hunt."
+      },
+      "pd": false,
+      "img": null,
+      "sources": [
+       {
+        "label": "e-flux",
+        "url": "https://www.e-flux.com/announcements/6785707/koo-jeong-a-ousssmos"
+       },
+       {
+        "label": "헤럴드경제",
+        "url": "https://www.heraldk.com/article/2026083117361472593"
+       },
+       {
+        "label": "뉴스1",
+        "url": "https://www.news1.kr/life-culture/performance-exhibition/6220179"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "마케팅Ⅰ: 지옥도",
+       "en": "Marketing I: Hell"
+      },
+      "artist": {
+       "ko": "오윤",
+       "en": "Oh Yoon"
+      },
+      "year": "1980",
+      "medium": {
+       "ko": "캔버스에 혼합재료",
+       "en": "Mixed media on canvas"
+      },
+      "headline": {
+       "ko": "오윤 · 서울시립 미술아카이브(평창동) · 2026.08.27–2027.02.14",
+       "en": "Oh Yoon · SeMA Art Archive, Pyeongchang-dong · 27 Aug 2026 – 14 Feb 2027"
+      },
+      "why": {
+       "ko": "서거 40주년을 맞아 판목·스케치·드로잉·메모로 민중미술을 대표하는 판화가 오윤을 다시 읽는다. 1980년 '현실과 발언' 창립전에 나온 〈마케팅〉 연작부터 말기의 〈칼노래〉까지, 불화의 도상을 빌려 소비사회와 한국 근현대사를 비판한 그의 시각 언어를 따라간다.",
+       "en": "Forty years after his death, Oh Yoon, the defining printmaker of Korean Minjung art, is revisited through his woodblocks, sketches, drawings and notes. From the Marketing series, first shown at the 1980 founding exhibition of the group Reality and Utterance, to late works such as Knife Song, the show traces how he borrowed the imagery of Buddhist painting to critique consumer society and Korea's modern history."
+      },
+      "pd": false,
+      "img": null,
+      "sources": [
+       {
+        "label": "문화체육관광부 문화예술 정보",
+        "url": "https://www.mcst.go.kr/site/s_culture/culture/cultureView.jsp?pSeq=74285"
+       },
+       {
+        "label": "브런치 전시 리뷰",
+        "url": "https://brunch.co.kr/@whyart/292"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "말린",
+       "en": "Marlin"
+      },
+      "artist": {
+       "ko": "김희천",
+       "en": "Kim Heecheon"
+      },
+      "year": "2026",
+      "medium": {
+       "ko": "4채널 비디오, 35분",
+       "en": "Four-channel video, 35 min"
+      },
+      "headline": {
+       "ko": "김희천: 두더지들 · 서울시립 서서울미술관 · 2026.08.20–11.08",
+       "en": "Kim Heecheon: Moles · SeMA Seo-Seoul Museum of Art · 20 Aug – 8 Nov 2026"
+      },
+      "why": {
+       "ko": "게임 엔진과 스마트폰 사진 5,841장 같은 디지털 환경 자체를 재료로 삼는 1989년생 작가의 대규모 개인전이다. 가상과 현실의 경계가 흐려진 세대의 감각을 영상·게임·사진 설치로 보여 준다. 11월 8일 폐막.",
+       "en": "A large solo show by Kim Heecheon, born in 1989, who works with the digital environment itself, from game engines to 5,841 of his own smartphone photos. Through video, games and photo installation, he shows how a generation experiences a world where the virtual and the real blur together. Closes 8 November."
+      },
+      "record": {
+       "ko": "11월 8일 폐막",
+       "en": "Closes 8 November"
+      },
+      "pd": false,
+      "img": null,
+      "sources": [
+       {
+        "label": "디자인프레스",
+        "url": "https://design.co.kr/article/171862/"
+       },
+       {
+        "label": "브런치 10월 전시 추천",
+        "url": "https://brunch.co.kr/@whyart/293"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": {
+     "ko": "비엔날레, 막바지 관람",
+     "en": "The biennales, final days"
+    },
+    "dek": {
+     "ko": "부산은 11월 1일, 광주는 11월 15일에 막을 내립니다.",
+     "en": "Busan closes on 1 November, Gwangju on 15 November."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "사과",
+       "en": "Apologies"
+      },
+      "artist": {
+       "ko": "제임스 T. 홍",
+       "en": "James T. Hong"
+      },
+      "year": "2012–",
+      "medium": {
+       "ko": "단채널 비디오, 컬러, 사운드, 10시간 43분",
+       "en": "Single-channel video, color, sound, 10 h 43 min"
+      },
+      "headline": {
+       "ko": "제16회 광주비엔날레: 너는 네 삶을 바꿔야 한다 · 광주비엔날레전시관 외 · 2026.09.05–11.15",
+       "en": "16th Gwangju Biennale: You Must Change Your Life · Gwangju Biennale Hall and venues · 5 Sep – 15 Nov 2026"
+      },
+      "why": {
+       "ko": "호 추 니엔 예술감독이 참여 작가를 43팀으로 줄여 밀도를 높였고, 개인·사회·역사·우주 차원의 '변화'를 묻는다. 5·18 오월어머니집의 그림 322점과 허백련의 회화·차 문화가 국제 동시대 작업과 나란히 놓여, 광주라는 장소의 역사를 오늘의 질문과 잇는다.",
+       "en": "Artistic director Ho Tzu Nyen trimmed the roster to 43 artists for a denser biennale that asks about change at every scale, from the personal to the cosmic. 322 paintings by the May Mothers House and Huh Baek-ryun's ink painting and tea culture sit beside international contemporary work, tying Gwangju's own history to the questions of today."
+      },
+      "record": {
+       "ko": "11월 15일 폐막",
+       "en": "Closes 15 November"
+      },
+      "pd": false,
+      "img": null,
+      "sources": [
+       {
+        "label": "e-flux",
+        "url": "https://www.e-flux.com/announcements/6787672/you-must-change-your-life"
+       },
+       {
+        "label": "MTN 뉴스",
+        "url": "https://news.mtn.co.kr/news-detail/2026090710114525610"
+       },
+       {
+        "label": "한국경제",
+        "url": "https://www.hankyung.com/article/202609055982i"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "만가지 꿈",
+       "en": "Ten Thousand Dreams"
+      },
+      "artist": {
+       "ko": "류성실",
+       "en": "Ryu Sung-sil"
+      },
+      "year": "2026",
+      "medium": {
+       "ko": "설치·사운드",
+       "en": "Installation and sound"
+      },
+      "headline": {
+       "ko": "2026 부산비엔날레: 불협하는 합창 · 부산현대미술관 외 · 2026.08.29–11.01",
+       "en": "Busan Biennale 2026: Dissident Chorus · Museum of Contemporary Art Busan and venues · 29 Aug – 1 Nov 2026"
+      },
+      "why": {
+       "ko": "에블린 시몬스와 아말 칼라프가 함께 감독한 이번 비엔날레는 회화 대신 소리와 몸을 매개로 노동·이주·저항을 다룬다. 폐교와 오래된 선박 수리 창고를 전시장으로 써서 도시의 기억 자체를 작품의 일부로 끌어들였다. 11월 1일 폐막, 이번 주말이 마지막 기회다.",
+       "en": "Co-directed by Evelyn Simons and Amal Khalaf, this biennale trades painting for sound and the body to explore labor, migration and resistance. A closed school and an old ship-repair warehouse serve as venues, drawing the city's own memory into the work. It closes on 1 November, so this weekend is the last chance."
+      },
+      "record": {
+       "ko": "11월 1일 폐막",
+       "en": "Closes 1 November"
+      },
+      "pd": false,
+      "img": null,
+      "sources": [
+       {
+        "label": "헤럴드경제",
+        "url": "https://www.heraldk.com/article/2026083003584399799"
+       },
+       {
+        "label": "Busan Metropolitan City",
+        "url": "https://www.busan.go.kr/eng/bsnews01/1752281"
+       },
+       {
+        "label": "뉴시스",
+        "url": "https://www.newsis.com/view/NISX20260527_0003645687"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "note": {
+   "ko": "전시명·장소·기간은 기관 공식 안내(예매 페이지 포함)와 언론 보도 등 두 곳 이상에서 확인했습니다. 일정은 기관 사정으로 바뀔 수 있으니 방문 전 공식 공지를 확인해 주세요. 영문 전시명 가운데 공식 영문명이 확인되지 않은 것은 QURATOR가 옮겼습니다. 저작권이 남아 있는 작품은 이미지를 싣지 않았습니다.",
+   "en": "Titles, venues and dates were checked against at least two sources, including official venue or ticketing pages and press reports. Schedules can change, so check the venue's own notice before you go. Where no official English title was found, the translation is QURATOR's. Works still in copyright are shown without images."
+  }
+ },
+ {
   "id": "hot-30-2026",
   "asof": "2026.10.26",
   "kicker": {

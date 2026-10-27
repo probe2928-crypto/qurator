@@ -1043,7 +1043,7 @@ async function loadFeatures() {
 const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI'];
 function featCover(f, cls = '') {
   const imgs = (f.cover && f.cover.length ? f.cover : f.sections.flatMap(s => s.items).filter(i => i.img).map(i => i.img)).slice(0, 4);
-  return `<div class="ft-cover ${cls}">${imgs.map(src => `<div class="art" data-src="${esc(src)}"><span class="ph"></span></div>`).join('')}</div>`;
+  return `<div class="ft-cover ${cls} n${imgs.length}">${imgs.map(src => `<div class="art" data-src="${esc(src)}"><span class="ph"></span></div>`).join('')}</div>`;
 }
 async function viewFeatures() {
   app().innerHTML = `<div class="wrap"><div class="empty"><span class="spinner"></span></div></div>`;
