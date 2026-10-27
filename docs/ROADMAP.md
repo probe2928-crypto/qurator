@@ -21,7 +21,7 @@
 
 ## 사용자 조치 필요
 - Google Play 출시: Play Console 개인 계정 가입(25달러, 신분 확인) → 비공개 테스트에 AAB 업로드 → 테스터 12명 14일 → 앱 서명 SHA-256 전달 → 프로덕션 신청 (가이드: 'QURATOR 플레이스토어 등록 가이드' 문서)
-- GitHub 저장소 probe2928-crypto.github.io(Public) 생성 → .well-known/assetlinks.json 게시(앱 주소창 제거)
+- 앱 첫 업로드 후 Play Console '앱 서명 키' SHA-256 전달 → probe2928-crypto.github.io/.well-known/assetlinks.json 에 지문 추가(현재 업로드 키 지문만 있음)
 - claude.ai 설정 > Capabilities 허용 도메인에 wikipedia.org, wikimedia.org, github.io, clevelandart.org, artic.edu 추가 → 정기 점검에서 라이브 사이트·작품 이미지 자동 확인 가능 (2026-10-26 회차: 모두 차단돼 점검 못 함)
 - 사업자등록(업종에 전자상거래/정보통신 포함) + 통신판매업 신고 → 푸터 사업자 정보 게시
 - 토스페이먼츠 가입·심사 + 자동결제(빌링) 계약 → 라이브 클라이언트 키
@@ -29,6 +29,7 @@
 - 계좌이체 구독자: 입금 확인 후 멤버 코드 발급(MEMBER_CODES에 추가 요청)
 
 ## 완료
+- 2026-10-27 루트 저장소 probe2928-crypto.github.io 생성, /.well-known/assetlinks.json(kr.qurator.dailyart, 업로드 키 지문) 게시 + _config.yml(include .well-known). 기존 프로젝트 사이트(/qurator, /firstbrick, /chainbrief) 정상
 - 2026-10-27 나눔(퍼스트브릭 재단) 연동: #/giving 페이지(연결 방식·재단 계획·기부 기록·고지), 홈 남색 배너, 오늘의 작품·요금·결제·갤러리 안내 문구, 고객센터 FAQ·바로가기, 푸터 링크 — 웹·앱 공통
 - 2026-10-27 Google Play 앱(TWA, kr.qurator.dailyart 1.0.0) — Bubblewrap CI 빌드(android-build 브랜치, 서명 안 된 AAB) + 업로드 키 오프라인 서명, 앱 모드 consumption-only(?src=twa: 가격·결제·계좌 숨김, 멤버 코드로 열기), 스토어 스크린샷·대표 그래픽 자동 생성
 - 2026-10-26 한국어 도슨트 음성 교체: Supertonic 3(Supertone, OpenRAIL-M) — 10개 목소리를 Whisper 받아쓰기로 비교, 세준 선택으로 M5(따뜻한 이야기꾼 톤 남성), 숫자 한글 읽기 전처리, 29점 문장 단위 녹음. 플레이어 'AI 도슨트 음성' 표기
