@@ -65,7 +65,7 @@ async function unpack(s) {
 const S = {
   lang: store.get('q_lang', (navigator.language || 'ko').startsWith('ko') ? 'ko' : 'en'),
   works: [], byId: {}, daily: {},
-  member: store.get('q_member', false),
+  member: store.get('q_member', false), memberExp: store.get('q_exp', ''), memberEnded: '',
   studio: store.get('q_studio', { name: '', sub: '', items: [] })
 };
 const T = {
@@ -135,8 +135,13 @@ const T = {
   gv_fine: ['구독료와 갤러리 프로젝트 비용은 기부금이 아니며, 기부금 영수증이나 세액공제 대상이 아닙니다. 기부는 QURATOR가 자기 수익에서 직접 합니다.', 'Subscription and project fees are not donations and are not tax-deductible. QURATOR gives from its own revenue.'],
   play_unlock: ['멤버 코드로 열기', 'Unlock with member code'], play_h: ['멤버 전용 해설', 'Members-only commentary'],
   play_p: ['Daily Art 멤버십은 QURATOR 웹사이트에서 신청할 수 있습니다. 받은 멤버 코드를 아래에 입력하면 이 기기에서 계속 열람됩니다.', 'Daily Art membership is available on the QURATOR website. Enter the member code you received below and this device stays unlocked.'],
-  m_cta: ['구독 신청하기', 'Subscribe now'], m_code: ['멤버 코드 입력', 'Member code'], m_apply: ['확인', 'Apply'],
+  m_cta: ['구독 신청하기', 'Subscribe now'], m_code: ['멤버 코드 또는 링크', 'Member code or link'], m_apply: ['확인', 'Apply'],
   m_ok: ['멤버십이 활성화되었습니다', 'Membership activated'], m_bad: ['코드를 다시 확인해 주세요', 'Please check the code'],
+  m_until: ['{d}까지', 'until {d}'], m_renew: ['연장하기', 'Renew'], m_renew_play: ['연장은 QURATOR 웹사이트에서 할 수 있습니다.', 'You can renew on the QURATOR website.'],
+  m_ended: ['멤버십이 {d}에 끝났습니다.', 'Your membership ended on {d}.'],
+  ml_ok_h: ['멤버십이 열렸습니다', 'Membership unlocked'], ml_ok_p: ['{d}까지 이 기기에서 모든 해설을 볼 수 있습니다. 다른 기기에서는 같은 링크를 한 번 더 누르면 됩니다.', 'Everything is open on this device until {d}. On another device, just open the same link.'],
+  ml_exp_h: ['기간이 끝난 링크입니다', 'This link has expired'], ml_exp_p: ['{d}에 끝난 멤버십입니다. 연장하면 새 링크를 보내 드립니다.', 'This membership ended on {d}. Renew and we will send you a new link.'],
+  ml_bad_h: ['링크를 확인할 수 없습니다', 'This link could not be verified'], ml_bad_p: ['링크가 잘렸거나 잘못되었을 수 있습니다. 카카오톡으로 받은 링크 전체를 다시 눌러 주세요.', 'The link may be cut off or mistyped. Open the full link from your KakaoTalk message again.'],
   // explore
   ex_h: ['작품 탐색', 'Explore'], ex_p: ['큐레이션 명작 24점과 클리블랜드·시카고 미술관 공개 소장품 약 18만 점을 검색하세요. +를 누르면 QR 스튜디오에 담깁니다.', 'Search 24 curated masterpieces and about 180,000 open-access works from Cleveland and Chicago. Tap + to add to QR Studio.'],
   ex_ph: ['작가, 작품명, 주제 — 예: Monet, landscape, 청자', 'Artist, title, subject — e.g. Monet, landscape'],
@@ -176,10 +181,10 @@ const T = {
   biz: ['상호 QURATOR(큐레이터) · 사업자등록번호·통신판매업 신고번호·대표자 정보는 등록 완료 후 게시됩니다.', 'QURATOR. Business registration details will be published once registration is complete.'],
   co_h: ['Daily Art 구독 신청', 'Subscribe to Daily Art'], co_name: ['이름', 'Name'], co_email: ['이메일 (멤버 코드 수신)', 'Email (for your member code)'],
   co_method: ['결제 방법', 'Payment method'], co_card: ['카드 자동결제', 'Card, billed monthly'], co_card_s: ['토스페이먼츠 · 매월 자동 결제', 'Toss Payments · renews monthly'],
-  co_soon: ['곧 오픈', 'Coming soon'], co_bank: ['계좌이체', 'Bank transfer'], co_bank_s: ['우리은행 계좌로 입금 · 확인 후 멤버 코드 발급', 'Transfer to our Woori Bank account · member code after confirmation'],
+  co_soon: ['곧 오픈', 'Coming soon'], co_bank: ['계좌이체', 'Bank transfer'], co_bank_s: ['우리은행 계좌로 입금 · 확인 후 멤버 링크 발송', 'Transfer to our Woori Bank account · member code after confirmation'],
   co_agree: ['이용약관, 개인정보 수집·이용, 정기결제 및 환불·해지 규정을 확인했으며 동의합니다.', 'I agree to the Terms, Privacy Policy, recurring billing and refund policy.'],
   co_pay: ['결제하기', 'Pay'], co_apply: ['신청하기', 'Place order'], co_need: ['이름, 이메일, 동의 항목을 확인해 주세요', 'Please fill in your name, email and consent'],
-  co_order: ['신청이 접수되었습니다', 'Order received'], co_order_p: ['아래 계좌로 입금하신 뒤, 카카오톡 오픈채팅에 주문번호를 보내 주세요. 입금이 확인되면 멤버 코드를 보내 드립니다.', 'Transfer to the account below, then send your order number on KakaoTalk. We will send your member code once the payment is confirmed.'],
+  co_order: ['신청이 접수되었습니다', 'Order received'], co_order_p: ['아래 계좌로 입금하신 뒤, 카카오톡 오픈채팅에 주문번호를 보내 주세요. 입금이 확인되면 카카오톡으로 멤버 링크를 보내 드립니다.', 'Transfer to the account below, then send your order number on KakaoTalk. We will send your member code once the payment is confirmed.'],
   co_copy: ['주문 정보 복사', 'Copy order details'], co_acct: ['입금 계좌', 'Bank account'], co_holder: ['예금주', 'Holder'], co_amount: ['입금 금액', 'Amount'], co_payer: ['입금자명', 'Sender name'], co_payer_v: ['이름 + 주문번호 뒤 4자리', 'Your name + last 4 of order no.'], co_cpacct: ['계좌번호 복사', 'Copy account'], co_open: ['카카오톡 열기', 'Open KakaoTalk'], co_have: ['멤버 코드를 받으셨나요?', 'Got your member code?'],
   co_month: ['월', 'month'], co_vat: ['부가세 포함 · 언제든 해지 가능', 'VAT included · cancel anytime'], co_test: ['테스트 결제 모드 — 실제 청구되지 않습니다', 'Test mode — no real charge'],
   pay_ok: ['구독이 시작되었습니다', 'Your membership is active'], pay_ok_p: ['아래 멤버 코드를 꼭 저장해 두세요. 다른 기기에서도 이 코드로 열람할 수 있습니다.', 'Keep this member code. Use it to unlock Daily Art on any device.'],
@@ -616,7 +621,7 @@ function viewToday(date) {
     <p class="eyebrow">${S.lang === 'ko' ? t('daily_h') + ' · Daily Art' : 'Daily Art'}</p>
     <div class="today-date"><span class="d">${f.d}</span><span class="m">${esc(f.m)}</span></div>
     <p style="margin-top:18px">${t('daily_p')}</p>
-    ${S.member ? `<div class="member-bar"><span>● ${t('member_on')}</span><a class="link" href="#/archive">${t('archive')} →</a></div>` : ''}
+    ${memberBar()}
     <button class="btn btn-line btn-sm install" id="installBtn" style="margin-top:18px">↓ ${t('install')}</button>
   </div></section>
   <div class="wrap">${ids.map((id, i) => dayCard(S.byId[id], i, !isToday ? S.member : (i === 0 || S.member))).join('')}${giveNote('give-note-today')}</div>
@@ -1166,21 +1171,93 @@ function viewGalleries() {
 const LOGO_MARK = '<svg class="mono" viewBox="0 0 40 40" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M20 4C12.5 4 6.5 10.7 6.5 19S12.5 34 20 34 33.5 27.3 33.5 19 27.5 4 20 4Zm0 .7c-5.4 0-9.9 6.4-9.9 14.3S14.6 33.3 20 33.3 29.9 26.9 29.9 19 25.4 4.7 20 4.7Z"/><path fill="currentColor" d="M18.4 31.3c4.3-.6 9.6 1.6 17.1 6.8l-.6.8c-7-4.5-12-6.5-16.3-6.3Z"/></svg>';
 
 /* ---------------- membership ---------------- */
+/* Subscribers get a signed link #/m/<token> from the private ledger (주문·멤버 장부).
+   token = base64url(payload[7] + ECDSA P-256 signature[64]); payload = [key id][expiry: days since 2026-01-01, uint16][order id: 4 bytes].
+   Valid through its expiry date (KST). Only the public key lives here, so links cannot be forged.
+   Short codes (Play review, beta) live in data/members.json as SHA-256 hashes with an expiry; `revoked` lists token order ids. */
+const MEMBER_KEYS = { 1: { kty: 'EC', crv: 'P-256', x: 'c1226lJ2JFkwl9Q3aLm8YxDmLKrR1tAUuXbxZ2L2-OA', y: 'k6iyUgGe_6sKxJkNN9bo9isswcl3Ds44qd_1FscnrQo' } };
+const M_EPOCH = Date.UTC(2026, 0, 1);
+const b64uBytes = s => { s = s.replace(/-/g, '+').replace(/_/g, '/'); s += '='.repeat((4 - s.length % 4) % 4); return Uint8Array.from(atob(s), c => c.charCodeAt(0)); };
+const hex = a => [...a].map(b => b.toString(16).padStart(2, '0')).join('');
+async function verifyToken(tok) {
+  try {
+    const raw = b64uBytes(tok), jwk = MEMBER_KEYS[raw[0]];
+    if (raw.length !== 71 || !jwk || !crypto.subtle) return null;
+    const key = await crypto.subtle.importKey('jwk', jwk, { name: 'ECDSA', namedCurve: 'P-256' }, false, ['verify']);
+    if (!await crypto.subtle.verify({ name: 'ECDSA', hash: 'SHA-256' }, key, raw.slice(7), raw.slice(0, 7))) return null;
+    return { exp: new Date(M_EPOCH + ((raw[1] << 8) | raw[2]) * 864e5).toISOString().slice(0, 10), id: hex(raw.slice(3, 7)) };
+  } catch { return null; }
+}
+let membersFile = null;
+const membersData = async () => membersFile || (membersFile = await getJSON('data/members.json', { cache: 'no-cache' }).catch(() => ({ codes: [], revoked: [] })));
+// { exp } valid today · { exp, expired: true } past its date · null unknown
+async function codeStatus(input) {
+  let code = String(input || '').trim();
+  const link = code.match(/#\/m\/([A-Za-z0-9_-]+)/); if (link) code = link[1];
+  if (!code) return null;
+  const m = await membersData();
+  let r = null;
+  if (code.length > 40) { r = await verifyToken(code); if (r && (m.revoked || []).includes(r.id)) r = null; }
+  else if (crypto.subtle) {
+    const h = hex(new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(code.toUpperCase()))));
+    const c = (m.codes || []).find(x => x.h === h); if (c) r = { exp: c.exp };
+  }
+  if (!r) return null;
+  return r.exp >= seoulDate() ? r : { ...r, expired: true };
+}
 async function checkCode(code) {
   if (!code) return false;
   if (PAY.apiBase) {
-    try { const r = await getJSON(PAY.apiBase + '/member/verify?code=' + enc(code)); return !!r.active; } catch { return false; }
+    try { const r = await getJSON(PAY.apiBase + '/member/verify?code=' + enc(code)); if (r.active) return { exp: r.until || '' }; } catch {}
   }
-  return MEMBER_CODES.includes(code);
+  const st = await codeStatus(code);
+  return st && !st.expired ? st : false;
 }
-function activateMember(code) { S.member = true; store.set('q_member', true); store.set('q_code', code); }
+function activateMember(code, exp = '') {
+  const link = String(code).match(/#\/m\/([A-Za-z0-9_-]+)/); if (link) code = link[1];
+  S.member = true; S.memberExp = exp; S.memberEnded = '';
+  store.set('q_member', true); store.set('q_code', code); store.set('q_exp', exp);
+}
+async function recheckMember() {
+  const code = store.get('q_code', '');
+  if (!code) { S.member = false; store.set('q_member', false); return; }
+  const st = await checkCode(code);
+  if (st) { S.member = true; S.memberExp = st.exp || ''; store.set('q_member', true); store.set('q_exp', S.memberExp); return; }
+  const past = await codeStatus(code);
+  S.member = false; store.set('q_member', false);
+  S.memberEnded = past && past.expired ? past.exp : '';
+  if (!past) store.set('q_code', '');
+}
+const daysLeft = d => Math.round((Date.parse(d) - Date.parse(seoulDate())) / 864e5);
+function memberBar() {
+  if (S.member) {
+    const n = S.memberExp ? daysLeft(S.memberExp) : null, soon = n !== null && n <= 5;
+    return `<div class="member-bar${soon ? ' soon' : ''}"><span>● ${t('member_on')}${S.memberExp ? ` <em>${esc(t('m_until').replace('{d}', S.memberExp))} · D-${Math.max(n, 0)}</em>` : ''}</span>
+      ${soon ? (PLAY ? `<span class="mb-note">${t('m_renew_play')}</span>` : `<a class="link" href="#/checkout">${t('m_renew')} →</a>`) : `<a class="link" href="#/archive">${t('archive')} →</a>`}</div>`;
+  }
+  if (S.memberEnded) return `<div class="member-bar ended"><span>${esc(t('m_ended').replace('{d}', S.memberEnded))}</span>${PLAY ? `<span class="mb-note">${t('m_renew_play')}</span>` : `<a class="link" href="#/checkout">${t('m_renew')} →</a>`}</div>`;
+  return '';
+}
+async function viewMemberLink(tok) {
+  const st = await codeStatus(tok);
+  const box = (h, p, acts) => { app().innerHTML = `<section class="phead"><div class="wrap co-done"><p class="eyebrow">Daily Art Membership</p><h1>${h}</h1><p>${p}</p><div class="co-acts">${acts}</div></div></section>`; };
+  if (st && !st.expired) {
+    activateMember(tok, st.exp);
+    history.replaceState(null, '', location.pathname + location.search + '#/today');
+    box(t('ml_ok_h'), esc(t('ml_ok_p').replace('{d}', st.exp)), `<a class="btn btn-ink" href="#/today">${t('nav_today')} →</a>`);
+  } else if (st) {
+    box(t('ml_exp_h'), esc(t('ml_exp_p').replace('{d}', st.exp)), PLAY ? `<span class="note">${t('m_renew_play')}</span>` : `<a class="btn btn-ink" href="#/checkout">${t('m_renew')} →</a><a class="btn btn-kakao" href="${KAKAO}" target="_blank" rel="noopener">${t('co_open')}</a>`);
+  } else {
+    box(t('ml_bad_h'), esc(t('ml_bad_p')), `<a class="btn btn-kakao" href="${KAKAO}" target="_blank" rel="noopener">${t('co_open')}</a>`);
+  }
+}
 
 /* ---------------- support / CS ---------------- */
 const FAQ = [
   ['오늘의 작품은 언제 올라오나요?', 'When do the daily works arrive?', '매일 아침(한국 시간) 세 점이 새로 올라옵니다. 첫 번째 작품은 누구나 무료로 볼 수 있고, 나머지 두 점과 아카이브는 멤버에게 열립니다.', 'Three new works go up every morning, Korea time. The first is free for everyone; the other two and the archive are for members.'],
   ['앱을 설치해야 하나요?', 'Do I need to install an app?', '아니요. 브라우저에서 바로 열립니다. 오늘의 작품 페이지에서 홈 화면에 추가하면 앱처럼 쓸 수 있습니다.', 'No. It runs in your browser. Add it to your home screen from the Daily Art page to use it like an app.'],
-  ['결제는 어떻게 하나요?', 'How do I pay?', '구독 신청 페이지에서 계좌이체를 선택하면 입금 계좌가 바로 안내됩니다. 입금 후 카카오톡으로 주문번호를 보내 주시면 확인 후 멤버 코드를 보내 드립니다. 카드 자동결제(토스페이먼츠)는 곧 열립니다.', 'Choose bank transfer on the checkout page to see our account details; send your order number on KakaoTalk after paying and we will send your member code. Card billing via Toss Payments opens soon.'],
-  ['멤버 코드는 어디에 입력하나요?', 'Where do I enter my member code?', '오늘의 작품 페이지의 구독 버튼을 누르면 아래쪽에 멤버 코드 입력칸이 있습니다. 한 번 입력하면 그 기기에서는 계속 열람됩니다.', 'Tap Subscribe on the Daily Art page; the code field is at the bottom. Once entered, that device stays unlocked.'],
+  ['결제는 어떻게 하나요?', 'How do I pay?', '구독 신청 페이지에서 계좌이체를 선택하면 입금 계좌가 바로 안내됩니다. 입금 후 카카오톡으로 주문번호를 보내 주시면 확인 후 멤버 링크를 보내 드립니다. 카드 자동결제(토스페이먼츠)는 곧 열립니다.', 'Choose bank transfer on the checkout page to see our account details; send your order number on KakaoTalk after paying and we will send your member code. Card billing via Toss Payments opens soon.'],
+  ['멤버 코드는 어디에 입력하나요?', 'Where do I enter my member code?', '입금이 확인되면 카카오톡으로 멤버 링크를 보내 드립니다. 링크를 누르면 바로 열리고, 화면에 이용 기간(만료일)이 표시됩니다. 다른 기기에서는 같은 링크를 한 번 더 누르면 됩니다. 링크를 열기 어려우면 구독 버튼 아래 입력칸에 링크를 붙여 넣어도 됩니다. 만료 5일 전부터 연장 안내가 나옵니다.', 'Once your payment is confirmed we send a member link on KakaoTalk. Open it and everything unlocks, with your end date shown. On another device, open the same link again, or paste it into the field under Subscribe. A renewal reminder appears 5 days before the end date.'],
   ['해지는 어떻게 하나요?', 'How do I cancel?', '카카오톡으로 해지를 요청하시면 다음 결제일부터 청구되지 않으며, 이미 결제한 기간이 끝날 때까지 계속 이용하실 수 있습니다.', 'Message us on KakaoTalk. You will not be billed again and keep access until the end of the paid period.'],
   ['환불되나요?', 'Can I get a refund?', '결제 후 7일 이내이고 멤버 전용 해설을 열람하지 않았다면 전액 환불됩니다. 자세한 기준은 환불·해지 규정을 확인해 주세요.', 'Within 7 days of payment, if you have not opened member content, you get a full refund. See the Refund & Cancellation policy for details.'],
   ['수익금 기부는 어떻게 이루어지나요?', 'How does the giving work?', 'QURATOR는 Daily Art 구독과 갤러리 프로젝트 수익의 일부를 퍼스트브릭 재단에 기부합니다. 재단은 지금 비영리 등록을 준비 중이며, 등록 후 첫 기부를 보내고 날짜와 금액을 나눔 페이지와 재단 공개 장부에 공개합니다. 구독료 자체는 기부금이 아니어서 세액공제 대상이 아닙니다.', 'QURATOR gives a share of its subscription and gallery revenue to First Brick Foundation. The foundation is preparing its nonprofit registration; the first gift goes out after that, with its date and amount published on our Giving page and in the foundation\'s public ledger. Fees themselves are not donations and are not tax-deductible.'],
@@ -1224,7 +1301,7 @@ async function viewGiving() {
 }
 
 const FAQ_PLAY = [
-  ['멤버십은 어떻게 이용하나요?', 'How does membership work?', 'Daily Art 멤버십은 QURATOR 웹사이트에서 신청할 수 있습니다. 받은 멤버 코드를 앱의 \'멤버 코드로 열기\'에 입력하면 이 기기에서 계속 열람됩니다.', 'Daily Art membership is available on the QURATOR website. Enter the member code you receive under "Unlock with member code" and this device stays unlocked.']
+  ['멤버십은 어떻게 이용하나요?', 'How does membership work?', 'Daily Art 멤버십은 QURATOR 웹사이트에서 신청할 수 있습니다. 받은 멤버 링크를 누르거나, 앱의 \'멤버 코드로 열기\'에 링크나 코드를 붙여 넣으면 이용 기간 동안 열람됩니다.', 'Daily Art membership is available on the QURATOR website. Enter the member code you receive under "Unlock with member code" and this device stays unlocked.']
 ];
 function viewSupport() {
   const k = L();
@@ -1352,7 +1429,7 @@ function showOrder(id, o) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
   $('#cpa').onclick = async () => { try { await navigator.clipboard.writeText(BANK.number); toast(t('copied')); } catch { prompt('', BANK.number); } };
   $('#cpo').onclick = async () => { try { await navigator.clipboard.writeText(msg); toast(t('copied')); } catch { prompt('', msg); } };
-  $('#codeF2').onsubmit = e => { e.preventDefault(); const v = $('#code2').value.trim().toUpperCase(); checkCode(v).then(ok => { if (ok) { activateMember(v); toast(t('m_ok')); location.hash = '#/today'; } else toast(t('m_bad')); }); };
+  $('#codeF2').onsubmit = e => { e.preventDefault(); const v = $('#code2').value.trim(); checkCode(v).then(ok => { if (ok) { activateMember(v, ok.exp); toast(t('m_ok')); location.hash = '#/today'; } else toast(t('m_bad')); }); };
 }
 async function viewPayResult(q) {
   const ok = q.get('pay') === 'success', pend = store.get('q_pending', {});
@@ -1383,11 +1460,10 @@ function openSubscribe() {
   m.onclick = e => { if (e.target === m || e.target.classList.contains('close')) m.hidden = true; };
   $('#codeF').onsubmit = e => {
     e.preventDefault();
-    const v = $('#code').value.trim().toUpperCase();
-    checkCode(v).then(ok => { if (ok) { activateMember(v); m.hidden = true; toast(t('m_ok')); route(); } else toast(t('m_bad')); });
+    const v = $('#code').value.trim();
+    checkCode(v).then(ok => { if (ok) { activateMember(v, ok.exp); m.hidden = true; toast(t('m_ok')); route(); } else toast(t('m_bad')); });
   };
 }
-const MEMBER_CODES = ['QURATOR-BETA', 'DAILYART2026'];
 
 /* ---------------- PWA ---------------- */
 let deferredPrompt = null;
@@ -1430,6 +1506,7 @@ async function route() {
   else if (r === 'c' && parts[1]) await viewWork(null, parts[1]);
   else if (r === 'x' && parts[1]) await viewExhibition(parts[1]);
   else if (r === 'pay') viewToday();
+  else if (r === 'm' && parts[1]) await viewMemberLink(parts[1]);
   else viewHome();
   $('#app').focus({ preventScroll: true });
 }
@@ -1451,6 +1528,7 @@ addEventListener('keydown', e => { if (e.key === 'Escape') { $('#modal').hidden 
     const [works, daily] = await Promise.all([getJSON('data/works.json', fresh), getJSON('data/daily.json', fresh).catch(() => ({}))]);
     S.works = works; S.daily = daily; works.forEach(w => S.byId[w.id] = w);
   } catch (e) { app().innerHTML = '<div class="empty">Failed to load data.</div>'; return; }
+  await recheckMember().catch(() => {});
   const q = new URLSearchParams(location.search);
   if (q.get('pay')) {
     renderShell('');

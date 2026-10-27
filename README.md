@@ -22,9 +22,12 @@
 2. `data/daily.json` 에 `"YYYY-MM-DD": [id1, id2, id3]` 추가
 3. 지정 안 된 날짜는 큐레이션 풀에서 자동 순환
 
-## 멤버십 (MVP)
-결제 연동 전 베타 단계 — 계좌이체(우리은행) + 카카오톡 주문번호 확인 후 멤버 코드 발급 (`assets/app.js` 의 `MEMBER_CODES`).
-다음 단계: 토스페이먼츠 정기결제 + 로그인(Supabase 등) 연동.
+## 멤버십 (개인별 링크 · 만료일)
+- 구독자는 **서명된 멤버 링크** `#/m/<token>` 로 엽니다. 토큰 = 만료일 + 링크 번호(4바이트) + ECDSA P-256 서명. 사이트에는 공개 키(`MEMBER_KEYS`)만 있어 위조할 수 없습니다.
+- 발급: 비공개 'QURATOR 멤버 장부'(claude.ai 아티팩트)에서 입금 확인 → 발급 → 카카오톡 문구 복사. 서명 키 파일(`qurator-member-key.json`)은 저장소에 없고 세준 님 기기에만 있습니다. 비상시: `node scripts/members.mjs key.json YYYY-MM-DD`
+- 만료일이 지나면 자동으로 잠기고, 5일 전부터 연장 안내가 나옵니다(앱 모드는 결제 링크 없이 문구만).
+- 짧은 코드(구글 심사·베타용)는 `data/members.json` 에 SHA-256 해시 + 만료일로만 저장 — 평문 코드는 사이트에 없습니다.
+- 이미 보낸 링크 차단: `data/members.json` 의 `revoked` 에 링크 번호(hex 8자리) 추가.
 
 ## 고객센터 · 문의
 카카오톡 오픈채팅: https://open.kakao.com/o/gQLZj9Ti  (`assets/app.js` 의 `KAKAO`)

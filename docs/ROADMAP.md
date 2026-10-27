@@ -26,9 +26,10 @@
 - 사업자등록(업종에 전자상거래/정보통신 포함) + 통신판매업 신고 → 푸터 사업자 정보 게시
 - 토스페이먼츠 가입·심사 + 자동결제(빌링) 계약 → 라이브 클라이언트 키
 - Cloudflare 가입 → worker/ 배포(README '결제' 참고) → PAY.apiBase 설정
-- 계좌이체 구독자: 입금 확인 후 멤버 코드 발급(MEMBER_CODES에 추가 요청)
+- 계좌이체 구독자: 입금 확인 → 'QURATOR 멤버 장부'에서 링크 발급 → 카카오톡으로 전송 (키 파일 qurator-member-key.json 보관 필수)
 
 ## 완료
+- 2026-10-27 멤버십 프로세스 개편: 평문 공용 코드(사이트 소스 노출) 제거 → 개인별 서명 링크 + 만료일, 만료 시 자동 잠금·5일 전 연장 안내, 비공개 멤버 장부(입금 확인·발급·연장·정지·월 입금 합계), 기존 코드는 해시로 유지(QURATOR-BETA 2027-06-30, DAILYART2026 2026-12-31)
 - 2026-10-27 루트 저장소 probe2928-crypto.github.io 생성, /.well-known/assetlinks.json(kr.qurator.dailyart, 업로드 키 지문) 게시 + _config.yml(include .well-known). 기존 프로젝트 사이트(/qurator, /firstbrick, /chainbrief) 정상
 - 2026-10-27 나눔(퍼스트브릭 재단) 연동: #/giving 페이지(연결 방식·재단 계획·기부 기록·고지), 홈 남색 배너, 오늘의 작품·요금·결제·갤러리 안내 문구, 고객센터 FAQ·바로가기, 푸터 링크 — 웹·앱 공통
 - 2026-10-27 Google Play 앱(TWA, kr.qurator.dailyart 1.0.0) — Bubblewrap CI 빌드(android-build 브랜치, 서명 안 된 AAB) + 업로드 키 오프라인 서명, 앱 모드 consumption-only(?src=twa: 가격·결제·계좌 숨김, 멤버 코드로 열기), 스토어 스크린샷·대표 그래픽 자동 생성
