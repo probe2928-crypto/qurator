@@ -2,6 +2,7 @@
 
 ## 운영 원칙
 - 두 상품: Daily Art(개인 구독, 월 30,000원) · QR 도슨트(갤러리 B2B, 전시 30만~100만원, 갤러리 월 9.9만원)
+- 나눔: 수익(구독·갤러리 프로젝트)의 일부를 퍼스트브릭 재단(First Brick Foundation, 설립 준비 중)에 기부. 재단 등록 전엔 '할 예정'으로만 표기, 기부 시 data/giving.json에 {date, amount, note{ko,en}, proof} 추가. 비율(GIVE.share) 미정. 구독료는 기부금 아님(세액공제 X)
 - 문의·CS: 카카오톡 오픈채팅 https://open.kakao.com/o/gQLZj9Ti
 - 디자인: 프랑스 메종 톤 — 종이 #F3EFE6, 잉크 #16140F, 인주 #A8361F, Didone Q 모노그램 + Bodoni Moda 워드마크. 촌스러운 요소·AI 같은 허접함 금지.
 - 해설: 미술사 기반, 사실 확인된 내용만. 지어낸 수치·후기 금지. 작품 이미지는 퍼블릭 도메인 또는 자유 라이선스만(CC BY는 imgCredit 표기).
@@ -27,6 +28,7 @@
 - 계좌이체 구독자: 입금 확인 후 멤버 코드 발급(MEMBER_CODES에 추가 요청)
 
 ## 완료
+- 2026-10-27 나눔(퍼스트브릭 재단) 연동: #/giving 페이지(연결 방식·재단 계획·기부 기록·고지), 홈 남색 배너, 오늘의 작품·요금·결제·갤러리 안내 문구, 고객센터 FAQ·바로가기, 푸터 링크 — 웹·앱 공통
 - 2026-10-27 Google Play 앱(TWA, kr.qurator.dailyart 1.0.0) — Bubblewrap CI 빌드(android-build 브랜치, 서명 안 된 AAB) + 업로드 키 오프라인 서명, 앱 모드 consumption-only(?src=twa: 가격·결제·계좌 숨김, 멤버 코드로 열기), 스토어 스크린샷·대표 그래픽 자동 생성
 - 2026-10-26 한국어 도슨트 음성 교체: Supertonic 3(Supertone, OpenRAIL-M) — 10개 목소리를 Whisper 받아쓰기로 비교, 세준 선택으로 M5(따뜻한 이야기꾼 톤 남성), 숫자 한글 읽기 전처리, 29점 문장 단위 녹음. 플레이어 'AI 도슨트 음성' 표기
 - 2026-10-26 영어 도슨트 음성 전면 교체: Kokoro-82M(Apache-2.0, af_heart) 신경망 음성으로 29점 문장 단위 녹음, works.json 변경 시 GitHub Actions가 자동 재녹음

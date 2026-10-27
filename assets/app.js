@@ -27,6 +27,12 @@ const PLAY = (() => {
   } catch { return false; }
 })();
 if (PLAY) document.documentElement.classList.add('q-play-app');
+/* Giving: a share of QURATOR's revenue goes to First Brick Foundation (퍼스트브릭 재단, the founders' foundation in formation).
+   Facts only: the foundation is preparing its nonprofit registration; the first gift is sent after it registers and is logged in
+   data/giving.json + the foundation's public ledger. `share` stays '' until a percentage is decided. The foundation site has no
+   donation links while it is unregistered, so linking to it from the Play app is fine; revisit if it ever takes donations. */
+const GIVE = { url: 'https://probe2928-crypto.github.io/firstbrick/', urlKo: 'https://probe2928-crypto.github.io/firstbrick/ko/', share: '' };
+const BRICK = '<svg class="brick" viewBox="0 0 32 22" aria-hidden="true"><rect x="0.7" y="11.7" width="13.6" height="9.6" fill="#B8862D"/><rect x="16.7" y="11.7" width="14.6" height="9.6" fill="none" stroke="currentColor" stroke-width="1.4"/><rect x="7.7" y="0.7" width="14.6" height="9.6" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>';
 const seoulDate = (d = new Date()) => d.toLocaleDateString('sv-SE', { timeZone: 'Asia/Seoul' });
 async function getJSON(url, opt) { const r = await fetch(url, opt); if (!r.ok) throw new Error(r.status + ' ' + url); return r.json(); }
 
@@ -107,6 +113,26 @@ const T = {
   // modal
   m_h: ['Daily Art 멤버십', 'Daily Art Membership'], m_p: ['매일 세 점의 명작을 영어 해설로. 언제든 해지할 수 있습니다.', 'Three masterpieces a day in English. Cancel anytime.'],
   m_l: [['매일 3점 영문 해설 + 한국어 번역', '음성 해설 · 감상 포인트 · 오늘의 표현', '지난 작품 아카이브 무제한', '앱처럼 홈 화면에 설치'], ['3 English commentaries daily + Korean', 'Audio · what to look for · words to know', 'Unlimited archive', 'Install on your home screen']],
+  nav_giving: ['나눔', 'Giving'],
+  gv_eyebrow: ['QURATOR × First Brick Foundation', 'QURATOR × First Brick Foundation'],
+  gv_h: ['작품을 읽는 시간이,<br>아이의 <em>첫 교실</em>이 됩니다.', 'Time spent with art<br>becomes a child\'s <em>first classroom.</em>'],
+  gv_lead: ['QURATOR는 수익의 일부를 퍼스트브릭 재단(First Brick Foundation)에 기부합니다. 동남아시아 아이들의 배움에서 시작해, 아이가 계속 학교에 올 수 있게 하는 생활 지원, 그리고 교실과 학교를 짓는 일까지 하려고 준비 중인 재단입니다.', 'QURATOR gives a share of its revenue to First Brick Foundation, a foundation in the making for children in Southeast Asia. It starts with learning, adds the everyday support that keeps a child in class, and grows toward classrooms and schools.'],
+  gv_short: ['QURATOR 수익의 일부는 퍼스트브릭 재단에 기부되어 동남아시아 아이들의 배움에 쓰입니다.', 'A share of QURATOR\'s revenue goes to First Brick Foundation, for children\'s learning in Southeast Asia.'],
+  gv_band_h: ['명작 한 점의 시간,<br>아이 한 명의 배움으로.', 'One masterpiece at a time,<br>one child\'s learning at a time.'],
+  gv_status: ['재단은 지금 비영리 등록을 준비하고 있습니다. QURATOR의 첫 기부는 등록이 끝난 뒤 보내고, 날짜와 금액을 공개합니다.', 'The foundation is preparing its nonprofit registration. QURATOR sends its first gift once that is done, and publishes the date and amount.'],
+  gv_more: ['나눔 이야기', 'How we give'], gv_visit: ['퍼스트브릭 재단 보기', 'Visit First Brick Foundation'],
+  gv_how: ['어떻게 이어지나요', 'How it works'],
+  gv_how_l: [[['구독과 갤러리 프로젝트', 'Daily Art 구독료와 갤러리 QR 도슨트 프로젝트 수익이 모두 대상입니다.'], ['퍼스트브릭 재단으로', 'QURATOR가 자기 수익에서 정해진 몫을 재단에 직접 보냅니다. 여러분이 따로 내는 돈은 없습니다.'], ['공개 기록', '보낸 날짜와 금액은 이 페이지와 재단의 공개 장부에 함께 남깁니다. 재단은 모든 기부를 공개 블록체인에서 확인할 수 있게 할 계획입니다.']],
+             [['Subscriptions and gallery projects', 'Both Daily Art subscriptions and gallery QR docent projects count.'], ['To First Brick Foundation', 'QURATOR sends a set share of its own revenue to the foundation. You pay nothing extra.'], ['On the record', 'Each gift\'s date and amount is logged here and in the foundation\'s public ledger, which it plans to keep on a public blockchain.']]],
+  gv_why: ['왜 미술과 아이들인가', 'Why art, and why children'],
+  gv_why_p: ['QURATOR는 작품 한 점을 깊이 읽는 시간을 만듭니다. 그렇게 생긴 수익의 일부가 아이들이 배울 수 있는 교실로 이어지도록, QURATOR 운영진이 퍼스트브릭 재단을 함께 준비하고 있습니다. 모든 학교는 첫 벽돌 한 장에서 시작합니다.', 'QURATOR makes time to read one work of art in depth. So that part of what that earns becomes a place for children to learn, the people behind QURATOR are building First Brick Foundation. Every school begins with a first brick.'],
+  gv_plan: ['재단의 계획', 'The foundation\'s plan'],
+  gv_phases: [[['2026년 10~12월', '설립 준비', '정관과 자문단을 꾸리고, 첫 현지 파트너를 찾고, 비영리 등록 서류를 준비해요.'], ['2027년 1월', '공식 출범', '활동 일지와 SNS 채널을 열고, 창립 서포터 모집을 시작해요.'], ['2027년', '첫 프로그램', '한 마을, 한 파트너와 함께 학습 지원과 생활 지원을 시작하고, 첫 온체인 보고서를 내요.'], ['2028년부터', '짓기', '이미 함께 일한 마을과 교실·도서관·식수 시설·안전한 등굣길을 지어요.']],
+              [['Oct–Dec 2026', 'Founding', 'Charter, advisers, a first local partner, and the paperwork to register as a nonprofit.'], ['Jan 2027', 'Public launch', 'The journal and social channels go live and the founding circle opens.'], ['2027', 'First programs', 'One community, one partner: learning support and everyday basics, with the first on-chain reports.'], ['2028 onward', 'Build', 'Classrooms, libraries, water and safe routes to school, built with the communities we already know.']]],
+  gv_now: ['지금 단계', 'Now'],
+  gv_log: ['기부 기록', 'Giving record'], gv_log_empty: ['아직 기부 기록이 없습니다. 재단 등록 후 첫 기부가 이곳에 기록됩니다.', 'No gifts yet. The first one is recorded here once the foundation is registered.'],
+  gv_log_cols: [['날짜', '금액', '내용'], ['Date', 'Amount', 'Note']],
+  gv_fine: ['구독료와 갤러리 프로젝트 비용은 기부금이 아니며, 기부금 영수증이나 세액공제 대상이 아닙니다. 기부는 QURATOR가 자기 수익에서 직접 합니다.', 'Subscription and project fees are not donations and are not tax-deductible. QURATOR gives from its own revenue.'],
   play_unlock: ['멤버 코드로 열기', 'Unlock with member code'], play_h: ['멤버 전용 해설', 'Members-only commentary'],
   play_p: ['Daily Art 멤버십은 QURATOR 웹사이트에서 신청할 수 있습니다. 받은 멤버 코드를 아래에 입력하면 이 기기에서 계속 열람됩니다.', 'Daily Art membership is available on the QURATOR website. Enter the member code you received below and this device stays unlocked.'],
   m_cta: ['구독 신청하기', 'Subscribe now'], m_code: ['멤버 코드 입력', 'Member code'], m_apply: ['확인', 'Apply'],
@@ -415,7 +441,7 @@ function renderShell(route) {
   document.documentElement.lang = S.lang;
   $('#foot').innerHTML = `<div class="foot-in">
     <div class="foot-brand">${LOGO_MARK}<div><div class="fw">QURATOR</div><div class="fs">MAISON DE DOCENT · SÉOUL</div></div></div>
-    <nav class="foot-links">${PLAY ? '' : `<a href="#/galleries">${S.lang === 'ko' ? '갤러리 도입 안내' : 'For galleries'}</a>`}<a href="#/support">${t('nav_support')}</a><a href="${KAKAO}" target="_blank" rel="noopener">${S.lang === 'ko' ? '카카오톡 문의' : 'KakaoTalk'}</a><a href="#/policy/terms">${t('terms')}</a><a href="#/policy/privacy"><b>${t('privacy')}</b></a><a href="#/policy/refund">${t('refund')}</a></nav>
+    <nav class="foot-links">${PLAY ? '' : `<a href="#/galleries">${S.lang === 'ko' ? '갤러리 도입 안내' : 'For galleries'}</a>`}<a href="#/giving">${t('nav_giving')} · First Brick</a><a href="#/support">${t('nav_support')}</a><a href="${KAKAO}" target="_blank" rel="noopener">${S.lang === 'ko' ? '카카오톡 문의' : 'KakaoTalk'}</a><a href="#/policy/terms">${t('terms')}</a><a href="#/policy/privacy"><b>${t('privacy')}</b></a><a href="#/policy/refund">${t('refund')}</a></nav>
   </div>
   <div class="foot-in foot-legal"><span>${esc(t('biz'))}</span><span>© 2026 QURATOR · ${esc(t('foot_note'))}</span></div>`;
 }
@@ -455,7 +481,9 @@ function viewHome(scrollTo) {
 
   ${pricingBlock()}
 
-  <section class="sec" style="padding-top:0"><div class="wrap founder">
+  ${giveBand()}
+
+  <section class="sec"><div class="wrap founder">
     <div class="rv"><p class="eyebrow">${t('f_eyebrow')}</p><blockquote>${esc(t('f_quote'))}</blockquote></div>
     <div class="rv"><p style="color:var(--ink-2);font-size:17px;margin:0 0 32px">${esc(t('f_body'))}</p>
       <div class="facts"><div class="fact"><b>20+</b><span>${t('fa1')}</span></div><div class="fact"><b>2+</b><span>${t('fa2')}</span></div><div class="fact"><b>180K</b><span>${t('fa3')}</span></div></div></div>
@@ -575,7 +603,7 @@ function pricingBlock() {
       ${plan('pl2', '₩300,000', t('per_show'), '', `<a class="btn btn-line" href="${KAKAO}" target="_blank" rel="noopener">${t('inquire')}</a>`)}
       ${plan('pl3', '₩1,000,000', t('per_show'), '', `<a class="btn btn-line" href="${KAKAO}" target="_blank" rel="noopener">${t('inquire')}</a>`)}
       ${plan('pl4', '₩99,000', t('per_month'), '', `<a class="btn btn-line" href="${KAKAO}" target="_blank" rel="noopener">${t('inquire')}</a>`)}
-    </div></div></section>`;
+    </div>${giveNote('rv')}</div></section>`;
 }
 
 function viewToday(date) {
@@ -591,7 +619,7 @@ function viewToday(date) {
     ${S.member ? `<div class="member-bar"><span>● ${t('member_on')}</span><a class="link" href="#/archive">${t('archive')} →</a></div>` : ''}
     <button class="btn btn-line btn-sm install" id="installBtn" style="margin-top:18px">↓ ${t('install')}</button>
   </div></section>
-  <div class="wrap">${ids.map((id, i) => dayCard(S.byId[id], i, !isToday ? S.member : (i === 0 || S.member))).join('')}</div>
+  <div class="wrap">${ids.map((id, i) => dayCard(S.byId[id], i, !isToday ? S.member : (i === 0 || S.member))).join('')}${giveNote('give-note-today')}</div>
   ${S.member ? '' : pricingBlock()}`;
   hydrate(); reveal(); bindInstall();
 }
@@ -1123,7 +1151,7 @@ function viewGalleries() {
       <section class="gal-sec rv"><h2>${g.steps}</h2><ol class="gal-steps">${g.stepItems.map(([h, p]) => `<li><b>${esc(h)}</b><p>${esc(p)}</p></li>`).join('')}</ol></section>
       <section class="gal-sec rv gal-plans"><h2>${g.plans}</h2>
         <div class="gal-grid">${[['pl2', '₩300,000', t('per_show')], ['pl3', '₩1,000,000', t('per_show')], ['pl4', '₩99,000', t('per_month')]].map(([k, a, per]) => `<div class="gal-cell"><h3>${t(k)}</h3><div class="gal-amt">${a}<small> ${per}</small></div><ul>${T[k + 'l'][L()].map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>`).join('')}</div></section>
-      <section class="gal-sec rv gal-who"><h2>${g.who}</h2><p>${esc(g.whoP)}</p><div class="facts"><div class="fact"><b>20+</b><span>${t('fa1')}</span></div><div class="fact"><b>KO·EN</b><span>${t('fa2')}</span></div><div class="fact"><b>QR</b><span>${S.lang === 'ko' ? '앱 설치 없음' : 'No app needed'}</span></div></div></section>
+      <section class="gal-sec rv gal-who"><h2>${g.who}</h2><p>${esc(g.whoP)}</p><div class="facts"><div class="fact"><b>20+</b><span>${t('fa1')}</span></div><div class="fact"><b>KO·EN</b><span>${t('fa2')}</span></div><div class="fact"><b>QR</b><span>${S.lang === 'ko' ? '앱 설치 없음' : 'No app needed'}</span></div></div>${giveNote()}</section>
       <section class="gal-sec rv"><h2>${g.faq}</h2><div class="faq">${g.faqItems.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join('')}</div></section>
       <section class="gal-end rv"><h2>${S.lang === 'ko' ? '다음 전시, 관람객의 휴대폰을 도슨트로.' : 'Make every visitor\'s phone your docent.'}</h2>
         <div class="hero-ctas"><a class="btn btn-kakao" href="${KAKAO}" target="_blank" rel="noopener">${g.cta} <span class="arrow">→</span></a><a class="btn btn-line" href="#/pricing">${g.back}</a></div>
@@ -1155,9 +1183,46 @@ const FAQ = [
   ['멤버 코드는 어디에 입력하나요?', 'Where do I enter my member code?', '오늘의 작품 페이지의 구독 버튼을 누르면 아래쪽에 멤버 코드 입력칸이 있습니다. 한 번 입력하면 그 기기에서는 계속 열람됩니다.', 'Tap Subscribe on the Daily Art page; the code field is at the bottom. Once entered, that device stays unlocked.'],
   ['해지는 어떻게 하나요?', 'How do I cancel?', '카카오톡으로 해지를 요청하시면 다음 결제일부터 청구되지 않으며, 이미 결제한 기간이 끝날 때까지 계속 이용하실 수 있습니다.', 'Message us on KakaoTalk. You will not be billed again and keep access until the end of the paid period.'],
   ['환불되나요?', 'Can I get a refund?', '결제 후 7일 이내이고 멤버 전용 해설을 열람하지 않았다면 전액 환불됩니다. 자세한 기준은 환불·해지 규정을 확인해 주세요.', 'Within 7 days of payment, if you have not opened member content, you get a full refund. See the Refund & Cancellation policy for details.'],
+  ['수익금 기부는 어떻게 이루어지나요?', 'How does the giving work?', 'QURATOR는 Daily Art 구독과 갤러리 프로젝트 수익의 일부를 퍼스트브릭 재단에 기부합니다. 재단은 지금 비영리 등록을 준비 중이며, 등록 후 첫 기부를 보내고 날짜와 금액을 나눔 페이지와 재단 공개 장부에 공개합니다. 구독료 자체는 기부금이 아니어서 세액공제 대상이 아닙니다.', 'QURATOR gives a share of its subscription and gallery revenue to First Brick Foundation. The foundation is preparing its nonprofit registration; the first gift goes out after that, with its date and amount published on our Giving page and in the foundation\'s public ledger. Fees themselves are not donations and are not tax-deductible.'],
   ['갤러리 도입은 어떻게 진행되나요?', 'How does a gallery project work?', '카카오톡으로 전시 일정과 작품 목록을 보내 주시면 견적을 드립니다. 해설 작성(Premium)부터 QR 캡션 인쇄 파일, 전시 입구 QR까지 한 번에 준비됩니다.', 'Send your dates and list of works on KakaoTalk for a quote. We prepare texts (Premium), QR caption files and an entrance QR.'],
   ['갤러리가 해설을 직접 수정할 수 있나요?', 'Can a gallery edit the texts itself?', '네. QR 스튜디오에서 작품과 해설을 직접 등록하고 캡션을 바로 인쇄할 수 있습니다.', 'Yes. Add works and texts in QR Studio and print captions immediately.']
 ];
+/* ---------------- giving ---------------- */
+const giveUrl = () => S.lang === 'ko' ? GIVE.urlKo : GIVE.url;
+function giveNote(extra = '') {
+  return `<p class="give-note ${extra}">${BRICK}<span>${esc(t('gv_short'))} <a href="#/giving">${t('gv_more')} →</a></span></p>`;
+}
+function giveBand() {
+  return `<section class="give-band"><div class="wrap give-band-in">
+    <div class="rv"><p class="eyebrow">${BRICK}<span>${t('gv_eyebrow')}</span></p><h2>${t('gv_band_h')}</h2></div>
+    <div class="rv"><p>${esc(t('gv_short'))}</p><p class="give-status">${esc(t('gv_status'))}</p>
+      <a class="link" href="#/giving">${t('gv_more')} <span class="arrow">→</span></a></div>
+  </div></section>`;
+}
+async function viewGiving() {
+  const k = L();
+  let log = [];
+  try { log = await getJSON('data/giving.json', { cache: 'no-cache' }); } catch {}
+  const cols = T.gv_log_cols[k];
+  app().innerHTML = `<section class="give-hero"><div class="wrap give-hero-in">
+      <div class="rv"><p class="eyebrow">${BRICK}<span>${t('gv_eyebrow')}</span></p><h1>${t('gv_h')}</h1><p class="lead">${esc(t('gv_lead'))}</p>
+        <div class="hero-ctas"><a class="btn btn-ink" href="${giveUrl()}" target="_blank" rel="noopener">${t('gv_visit')} <span class="arrow">↗</span></a></div></div>
+      <figure class="give-mark rv" aria-hidden="true"><svg viewBox="0 0 240 200"><g fill="none" stroke="currentColor" stroke-width="1.2">
+        <path d="M24 92 120 28l96 64"/><path d="M40 92v84h160V92"/><rect x="104" y="124" width="32" height="52"/><rect x="62" y="112" width="26" height="22"/><rect x="152" y="112" width="26" height="22"/>
+        <path d="M40 160h64M136 160h64M40 144h64M136 144h64" opacity=".35"/></g><rect x="40.6" y="160.6" width="31" height="15" fill="#B8862D"/></svg>
+        <figcaption>${S.lang === 'ko' ? '모든 학교는 첫 벽돌 한 장에서 시작합니다.' : 'Every school begins with a first brick.'}</figcaption></figure>
+    </div></section>
+    <div class="wrap give">
+      <section class="give-sec rv"><h2>${t('gv_how')}</h2><div class="gal-grid">${T.gv_how_l[k].map(([h, p], i) => `<div class="gal-cell"><span>${String(i + 1).padStart(2, '0')}</span><h3>${esc(h)}</h3><p>${esc(p)}</p></div>`).join('')}</div></section>
+      <section class="give-sec rv give-why"><h2>${t('gv_why')}</h2><p>${esc(t('gv_why_p'))}</p></section>
+      <section class="give-sec rv"><h2>${t('gv_plan')}</h2><ol class="give-phases">${T.gv_phases[k].map(([when, h, p], i) => `<li class="${i === 0 ? 'now' : ''}"><span class="when">${esc(when)}${i === 0 ? ` · <b>${t('gv_now')}</b>` : ''}</span><b>${esc(h)}</b><p>${esc(p)}</p></li>`).join('')}</ol>
+        <p class="give-status">${esc(t('gv_status'))}</p></section>
+      <section class="give-sec rv"><h2>${t('gv_log')}</h2>${log.length ? `<table class="give-log"><thead><tr>${cols.map(c => `<th>${c}</th>`).join('')}</tr></thead><tbody>${log.map(r => `<tr><td>${esc(r.date)}</td><td>${esc(r.amount)}</td><td>${esc(pick(r.note || { ko: '', en: '' }))}${r.proof ? ` <a href="${esc(r.proof)}" target="_blank" rel="noopener">↗</a>` : ''}</td></tr>`).join('')}</tbody></table>` : `<p class="give-empty">${t('gv_log_empty')}</p>`}</section>
+      <p class="give-fine">${esc(t('gv_fine'))}</p>
+    </div>`;
+  reveal();
+}
+
 const FAQ_PLAY = [
   ['멤버십은 어떻게 이용하나요?', 'How does membership work?', 'Daily Art 멤버십은 QURATOR 웹사이트에서 신청할 수 있습니다. 받은 멤버 코드를 앱의 \'멤버 코드로 열기\'에 입력하면 이 기기에서 계속 열람됩니다.', 'Daily Art membership is available on the QURATOR website. Enter the member code you receive under "Unlock with member code" and this device stays unlocked.']
 ];
@@ -1169,12 +1234,12 @@ function viewSupport() {
       <span class="kk-ico"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3.5c-5 0-9 3.1-9 7 0 2.5 1.7 4.7 4.2 6l-.9 3.4c-.1.3.3.5.5.3l4-2.7c.4 0 .8.1 1.2.1 5 0 9-3.1 9-7s-4-7.1-9-7.1Z"/></svg></span>
       <span class="kk-t"><b>${t('sp_kakao')}</b><small>${t('sp_kakao_s')}</small></span><span class="arrow">→</span></a>
     <div class="sp-grid">
-      ${[['구독 신청 · 결제', 'Subscribe & billing', '#/checkout'], ['해지 · 환불', 'Cancel & refund', '#/policy/refund'], ['갤러리 도입 상담', 'Gallery projects', KAKAO], ['멤버 코드 입력', 'Enter member code', 'code']].filter(c => !(PLAY && (c[2] === '#/checkout' || c[2] === KAKAO))).map(([a, b, h]) =>
+      ${[['구독 신청 · 결제', 'Subscribe & billing', '#/checkout'], ['해지 · 환불', 'Cancel & refund', '#/policy/refund'], ['갤러리 도입 상담', 'Gallery projects', KAKAO], ['멤버 코드 입력', 'Enter member code', 'code'], ['나눔 · 퍼스트브릭 재단', 'Giving · First Brick', '#/giving']].filter(c => !(PLAY && (c[2] === '#/checkout' || c[2] === KAKAO))).map(([a, b, h]) =>
         h === 'code' ? `<button class="sp-cell" data-act="subscribe"><span>${k ? b : a}</span><i>→</i></button>` :
         `<a class="sp-cell" href="${h}" ${h.startsWith('http') ? 'target="_blank" rel="noopener"' : ''}><span>${k ? b : a}</span><i>→</i></a>`).join('')}
     </div>
     <h2 class="sp-h">${t('sp_faq')}</h2>
-    <div class="faq">${(PLAY ? FAQ_PLAY.concat(FAQ.filter(f => !/결제는|앱을 설치|갤러리/.test(f[0]))) : FAQ).map(f => `<details><summary>${esc(f[k])}</summary><p>${esc(f[2 + k])}</p></details>`).join('')}</div>
+    <div class="faq">${(PLAY ? FAQ_PLAY.concat(FAQ.filter(f => !/결제는|앱을 설치|갤러리 도입|갤러리가/.test(f[0]))) : FAQ).map(f => `<details><summary>${esc(f[k])}</summary><p>${esc(f[2 + k])}</p></details>`).join('')}</div>
     <h2 class="sp-h">${t('sp_docs')}</h2>
     <div class="sp-grid"><a class="sp-cell" href="#/policy/terms"><span>${t('terms')}</span><i>→</i></a><a class="sp-cell" href="#/policy/privacy"><span>${t('privacy')}</span><i>→</i></a><a class="sp-cell" href="#/policy/refund"><span>${t('refund')}</span><i>→</i></a></div>
   </div>`;
@@ -1232,6 +1297,7 @@ function viewCheckout() {
       <div class="co-amt">₩${PAY.price.toLocaleString()}<small> / ${t('co_month')}</small></div>
       <p class="co-vat">${t('co_vat')}</p>
       <ul>${T.m_l[n].map(x => `<li>${esc(x)}</li>`).join('')}</ul>
+      ${giveNote('give-note-co')}
     </aside>
     <form class="co-form" id="coForm" novalidate>
       ${test ? `<p class="co-testbar">${t('co_test')}</p>` : ''}
@@ -1355,6 +1421,7 @@ async function route() {
   else if (r === 'explore') viewExplore();
   else if (r === 'studio') viewStudio();
   else if (r === 'support') viewSupport();
+  else if (r === 'giving') await viewGiving();
   else if (r === 'galleries') viewGalleries();
   else if (r === 'features') parts[1] ? await viewFeature(decodeURIComponent(parts[1])) : await viewFeatures();
   else if (r === 'policy') viewPolicy(parts[1]);

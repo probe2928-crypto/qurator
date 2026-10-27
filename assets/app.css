@@ -741,3 +741,58 @@ body{word-break:keep-all;overflow-wrap:break-word}
   body.gal-page .gal-hero-in{grid-template-columns:1.2fr .8fr}
   body.gal-page .gal-grid{grid-template-columns:repeat(2,1fr)}
 }
+
+/* ---------- v6 · giving · First Brick Foundation (금색은 첫 벽돌 하나에만) ---------- */
+:root{--brick:#B8862D;--navy:#141B2E}
+.brick{width:26px;height:18px;flex:0 0 26px;color:currentColor}
+.give-note{display:flex;gap:14px;align-items:flex-start;margin:28px 0 0;padding:18px 0 0;border-top:1px solid var(--line);font-size:14px;line-height:1.7;color:var(--ink-2)}
+.give-note .brick{margin-top:3px}
+.give-note a{color:var(--seal);white-space:nowrap;font-weight:500}
+.give-note-today{margin:8px 0 72px}
+.give-note-co{margin-top:22px;font-size:13px}
+.co-sum .give-note{border-top-color:var(--line)}
+.give-band{background:var(--navy);color:var(--cream);padding:clamp(64px,9vw,128px) 0}
+.give-band-in{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,6vw,90px);align-items:end}
+.give-band .eyebrow{display:flex;align-items:center;gap:12px;color:var(--cream-2)}
+.give-band .brick{color:var(--cream-2)}
+.give-band h2{font-family:var(--serif);font-weight:600;font-size:clamp(30px,4.2vw,54px);line-height:1.18;letter-spacing:-.035em;margin:22px 0 0;color:#F6F1E7}
+.give-band p{margin:0 0 14px;font-size:16.5px;line-height:1.8;color:rgba(237,230,216,.86)}
+.give-band .give-status{font-size:13.5px;color:var(--cream-2);margin-bottom:26px}
+.give-band .link{color:#E8C27A}
+.give-hero{padding:clamp(48px,7vw,100px) 0 clamp(40px,6vw,80px);border-bottom:1px solid var(--line)}
+.give-hero-in{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(28px,5vw,80px);align-items:center}
+.give-hero .eyebrow{display:flex;align-items:center;gap:12px}
+.give-hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(34px,5.4vw,70px);line-height:1.12;letter-spacing:-.04em;margin:18px 0 22px}
+.give-hero h1 em{font-family:var(--serif-en);font-style:italic;font-weight:500;color:var(--brick)}
+.give-hero .lead{font-size:clamp(15.5px,1.5vw,18px);color:var(--ink-2);max-width:34em;margin:0 0 30px;line-height:1.8}
+.give-mark{margin:0;color:var(--ink)}
+.give-mark svg{width:100%;max-width:360px;display:block;margin:0 auto}
+.give-mark figcaption{text-align:center;font-family:var(--serif-en);font-style:italic;font-size:17px;color:var(--muted);margin-top:14px}
+.give{padding-bottom:clamp(64px,8vw,110px)}
+.give-sec{padding-top:clamp(48px,6vw,84px)}
+.give-sec h2{font-family:var(--serif);font-size:clamp(26px,3.2vw,38px);letter-spacing:-.03em;margin:0 0 24px;font-weight:600}
+.give-why p{font-family:var(--serif);font-size:clamp(18px,2vw,23px);line-height:1.75;max-width:36em;margin:0;color:var(--ink-2)}
+.give-phases{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink)}
+.give-phases li{padding:20px 20px 4px 0;border-right:1px solid var(--line);margin-right:20px}
+.give-phases li:last-child{border-right:0;margin-right:0}
+.give-phases .when{display:block;font-size:12.5px;letter-spacing:.06em;color:var(--muted);margin-bottom:10px}
+.give-phases .when b{color:var(--brick);font-weight:600}
+.give-phases li>b{display:block;font-family:var(--serif);font-size:19px;margin-bottom:8px}
+.give-phases p{margin:0;font-size:14px;line-height:1.7;color:var(--ink-2)}
+.give-phases li.now>b::before{content:"";display:inline-block;width:12px;height:8px;background:var(--brick);margin-right:8px;vertical-align:middle}
+.give-sec .give-status{margin:24px 0 0;font-size:14px;color:var(--muted)}
+.give-log{width:100%;border-collapse:collapse;font-size:14.5px}
+.give-log th{text-align:left;font-weight:500;font-size:12.5px;letter-spacing:.06em;color:var(--muted);border-bottom:1px solid var(--ink);padding:10px 12px 10px 0}
+.give-log td{border-bottom:1px solid var(--line);padding:14px 12px 14px 0}
+.give-empty{margin:0;padding:22px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);color:var(--muted)}
+.give-fine{margin:40px 0 0;font-size:12.5px;line-height:1.7;color:var(--muted);max-width:52em}
+@media (max-width:820px){
+  .give-band-in,.give-hero-in{grid-template-columns:1fr}
+  .give-mark{order:-1}.give-mark svg{max-width:240px}
+  .give-phases{grid-template-columns:1fr}
+  .give-phases li{border-right:0;margin-right:0;border-bottom:1px solid var(--line);padding:18px 0}
+}
+.co-sum .give-note{color:var(--cream-2);border-top-color:rgba(237,230,216,.16)}
+.co-sum .give-note .brick{color:var(--cream-2)}
+.co-sum .give-note a{color:#E8C27A}
+@media (max-width:820px){.give-band .eyebrow{letter-spacing:.1em;font-size:11px}}
