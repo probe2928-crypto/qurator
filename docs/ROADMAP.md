@@ -3,6 +3,7 @@
 ## 운영 원칙
 - 두 상품: Daily Art(개인 구독, 월 30,000원) · QR 도슨트(갤러리 B2B, 전시 30만~100만원, 갤러리 월 9.9만원)
 - 나눔: 수익(구독·갤러리 프로젝트)의 일부를 퍼스트브릭 재단(First Brick Foundation, 설립 준비 중)에 기부. 재단 등록 전엔 '할 예정'으로만 표기, 기부 시 data/giving.json에 {date, amount, note{ko,en}, proof} 추가. 비율(GIVE.share) 미정. 구독료는 기부금 아님(세액공제 X)
+- 홍보 문구(인스타 캡션·네이버 블로그 원고·특집 소개) 끝에 나눔 한 줄: 'QURATOR 수익의 일부는 퍼스트브릭 재단에 기부되어 동남아시아 아이들의 배움에 쓰입니다.' 재단 등록 전에는 기부 금액·수혜 인원 등 숫자를 쓰지 않음, 링크는 https://probe2928-crypto.github.io/qurator/#/giving
 - 문의·CS: 카카오톡 오픈채팅 https://open.kakao.com/o/gQLZj9Ti
 - 디자인: 프랑스 메종 톤 — 종이 #F3EFE6, 잉크 #16140F, 인주 #A8361F, Didone Q 모노그램 + Bodoni Moda 워드마크. 촌스러운 요소·AI 같은 허접함 금지.
 - 해설: 미술사 기반, 사실 확인된 내용만. 지어낸 수치·후기 금지. 작품 이미지는 퍼블릭 도메인 또는 자유 라이선스만(CC BY는 imgCredit 표기).
