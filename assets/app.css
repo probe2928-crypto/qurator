@@ -555,7 +555,8 @@ body.home .top.solid .lang button.on,body.home.menu-open .top .lang button.on{ba
 .kk-t{flex:1;display:grid}
 .kk-t b{font-size:17px;font-weight:600}
 .kk-t small{font-size:13px;opacity:.7}
-.sp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin-top:20px}
+.sp-grid{display:flex;flex-wrap:wrap;gap:1px;background:var(--line);border:1px solid var(--line);margin-top:20px}
+.sp-grid>*{flex:1 1 190px}
 .sp-cell{background:var(--paper);padding:20px;display:flex;justify-content:space-between;align-items:center;font-size:15px;text-align:left;transition:background .3s}
 .sp-cell:hover{background:var(--card)}
 .sp-cell i{font-style:normal;color:var(--muted);transition:transform .3s var(--ease)}

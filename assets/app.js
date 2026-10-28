@@ -116,16 +116,16 @@ const T = {
   nav_giving: ['나눔', 'Giving'],
   gv_eyebrow: ['QURATOR × Oriel Foundation', 'QURATOR × Oriel Foundation'],
   gv_h: ['작품을 읽는 시간이,<br>아이의 <em>첫 교실</em>이 됩니다.', 'Time spent with art<br>becomes a child\'s <em>first classroom.</em>'],
-  gv_lead: ['QURATOR는 수익의 일부를 오리엘 재단(Oriel Foundation · 明窗基金會)에 기부합니다. 도움이 필요한 가정과 사랑스러운 아이들을 위해, 배움에서 시작해 아이가 계속 학교에 올 수 있게 하는 생활 지원, 그리고 교실과 학교를 짓는 일까지 하려고 준비 중인 재단입니다.', 'QURATOR gives a share of its revenue to Oriel Foundation, a foundation in the making for families in need and their lovely children. It starts with learning, adds the everyday support that keeps a child in class, and grows toward classrooms and schools.'],
-  gv_short: ['QURATOR 수익의 일부는 오리엘 재단에 기부되어 도움이 필요한 가정과 사랑스러운 아이들에게 쓰입니다.', 'A share of QURATOR\'s revenue goes to Oriel Foundation, for families in need and their lovely children.'],
+  gv_lead: ['QURATOR는 수익의 일부를 오리엘 재단(Oriel Foundation · 明窗基金會)에 기부합니다. 도움이 필요한 가정과 사랑스런 아이들을 위해, 배움에서 시작해 아이가 계속 학교에 올 수 있게 하는 생활 지원, 그리고 교실과 학교를 짓는 일까지 하려고 준비 중인 재단입니다.', 'QURATOR gives a share of its revenue to Oriel Foundation, a foundation in the making for families who need a hand and the children we love. It starts with learning, adds the everyday support that keeps a child in class, and grows toward classrooms and schools.'],
+  gv_short: ['QURATOR 수익의 일부는 오리엘 재단에 기부되어 도움이 필요한 가정과 사랑스런 아이들에게 쓰입니다.', 'A share of QURATOR\'s revenue goes to Oriel Foundation, for families who need a hand and the children we love.'],
   gv_band_h: ['명작 한 점의 시간,<br>아이 한 명의 배움으로.', 'One masterpiece at a time,<br>one child\'s learning at a time.'],
   gv_status: ['재단은 지금 비영리 등록을 준비하고 있습니다. QURATOR의 첫 기부는 등록이 끝난 뒤 보내고, 날짜와 금액을 공개합니다.', 'The foundation is preparing its nonprofit registration. QURATOR sends its first gift once that is done, and publishes the date and amount.'],
   gv_more: ['나눔 이야기', 'How we give'], gv_visit: ['오리엘 재단 보기', 'Visit Oriel Foundation'],
   gv_how: ['어떻게 이어지나요', 'How it works'],
   gv_how_l: [[['구독과 갤러리 프로젝트', 'Daily Art 구독료와 갤러리 QR 도슨트 프로젝트 수익이 모두 대상입니다.'], ['오리엘 재단으로', 'QURATOR가 자기 수익에서 정해진 몫을 재단에 직접 보냅니다. 여러분이 따로 내는 돈은 없습니다.'], ['공개 기록', '보낸 날짜와 금액은 이 페이지와 재단의 공개 장부에 함께 남깁니다. 재단은 모든 기부를 공개 블록체인에서 확인할 수 있게 할 계획입니다.']],
              [['Subscriptions and gallery projects', 'Both Daily Art subscriptions and gallery QR docent projects count.'], ['To Oriel Foundation', 'QURATOR sends a set share of its own revenue to the foundation. You pay nothing extra.'], ['On the record', 'Each gift\'s date and amount is logged here and in the foundation\'s public ledger, which it plans to keep on a public blockchain.']]],
-  gv_why: ['왜 미술과 아이들인가', 'Why art, and why children'],
-  gv_why_p: ['QURATOR는 작품 한 점을 깊이 읽는 시간을 만듭니다. 그렇게 생긴 수익의 일부가 아이들이 배울 수 있는 교실로 이어지도록, QURATOR 운영진이 오리엘 재단을 함께 준비하고 있습니다. 배움에는 빛을, 기부에는 창을.', 'QURATOR makes time to read one work of art in depth. So that part of what that earns becomes a place for children to learn, the people behind QURATOR are building Oriel Foundation. Light for learning. Glass for giving.'],
+  gv_why: ['왜 미술과 가정, 그리고 아이들인가', 'Why art, and why families and children'],
+  gv_why_p: ['QURATOR는 작품 한 점을 깊이 읽는 시간을 만듭니다. 그렇게 생긴 수익의 일부가 도움이 필요한 가정의 하루와 사랑스런 아이들의 배움으로 이어지도록, QURATOR 운영진이 오리엘 재단을 함께 준비하고 있습니다. 배움에는 빛을, 기부에는 창을.', 'QURATOR makes time to read one work of art in depth. So that part of what that earns reaches the everyday lives of families who need a hand and the learning of the children we love, the people behind QURATOR are building Oriel Foundation. Light for learning. Glass for giving.'],
   gv_plan: ['재단의 계획', 'The foundation\'s plan'],
   gv_phases: [[['2026년 10~12월', '설립 준비', '정관과 자문단을 꾸리고, 첫 현지 파트너를 찾고, 비영리 등록 서류를 준비해요.'], ['2027년 1월', '공식 출범', '활동 일지와 SNS 채널을 열고, 창립 서포터 모집을 시작해요.'], ['2027년', '첫 프로그램', '한 마을, 한 파트너와 함께 학습 지원과 생활 지원을 시작하고, 첫 온체인 보고서를 내요.'], ['2028년부터', '짓기', '이미 함께 일한 마을과 교실·도서관·식수 시설·안전한 등굣길을 지어요.']],
               [['Oct–Dec 2026', 'Founding', 'Charter, advisers, a first local partner, and the paperwork to register as a nonprofit.'], ['Jan 2027', 'Public launch', 'The journal and social channels go live and the founding circle opens.'], ['2027', 'First programs', 'One community, one partner: learning support and everyday basics, with the first on-chain reports.'], ['2028 onward', 'Build', 'Classrooms, libraries, water and safe routes to school, built with the communities we already know.']]],
@@ -510,8 +510,9 @@ function viewHome(scrollTo) {
 }
 /* ---------------- hero stage: slow cross-fading masterpieces ---------------- */
 const HERO = [
-  ['w-starry', '50% 40%'], ['k-inwang', '50% 45%'], ['w-greatwave', '32% 50%'],
-  ['w-venus', '50% 34%'], ['k-mongyu', '82% 50%'], ['w-grandejatte', '50% 62%'], ['w-impression', '55% 50%']
+  // classical and modern, East and West, in turn
+  ['w-afklint7', '50% 38%'], ['k-mongyu', '82% 50%'], ['w-kandinsky7', '46% 50%'], ['w-hunters', '50% 45%'],
+  ['k-inwang', '50% 45%'], ['w-mondrian30', '62% 30%'], ['w-milkmaid', '50% 40%'], ['w-kiss', '50% 30%']
 ];
 const STAGE_MS = 7600;
 let stageTimer = null, stageCleanup = null;
@@ -1284,9 +1285,13 @@ async function viewGiving() {
   app().innerHTML = `<section class="give-hero"><div class="wrap give-hero-in">
       <div class="rv"><p class="eyebrow">${BRICK}<span>${t('gv_eyebrow')}</span></p><h1>${t('gv_h')}</h1><p class="lead">${esc(t('gv_lead'))}</p>
         <div class="hero-ctas"><a class="btn btn-ink" href="${giveUrl()}" target="_blank" rel="noopener">${t('gv_visit')} <span class="arrow">↗</span></a></div></div>
-      <figure class="give-mark rv" aria-hidden="true"><svg viewBox="0 0 240 200"><g fill="none" stroke="currentColor" stroke-width="1.2">
-        <path d="M24 92 120 28l96 64"/><path d="M40 92v84h160V92"/><rect x="104" y="124" width="32" height="52"/><rect x="62" y="112" width="26" height="22"/><rect x="152" y="112" width="26" height="22"/>
-        </g><rect x="62.6" y="112.6" width="24.8" height="20.8" fill="#B8862D"/><path d="M75 112.6v20.8M62.6 123h24.8" stroke="var(--paper)" stroke-width="1.2"/></svg>
+      <figure class="give-mark rv" aria-hidden="true"><svg viewBox="40 30 160 210">
+        <path d="M88 112 V88 A32 32 0 0 1 120 56 V112 Z" fill="#B8862D"/>
+        <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="square">
+          <path d="M72 196 V88 A48 48 0 0 1 168 88 V196"/><path d="M88 196 V88 A32 32 0 0 1 152 88 V196 Z"/>
+          <path d="M120 56 V196 M88 112 H152 M88 154 H152"/>
+          <path d="M62 196 H178 M66 204 H174"/><path d="M76 204 L120 232 L164 204"/><path d="M96 216 H144"/>
+        </g></svg>
         <figcaption>${S.lang === 'ko' ? '배움에는 빛을, 기부에는 창을.' : 'Light for learning. Glass for giving.'}</figcaption></figure>
     </div></section>
     <div class="wrap give">
