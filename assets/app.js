@@ -134,7 +134,7 @@ const T = {
   gv_log_cols: [['날짜', '금액', '내용'], ['Date', 'Amount', 'Note']],
   gv_fine: ['구독료와 갤러리 프로젝트 비용은 기부금이 아니며, 기부금 영수증이나 세액공제 대상이 아닙니다. 기부는 QURATOR가 자기 수익에서 직접 합니다.', 'Subscription and project fees are not donations and are not tax-deductible. QURATOR gives from its own revenue.'],
   play_unlock: ['멤버 코드로 열기', 'Unlock with member code'], play_h: ['멤버 전용 해설', 'Members-only commentary'],
-  play_p: ['Daily Art 멤버십은 QURATOR 웹사이트에서 신청할 수 있습니다. 받은 멤버 코드를 아래에 입력하면 이 기기에서 계속 열람됩니다.', 'Daily Art membership is available on the QURATOR website. Enter the member code you received below and this device stays unlocked.'],
+  play_p: ['Daily Art 멤버십은 QURATOR 웹사이트에서 신청할 수 있습니다. 받은 멤버 링크나 코드를 아래에 붙여 넣으면 이용 기간 동안 이 기기에서 열람됩니다.', 'Daily Art membership is available on the QURATOR website. Paste the member link or code you received below and this device stays unlocked for your membership period.'],
   m_cta: ['구독 신청하기', 'Subscribe now'], m_code: ['멤버 코드 또는 링크', 'Member code or link'], m_apply: ['확인', 'Apply'],
   m_ok: ['멤버십이 활성화되었습니다', 'Membership activated'], m_bad: ['코드를 다시 확인해 주세요', 'Please check the code'],
   m_until: ['{d}까지', 'until {d}'], m_renew: ['연장하기', 'Renew'], m_renew_play: ['연장은 QURATOR 웹사이트에서 할 수 있습니다.', 'You can renew on the QURATOR website.'],
@@ -179,13 +179,16 @@ const T = {
   sp_faq: ['자주 묻는 질문', 'Frequently asked'], sp_docs: ['약관 및 정책', 'Policies'],
   terms: ['이용약관', 'Terms of Service'], privacy: ['개인정보처리방침', 'Privacy Policy'], refund: ['환불·해지 규정', 'Refund & Cancellation'],
   biz: ['상호 QURATOR(큐레이터) · 사업자등록번호·통신판매업 신고번호·대표자 정보는 등록 완료 후 게시됩니다.', 'QURATOR. Business registration details will be published once registration is complete.'],
-  co_h: ['Daily Art 구독 신청', 'Subscribe to Daily Art'], co_name: ['이름', 'Name'], co_email: ['이메일 (멤버 코드 수신)', 'Email (for your member code)'],
+  co_h: ['Daily Art 구독 신청', 'Subscribe to Daily Art'], co_name: ['이름', 'Name'], co_email: ['이메일 (주문 확인·멤버 안내)', 'Email (order & membership notices)'],
   co_method: ['결제 방법', 'Payment method'], co_card: ['카드 자동결제', 'Card, billed monthly'], co_card_s: ['토스페이먼츠 · 매월 자동 결제', 'Toss Payments · renews monthly'],
-  co_soon: ['곧 오픈', 'Coming soon'], co_bank: ['계좌이체', 'Bank transfer'], co_bank_s: ['우리은행 계좌로 입금 · 확인 후 멤버 링크 발송', 'Transfer to our Woori Bank account · member code after confirmation'],
+  co_soon: ['곧 오픈', 'Coming soon'], co_bank: ['계좌이체', 'Bank transfer'], co_bank_s: ['우리은행 계좌로 입금 · 확인 후 멤버 링크 발송', 'Transfer to our Woori Bank account · member link after confirmation'],
   co_agree: ['이용약관, 개인정보 수집·이용, 정기결제 및 환불·해지 규정을 확인했으며 동의합니다.', 'I agree to the Terms, Privacy Policy, recurring billing and refund policy.'],
   co_pay: ['결제하기', 'Pay'], co_apply: ['신청하기', 'Place order'], co_need: ['이름, 이메일, 동의 항목을 확인해 주세요', 'Please fill in your name, email and consent'],
-  co_order: ['신청이 접수되었습니다', 'Order received'], co_order_p: ['아래 계좌로 입금하신 뒤, 카카오톡 오픈채팅에 주문번호를 보내 주세요. 입금이 확인되면 카카오톡으로 멤버 링크를 보내 드립니다.', 'Transfer to the account below, then send your order number on KakaoTalk. We will send your member code once the payment is confirmed.'],
-  co_copy: ['주문 정보 복사', 'Copy order details'], co_acct: ['입금 계좌', 'Bank account'], co_holder: ['예금주', 'Holder'], co_amount: ['입금 금액', 'Amount'], co_payer: ['입금자명', 'Sender name'], co_payer_v: ['이름 + 주문번호 뒤 4자리', 'Your name + last 4 of order no.'], co_cpacct: ['계좌번호 복사', 'Copy account'], co_open: ['카카오톡 열기', 'Open KakaoTalk'], co_have: ['멤버 코드를 받으셨나요?', 'Got your member code?'],
+  co_order: ['신청이 접수되었습니다', 'Order received'], co_order_p: ['아래 계좌로 입금하신 뒤, 카카오톡 오픈채팅에 주문번호를 보내 주세요. 입금이 확인되면 카카오톡으로 멤버 링크를 보내 드립니다.', 'Transfer to the account below, then send your order number on KakaoTalk. We will send your member link once the payment is confirmed.'],
+  co_copy: ['주문 정보 복사', 'Copy order details'], co_acct: ['입금 계좌', 'Bank account'], co_holder: ['예금주', 'Holder'], co_amount: ['입금 금액', 'Amount'], co_payer: ['입금자명', 'Sender name'], co_payer_v: ['이름 + 주문번호 뒤 4자리', 'Your name + last 4 of order no.'], co_cpacct: ['계좌번호 복사', 'Copy account'], co_open: ['카카오톡 열기', 'Open KakaoTalk'], co_have: ['멤버 링크를 받으셨나요? 여기에 붙여 넣어도 열립니다.', 'Got your member link? You can also paste it here.'],
+  co_kk: ['주문 정보를 복사했어요. 채팅창에 붙여 넣어 보내 주세요', 'Order details copied. Paste them into the chat and send'],
+  co_resume: ['입금 대기 중인 신청이 있습니다', 'You have an order awaiting payment'], co_resume_b: ['입금 안내 다시 보기', 'View payment details'], co_new: ['새로 신청', 'New order'],
+  co_renew_h: ['Daily Art 멤버십 연장', 'Renew Daily Art'], co_renew_p: ['연장 신청은 지금 멤버십과 이어서 확인됩니다. 입금이 확인되면 기간을 늘린 새 링크를 카카오톡으로 보내 드립니다.', 'Renewals are matched to your current membership. Once payment is confirmed we send a new link with the extended date on KakaoTalk.'],
   co_month: ['월', 'month'], co_vat: ['부가세 포함 · 언제든 해지 가능', 'VAT included · cancel anytime'], co_test: ['테스트 결제 모드 — 실제 청구되지 않습니다', 'Test mode — no real charge'],
   pay_ok: ['구독이 시작되었습니다', 'Your membership is active'], pay_ok_p: ['아래 멤버 코드를 꼭 저장해 두세요. 다른 기기에서도 이 코드로 열람할 수 있습니다.', 'Keep this member code. Use it to unlock Daily Art on any device.'],
   pay_test_ok: ['카드 등록이 확인되었습니다 (테스트)', 'Card registered (test)'], pay_test_p: ['결제 서버가 연결되면 이 단계에서 첫 달 결제와 멤버 코드 발급이 자동으로 진행됩니다.', 'Once the billing server is connected, the first charge and member code happen automatically here.'],
@@ -1259,7 +1262,7 @@ async function viewMemberLink(tok) {
 const FAQ = [
   ['오늘의 작품은 언제 올라오나요?', 'When do the daily works arrive?', '매일 아침(한국 시간) 세 점이 새로 올라옵니다. 첫 번째 작품은 누구나 무료로 볼 수 있고, 나머지 두 점과 아카이브는 멤버에게 열립니다.', 'Three new works go up every morning, Korea time. The first is free for everyone; the other two and the archive are for members.'],
   ['앱을 설치해야 하나요?', 'Do I need to install an app?', '아니요. 브라우저에서 바로 열립니다. 오늘의 작품 페이지에서 홈 화면에 추가하면 앱처럼 쓸 수 있습니다.', 'No. It runs in your browser. Add it to your home screen from the Daily Art page to use it like an app.'],
-  ['결제는 어떻게 하나요?', 'How do I pay?', '구독 신청 페이지에서 계좌이체를 선택하면 입금 계좌가 바로 안내됩니다. 입금 후 카카오톡으로 주문번호를 보내 주시면 확인 후 멤버 링크를 보내 드립니다. 카드 자동결제(토스페이먼츠)는 곧 열립니다.', 'Choose bank transfer on the checkout page to see our account details; send your order number on KakaoTalk after paying and we will send your member code. Card billing via Toss Payments opens soon.'],
+  ['결제는 어떻게 하나요?', 'How do I pay?', '구독 신청 페이지에서 계좌이체를 선택하면 입금 계좌가 바로 안내됩니다. 입금 후 카카오톡으로 주문번호를 보내 주시면 확인 후 멤버 링크를 보내 드립니다. 카드 자동결제(토스페이먼츠)는 곧 열립니다.', 'Choose bank transfer on the checkout page to see our account details; send your order number on KakaoTalk after paying and we will send your member link. Card billing via Toss Payments opens soon.'],
   ['멤버 코드는 어디에 입력하나요?', 'Where do I enter my member code?', '입금이 확인되면 카카오톡으로 멤버 링크를 보내 드립니다. 링크를 누르면 바로 열리고, 화면에 이용 기간(만료일)이 표시됩니다. 다른 기기에서는 같은 링크를 한 번 더 누르면 됩니다. 링크를 열기 어려우면 구독 버튼 아래 입력칸에 링크를 붙여 넣어도 됩니다. 만료 5일 전부터 연장 안내가 나옵니다.', 'Once your payment is confirmed we send a member link on KakaoTalk. Open it and everything unlocks, with your end date shown. On another device, open the same link again, or paste it into the field under Subscribe. A renewal reminder appears 5 days before the end date.'],
   ['해지는 어떻게 하나요?', 'How do I cancel?', '카카오톡으로 해지를 요청하시면 다음 결제일부터 청구되지 않으며, 이미 결제한 기간이 끝날 때까지 계속 이용하실 수 있습니다.', 'Message us on KakaoTalk. You will not be billed again and keep access until the end of the paid period.'],
   ['환불되나요?', 'Can I get a refund?', '결제 후 7일 이내이고 멤버 전용 해설을 열람하지 않았다면 전액 환불됩니다. 자세한 기준은 환불·해지 규정을 확인해 주세요.', 'Within 7 days of payment, if you have not opened member content, you get a full refund. See the Refund & Cancellation policy for details.'],
@@ -1308,7 +1311,7 @@ async function viewGiving() {
 }
 
 const FAQ_PLAY = [
-  ['멤버십은 어떻게 이용하나요?', 'How does membership work?', 'Daily Art 멤버십은 QURATOR 웹사이트에서 신청할 수 있습니다. 받은 멤버 링크를 누르거나, 앱의 \'멤버 코드로 열기\'에 링크나 코드를 붙여 넣으면 이용 기간 동안 열람됩니다.', 'Daily Art membership is available on the QURATOR website. Enter the member code you receive under "Unlock with member code" and this device stays unlocked.']
+  ['멤버십은 어떻게 이용하나요?', 'How does membership work?', 'Daily Art 멤버십은 QURATOR 웹사이트에서 신청할 수 있습니다. 받은 멤버 링크를 누르거나, 앱의 \'멤버 코드로 열기\'에 링크나 코드를 붙여 넣으면 이용 기간 동안 열람됩니다.', 'Daily Art membership is available on the QURATOR website. Open the member link you received, or paste the link or code into "Unlock with member code", and everything stays open for your membership period.']
 ];
 function viewSupport() {
   const k = L();
@@ -1373,7 +1376,12 @@ function viewCheckout() {
   const test = new URLSearchParams(location.hash.split('?')[1] || '').get('paytest') === '1' || store.get('q_paytest', false);
   if (test) store.set('q_paytest', true);
   const cardOn = PAY.live || test, n = L();
-  app().innerHTML = `<section class="phead"><div class="wrap"><p class="eyebrow">Membership · Daily Art</p><h1>${t('co_h')}</h1></div></section>
+  // renewal: membership ends within 5 days or has ended → the order is tagged so the ledger can match it
+  const renew = !!(S.memberEnded || (S.member && S.memberExp && daysLeft(S.memberExp) <= 5));
+  const po = store.get('q_order', null);
+  const pending = po && po.id && Date.now() - Date.parse(po.at || 0) < 14 * 864e5 && (renew ? !!po.renew : !S.member) ? po : null;
+  app().innerHTML = `<section class="phead"><div class="wrap"><p class="eyebrow">Membership · Daily Art</p><h1>${t(renew ? 'co_renew_h' : 'co_h')}</h1>${renew ? `<p>${t('co_renew_p')}</p>` : ''}
+    ${pending ? `<div class="co-resume"><p><span>${t('co_resume')}</span><b>${esc(pending.id)}</b></p><button type="button" class="btn btn-ink btn-sm" id="coRes">${t('co_resume_b')} →</button></div>` : ''}</div></section>
   <div class="wrap checkout">
     <aside class="co-sum">
       <div class="co-mark">${LOGO_MARK}</div>
@@ -1385,8 +1393,8 @@ function viewCheckout() {
     </aside>
     <form class="co-form" id="coForm" novalidate>
       ${test ? `<p class="co-testbar">${t('co_test')}</p>` : ''}
-      <div class="field"><label>${t('co_name')}</label><input name="name" autocomplete="name" required></div>
-      <div class="field"><label>${t('co_email')}</label><input name="email" type="email" autocomplete="email" required></div>
+      <div class="field"><label>${t('co_name')}</label><input name="name" autocomplete="name" value="${esc((po && po.name) || '')}" required></div>
+      <div class="field"><label>${t('co_email')}</label><input name="email" type="email" autocomplete="email" value="${esc((po && po.email) || '')}" required></div>
       <p class="co-lab">${t('co_method')}</p>
       <label class="co-opt ${cardOn ? '' : 'off'}"><input type="radio" name="m" value="card" ${cardOn ? 'checked' : 'disabled'}><span><b>${t('co_card')}</b><small>${t('co_card_s')}</small></span>${cardOn ? '' : `<em>${t('co_soon')}</em>`}</label>
       <label class="co-opt"><input type="radio" name="m" value="bank" ${cardOn ? '' : 'checked'}><span><b>${t('co_bank')}</b><small>${t('co_bank_s')}</small></span></label>
@@ -1397,6 +1405,7 @@ function viewCheckout() {
   const f = $('#coForm'), btn = $('#coBtn');
   const label = () => { const m = f.m.value; btn.innerHTML = `₩${PAY.price.toLocaleString()} · ${m === 'card' ? t('co_pay') : t('co_apply')} <span class="arrow">→</span>`; };
   f.onchange = label; label();
+  if (pending) $('#coRes').onclick = () => showOrder(pending.id, pending);
   f.onsubmit = async e => {
     e.preventDefault();
     const o = { name: f.name.value.trim(), email: f.email.value.trim(), plan: 'daily' };
@@ -1414,15 +1423,17 @@ function viewCheckout() {
     }
     const d = seoulDate().slice(2).replace(/-/g, '');
     const id = `Q-${d}-${Math.random().toString(36).slice(2, 6).toUpperCase()}`;
+    if (renew) { const st = await codeStatus(store.get('q_code', '')); o.renew = { exp: (st && st.exp) || S.memberExp || S.memberEnded, ref: (st && st.id) || '' }; }
     store.set('q_order', { id, ...o, at: new Date().toISOString() });
     showOrder(id, o);
   };
 }
 function showOrder(id, o) {
   const payer = `${o.name}${id.slice(-4)}`;
-  const msg = `[QURATOR Daily Art 구독 신청]\n주문번호: ${id}\n이름: ${o.name}\n이메일: ${o.email}\n금액: 월 ${PAY.price.toLocaleString()}원\n입금자명: ${payer}`;
+  const rn = o.renew ? `\n현재 만료일: ${o.renew.exp}${o.renew.ref ? `\n링크 번호: ${o.renew.ref}` : ''}` : '';
+  const msg = `[QURATOR Daily Art ${o.renew ? '연장' : '구독'} 신청]\n주문번호: ${id}\n이름: ${o.name}\n이메일: ${o.email}\n금액: 월 ${PAY.price.toLocaleString()}원\n입금자명: ${payer}${rn}`;
   $('.checkout').innerHTML = `<div class="co-done">
-    <div class="co-mark">${LOGO_MARK}</div><p class="eyebrow">Order</p><h2>${t('co_order')}</h2>
+    <div class="co-mark">${LOGO_MARK}</div><p class="eyebrow">${o.renew ? 'Renewal' : 'Order'}</p><h2>${t('co_order')}</h2>
     <div class="co-id">${esc(id)}</div><p>${t('co_order_p')}</p>
     <dl class="co-bank">
       <div><dt>${t('co_acct')}</dt><dd><b>${BANK.name} ${BANK.number}</b> <button type="button" class="co-mini" id="cpa">${t('co_cpacct')}</button></dd></div>
@@ -1430,11 +1441,13 @@ function showOrder(id, o) {
       <div><dt>${t('co_amount')}</dt><dd>₩${PAY.price.toLocaleString()}</dd></div>
       <div><dt>${t('co_payer')}</dt><dd>${esc(payer)} <small>(${t('co_payer_v')})</small></dd></div>
     </dl>
-    <div class="co-acts"><button class="btn btn-line" id="cpo">${t('co_copy')}</button><a class="btn btn-kakao" href="${KAKAO}" target="_blank" rel="noopener">${t('co_open')} →</a></div>
+    <div class="co-acts"><button class="btn btn-line" id="cpo">${t('co_copy')}</button><a class="btn btn-kakao" id="cpk" href="${KAKAO}" target="_blank" rel="noopener">${t('co_open')} →</a></div>
     <p class="note" style="margin-top:28px">${t('co_have')}</p>
     <form class="code-row" id="codeF2"><input id="code2" placeholder="${t('m_code')}" autocomplete="off"><button class="btn btn-ink btn-sm">${t('m_apply')}</button></form></div>`;
   window.scrollTo({ top: 0, behavior: 'smooth' });
   $('#cpa').onclick = async () => { try { await navigator.clipboard.writeText(BANK.number); toast(t('copied')); } catch { prompt('', BANK.number); } };
+  // one tap: copy the order message, then the open chat opens in a new tab
+  $('#cpk').onclick = () => { try { navigator.clipboard.writeText(msg).then(() => toast(t('co_kk')), () => {}); } catch {} };
   $('#cpo').onclick = async () => { try { await navigator.clipboard.writeText(msg); toast(t('copied')); } catch { prompt('', msg); } };
   $('#codeF2').onsubmit = e => { e.preventDefault(); const v = $('#code2').value.trim(); checkCode(v).then(ok => { if (ok) { activateMember(v, ok.exp); toast(t('m_ok')); location.hash = '#/today'; } else toast(t('m_bad')); }); };
 }
