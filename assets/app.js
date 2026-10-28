@@ -305,6 +305,8 @@ async function wikiLookup(lang, params, size = 1200) {
 }
 function curatedImage(w, size = 1200) {
   if (w.img) return Promise.resolve(w.img);
+  // a pinned Commons file needs no API lookup (faster, and immune to API rate limits)
+  if (w.commons) return Promise.resolve(`https://commons.wikimedia.org/wiki/Special:FilePath/${enc(w.commons)}?width=${size}`);
   const key = w.id + '@' + size;
   if (imgCache[key]) return Promise.resolve(imgCache[key]);
   if (imgPending[key]) return imgPending[key];
