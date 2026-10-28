@@ -434,7 +434,7 @@ body.home .top.solid .lang button.on,body.home.menu-open .top .lang button.on{ba
 @keyframes kb2{from{transform:scale(1.12) translate(-2%,0)}to{transform:scale(1.04) translate(2%,0)}}
 @keyframes kb3{from{transform:scale(1.04) translate(0,1.5%)}to{transform:scale(1.14) translate(0,-1.5%)}}
 .stage-shade{position:absolute;inset:0;z-index:3;pointer-events:none;
-  background:linear-gradient(90deg,rgba(10,9,7,.82) 0%,rgba(10,9,7,.55) 34%,rgba(10,9,7,.08) 64%,rgba(10,9,7,0) 100%),
+  background:linear-gradient(90deg,rgba(10,9,7,.86) 0%,rgba(10,9,7,.64) 36%,rgba(10,9,7,.16) 66%,rgba(10,9,7,0) 100%),
              linear-gradient(0deg,rgba(10,9,7,.88) 0%,rgba(10,9,7,.2) 30%,rgba(10,9,7,0) 50%),
              linear-gradient(180deg,rgba(10,9,7,.55) 0%,rgba(10,9,7,0) 18%)}
 .stage-copy{position:relative;z-index:4;height:100%;display:flex;align-items:center}

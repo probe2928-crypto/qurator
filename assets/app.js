@@ -514,7 +514,7 @@ function viewHome(scrollTo) {
 const HERO = [
   // classical and modern, East and West, in turn
   ['w-afklint7', '50% 38%'], ['k-mongyu', '82% 50%'], ['w-kandinsky7', '46% 50%'], ['w-hunters', '50% 45%'],
-  ['k-inwang', '50% 45%'], ['w-mondrian30', '62% 30%'], ['w-milkmaid', '50% 40%'], ['w-kiss', '50% 30%']
+  ['k-inwang', '50% 45%'], ['w-mondrian30', '50% 58%'], ['w-milkmaid', '50% 40%'], ['w-kiss', '50% 30%']
 ];
 const STAGE_MS = 7600;
 let stageTimer = null, stageCleanup = null;
