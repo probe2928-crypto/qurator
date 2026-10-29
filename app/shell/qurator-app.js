@@ -21,6 +21,28 @@
   }, true);
 
   if (!native) return;
+
+  // QR 스캔: 작품 옆 QR을 앱 카메라로 바로 읽어 해설 화면으로
+  var REMOTE = window.QURATOR_APP.remote;
+  function scan() {
+    var S = P.CapacitorBarcodeScanner; if (!S) return;
+    var ko = (document.documentElement.lang || "ko").indexOf("en") !== 0;
+    S.scanBarcode({ hint: 0, scanInstructions: ko ? "작품 옆 QR 코드를 화면에 비춰 주세요" : "Point at the QR code beside the artwork", cameraDirection: 1 }).then(function (r) {
+      var v = (r && (r.ScanResult || r.scanResult)) || ""; if (!v) return;
+      if (v.indexOf(REMOTE) === 0 && v.indexOf("#") > 0) { location.hash = v.slice(v.indexOf("#")); return; }
+      if (/^https?:\/\//i.test(v)) { openUrl(v); return; }
+      alertNote(ko ? "QURATOR 작품 QR이 아니에요." : "That isn't a QURATOR artwork code.");
+    }).catch(function () {});
+  }
+  function alertNote(msg) { var t = document.getElementById("toast"); if (!t) return; t.textContent = msg; t.classList.add("show"); setTimeout(function () { t.classList.remove("show"); }, 2400); }
+  document.addEventListener("DOMContentLoaded", function () {
+    if (!P.CapacitorBarcodeScanner) return;
+    var b = document.createElement("button");
+    b.type = "button"; b.className = "q-scan"; b.setAttribute("aria-label", "QR 스캔 · Scan QR");
+    b.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3M7 12h10"/></svg><span>QR</span>';
+    b.onclick = scan;
+    document.body.appendChild(b);
+  });
   try { P.StatusBar && P.StatusBar.setStyle({ style: "LIGHT" }); } catch (e) {}
   addEventListener("load", function () { setTimeout(function () { try { P.SplashScreen && P.SplashScreen.hide({ fadeOutDuration: 250 }); } catch (e) {} }, 200); });
   if (P.App) P.App.addListener("backButton", function () {

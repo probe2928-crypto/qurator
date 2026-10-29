@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@capacitor/app": "^8.0.0",
+    "@capacitor/barcode-scanner": "latest",
     "@capacitor/browser": "^8.0.0",
     "@capacitor/core": "^8.0.0",
     "@capacitor/ios": "^8.0.0",
