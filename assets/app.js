@@ -189,7 +189,7 @@ const T = {
   ft_h: ['특집', 'Features'], ft_p: ['지금 미술계에서 가장 뜨거운 작품들을 미술사의 눈으로 읽습니다. 가격과 기록 너머의 의미까지.', 'The works everyone is talking about, read through art history: beyond the price tags and records.'],
   ft_read: ['특집 읽기', 'Read the feature'], ft_works: ['점', 'works'], ft_src: ['출처', 'Sources'],
   ft_cr: ['저작권 보호 작품 — 이미지는 소장처·경매사 페이지에서 볼 수 있습니다.', 'In copyright: see the image on the auction house or museum page.'],
-  ft_toc: ['목차', 'Contents'], ft_asof: ['기준', 'as of'], ft_more: ['다른 특집', 'More features'],
+  ft_toc: ['목차', 'Contents'], ft_asof: ['기준', 'As of'], ft_more: ['다른 특집', 'More features'],
   sp_h: ['고객센터', 'Support'], sp_p: ['구독, 결제, 해지, 갤러리 도입까지 카카오톡 오픈채팅으로 문의를 받습니다.', 'Subscriptions, billing, cancellations and gallery projects: talk to us on KakaoTalk.'],
   sp_kakao: ['카카오톡으로 문의하기', 'Message us on KakaoTalk'], sp_kakao_s: ['오픈채팅 · QURATOR 고객센터', 'Open chat · QURATOR Support'],
   sp_faq: ['자주 묻는 질문', 'Frequently asked'], sp_docs: ['약관 및 정책', 'Policies'],
@@ -1085,7 +1085,7 @@ async function viewFeatures() {
     <div class="wrap ft-list">${list.length ? list.map(f => {
       const n = f.sections.reduce((a, s) => a + s.items.length, 0);
       return `<a class="ft-card rv" href="#/features/${esc(f.id)}">${featCover(f)}
-        <div class="ft-meta"><p class="eyebrow">${esc(pick(f.kicker))} · ${esc(f.asof)} ${t('ft_asof')}</p><h2>${esc(pick(f.title))}</h2><p>${esc(pick(f.dek))}</p>
+        <div class="ft-meta"><p class="eyebrow">${esc(pick(f.kicker))} · ${S.lang === 'en' ? `${t('ft_asof')} ${esc(f.asof)}` : `${esc(f.asof)} ${t('ft_asof')}`}</p><h2>${esc(pick(f.title))}</h2><p>${esc(pick(f.dek))}</p>
         <span class="link">${t('ft_read')} · ${n}${S.lang === 'ko' ? t('ft_works') : ' ' + t('ft_works')} <span class="arrow">→</span></span></div></a>`;
     }).join('') : `<div class="empty">${S.lang === 'ko' ? '첫 특집을 준비하고 있습니다.' : 'Our first feature is on its way.'}</div>`}</div>`;
   hydrate(); reveal();
@@ -1114,7 +1114,7 @@ async function viewFeature(id) {
       </div></article>`;
   };
   app().innerHTML = `<header class="ft-hero">${featCover(f, 'big')}<div class="ft-hero-shade"></div>
-      <div class="wrap ft-hero-in"><p class="eyebrow">${esc(pick(f.kicker))} · ${esc(f.asof)} ${t('ft_asof')}</p><h1>${esc(pick(f.title))}</h1><p>${esc(pick(f.dek))}</p></div></header>
+      <div class="wrap ft-hero-in"><p class="eyebrow">${esc(pick(f.kicker))} · ${S.lang === 'en' ? `${t('ft_asof')} ${esc(f.asof)}` : `${esc(f.asof)} ${t('ft_asof')}`}</p><h1>${esc(pick(f.title))}</h1><p>${esc(pick(f.dek))}</p></div></header>
     <div class="wrap ft-wrap">
       <div class="ft-intro rv">${pick(f.intro).split('\n').map(p => `<p>${esc(p)}</p>`).join('')}</div>
       <nav class="ft-toc rv"><p class="eyebrow">${t('ft_toc')}</p>${f.sections.map((s, i) => `<a href="javascript:void 0" data-sec="${i}"><span>${ROMAN[i]}</span>${esc(pick(s.title))}<em>${s.items.length}</em></a>`).join('')}</nav>

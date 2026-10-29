@@ -1,5 +1,525 @@
 [
  {
+  "id": "overseas-exhibitions-2026-autumn",
+  "asof": "2026.10.29",
+  "kicker": {
+   "ko": "해외 전시 가이드",
+   "en": "Exhibition Guide · Abroad"
+  },
+  "title": {
+   "ko": "이번 시즌 꼭 봐야 할 해외 전시 12",
+   "en": "12 Exhibitions Abroad Worth the Trip This Season"
+  },
+  "dek": {
+   "ko": "런던의 반 에이크와 르누아르, 파리의 메리 커샛과 수르바란, 그리고 기메 미술관의 조선 책가도까지. 올가을부터 겨울까지 유럽에서 열리는 거장 전시를 대표작 한 점씩과 함께 골랐습니다.",
+   "en": "Van Eyck and Renoir in London, Mary Cassatt and Zurbarán in Paris, and Joseon chaekgeori screens at the Guimet. The old-master and modern-master shows running in Europe from this autumn into winter, each with one key work."
+  },
+  "intro": {
+   "ko": "올가을 유럽 미술관들은 유난히 굵직한 전시를 내놓았습니다. 10월 29일 현재 열려 있거나 11월 안에 문을 여는 전시 가운데, 미술사적으로 의미가 크고 일부러 비행기를 탈 만한 열두 곳을 골랐습니다. 반 에이크의 초상화, 할스와 렘브란트의 첫 2인전처럼 다시 보기 어려운 조합이 여럿입니다.\n파리, 런던과 네덜란드, 독일·스위스·노르웨이의 세 갈래로 나누고, 전시마다 작가를 대표하는 작품 한 점을 앞에 세웠습니다. 대표작은 작가를 소개하기 위해 고른 것으로, 실제 출품 여부는 전시마다 다를 수 있습니다. 관람 시간과 예약 방법은 방문 전에 각 미술관 공지를 꼭 확인해 주세요.",
+   "en": "European museums have lined up an unusually strong autumn. From the shows open as of 29 October, or opening during November, we picked twelve that matter for art history and are worth a flight. Several bring together pairings you may never see again, from Van Eyck's portraits to the first show devoted to Hals and Rembrandt side by side.\nThey fall into three groups: Paris; London and the Netherlands; and Germany, Switzerland and Norway. Each leads with one work that represents the artist; it is chosen to introduce the artist and may not be in the show itself. Check each museum's opening hours and booking rules before you go."
+  },
+  "cover": [
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Pierre-Auguste%20Renoir%2C%20Le%20Moulin%20de%20la%20Galette.jpg?width=1600",
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Whistlers%20Mother%20high%20res.jpg?width=1600"
+  ],
+  "sections": [
+   {
+    "title": {
+     "ko": "파리",
+     "en": "Paris"
+    },
+    "dek": {
+     "ko": "인상주의의 미국인 여성, 스페인 황금기의 수도사 화가, 베네치아의 거장, 그리고 조선의 눈속임 그림.",
+     "en": "An American woman among the Impressionists, a painter of Spain's Golden Age, a Venetian giant, and Joseon trompe-l'oeil."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "파란 안락의자의 소녀",
+       "en": "Little Girl in a Blue Armchair"
+      },
+      "artist": {
+       "ko": "메리 커샛",
+       "en": "Mary Cassatt"
+      },
+      "year": "1878",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "메리 커샛, 독립을 택하다 · 오르세 미술관 · 2026.10.06–2027.01.31",
+       "en": "Mary Cassatt: Being Independent · Musée d'Orsay · 6 Oct 2026 – 31 Jan 2027"
+      },
+      "why": {
+       "ko": "인상파 전시에 참여한 유일한 미국인 화가 커샛을 다룬 전시로, 세계 여러 소장처에서 온 80점 가까운 작품이 모였다. 여성과 아이를 그린 화가라는 익숙한 틀을 넘어, 직업 화가로서 스스로 길을 고른 '독립'에 초점을 맞춘다. 이후 런던 국립초상화미술관과 보스턴 미술관에서 이어진다.",
+       "en": "Nearly 80 works from collections around the world survey Cassatt, the American who showed with the Impressionists in Paris. The show looks past the familiar label of a painter of mothers and children to her independence: the choices she made to build a professional career on her own terms. It travels next to the National Portrait Gallery in London and the Museum of Fine Arts, Boston."
+      },
+      "record": {
+       "ko": "워싱턴 국립미술관 소장",
+       "en": "National Gallery of Art, Washington"
+      },
+      "pd": true,
+      "sources": [
+       {
+        "label": "Artprice",
+        "url": "https://news.artprice.com/en/15566/mary-cassatt-pioneer-of-impressionism-at-the-musee-d-orsay-from-october-6-2026-to-january-31-2027"
+       },
+       {
+        "label": "Come to Paris",
+        "url": "https://www.cometoparis.com/fre/musee-orsay/expositions/mary-cassatt-lindependante-m9001938"
+       },
+       {
+        "label": "Paris je t'aime",
+        "url": "https://parisjetaime.com/eng/article/major-exhibitions-in-paris-this-autumn-a840"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "아시시의 성 프란체스코",
+       "en": "Saint Francis of Assisi"
+      },
+      "artist": {
+       "ko": "프란시스코 데 수르바란",
+       "en": "Francisco de Zurbarán"
+      },
+      "year": "1636",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "수르바란 · 루브르 박물관 나폴레옹 홀 · 2026.10.07–2027.01.25",
+       "en": "Zurbarán · Musée du Louvre, Hall Napoléon · 7 Oct 2026 – 25 Jan 2027"
+      },
+      "why": {
+       "ko": "루브르와 런던 내셔널 갤러리, 시카고 미술관이 함께 꾸린 회고전으로, 수도원을 위해 그린 대작부터 초상화와 정물화, 아들 후안 데 수르바란의 그림까지 일곱 부분으로 보여 준다. 어둠 속에서 조각처럼 떠오르는 성인과 수도사의 모습은 스페인 황금기 신앙 미술의 정수다. 리옹 미술관의 〈성 프란체스코〉가 이번 전시를 위해 복원되었다.",
+       "en": "Organised by the Louvre with the National Gallery, London and the Art Institute of Chicago, the retrospective runs in seven parts, from huge monastery commissions to portraits, still lifes and pictures by his son Juan. Zurbarán's saints and monks, rising out of darkness like sculpture, are the essence of Spain's Golden Age devotional painting. The Lyon museum's Saint Francis was restored for the show."
+      },
+      "record": {
+       "ko": "리옹 미술관 소장",
+       "en": "Musée des Beaux-Arts de Lyon"
+      },
+      "pd": true,
+      "sources": [
+       {
+        "label": "Musée du Louvre",
+        "url": "https://www.louvre.fr/en/exhibitions-and-events/exhibitions/zurbaran"
+       },
+       {
+        "label": "Artprice",
+        "url": "https://news.artprice.com/es/15776/at-the-louvre-zurbaran-s-saint-francis-of-assisi-will-be-a-highlight-of-the-exhibition-starting-october-7-2026"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "성 아우구스티누스의 기적",
+       "en": "The Miracle of Saint Augustine"
+      },
+      "artist": {
+       "ko": "틴토레토",
+       "en": "Tintoretto"
+      },
+      "year": "1547–1549",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "영원한 틴토레토 · 자크마르앙드레 미술관 · 2026.09.11–2027.01.24",
+       "en": "Timeless Tintoretto · Musée Jacquemart-André · 11 Sep 2026 – 24 Jan 2027"
+      },
+      "why": {
+       "ko": "평생 베네치아를 떠나지 않고 총독궁과 스쿠올라 그란데 디 산 로코의 거대한 연작을 이끈 틴토레토의 경력을 프랑스에서 처음으로 폭넓게 조망한다. 회화와 드로잉 40여 점이 나오며, 비첸차의 〈성 아우구스티누스의 기적〉과 토리노의 〈삼위일체〉가 대표작이다. 19세기 프랑스 화가들이 그를 어떻게 다시 읽었는지도 함께 보여 준다.",
+       "en": "Tintoretto never left Venice and ran the workshop behind the vast cycles in the Doge's Palace and the Scuola Grande di San Rocco; this is the first broad survey of his career in France. About forty paintings and drawings include The Miracle of Saint Augustine from Vicenza and The Trinity from Turin. The show also traces how nineteenth-century French painters rediscovered him."
+      },
+      "record": {
+       "ko": "팔라초 키에리카티 시립미술관, 비첸차",
+       "en": "Palazzo Chiericati, Vicenza"
+      },
+      "pd": true,
+      "sources": [
+       {
+        "label": "Musée Jacquemart-André",
+        "url": "https://www.musee-jacquemart-andre.com/en/timeless-tintoretto"
+       },
+       {
+        "label": "Artprice",
+        "url": "https://news.artprice.com/de/16067/timeless-tintoretto-the-musee-jacquemart-andre-celebrates-the-venetian-genius-from-11-september-2026-to-24-january-2027"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "책가도 병풍",
+       "en": "Chaekgeori (books and scholar's objects) screen"
+      },
+      "artist": {
+       "ko": "조선 화원 외",
+       "en": "Joseon court and folk painters"
+      },
+      "year": "18–20세기 · 18th–20th c.",
+      "medium": {
+       "ko": "병풍, 채색",
+       "en": "Folding screen, colour"
+      },
+      "headline": {
+       "ko": "눈속임 속의 지식: 한국, 18~20세기 · 기메 국립아시아미술관 · 2026.09.16–2027.01.04",
+       "en": "Le savoir en trompe-l'oeil: Korea, 18th–20th Century · Musée Guimet · 16 Sep 2026 – 4 Jan 2027"
+      },
+      "why": {
+       "ko": "책장과 서책, 문방구를 원근법으로 그려 실제 서가처럼 보이게 한 조선의 책가도를 중심에 세운 기메 미술관의 첫 전시다. 정조가 도화서 화원들에게 서재 그림을 그리게 해 집무 공간에 두었고, 베이징에 간 사신들이 본 청나라의 진열장과 예수회 선교사의 원근법이 이 독특한 장르를 낳았다. 처음 공개되는 5미터가 넘는 두루마리와 열 폭 병풍이 함께 나온다.",
+       "en": "This is the Guimet's first exhibition built around chaekgeori, the Joseon screens that use perspective to make painted shelves of books and scholar's objects look real. King Jeongjo had court painters make such library pictures for his study and throne room, and the genre grew from the Qing display cabinets and Jesuit perspective that Korean envoys saw in Beijing. A scroll over five metres long, shown for the first time, and a ten-panel screen are among the works."
+      },
+      "pd": true,
+      "sources": [
+       {
+        "label": "Musée Guimet 보도자료",
+        "url": "https://www.guimet.fr/sites/default/files/2026-06/communique-de-presse-le-savoir-en-trompe-loeil.-coree-18e-20e-siecle.pdf"
+       },
+       {
+        "label": "Offi",
+        "url": "https://www.offi.fr/expositions-musees/musee-guimet-2426/le-savoir-en-trompe-loeil-coree-18e-20e-siecle-107144.html"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": {
+     "ko": "런던과 네덜란드",
+     "en": "London and the Netherlands"
+    },
+    "dek": {
+     "ko": "초상화의 시작, 인상주의의 사랑, 황금시대의 두 거장, 그리고 미국에서 온 댄디.",
+     "en": "The birth of the portrait, Impressionist love, two Golden Age giants, and an American dandy."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "물랭 드 라 갈레트의 무도회",
+       "en": "Bal du moulin de la Galette"
+      },
+      "artist": {
+       "ko": "피에르오귀스트 르누아르",
+       "en": "Pierre-Auguste Renoir"
+      },
+      "year": "1876",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "르누아르와 사랑 · 런던 내셔널 갤러리 · 2026.10.03–2027.01.31",
+       "en": "Renoir and Love · The National Gallery, London · 3 Oct 2026 – 31 Jan 2027"
+      },
+      "why": {
+       "ko": "1860년대 중반부터 1880년대 중반까지, 르누아르가 가장 왕성했던 20년의 작품 50여 점으로 연애와 우정, 카페와 극장, 여가의 장면을 따라간다. 오르세의 〈물랭 드 라 갈레트의 무도회〉가 처음으로 영국에 왔고, 내셔널 갤러리가 2007년 이후 처음 여는 르누아르 전시다. 오르세에서 시작해 런던을 거쳐 보스턴으로 간다.",
+       "en": "More than fifty works from Renoir's most prolific two decades, the mid-1860s to the mid-1880s, follow courtship, friendship, cafés, theatres and leisure. The Musée d'Orsay's Bal du moulin de la Galette is in Britain for the first time, and it is the National Gallery's first Renoir exhibition since 2007. The show began at the Orsay and travels on to Boston."
+      },
+      "record": {
+       "ko": "오르세 미술관 소장 · 영국 첫 공개",
+       "en": "Musée d'Orsay · first time in the UK"
+      },
+      "pd": true,
+      "commons": "Pierre-Auguste Renoir, Le Moulin de la Galette.jpg",
+      "sources": [
+       {
+        "label": "The National Gallery",
+        "url": "https://www.nationalgallery.org.uk/about-us/press-and-media/press-releases/national-gallery-announces-major-renoir-exhibition-for-2026-renoir-and-love"
+       },
+       {
+        "label": "Time Out London",
+        "url": "https://www.timeout.com/london/news/a-major-renoir-exhibition-is-coming-to-london-this-year-heres-why-it-will-be-one-of-the-citys-best-art-shows-in-2026-012126"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "남자의 초상 (자화상?)",
+       "en": "Portrait of a Man (Self Portrait?)"
+      },
+      "artist": {
+       "ko": "얀 반 에이크",
+       "en": "Jan van Eyck"
+      },
+      "year": "1433",
+      "medium": {
+       "ko": "참나무 패널에 유채",
+       "en": "Oil on oak panel"
+      },
+      "headline": {
+       "ko": "반 에이크: 초상화 · 런던 내셔널 갤러리 · 2026.11.21–2027.04.11 (곧 개막)",
+       "en": "Van Eyck: The Portraits · The National Gallery, London · 21 Nov 2026 – 11 Apr 2027 (opening soon)"
+      },
+      "why": {
+       "ko": "오늘날 우리가 아는 초상화가 시작된 자리로 꼽히는 반 에이크의 초상화들을 유럽 곳곳에서 처음으로 한데 모은다. 왕과 귀족이 아니라 상인과 장인, 화가의 가족을 그린 그림들로, 브뤼헤의 〈화가의 아내 마르가레타〉와 빈 미술사박물관의 두 점, 반 에이크의 유일한 현존 드로잉이 함께 나온다. 미술관은 이 작품들이 모이는 것은 이번이 처음이자 마지막이라고 밝혔다.",
+       "en": "Van Eyck's portraits, often called the beginning of portraiture as we know it, are brought together from across Europe for the first time. His sitters were merchants, craftsmen and his own family rather than kings, and loans include Margaret, the Artist's Wife from Bruges, both Van Eycks from Vienna's Kunsthistorisches Museum and his only surviving drawing. The Gallery calls it the first and only time these works will be shown together."
+      },
+      "record": {
+       "ko": "런던 내셔널 갤러리 소장",
+       "en": "The National Gallery, London"
+      },
+      "pd": true,
+      "sources": [
+       {
+        "label": "The National Gallery",
+        "url": "https://www.nationalgallery.org.uk/exhibitions/van-eyck-the-portraits"
+       },
+       {
+        "label": "ianVisits",
+        "url": "https://www.ianvisits.co.uk/articles/all-ten-surviving-van-eyck-portraits-to-reunite-in-london-for-first-time-91649/"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "직물 길드의 이사들",
+       "en": "The Syndics of the Drapers' Guild"
+      },
+      "artist": {
+       "ko": "렘브란트 판 레인",
+       "en": "Rembrandt van Rijn"
+      },
+      "year": "1662",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "할스–렘브란트 · 프란스 할스 미술관, 하를럼 · 2026.11.06–2027.02.28 (곧 개막)",
+       "en": "Hals–Rembrandt · Frans Hals Museum, Haarlem · 6 Nov 2026 – 28 Feb 2027 (opening soon)"
+      },
+      "why": {
+       "ko": "하를럼의 할스와 암스테르담의 렘브란트, 네덜란드 황금시대 초상화의 두 거장만을 나란히 놓은 첫 전시다. 할스 11점과 렘브란트 8점, 모두 19점으로 작지만, 렘브란트의 〈웃는 남자〉 곁에 할스의 〈플루트를 부는 웃는 소년〉을 거는 식으로 짝을 지어 빠르고 정확한 할스의 붓과 층층이 쌓아 올린 렘브란트의 물감을 직접 비교하게 한다. 레이크스미술관이 다섯 점을 빌려 주었다.",
+       "en": "This is the first exhibition devoted to just these two masters of the Dutch Golden Age portrait: Hals of Haarlem and Rembrandt of Amsterdam. It is small, nineteen paintings (eleven by Hals, eight by Rembrandt), but hung in pairs, such as Rembrandt's Laughing Man beside Hals's Laughing Boy with a Flute, so you can compare Hals's fast, exact brush with Rembrandt's built-up layers. The Rijksmuseum lent five of the paintings."
+      },
+      "record": {
+       "ko": "레이크스미술관 소장",
+       "en": "Rijksmuseum, Amsterdam"
+      },
+      "pd": true,
+      "sources": [
+       {
+        "label": "Frans Hals Museum",
+        "url": "https://franshalsmuseum.nl/en/news/hals-rembrandt"
+       },
+       {
+        "label": "Artprice",
+        "url": "https://news.artprice.com/it/15734/hals-rembrandt-at-the-frans-hals-museum-dutch-portraits-in-haarlem-from-6-november-2026-to-28-february-2027"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "회색과 검정의 배열: 화가의 어머니",
+       "en": "Arrangement in Grey and Black: Portrait of the Artist's Mother"
+      },
+      "artist": {
+       "ko": "제임스 애벗 맥닐 휘슬러",
+       "en": "James McNeill Whistler"
+      },
+      "year": "1871",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "휘슬러: 댄디이자 반항아 · 반 고흐 미술관, 암스테르담 · 2026.10.16–2027.01.10",
+       "en": "Whistler: Dandy and Disruptor · Van Gogh Museum, Amsterdam · 16 Oct 2026 – 10 Jan 2027"
+      },
+      "why": {
+       "ko": "테이트 브리튼과 함께 꾸린 약 100점 규모로, 30년 만의 유럽 최대 휘슬러 회고전이자 네덜란드 첫 회고전이다. 그림에 '배열', '교향곡' 같은 음악 제목을 붙여 주제보다 색과 형식을 앞세운 휘슬러는 '예술을 위한 예술'의 대변자였다. 〈화가의 어머니〉와 템스강 야경, 〈흰옷의 소녀〉 연작이 나오고, 존 러스킨과의 명예훼손 소송 이야기도 다룬다.",
+       "en": "Developed with Tate Britain, this show of around 100 works is the largest Whistler retrospective in Europe in thirty years and the first ever in the Netherlands. By giving pictures musical titles such as 'arrangement' and 'symphony', Whistler put colour and form ahead of subject and became a voice of art for art's sake. Whistler's Mother, the Thames nocturnes and the White Girl series are on view, along with the story of his libel suit against John Ruskin."
+      },
+      "record": {
+       "ko": "오르세 미술관 소장",
+       "en": "Musée d'Orsay, Paris"
+      },
+      "pd": true,
+      "commons": "Whistlers Mother high res.jpg",
+      "sources": [
+       {
+        "label": "Artprice",
+        "url": "https://news.artprice.com/es/16139/whistler-dandy-and-disruptor-at-the-van-gogh-museum-in-amsterdam-from-16-october-2026-to-10-january-2027"
+       },
+       {
+        "label": "Finestre sull'Arte",
+        "url": "https://www.finestresullarte.info/en/exhibitions/whistler-dandy-and-rebel-the-first-dutch-retrospective-on-the-painter-at-the-van-gogh-museum-in-amsterdam"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": {
+     "ko": "독일 · 스위스 · 노르웨이",
+     "en": "Germany, Switzerland and Norway"
+    },
+    "dek": {
+     "ko": "이탈리아 밖 첫 코레조 회고전부터, 다섯 세기를 가로지르는 초상화와 여성 화가들의 재발견까지.",
+     "en": "From the first Correggio retrospective outside Italy to portraits across five centuries and women painters rediscovered."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "성 세바스티아누스의 성모",
+       "en": "Madonna of Saint Sebastian"
+      },
+      "artist": {
+       "ko": "코레조",
+       "en": "Correggio"
+      },
+      "year": "c. 1524",
+      "medium": {
+       "ko": "패널에 유채",
+       "en": "Oil on panel"
+      },
+      "headline": {
+       "ko": "코레조, 마음을 움직이는 인간 · 드레스덴 고전 거장 미술관 · 2026.09.19–2027.01.10",
+       "en": "Correggio: Movingly Human · Gemäldegalerie Alte Meister, Dresden · 19 Sep 2026 – 10 Jan 2027"
+      },
+      "why": {
+       "ko": "이탈리아 밖에서 처음 열리는 코레조 회고전이다. 수 세기 동안 뒤틀린 나무 패널 때문에 상한 〈성 세바스티아누스의 성모〉를 오랜 복원 끝에 전시의 중심에 세웠고, 같은 미술관의 라파엘로 〈시스티나 성모〉와 나란히 볼 수 있다. 부드러운 빛과 다정한 몸짓으로 성스러운 장면을 인간의 감정으로 끌어내린 화가를 다시 읽는다.",
+       "en": "This is the first Correggio retrospective ever held outside Italy. At its centre is the Madonna of Saint Sebastian, damaged over centuries as its wooden panel warped and now back after a long restoration, and Raphael's Sistine Madonna hangs in the same museum for comparison. It is a fresh look at the painter whose soft light and tender gestures brought sacred scenes down to human feeling."
+      },
+      "record": {
+       "ko": "드레스덴 고전 거장 미술관 소장",
+       "en": "Gemäldegalerie Alte Meister, Dresden"
+      },
+      "pd": true,
+      "sources": [
+       {
+        "label": "Finestre sull'Arte",
+        "url": "https://www.finestresullarte.info/en/exhibitions/correggio-in-dresden-the-first-retrospective-outside-italy-at-the-gemaldegalerie"
+       },
+       {
+        "label": "Visit Saxony",
+        "url": "https://visitsaxony.com/event/exhibition-correggio-movingly-human"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "줄리아노 데 메디치",
+       "en": "Giuliano de' Medici"
+      },
+      "artist": {
+       "ko": "산드로 보티첼리",
+       "en": "Sandro Botticelli"
+      },
+      "year": "1478",
+      "medium": {
+       "ko": "패널에 템페라",
+       "en": "Tempera on panel"
+      },
+      "headline": {
+       "ko": "초상화! 보티첼리부터 렘피카까지, 뜻밖의 만남 · 베를린 회화관 · 2026.10.16–2027.03.14",
+       "en": "Portraits! Surprising Encounters from Botticelli to Lempicka · Gemäldegalerie, Berlin · 16 Oct 2026 – 14 Mar 2027"
+      },
+      "why": {
+       "ko": "베를린 국립박물관이 가진 초상화 약 90점을 시대와 지역을 넘어 짝지어 건 전시다. 보티첼리의 〈줄리아노 데 메디치〉 옆에 1930년 무렵 타마라 드 렘피카의 초상을, 소포니스바 앙귀솔라 옆에 20세기 독일 화가를 거는 식이다. 반 데르 베이덴, 뒤러, 홀바인, 루벤스까지 한 자리에서 '얼굴을 그린다는 것'의 500년을 훑을 수 있다.",
+       "en": "About ninety portraits from Berlin's state museums are hung in pairs across centuries and regions. Botticelli's Giuliano de' Medici faces a portrait by Tamara de Lempicka from around 1931, and Sofonisba Anguissola hangs beside a twentieth-century German painter. With Van der Weyden, Dürer, Holbein and Rubens in the mix, it covers five hundred years of painting faces in one visit."
+      },
+      "record": {
+       "ko": "베를린 회화관 소장",
+       "en": "Gemäldegalerie, Berlin"
+      },
+      "pd": true,
+      "sources": [
+       {
+        "label": "Staatliche Museen zu Berlin",
+        "url": "https://www.smb.museum/en/exhibitions/detail/portraits/"
+       },
+       {
+        "label": "Art Rabbit",
+        "url": "https://www.artrabbit.com/events/portraits-surprising-encounters-from-botticelli-to-lempicka"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "마돈나",
+       "en": "Madonna"
+      },
+      "artist": {
+       "ko": "에드바르 뭉크 (마리아 라스니히와 2인전)",
+       "en": "Edvard Munch (shown with Maria Lassnig)"
+      },
+      "year": "1893–1895",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "마리아 라스니히와 에드바르 뭉크 · 취리히 미술관 · 2026.10.02–2027.02.21",
+       "en": "Maria Lassnig and Edvard Munch · Kunsthaus Zürich · 2 Oct 2026 – 21 Feb 2027"
+      },
+      "why": {
+       "ko": "몸으로 느끼는 감각을 그린 오스트리아 화가 라스니히와 내면의 불안을 그린 뭉크를 처음으로 나란히 세운 전시로, 함부르크 미술관에서 시작해 취리히로 옮겨 왔다. 두 화가 모두 '물감의 흐름이 곧 삶의 흐름'이라는 듯 몸과 감정을 화면에 직접 옮겼다. 함부르크 전시 기준 회화·드로잉·조각·영상 약 200점 규모였고(취리히는 일부 구성을 바꿨다), 라스니히의 작품은 저작권 보호 중이다.",
+       "en": "This show, which began at the Hamburger Kunsthalle and has moved to Zurich, is the first to pair Lassnig, the Austrian painter of bodily sensation, with Munch, the painter of inner anxiety. Both put body and feeling straight onto the canvas, as the subtitle Flow of Paint = Flow of Life suggests. In Hamburg it ran to nearly 200 paintings, drawings, sculptures and films, slightly reworked for Zurich; Lassnig's works remain in copyright."
+      },
+      "pd": true,
+      "sources": [
+       {
+        "label": "Hamburger Kunsthalle 보도자료",
+        "url": "https://hamburger-kunsthalle.de/sites/default/files/2026-03/Press_release_Maria_Lassnig_and_Edvard_Munch.pdf"
+       },
+       {
+        "label": "MySwitzerland",
+        "url": "https://www.myswitzerland.com/en-ch/experiences/events/maria-lassnig-und-edvard-munch/"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "스피넷 앞의 자화상",
+       "en": "Self-Portrait at the Spinet"
+      },
+      "artist": {
+       "ko": "소포니스바 앙귀솔라",
+       "en": "Sofonisba Anguissola"
+      },
+      "year": "1550년대 · 1550s",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "여성 화가 · 노르웨이 국립미술관, 오슬로 · 2026.10.08–2027.02.07",
+       "en": "Woman Painter · Nasjonalmuseet, Oslo · 8 Oct 2026 – 7 Feb 2027"
+      },
+      "why": {
+       "ko": "1550년부터 1650년까지 이탈리아와 북유럽에서 활동한 여성 화가 19명의 작품 51점을 모았다. 전시 제목의 '여성'에 줄을 그어, 이들을 '여성 화가'라는 따로 된 칸이 아니라 그냥 화가로 보자고 말한다. 앙귀솔라, 아르테미시아 젠틸레스키, 라비니아 폰타나, 클라라 페테르스, 유딧 레이스터가 나오고, 전시는 2027년 봄 로마 보르게세 미술관으로 이어진다.",
+       "en": "Fifty-one paintings by nineteen women active in Italy and Northern Europe between 1550 and 1650. The word 'Woman' in the title is struck through: the point is to see them as painters, not as a separate category. Anguissola, Artemisia Gentileschi, Lavinia Fontana, Clara Peeters and Judith Leyster are all here, and the show moves to the Galleria Borghese in Rome in spring 2027."
+      },
+      "record": {
+       "ko": "나폴리 카포디몬테 미술관 소장",
+       "en": "Museo di Capodimonte, Naples"
+      },
+      "pd": true,
+      "sources": [
+       {
+        "label": "Artprice",
+        "url": "https://news.artprice.com/en/16202/with-woman-painter-oslo-s-nasjonalmuseet-places-women-artists-at-the-heart-of-17th-century-europe-from-8-october-2026-to-7-february-2027"
+       },
+       {
+        "label": "Il Sole 24 Ore",
+        "url": "https://en.ilsole24ore.com/art/in-oslo-female-painters-who-have-broken-the-male-monopoly-on-art-are-being-celebrated-AJVP0euB"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "note": {
+   "ko": "전시명·장소·기간은 미술관 공식 안내와 언론 보도 등 두 곳 이상에서 확인했습니다(2026년 10월 29일 기준). 각 항목의 대표작은 작가를 소개하기 위해 고른 것으로 실제 출품 여부는 다를 수 있으며, 일정은 기관 사정으로 바뀔 수 있으니 방문 전 공식 공지를 확인해 주세요. 한국어 전시명은 QURATOR가 옮겼습니다. 저작권이 남아 있는 작품은 이미지를 싣지 않았습니다.",
+   "en": "Titles, venues and dates were checked against at least two sources, including museum pages and press reports, as of 29 October 2026. The key work for each entry is chosen to introduce the artist and may not be in the show, and schedules can change, so check the museum's own notice before you go. Korean titles are QURATOR's translations. Works still in copyright are shown without images."
+  }
+ },
+ {
   "id": "korea-exhibitions-2026-autumn",
   "asof": "2026.10.27",
   "kicker": {
