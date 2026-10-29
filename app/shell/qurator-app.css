@@ -1,0 +1,4 @@
+/* QURATOR iOS 앱 전용 */
+.q-store-app .install{display:none!important}
+.q-store-app body{-webkit-touch-callout:none}
+.q-store-app a,.q-store-app button{-webkit-tap-highlight-color:transparent}

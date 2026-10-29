@@ -1,0 +1,13 @@
+{
+  "appId": "kr.qurator.dailyart",
+  "appName": "QURATOR",
+  "webDir": "www",
+  "backgroundColor": "#F3EFE6",
+  "plugins": {
+    "SplashScreen": { "launchShowDuration": 1500, "launchAutoHide": false, "backgroundColor": "#F3EFE6", "showSpinner": false },
+    "StatusBar": { "style": "LIGHT", "backgroundColor": "#F3EFE6" },
+    "SystemBars": { "insetsHandling": "css" }
+  },
+  "ios": { "contentInset": "never", "backgroundColor": "#F3EFE6", "scrollEnabled": true },
+  "server": { "iosScheme": "capacitor" }
+}

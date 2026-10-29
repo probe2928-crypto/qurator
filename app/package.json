@@ -1,0 +1,23 @@
+{
+  "name": "qurator-app",
+  "private": true,
+  "version": "1.0.0",
+  "description": "QURATOR iOS 앱 (Capacitor) — 사이트 화면을 앱에 넣고, 작품·음성은 사이트에서 받아옴. 안드로이드는 기존 TWA(android/)",
+  "scripts": {
+    "www": "node build-www.mjs",
+    "sync": "node build-www.mjs && cap sync",
+    "assets": "capacitor-assets generate --assetPath resources --iconBackgroundColor #14120F --iconBackgroundColorDark #14120F --splashBackgroundColor #F3EFE6 --splashBackgroundColorDark #14120F"
+  },
+  "dependencies": {
+    "@capacitor/app": "^8.0.0",
+    "@capacitor/browser": "^8.0.0",
+    "@capacitor/core": "^8.0.0",
+    "@capacitor/ios": "^8.0.0",
+    "@capacitor/splash-screen": "^8.0.0",
+    "@capacitor/status-bar": "^8.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^8.0.0"
+  }
+}

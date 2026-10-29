@@ -13,7 +13,11 @@ const store = {
 };
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const stripHtml = s => { if (!s) return ''; const d = document.createElement('div'); d.innerHTML = s; return (d.textContent || '').replace(/\s+\n/g, '\n').replace(/[ \t]+/g, ' ').trim(); };
-const BASE = () => location.href.split('#')[0];
+/* Store apps: the iOS app (Capacitor, app/) sets window.QURATOR_APP = { remote, ios } before this file loads.
+   Data/audio come from the live site so new works appear without an app update; QR/share links always point to the website. */
+const APPX = window.QURATOR_APP || null;
+const ASSET = p => (APPX && !/^[a-z][a-z0-9+.-]*:/i.test(p)) ? APPX.remote + p : p;
+const BASE = () => APPX ? APPX.remote : location.href.split('#')[0];
 const KAKAO = 'https://open.kakao.com/o/gQLZj9Ti';
 /* Payments: set live:true + clientKey (토스페이먼츠 라이브 클라이언트 키) + apiBase (worker URL) when the merchant contract is ready. ?paytest=1 runs the Toss test flow. */
 const BANK = { name: '우리은행', number: '56731673402101', holder: '박*준' };
@@ -21,12 +25,17 @@ const PAY = { live: false, clientKey: '', apiBase: '', testClientKey: 'test_ck_D
 /* Google Play app (TWA) = consumption-only: no prices, checkout, bank details or links to them (Play payments policy).
    Launched with ?src=twa; kept in sessionStorage so the same site opened in a normal browser tab is unaffected. */
 const PLAY = (() => {
+  if (APPX) return true;   // iOS app: same consumption-only rules
   try {
     if (new URLSearchParams(location.search).get('src') === 'twa' || document.referrer.startsWith('android-app://')) sessionStorage.setItem('q_play', '1');
     return sessionStorage.getItem('q_play') === '1';
   } catch { return false; }
 })();
 if (PLAY) document.documentElement.classList.add('q-play-app');
+/* App Store app = free reader: no purchase, no member code/link unlock (App Review 3.1.1), no mention of buying elsewhere.
+   Shows the free daily pick, QR docent pages, features and explore. Members keep using the website. */
+const IOS = !!(APPX && APPX.ios);
+if (IOS) document.documentElement.classList.add('q-ios-app');
 /* Giving: a share of QURATOR's revenue goes to Oriel Foundation (오리엘 재단 · 明窗基金會, the founders' foundation in formation; renamed on 2026-10-27, site at /oriel/).
    Facts only: the foundation is preparing its nonprofit registration; the first gift is sent after it registers and is logged in
    data/giving.json + the foundation's public ledger. `share` stays '' until a percentage is decided. The foundation site has no
@@ -34,7 +43,10 @@ if (PLAY) document.documentElement.classList.add('q-play-app');
 const GIVE = { url: 'https://probe2928-crypto.github.io/oriel/', urlKo: 'https://probe2928-crypto.github.io/oriel/ko/', share: '' };
 const BRICK = '<svg class="brick" viewBox="0 0 40 56" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M20 6.5a15.5 21.5 0 1 0 .001 0zM20 8.1a9.6 19.9 0 1 1-.001 0z"/><ellipse cx="20" cy="28" rx="9.6" ry="19.9" fill="#B8862D"/><path d="M20 8v40M10.4 28h19.2" stroke="rgba(255,255,255,.78)" stroke-width="1.8" fill="none"/></svg>'; // Oriel Foundation mark: the O with a lit window
 const seoulDate = (d = new Date()) => d.toLocaleDateString('sv-SE', { timeZone: 'Asia/Seoul' });
-async function getJSON(url, opt) { const r = await fetch(url, opt); if (!r.ok) throw new Error(r.status + ' ' + url); return r.json(); }
+async function getJSON(url, opt) {
+  try { const r = await fetch(ASSET(url), opt); if (!r.ok) throw new Error(r.status + ' ' + url); return await r.json(); }
+  catch (e) { if (APPX && ASSET(url) !== url) { const r = await fetch(url); if (r.ok) return r.json(); } throw e; }   // app offline → copy bundled in the app
+}
 
 function toast(msg) { const t = $('#toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(toast._t); toast._t = setTimeout(() => t.classList.remove('show'), 2400); }
 
@@ -137,6 +149,10 @@ const T = {
   play_p: ['Daily Art 멤버십은 QURATOR 웹사이트에서 신청할 수 있습니다. 받은 멤버 링크나 코드를 아래에 붙여 넣으면 이용 기간 동안 이 기기에서 열람됩니다.', 'Daily Art membership is available on the QURATOR website. Paste the member link or code you received below and this device stays unlocked for your membership period.'],
   m_cta: ['구독 신청하기', 'Subscribe now'], m_code: ['멤버 코드 또는 링크', 'Member code or link'], m_apply: ['확인', 'Apply'],
   m_ok: ['멤버십이 활성화되었습니다', 'Membership activated'], m_bad: ['코드를 다시 확인해 주세요', 'Please check the code'],
+  sp_p_ios: ['작품 해설, 앱 사용, 갤러리 도입에 관한 문의는 카카오톡으로 편하게 남겨 주세요.', 'Questions about the commentary, the app or bringing QURATOR to your gallery: message us on KakaoTalk.'],
+  hero_lead_ios: ['작품 옆 QR을 찍으면 해설이 텍스트·음성·다국어로 열립니다. 그리고 매일 한 점, 미술사가 고른 명작을 영어 해설과 함께 소개합니다.', 'Scan the QR code beside an artwork and its story opens in text, voice and several languages. And every day, one masterpiece chosen by an art historian, with English commentary.'],
+  daily_p_ios: ['매일 한 점, 명작과 영어 해설. 미술과 영어를 함께 읽는 하루 5분.', 'One masterpiece a day with English commentary. Five minutes of art and English.'],
+  ios_archive_p: ['지난 3주 동안 매일 소개한 첫 번째 작품을 다시 볼 수 있습니다.', 'Revisit the first work featured each day over the past three weeks.'],
   m_until: ['{d}까지', 'until {d}'], m_renew: ['연장하기', 'Renew'], m_renew_play: ['연장은 QURATOR 웹사이트에서 할 수 있습니다.', 'You can renew on the QURATOR website.'],
   m_ended: ['멤버십이 {d}에 끝났습니다.', 'Your membership ended on {d}.'],
   ml_ok_h: ['멤버십이 열렸습니다', 'Membership unlocked'], ml_ok_p: ['{d}까지 이 기기에서 모든 해설을 볼 수 있습니다. 다른 기기에서는 같은 링크를 한 번 더 누르면 됩니다.', 'Everything is open on this device until {d}. On another device, just open the same link.'],
@@ -451,7 +467,7 @@ function renderShell(route) {
   document.documentElement.lang = S.lang;
   $('#foot').innerHTML = `<div class="foot-in">
     <div class="foot-brand">${LOGO_MARK}<div><div class="fw">QURATOR</div><div class="fs">MAISON DE DOCENT · SÉOUL</div></div></div>
-    <nav class="foot-links">${PLAY ? '' : `<a href="#/galleries">${S.lang === 'ko' ? '갤러리 도입 안내' : 'For galleries'}</a>`}<a href="#/giving">${t('nav_giving')} · Oriel</a><a href="#/support">${t('nav_support')}</a><a href="${KAKAO}" target="_blank" rel="noopener">${S.lang === 'ko' ? '카카오톡 문의' : 'KakaoTalk'}</a><a href="#/policy/terms">${t('terms')}</a><a href="#/policy/privacy"><b>${t('privacy')}</b></a><a href="#/policy/refund">${t('refund')}</a></nav>
+    <nav class="foot-links">${PLAY ? '' : `<a href="#/galleries">${S.lang === 'ko' ? '갤러리 도입 안내' : 'For galleries'}</a>`}<a href="#/giving">${t('nav_giving')} · Oriel</a><a href="#/support">${t('nav_support')}</a><a href="${KAKAO}" target="_blank" rel="noopener">${S.lang === 'ko' ? '카카오톡 문의' : 'KakaoTalk'}</a><a href="#/policy/terms">${t('terms')}</a><a href="#/policy/privacy"><b>${t('privacy')}</b></a>${IOS ? '' : `<a href="#/policy/refund">${t('refund')}</a>`}</nav>
   </div>
   <div class="foot-in foot-legal"><span>${esc(t('biz'))}</span><span>© 2026 QURATOR · ${esc(t('foot_note'))}</span></div>`;
 }
@@ -484,7 +500,7 @@ function viewHome(scrollTo) {
     <div class="sec-head rv"><div><p class="eyebrow">${t('today_eyebrow')} · ${today}</p><h2>${t('today_h')}</h2></div>
       <a class="link" href="#/today">${t('see_all')} <span class="arrow">→</span></a></div>
     <div class="trio">${ids.map((id, i) => { const w = S.byId[id]; return `<a class="tcard rv" href="#/today">${artBox(w)}<div class="meta"><span class="num">${['I', 'II', 'III'][i]}</span>
-      <h3>${esc(pick(w.title))}</h3><div class="by">${esc(pick(w.artist))} · ${esc(w.date)}</div>${i && !S.member ? `<span class="lock-chip">● Members</span>` : ''}</div></a>`; }).join('')}</div>
+      <h3>${esc(pick(w.title))}</h3><div class="by">${esc(pick(w.artist))} · ${esc(w.date)}</div>${i && !S.member && !IOS ? `<span class="lock-chip">● Members</span>` : ''}</div></a>`; }).join('')}</div>
   </div></section>
 
   <div id="homeFeature"></div>
@@ -528,7 +544,7 @@ function heroBlock() {
     <div class="stage-copy wrap"><div class="sc-in">
       <p class="eyebrow">${t('hero_eyebrow')}</p>
       <h1>${t('hero_h')}</h1>
-      <p class="lead">${esc(t('hero_lead'))}</p>
+      <p class="lead">${esc(t(IOS ? 'hero_lead_ios' : 'hero_lead'))}</p>
       <div class="hero-ctas">
         <a class="btn btn-cream" href="#/today">${t('cta_today')} <span class="arrow">→</span></a>
         ${PLAY ? `<a class="btn btn-ghost" href="#/explore">${t('nav_explore')}</a>` : `<a class="btn btn-ghost" href="#/pricing">${t('cta_gallery')}</a>`}
@@ -626,7 +642,7 @@ function viewToday(date) {
   <section class="phead"><div class="wrap">
     <p class="eyebrow">${S.lang === 'ko' ? t('daily_h') + ' · Daily Art' : 'Daily Art'}</p>
     <div class="today-date"><span class="d">${f.d}</span><span class="m">${esc(f.m)}</span></div>
-    <p style="margin-top:18px">${t('daily_p')}</p>
+    <p style="margin-top:18px">${t(IOS ? 'daily_p_ios' : 'daily_p')}</p>
     ${memberBar()}
     <button class="btn btn-line btn-sm install" id="installBtn" style="margin-top:18px">↓ ${t('install')}</button>
   </div></section>
@@ -635,6 +651,7 @@ function viewToday(date) {
   hydrate(); reveal(); bindInstall();
 }
 function dayCard(w, i, open) {
+  if (IOS && !open) return '';
   const first = splitSentences(w.text.en).filter(s => s !== '\n').slice(0, 2).join(' ');
   return `<article class="day-card">
     <div class="day-art rv"><a href="#/w/${w.id}">${artBox(w)}</a></div>
@@ -656,6 +673,7 @@ function dayCard(w, i, open) {
     </div></article>`;
 }
 function viewArchive() {
+  if (IOS) return viewArchiveFree();
   const today = seoulDate(), days = [];
   for (let i = 0; i < 21; i++) { const d = new Date(Date.parse(today + 'T00:00:00Z') - i * 864e5).toISOString().slice(0, 10); days.push(d); }
   app().innerHTML = `<section class="phead"><div class="wrap"><p class="eyebrow">Daily Art</p><h1>${t('archive')}</h1>
@@ -666,6 +684,15 @@ function viewArchive() {
       <a href="#/today/${d}" style="display:flex;gap:14px;align-items:baseline;margin-bottom:16px"><span style="font-family:var(--serif-en);font-size:40px;line-height:1">${f.d}</span><span class="note">${esc(f.m)}</span></a>
       <div class="grid">${dailyIds(d).map(id => { const w = S.byId[id]; return `<a class="gcard" href="${S.member ? '#/w/' + id : '#/today/' + d}">${artBox(w)}<h3>${esc(w.title.en)}</h3><div class="by">${esc(w.artist.en)}</div></a>`; }).join('')}</div></div>`;
     }).join('')}</div>`;
+  hydrate();
+}
+
+function viewArchiveFree() {   // iOS app: the free first work of each past day
+  const today = seoulDate(), days = [];
+  for (let i = 0; i < 21; i++) days.push(new Date(Date.parse(today + 'T00:00:00Z') - i * 864e5).toISOString().slice(0, 10));
+  app().innerHTML = `<section class="phead"><div class="wrap"><p class="eyebrow">Daily Art</p><h1>${t('archive')}</h1><p>${t('ios_archive_p')}</p></div></section>
+    <div class="wrap" style="padding-bottom:90px"><div class="grid">${days.map(d => { const id = dailyIds(d)[0], w = S.byId[id]; if (!w) return ''; const f = fmtDate(d, S.lang);
+      return `<a class="gcard" href="#/w/${id}">${artBox(w)}<p class="note" style="margin-top:10px">${f.d} · ${esc(f.m)}</p><h3>${esc(w.title.en)}</h3><div class="by">${esc(w.artist.en)}</div></a>`; }).join('')}</div></div>`;
   hydrate();
 }
 
@@ -911,7 +938,7 @@ async function viewWork(uid, custom) {
     $('#vnote').innerHTML = r.note || '';
     const speakSents = sents.filter(s => s !== '\n');
     // for mixed (ko header + english original) speak in English except header line
-    if (r.rec) Speech.load(speakSents, l, r.rec.files.map(f => `audio/${model.w.id}/${f}`));
+    if (r.rec) Speech.load(speakSents, l, r.rec.files.map(f => ASSET(`audio/${model.w.id}/${f}`)));
     else Speech.load(speakSents, r.mixed ? 'en' : l);
     $('#plang').textContent = r.rec ? (S.lang === 'ko' ? 'AI 도슨트 음성' : 'AI docent voice') : ((l === 'ko' && !r.mixed) ? '한국어 음성' : 'English voice');
   }
@@ -1236,6 +1263,7 @@ async function recheckMember() {
 }
 const daysLeft = d => Math.round((Date.parse(d) - Date.parse(seoulDate())) / 864e5);
 function memberBar() {
+  if (IOS) return '';
   if (S.member) {
     const n = S.memberExp ? daysLeft(S.memberExp) : null, soon = n !== null && n <= 5;
     return `<div class="member-bar${soon ? ' soon' : ''}"><span>● ${t('member_on')}${S.memberExp ? ` <em>${esc(t('m_until').replace('{d}', S.memberExp))} · D-${Math.max(n, 0)}</em>` : ''}</span>
@@ -1315,20 +1343,20 @@ const FAQ_PLAY = [
 ];
 function viewSupport() {
   const k = L();
-  app().innerHTML = `<section class="phead"><div class="wrap"><p class="eyebrow">Service client</p><h1>${t('sp_h')}</h1><p>${t('sp_p')}</p></div></section>
+  app().innerHTML = `<section class="phead"><div class="wrap"><p class="eyebrow">Service client</p><h1>${t('sp_h')}</h1><p>${t(IOS ? 'sp_p_ios' : 'sp_p')}</p></div></section>
   <div class="wrap support">
     <a class="kakao-card" href="${KAKAO}" target="_blank" rel="noopener">
       <span class="kk-ico"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3.5c-5 0-9 3.1-9 7 0 2.5 1.7 4.7 4.2 6l-.9 3.4c-.1.3.3.5.5.3l4-2.7c.4 0 .8.1 1.2.1 5 0 9-3.1 9-7s-4-7.1-9-7.1Z"/></svg></span>
       <span class="kk-t"><b>${t('sp_kakao')}</b><small>${t('sp_kakao_s')}</small></span><span class="arrow">→</span></a>
     <div class="sp-grid">
-      ${[['구독 신청 · 결제', 'Subscribe & billing', '#/checkout'], ['해지 · 환불', 'Cancel & refund', '#/policy/refund'], ['갤러리 도입 상담', 'Gallery projects', KAKAO], ['멤버 코드 입력', 'Enter member code', 'code'], ['나눔 · 오리엘 재단', 'Giving · Oriel Foundation', '#/giving']].filter(c => !(PLAY && (c[2] === '#/checkout' || c[2] === KAKAO))).map(([a, b, h]) =>
+      ${[['구독 신청 · 결제', 'Subscribe & billing', '#/checkout'], ['해지 · 환불', 'Cancel & refund', '#/policy/refund'], ['갤러리 도입 상담', 'Gallery projects', KAKAO], ['멤버 코드 입력', 'Enter member code', 'code'], ['나눔 · 오리엘 재단', 'Giving · Oriel Foundation', '#/giving']].filter(c => !(PLAY && (c[2] === '#/checkout' || c[2] === KAKAO)) && !(IOS && (c[2] === 'code' || c[2] === '#/policy/refund'))).map(([a, b, h]) =>
         h === 'code' ? `<button class="sp-cell" data-act="subscribe"><span>${k ? b : a}</span><i>→</i></button>` :
         `<a class="sp-cell" href="${h}" ${h.startsWith('http') ? 'target="_blank" rel="noopener"' : ''}><span>${k ? b : a}</span><i>→</i></a>`).join('')}
     </div>
     <h2 class="sp-h">${t('sp_faq')}</h2>
-    <div class="faq">${(PLAY ? FAQ_PLAY.concat(FAQ.filter(f => !/결제는|앱을 설치|갤러리 도입|갤러리가/.test(f[0]))) : FAQ).map(f => `<details><summary>${esc(f[k])}</summary><p>${esc(f[2 + k])}</p></details>`).join('')}</div>
+    <div class="faq">${(IOS ? FAQ.filter(f => !/결제|구독|멤버|환불|해지|요금|가격|앱을 설치|갤러리 도입|갤러리가/.test(f[0])) : PLAY ? FAQ_PLAY.concat(FAQ.filter(f => !/결제는|앱을 설치|갤러리 도입|갤러리가/.test(f[0]))) : FAQ).map(f => `<details><summary>${esc(f[k])}</summary><p>${esc(f[2 + k])}</p></details>`).join('')}</div>
     <h2 class="sp-h">${t('sp_docs')}</h2>
-    <div class="sp-grid"><a class="sp-cell" href="#/policy/terms"><span>${t('terms')}</span><i>→</i></a><a class="sp-cell" href="#/policy/privacy"><span>${t('privacy')}</span><i>→</i></a><a class="sp-cell" href="#/policy/refund"><span>${t('refund')}</span><i>→</i></a></div>
+    <div class="sp-grid"><a class="sp-cell" href="#/policy/terms"><span>${t('terms')}</span><i>→</i></a><a class="sp-cell" href="#/policy/privacy"><span>${t('privacy')}</span><i>→</i></a>${IOS ? '' : `<a class="sp-cell" href="#/policy/refund"><span>${t('refund')}</span><i>→</i></a>`}</div>
   </div>`;
 }
 
@@ -1467,6 +1495,7 @@ async function viewPayResult(q) {
 
 /* ---------------- modal ---------------- */
 function openSubscribe() {
+  if (IOS) return;
   const m = $('#modal'), n = L();
   m.innerHTML = PLAY ? `<div class="modal-box" role="dialog" aria-modal="true"><button class="close" aria-label="close">×</button>
     <p class="eyebrow" style="color:var(--seal)">Membership</p><h3>${t('play_h')}</h3><p>${t('play_p')}</p>
@@ -1526,6 +1555,7 @@ async function route() {
   else if (r === 'c' && parts[1]) await viewWork(null, parts[1]);
   else if (r === 'x' && parts[1]) await viewExhibition(parts[1]);
   else if (r === 'pay') viewToday();
+  else if (IOS && (r === 'm' || r === 'checkout' || r === 'pricing' || r === 'galleries' || (r === 'policy' && parts[1] === 'refund'))) viewToday();
   else if (r === 'm' && parts[1]) await viewMemberLink(parts[1]);
   else viewHome();
   $('#app').focus({ preventScroll: true });
