@@ -39,9 +39,10 @@
     if (!P.CapacitorBarcodeScanner) return;
     var b = document.createElement("button");
     b.type = "button"; b.className = "q-scan"; b.setAttribute("aria-label", "QR 스캔 · Scan QR");
-    b.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3M7 12h10"/></svg><span>QR</span>';
+    b.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3M7 12h10"/></svg>';
     b.onclick = scan;
-    document.body.appendChild(b);
+    var tr = document.querySelector(".top-right");   // 머리줄 언어 버튼 옆 (아래쪽 음성 플레이어·슬라이드와 겹치지 않게)
+    if (tr) tr.insertBefore(b, tr.firstChild); else document.body.appendChild(b);
   });
   try { P.StatusBar && P.StatusBar.setStyle({ style: "LIGHT" }); } catch (e) {}
   addEventListener("load", function () { setTimeout(function () { try { P.SplashScreen && P.SplashScreen.hide({ fadeOutDuration: 250 }); } catch (e) {} }, 200); });

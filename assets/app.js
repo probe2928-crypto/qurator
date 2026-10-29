@@ -656,7 +656,7 @@ function dayCard(w, i, open) {
   return `<article class="day-card">
     <div class="day-art rv"><a href="#/w/${w.id}">${artBox(w)}</a></div>
     <div class="day-body rv">
-      <span class="day-num">${['I', 'II', 'III'][i]} / III</span>
+      ${IOS ? '' : `<span class="day-num">${['I', 'II', 'III'][i]} / III</span>`}
       <h2>${esc(w.title.en)}</h2>
       <p class="kot">${esc(w.title.ko)}</p>
       <p class="byline"><span>${esc(w.artist.en)}</span><span>${esc(w.date)}</span><span>${esc(w.collection.en)}</span></p>

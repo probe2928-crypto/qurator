@@ -2,6 +2,7 @@
 .q-store-app .install{display:none!important}
 .q-store-app body{-webkit-touch-callout:none}
 .q-store-app a,.q-store-app button{-webkit-tap-highlight-color:transparent}
-/* QR 스캔 버튼 (앱 전용) */
-.q-scan{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:80;display:flex;align-items:center;gap:7px;height:50px;padding:0 18px 0 15px;border:0;border-radius:999px;background:#14120F;color:#F3EFE6;font:600 13px/1 "Inter",system-ui,sans-serif;letter-spacing:.12em;box-shadow:0 10px 28px rgba(20,18,15,.25)}
-.q-scan svg{width:22px;height:22px}
+/* QR 스캔 버튼 (앱 전용, 머리줄) */
+.q-scan{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;margin-right:8px;padding:0;border:1px solid currentColor;border-radius:999px;background:transparent;color:inherit;opacity:.92}
+.q-scan svg{width:20px;height:20px}
+body > .q-scan{position:fixed;right:16px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:80;background:#14120F;color:#F3EFE6;border:0;width:50px;height:50px}

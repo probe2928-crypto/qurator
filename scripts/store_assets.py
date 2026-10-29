@@ -3,7 +3,7 @@
 import asyncio, os, json
 # the native QR button the iOS app adds (app/shell/qurator-app.js + .css), drawn into the App Store screenshots
 SCAN_CSS = open(os.path.join(os.path.dirname(__file__), '..', 'app', 'shell', 'qurator-app.css')).read()
-SCAN_BTN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3M7 12h10"/></svg><span>QR</span>'
+SCAN_BTN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3M7 12h10"/></svg>'
 from playwright.async_api import async_playwright
 SITE = 'https://probe2928-crypto.github.io/qurator/'
 OUT = os.environ.get('OUT', 'store'); os.makedirs(OUT, exist_ok=True)
@@ -29,7 +29,7 @@ async def main():
         b = await p.chromium.launch()
         if IOS:   # App Store iPhone 6.9" 1320x2868, iOS app mode (window.QURATOR_APP)
             ctx = await b.new_context(viewport={'width': 440, 'height': 956}, device_scale_factor=3, locale='ko-KR', is_mobile=True, has_touch=True)
-            await ctx.add_init_script("window.QURATOR_APP = { remote: '%s', ios: true }; document.addEventListener('DOMContentLoaded', () => { document.documentElement.classList.add('q-store-app'); const css = document.createElement('style'); css.textContent = SCAN_CSS; document.head.appendChild(css); const b = document.createElement('button'); b.className = 'q-scan'; b.innerHTML = SCAN_BTN; document.body.appendChild(b); });".replace('SCAN_CSS', json.dumps(SCAN_CSS)).replace('SCAN_BTN', json.dumps(SCAN_BTN)) % SITE)
+            await ctx.add_init_script("window.QURATOR_APP = { remote: '%s', ios: true }; document.addEventListener('DOMContentLoaded', () => { document.documentElement.classList.add('q-store-app'); const css = document.createElement('style'); css.textContent = SCAN_CSS; document.head.appendChild(css); const b = document.createElement('button'); b.className = 'q-scan'; b.innerHTML = SCAN_BTN; const tr = document.querySelector('.top-right'); if (tr) tr.insertBefore(b, tr.firstChild); else document.body.appendChild(b); });".replace('SCAN_CSS', json.dumps(SCAN_CSS)).replace('SCAN_BTN', json.dumps(SCAN_BTN)) % SITE)
         else:
             ctx = await b.new_context(viewport={'width': 360, 'height': 640}, device_scale_factor=3, locale='ko-KR', is_mobile=True, has_touch=True)
         pg = await ctx.new_page()
