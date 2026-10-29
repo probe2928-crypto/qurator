@@ -1,9 +1,13 @@
 """Google Play store listing images: phone screenshots of the app (Play mode) + 1024x500 feature graphic."""
 # Run after the Pages deploy finishes: the screenshots use the live site (retake: dynamic work count).
-import asyncio, os
+import asyncio, os, json
+# the native QR button the iOS app adds (app/shell/qurator-app.js + .css), drawn into the App Store screenshots
+SCAN_CSS = open(os.path.join(os.path.dirname(__file__), '..', 'app', 'shell', 'qurator-app.css')).read()
+SCAN_BTN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3M7 12h10"/></svg><span>QR</span>'
 from playwright.async_api import async_playwright
 SITE = 'https://probe2928-crypto.github.io/qurator/'
 OUT = os.environ.get('OUT', 'store'); os.makedirs(OUT, exist_ok=True)
+IOS = os.environ.get('IOS') == '1'   # IOS=1 → App Store screenshots of the iOS app mode
 SHOTS = [('01-home', '#/'), ('02-today', '#/today'), ('03-artwork', '#/w/w-starry'), ('04-korean', '#/w/k-sehando'),
          ('05-features', '#/features/hot-30-2026'), ('06-explore', '#/explore')]
 FEATURE = """<!doctype html><html><head><meta charset="utf-8">
@@ -23,14 +27,20 @@ FEATURE = """<!doctype html><html><head><meta charset="utf-8">
 async def main():
     async with async_playwright() as p:
         b = await p.chromium.launch()
-        ctx = await b.new_context(viewport={'width': 360, 'height': 640}, device_scale_factor=3, locale='ko-KR', is_mobile=True, has_touch=True)
+        if IOS:   # App Store iPhone 6.9" 1320x2868, iOS app mode (window.QURATOR_APP)
+            ctx = await b.new_context(viewport={'width': 440, 'height': 956}, device_scale_factor=3, locale='ko-KR', is_mobile=True, has_touch=True)
+            await ctx.add_init_script("window.QURATOR_APP = { remote: '%s', ios: true }; document.addEventListener('DOMContentLoaded', () => { document.documentElement.classList.add('q-store-app'); const css = document.createElement('style'); css.textContent = SCAN_CSS; document.head.appendChild(css); const b = document.createElement('button'); b.className = 'q-scan'; b.innerHTML = SCAN_BTN; document.body.appendChild(b); });".replace('SCAN_CSS', json.dumps(SCAN_CSS)).replace('SCAN_BTN', json.dumps(SCAN_BTN)) % SITE)
+        else:
+            ctx = await b.new_context(viewport={'width': 360, 'height': 640}, device_scale_factor=3, locale='ko-KR', is_mobile=True, has_touch=True)
         pg = await ctx.new_page()
-        await pg.goto(SITE + '?src=twa#/', wait_until='networkidle'); await pg.wait_for_timeout(2500)
+        await pg.goto(SITE + ('#/' if IOS else '?src=twa#/'), wait_until='networkidle'); await pg.wait_for_timeout(2500)
         for name, h in SHOTS:
             await pg.evaluate(f"location.hash = '{h}'"); await pg.wait_for_timeout(6000); await pg.evaluate('window.scrollTo(0, 0)')
             await pg.evaluate("document.querySelectorAll('.rv').forEach(e=>e.classList.add('in'))"); await pg.wait_for_timeout(1500)
-            await pg.screenshot(path=f'{OUT}/phone-{name}.png')
+            await pg.screenshot(path=f'{OUT}/{"ios" if IOS else "phone"}-{name}.png')
             print('shot', name)
+        if IOS:
+            await b.close(); return
         f = await b.new_page(viewport={'width': 1024, 'height': 500})
         await f.set_content(FEATURE, wait_until='networkidle'); await f.wait_for_timeout(2500)
         await f.screenshot(path=f'{OUT}/feature-graphic-1024x500.png')
