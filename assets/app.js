@@ -17,7 +17,10 @@ const stripHtml = s => { if (!s) return ''; const d = document.createElement('di
    Data/audio come from the live site so new works appear without an app update; QR/share links always point to the website. */
 const APPX = window.QURATOR_APP || null;
 const ASSET = p => (APPX && !/^[a-z][a-z0-9+.-]*:/i.test(p)) ? APPX.remote + p : p;
-const BASE = () => APPX ? APPX.remote : location.href.split('#')[0];
+/* site address without ?src=twa etc., so QR codes and shared links made inside the Play app open the normal website */
+const BASE = () => APPX ? APPX.remote : location.origin + location.pathname;
+const pageURL = () => BASE() + location.hash;
+const TOUCH = () => matchMedia('(pointer:coarse)').matches;
 const KAKAO = 'https://open.kakao.com/o/gQLZj9Ti';
 /* Payments: set live:true + clientKey (토스페이먼츠 라이브 클라이언트 키) + apiBase (worker URL) when the merchant contract is ready. ?paytest=1 runs the Toss test flow. */
 const BANK = { name: '우리은행', number: '56731673402101', holder: '박*준' };
@@ -175,7 +178,7 @@ const T = {
   st_xqr: ['전시 입구용 QR — 관람객이 전체 작품 목록을 봅니다.', 'Entrance QR — visitors see the full list of works.'],
   st_count: ['점', 'works'], copied: ['링크를 복사했습니다', 'Link copied'], go_explore: ['작품 탐색으로', 'Go to Explore'],
   // viewer
-  v_card: ['카드 이미지', 'Share card'], v_copy: ['링크 복사', 'Copy link'], v_copied: ['링크를 복사했어요', 'Link copied'], v_card_ok: ['카드 이미지를 저장했어요', 'Card image saved'], v_card_wait: ['카드를 만드는 중…', 'Making your card…'],
+  v_card: ['카드 이미지', 'Share card'], v_copy: ['링크 복사', 'Copy link'], v_share: ['공유', 'Share'], ft_share: ['이 특집 공유하기', 'Share this feature'], ft_copy: ['이 특집 링크 복사', 'Copy link to this feature'], share_daily: ['QURATOR 오늘의 작품', 'QURATOR Daily Art'], share_feat: ['QURATOR 특집', 'QURATOR Features'], v_copied: ['링크를 복사했어요', 'Link copied'], v_card_ok: ['카드 이미지를 저장했어요', 'Card image saved'], v_card_wait: ['카드를 만드는 중…', 'Making your card…'],
   v_listen: ['해설 듣기', 'Listen'], v_look: ['이것을 찾아보세요', 'Look closer'], v_words: ['Words to know', 'Words to know'], v_info: ['작품 정보', 'Details'],
   v_more: ['함께 보면 좋은 작품', 'You may also like'], v_artist: ['작가', 'Artist'], v_date: ['연도', 'Date'], v_medium: ['재료', 'Medium'],
   v_coll: ['소장', 'Collection'], v_src: ['출처', 'Source'], v_notfound: ['작품을 찾을 수 없습니다.', 'Artwork not found.'],
@@ -868,6 +871,7 @@ async function viewWork(uid, custom) {
 
   const avail = ['ko', 'en'].filter(l => model.kind === 'api' || (model.text[l] && model.text[l].trim()));
   let tl = avail.includes(S.lang) ? S.lang : avail[0] || 'en';
+  document.title = `${model.title}${model.artist ? ' — ' + model.artist : ''} · QURATOR`;
   const imgBox = model.kind === 'curated' ? artBox(model.w, 'contain') : artBox({ title: model.title, image: model.image }, 'contain');
 
   app().innerHTML = `<div class="viewer">
@@ -876,7 +880,7 @@ async function viewWork(uid, custom) {
       <p class="eyebrow">${esc(model.collection || 'QURATOR')}</p>
       <h1>${esc(model.title)}</h1>${model.titleAlt ? `<div class="alt">${esc(model.titleAlt)}</div>` : ''}
       <div class="who"><span>${esc(model.artist || '')}</span>${model.date ? `<span>${esc(model.date)}</span>` : ''}</div>
-      <div class="v-acts">${model.kind === 'curated' ? `<button id="vcard"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3.5" width="14" height="17" rx="1"/><path d="M8 7.5h8v6H8zM8 16.5h5"/></svg>${t('v_card')}</button>` : ''}<button id="vcopy"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>${t('v_copy')}</button></div>
+      <div class="v-acts">${model.kind === 'curated' ? `<button id="vcard"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3.5" width="14" height="17" rx="1"/><path d="M8 7.5h8v6H8zM8 16.5h5"/></svg>${t('v_card')}</button>` : ''}<button id="vcopy">${TOUCH() ? ICON_SHARE + t('v_share') : ICON_LINK + t('v_copy')}</button></div>
     </div>
     ${model.tagline ? `<p class="v-tag ${tl}" id="vtag">${esc(model.tagline[tl])}</p>` : ''}
     <div class="v-tabs" id="vtabs">${avail.map(l => `<button data-l="${l}" class="${l === tl ? 'on' : ''}">${l === 'ko' ? '한국어' : 'English'}</button>`).join('')}</div>
@@ -957,7 +961,11 @@ async function viewWork(uid, custom) {
   $('#vtext').onclick = e => { const s = e.target.closest('.s'); if (s && (Speech.ok || Speech.urls)) Speech.speakFrom(+s.dataset.i); };
   $('#vtabs').onclick = e => { const b = e.target.closest('button'); if (b) showLang(b.dataset.l); };
   $('#rate').onclick = () => { const rs = [0.9, 1, 1.15, 1.3]; Speech.rate = rs[(rs.indexOf(Speech.rate) + 1) % rs.length]; store.set('q_rate', Speech.rate); $('#rate').textContent = Speech.rate + '×'; if (Speech.audio) Speech.audio.playbackRate = Speech.rate; else if (Speech.playing) Speech.speakFrom(Speech.idx); };
-  $('#vcopy').onclick = () => copyLink(location.href);
+  $('#vcopy').onclick = () => {
+    const by = [model.artist, model.date].filter(Boolean).join(', ');
+    const tag = model.tagline ? model.tagline[tl] || '' : '';
+    shareLink(`${model.title}${by ? ' — ' + by : ''}`, [`${model.title}${by ? ' — ' + by : ''}`, tag, t('share_daily')].filter(Boolean).join('\n'));
+  };
   if ($('#vcard')) $('#vcard').onclick = async e => {
     const b = e.currentTarget; if (b.disabled) return; b.disabled = true; toast(t('v_card_wait'));
     try { await saveCard(model.w); } catch (err) { console.warn(err); }
@@ -982,6 +990,15 @@ async function copyLink(url) {
   try { await navigator.clipboard.writeText(url); toast(t('v_copied')); }
   catch { const i = document.createElement('input'); i.value = url; document.body.appendChild(i); i.select(); try { document.execCommand('copy'); toast(t('v_copied')); } catch {} i.remove(); }
 }
+/* phones: system share sheet (KakaoTalk, Messages…) with a short caption; desktop: copy the link — the og:image preview does the rest */
+async function shareLink(title, text, url = pageURL()) {
+  if (navigator.share && TOUCH()) {
+    try { await navigator.share({ title, text, url }); return; } catch (e) { if (e && e.name === 'AbortError') return; }
+  }
+  copyLink(url);
+}
+const ICON_SHARE = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V4M8 7.5 12 3.5l4 4M6 11H5v9.5h14V11h-1"/></svg>';
+const ICON_LINK = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>';
 function loadCorsImage(src) {
   return new Promise(res => { if (!src) return res(null); const im = new Image(); im.crossOrigin = 'anonymous'; im.referrerPolicy = 'no-referrer'; im.onload = () => res(im); im.onerror = () => res(null); im.src = src; });
 }
@@ -1121,7 +1138,10 @@ async function viewFeature(id) {
       ${f.sections.map((s, i) => `<section class="ft-sec" id="sec${i}"><div class="ft-sec-h rv"><span>${ROMAN[i]}</span><div><h2>${esc(pick(s.title))}</h2>${s.dek ? `<p>${esc(pick(s.dek))}</p>` : ''}</div></div>${s.items.map(item).join('')}</section>`).join('')}
       ${f.note ? `<p class="note ft-note">${esc(pick(f.note))}</p>` : ''}
       <div class="ft-end rv"><a class="btn btn-ink" href="#/today">${t('cta_today')} <span class="arrow">→</span></a><a class="btn btn-line" href="#/features">${t('ft_more')}</a></div>
+      <p class="ft-sharerow rv"><button class="ft-share" type="button">${TOUCH() ? ICON_SHARE : ICON_LINK}<span>${t(TOUCH() ? 'ft_share' : 'ft_copy')}</span></button></p>
     </div>`;
+  document.title = `${pick(f.title)} — QURATOR`;
+  $$('.ft-share').forEach(b => b.onclick = () => shareLink(pick(f.title), [pick(f.title), pick(f.dek), t('share_feat')].join('\n')));
   $$('.ft-toc a').forEach(a => a.onclick = () => { const el = document.getElementById('sec' + a.dataset.sec); if (el) el.scrollIntoView({ behavior: 'smooth' }); });
   hydrate(); reveal();
 }
@@ -1533,6 +1553,7 @@ async function route() {
   const parts = raw.split('?')[0].split('/').filter(Boolean);
   const r = parts[0] || '';
   renderShell(r);
+  document.title = S.lang === 'en' ? 'QURATOR — QR Docent & Daily Art' : 'QURATOR — QR 도슨트 · 오늘의 작품';
   if (r === '' || r === 'pricing') document.body.classList.add('home');
   document.body.classList.toggle('gal-page', r === 'galleries');
   window.scrollTo(0, 0);
