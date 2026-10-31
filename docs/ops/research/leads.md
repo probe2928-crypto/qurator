@@ -12,6 +12,6 @@
 | 2 | 소원화랑 | 인천 부평구 경원대로1347번길 48 | 《Ethereal Mountain – 산에 기댄 사람들》 2026.11.05~2027.01.07 | 미확인 | 미확인 | 인천 소규모 화랑, 두 달짜리 전시 → 개막 전 연락 시 이번 전시에 바로 적용 가능 |
 | 3 | 갤러리세줄 | 서울 종로구 평창30길 40 | 《익숙함 속의 낯섦》 2026.10.17~11.26 | 미확인 | 미확인 | 평창동 |
 | 4 | 오매갤러리 | 서울 종로구 삼청로7길 20 | 성민우 개인전 《곁 Beside》 2026.10.20~11.14 | 미확인 | 미확인 | 삼청동, 개인전 연속 운영(직전 김영희 개인전) |
-| 5 | 김리아갤러리 | 서울 강남구 압구정로75길 5 | 박예림 개인전 《Earth Palimpsest》 2026.10.08~11.07 | 미확인 | 미확인 | 작가 공모전 운영 이력([씽유 2021 공모](https://thinkyou.co.kr/mobile/contest/16411/)), 강남구 소식지 대표 인터뷰([강남라이프](https://www.gangnam.go.kr/gangnamlife/2026/html/vol374/sub01_06.html)) |
+| 5 | 김리아갤러리 | 서울 강남구 압구정로75길 5 | 박예림 개인전 《Earth Palimpsest》 2026.10.08~11.07 (확인: [Galleries Now](https://www.galleriesnow.net/gallery/kimreeaa-gallery/)) | https://www.kimreeaa.com/ | 대표전화 02-517-7713 ([Visit Gangnam](https://visitgangnam.net/en/places/kimreeaa-gallery)) · 홈페이지 문의 폼(Galleries Now 기준) · 화~토 11~18시 | 작가 공모전 운영 이력([씽유 2021 공모](https://thinkyou.co.kr/mobile/contest/16411/)), 강남구 소식지 대표 인터뷰([강남라이프](https://www.gangnam.go.kr/gangnamlife/2026/html/vol374/sub01_06.html)) |
 
 예비(다음 회차 확인): 갤러리조선(종로구 북촌로5길 64, 최수련 개인전 ~12.09), 갤러리마리(이영섭 개인전 ~12.04), 예술공간 트라이보울(인천 연수구, 《살아있는 척 Fake Alive》 ~12.13, 공공 공간), 헤드비갤러리(성남 분당, 2인전 ~11.14).
