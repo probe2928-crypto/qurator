@@ -469,7 +469,7 @@ function renderShell(route) {
   $$('.lang button').forEach(b => b.classList.toggle('on', b.dataset.lang === S.lang));
   document.documentElement.lang = S.lang;
   $('#foot').innerHTML = `<div class="foot-in">
-    <div class="foot-brand">${LOGO_MARK}<div><div class="fw">QURATOR</div><div class="fs">MAISON DE DOCENT · SÉOUL</div></div></div>
+    <div class="foot-brand">${logoMark()}<div><div class="fw">QURATOR</div><div class="fs">MAISON DE DOCENT · SÉOUL</div></div></div>
     <nav class="foot-links">${PLAY ? '' : `<a href="#/galleries">${S.lang === 'ko' ? '갤러리 도입 안내' : 'For galleries'}</a>`}<a href="#/giving">${t('nav_giving')} · Oriel</a><a href="#/support">${t('nav_support')}</a><a href="${KAKAO}" target="_blank" rel="noopener">${S.lang === 'ko' ? '카카오톡 문의' : 'KakaoTalk'}</a><a href="#/policy/terms">${t('terms')}</a><a href="#/policy/privacy"><b>${t('privacy')}</b></a>${IOS ? '' : `<a href="#/policy/refund">${t('refund')}</a>`}</nav>
   </div>
   <div class="foot-in foot-legal"><span>${esc(t('biz'))}</span><span>© 2026 QURATOR · ${esc(t('foot_note'))}</span></div>`;
@@ -1023,10 +1023,12 @@ async function drawCard(w, lang) {
   };
   x.fillStyle = PAPER; x.fillRect(0, 0, W, H);
   // masthead: Didone Q + wordmark | Daily Art
-  x.save(); x.translate(M - 4, 52); x.scale(1.5, 1.5); x.fillStyle = INK;
-  x.fill(new Path2D('M20 4C12.5 4 6.5 10.7 6.5 19S12.5 34 20 34 33.5 27.3 33.5 19 27.5 4 20 4Zm0 .7c-5.4 0-9.9 6.4-9.9 14.3S14.6 33.3 20 33.3 29.9 26.9 29.9 19 25.4 4.7 20 4.7Z'), 'evenodd');
-  x.fill(new Path2D('M18.4 31.3c4.3-.6 9.6 1.6 17.1 6.8l-.6.8c-7-4.5-12-6.5-16.3-6.3Z')); x.restore();
-  x.fillStyle = INK; x.font = `500 27px ${BOD}`; x.textBaseline = 'alphabetic'; spaced('QURATOR', M + 64, 92, 9);
+  x.save(); x.translate(M - 4, 46); x.scale(.4, .4); x.translate(-19.5, -24);
+  { const tail = new Path2D('M93,137 C93,153 96,165 106,171 C116,177 130,177 142,172 L142.5,173.6 C128,181 110,183 99,177 C88,170 86,154 87,137 Z'); x.fillStyle = '#A8361F'; x.fill(tail);
+    const seal = new Path2D(); seal.roundRect(30, 26, 140, 140, 5); x.fill(seal); x.clip(seal);
+    x.fillStyle = PAPER; x.fill(new Path2D('M63,92 A37,49 0 1 0 137,92 A37,49 0 1 0 63,92 Z M78.5,92 A21.5,46 0 1 0 121.5,92 A21.5,46 0 1 0 78.5,92 Z'), 'evenodd'); x.fill(tail); }
+  x.restore();
+  x.fillStyle = INK; x.font = `500 27px ${BOD}`; x.textBaseline = 'alphabetic'; spaced('QURATOR', M + 76, 92, 9);
   x.fillStyle = MUTED; x.font = `500 17px ${SANS}`; spaced('DAILY ART', W - M, 90, 5, 'right');
   x.fillStyle = 'rgba(22,20,15,.16)'; x.fillRect(M, 128, W - 2 * M, 1);
   // artwork, contained in a soft mat
@@ -1221,7 +1223,9 @@ function viewGalleries() {
 }
 
 /* ---------------- brand ---------------- */
-const LOGO_MARK = '<svg class="mono" viewBox="0 0 40 40" aria-hidden="true"><path fill="currentColor" fill-rule="evenodd" d="M20 4C12.5 4 6.5 10.7 6.5 19S12.5 34 20 34 33.5 27.3 33.5 19 27.5 4 20 4Zm0 .7c-5.4 0-9.9 6.4-9.9 14.3S14.6 33.3 20 33.3 29.9 26.9 29.9 19 25.4 4.7 20 4.7Z"/><path fill="currentColor" d="M18.4 31.3c4.3-.6 9.6 1.6 17.1 6.8l-.6.8c-7-4.5-12-6.5-16.3-6.3Z"/></svg>';
+let _qm = 0;
+const LOGO_MARK_SVG = '<svg class="mono" xmlns="http://www.w3.org/2000/svg" viewBox="19.5 24 161 161" aria-hidden="true"><defs><clipPath id="__ID__"><rect x="30" y="26" width="140" height="140" rx="5"/></clipPath></defs><path fill="#A8361F" d="M93,137 C93,153 96,165 106,171 C116,177 130,177 142,172 L142.5,173.6 C128,181 110,183 99,177 C88,170 86,154 87,137 Z"/><rect x="30" y="26" width="140" height="140" rx="5" fill="#A8361F"/><g clip-path="url(#__ID__)" fill="#F3EFE6"><path fill-rule="evenodd" d="M63,92 A37,49 0 1 0 137,92 A37,49 0 1 0 63,92 Z M78.5,92 A21.5,46 0 1 0 121.5,92 A21.5,46 0 1 0 78.5,92 Z"/><path d="M93,137 C93,153 96,165 106,171 C116,177 130,177 142,172 L142.5,173.6 C128,181 110,183 99,177 C88,170 86,154 87,137 Z"/></g></svg>';
+const logoMark = () => LOGO_MARK_SVG.split('__ID__').join('qm' + (++_qm));
 
 /* ---------------- membership ---------------- */
 /* Subscribers get a signed link #/m/<token> from the private ledger (주문·멤버 장부).
@@ -1432,7 +1436,7 @@ function viewCheckout() {
     ${pending ? `<div class="co-resume"><p><span>${t('co_resume')}</span><b>${esc(pending.id)}</b></p><button type="button" class="btn btn-ink btn-sm" id="coRes">${t('co_resume_b')} →</button></div>` : ''}</div></section>
   <div class="wrap checkout">
     <aside class="co-sum">
-      <div class="co-mark">${LOGO_MARK}</div>
+      <div class="co-mark">${logoMark()}</div>
       <p class="eyebrow">Daily Art Membership</p>
       <div class="co-amt">₩${PAY.price.toLocaleString()}<small> / ${t('co_month')}</small></div>
       <p class="co-vat">${t('co_vat')}</p>
@@ -1481,7 +1485,7 @@ function showOrder(id, o) {
   const rn = o.renew ? `\n현재 만료일: ${o.renew.exp}${o.renew.ref ? `\n링크 번호: ${o.renew.ref}` : ''}` : '';
   const msg = `[QURATOR Daily Art ${o.renew ? '연장' : '구독'} 신청]\n주문번호: ${id}\n이름: ${o.name}\n이메일: ${o.email}\n금액: 월 ${PAY.price.toLocaleString()}원\n입금자명: ${payer}${rn}`;
   $('.checkout').innerHTML = `<div class="co-done">
-    <div class="co-mark">${LOGO_MARK}</div><p class="eyebrow">${o.renew ? 'Renewal' : 'Order'}</p><h2>${t('co_order')}</h2>
+    <div class="co-mark">${logoMark()}</div><p class="eyebrow">${o.renew ? 'Renewal' : 'Order'}</p><h2>${t('co_order')}</h2>
     <div class="co-id">${esc(id)}</div><p>${t('co_order_p')}</p>
     <dl class="co-bank">
       <div><dt>${t('co_acct')}</dt><dd><b>${BANK.name} ${BANK.number}</b> <button type="button" class="co-mini" id="cpa">${t('co_cpacct')}</button></dd></div>
@@ -1501,7 +1505,7 @@ function showOrder(id, o) {
 }
 async function viewPayResult(q) {
   const ok = q.get('pay') === 'success', pend = store.get('q_pending', {});
-  const box = c => { app().innerHTML = `<div class="wrap checkout"><div class="co-done"><div class="co-mark">${LOGO_MARK}</div>${c}</div></div>`; };
+  const box = c => { app().innerHTML = `<div class="wrap checkout"><div class="co-done"><div class="co-mark">${logoMark()}</div>${c}</div></div>`; };
   if (!ok) { box(`<h2>${t('pay_fail')}</h2><p>${esc(q.get('message') || '')}</p><p>${t('pay_fail_p')}</p><div class="co-acts"><a class="btn btn-ink" href="#/checkout">${t('co_pay')}</a><a class="btn btn-kakao" href="${KAKAO}" target="_blank" rel="noopener">${t('co_open')}</a></div>`); return; }
   if (!PAY.apiBase) { box(`<p class="eyebrow">Toss Payments</p><h2>${t('pay_test_ok')}</h2><p>${t('pay_test_p')}</p><div class="co-acts"><a class="btn btn-ink" href="#/today">${t('nav_today')} →</a></div>`); return; }
   box(`<p class="note"><span class="spinner"></span> ${t('pay_wait')}</p>`);

@@ -20,7 +20,7 @@ FEATURE = """<!doctype html><html><head><meta charset="utf-8">
 .rule{width:56px;height:1px;background:#A8361F;margin:26px 0 22px}.ko{font-size:27px;line-height:1.5;letter-spacing:-.01em}
 .en{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:22px;color:#cfc6b4;margin-top:12px}</style></head><body>
 <div class="art"><i class="a1"></i><i class="a2"></i></div><div class="copy">
-<svg class="mono" viewBox="0 0 40 40"><path fill="#F3EFE6" fill-rule="evenodd" d="M20 4C12.5 4 6.5 10.7 6.5 19S12.5 34 20 34 33.5 27.3 33.5 19 27.5 4 20 4Zm0 .7c-5.4 0-9.9 6.4-9.9 14.3S14.6 33.3 20 33.3 29.9 26.9 29.9 19 25.4 4.7 20 4.7Z"/><path fill="#A8361F" d="M18.4 31.3c4.3-.6 9.6 1.6 17.1 6.8l-.6.8c-7-4.5-12-6.5-16.3-6.3Z"/></svg>
+<svg class="mono" xmlns="http://www.w3.org/2000/svg" viewBox="19.5 24 161 161"><defs><clipPath id="qst"><rect x="30" y="26" width="140" height="140" rx="5"/></clipPath></defs><path fill="#A8361F" d="M93,137 C93,153 96,165 106,171 C116,177 130,177 142,172 L142.5,173.6 C128,181 110,183 99,177 C88,170 86,154 87,137 Z"/><rect x="30" y="26" width="140" height="140" rx="5" fill="#A8361F"/><g clip-path="url(#qst)" fill="#F3EFE6"><path fill-rule="evenodd" d="M63,92 A37,49 0 1 0 137,92 A37,49 0 1 0 63,92 Z M78.5,92 A21.5,46 0 1 0 121.5,92 A21.5,46 0 1 0 78.5,92 Z"/><path d="M93,137 C93,153 96,165 106,171 C116,177 130,177 142,172 L142.5,173.6 C128,181 110,183 99,177 C88,170 86,154 87,137 Z"/></g></svg>
 <div class="word">QURATOR</div><div class="rule"></div>
 <div class="ko">고전과 현대, 매일 세 점.<br>도슨트의 목소리로.</div><div class="en">Daily Art · Masterpieces, told by a docent</div></div></body></html>"""
 
