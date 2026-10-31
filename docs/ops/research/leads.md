@@ -9,7 +9,7 @@
 | # | 이름 | 지역 | 전시·기간 | 공식 홈페이지 | 공식 문의 채널 | 메모 |
 |---|---|---|---|---|---|---|
 | 1 | 인천아트쇼 2026 (인천아트쇼조직위원회) | 인천 부평(조직위 사무실) | 아트페어, 2026.11.19~11.22 | https://iartshow.imweb.me/ ([소개](https://iartshow.imweb.me/INAS_about)) | office@iartshow.co.kr / 032-710-7406 (공식 페이지 기재 대표 메일·전화) | 갤러리 한 곳이 아니라 참가 갤러리 다수 → 페어 부스용 QR 캡션 제안. 행사 장소 미확인 · **초안 작성 2026-10-31**(Gmail 임시보관함, 미발송) |
-| 2 | 소원화랑 | 인천 부평구 경원대로1347번길 48 | 《Ethereal Mountain – 산에 기댄 사람들》 2026.11.05~2027.01.07 | 미확인 | 미확인 | 인천 소규모 화랑, 두 달짜리 전시 → 개막 전 연락 시 이번 전시에 바로 적용 가능 |
+| 2 | 소원화랑 | 인천 부평구 경원대로1347번길 48 | 《Ethereal Mountain – 산에 기댄 사람들》 2026.11.05~2027.01.07 | 미확인 | 미확인 | 인천 소규모 화랑, 두 달짜리 전시 → 개막 전 연락 시 이번 전시에 바로 적용 가능  · 실마리(10/31 실무이사): 전시 보도 [인천in](http://www.incheonin.com/news/articleView.html?idxno=121876), 기획초대전 이력 [부평 지역지](http://www.bupyeongpost.com/post/48305) — 본문은 이 환경에서 안 열림, 기사 안 연락처 확인 필요 |
 | 3 | 갤러리세줄 | 서울 종로구 평창30길 40 | 《익숙함 속의 낯섦》 2026.10.17~11.26 | 미확인 | 미확인 | 평창동 |
 | 4 | 오매갤러리 | 서울 종로구 삼청로7길 20 | 성민우 개인전 《곁 Beside》 2026.10.20~11.14 | 미확인 | 미확인 | 삼청동, 개인전 연속 운영(직전 김영희 개인전) |
 | 5 | 김리아갤러리 | 서울 강남구 압구정로75길 5 | 박예림 개인전 《Earth Palimpsest》 2026.10.08~11.07 (확인: [Galleries Now](https://www.galleriesnow.net/gallery/kimreeaa-gallery/)) | https://www.kimreeaa.com/ | 대표전화 02-517-7713 ([Visit Gangnam](https://visitgangnam.net/en/places/kimreeaa-gallery)) · 홈페이지 문의 폼(Galleries Now 기준) · 화~토 11~18시 | 작가 공모전 운영 이력([씽유 2021 공모](https://thinkyou.co.kr/mobile/contest/16411/)), 강남구 소식지 대표 인터뷰([강남라이프](https://www.gangnam.go.kr/gangnamlife/2026/html/vol374/sub01_06.html)) · **초안 작성 2026-10-31**(공개 이메일 없음 → 문의 폼 문안만, marketing/daily/2026-10-31/outreach.md) |
