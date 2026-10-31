@@ -8,7 +8,7 @@ from playwright.async_api import async_playwright
 SITE = 'https://probe2928-crypto.github.io/qurator/'
 OUT = os.environ.get('OUT', 'store'); os.makedirs(OUT, exist_ok=True)
 IOS = os.environ.get('IOS') == '1'   # IOS=1 → App Store screenshots of the iOS app mode
-SHOTS = [('01-home', '#/'), ('02-today', '#/today'), ('03-artwork', '#/w/w-starry'), ('04-korean', '#/w/k-sehando'),
+SHOTS = [('01-home', '#/'), ('02-today', '#/today'), ('03-artwork', '#/w/w-kandinsky7'), ('04-korean', '#/w/k-sehando'),
          ('05-features', '#/features/hot-30-2026'), ('06-explore', '#/explore')]
 FEATURE = """<!doctype html><html><head><meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,500;1,400&family=Noto+Serif+KR:wght@600&family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
