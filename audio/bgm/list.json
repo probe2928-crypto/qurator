@@ -1,8 +1,279 @@
 {
  "tracks": [
   {
+   "id": "amb-01",
+   "file": "amb-01.mp3",
+   "group": "ambient",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 안개",
+    "en": "QURATOR Ambient · Mist"
+   }
+  },
+  {
+   "id": "amb-02",
+   "file": "amb-02.mp3",
+   "group": "ambient",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 물결",
+    "en": "QURATOR Ambient · Ripple"
+   }
+  },
+  {
+   "id": "amb-03",
+   "file": "amb-03.mp3",
+   "group": "ambient",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 해질녘",
+    "en": "QURATOR Ambient · Dusk"
+   }
+  },
+  {
+   "id": "amb-04",
+   "file": "amb-04.mp3",
+   "group": "ambient",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 유리",
+    "en": "QURATOR Ambient · Glass"
+   }
+  },
+  {
+   "id": "amb-05",
+   "file": "amb-05.mp3",
+   "group": "ambient",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 새벽",
+    "en": "QURATOR Ambient · Dawn"
+   }
+  },
+  {
+   "id": "amb-06",
+   "file": "amb-06.mp3",
+   "group": "ambient",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 숲",
+    "en": "QURATOR Ambient · Forest"
+   }
+  },
+  {
+   "id": "amb-07",
+   "file": "amb-07.mp3",
+   "group": "ambient",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 첫눈",
+    "en": "QURATOR Ambient · First Snow"
+   }
+  },
+  {
+   "id": "amb-08",
+   "file": "amb-08.mp3",
+   "group": "ambient",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 빗소리",
+    "en": "QURATOR Ambient · Rain"
+   }
+  },
+  {
+   "id": "amb-09",
+   "file": "amb-09.mp3",
+   "group": "ambient",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 달빛",
+    "en": "QURATOR Ambient · Moonlight"
+   }
+  },
+  {
+   "id": "amb-10",
+   "file": "amb-10.mp3",
+   "group": "ambient",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 바람",
+    "en": "QURATOR Ambient · Wind"
+   }
+  },
+  {
+   "id": "amb-11",
+   "file": "amb-11.mp3",
+   "group": "ambient",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 호수",
+    "en": "QURATOR Ambient · Lake"
+   }
+  },
+  {
+   "id": "amb-12",
+   "file": "amb-12.mp3",
+   "group": "ambient",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 등불",
+    "en": "QURATOR Ambient · Lantern"
+   }
+  },
+  {
+   "id": "amb-13",
+   "file": "amb-13.mp3",
+   "group": "ambient",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 구름",
+    "en": "QURATOR Ambient · Cloud"
+   }
+  },
+  {
+   "id": "amb-14",
+   "file": "amb-14.mp3",
+   "group": "ambient",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 모래",
+    "en": "QURATOR Ambient · Sand"
+   }
+  },
+  {
+   "id": "amb-15",
+   "file": "amb-15.mp3",
+   "group": "ambient",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 별자리",
+    "en": "QURATOR Ambient · Constellation"
+   }
+  },
+  {
+   "id": "amb-16",
+   "file": "amb-16.mp3",
+   "group": "ambient",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 이끼",
+    "en": "QURATOR Ambient · Moss"
+   }
+  },
+  {
+   "id": "amb-17",
+   "file": "amb-17.mp3",
+   "group": "ambient",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 은하",
+    "en": "QURATOR Ambient · Galaxy"
+   }
+  },
+  {
+   "id": "amb-18",
+   "file": "amb-18.mp3",
+   "group": "ambient",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 창가",
+    "en": "QURATOR Ambient · Window"
+   }
+  },
+  {
+   "id": "amb-19",
+   "file": "amb-19.mp3",
+   "group": "ambient",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 정원",
+    "en": "QURATOR Ambient · Garden"
+   }
+  },
+  {
+   "id": "amb-20",
+   "file": "amb-20.mp3",
+   "group": "ambient",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 빛살",
+    "en": "QURATOR Ambient · Ray"
+   }
+  },
+  {
+   "id": "amb-21",
+   "file": "amb-21.mp3",
+   "group": "ambient",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 고요",
+    "en": "QURATOR Ambient · Stillness"
+   }
+  },
+  {
+   "id": "amb-22",
+   "file": "amb-22.mp3",
+   "group": "ambient",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 잔향",
+    "en": "QURATOR Ambient · Echo"
+   }
+  },
+  {
+   "id": "amb-23",
+   "file": "amb-23.mp3",
+   "group": "ambient",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 물안개",
+    "en": "QURATOR Ambient · Fog"
+   }
+  },
+  {
+   "id": "amb-24",
+   "file": "amb-24.mp3",
+   "group": "ambient",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 파도",
+    "en": "QURATOR Ambient · Swell"
+   }
+  },
+  {
+   "id": "amb-25",
+   "file": "amb-25.mp3",
+   "group": "ambient",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 오로라",
+    "en": "QURATOR Ambient · Aurora"
+   }
+  },
+  {
+   "id": "amb-26",
+   "file": "amb-26.mp3",
+   "group": "ambient",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 온실",
+    "en": "QURATOR Ambient · Glasshouse"
+   }
+  },
+  {
+   "id": "amb-27",
+   "file": "amb-27.mp3",
+   "group": "ambient",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 등대",
+    "en": "QURATOR Ambient · Lighthouse"
+   }
+  },
+  {
+   "id": "amb-28",
+   "file": "amb-28.mp3",
+   "group": "ambient",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 사막의 밤",
+    "en": "QURATOR Ambient · Desert Night"
+   }
+  },
+  {
+   "id": "amb-29",
+   "file": "amb-29.mp3",
+   "group": "ambient",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 깃털",
+    "en": "QURATOR Ambient · Feather"
+   }
+  },
+  {
+   "id": "amb-30",
+   "file": "amb-30.mp3",
+   "group": "ambient",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 수면",
+    "en": "QURATOR Ambient · Surface"
+   }
+  },
+  {
    "id": "bach-prelude-c",
    "file": "bach-prelude-c.mp3",
+   "group": "baroque",
    "title": {
     "ko": "바흐 · 평균율 1권 전주곡 C장조",
     "en": "Bach · Prelude in C major, BWV 846"
@@ -11,6 +282,7 @@
   {
    "id": "corelli-grave",
    "file": "corelli-grave.mp3",
+   "group": "baroque",
    "title": {
     "ko": "코렐리 · 트리오 소나타 Op.3-1 그라베",
     "en": "Corelli · Trio Sonata Op.3 No.1, Grave"
@@ -19,19 +291,147 @@
   {
    "id": "haydn-op1-adagio",
    "file": "haydn-op1-adagio.mp3",
+   "group": "classical",
    "title": {
     "ko": "하이든 · 현악 사중주 Op.1-1 아다지오",
     "en": "Haydn · String Quartet Op.1 No.1, Adagio"
    }
   },
   {
+   "id": "kr-01",
+   "file": "kr-01.mp3",
+   "group": "kr",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 한지",
+    "en": "QURATOR Ambient · Hanji"
+   }
+  },
+  {
+   "id": "kr-02",
+   "file": "kr-02.mp3",
+   "group": "kr",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 처마",
+    "en": "QURATOR Ambient · Eaves"
+   }
+  },
+  {
+   "id": "kr-03",
+   "file": "kr-03.mp3",
+   "group": "kr",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 대숲",
+    "en": "QURATOR Ambient · Bamboo"
+   }
+  },
+  {
+   "id": "kr-04",
+   "file": "kr-04.mp3",
+   "group": "kr",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 산사",
+    "en": "QURATOR Ambient · Mountain Temple"
+   }
+  },
+  {
+   "id": "kr-05",
+   "file": "kr-05.mp3",
+   "group": "kr",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 먹빛",
+    "en": "QURATOR Ambient · Ink"
+   }
+  },
+  {
+   "id": "kr-06",
+   "file": "kr-06.mp3",
+   "group": "kr",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 윤슬",
+    "en": "QURATOR Ambient · Glimmer"
+   }
+  },
+  {
+   "id": "kr-07",
+   "file": "kr-07.mp3",
+   "group": "kr",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 노을",
+    "en": "QURATOR Ambient · Afterglow"
+   }
+  },
+  {
+   "id": "kr-08",
+   "file": "kr-08.mp3",
+   "group": "kr",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 겨울산",
+    "en": "QURATOR Ambient · Winter Hill"
+   }
+  },
+  {
+   "id": "kr-09",
+   "file": "kr-09.mp3",
+   "group": "kr",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 매화",
+    "en": "QURATOR Ambient · Plum Blossom"
+   }
+  },
+  {
+   "id": "kr-10",
+   "file": "kr-10.mp3",
+   "group": "kr",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 연못",
+    "en": "QURATOR Ambient · Pond"
+   }
+  },
+  {
+   "id": "kr-11",
+   "file": "kr-11.mp3",
+   "group": "kr",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 소나무",
+    "en": "QURATOR Ambient · Pine"
+   }
+  },
+  {
+   "id": "kr-12",
+   "file": "kr-12.mp3",
+   "group": "kr",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 달항아리",
+    "en": "QURATOR Ambient · Moon Jar"
+   }
+  },
+  {
+   "id": "kr-13",
+   "file": "kr-13.mp3",
+   "group": "kr",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 돌담",
+    "en": "QURATOR Ambient · Stone Wall"
+   }
+  },
+  {
+   "id": "kr-14",
+   "file": "kr-14.mp3",
+   "group": "kr",
+   "title": {
+    "ko": "QURATOR 앰비언트 · 새벽 종",
+    "en": "QURATOR Ambient · Dawn Bell"
+   }
+  },
+  {
    "id": "mozart-k155-andante",
    "file": "mozart-k155-andante.mp3",
+   "group": "classical",
    "title": {
     "ko": "모차르트 · 현악 사중주 K.155 안단테",
     "en": "Mozart · String Quartet K.155, Andante"
    }
   }
  ],
- "note": "Public-domain scores, performed and recorded by QURATOR (FluidSynth)."
+ "note": "Public-domain scores and QURATOR's own ambient compositions, performed and recorded by QURATOR (FluidSynth)."
 }
