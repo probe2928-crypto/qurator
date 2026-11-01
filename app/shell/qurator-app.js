@@ -27,12 +27,22 @@
   function scan() {
     var S = P.CapacitorBarcodeScanner; if (!S) return;
     var ko = (document.documentElement.lang || "ko").indexOf("en") !== 0;
-    S.scanBarcode({ hint: 0, scanInstructions: ko ? "작품 옆 QR 코드를 화면에 비춰 주세요" : "Point at the QR code beside the artwork", cameraDirection: 1 }).then(function (r) {
+    // 네이티브 플러그인을 직접 부르므로 JS 래퍼가 채우던 필수값(scanButton·scanText·scanOrientation)을 모두 넘긴다 — 빠지면 iOS에서 조용히 실패
+    S.scanBarcode({
+      hint: 0, scanInstructions: ko ? "작품 옆 QR 코드를 화면에 비춰 주세요" : "Point at the QR code beside the artwork",
+      scanButton: false, scanText: " ", cameraDirection: 1, scanOrientation: 1,
+      cancelButtonAccessibilityLabel: ko ? "닫기" : "Close", torchButtonOnAccessibilityLabel: ko ? "손전등 켜기" : "Torch on", torchButtonOffAccessibilityLabel: ko ? "손전등 끄기" : "Torch off"
+    }).then(function (r) {
       var v = (r && (r.ScanResult || r.scanResult)) || ""; if (!v) return;
       if (v.indexOf(REMOTE) === 0 && v.indexOf("#") > 0) { location.hash = v.slice(v.indexOf("#")); return; }
       if (/^https?:\/\//i.test(v)) { openUrl(v); return; }
       alertNote(ko ? "QURATOR 작품 QR이 아니에요." : "That isn't a QURATOR artwork code.");
-    }).catch(function () {});
+    }).catch(function (e) {
+      var m = String((e && (e.code || e.message)) || "");
+      if (/cancel/i.test(m) || /OS-PLUG-BARC-0006/.test(m)) return;   // 사용자가 닫음
+      if (/denied|permission|camera access|0007/i.test(m)) { alertNote(ko ? "카메라 권한이 꺼져 있어요. 설정 > QURATOR > 카메라를 켜 주세요." : "Camera access is off. Turn it on in Settings > QURATOR > Camera."); return; }
+      alertNote(ko ? "QR을 읽지 못했어요. 다시 시도해 주세요." : "Couldn't read the QR. Please try again.");
+    });
   }
   function alertNote(msg) { var t = document.getElementById("toast"); if (!t) return; t.textContent = msg; t.classList.add("show"); setTimeout(function () { t.classList.remove("show"); }, 2400); }
   document.addEventListener("DOMContentLoaded", function () {
