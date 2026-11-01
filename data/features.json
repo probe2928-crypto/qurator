@@ -1,5 +1,508 @@
 [
  {
+  "id": "monet-100-twelve",
+  "asof": "2026.11.02",
+  "kicker": {
+   "ko": "한 작가 깊이 읽기",
+   "en": "Artist in Depth"
+  },
+  "title": {
+   "ko": "모네 100년, 시간을 그린 12점",
+   "en": "Monet at 100: Twelve Paintings That Caught Time"
+  },
+  "dek": {
+   "ko": "1926년 12월 5일, 모네가 지베르니에서 세상을 떠난 지 올해로 100년. 인상주의라는 이름을 만든 새벽 항구부터 오랑주리의 수련 방까지, 빛과 시간을 붙잡으려 한 60년을 열두 점으로 따라갑니다.",
+   "en": "Claude Monet died at Giverny on 5 December 1926, a hundred years ago this year. From the harbour at dawn that named Impressionism to the water-lily rooms of the Orangerie, twelve paintings trace six decades spent trying to hold on to light and time."
+  },
+  "intro": {
+   "ko": "모네는 평생 같은 질문을 붙들었습니다. 눈앞의 장면은 한순간도 같지 않은데, 그것을 어떻게 화면에 남길 것인가. 젊은 시절에는 야외로 나가 큰 캔버스를 세웠고, 마흔을 넘어서는 건초더미와 성당 정면을 시간대마다 다시 그렸으며, 말년에는 직접 만든 연못의 수면 하나에 남은 삶을 걸었습니다. 서거 100주년인 올해 파리 오랑주리 미술관은 《모네, 시간을 그리다》(2026.9.30–2027.1.25)를 열어 이 질문을 다시 꺼내 놓았습니다.\n열두 점을 시기에 따라 세 갈래로 나눴습니다. 인상주의가 태어나던 1860–70년대, 같은 대상을 수십 번 그린 1890년대 연작, 그리고 지베르니 물의 정원입니다. 작품마다 지금 어느 미술관에 있는지 함께 적었으니, 여행길에 직접 만나 보는 지도로 써도 좋습니다.",
+   "en": "Monet held on to one question all his life: if a scene never looks the same twice, how do you put it on canvas? As a young man he hauled huge canvases outdoors; past forty he painted haystacks and a cathedral front again and again at different hours; in his last years he staked everything on the surface of a pond he had built himself. For the centenary of his death, the Musée de l'Orangerie in Paris has opened Monet, Painting Time (30 Sept 2026 – 25 Jan 2027), putting that question back on the wall.\nThe twelve works fall into three chapters: the birth of Impressionism in the 1860s and 70s, the series of the 1890s in which he painted one motif dozens of times, and the water garden at Giverny. Each entry gives the museum that holds it today, so the list doubles as a map for anyone planning to see them in person."
+  },
+  "cover": [
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Stacks%20of%20Wheat%20%28End%20of%20Summer%29%20-%201985.1103%20-%20Art%20Institute%20of%20Chicago.jpg?width=1600",
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Cathédrale%20de%20Rouen.%20Harmonie%20bleue%20et%20or.jpg?width=1600",
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Bridge%20over%20a%20Pond%20of%20Water%20Lilies%20MET%20DT1854.jpg?width=1600",
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Water%20Lilies%20%28Agapanthus%29%2C%20by%20Claude%20Monet%2C%20Cleveland%20Museum%20of%20Art%2C%201960.81.jpg?width=1600"
+  ],
+  "sections": [
+   {
+    "title": {
+     "ko": "인상주의의 탄생 · 1866–1877",
+     "en": "The Birth of Impressionism · 1866–1877"
+    },
+    "dek": {
+     "ko": "살롱에서 떨어진 야외 대작, 친구와 나란히 그린 물놀이터, 이름이 된 새벽, 그리고 증기 가득한 기차역.",
+     "en": "A rejected open-air canvas, a bathing spot painted beside a friend, the dawn that gave the movement its name, and a station full of steam."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "정원의 여인들",
+       "en": "Women in the Garden"
+      },
+      "artist": {
+       "ko": "클로드 모네",
+       "en": "Claude Monet"
+      },
+      "year": "1866–67",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "오르세 미술관, 파리 · 1866–67",
+       "en": "Musée d'Orsay, Paris · 1866–67"
+      },
+      "why": {
+       "ko": "높이 2.5m가 넘는 캔버스를 야외에서 한 시점으로 그리기 위해, 모네는 땅에 도랑을 파고 캔버스를 내려 가며 위쪽을 칠했다. 연인 카미유가 여러 인물의 모델을 섰다. 1867년 살롱에서 낙선했고, 형편이 어려웠던 모네를 돕기 위해 친구 바지유가 이 그림을 사 주었다.",
+       "en": "To paint a canvas more than 2.5 metres tall outdoors from a single viewpoint, Monet dug a trench and lowered the picture into it to reach the top. His companion Camille posed for several of the figures. The 1867 Salon rejected it, and his friend Bazille bought it to help the penniless painter."
+      },
+      "pd": true,
+      "sources": [
+       {
+        "label": "Wikipedia — Women in the Garden",
+        "url": "https://en.wikipedia.org/wiki/Women_in_the_Garden"
+       },
+       {
+        "label": "Fondation Napoléon",
+        "url": "https://www.napoleon.org/en/history-of-the-two-empires/paintings/women-in-the-garden"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "라 그르누예르",
+       "en": "La Grenouillère"
+      },
+      "artist": {
+       "ko": "클로드 모네",
+       "en": "Claude Monet"
+      },
+      "year": "1869",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "메트로폴리탄 미술관, 뉴욕 · 1869",
+       "en": "The Metropolitan Museum of Art, New York · 1869"
+      },
+      "why": {
+       "ko": "1869년 여름, 모네와 르누아르는 센강의 물놀이터 라 그르누예르에서 나란히 이젤을 세웠다. 모네는 이때의 그림을 스스로 '형편없는 스케치'라 불렀지만, 물결 위에 짧게 끊어 놓은 붓질은 몇 년 뒤 인상주의의 문법이 된다. 거의 같은 구도의 르누아르 그림은 스톡홀름 국립미술관에 있다.",
+       "en": "In the summer of 1869 Monet and Renoir set up their easels side by side at La Grenouillère, a bathing spot on the Seine. Monet called what he made there 'bad sketches', yet the short, broken strokes on the water became the grammar of Impressionism a few years later. Renoir's version of almost the same view is in the Nationalmuseum, Stockholm."
+      },
+      "pd": true,
+      "commons": "La Grenouillère MET DT833.jpg",
+      "sources": [
+       {
+        "label": "The Met — La Grenouillère",
+        "url": "https://metmuseum.org/art/collection/search/437135"
+       },
+       {
+        "label": "National Gallery — Monet and Renoir: Painting Side by Side",
+        "url": "https://www.nationalgallery.org.uk/exhibitions/monet-and-renoir-painting-side-by-side"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "인상, 해돋이",
+       "en": "Impression, Sunrise"
+      },
+      "artist": {
+       "ko": "클로드 모네",
+       "en": "Claude Monet"
+      },
+      "year": "1872",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "마르모탕 모네 미술관, 파리 · 1872",
+       "en": "Musée Marmottan Monet, Paris · 1872"
+      },
+      "why": {
+       "ko": "고향 르아브르 항구의 새벽을 빠른 붓질로 담았다. 1874년 파리의 첫 단체전에 걸렸을 때 비평가 루이 르루아는 '막 시작한 벽지도 이보다는 완성돼 있다'고 비꼬았고, 이 조롱에서 '인상주의'라는 이름이 퍼졌다. 1985년 도난당했다가 1990년 코르시카에서 되찾았다.",
+       "en": "Monet caught the port of Le Havre, his home town, at dawn in a few quick strokes. When it hung at the first group show in Paris in 1874, the critic Louis Leroy mocked it as less finished than embryonic wallpaper, and his jibe spread the word 'Impressionism'. Stolen in 1985, it was recovered in Corsica in 1990."
+      },
+      "pd": true,
+      "commons": "Claude Monet, Impression, soleil levant.jpg",
+      "sources": [
+       {
+        "label": "Wikipedia — Impression, Sunrise",
+        "url": "https://en.wikipedia.org/wiki/Impression,_Sunrise"
+       },
+       {
+        "label": "Normandie Tourisme — history of the painting",
+        "url": "https://en.normandie-tourisme.fr/discover/culture/impressionism/history-of-impression-sunrise/"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "생라자르역",
+       "en": "La Gare Saint-Lazare"
+      },
+      "artist": {
+       "ko": "클로드 모네",
+       "en": "Claude Monet"
+      },
+      "year": "1877",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "오르세 미술관, 파리 · 1877",
+       "en": "Musée d'Orsay, Paris · 1877"
+      },
+      "why": {
+       "ko": "1877년 모네는 철도 회사의 허락을 받아 파리 생라자르역 안에서 증기와 유리 지붕 사이로 떨어지는 빛을 그렸다. 같은 역을 그린 열두 점 가운데 여러 점을 그해 제3회 인상파 전시에 함께 걸었다. 한 장소를 거듭 그려 시간과 날씨의 차이를 보여 주는 방식은 1890년대 연작의 예고편이었다.",
+       "en": "In 1877, with permission from the railway company, Monet painted inside the Gare Saint-Lazare, catching the light falling through steam and the glass roof. He hung several of his twelve views of the station together at the third Impressionist exhibition that year. Returning to one place to show changes of time and weather foreshadowed the series of the 1890s."
+      },
+      "pd": true,
+      "sources": [
+       {
+        "label": "Wikipedia — Gare Saint-Lazare (Monet series)",
+        "url": "https://en.wikipedia.org/wiki/Gare_Saint-Lazare_(Monet_series)"
+       },
+       {
+        "label": "DailyArt Magazine",
+        "url": "https://www.dailyartmagazine.com/claude-monet-and-saint-lazare-train-station/"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": {
+     "ko": "연작, 시간을 붙잡다 · 1890–1904",
+     "en": "The Series: Holding Time · 1890–1904"
+    },
+    "dek": {
+     "ko": "건초더미, 포플러, 성당 정면, 안개 낀 템스강. 대상은 그대로 두고 시간만 바꿔 그린 그림들.",
+     "en": "Haystacks, poplars, a cathedral front and the Thames in fog: the motif stays put while the hour changes."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "건초더미 (여름의 끝)",
+       "en": "Stacks of Wheat (End of Summer)"
+      },
+      "artist": {
+       "ko": "클로드 모네",
+       "en": "Claude Monet"
+      },
+      "year": "1890–91",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "시카고 미술관 · 1890–91",
+       "en": "The Art Institute of Chicago · 1890–91"
+      },
+      "why": {
+       "ko": "지베르니 집 앞 들판에 선 높이 5~6m의 건초더미 두 개가 긴 그림자를 드리운다. 1891년 5월 파리 뒤랑뤼엘 화랑에서 이 연작 15점을 한꺼번에 선보였고, 비평과 판매 모두에서 성공했다. 같은 대상을 빛에 따라 여러 번 그리는 '연작'이 모네의 방법으로 자리 잡은 순간이다.",
+       "en": "Two wheat stacks, fifteen to twenty feet tall, cast long shadows in the field outside Monet's house at Giverny. In May 1891 he showed fifteen canvases from the series together at Galerie Durand-Ruel in Paris, a critical and financial success. It is the moment the series, one motif painted again and again as the light changes, became his method."
+      },
+      "record": {
+       "ko": "시카고 미술관은 건초더미 연작을 가장 많이 소장한 곳이다",
+       "en": "Chicago holds the largest group of the series"
+      },
+      "pd": true,
+      "commons": "Claude Monet - Stacks of Wheat (End of Summer) - 1985.1103 - Art Institute of Chicago.jpg",
+      "sources": [
+       {
+        "label": "Art Institute of Chicago — Stacks of Wheat (End of Summer)",
+        "url": "https://www.artic.edu/artworks/64818/stacks-of-wheat-end-of-summer"
+       },
+       {
+        "label": "Art Institute of Chicago — catalogue, Stacks of Wheat",
+        "url": "https://www.artic.edu/digital-publications/48/monet-paintings-and-drawings-at-the-art-institute-of-chicago-2/398/cats-27-33-stacks-of-wheat-189091"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "엡트강의 포플러",
+       "en": "Poplars on the Epte"
+      },
+      "artist": {
+       "ko": "클로드 모네",
+       "en": "Claude Monet"
+      },
+      "year": "1891",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "테이트, 런던 · 1891",
+       "en": "Tate, London · 1891"
+      },
+      "why": {
+       "ko": "1891년 모네는 지베르니 남쪽 엡트강 둑의 포플러를 스무 점 넘게 그렸다. 그림을 마치기 전에 마을이 나무를 경매에 내놓자, 목재상과 함께 나무를 사들여 작업이 끝날 때까지 베지 않게 했다. 카유보트에게 빌린 평저선 위의 낮은 시점이 줄기를 하늘에 세로줄처럼 세운다.",
+       "en": "In 1891 Monet painted the poplars on the bank of the Epte, south of Giverny, more than twenty times. When the village put the trees up for auction before he had finished, he bought them jointly with a timber merchant on condition they stay standing until he was done. A low viewpoint from a flat-bottomed boat borrowed from Caillebotte sets the trunks against the sky like vertical stripes."
+      },
+      "pd": true,
+      "sources": [
+       {
+        "label": "National Gallery — Poplars on the Epte (on loan from Tate)",
+        "url": "https://www.nationalgallery.org.uk/paintings/claude-monet-poplars-on-the-epte"
+       },
+       {
+        "label": "Wikipedia — Poplars (Monet series)",
+        "url": "https://en.wikipedia.org/wiki/Poplars_(Monet_series)"
+       },
+       {
+        "label": "Philadelphia Museum of Art",
+        "url": "https://philamuseum.org/resources/monets-groundbreaking-poplar-series"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "루앙 대성당, 정문과 생로맹 탑 — 파랑과 금빛의 조화",
+       "en": "Rouen Cathedral, the Portal and the Tour Saint-Romain: Harmony in Blue and Gold"
+      },
+      "artist": {
+       "ko": "클로드 모네",
+       "en": "Claude Monet"
+      },
+      "year": "1892–93",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "오르세 미술관, 파리 · 1892–93",
+       "en": "Musée d'Orsay, Paris · 1892–93"
+      },
+      "why": {
+       "ko": "1892년과 1893년 봄, 모네는 성당 광장 건너편 건물 창가에서 고딕 성당의 서쪽 정면을 시간대마다 30점 가까이 그리고 1894년 작업실에서 마무리했다. 1895년 그중 20점을 파리에서 함께 걸었다. 그가 그린 것은 돌이 아니라 돌 위를 지나가는 빛과 공기였다.",
+       "en": "In the springs of 1892 and 1893 Monet painted the west front of the Gothic cathedral nearly thirty times at different hours, working from windows across the square, then finished the canvases in his studio in 1894. Twenty were shown together in Paris in 1895. What he painted was not the stone but the light and air passing over it."
+      },
+      "record": {
+       "ko": "오르세 미술관은 이 연작 5점을 상설 전시한다",
+       "en": "The Musée d'Orsay shows five canvases from the series"
+      },
+      "pd": true,
+      "commons": "Claude Monet - Cathédrale de Rouen. Harmonie bleue et or.jpg",
+      "sources": [
+       {
+        "label": "Wikipedia — Rouen Cathedral (Monet series)",
+        "url": "https://en.wikipedia.org/wiki/Rouen_Cathedral_(Monet_series)"
+       },
+       {
+        "label": "Rouen Tourisme — Monet and his cathedrals",
+        "url": "https://en.visiterouen.com/heritages/arts/capital-of-impressionism/monet-and-his-cathedrals/"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "런던 국회의사당, 안개를 뚫은 햇빛",
+       "en": "London, the Houses of Parliament, Sunlight Breaking Through the Fog"
+      },
+      "artist": {
+       "ko": "클로드 모네",
+       "en": "Claude Monet"
+      },
+      "year": "1904",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "오르세 미술관, 파리 · 1904",
+       "en": "Musée d'Orsay, Paris · 1904"
+      },
+      "why": {
+       "ko": "1899년부터 1901년까지 런던에 머문 모네는 템스강 건너 세인트토머스 병원 테라스에서 국회의사당을 같은 각도로 거듭 그렸다. 안개가 시시각각 바뀌어 수십 개의 캔버스를 동시에 펼쳐 놓고 작업했고, 그림은 지베르니 작업실에서 몇 해에 걸쳐 완성했다. 고딕 실루엣은 거의 녹아 없어지고 안개 속 햇빛만 남는다.",
+       "en": "Staying in London between 1899 and 1901, Monet painted the Houses of Parliament again and again from the same terrace at St Thomas' Hospital across the Thames. The fog changed so fast that he kept dozens of canvases going at once, and he finished them over several years in his studio at Giverny. The Gothic silhouette almost melts away, leaving only sunlight in fog."
+      },
+      "pd": true,
+      "commons": "Londres, le Parlement. Trouée de soleil dans le brouillard, by Claude Monet (35514322203).jpg",
+      "sources": [
+       {
+        "label": "Wikipedia — Houses of Parliament (Monet series)",
+        "url": "https://en.wikipedia.org/wiki/Houses_of_Parliament_(Monet_series)"
+       },
+       {
+        "label": "Tate Etc. — 'I find London lovelier to paint each day'",
+        "url": "https://www.tate.org.uk/tate-etc/issue-41-autumn-2017/claude-monet-i-find-london-lovelier-paint-each-day"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": {
+     "ko": "지베르니, 물의 정원 · 1899–1926",
+     "en": "Giverny, the Water Garden · 1899–1926"
+    },
+    "dek": {
+     "ko": "직접 판 연못과 일본식 다리, 그리고 하늘도 땅도 없이 수면만 남은 마지막 30년.",
+     "en": "A pond he dug himself, a Japanese footbridge, and a last thirty years with nothing left but the surface of the water."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "수련 연못 위의 다리",
+       "en": "Bridge over a Pond of Water Lilies"
+      },
+      "artist": {
+       "ko": "클로드 모네",
+       "en": "Claude Monet"
+      },
+      "year": "1899",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "메트로폴리탄 미술관, 뉴욕 · 1899",
+       "en": "The Metropolitan Museum of Art, New York · 1899"
+      },
+      "why": {
+       "ko": "모네는 1893년 집 근처 땅을 사서 '눈의 즐거움과 그릴 거리'를 위한 연못을 만들었다. 1899년 여름 이 나무다리를 같은 자리에서 열두 점 그렸는데, 연작 가운데 드문 세로 화면이 수련과 그 그림자를 더 크게 끌어올린다. 그림의 풍경 자체가 화가가 직접 설계한 작품이라는 점이 특별하다.",
+       "en": "In 1893 Monet bought land near his house and made a pond 'for the pleasure of the eye and also for motifs to paint'. In the summer of 1899 he painted this wooden bridge twelve times from one spot; the vertical format, rare in the series, lifts the lilies and their reflections forward. The landscape in the picture was itself something the painter designed."
+      },
+      "pd": true,
+      "commons": "Bridge over a Pond of Water Lilies MET DT1854.jpg",
+      "sources": [
+       {
+        "label": "The Met — Bridge over a Pond of Water Lilies",
+        "url": "https://www.metmuseum.org/art/collection/search/437127"
+       },
+       {
+        "label": "National Gallery of Art — The Japanese Footbridge",
+        "url": "https://www.nga.gov/Collection/art-object-page.74796.html"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "수련",
+       "en": "Water Lilies"
+      },
+      "artist": {
+       "ko": "클로드 모네",
+       "en": "Claude Monet"
+      },
+      "year": "1906",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "시카고 미술관 · 1906",
+       "en": "The Art Institute of Chicago · 1906"
+      },
+      "why": {
+       "ko": "지베르니 물의 정원을 그린 약 250점 가운데 1903~1908년 무렵 그린 무리에 속한다. 거의 정사각형 화면에서 땅과 하늘의 경계가 사라지고, 수련 무더기 사이 물길과 그 위에 비친 나무와 구름만 남는다. 풍경화가 수면 하나로 좁혀지며 추상에 가까워지는 순간이다.",
+       "en": "It belongs to a group painted around 1903–08, among some 250 pictures of the water garden at Giverny. In a nearly square canvas the line between land and sky disappears, leaving a channel of water between clusters of lilies and the trees and clouds reflected in it. Landscape narrows to a single surface and edges toward abstraction."
+      },
+      "record": {
+       "ko": "시카고 미술관 페이지 기준 현재 홍콩 예술관에 대여 중",
+       "en": "Listed by the Art Institute as on loan to the Hong Kong Museum of Art"
+      },
+      "pd": true,
+      "sources": [
+       {
+        "label": "Art Institute of Chicago — Water Lilies (1906)",
+        "url": "https://www.artic.edu/artworks/16568/water-lilies"
+       },
+       {
+        "label": "Art Institute of Chicago — catalogue, cat. 44",
+        "url": "https://www.artic.edu/digital-publications/48/monet-paintings-and-drawings-at-the-art-institute-of-chicago-2/418/cat-44-water-lilies-1906"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "수련 (아가판투스 3부작)",
+       "en": "Water Lilies (The Agapanthus Triptych)"
+      },
+      "artist": {
+       "ko": "클로드 모네",
+       "en": "Claude Monet"
+      },
+      "year": "1915–26",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "클리블랜드 미술관 · 세인트루이스 미술관 · 넬슨앳킨스 미술관 · 1915–26년경",
+       "en": "Cleveland Museum of Art · Saint Louis Art Museum · Nelson-Atkins Museum of Art · c. 1915–26"
+      },
+      "why": {
+       "ko": "1916년 완성한 대형 작업실에서 10년 넘게 붙든 세 폭 그림으로, 이어 붙이면 너비가 12.77m에 이른다. 모네는 왼쪽 폭의 아가판투스 꽃을 덧칠해 지웠지만 제목에는 그 이름이 남았다. 1956~60년 미국 중서부 세 미술관이 한 폭씩 소장했고, 이따금 함께 모여 원래 모습으로 전시된다.",
+       "en": "Monet worked on these three panels for more than a decade in the large studio he finished in 1916; side by side they stretch 12.77 metres. He painted out the agapanthus on the left panel, yet the name stayed in the title. Between 1956 and 1960 three Midwestern museums each acquired one panel, and from time to time they are reunited."
+      },
+      "pd": true,
+      "commons": "Water Lilies (Agapanthus), by Claude Monet, Cleveland Museum of Art, 1960.81.jpg",
+      "sources": [
+       {
+        "label": "Saint Louis Art Museum — A close look",
+        "url": "https://www.slam.org/explore-the-collection/close-look-claude-monet-water-lilies/"
+       },
+       {
+        "label": "Nelson-Atkins Museum of Art — Water Lilies",
+        "url": "https://art.nelson-atkins.org/objects/6650/"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "수련 대장식화",
+       "en": "The Water Lilies (Les Nymphéas)"
+      },
+      "artist": {
+       "ko": "클로드 모네",
+       "en": "Claude Monet"
+      },
+      "year": "1914–26",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "오랑주리 미술관, 파리 · 1914–26 (1927년 공개)",
+       "en": "Musée de l'Orangerie, Paris · 1914–26 (opened 1927)"
+      },
+      "why": {
+       "ko": "1차 세계대전 휴전 다음 날인 1918년 11월 12일, 모네는 클레망소에게 편지를 써 수련 그림 두 점을 국가에 기증하겠다고 했고, 클레망소의 설득으로 기증은 연작 전체로 커졌다. 모네는 세상을 떠날 때까지 손을 놓지 않았고, 1927년 5월 17일 두 개의 타원형 방에 여덟 점의 대형 구성이 그의 설계대로 공개됐다. 관람자를 수면으로 둘러싸는 이 방은 모네가 남긴 마지막 대답이다.",
+       "en": "On 12 November 1918, the day after the Armistice, Monet wrote to Clemenceau offering two water-lily panels to the nation; Clemenceau persuaded him to give the whole cycle. Monet kept working on it until his death, and on 17 May 1927 eight vast compositions opened in two oval rooms, hung as he had designed. Rooms that wrap the viewer in water were his final answer."
+      },
+      "record": {
+       "ko": "100주기 기념전 《모네, 시간을 그리다》 2026.9.30–2027.1.25 개최 중",
+       "en": "Centenary show Monet, Painting Time on until 25 Jan 2027"
+      },
+      "pd": true,
+      "sources": [
+       {
+        "label": "Musée de l'Orangerie — History of the Water Lilies cycle",
+        "url": "https://www.musee-orangerie.fr/en/node/33"
+       },
+       {
+        "label": "Sortir à Paris — Monet centenary exhibitions",
+        "url": "https://www.sortiraparis.com/en/what-to-visit-in-paris/exhibit-museum/guides/340082-claude-monet-exhibitions-and-events-celebrating-the-artist-for-the-centenary-of-his-death-in-2026"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "note": {
+   "ko": "소장처·연도·제작 경위는 미술관 공식 소장품 페이지와 백과사전·관광청 자료 등 두 곳 이상에서 확인했습니다(2026년 11월 2일 기준). 연작의 점수는 자료마다 조금씩 달라 '여러 점', '스무 점 넘게'처럼 범위로 적었습니다. 모네는 1926년에 세상을 떠나 모든 작품이 퍼블릭 도메인이며, 이미지는 위키미디어 커먼즈에서 불러옵니다. 대여·전시 일정은 바뀔 수 있으니 관람 전 각 미술관 공지를 확인해 주세요.",
+   "en": "Collections, dates and backstories were checked against at least two sources, including museum collection pages, encyclopedias and tourism boards, as of 2 November 2026. Counts for each series vary between sources, so they are given as ranges. Monet died in 1926, so all works are in the public domain; images load from Wikimedia Commons. Loans and exhibition dates can change, so check each museum's notice before you go."
+  }
+ },
+ {
   "id": "overseas-exhibitions-2026-autumn",
   "asof": "2026.10.29",
   "kicker": {
