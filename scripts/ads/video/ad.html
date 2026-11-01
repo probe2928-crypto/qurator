@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<link rel="stylesheet" href="file:///tmp/claude-0/fonts/npm/fontsource-noto-serif-kr-5.3.1/600.css">
+<link rel="stylesheet" href="file:///tmp/claude-0/fonts/npm/fs-noto-sans-kr/500.css">
+<link rel="stylesheet" href="file:///tmp/claude-0/fonts/npm/fs-manrope/600.css">
+<link rel="stylesheet" href="file:///tmp/claude-0/fonts/npm/fs-manrope/700.css">
+<style>
+:root{--ink:#16140F;--paper:#F3EFE6;--verm:#C2412B}
+html,body{margin:0;background:#000;overflow:hidden}
+#st{position:relative;width:1080px;overflow:hidden;background:var(--paper)}
+.layer{position:absolute;inset:0;overflow:hidden}
+.ph{position:absolute;left:0;top:0;transform-origin:0 0}
+.ph img{display:block}
+.ph svg{position:absolute;left:0;top:0;overflow:visible}
+.shade{position:absolute;left:0;right:0;pointer-events:none}
+.head{position:absolute;left:64px;right:64px;font-family:'Noto Serif KR',serif;font-weight:600;line-height:1.24;letter-spacing:-.025em;color:#fff;word-break:keep-all}
+.head .ln{display:block;white-space:nowrap}
+.head.lite{text-shadow:0 2px 28px rgba(0,0,0,.35)}
+.eyebrow{display:block;font-family:Manrope,'Noto Sans KR',sans-serif;font-weight:700;font-size:26px;letter-spacing:.2em;margin-bottom:22px;opacity:.92}
+.cap{position:absolute;left:64px;right:64px;display:flex;justify-content:center}
+.cap span{display:block;background:rgba(14,12,10,.5);color:#fff;font-family:'Noto Sans KR',sans-serif;font-weight:500;font-size:40px;line-height:1.5;padding:22px 34px;border-radius:22px;text-align:center;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);word-break:keep-all}
+.frame{position:absolute;border:5px solid rgba(243,239,230,.95);box-sizing:border-box;pointer-events:none}
+/* phone */
+.phone{position:absolute;left:50%;background:#0E0D0B;box-shadow:0 50px 90px rgba(22,20,15,.28),0 0 0 2px #2b2924 inset}
+.phone .scr{position:absolute;overflow:hidden;background:#000}
+.phone .scr img{position:absolute;left:0;top:0;width:100%;height:100%}
+/* label card */
+.wall{background:radial-gradient(120% 80% at 50% 45%,#2E2A23 0%,#1A1814 60%,#100F0C 100%)}
+.card{position:absolute;left:50%;width:800px;margin-left:-400px;background:#F6F2EA;border-radius:8px;box-shadow:0 40px 80px rgba(0,0,0,.45);padding:54px 56px 56px;box-sizing:border-box;color:var(--ink)}
+.card .row1{display:flex;align-items:center;gap:14px;font-family:Manrope;font-weight:700;font-size:21px;letter-spacing:.22em;color:#6B6458}
+.card h2{margin:30px 0 8px;font-family:'Noto Serif KR';font-weight:600;font-size:70px;letter-spacing:-.03em;line-height:1.1}
+.card .meta{font-family:'Noto Sans KR';font-weight:500;font-size:30px;color:#5E574B}
+.card .rule{height:2px;background:#16140F;opacity:.85;margin:34px 0 34px}
+.card .row2{display:flex;justify-content:space-between;align-items:flex-end;gap:30px}
+.card .txt{font-family:'Noto Sans KR';font-weight:500;font-size:30px;line-height:1.6;color:#3B372F}
+.card .qr{width:236px;height:236px;position:relative;flex:none}
+.card .qr img{width:100%;height:100%;image-rendering:pixelated;display:block}
+.vf{position:absolute;pointer-events:none}
+.vf{mix-blend-mode:difference}.vf i{position:absolute;width:56px;height:56px;border-color:#fff;border-style:solid;border-width:0}
+.scan{position:absolute;height:5px;mix-blend-mode:difference;background:linear-gradient(90deg,transparent,#fff 20%,#fff 80%,transparent)}
+/* end card */
+.end .hole{position:absolute;box-shadow:0 0 0 4000px var(--paper)}
+.end .fill{position:absolute;inset:0;background:var(--paper);border-radius:inherit}
+.end .word{position:absolute;left:0;right:0;text-align:center;font-family:Manrope;font-weight:700;font-size:128px;letter-spacing:-.035em;color:var(--ink);line-height:1}
+.end .tag{position:absolute;left:0;right:0;text-align:center;font-family:'Noto Serif KR';font-weight:600;font-size:50px;letter-spacing:-.02em;color:var(--ink)}
+.end .cta{position:absolute;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--paper);font-family:'Noto Sans KR';font-weight:500;font-size:38px;padding:26px 52px;border-radius:999px;white-space:nowrap}
+.end .credit{position:absolute;left:0;right:0;text-align:center;font-family:'Noto Sans KR';font-weight:500;font-size:23px;color:#8A8275;letter-spacing:.01em}
+/* grid */
+.tile{position:absolute;border-radius:28px;overflow:hidden;box-shadow:0 24px 50px rgba(22,20,15,.18)}
+.tile img{width:100%;height:100%;display:block}
+</style></head>
+<body><div id="st"></div>
+<script>
+const P=new URLSearchParams(location.search);
+const W=1080,H=+(P.get('h')||1920),AD=P.get('ad')||'daily15';
+const TALL=H>1500;
+// 안전 영역: 9:16은 위 270 / 아래 670 비움 → 글자는 270~1250. 4:5는 상하 여백만.
+const L=TALL?{top:300,capB:1250,mid:760}:{top:96,capB:H-90,mid:H/2};
+const st=document.getElementById('st');st.style.height=H+'px';
+const clamp=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const io=t=>t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;
+const out=t=>1-Math.pow(1-t,3);
+const seg=(t,a,b)=>clamp((t-a)/(b-a));
+const lerp=(a,b,p)=>a+(b-a)*p;
+function h(tag,cls,par,html){const e=document.createElement(tag);if(cls)e.className=cls;if(html!=null)e.innerHTML=html;if(par)par.appendChild(e);return e}
+const IMG='img/';
+const scenes=[];let DUR=15;
+function scene(t0,t1,upd,el){scenes.push({t0,t1,upd,el});return el}
+
+// ---------- 사진 레이어 (카메라: 이미지 좌표 x,y, 줌 z) ----------
+function photo(src,{shade}={}){
+  const lay=h('div','layer',st);const ph=h('div','ph',lay);const img=h('img',null,ph);img.src=IMG+src;
+  const o={lay,ph,img};
+  if(shade==='top'){o.sh=h('div','shade',lay);o.sh.style.cssText+=`top:0;height:${TALL?820:620}px;background:linear-gradient(rgba(0,0,0,.62),rgba(0,0,0,.28) 55%,transparent)`}
+  if(shade==='bottom'||shade==='both'){o.shb=h('div','shade',lay);o.shb.style.cssText+=`bottom:0;height:${TALL?1300:800}px;background:linear-gradient(transparent,rgba(0,0,0,.42) 30%,rgba(0,0,0,.62) 55%,rgba(0,0,0,.7))`}
+  if(shade==='both'){o.sh=h('div','shade',lay);o.sh.style.cssText+=`top:0;height:${TALL?700:480}px;background:linear-gradient(rgba(0,0,0,.55),transparent)`}
+  return o;
+}
+function cam(o,x,y,z=1,ay){
+  const iw=o.img.naturalWidth,ih=o.img.naturalHeight;const s=Math.max(W/iw,H/ih)*z;
+  let tx=W/2-x*s,ty=(ay??H/2)-y*s;
+  tx=Math.min(0,Math.max(W-iw*s,tx));ty=Math.min(0,Math.max(H-ih*s,ty));
+  o.ph.style.transform=`translate(${tx}px,${ty}px) scale(${s})`;o.s=s;o.tx=tx;o.ty=ty;
+}
+// 키프레임 카메라
+function keyCam(o,keys,t){ // keys: [[t,x,y,z],...]
+  if(t<=keys[0][0]){const k=keys[0];return cam(o,k[1],k[2],k[3],o.ay)}
+  for(let i=1;i<keys.length;i++){const a=keys[i-1],b=keys[i];if(t<=b[0]){const p=io(seg(t,a[0],b[0]));return cam(o,lerp(a[1],b[1],p),lerp(a[2],b[2],p),lerp(a[3],b[3],p),o.ay)}}
+  const k=keys[keys.length-1];cam(o,k[1],k[2],k[3],o.ay);
+}
+// Q 창: 가운데 둥근 사각형이 화면 전체로 열림
+function qwindow(lay,frameEl,t,a,d,from){
+  const p=io(seg(t,a,a+d));
+  if(p>=1){lay.style.clipPath='none';frameEl.style.opacity=0;return}
+  const cx=from?.cx??W/2,cy=from?.cy??L.mid,s0=from?.s??220,r0=from?.r??64;
+  const l=lerp(cx-s0/2,0,p),r=lerp(cx+s0/2,W,p),tp=lerp(cy-s0/2,0,p),b=lerp(cy+s0/2,H,p),rad=lerp(r0,0,p);
+  lay.style.clipPath=`inset(${tp}px ${W-r}px ${H-b}px ${l}px round ${rad}px)`;
+  Object.assign(frameEl.style,{left:l+'px',top:tp+'px',width:(r-l)+'px',height:(b-tp)+'px',borderRadius:rad+'px',opacity:p<.02?0:(1-seg(p,.55,1))});
+}
+// ---------- 글자 ----------
+function headline(par,{lines,eyebrow,top,bottom,size=82,color='#fff',lite=true,center}){
+  const b=h('div','head'+(lite?' lite':''),par);
+  if(top!=null)b.style.top=top+'px';if(bottom!=null)b.style.bottom=bottom+'px';
+  b.style.fontSize=size+'px';b.style.color=color;if(center)b.style.textAlign='center';
+  const items=[];if(eyebrow)items.push(h('span','eyebrow',b,eyebrow));
+  lines.forEach(s=>items.push(h('span','ln',b,s)));return {b,items};
+}
+function anim(o,t,tin,tout,dy=30){
+  o.items.forEach((el,i)=>{const a=tin+i*.11;const p=out(seg(t,a,a+.6));const q=tout==null?0:io(seg(t,tout-.35,tout));
+    el.style.opacity=p*(1-q);el.style.transform=`translateY(${(1-p)*dy-q*10}px)`});
+}
+function caption(par,lines){const c=h('div','cap',par);c.style.bottom=(H-L.capB)+'px';const s=h('span',null,c,lines.join('<br>'));return {c,s}}
+function animCap(o,t,tin,tout){const p=seg(t,tin,tin+.7),q=tout==null?0:seg(t,tout-.6,tout);o.c.style.opacity=io(p)*(1-io(q));o.c.style.transform=`translateY(${(1-out(p))*14}px)`}
+
+// ---------- 엔드카드 (Q가 시계방향으로 그려지고 → 꼬리 → 워드마크) ----------
+const QSZ=280,QK=QSZ/164;
+function endCard(t0,{cta,credit,hole=true}){
+  const lay=h('div','layer end',st);
+  const qy=TALL?600:(H/2-245);
+  const rectCx=W/2,rectCy=qy; // 마크 사각형 중심
+  const svgL=rectCx-80*QK,svgT=rectCy-80*QK;
+  let hl,fill;
+  if(hole){hl=h('div','hole',lay);fill=h('div','fill',hl)}else{lay.style.background='var(--paper)'}
+  const svg=h('div',null,lay);svg.style.cssText=`position:absolute;left:${svgL}px;top:${svgT}px;width:${QSZ}px;height:${QSZ}px`;
+  svg.innerHTML=`<svg viewBox="20 20 164 164" width="${QSZ}" height="${QSZ}" style="overflow:visible"><path id="qr" d="M100 34H126A40 40 0 0 1 166 74V126A40 40 0 0 1 126 166H74A40 40 0 0 1 34 126V74A40 40 0 0 1 74 34Z" fill="none" stroke="#16140F" stroke-width="20" pathLength="1" stroke-dasharray="1 1"/><path id="qt" d="M124 124L170 170" stroke="#C2412B" stroke-width="20" stroke-linecap="square" pathLength="1" stroke-dasharray="1 1"/></svg>`;
+  const qr=svg.querySelector('#qr'),qt=svg.querySelector('#qt');
+  const word=h('div','word',lay,'qurator');word.style.top=(qy+205)+'px';
+  const tag=h('div','tag',lay,'작품 앞에서, 한 걸음 더.');tag.style.top=(qy+372)+'px';
+  const c=h('div','cta',lay,cta+'&nbsp;&nbsp;→');c.style.top=(qy+490)+'px';
+  const cr=h('div','credit',lay,credit||'');cr.style.top=TALL?'1212px':(H-70)+'px';
+  const inner=112*QK,innerR=30*QK;
+  scene(t0,1e9,t=>{
+    const T=t-t0;const D=hole?0:.35;
+    if(hole){
+      const p=io(seg(T,0,1.0));const big=2*Math.hypot(W,H);
+      const s=lerp(big,inner,p),r=lerp(0,innerR,p);
+      Object.assign(hl.style,{left:(rectCx-s/2)+'px',top:(rectCy-s/2)+'px',width:s+'px',height:s+'px',borderRadius:r+'px'});
+      fill.style.opacity=io(seg(T,1.35,1.95));
+    }else{lay.style.opacity=io(seg(T,0,.45))}
+    const pr=io(seg(T,.7+D,1.45+D));qr.style.strokeDashoffset=1-pr;qr.style.opacity=pr>0?1:0;
+    const pt=out(seg(T,1.5+D,1.85+D));qt.style.strokeDashoffset=1-pt;qt.style.opacity=pt>0?1:0;
+    [[word,1.7],[tag,1.95],[c,2.2],[cr,2.4]].forEach(([el,a],i)=>{const p=out(seg(T,a+D,a+D+.6));el.style.opacity=p;
+      el.style.transform=(el===c?'translateX(-50%) ':'')+`translateY(${(1-p)*26}px)`});
+  },lay);
+  return lay;
+}
+function show(el,on){el.style.display=on?'':'none'}
+
+// =================== 광고 정의 ===================
+const ADS={};
+// ② 출근길 한 점 — 매일 아침 새 명작
+function dailyIntro(T){ // 공통 오프닝: 클림트
+  const k=photo('w-kiss.jpg',{shade:'bottom'});k.ay=TALL?560:H*.42;
+  const hd=headline(k.lay,{eyebrow:'DAILY ART',lines:['출근길엔,','클림트 한 점.'],bottom:H-L.capB,size:92});
+  scene(0,T.kissEnd,t=>{keyCam(k,[[0,1645,700,1.10],[T.kissEnd,1645,700,1.22]],t);anim(hd,t,.05,T.kissHeadOut)},k.lay);
+  return k;
+}
+function artCard(src,keys,t0,t1,lines,eyebrow){
+  const o=photo(src,{shade:'bottom'});o.ay=TALL?620:H*.45;const fr=h('div','frame',st);
+  const hd=headline(o.lay,{eyebrow,lines,bottom:H-L.capB,size:92});
+  scene(t0,t1,t=>{keyCam(o,keys,t);qwindow(o.lay,fr,t,t0,.6);anim(hd,t,t0+.35,t1-.05)},o.lay);
+  scene(t0,t0+.6,()=>{},fr);return o;
+}
+function phoneScene(t0,t1,{eyebrow,lines,shots,swaps}){
+  const lay=h('div','layer',st);lay.style.background='var(--paper)';const fr=h('div','frame',st);fr.style.borderColor='rgba(22,20,15,.9)';
+  const hd=headline(lay,{eyebrow,lines,top:L.top,size:TALL?76:64,color:'var(--ink)',lite:false});
+  const PW=TALL?470:420,PH=PW*16/9,top=TALL?(L.top+300):(L.top+250);
+  const ph=h('div','phone',lay);Object.assign(ph.style,{width:PW+'px',height:PH+'px',marginLeft:(-PW/2)+'px',top:top+'px',borderRadius:(PW*.15)+'px'});
+  const sc=h('div','scr',ph);const b=12;Object.assign(sc.style,{left:b+'px',top:b+'px',right:b+'px',bottom:b+'px',borderRadius:(PW*.15-b)+'px'});
+  const ims=shots.map(s=>{const i=h('img',null,sc);i.src=IMG+s;return i});
+  scene(t0,t1,t=>{qwindow(lay,fr,t,t0,.6);anim(hd,t,t0+.3,t1-.1);
+    const p=out(seg(t,t0+.35,t0+1.1)),q=io(seg(t,t1-.5,t1));
+    ph.style.opacity=p*(1-q);ph.style.transform=`translateY(${(1-p)*120+q*60}px)`;
+    ims.forEach((im,i)=>{if(i===0){im.style.opacity=1;return}const a=swaps[i-1];im.style.opacity=io(seg(t,a,a+.6))});
+  },lay);
+  scene(t0,t0+.6,()=>{},fr);
+}
+ADS.daily15=()=>{DUR=15;
+  dailyIntro({kissEnd:3.6,kissHeadOut:3.0});
+  artCard('w-milkmaid.jpg',[[3,1257,1150,1.0],[5.4,1257,1150,1.07]],3.0,5.4,['내일은,','페르메이르.']);
+  artCard('k-inwang.jpg',[[5.0,1150,929,1.0],[7.6,1500,929,1.0]],5.0,7.6,['모레는,','정선의 인왕산.']);
+  phoneScene(7.2,12.0,{eyebrow:'QURATOR',lines:['매일 아침,','새 명작이 도착해요.'],shots:['ko-immerse-w-milkmaid.jpg','ko-immerse2-w-milkmaid.jpg'],swaps:[9.7]});
+  endCard(11.6,{cta:'오늘의 작품 보러 가기',hole:false,credit:'작품 이미지: 퍼블릭 도메인'});
+};
+ADS.daily30=()=>{DUR=30;
+  // 0–10.6 클림트: 훅 → 감상 모드(해설 + 자막)
+  const k=photo('w-kiss.jpg',{shade:'bottom'});k.ay=TALL?560:H*.42;
+  const hd=headline(k.lay,{eyebrow:'DAILY ART',lines:['출근길엔,','클림트 한 점.'],bottom:H-L.capB,size:92});
+  const hd2=headline(k.lay,{eyebrow:'AI DOCENT',lines:['그림을 보면서,','해설을 들어요.'],bottom:H-L.capB+190,size:80});
+  const cp=caption(k.lay,['금빛 옷에 감싸인 연인이','꽃이 핀 벼랑 끝에서 입맞춤하는 장면입니다.']);
+  scene(0,10.7,t=>{keyCam(k,[[0,1645,700,1.10],[3.2,1645,700,1.22],[10.7,1600,560,1.62]],t);
+    anim(hd,t,.05,3.0);anim(hd2,t,3.5,10.4);animCap(cp,t,3.6,10.5);},k.lay);
+  artCard('w-milkmaid.jpg',[[10.2,1257,1150,1.0],[12.8,1257,1150,1.07]],10.2,12.8,['내일은,','페르메이르.']);
+  artCard('k-inwang.jpg',[[12.4,1150,929,1.0],[15.0,1500,929,1.0]],12.4,15.0,['모레는,','정선의 인왕산.']);
+  artCard('w-greatwave.jpg',[[14.6,950,1008,1.0],[17.2,1250,1008,1.0]],14.6,17.2,['그다음은,','호쿠사이의 파도.']);
+  phoneScene(16.8,22.4,{eyebrow:'QURATOR',lines:['매일 아침,','새 명작이 도착해요.'],shots:['ko-today.jpg','ko-immerse-w-milkmaid.jpg','ko-immerse2-w-milkmaid.jpg'],swaps:[18.9,20.6]});
+  gridScene(22.0,26.6);
+  endCard(26.2,{cta:'오늘의 작품 보러 가기',hole:false,credit:'작품 이미지: 퍼블릭 도메인'});
+};
+function gridScene(t0,t1){
+  const lay=h('div','layer',st);lay.style.background='var(--paper)';
+  const hd=headline(lay,{eyebrow:'COLLECTION',lines:['한국 미술부터','세계 명작까지.'],top:L.top,size:TALL?76:64,color:'var(--ink)',lite:false});
+  const names=['k-moonjar','w-pearl','k-geumgang','w-kandinsky7','k-sehando','w-grandejatte','k-miindo','w-matisse-greenstripe','w-afklint7','k-seolsong','w-hiroshige-shower','w-rousseau-gypsy'];
+  const S=TALL?300:270,G=TALL?28:24,cols=3,x0=(W-(cols*S+(cols-1)*G))/2,y0=TALL?(L.top+300):(L.top+270);
+  const tiles=names.map((n,i)=>{const d=h('div','tile',lay);const im=h('img',null,d);im.src=IMG+'g-'+n+'.jpg';
+    Object.assign(d.style,{width:S+'px',height:S+'px',left:(x0+(i%cols)*(S+G))+'px',top:(y0+Math.floor(i/cols)*(S+G))+'px'});return d});
+  scene(t0,t1,t=>{lay.style.opacity=1;anim(hd,t,t0+.1,t1-.05);
+    const drift=TALL?lerp(0,-(S+G)*1.15,io(seg(t,t0,t1))):lerp(0,-(S+G)*.35,io(seg(t,t0,t1)));
+    tiles.forEach((d,i)=>{const a=t0+.15+i*.07;const p=out(seg(t,a,a+.7));d.style.opacity=p*(1-io(seg(t,t1-.45,t1)));
+      d.style.transform=`translateY(${drift+(1-p)*90}px) scale(${.94+.06*p})`});
+  },lay);
+}
+// ① 설명판 대신 QR
+ADS.qr15=()=>{DUR=15;
+  const lay=h('div','layer wall',st);
+  const hd=headline(lay,{lines:['설명판 대신,','이걸 찍어보세요.'],top:L.top,size:88});
+  const card=h('div','card',lay);card.style.top=(TALL?640:(L.top+300))+'px';
+  card.innerHTML=`<div class="row1"><svg viewBox="20 20 164 164" width="30" height="30"><rect x="34" y="34" width="132" height="132" rx="40" fill="none" stroke="#16140F" stroke-width="22"/><path d="M124 124L170 170" stroke="#16140F" stroke-width="22" stroke-linecap="square"/></svg>QURATOR · AI DOCENT</div>
+  <h2>인왕제색도</h2><div class="meta">정선 · 1751 · 종이에 수묵</div><div class="rule"></div>
+  <div class="row2"><div class="txt">QR을 찍으면<br>그림을 보며 듣는<br>AI 해설이 열려요.</div><div class="qr"><img src="${IMG}qr-inwang.png"></div></div>`;
+  const vf=h('div','vf',lay);['tl','tr','bl','br'].forEach(c=>{const i=h('i',null,vf);const bw='7px';
+    if(c[0]==='t')i.style.top=0,i.style.borderTopWidth=bw;else i.style.bottom=0,i.style.borderBottomWidth=bw;
+    if(c[1]==='l')i.style.left=0,i.style.borderLeftWidth=bw;else i.style.right=0,i.style.borderRightWidth=bw;
+    i.style.borderRadius={tl:'22px 0 0 0',tr:'0 22px 0 0',bl:'0 0 0 22px',br:'0 0 22px 0'}[c]});
+  const sc=h('div','scan',lay);
+  let qrc=null;
+  scene(0,4.9,t=>{
+    if(!qrc){const r=card.querySelector('.qr').getBoundingClientRect();qrc={cx:r.left+r.width/2,cy:r.top+r.height/2,s:r.width}}
+    anim(hd,t,.05,4.3);
+    const pc=out(seg(t,0,.7));const push=1+.07*io(seg(t,2.5,4.4));
+    card.style.opacity=pc;card.style.transformOrigin=`${qrc.cx-W/2+400}px ${qrc.cy-parseFloat(card.style.top)}px`;
+    card.style.transform=`translateY(${(1-pc)*80}px) scale(${push})`;
+    // 뷰파인더
+    const pv=io(seg(t,2.4,3.3));const sz=lerp(qrc.s*2.1,qrc.s*1.22,pv)*push;
+    Object.assign(vf.style,{left:(qrc.cx-sz/2)+'px',top:(qrc.cy-sz/2)+'px',width:sz+'px',height:sz+'px',opacity:seg(t,2.4,2.8)});
+    const ps=seg(t,3.2,4.0);const qs=qrc.s*push*1.05;
+    Object.assign(sc.style,{left:(qrc.cx-qs/2)+'px',width:qs+'px',top:(qrc.cy-qs/2+qs*io(ps))+'px',opacity:ps>0&&ps<1?1:0});
+  },lay);
+  // 인왕제색도 감상 모드
+  const o=photo('k-inwang.jpg',{shade:'top'});o.ay=L.mid;const fr=h('div','frame',st);
+  const hd2=headline(o.lay,{eyebrow:'AI DOCENT',lines:['그림은 그대로,','이야기는 귀로.'],top:L.top,size:84});
+  const cp=caption(o.lay,['일흔다섯의 정선이 비 갠 직후의','인왕산을 그린 작품입니다.']);
+  scene(4.0,13.6,t=>{
+    if(qrc)qwindow(o.lay,fr,t,4.0,.8,{cx:qrc.cx,cy:qrc.cy,s:qrc.s*1.08,r:24});
+    keyCam(o,[[4.0,1250,929,1.18],[13.6,2050,929,1.04]],t);
+    anim(hd2,t,5.0,11.8);animCap(cp,t,5.1,11.6);
+  },o.lay);
+  scene(4.0,4.8,()=>{},fr);
+  endCard(11.4,{cta:'작품 해설 들어보기',credit:'작품: 정선 〈인왕제색도〉 · 퍼블릭 도메인'});
+};
+// ③ 그림 속 질문 — 김홍도 씨름
+ADS.ssireum15=()=>{DUR=15;
+  const o=photo('k-ssireum.jpg',{shade:'top'});o.ay=TALL?800:H*.52;
+  // 엿장수 소년 표시용 원
+  const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');svg.setAttribute('width','1747');svg.setAttribute('height','2079');
+  svg.innerHTML='<ellipse cx="320" cy="1150" rx="240" ry="330" fill="none" stroke="#F3EFE6" stroke-width="5" vector-effect="non-scaling-stroke" pathLength="1" stroke-dasharray="1 1" stroke-dashoffset="1"/>';
+  o.ph.appendChild(svg);const el=svg.querySelector('ellipse');
+  const hd=headline(o.lay,{eyebrow:'김홍도 〈씨름〉',lines:['이 그림의 주인공은','씨름꾼이 아닙니다.'],top:L.top,size:84});
+  const cp=caption(o.lay,['승부의 순간은 씨름꾼보다','구경꾼의 몸짓에서 더 생생하게 읽힙니다.']);
+  const hd2=headline(o.lay,{lines:['그런데 이 소년은','어디를 보고 있을까요?'],top:L.top,size:76});
+  scene(0,15,t=>{
+    keyCam(o,[[0,330,330,1.95],[1.1,350,335,1.92],[4.3,1420,320,1.8],[7.4,1460,1600,1.8],[8.6,360,960,1.9],[10.5,340,950,2.0],[11.6,873,1040,1.0]],t);
+    anim(hd,t,.05,7.6);animCap(cp,t,1.2,7.9);anim(hd2,t,8.3,11.4);
+    const pe=io(seg(t,8.7,9.5));el.setAttribute('stroke-dashoffset',1-pe);el.style.opacity=1-seg(t,10.6,11.0);
+  },o.lay);
+  endCard(11.6,{cta:'이야기 들으러 가기',credit:'작품: 김홍도 〈씨름〉 · 퍼블릭 도메인'});
+};
+
+ADS[AD]();
+window.DUR=DUR;
+window.render=t=>{for(const s of scenes){const on=t>=s.t0&&t<s.t1+1e-6;if(s.el)show(s.el,on);if(on)s.upd(t)}};
+window.ready=(async()=>{
+  // 모든 글리프 서브셋 미리 로드
+  const sample=document.body.innerText+' 0123456789';
+  await Promise.all([...document.fonts].map(f=>f.load().catch(()=>{})));
+  await document.fonts.ready;
+  await Promise.all([...document.images].map(i=>i.decode().catch(()=>{})));
+  for(let t=0;t<DUR;t+=.5)render(t);
+  await document.fonts.ready;
+  return DUR;
+})();
+</script></body></html>
