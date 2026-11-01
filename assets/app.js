@@ -179,7 +179,7 @@ const T = {
   st_count: ['점', 'works'], copied: ['링크를 복사했습니다', 'Link copied'], go_explore: ['작품 탐색으로', 'Go to Explore'],
   // viewer
   v_card: ['카드 이미지', 'Share card'], v_copy: ['링크 복사', 'Copy link'], v_share: ['공유', 'Share'], ft_share: ['이 특집 공유하기', 'Share this feature'], ft_copy: ['이 특집 링크 복사', 'Copy link to this feature'], share_daily: ['QURATOR 오늘의 작품', 'QURATOR Daily Art'], share_feat: ['QURATOR 특집', 'QURATOR Features'], v_copied: ['링크를 복사했어요', 'Link copied'], v_card_ok: ['카드 이미지를 저장했어요', 'Card image saved'], v_card_wait: ['카드를 만드는 중…', 'Making your card…'],
-  v_listen: ['해설 듣기', 'Listen'], v_look: ['이것을 찾아보세요', 'Look closer'], v_words: ['Words to know', 'Words to know'], v_info: ['작품 정보', 'Details'],
+  v_listen: ['해설 듣기', 'Listen'], v_bgm: ['배경음악', 'Background music'], v_bgm_on: ['해설에 잔잔한 클래식이 함께 흐릅니다', 'Soft classical music under the narration'], v_bgm_off: ['배경음악을 껐습니다', 'Background music off'], v_look: ['이것을 찾아보세요', 'Look closer'], v_words: ['Words to know', 'Words to know'], v_info: ['작품 정보', 'Details'],
   v_more: ['함께 보면 좋은 작품', 'You may also like'], v_artist: ['작가', 'Artist'], v_date: ['연도', 'Date'], v_medium: ['재료', 'Medium'],
   v_coll: ['소장', 'Collection'], v_src: ['출처', 'Source'], v_notfound: ['작품을 찾을 수 없습니다.', 'Artwork not found.'],
   v_orig: ['원문(영어) 해설입니다. ', 'Original English text. '], v_gt: ['구글 번역으로 보기', 'Open in Google Translate'],
@@ -445,8 +445,42 @@ const Speech = {
   },
   toggle() { if (this.playing) this.pause(); else this.speakFrom(this.idx); },
   pause() { this.playing = false; if (this.audio) this.audio.pause(); if (this.ok) speechSynthesis.cancel(); this.emit(); },
-  stop() { this.playing = false; if (this.audio) { this.audio.onended = null; this.audio.pause(); this.audio = null; } if (this.ok) speechSynthesis.cancel(); this.idx = 0; },
-  emit(done) { this.onUpdate && this.onUpdate(done); }
+  stop() { this.playing = false; if (this.audio) { this.audio.onended = null; this.audio.pause(); this.audio = null; } if (this.ok) speechSynthesis.cancel(); this.idx = 0; BGM.sync(false); },
+  emit(done) { BGM.sync(this.playing); this.onUpdate && this.onUpdate(done); }
+};
+/* Docent background music: soft public-domain classical pieces (scores from the music21 corpus, performed and
+   recorded by us — audio/bgm/, .github/workflows/bgm.yml). Plays only under narration, through Web Audio so the
+   volume can be kept low on iPhone (HTMLMediaElement.volume is read-only on iOS). */
+const BGM = {
+  on: store.get('q_bgm', true), level: 0.22, ctx: null, gain: null, node: null, list: null, bufs: {}, cur: null, playing: false, key: '',
+  async tracks() { if (this.list) return this.list; try { this.list = (await getJSON('audio/bgm/list.json', { cache: 'no-cache' })).tracks || []; } catch { this.list = []; } return this.list; },
+  setKey(k) { this.key = k || ''; },
+  async buffer(t) {
+    if (this.bufs[t.id]) return this.bufs[t.id];
+    const r = await fetch(ASSET('audio/bgm/' + t.file)); if (!r.ok) throw new Error('bgm ' + r.status);
+    const ab = await r.arrayBuffer();
+    return (this.bufs[t.id] = await new Promise((ok, no) => this.ctx.decodeAudioData(ab, ok, no)));
+  },
+  fade(to, sec) { if (!this.gain) return; const g = this.gain.gain, n = this.ctx.currentTime; g.cancelScheduledValues(n); g.setValueAtTime(g.value, n); g.linearRampToValueAtTime(to, n + sec); },
+  async sync(want) {
+    want = !!(want && this.on);
+    if (want === this.playing) return;
+    this.playing = want;
+    if (!want) { if (this.node) { const nd = this.node; this.fade(0, 1.2); setTimeout(() => { if (!this.playing && this.node === nd) { try { nd.stop(); } catch {} this.node = null; } }, 1300); } return; }
+    try {
+      const AC = window.AudioContext || window.webkitAudioContext; if (!AC) return;
+      if (!this.ctx) { this.ctx = new AC(); this.gain = this.ctx.createGain(); this.gain.gain.value = 0; this.gain.connect(this.ctx.destination); }
+      if (this.ctx.state === 'suspended') this.ctx.resume().catch(() => {});
+      if (this.node) { this.fade(this.level, 1.5); return; }   // paused a moment ago: just bring it back
+      const ts = await this.tracks(); if (!ts.length || !this.playing) return;
+      let h = 0; for (const ch of this.key) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
+      const t = ts[h % ts.length];
+      const buf = await this.buffer(t); if (!this.playing || this.node) return;
+      const src = this.ctx.createBufferSource(); src.buffer = buf; src.loop = true; src.connect(this.gain); src.start();
+      this.node = src; this.cur = t; this.fade(this.level, 2.5);
+    } catch (e) { console.warn('bgm', e); }
+  },
+  toggle() { this.on = !this.on; store.set('q_bgm', this.on); this.sync(this.on && Speech.playing); return this.on; }
 };
 if (Speech.ok) { speechSynthesis.getVoices(); speechSynthesis.onvoiceschanged = () => speechSynthesis.getVoices(); }
 function splitSentences(text) {
@@ -901,6 +935,7 @@ async function viewWork(uid, custom) {
   <div class="player"><div class="player-in">
     <button class="play" id="play" aria-label="${t('v_listen')}"></button>
     <div class="p-info"><div class="p-title">${t('v_listen')} · ${esc(model.title)}</div><div class="p-bar"><i id="pbar"></i></div><div class="p-sub"><span id="pstat"></span><span id="plang"></span></div></div>
+    <button class="bgm${BGM.on ? ' on' : ''}" id="bgm" aria-pressed="${BGM.on}" aria-label="${t('v_bgm')}" title="${t('v_bgm')}"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg></button>
     <button class="rate" id="rate">${Speech.rate}×</button>
   </div></div>`;
   hydrate();
@@ -957,6 +992,8 @@ async function viewWork(uid, custom) {
     const cur = $('#vtext .s.cur');
     if (cur && Speech.playing) { const r = cur.getBoundingClientRect(); if (r.top < 80 || r.bottom > innerHeight - 110) cur.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
   };
+  BGM.setKey((model.w && model.w.id) || model.title || '');
+  $('#bgm').onclick = () => { const on = BGM.toggle(); const b = $('#bgm'); b.classList.toggle('on', on); b.setAttribute('aria-pressed', on); toast(on ? t('v_bgm_on') : t('v_bgm_off')); };
   $('#play').onclick = () => { if (!Speech.ok && !Speech.urls) { toast('Audio is not supported on this browser'); return; } Speech.toggle(); };
   $('#vtext').onclick = e => { const s = e.target.closest('.s'); if (s && (Speech.ok || Speech.urls)) Speech.speakFrom(+s.dataset.i); };
   $('#vtabs').onclick = e => { const b = e.target.closest('button'); if (b) showLang(b.dataset.l); };

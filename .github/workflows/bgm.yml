@@ -1,0 +1,55 @@
+name: Docent BGM (background music)
+# 해설 배경음악: 저작권이 끝난 고전 악보(music21 corpus) → scripts/bgm/*.mid → FluidSynth(FluidR3 GM)로 우리가 직접 연주·녹음 → audio/bgm/*.mp3
+# 작곡·연주 모두 자체/퍼블릭 도메인이라 음원 저작권 문제가 없음.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["scripts/bgm/**", ".github/workflows/bgm.yml"]
+
+permissions:
+  contents: write
+
+concurrency: { group: bgm, cancel-in-progress: true }
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Install FluidSynth + GM soundfont + ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq fluidsynth fluid-soundfont-gm ffmpeg >/dev/null
+      - name: Render
+        run: |
+          set -e
+          SF=/usr/share/sounds/sf2/FluidR3_GM.sf2
+          mkdir -p audio/bgm /tmp/bgm
+          for f in scripts/bgm/*.mid; do
+            n=$(basename "$f" .mid)
+            fluidsynth -ni -g 0.45 -R 1 -C 1 -r 44100 -F /tmp/bgm/$n.wav "$SF" "$f" >/dev/null
+            # 앞뒤 무음 자르기 → 소리 크기 맞추기
+            ffmpeg -v error -y -i /tmp/bgm/$n.wav -af "silenceremove=start_periods=1:start_threshold=-55dB,areverse,silenceremove=start_periods=1:start_threshold=-55dB,areverse,loudnorm=I=-20:TP=-2:LRA=11" -ar 44100 /tmp/bgm/$n.norm.wav
+            D=$(ffprobe -v error -show_entries format=duration -of csv=p=0 /tmp/bgm/$n.norm.wav)
+            ST=$(python3 -c "print(max(0,float('$D')-4))")
+            ffmpeg -v error -y -i /tmp/bgm/$n.norm.wav -af "afade=t=in:d=2.5,afade=t=out:st=$ST:d=4" -c:a libmp3lame -b:a 96k audio/bgm/$n.mp3
+            echo "$n ${D}s $(du -h audio/bgm/$n.mp3 | cut -f1)"
+          done
+          python3 - <<'EOF'
+          import json, os
+          T = {
+            "bach-prelude-c": {"ko": "바흐 · 평균율 1권 전주곡 C장조", "en": "Bach · Prelude in C major, BWV 846"},
+            "corelli-grave": {"ko": "코렐리 · 트리오 소나타 Op.3-1 그라베", "en": "Corelli · Trio Sonata Op.3 No.1, Grave"},
+            "mozart-k155-andante": {"ko": "모차르트 · 현악 사중주 K.155 안단테", "en": "Mozart · String Quartet K.155, Andante"},
+            "haydn-op1-adagio": {"ko": "하이든 · 현악 사중주 Op.1-1 아다지오", "en": "Haydn · String Quartet Op.1 No.1, Adagio"},
+          }
+          files = sorted(f[:-4] for f in os.listdir("audio/bgm") if f.endswith(".mp3"))
+          json.dump({"tracks": [{"id": n, "file": n + ".mp3", "title": T.get(n, {"ko": n, "en": n})} for n in files],
+                     "note": "Public-domain scores, performed and recorded by QURATOR (FluidSynth)."},
+                    open("audio/bgm/list.json", "w"), ensure_ascii=False, indent=1)
+          EOF
+      - name: Commit
+        run: |
+          git config user.name "qurator-bot"; git config user.email "actions@users.noreply.github.com"
+          git add audio/bgm
+          git commit -qm "해설 배경음악 렌더링 (퍼블릭 도메인 악보, 자체 연주)" || exit 0
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 5; done
