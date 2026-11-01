@@ -179,7 +179,7 @@ const T = {
   st_count: ['점', 'works'], copied: ['링크를 복사했습니다', 'Link copied'], go_explore: ['작품 탐색으로', 'Go to Explore'],
   // viewer
   v_card: ['카드 이미지', 'Share card'], v_copy: ['링크 복사', 'Copy link'], v_share: ['공유', 'Share'], ft_share: ['이 특집 공유하기', 'Share this feature'], ft_copy: ['이 특집 링크 복사', 'Copy link to this feature'], share_daily: ['QURATOR 오늘의 작품', 'QURATOR Daily Art'], share_feat: ['QURATOR 특집', 'QURATOR Features'], v_copied: ['링크를 복사했어요', 'Link copied'], v_card_ok: ['카드 이미지를 저장했어요', 'Card image saved'], v_card_wait: ['카드를 만드는 중…', 'Making your card…'],
-  v_listen: ['해설 듣기', 'Listen'], v_bgm: ['배경음악', 'Background music'], v_bgm_on: ['해설에 잔잔한 클래식이 함께 흐릅니다', 'Soft classical music under the narration'], v_bgm_off: ['배경음악을 껐습니다', 'Background music off'], v_look: ['이것을 찾아보세요', 'Look closer'], v_words: ['Words to know', 'Words to know'], v_info: ['작품 정보', 'Details'],
+  v_listen: ['해설 듣기', 'Listen'], im_label: ['작품 감상', 'Viewing'], im_again: ['다시 듣기', 'Listen again'], im_read: ['해설 글로 보기', 'Read the text'], v_bgm: ['배경음악', 'Background music'], v_bgm_on: ['해설에 잔잔한 클래식이 함께 흐릅니다', 'Soft classical music under the narration'], v_bgm_off: ['배경음악을 껐습니다', 'Background music off'], v_look: ['이것을 찾아보세요', 'Look closer'], v_words: ['Words to know', 'Words to know'], v_info: ['작품 정보', 'Details'],
   v_more: ['함께 보면 좋은 작품', 'You may also like'], v_artist: ['작가', 'Artist'], v_date: ['연도', 'Date'], v_medium: ['재료', 'Medium'],
   v_coll: ['소장', 'Collection'], v_src: ['출처', 'Source'], v_notfound: ['작품을 찾을 수 없습니다.', 'Artwork not found.'],
   v_orig: ['원문(영어) 해설입니다. ', 'Original English text. '], v_gt: ['구글 번역으로 보기', 'Open in Google Translate'],
@@ -454,7 +454,16 @@ const Speech = {
 const BGM = {
   on: store.get('q_bgm', true), level: 0.22, ctx: null, gain: null, node: null, list: null, bufs: {}, cur: null, playing: false, key: '',
   async tracks() { if (this.list) return this.list; try { this.list = (await getJSON('audio/bgm/list.json', { cache: 'no-cache' })).tracks || []; } catch { this.list = []; } return this.list; },
-  setKey(k) { this.key = k || ''; },
+  // 작품에 맞는 곡: 서양 1750년 이전 → 바흐·코렐리, 1750~1820 → 모차르트·하이든, 그 뒤·연도 미상 → 바흐 전주곡(피아노).
+  // 한국 작품과 갤러리가 직접 올린 작품은 음악 없이(국악 실연 녹음을 갖추기 전까지, 큐레이터 의견 2026-11-01).
+  ctxw: null,
+  setWork(w, kind) {
+    this.key = (w && w.id) || ''; this.ctxw = null;
+    if (!w || kind !== 'curated' || w.region === 'kr' || w.music === 'none') return;
+    const d = String(w.date || ''), m = d.match(/\b(1[0-9]{3})\b/), c = d.match(/(\d{2})th c/);
+    const y = m ? +m[1] : c ? (+c[1] - 1) * 100 + 50 : null;
+    this.ctxw = w.music && w.music !== 'auto' ? [w.music] : y && y < 1750 ? ['bach-prelude-c', 'corelli-grave'] : y && y < 1820 ? ['mozart-k155-andante', 'haydn-op1-adagio'] : ['bach-prelude-c'];
+  },
   async buffer(t) {
     if (this.bufs[t.id]) return this.bufs[t.id];
     const r = await fetch(ASSET('audio/bgm/' + t.file)); if (!r.ok) throw new Error('bgm ' + r.status);
@@ -463,7 +472,7 @@ const BGM = {
   },
   fade(to, sec) { if (!this.gain) return; const g = this.gain.gain, n = this.ctx.currentTime; g.cancelScheduledValues(n); g.setValueAtTime(g.value, n); g.linearRampToValueAtTime(to, n + sec); },
   async sync(want) {
-    want = !!(want && this.on);
+    want = !!(want && this.on && this.ctxw);
     if (want === this.playing) return;
     this.playing = want;
     if (!want) { if (this.node) { const nd = this.node; this.fade(0, 1.2); setTimeout(() => { if (!this.playing && this.node === nd) { try { nd.stop(); } catch {} this.node = null; } }, 1300); } return; }
@@ -472,7 +481,8 @@ const BGM = {
       if (!this.ctx) { this.ctx = new AC(); this.gain = this.ctx.createGain(); this.gain.gain.value = 0; this.gain.connect(this.ctx.destination); }
       if (this.ctx.state === 'suspended') this.ctx.resume().catch(() => {});
       if (this.node) { this.fade(this.level, 1.5); return; }   // paused a moment ago: just bring it back
-      const ts = await this.tracks(); if (!ts.length || !this.playing) return;
+      const all = await this.tracks(); if (!all.length || !this.playing) return;
+      const ts = all.filter(x => this.ctxw.includes(x.id)); if (!ts.length) return;
       let h = 0; for (const ch of this.key) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
       const t = ts[h % ts.length];
       const buf = await this.buffer(t); if (!this.playing || this.node) return;
@@ -935,7 +945,7 @@ async function viewWork(uid, custom) {
   <div class="player"><div class="player-in">
     <button class="play" id="play" aria-label="${t('v_listen')}"></button>
     <div class="p-info"><div class="p-title">${t('v_listen')} · ${esc(model.title)}</div><div class="p-bar"><i id="pbar"></i></div><div class="p-sub"><span id="pstat"></span><span id="plang"></span></div></div>
-    <button class="bgm${BGM.on ? ' on' : ''}" id="bgm" aria-pressed="${BGM.on}" aria-label="${t('v_bgm')}" title="${t('v_bgm')}"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg></button>
+    <button class="bgm${BGM.on ? ' on' : ''}" id="bgm"${model.kind !== 'curated' || (model.w && model.w.region === 'kr') ? ' hidden' : ''} aria-pressed="${BGM.on}" aria-label="${t('v_bgm')}" title="${t('v_bgm')}"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg></button>
     <button class="rate" id="rate">${Speech.rate}×</button>
   </div></div>`;
   hydrate();
@@ -990,11 +1000,88 @@ async function viewWork(uid, custom) {
     $('#pstat').textContent = n ? `${Math.min(Speech.idx + 1, n)} / ${n}` : '';
     $$('#vtext .s').forEach(s => s.classList.toggle('cur', Speech.playing && +s.dataset.i === Speech.idx));
     const cur = $('#vtext .s.cur');
-    if (cur && Speech.playing) { const r = cur.getBoundingClientRect(); if (r.top < 80 || r.bottom > innerHeight - 110) cur.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+    if (IM.on) IM.update(done);
+    else if (cur && Speech.playing && Date.now() - IM.userScroll > 8000) { const r = cur.getBoundingClientRect(); if (r.top < 80 || r.bottom > innerHeight - 110) cur.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
   };
-  BGM.setKey((model.w && model.w.id) || model.title || '');
+  /* 감상 모드: 해설이 나오는 동안 작품을 화면에 두고, 문장은 작품 아래 띠에 두 줄 자막으로 나타났다 사라진다.
+     (세준 제안 + UX·큐레이터 회의 2026-11-01) 페이지는 스크롤하지 않고 위에 고정 레이어를 띄워, 나오면 읽던 자리 그대로. */
+  const IM = {
+    on: false, el: null, chunks: [], ci: -1, sent: -1, tick: null, wake: null, userScroll: 0, hideT: null,
+    split(str) {
+      const max = tl === 'en' ? 78 : 36, out = []; let cur = '';
+      for (const w of String(str).split(/\s+/).filter(Boolean)) {
+        if (cur && (cur + ' ' + w).length > max) { out.push(cur); cur = w; continue; }
+        cur = cur ? cur + ' ' + w : w;
+        if (cur.length > max * .55 && /([,，;:]|고|며|지만|는데|면서|어서|아서|으나|이며|하여|해서)$/.test(w)) { out.push(cur); cur = ''; }
+      }
+      if (cur) out.push(cur);
+      // 마지막 덩어리가 너무 짧으면 앞에 붙인다
+      if (out.length > 1 && out[out.length - 1].length < 8) { const l = out.pop(); out[out.length - 1] += ' ' + l; }
+      return out;
+    },
+    async open() {
+      if (this.on) return;
+      this.on = true;
+      const el = this.el = document.createElement('div');
+      el.className = 'immerse'; el.setAttribute('role', 'dialog'); el.setAttribute('aria-label', t('im_label'));
+      el.innerHTML = `<div class="im-bg"></div><div class="im-art"><img alt="${esc(model.title)}" referrerpolicy="no-referrer"></div>
+        <div class="im-cap" aria-hidden="true"><span class="im-n"></span><p class="im-t"></p></div>
+        <div class="im-end" hidden><button data-a="again">${t('im_again')}</button><button data-a="read">${t('im_read')}</button></div>
+        <button class="im-x" aria-label="${t('im_read')}"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>`;
+      document.body.appendChild(el); document.body.classList.add('immersive');
+      requestAnimationFrame(() => el.classList.add('show'));
+      el.querySelector('.im-x').onclick = () => this.close(true);
+      el.querySelector('.im-end').onclick = e => { const a = e.target.closest('button'); if (!a) return; if (a.dataset.a === 'again') { el.querySelector('.im-end').hidden = true; Speech.speakFrom(0); } else this.close(true); };
+      let y0 = null; el.addEventListener('touchstart', e => { y0 = e.touches[0].clientY; }, { passive: true });
+      el.addEventListener('touchend', e => { if (y0 != null && e.changedTouches[0].clientY - y0 < -70) this.close(true); y0 = null; }, { passive: true });
+      try { if (navigator.wakeLock) this.wake = await navigator.wakeLock.request('screen'); } catch {}
+      let src = model.imageLg || model.image;
+      try { if (model.kind === 'curated') src = await curatedImage(model.w, 1600); } catch {}
+      if (src && this.el === el) { el.querySelector('.im-art img').src = src; el.querySelector('.im-bg').style.backgroundImage = `url("${src.replace(/"/g, '%22')}")`; }
+      this.sent = -1; this.update();
+    },
+    close(toText) {
+      if (!this.on) return;
+      this.on = false; clearInterval(this.tick); this.tick = null;
+      try { this.wake && this.wake.release(); } catch {} this.wake = null;
+      const el = this.el; this.el = null; document.body.classList.remove('immersive');
+      if (el) { el.classList.remove('show'); setTimeout(() => el.remove(), 260); }
+      if (toText) { const c = $('#vtext .s.cur') || $('#vtext'); c && c.scrollIntoView({ block: 'center' }); }
+    },
+    show(text) {
+      const p = this.el && this.el.querySelector('.im-t'); if (!p) return;
+      p.classList.remove('in');
+      clearTimeout(this.hideT);
+      this.hideT = setTimeout(() => { p.textContent = text; if (text) p.classList.add('in'); }, p.textContent ? 200 : 0);
+    },
+    update(done) {
+      if (!this.el) return;
+      const n = Speech.sents.length;
+      this.el.classList.toggle('paused', !Speech.playing && !done);
+      this.el.querySelector('.im-end').hidden = !done;
+      if (done) { this.show(''); clearInterval(this.tick); this.tick = null; this.sent = -1; this.el.querySelector('.im-n').textContent = ''; return; }
+      this.el.querySelector('.im-n').textContent = n ? `${Math.min(Speech.idx + 1, n)} / ${n}` : '';
+      if (Speech.idx !== this.sent) {
+        this.sent = Speech.idx; this.chunks = this.split(Speech.sents[Speech.idx] || ''); this.ci = -1; this.t0 = Date.now();
+        clearInterval(this.tick); this.tick = setInterval(() => this.step(), 120); this.step();
+      }
+    },
+    step() {
+      if (!this.el || !this.chunks.length) return;
+      const lens = this.chunks.map(c => c.length), tot = lens.reduce((a, b) => a + b, 0);
+      let r;
+      const a = Speech.audio;
+      if (a && a.duration && isFinite(a.duration)) r = a.currentTime / a.duration;
+      else r = Speech.playing ? ((Date.now() - this.t0) / 1000) / (tot * (tl === 'en' ? .065 : .13) / (Speech.rate || 1)) : 0;
+      let acc = 0, k = 0; for (; k < lens.length - 1; k++) { acc += lens[k] / tot; if (r < acc) break; }
+      if (k !== this.ci) { this.ci = k; this.show(this.chunks[k]); }
+    }
+  };
+  addEventListener('touchmove', () => { IM.userScroll = Date.now(); }, { passive: true });
+  addEventListener('wheel', () => { IM.userScroll = Date.now(); }, { passive: true });
+  BGM.setWork(model.w, model.kind);
   $('#bgm').onclick = () => { const on = BGM.toggle(); const b = $('#bgm'); b.classList.toggle('on', on); b.setAttribute('aria-pressed', on); toast(on ? t('v_bgm_on') : t('v_bgm_off')); };
-  $('#play').onclick = () => { if (!Speech.ok && !Speech.urls) { toast('Audio is not supported on this browser'); return; } Speech.toggle(); };
+  $('#play').onclick = () => { if (!Speech.ok && !Speech.urls) { toast('Audio is not supported on this browser'); return; } const start = !Speech.playing; Speech.toggle(); if (start && store.get('q_immerse', true)) IM.open(); };
   $('#vtext').onclick = e => { const s = e.target.closest('.s'); if (s && (Speech.ok || Speech.urls)) Speech.speakFrom(+s.dataset.i); };
   $('#vtabs').onclick = e => { const b = e.target.closest('button'); if (b) showLang(b.dataset.l); };
   $('#rate').onclick = () => { const rs = [0.9, 1, 1.15, 1.3]; Speech.rate = rs[(rs.indexOf(Speech.rate) + 1) % rs.length]; store.set('q_rate', Speech.rate); $('#rate').textContent = Speech.rate + '×'; if (Speech.audio) Speech.audio.playbackRate = Speech.rate; else if (Speech.playing) Speech.speakFrom(Speech.idx); };
@@ -1587,7 +1674,7 @@ if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.se
 
 /* ---------------- router ---------------- */
 async function route() {
-  Speech.stop(); Speech.onUpdate = null;
+  Speech.stop(); Speech.onUpdate = null; document.querySelectorAll('.immerse').forEach(e => e.remove()); document.body.classList.remove('immersive');
   if (stageCleanup) { stageCleanup(); stageCleanup = null; }
   document.body.classList.remove('v', 'menu-open', 'home');
   $('#modal').hidden = true;
