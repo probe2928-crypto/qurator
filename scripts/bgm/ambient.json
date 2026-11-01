@@ -1,0 +1,222 @@
+{
+ "amb-01": {
+  "ko": "안개",
+  "en": "Mist",
+  "group": "ambient"
+ },
+ "amb-02": {
+  "ko": "물결",
+  "en": "Ripple",
+  "group": "ambient"
+ },
+ "amb-03": {
+  "ko": "해질녘",
+  "en": "Dusk",
+  "group": "ambient"
+ },
+ "amb-04": {
+  "ko": "유리",
+  "en": "Glass",
+  "group": "ambient"
+ },
+ "amb-05": {
+  "ko": "새벽",
+  "en": "Dawn",
+  "group": "ambient"
+ },
+ "amb-06": {
+  "ko": "숲",
+  "en": "Forest",
+  "group": "ambient"
+ },
+ "amb-07": {
+  "ko": "첫눈",
+  "en": "First Snow",
+  "group": "ambient"
+ },
+ "amb-08": {
+  "ko": "빗소리",
+  "en": "Rain",
+  "group": "ambient"
+ },
+ "amb-09": {
+  "ko": "달빛",
+  "en": "Moonlight",
+  "group": "ambient"
+ },
+ "amb-10": {
+  "ko": "바람",
+  "en": "Wind",
+  "group": "ambient"
+ },
+ "amb-11": {
+  "ko": "호수",
+  "en": "Lake",
+  "group": "ambient"
+ },
+ "amb-12": {
+  "ko": "등불",
+  "en": "Lantern",
+  "group": "ambient"
+ },
+ "amb-13": {
+  "ko": "구름",
+  "en": "Cloud",
+  "group": "ambient"
+ },
+ "amb-14": {
+  "ko": "모래",
+  "en": "Sand",
+  "group": "ambient"
+ },
+ "amb-15": {
+  "ko": "별자리",
+  "en": "Constellation",
+  "group": "ambient"
+ },
+ "amb-16": {
+  "ko": "이끼",
+  "en": "Moss",
+  "group": "ambient"
+ },
+ "amb-17": {
+  "ko": "은하",
+  "en": "Galaxy",
+  "group": "ambient"
+ },
+ "amb-18": {
+  "ko": "창가",
+  "en": "Window",
+  "group": "ambient"
+ },
+ "amb-19": {
+  "ko": "정원",
+  "en": "Garden",
+  "group": "ambient"
+ },
+ "amb-20": {
+  "ko": "빛살",
+  "en": "Ray",
+  "group": "ambient"
+ },
+ "amb-21": {
+  "ko": "고요",
+  "en": "Stillness",
+  "group": "ambient"
+ },
+ "amb-22": {
+  "ko": "잔향",
+  "en": "Echo",
+  "group": "ambient"
+ },
+ "amb-23": {
+  "ko": "물안개",
+  "en": "Fog",
+  "group": "ambient"
+ },
+ "amb-24": {
+  "ko": "파도",
+  "en": "Swell",
+  "group": "ambient"
+ },
+ "amb-25": {
+  "ko": "오로라",
+  "en": "Aurora",
+  "group": "ambient"
+ },
+ "amb-26": {
+  "ko": "온실",
+  "en": "Glasshouse",
+  "group": "ambient"
+ },
+ "amb-27": {
+  "ko": "등대",
+  "en": "Lighthouse",
+  "group": "ambient"
+ },
+ "amb-28": {
+  "ko": "사막의 밤",
+  "en": "Desert Night",
+  "group": "ambient"
+ },
+ "amb-29": {
+  "ko": "깃털",
+  "en": "Feather",
+  "group": "ambient"
+ },
+ "amb-30": {
+  "ko": "수면",
+  "en": "Surface",
+  "group": "ambient"
+ },
+ "kr-01": {
+  "ko": "한지",
+  "en": "Hanji",
+  "group": "kr"
+ },
+ "kr-02": {
+  "ko": "처마",
+  "en": "Eaves",
+  "group": "kr"
+ },
+ "kr-03": {
+  "ko": "대숲",
+  "en": "Bamboo",
+  "group": "kr"
+ },
+ "kr-04": {
+  "ko": "산사",
+  "en": "Mountain Temple",
+  "group": "kr"
+ },
+ "kr-05": {
+  "ko": "먹빛",
+  "en": "Ink",
+  "group": "kr"
+ },
+ "kr-06": {
+  "ko": "윤슬",
+  "en": "Glimmer",
+  "group": "kr"
+ },
+ "kr-07": {
+  "ko": "노을",
+  "en": "Afterglow",
+  "group": "kr"
+ },
+ "kr-08": {
+  "ko": "겨울산",
+  "en": "Winter Hill",
+  "group": "kr"
+ },
+ "kr-09": {
+  "ko": "매화",
+  "en": "Plum Blossom",
+  "group": "kr"
+ },
+ "kr-10": {
+  "ko": "연못",
+  "en": "Pond",
+  "group": "kr"
+ },
+ "kr-11": {
+  "ko": "소나무",
+  "en": "Pine",
+  "group": "kr"
+ },
+ "kr-12": {
+  "ko": "달항아리",
+  "en": "Moon Jar",
+  "group": "kr"
+ },
+ "kr-13": {
+  "ko": "돌담",
+  "en": "Stone Wall",
+  "group": "kr"
+ },
+ "kr-14": {
+  "ko": "새벽 종",
+  "en": "Dawn Bell",
+  "group": "kr"
+ }
+}

@@ -157,6 +157,14 @@ def provider(lang):
         return tts_supertonic
     return None
 
+# 두 번째 목소리(남/여 선택): NARR_ALT=1 이면 한국어는 여성(Supertonic F3), 영어는 남성(Kokoro am_michael)으로
+# audio/<id>/ko-f.json · en-m.json 을 따로 만든다. 기본(ko 남성 M5, en 여성 af_heart)은 그대로.
+ALT = os.environ.get('NARR_ALT') == '1'
+ALT_SUFFIX = {'ko': 'f', 'en': 'm'}
+if ALT:
+    os.environ['SUPERTONIC_VOICE_KO'] = os.environ.get('SUPERTONIC_VOICE_KO_ALT') or 'F3'
+    os.environ['KOKORO_VOICE'] = os.environ.get('KOKORO_VOICE_ALT') or 'am_michael'
+
 def main():
     only = set(filter(None, os.environ.get('ONLY', '').split(',')))
     made = 0
@@ -165,8 +173,9 @@ def main():
             continue
         for lang in ('ko', 'en'):
             tts = provider(lang)
-            if tts is None:
+            if tts is None or (ALT and tts not in (tts_supertonic, tts_kokoro)):
                 continue
+            stem = f'{lang}-{ALT_SUFFIX[lang]}' if ALT else lang
             text = w['text'][lang].strip()
             if tts is tts_supertonic:
                 salt = 'st3' + (os.environ.get('SUPERTONIC_VOICE_KO') or 'M5') + os.environ.get('SUPERTONIC_SPEED', '') + os.environ.get('SUPERTONIC_STEPS', '')
@@ -174,22 +183,23 @@ def main():
                 salt = os.environ.get('KOKORO_VOICE', '') + 'misaki-g2p'
             digest = hashlib.sha1((text + tts.__name__ + salt).encode()).hexdigest()[:12]
             d = os.path.join(ROOT, 'audio', w['id']); os.makedirs(d, exist_ok=True)
-            mf = os.path.join(d, f'{lang}.json')
+            mf = os.path.join(d, f'{stem}.json')
             if os.path.exists(mf) and json.load(open(mf, encoding='utf-8')).get('hash') == digest:
                 continue
             sents, files, voice = split(text), [], ''
+            import re as _re
             for old in os.listdir(d):
-                if old.startswith(lang + '-') and old.endswith('.mp3'):
+                if _re.fullmatch(_re.escape(stem) + r'-\d{2}\.mp3', old):
                     os.remove(os.path.join(d, old))
             for i, s in enumerate(sents):
                 audio, voice = tts(s, lang)
-                name = f'{lang}-{i + 1:02d}.mp3'
+                name = f'{stem}-{i + 1:02d}.mp3'
                 open(os.path.join(d, name), 'wb').write(audio)
                 files.append(name)
             json.dump({'hash': digest, 'voice': voice, 'sentences': sents, 'files': files},
                       open(mf, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
             made += 1
-            print(f'{w["id"]} {lang}: {len(files)} clips ({voice})')
+            print(f'{w["id"]} {stem}: {len(files)} clips ({voice})')
     print(f'done, {made} narrations generated')
 
 if __name__ == '__main__':

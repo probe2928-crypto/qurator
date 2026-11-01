@@ -28,23 +28,25 @@ jobs:
             n=$(basename "$f" .mid)
             fluidsynth -ni -g 0.45 -R 1 -C 1 -r 44100 -F /tmp/bgm/$n.wav "$SF" "$f" >/dev/null
             # 앞뒤 무음 자르기 → 소리 크기 맞추기
-            ffmpeg -v error -y -i /tmp/bgm/$n.wav -af "silenceremove=start_periods=1:start_threshold=-55dB,areverse,silenceremove=start_periods=1:start_threshold=-55dB,areverse,loudnorm=I=-20:TP=-2:LRA=11" -ar 44100 /tmp/bgm/$n.norm.wav
+            ffmpeg -v error -y -i /tmp/bgm/$n.wav -af "silenceremove=start_periods=1:start_threshold=-55dB,areverse,silenceremove=start_periods=1:start_threshold=-55dB,areverse,loudnorm=I=-26:TP=-3:LRA=11" -ar 44100 /tmp/bgm/$n.norm.wav
             D=$(ffprobe -v error -show_entries format=duration -of csv=p=0 /tmp/bgm/$n.norm.wav)
-            ST=$(python3 -c "print(max(0,float('$D')-4))")
-            ffmpeg -v error -y -i /tmp/bgm/$n.norm.wav -af "afade=t=in:d=2.5,afade=t=out:st=$ST:d=4" -c:a libmp3lame -b:a 96k audio/bgm/$n.mp3
+            ST=$(python3 -c "print(max(0,float('$D')-5))")
+            ffmpeg -v error -y -i /tmp/bgm/$n.norm.wav -af "afade=t=in:d=4,afade=t=out:st=$ST:d=5" -c:a libmp3lame -b:a 64k audio/bgm/$n.mp3
             echo "$n ${D}s $(du -h audio/bgm/$n.mp3 | cut -f1)"
           done
           python3 - <<'EOF'
           import json, os
           T = {
-            "bach-prelude-c": {"ko": "바흐 · 평균율 1권 전주곡 C장조", "en": "Bach · Prelude in C major, BWV 846"},
-            "corelli-grave": {"ko": "코렐리 · 트리오 소나타 Op.3-1 그라베", "en": "Corelli · Trio Sonata Op.3 No.1, Grave"},
-            "mozart-k155-andante": {"ko": "모차르트 · 현악 사중주 K.155 안단테", "en": "Mozart · String Quartet K.155, Andante"},
-            "haydn-op1-adagio": {"ko": "하이든 · 현악 사중주 Op.1-1 아다지오", "en": "Haydn · String Quartet Op.1 No.1, Adagio"},
+            "bach-prelude-c": {"ko": "바흐 · 평균율 1권 전주곡 C장조", "en": "Bach · Prelude in C major, BWV 846", "group": "baroque"},
+            "corelli-grave": {"ko": "코렐리 · 트리오 소나타 Op.3-1 그라베", "en": "Corelli · Trio Sonata Op.3 No.1, Grave", "group": "baroque"},
+            "mozart-k155-andante": {"ko": "모차르트 · 현악 사중주 K.155 안단테", "en": "Mozart · String Quartet K.155, Andante", "group": "classical"},
+            "haydn-op1-adagio": {"ko": "하이든 · 현악 사중주 Op.1-1 아다지오", "en": "Haydn · String Quartet Op.1 No.1, Adagio", "group": "classical"},
           }
+          amb = json.load(open("scripts/bgm/ambient.json"))
+          for k, v in amb.items(): T[k] = {"ko": "QURATOR 앰비언트 · " + v["ko"], "en": "QURATOR Ambient · " + v["en"], "group": v["group"]}
           files = sorted(f[:-4] for f in os.listdir("audio/bgm") if f.endswith(".mp3"))
-          json.dump({"tracks": [{"id": n, "file": n + ".mp3", "title": T.get(n, {"ko": n, "en": n})} for n in files],
-                     "note": "Public-domain scores, performed and recorded by QURATOR (FluidSynth)."},
+          json.dump({"tracks": [{"id": n, "file": n + ".mp3", "group": T.get(n, {}).get("group", "ambient"), "title": {"ko": T.get(n, {}).get("ko", n), "en": T.get(n, {}).get("en", n)}} for n in files],
+                     "note": "Public-domain scores and QURATOR's own ambient compositions, performed and recorded by QURATOR (FluidSynth)."},
                     open("audio/bgm/list.json", "w"), ensure_ascii=False, indent=1)
           EOF
       - name: Commit
