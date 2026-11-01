@@ -113,7 +113,7 @@ const T = {
   subscribe: ['구독 시작하기', 'Start membership'], inquire: ['문의하기', 'Get in touch'],
   f_eyebrow: ['Why us', 'Why us'],
   f_quote: ['전시를 직접 수십 차례 열어 보며 알게 됐습니다. 관람객이 작품 앞에 머무는 시간은 해설 한 줄에 달려 있다는 것을.', 'After opening dozens of exhibitions ourselves, we learned one thing: how long a visitor stays in front of a work depends on a single line of interpretation.'],
-  f_body: ['미술사를 전공하고, 20회가 넘는 전시를 직접 열고 기획에 참여해 온 운영진이 모든 해설 원고를 감수합니다. 기술보다 해설의 질로 승부합니다.', 'Every text is reviewed by a team trained in art history that has opened and helped organize more than twenty exhibitions. We compete on the quality of interpretation, not gadgets.'],
+  f_body: ['역사학을 전공하고 여러 차례 전시를 직접 열고 기획에 참여해 온 운영진이 모든 해설 원고를 감수합니다. 기술보다 해설의 질로 승부합니다.', 'Every text is reviewed by a team trained in history that has opened and helped organize several exhibitions. We compete on the quality of interpretation, not gadgets.'],
   fa1: ['전시 개최·기획 참여', 'Exhibitions opened & organized'], fa2: ['해설 언어', 'Languages'], fa3: ['열람 가능 작품', 'Works searchable'],
   cta_h: ['다음 전시, 관람객의 휴대폰을 도슨트로.', 'Make every visitor\'s phone your docent.'],
   cta_btn: ['카카오톡으로 상담하기', 'Chat with us on KakaoTalk'],
@@ -1317,7 +1317,7 @@ async function viewFeature(id) {
 const GAL = {
   ko: {
     eyebrow: 'For galleries · 갤러리 도입 안내', h: '관람객의 휴대폰이<br>당신의 <em>도슨트</em>가 됩니다.',
-    lead: '작품 옆 캡션에 QR 하나. 앱도, 장비도, 상주 인력도 없이 모든 작품에 해설·음성·영어 안내가 붙습니다. 해설 원고는 미술사를 전공하고 20회 넘는 전시를 직접 열어 온 운영진이 쓰고 감수합니다.',
+    lead: '작품 옆 캡션에 QR 하나. 앱도, 장비도, 상주 인력도 없이 모든 작품에 해설·음성·영어 안내가 붙습니다. 해설 원고는 역사학을 전공하고 여러 차례 전시를 직접 열어 온 운영진이 쓰고 감수합니다.',
     why: '왜 QR 도슨트인가', whyItems: [
       ['작품 앞에 더 오래', '캡션 한 줄로 끝나던 감상이 작품의 배경, 기법, 감상 포인트까지 이어집니다.'],
       ['외국인 관람객까지', '한국어와 영어 해설이 기본입니다. 영어 해설은 자연스러운 녹음 음성으로 들려 드립니다.'],
@@ -1329,7 +1329,7 @@ const GAL = {
       ['캡션 인쇄', '작품명·작가·연도와 QR이 들어간 캡션(명제표) A4 인쇄 파일과 입구용 전시 안내 QR을 드립니다.'],
       ['전시 운영', '관람객은 카메라로 QR을 찍기만 하면 됩니다. 전시 기간 동안 해설 수정도 바로 반영됩니다.']],
     sample: '실제 캡션과 해설 화면', sampleP: '위 캡션의 QR을 휴대폰 카메라로 찍어 보세요. 관람객이 보게 될 해설 화면이 열립니다.',
-    plans: '요금', who: '운영진', whoP: '미술사를 전공했고, 20회가 넘는 전시를 직접 열거나 기획에 참여해 왔습니다. 전시를 여는 쪽의 사정을 알기에, 일정과 예산에 맞춰 함께 준비합니다.',
+    plans: '요금', who: '운영진', whoP: '역사학을 전공했고, 여러 차례 전시를 직접 열거나 기획에 참여해 왔습니다. 전시를 여는 쪽의 사정을 알기에, 일정과 예산에 맞춰 함께 준비합니다.',
     faq: '자주 묻는 질문', faqItems: [
       ['작품 이미지는 어떻게 하나요?', '갤러리가 보유한 작품 이미지를 받아 해설 화면에 사용합니다. 이미지 없이 해설만 운영할 수도 있습니다.'],
       ['해설을 우리가 직접 써도 되나요?', '네. QR 스튜디오에서 직접 등록하고 수정할 수 있습니다. 원고 작성까지 맡기려면 Premium을 선택하세요.'],
@@ -1339,7 +1339,7 @@ const GAL = {
   },
   en: {
     eyebrow: 'For galleries', h: 'Every visitor\'s phone<br>becomes your <em>docent.</em>',
-    lead: 'One QR on each caption card. No app, no hardware, no extra staff: every work gets interpretation, audio and an English guide. Texts are written and reviewed by a team trained in art history that has opened more than twenty exhibitions.',
+    lead: 'One QR on each caption card. No app, no hardware, no extra staff: every work gets interpretation, audio and an English guide. Texts are written and reviewed by a team trained in history that has opened and organized several exhibitions.',
     why: 'Why a QR docent', whyItems: [
       ['Longer looking', 'A one-line caption becomes the story, technique and what to look for.'],
       ['Ready for international visitors', 'Korean and English as standard, with natural recorded English narration.'],
@@ -1351,7 +1351,7 @@ const GAL = {
       ['Print', 'You receive A4 caption files with QR codes and an entrance QR for the whole show.'],
       ['Open the show', 'Visitors just point their camera. Edits during the show go live immediately.']],
     sample: 'A real caption and guide', sampleP: 'Scan the QR on the caption above with your phone camera to open the page your visitors will see.',
-    plans: 'Pricing', who: 'Who we are', whoP: 'We trained in art history and have opened or helped organize more than twenty exhibitions. We know the organizer\'s side, so we prepare everything around your schedule and budget.',
+    plans: 'Pricing', who: 'Who we are', whoP: 'We trained in history and have opened or helped organize several exhibitions. We know the organizer\'s side, so we prepare everything around your schedule and budget.',
     faq: 'FAQ', faqItems: [
       ['What about artwork images?', 'We use the images you provide; you can also run texts without images.'],
       ['Can we write the texts ourselves?', 'Yes, in QR Studio. Choose Premium if you want us to write them.'],
