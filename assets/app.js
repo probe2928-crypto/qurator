@@ -533,7 +533,7 @@ function renderShell(route) {
   $$('.lang button').forEach(b => b.classList.toggle('on', b.dataset.lang === S.lang));
   document.documentElement.lang = S.lang;
   $('#foot').innerHTML = `<div class="foot-in">
-    <div class="foot-brand">${logoMark()}<div><div class="fw">QURATOR</div><div class="fs">MAISON DE DOCENT · SÉOUL</div></div></div>
+    <div class="foot-brand">${logoMark()}<div><div class="fw">qurator</div><div class="fs">MAISON DE DOCENT · SÉOUL</div></div></div>
     <nav class="foot-links">${PLAY ? '' : `<a href="#/galleries">${S.lang === 'ko' ? '갤러리 도입 안내' : 'For galleries'}</a>`}<a href="#/giving">${t('nav_giving')} · Oriel</a><a href="#/support">${t('nav_support')}</a><a href="${KAKAO}" target="_blank" rel="noopener">${S.lang === 'ko' ? '카카오톡 문의' : 'KakaoTalk'}</a><a href="#/policy/terms">${t('terms')}</a><a href="#/policy/privacy"><b>${t('privacy')}</b></a>${IOS ? '' : `<a href="#/policy/refund">${t('refund')}</a>`}</nav>
   </div>
   <div class="foot-in foot-legal"><span>${esc(t('biz'))}</span><span>© 2026 QURATOR · ${esc(t('foot_note'))}</span></div>`;
@@ -1173,7 +1173,7 @@ async function drawCard(w, lang) {
   const c = document.createElement('canvas'); c.width = W; c.height = H;
   const x = c.getContext('2d');
   const BOD = '"Bodoni Moda", Didot, "Bodoni 72", Georgia, serif', COR = '"Cormorant Garamond", Georgia, serif', KR = '"Noto Serif KR", serif', SANS = '"IBM Plex Sans KR", system-ui, sans-serif';
-  try { await Promise.all([`500 30px ${BOD}`, `italic 400 30px ${COR}`, `600 30px ${KR}`, `400 30px ${KR}`, `500 20px ${SANS}`].map(f => document.fonts.load(f, 'Q가'))); } catch {}
+  try { await Promise.all([`500 30px ${BOD}`, `italic 400 30px ${COR}`, `600 30px ${KR}`, `400 30px ${KR}`, `500 20px ${SANS}`, `700 34px Manrope`].map(f => document.fonts.load(f, 'Q가'))); } catch {}
   const spaced = (str, px, py, gap, align = 'left') => {
     const widths = [...str].map(ch => x.measureText(ch).width);
     const total = widths.reduce((a, b) => a + b, 0) + gap * (str.length - 1);
@@ -1189,12 +1189,11 @@ async function drawCard(w, lang) {
   };
   x.fillStyle = PAPER; x.fillRect(0, 0, W, H);
   // masthead: Didone Q + wordmark | Daily Art
-  x.save(); x.translate(M - 4, 46); x.scale(.4, .4); x.translate(-19.5, -24);
-  { const tail = new Path2D('M93,137 C93,153 96,165 106,171 C116,177 130,177 142,172 L142.5,173.6 C128,181 110,183 99,177 C88,170 86,154 87,137 Z'); x.fillStyle = '#A8361F'; x.fill(tail);
-    const seal = new Path2D(); seal.roundRect(30, 26, 140, 140, 5); x.fill(seal); x.clip(seal);
-    x.fillStyle = PAPER; x.fill(new Path2D('M63,92 A37,49 0 1 0 137,92 A37,49 0 1 0 63,92 Z M78.5,92 A21.5,46 0 1 0 121.5,92 A21.5,46 0 1 0 78.5,92 Z'), 'evenodd'); x.fill(tail); }
+  x.save(); x.translate(M - 4, 48); x.scale(.36, .36); x.translate(-20, -20);
+  { const fr = new Path2D(); fr.roundRect(34, 34, 132, 132, 40); x.lineWidth = 20; x.strokeStyle = INK; x.stroke(fr);
+    x.strokeStyle = '#C2412B'; x.lineCap = 'square'; x.beginPath(); x.moveTo(124, 124); x.lineTo(170, 170); x.stroke(); }
   x.restore();
-  x.fillStyle = INK; x.font = `500 27px ${BOD}`; x.textBaseline = 'alphabetic'; spaced('QURATOR', M + 76, 92, 9);
+  x.fillStyle = INK; x.font = `700 34px Manrope, ${SANS}`; x.textBaseline = 'alphabetic'; spaced('qurator', M + 62, 94, -0.5);
   x.fillStyle = MUTED; x.font = `500 17px ${SANS}`; spaced('DAILY ART', W - M, 90, 5, 'right');
   x.fillStyle = 'rgba(22,20,15,.16)'; x.fillRect(M, 128, W - 2 * M, 1);
   // artwork, contained in a soft mat
@@ -1390,7 +1389,7 @@ function viewGalleries() {
 
 /* ---------------- brand ---------------- */
 let _qm = 0;
-const LOGO_MARK_SVG = '<svg class="mono" xmlns="http://www.w3.org/2000/svg" viewBox="19.5 24 161 161" aria-hidden="true"><defs><clipPath id="__ID__"><rect x="30" y="26" width="140" height="140" rx="5"/></clipPath></defs><path fill="#A8361F" d="M93,137 C93,153 96,165 106,171 C116,177 130,177 142,172 L142.5,173.6 C128,181 110,183 99,177 C88,170 86,154 87,137 Z"/><rect x="30" y="26" width="140" height="140" rx="5" fill="#A8361F"/><g clip-path="url(#__ID__)" fill="#F3EFE6"><path fill-rule="evenodd" d="M63,92 A37,49 0 1 0 137,92 A37,49 0 1 0 63,92 Z M78.5,92 A21.5,46 0 1 0 121.5,92 A21.5,46 0 1 0 78.5,92 Z"/><path d="M93,137 C93,153 96,165 106,171 C116,177 130,177 142,172 L142.5,173.6 C128,181 110,183 99,177 C88,170 86,154 87,137 Z"/></g></svg>';
+const LOGO_MARK_SVG = '<svg class="mono" xmlns="http://www.w3.org/2000/svg" viewBox="20 20 164 164" aria-hidden="true"><rect x="34" y="34" width="132" height="132" rx="40" fill="none" stroke="currentColor" stroke-width="20"/><path d="M124 124 L170 170" stroke="#C2412B" stroke-width="20" stroke-linecap="square"/></svg>';
 const logoMark = () => LOGO_MARK_SVG.split('__ID__').join('qm' + (++_qm));
 
 /* ---------------- membership ---------------- */
