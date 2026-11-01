@@ -1,0 +1,25 @@
+name: Ad assets (artwork images + app UI captures)
+# 광고 영상 재료를 ad-assets 브랜치에 저장: 작품 이미지(퍼블릭 도메인 2000px) + 라이브 사이트 앱 모드 화면 1080×1920
+on: { workflow_dispatch: {} }
+permissions: { contents: write }
+jobs:
+  assets:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with: { node-version: 22 }
+      - name: Artwork images
+        run: python3 scripts/ads/fetch_assets.py
+      - name: App UI captures
+        run: |
+          npm i --no-save playwright@1.56.1 >/dev/null 2>&1
+          npx playwright install --with-deps chromium >/dev/null 2>&1
+          node scripts/ads/capture_ui.mjs
+      - name: Publish to ad-assets branch
+        run: |
+          mkdir -p /tmp/out && cp -r ad-assets/* /tmp/out/
+          git config user.name "qurator-bot"; git config user.email "actions@users.noreply.github.com"
+          git checkout -q --orphan ad-assets && git rm -rqf . && rm -rf ./* && cp -r /tmp/out/* . && printf '# QURATOR ad assets\nCI가 만든 광고 재료. 작품 이미지는 퍼블릭 도메인, ui/는 라이브 사이트 캡처.\n' > README.md
+          git add -A && git commit -qm "광고 재료 $(date -u +%F)" && git push -qf origin ad-assets
