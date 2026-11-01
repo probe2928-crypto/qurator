@@ -44,7 +44,20 @@
     var tr = document.querySelector(".top-right");   // 머리줄 언어 버튼 옆 (아래쪽 음성 플레이어·슬라이드와 겹치지 않게)
     if (tr) tr.insertBefore(b, tr.firstChild); else document.body.appendChild(b);
   });
-  try { P.StatusBar && P.StatusBar.setStyle({ style: "LIGHT" }); } catch (e) {}
+  // 상태바 글자색: 투명 머리줄이 어두운 그림 위에 있을 때(홈 첫 화면)는 밝게, 나머지는 어둡게
+  var lastBar = "";
+  function barStyle() {
+    try {
+      var b = document.body, top = document.getElementById("top");
+      var dark = !!(b && top && b.classList.contains("home") && !top.classList.contains("solid") && !b.classList.contains("menu-open"));
+      var st = dark ? "DARK" : "LIGHT";
+      if (st !== lastBar && P.StatusBar) { lastBar = st; P.StatusBar.setStyle({ style: st }); }
+    } catch (e) {}
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    barStyle();
+    try { var mo = new MutationObserver(barStyle); mo.observe(document.body, { attributes: true, attributeFilter: ["class"] }); var t = document.getElementById("top"); t && mo.observe(t, { attributes: true, attributeFilter: ["class"] }); } catch (e) {}
+  });
   addEventListener("load", function () { setTimeout(function () { try { P.SplashScreen && P.SplashScreen.hide({ fadeOutDuration: 250 }); } catch (e) {} }, 200); });
   if (P.App) P.App.addListener("backButton", function () {
     if (location.hash && location.hash !== "#/" && location.hash !== "#") history.back(); else P.App.exitApp();
