@@ -46,6 +46,7 @@ html,body{margin:0;background:#000;overflow:hidden}
 .end .cta{position:absolute;left:50%;transform:translateX(-50%);background:var(--ink);color:var(--paper);font-family:'Noto Sans KR';font-weight:500;font-size:38px;padding:26px 52px;border-radius:999px;white-space:nowrap}
 .end .credit{position:absolute;left:0;right:0;text-align:center;font-family:'Noto Sans KR';font-weight:500;font-size:23px;color:#8A8275;letter-spacing:.01em}
 /* grid */
+.prog{position:absolute;left:64px;right:64px;display:flex;gap:12px;z-index:5}.prog i{flex:1;height:6px;border-radius:3px;background:rgba(255,255,255,.35);overflow:hidden;box-shadow:0 1px 8px rgba(0,0,0,.25)}.prog b{display:block;height:100%;width:0;background:#fff}
 .tile{position:absolute;border-radius:28px;overflow:hidden;box-shadow:0 24px 50px rgba(22,20,15,.18)}
 .tile img{width:100%;height:100%;display:block}
 </style></head>
@@ -72,7 +73,7 @@ function photo(src,{shade}={}){
   const lay=h('div','layer',st);const ph=h('div','ph',lay);const img=h('img',null,ph);img.src=IMG+src;
   const o={lay,ph,img};
   if(shade==='top'){o.sh=h('div','shade',lay);o.sh.style.cssText+=`top:0;height:${TALL?820:620}px;background:linear-gradient(rgba(0,0,0,.62),rgba(0,0,0,.28) 55%,transparent)`}
-  if(shade==='bottom'||shade==='both'){o.shb=h('div','shade',lay);o.shb.style.cssText+=`bottom:0;height:${TALL?1300:800}px;background:linear-gradient(transparent,rgba(0,0,0,.42) 30%,rgba(0,0,0,.62) 55%,rgba(0,0,0,.7))`}
+  if(shade==='bottom'||shade==='both'){o.shb=h('div','shade',lay);o.shb.style.cssText+=`bottom:0;height:${TALL?1300:800}px;background:linear-gradient(transparent,rgba(0,0,0,.5) 30%,rgba(0,0,0,.68) 55%,rgba(0,0,0,.74))`}
   if(shade==='both'){o.sh=h('div','shade',lay);o.sh.style.cssText+=`top:0;height:${TALL?700:480}px;background:linear-gradient(rgba(0,0,0,.55),transparent)`}
   return o;
 }
@@ -103,7 +104,7 @@ function headline(par,{lines,eyebrow,top,bottom,size=82,color='#fff',lite=true,c
   if(top!=null)b.style.top=top+'px';if(bottom!=null)b.style.bottom=bottom+'px';
   b.style.fontSize=size+'px';b.style.color=color;if(center)b.style.textAlign='center';
   const items=[];if(eyebrow)items.push(h('span','eyebrow',b,eyebrow));
-  lines.forEach(s=>items.push(h('span','ln',b,s)));return {b,items};
+  lines.forEach(s=>{const e=h('span','ln',b,s);if(s.startsWith('〈'))e.style.marginLeft='-.42em';items.push(e)});return {b,items};
 }
 function anim(o,t,tin,tout,dy=30){
   o.items.forEach((el,i)=>{const a=tin+i*.11;const p=out(seg(t,a,a+.6));const q=tout==null?0:io(seg(t,tout-.35,tout));
@@ -125,7 +126,7 @@ function endCard(t0,{cta,credit,hole=true}){
   svg.innerHTML=`<svg viewBox="20 20 164 164" width="${QSZ}" height="${QSZ}" style="overflow:visible"><path id="qr" d="M100 34H126A40 40 0 0 1 166 74V126A40 40 0 0 1 126 166H74A40 40 0 0 1 34 126V74A40 40 0 0 1 74 34Z" fill="none" stroke="#16140F" stroke-width="20" pathLength="1" stroke-dasharray="1 1"/><path id="qt" d="M124 124L170 170" stroke="#C2412B" stroke-width="20" stroke-linecap="square" pathLength="1" stroke-dasharray="1 1"/></svg>`;
   const qr=svg.querySelector('#qr'),qt=svg.querySelector('#qt');
   const word=h('div','word',lay,'qurator');word.style.top=(qy+205)+'px';
-  const tag=h('div','tag',lay,'작품 앞에서, 한 걸음 더.');tag.style.top=(qy+372)+'px';
+  const tag=h('div','tag',lay,'매일 아침, 명작 세 점.');tag.style.top=(qy+372)+'px';
   const c=h('div','cta',lay,cta+'&nbsp;&nbsp;→');c.style.top=(qy+490)+'px';
   const cr=h('div','credit',lay,credit||'');cr.style.top=TALL?'1212px':(H-70)+'px';
   const inner=112*QK,innerR=30*QK;
@@ -175,27 +176,36 @@ function phoneScene(t0,t1,{eyebrow,lines,shots,swaps}){
   },lay);
   scene(t0,t0+.6,()=>{},fr);
 }
+// 하루 세 점 진행 막대 (스토리처럼 01/02/03이 차오름)
+function progress3(segs,hideAt){
+  const pr=h('div','prog',st);pr.style.top=(TALL?292:64)+'px';
+  const bs=segs.map(()=>{const i=h('i',null,pr);return h('b',null,i)});
+  scene(0,hideAt,t=>{segs.forEach(([a,b],k)=>{bs[k].style.width=(seg(t,a,b)*100)+'%'});pr.style.opacity=1-io(seg(t,hideAt-.4,hideAt))},pr);
+}
+// 실제 10/29 하루 구성: 신윤복 〈월하정인〉 · 클림트 〈키스〉 · 렘브란트 〈야경〉
 ADS.daily15=()=>{DUR=15;
-  dailyIntro({kissEnd:3.6,kissHeadOut:3.0});
-  artCard('w-milkmaid.jpg',[[3,1257,1150,1.0],[5.4,1257,1150,1.07]],3.0,5.4,['내일은,','페르메이르.']);
-  artCard('k-inwang.jpg',[[5.0,1150,929,1.0],[7.6,1500,929,1.0]],5.0,7.6,['모레는,','정선의 인왕산.']);
-  phoneScene(7.2,12.0,{eyebrow:'QURATOR',lines:['매일 아침,','새 명작이 도착해요.'],shots:['ko-immerse-w-milkmaid.jpg','ko-immerse2-w-milkmaid.jpg'],swaps:[9.7]});
-  endCard(11.6,{cta:'오늘의 작품 보러 가기',hole:false,credit:'작품 이미지: 퍼블릭 도메인'});
+  const k=photo('w-kiss.jpg',{shade:'bottom'});k.ay=TALL?560:H*.42;
+  const hd=headline(k.lay,{eyebrow:'01 / 03 · 클림트 〈키스〉',lines:['출근길에 받는,','명작 세 점.'],bottom:H-L.capB,size:92});
+  scene(0,3.4,t=>{keyCam(k,[[0,1645,700,1.10],[3.4,1645,700,1.22]],t);anim(hd,t,.05,2.9)},k.lay);
+  artCard('k-wolha.jpg',[[2.9,1180,820,1.0],[5.4,1460,820,1.0]],2.9,5.4,['신윤복,','〈월하정인〉'],'02 / 03');
+  artCard('w-nightwatch.jpg',[[5.0,1560,1450,1.0],[7.6,1560,1450,1.08]],5.0,7.6,['렘브란트,','〈야경〉'],'03 / 03');
+  progress3([[0,2.9],[2.9,5.0],[5.0,7.2]],7.5);
+  phoneScene(7.2,12.0,{eyebrow:'QURATOR',lines:['매일 아침,','명작 세 점이 도착해요.'],shots:['ko-today.jpg','ko-immerse-w-milkmaid.jpg'],swaps:[9.6]});
+  endCard(11.6,{cta:'오늘의 세 점 보러 가기',hole:false,credit:'작품 이미지: 퍼블릭 도메인'});
 };
 ADS.daily30=()=>{DUR=30;
-  // 0–10.6 클림트: 훅 → 감상 모드(해설 + 자막)
   const k=photo('w-kiss.jpg',{shade:'bottom'});k.ay=TALL?560:H*.42;
-  const hd=headline(k.lay,{eyebrow:'DAILY ART',lines:['출근길엔,','클림트 한 점.'],bottom:H-L.capB,size:92});
+  const hd=headline(k.lay,{eyebrow:'01 / 03 · 클림트 〈키스〉',lines:['출근길에 받는,','명작 세 점.'],bottom:H-L.capB,size:92});
   const hd2=headline(k.lay,{eyebrow:'AI DOCENT',lines:['그림을 보면서,','해설을 들어요.'],bottom:H-L.capB+190,size:80});
   const cp=caption(k.lay,['금빛 옷에 감싸인 연인이','꽃이 핀 벼랑 끝에서 입맞춤하는 장면입니다.']);
-  scene(0,10.7,t=>{keyCam(k,[[0,1645,700,1.10],[3.2,1645,700,1.22],[10.7,1600,560,1.62]],t);
-    anim(hd,t,.05,3.0);anim(hd2,t,3.5,10.4);animCap(cp,t,3.6,10.5);},k.lay);
-  artCard('w-milkmaid.jpg',[[10.2,1257,1150,1.0],[12.8,1257,1150,1.07]],10.2,12.8,['내일은,','페르메이르.']);
-  artCard('k-inwang.jpg',[[12.4,1150,929,1.0],[15.0,1500,929,1.0]],12.4,15.0,['모레는,','정선의 인왕산.']);
-  artCard('w-greatwave.jpg',[[14.6,950,1008,1.0],[17.2,1250,1008,1.0]],14.6,17.2,['그다음은,','호쿠사이의 파도.']);
-  phoneScene(16.8,22.4,{eyebrow:'QURATOR',lines:['매일 아침,','새 명작이 도착해요.'],shots:['ko-today.jpg','ko-immerse-w-milkmaid.jpg','ko-immerse2-w-milkmaid.jpg'],swaps:[18.9,20.6]});
+  scene(0,10.9,t=>{keyCam(k,[[0,1645,700,1.10],[3.2,1645,700,1.22],[10.9,1600,560,1.62]],t);
+    anim(hd,t,.05,3.0);anim(hd2,t,3.5,10.4);animCap(cp,t,3.6,10.5)},k.lay);
+  artCard('k-wolha.jpg',[[10.3,1180,820,1.0],[13.9,1460,820,1.0]],10.3,13.9,['신윤복,','〈월하정인〉'],'02 / 03');
+  artCard('w-nightwatch.jpg',[[13.5,1560,1450,1.0],[17.2,1560,1450,1.1]],13.5,17.2,['렘브란트,','〈야경〉'],'03 / 03');
+  progress3([[0,10.3],[10.3,13.5],[13.5,16.8]],17.1);
+  phoneScene(16.8,22.4,{eyebrow:'QURATOR',lines:['매일 아침,','명작 세 점이 도착해요.'],shots:['ko-today.jpg','ko-immerse-w-milkmaid.jpg','ko-immerse2-w-milkmaid.jpg'],swaps:[19.0,20.7]});
   gridScene(22.0,26.6);
-  endCard(26.2,{cta:'오늘의 작품 보러 가기',hole:false,credit:'작품 이미지: 퍼블릭 도메인'});
+  endCard(26.2,{cta:'오늘의 세 점 보러 가기',hole:false,credit:'작품 이미지: 퍼블릭 도메인'});
 };
 function gridScene(t0,t1){
   const lay=h('div','layer',st);lay.style.background='var(--paper)';
