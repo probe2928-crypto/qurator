@@ -1,0 +1,37 @@
+{
+ "tracks": [
+  {
+   "id": "bach-prelude-c",
+   "file": "bach-prelude-c.mp3",
+   "title": {
+    "ko": "바흐 · 평균율 1권 전주곡 C장조",
+    "en": "Bach · Prelude in C major, BWV 846"
+   }
+  },
+  {
+   "id": "corelli-grave",
+   "file": "corelli-grave.mp3",
+   "title": {
+    "ko": "코렐리 · 트리오 소나타 Op.3-1 그라베",
+    "en": "Corelli · Trio Sonata Op.3 No.1, Grave"
+   }
+  },
+  {
+   "id": "haydn-op1-adagio",
+   "file": "haydn-op1-adagio.mp3",
+   "title": {
+    "ko": "하이든 · 현악 사중주 Op.1-1 아다지오",
+    "en": "Haydn · String Quartet Op.1 No.1, Adagio"
+   }
+  },
+  {
+   "id": "mozart-k155-andante",
+   "file": "mozart-k155-andante.mp3",
+   "title": {
+    "ko": "모차르트 · 현악 사중주 K.155 안단테",
+    "en": "Mozart · String Quartet K.155, Andante"
+   }
+  }
+ ],
+ "note": "Public-domain scores, performed and recorded by QURATOR (FluidSynth)."
+}
