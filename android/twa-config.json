@@ -4,8 +4,8 @@
   "name": "QURATOR — Daily Art",
   "launcherName": "QURATOR",
   "startUrl": "/qurator/?src=twa",
-  "appVersionCode": 1,
-  "appVersionName": "1.0.0",
+  "appVersionCode": 2,
+  "appVersionName": "1.0.1",
   "themeColor": "#14120F",
   "navigationColor": "#14120F",
   "backgroundColor": "#F3EFE6"
