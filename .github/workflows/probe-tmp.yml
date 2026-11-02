@@ -13,9 +13,7 @@ jobs:
           UA={'User-Agent':'QURATOR/1.0 (https://probe2928-crypto.github.io/qurator/)'}
           def get(u):
               return urllib.request.urlopen(urllib.request.Request(u,headers=UA),timeout=60).read()
-          Q={'seodang':['김홍도 서당','Kim Hong-do Seodang','Danwon seodang school'],
-             'pajeok':['김득신 파적도','야묘도추','Kim Deuk-sin cat chick'],
-             'nahyeseok':['나혜석 자화상','Na Hye-seok self-portrait','Na Hyeseok']}
+          Q={'seolsong':['이인상 설송도','설송도','Yi In-sang snow pine','Yi Insang pine']}
           out={}
           for k,qs in Q.items():
               res=[]
