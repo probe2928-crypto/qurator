@@ -153,6 +153,8 @@ const T = {
   gv_now: ['지금 단계', 'Now'],
   gv_log: ['기부 기록', 'Giving record'], gv_log_empty: ['아직 기부 기록이 없습니다. 재단 등록 후 첫 기부가 이곳에 기록됩니다.', 'No gifts yet. The first one is recorded here once the foundation is registered.'],
   gv_log_cols: [['날짜', '금액', '내용'], ['Date', 'Amount', 'Note']],
+  gv_how_play: [['QURATOR 수익', 'QURATOR가 서비스와 갤러리 QR 도슨트 프로젝트로 번 수익이 대상입니다.'], ['QURATOR revenue', 'Revenue QURATOR earns from its service and gallery QR docent projects.']],
+  gv_fine_play: ['기부는 QURATOR가 자기 수익에서 직접 하며, 기부금 영수증이나 세액공제 대상이 아닙니다.', 'QURATOR gives from its own revenue; this is not a tax-deductible donation by you.'],
   gv_fine: ['구독료와 갤러리 프로젝트 비용은 기부금이 아니며, 기부금 영수증이나 세액공제 대상이 아닙니다. 기부는 QURATOR가 자기 수익에서 직접 합니다.', 'Subscription and project fees are not donations and are not tax-deductible. QURATOR gives from its own revenue.'],
   play_unlock: ['멤버 코드로 열기', 'Unlock with member code'], play_h: ['멤버 전용 해설', 'Members-only commentary'],
   play_p: ['Daily Art 멤버십은 QURATOR 웹사이트에서 신청할 수 있습니다. 받은 멤버 링크나 코드를 아래에 붙여 넣으면 이용 기간 동안 이 기기에서 열람됩니다.', 'Daily Art membership is available on the QURATOR website. Paste the member link or code you received below and this device stays unlocked for your membership period.'],
@@ -1565,12 +1567,12 @@ async function viewGiving() {
         <figcaption>${S.lang === 'ko' ? '배움에는 빛을, 기부에는 창을.' : 'Light for learning. Glass for giving.'}</figcaption></figure>
     </div></section>
     <div class="wrap give">
-      <section class="give-sec rv"><h2>${t('gv_how')}</h2><div class="gal-grid">${T.gv_how_l[k].map(([h, p], i) => `<div class="gal-cell"><span>${String(i + 1).padStart(2, '0')}</span><h3>${esc(h)}</h3><p>${esc(p)}</p></div>`).join('')}</div></section>
+      <section class="give-sec rv"><h2>${t('gv_how')}</h2><div class="gal-grid">${(PLAY ? [T.gv_how_play[k], ...T.gv_how_l[k].slice(1)] : T.gv_how_l[k]).map(([h, p], i) => `<div class="gal-cell"><span>${String(i + 1).padStart(2, '0')}</span><h3>${esc(h)}</h3><p>${esc(p)}</p></div>`).join('')}</div></section>
       <section class="give-sec rv give-why"><h2>${t('gv_why')}</h2><p>${esc(t('gv_why_p'))}</p></section>
       <section class="give-sec rv"><h2>${t('gv_plan')}</h2><ol class="give-phases">${T.gv_phases[k].map(([when, h, p], i) => `<li class="${i === 0 ? 'now' : ''}"><span class="when">${esc(when)}${i === 0 ? ` · <b>${t('gv_now')}</b>` : ''}</span><b>${esc(h)}</b><p>${esc(p)}</p></li>`).join('')}</ol>
         <p class="give-status">${esc(t('gv_status'))}</p></section>
       <section class="give-sec rv"><h2>${t('gv_log')}</h2>${log.length ? `<table class="give-log"><thead><tr>${cols.map(c => `<th>${c}</th>`).join('')}</tr></thead><tbody>${log.map(r => `<tr><td>${esc(r.date)}</td><td>${esc(r.amount)}</td><td>${esc(pick(r.note || { ko: '', en: '' }))}${r.proof ? ` <a href="${esc(r.proof)}" target="_blank" rel="noopener">↗</a>` : ''}</td></tr>`).join('')}</tbody></table>` : `<p class="give-empty">${t('gv_log_empty')}</p>`}</section>
-      <p class="give-fine">${esc(t('gv_fine'))}</p>
+      <p class="give-fine">${esc(t(PLAY ? 'gv_fine_play' : 'gv_fine'))}</p>
     </div>`;
   reveal();
 }
