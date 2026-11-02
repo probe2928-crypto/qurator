@@ -13,12 +13,12 @@ jobs:
           UA={'User-Agent':'QURATOR/1.0 (https://probe2928-crypto.github.io/qurator/)'}
           def get(u):
               return urllib.request.urlopen(urllib.request.Request(u,headers=UA),timeout=60).read()
-          Q={'seolsong':['이인상 설송도','설송도','Yi In-sang snow pine','Yi Insang pine']}
+          Q={'sehando':['Sehando','세한도','Chusa Kim Jeong-hui Sehando winter'],'seolsong':['Yi In-sang','이인상','Seolsongdo','Snowy pine Yi In-sang']}
           out={}
           for k,qs in Q.items():
               res=[]
               for q in qs:
-                  u='https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=6&prop=imageinfo&iiprop=url|size&iiurlwidth=1600&gsrsearch='+urllib.parse.quote(q)
+                  u='https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url|size&iiurlwidth=1600&gsrsearch='+urllib.parse.quote(q)
                   try:
                       d=json.loads(get(u))
                       for p in d.get('query',{}).get('pages',{}).values():
