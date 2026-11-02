@@ -9,29 +9,17 @@ jobs:
       - run: |
           mkdir -p probe
           python3 - <<'PY'
-          import json, urllib.request, urllib.parse, os
+          import json, urllib.request, urllib.parse
           UA={'User-Agent':'QURATOR/1.0 (https://probe2928-crypto.github.io/qurator/)'}
-          def get(u):
-              return urllib.request.urlopen(urllib.request.Request(u,headers=UA),timeout=60).read()
-          Q={'sehando':['Sehando','세한도','Chusa Kim Jeong-hui Sehando winter'],'seolsong':['Yi In-sang','이인상','Seolsongdo','Snowy pine Yi In-sang']}
+          def get(u): return urllib.request.urlopen(urllib.request.Request(u,headers=UA),timeout=60).read()
           out={}
-          for k,qs in Q.items():
-              res=[]
-              for q in qs:
-                  u='https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=8&prop=imageinfo&iiprop=url|size&iiurlwidth=1600&gsrsearch='+urllib.parse.quote(q)
-                  try:
-                      d=json.loads(get(u))
-                      for p in d.get('query',{}).get('pages',{}).values():
-                          ii=p['imageinfo'][0]; res.append({'title':p['title'],'w':ii['width'],'h':ii['height'],'thumb':ii.get('thumburl')})
-                  except Exception as e: res.append({'err':str(e),'q':q})
-              seen=set(); res2=[]
-              for r in res:
-                  t=r.get('title')
-                  if t and t not in seen: seen.add(t); res2.append(r)
-              out[k]=res2
-              for i,r in enumerate(res2[:6]):
-                  try: open(f'probe/{k}-{i}.jpg','wb').write(get(r['thumb']))
-                  except Exception as e: r['dlerr']=str(e)
+          for lang,t in [('ko','설송도'),('ko','이인상'),('en','Yi Insang')]:
+              u=f'https://{lang}.wikipedia.org/w/api.php?action=query&format=json&prop=images|pageimages&piprop=original&imlimit=50&redirects=1&titles='+urllib.parse.quote(t)
+              try: out[lang+':'+t]=json.loads(get(u))
+              except Exception as e: out[lang+':'+t]=str(e)
+          # 국립중앙박물관 소장품 검색 결과도 확인
+          try: out['emuseum']=get('https://www.emuseum.go.kr/openapi/relic/list?serviceKey=x&name='+urllib.parse.quote('설송도'))[:3000].decode('utf-8','ignore')
+          except Exception as e: out['emuseum']=str(e)
           json.dump(out,open('probe/result.json','w'),ensure_ascii=False,indent=1)
           PY
           git config user.name bot; git config user.email b@x; git add probe; git commit -qm probe; git push -q origin HEAD:tmp-probe-out -f
