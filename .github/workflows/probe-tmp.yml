@@ -1,0 +1,39 @@
+name: tmp probe commons
+on: { push: { branches: [tmp-probe] } }
+permissions: { contents: write }
+jobs:
+  p:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - run: |
+          mkdir -p probe
+          python3 - <<'PY'
+          import json, urllib.request, urllib.parse, os
+          UA={'User-Agent':'QURATOR/1.0 (https://probe2928-crypto.github.io/qurator/)'}
+          def get(u):
+              return urllib.request.urlopen(urllib.request.Request(u,headers=UA),timeout=60).read()
+          Q={'seodang':['김홍도 서당','Kim Hong-do Seodang','Danwon seodang school'],
+             'pajeok':['김득신 파적도','야묘도추','Kim Deuk-sin cat chick'],
+             'nahyeseok':['나혜석 자화상','Na Hye-seok self-portrait','Na Hyeseok']}
+          out={}
+          for k,qs in Q.items():
+              res=[]
+              for q in qs:
+                  u='https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=6&prop=imageinfo&iiprop=url|size&iiurlwidth=1600&gsrsearch='+urllib.parse.quote(q)
+                  try:
+                      d=json.loads(get(u))
+                      for p in d.get('query',{}).get('pages',{}).values():
+                          ii=p['imageinfo'][0]; res.append({'title':p['title'],'w':ii['width'],'h':ii['height'],'thumb':ii.get('thumburl')})
+                  except Exception as e: res.append({'err':str(e),'q':q})
+              seen=set(); res2=[]
+              for r in res:
+                  t=r.get('title')
+                  if t and t not in seen: seen.add(t); res2.append(r)
+              out[k]=res2
+              for i,r in enumerate(res2[:6]):
+                  try: open(f'probe/{k}-{i}.jpg','wb').write(get(r['thumb']))
+                  except Exception as e: r['dlerr']=str(e)
+          json.dump(out,open('probe/result.json','w'),ensure_ascii=False,indent=1)
+          PY
+          git config user.name bot; git config user.email b@x; git add probe; git commit -qm probe; git push -q origin HEAD:tmp-probe-out -f
