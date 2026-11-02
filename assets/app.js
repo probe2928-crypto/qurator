@@ -35,6 +35,12 @@ const PLAY = (() => {
   } catch { return false; }
 })();
 if (PLAY) document.documentElement.classList.add('q-play-app');
+/* Launch benefit (2026-11-02): card auto-pay starts with a 7-day free trial, one per person (worker: trial:<email> flag), first charge on day 8.
+   Bank transfer has no trial. Trial copy shows only where card checkout is open (PAY.live or ?paytest=1) and never in the app builds (PLAY). */
+const TRIAL_DAYS = 7;
+const payTest = () => new URLSearchParams(location.hash.split('?')[1] || '').get('paytest') === '1' || store.get('q_paytest', false);
+const TRIAL = () => !PLAY && (PAY.live || payTest());
+const trialDate = () => new Date(Date.parse(seoulDate() + 'T00:00:00Z') + TRIAL_DAYS * 864e5).toISOString().slice(0, 10);
 /* App Store app = free reader: no purchase, no member code/link unlock (App Review 3.1.1), no mention of buying elsewhere.
    Shows the free daily pick, QR docent pages, features and explore. Members keep using the website. */
 const IOS = !!(APPX && APPX.ios);
@@ -210,7 +216,15 @@ const T = {
   co_renew_h: ['Daily Art 멤버십 연장', 'Renew Daily Art'], co_renew_p: ['연장 신청은 지금 멤버십과 이어서 확인됩니다. 입금이 확인되면 기간을 늘린 새 링크를 카카오톡으로 보내 드립니다.', 'Renewals are matched to your current membership. Once payment is confirmed we send a new link with the extended date on KakaoTalk.'],
   co_month: ['월', 'month'], co_vat: ['부가세 포함 · 언제든 해지 가능', 'VAT included · cancel anytime'], co_test: ['테스트 결제 모드 — 실제 청구되지 않습니다', 'Test mode — no real charge'],
   pay_ok: ['구독이 시작되었습니다', 'Your membership is active'], pay_ok_p: ['아래 멤버 코드를 꼭 저장해 두세요. 다른 기기에서도 이 코드로 열람할 수 있습니다.', 'Keep this member code. Use it to unlock Daily Art on any device.'],
-  pay_test_ok: ['카드 등록이 확인되었습니다 (테스트)', 'Card registered (test)'], pay_test_p: ['결제 서버가 연결되면 이 단계에서 첫 달 결제와 멤버 코드 발급이 자동으로 진행됩니다.', 'Once the billing server is connected, the first charge and member code happen automatically here.'],
+  pay_ok_trial: ['7일 무료 체험이 시작되었습니다', 'Your 7-day free trial has started'],
+  pay_ok_trial_p: ['지금부터 모든 해설이 열립니다. 첫 결제는 {d}에 월 30,000원으로 진행되며, 그 전에 카카오톡으로 해지하시면 요금이 전혀 청구되지 않습니다. 아래 멤버 코드를 꼭 저장해 두세요.', 'Everything is unlocked from now. Your first charge of ₩30,000 is on {d}; cancel on KakaoTalk before then and you pay nothing. Keep the member code below.'],
+  pay_ok_next: ['다음 결제일: {d} (무료 체험은 1인 1회로, 이미 사용하셔서 바로 결제되었습니다)', 'Next charge: {d} (the free trial is once per person and has already been used, so this was charged now)'],
+  pay_test_ok: ['카드 등록이 확인되었습니다 (테스트)', 'Card registered (test)'], pay_test_p: ['결제 서버가 연결되면 이 단계에서 7일 무료 체험이 시작되고 멤버 코드가 바로 발급됩니다. 첫 결제는 {d}에 월 30,000원으로 진행되며, 그 전에 해지하면 요금이 청구되지 않습니다.', 'Once the billing server is connected, your 7-day free trial starts here and your member code is issued right away. The first charge of ₩30,000 is on {d}; cancel before then and you pay nothing.'],
+  tr_price: ['7일 무료, 이후 월 ₩30,000', '7 days free, then ₩30,000/month'],
+  tr_cta: ['7일 무료 체험 시작하기', 'Start 7-day free trial'],
+  tr_card_s: ['토스페이먼츠 · 7일 무료 후 매월 자동 결제', 'Toss Payments · 7 days free, then monthly'],
+  tr_note: ['카드 자동결제로 시작하면 첫 7일은 무료입니다. 첫 결제는 {d}이며, 그 전에 해지하면 요금이 청구되지 않습니다. 무료 체험은 1인 1회입니다.', 'Start with card auto-pay and your first 7 days are free. The first charge is on {d}; cancel before then and you pay nothing. One free trial per person.'],
+  tr_bank: ['계좌이체는 무료 체험 없이 입금 확인 후 바로 시작됩니다.', 'Bank transfer has no free trial; membership starts once payment is confirmed.'],
   pay_fail: ['결제가 완료되지 않았습니다', 'Payment was not completed'], pay_fail_p: ['다시 시도하시거나 카카오톡으로 문의해 주세요.', 'Please try again or contact us on KakaoTalk.'],
   pay_wait: ['결제를 확인하는 중', 'Confirming your payment']
 };
@@ -551,7 +565,7 @@ function viewHome(scrollTo) {
 
   ${PLAY ? '' : `<section class="sec" id="products"><div class="wrap">
     <div class="products rv">
-      ${productCard('p1', '₩30,000', t('per_month'), '#/today', t('cta_today'))}
+      ${productCard('p1', '₩30,000', t('per_month'), '#/today', t('cta_today'), TRIAL() ? t('tr_price') : '')}
       ${productCard('p2', '₩300,000', t('per_show') + ' ' + t('from'), '#/galleries', S.lang === 'ko' ? '갤러리 도입 안내' : 'For galleries')}
     </div>
   </div></section>`}
@@ -589,10 +603,10 @@ function viewHome(scrollTo) {
       <a class="ft-card rv" href="#/features/${esc(f.id)}">${featCover(f)}<div class="ft-meta"><p>${esc(pick(f.dek))}</p><span class="link">${t('ft_read')} <span class="arrow">→</span></span></div></a></div></section>`;
     hydrate(box); reveal(box); });
   if (scrollTo) setTimeout(() => { const el = document.getElementById(scrollTo); if (el) el.scrollIntoView({ behavior: 'smooth' }); }, 60);
-  function productCard(p, price, per, href, cta) {
+  function productCard(p, price, per, href, cta, offer) {
     return `<div class="product"><span class="tag">${t(p + '_tag')}</span><h3>${t(p + '_h')}</h3><p>${t(p + '_p')}</p>
       <ul>${T[p + '_l'][n].map(x => `<li>${esc(x)}</li>`).join('')}</ul>
-      <div class="price"><b>${price}</b><span>${per}</span></div>
+      <div class="price"><b>${price}</b><span>${per}</span></div>${offer ? `<p class="trial-tag">${offer}</p>` : ''}
       <a class="btn btn-ink" style="align-self:flex-start" href="${href}">${cta} <span class="arrow">→</span></a></div>`;
   }
 }
@@ -688,12 +702,12 @@ function ribbonBlock() {
 function pricingBlock() {
   if (PLAY) return '';
   const n = L();
-  const plan = (k, amt, per, cls, btn) => `<div class="plan ${cls}"><h4>${t(k)}</h4><div class="amt">${amt}<small>${per}</small></div>
+  const plan = (k, amt, per, cls, btn, offer) => `<div class="plan ${cls}"><h4>${t(k)}</h4><div class="amt">${amt}<small>${per}</small></div>${offer ? `<p class="trial-tag">${offer}</p>` : ''}
     <ul>${T[k + 'l'][n].map(x => `<li>${esc(x)}</li>`).join('')}</ul>${btn}</div>`;
   return `<section class="sec" id="pricing"><div class="wrap">
     <div class="sec-head rv"><div><p class="eyebrow">${t('pr_eyebrow')}</p><h2>${t('pr_h')}</h2></div></div>
     <div class="pricing rv">
-      ${plan('pl1', '₩30,000', t('per_month'), 'feat', `<button class="btn btn-seal" data-act="subscribe">${t('subscribe')}</button>`)}
+      ${plan('pl1', '₩30,000', t('per_month'), 'feat', `<button class="btn btn-seal" data-act="subscribe">${TRIAL() ? t('tr_cta') : t('subscribe')}</button>`, TRIAL() ? t('tr_price') : '')}
       ${plan('pl2', '₩300,000', t('per_show'), '', `<a class="btn btn-line" href="${KAKAO}" target="_blank" rel="noopener">${t('inquire')}</a>`)}
       ${plan('pl3', '₩1,000,000', t('per_show'), '', `<a class="btn btn-line" href="${KAKAO}" target="_blank" rel="noopener">${t('inquire')}</a>`)}
       ${plan('pl4', '₩99,000', t('per_month'), '', `<a class="btn btn-line" href="${KAKAO}" target="_blank" rel="noopener">${t('inquire')}</a>`)}
@@ -736,7 +750,7 @@ function dayCard(w, i, open) {
         <a class="btn btn-ink" href="#/w/${w.id}">♪ ${t('open_v')} <span class="arrow">→</span></a>`
       : `<div class="locked"><div class="fade commentary" lang="en"><p>${esc(first)}</p></div>
         <div class="lock-box"><h4>${t('locked_h')}</h4><p>${t('locked_p')}</p>
-        <button class="btn btn-seal" data-act="subscribe">${PLAY ? t('play_unlock') : `${t('subscribe')} — ₩30,000${t('per_month')}`}</button></div></div>`}
+        <button class="btn btn-seal" data-act="subscribe">${PLAY ? t('play_unlock') : TRIAL() ? t('tr_cta') : `${t('subscribe')} — ₩30,000${t('per_month')}`}</button>${TRIAL() ? `<p class="trial-tag">${t('tr_price')}</p>` : ''}</div></div>`}
     </div></article>`;
 }
 function viewArchive() {
@@ -744,7 +758,7 @@ function viewArchive() {
   const today = seoulDate(), days = [];
   for (let i = 0; i < 21; i++) { const d = new Date(Date.parse(today + 'T00:00:00Z') - i * 864e5).toISOString().slice(0, 10); days.push(d); }
   app().innerHTML = `<section class="phead"><div class="wrap"><p class="eyebrow">Daily Art</p><h1>${t('archive')}</h1>
-    <p>${S.member ? t('member_on') : t('locked_p')}</p>${S.member ? '' : `<button class="btn btn-seal" style="margin-top:20px" data-act="subscribe">${PLAY ? t('play_unlock') : t('subscribe')}</button>`}</div></section>
+    <p>${S.member ? t('member_on') : t('locked_p')}</p>${S.member ? '' : `<button class="btn btn-seal" style="margin-top:20px" data-act="subscribe">${PLAY ? t('play_unlock') : TRIAL() ? t('tr_cta') : t('subscribe')}</button>${!PLAY && TRIAL() ? `<p class="trial-tag">${t('tr_price')}</p>` : ''}`}</div></section>
     <div class="wrap" style="padding-bottom:90px">${days.map(d => {
       const f = fmtDate(d, S.lang);
       return `<div style="border-top:1px solid var(--line);padding:26px 0">
@@ -1588,13 +1602,13 @@ const POLICY = {
   terms: ['이용약관', [
     ['제1조 (목적)', '이 약관은 QURATOR(이하 "회사")가 제공하는 Daily Art 구독 서비스와 QR 도슨트 서비스(이하 "서비스")의 이용 조건과 절차, 회사와 이용자의 권리·의무를 정합니다.'],
     ['제2조 (서비스 내용)', 'Daily Art는 매일 선정된 미술 작품의 해설(영어·한국어), 음성 해설, 감상 포인트를 제공하는 월 구독 서비스입니다. QR 도슨트는 전시 작품별 해설 페이지와 QR 캡션 인쇄 파일을 제공하는 기업·기관용 서비스입니다.'],
-    ['제3조 (구독과 결제)', 'Daily Art 구독료는 월 30,000원(부가세 포함)이며, 구독 신청 시 안내된 방법으로 결제합니다. 카드 자동결제를 선택한 경우 최초 결제일을 기준으로 매월 같은 날 자동 결제됩니다.'],
+    ['제3조 (구독과 결제)', 'Daily Art 구독료는 월 30,000원(부가세 포함)이며, 구독 신청 시 안내된 방법으로 결제합니다. 카드 자동결제를 선택한 경우 최초 결제일을 기준으로 매월 같은 날 자동 결제됩니다. 카드 자동결제로 처음 구독하는 경우 7일 무료 체험이 제공되며, 체험 기간에도 모든 서비스를 이용할 수 있습니다. 체험 기간이 끝난 다음 날(가입일로부터 8일째)에 첫 구독료가 자동 결제되고, 이후 그날을 기준으로 매월 같은 날 결제됩니다. 체험 기간 중 언제든 해지할 수 있으며, 첫 결제일 전에 해지하면 요금이 청구되지 않습니다. 무료 체험은 1인(이메일 기준) 1회만 제공되며, 이미 체험을 이용한 경우 신청 즉시 첫 구독료가 결제됩니다. 계좌이체 결제에는 무료 체험이 적용되지 않습니다.'],
     ['제4조 (해지)', '이용자는 언제든 고객센터(카카오톡)를 통해 해지할 수 있으며, 해지 시 다음 결제일부터 요금이 청구되지 않고 이미 결제한 기간이 끝날 때까지 서비스를 이용할 수 있습니다.'],
     ['제5조 (청약철회 및 환불)', '청약철회와 환불은 「전자상거래 등에서의 소비자보호에 관한 법률」과 회사의 환불·해지 규정에 따릅니다.'],
     ['제6조 (콘텐츠의 권리)', '서비스에서 제공하는 해설 원고의 저작권은 회사에 있으며, 이용자는 개인적인 감상 목적 외에 복제·배포할 수 없습니다. 작품 이미지는 각 소장처와 위키미디어 커먼즈의 공개 라이선스에 따라 표시됩니다.'],
     ['제7조 (멤버 코드)', '멤버 코드는 구독자 본인만 사용할 수 있으며, 타인과 공유하거나 판매하는 경우 이용이 제한될 수 있습니다.'],
     ['제8조 (서비스 변경 및 중단)', '회사는 운영상·기술상 필요에 따라 서비스 내용을 변경할 수 있으며, 이용자에게 불리한 변경은 시행 7일 전까지 공지합니다.'],
-    ['부칙', '이 약관은 2026년 11월 1일부터 시행합니다.']]],
+    ['부칙', '이 약관은 2026년 11월 1일부터 시행합니다. (2026년 11월 2일 개정: 제3조 7일 무료 체험 추가)']]],
   privacy: ['개인정보처리방침', [
     ['1. 수집하는 항목', '구독 신청 시 이름, 이메일 주소를 수집합니다. 카드 결제 정보는 결제대행사(토스페이먼츠)가 직접 처리하며 회사는 카드 번호를 저장하지 않습니다.'],
     ['2. 이용 목적', '구독 신청 확인, 멤버 코드 발송, 결제 및 정기결제 처리, 해지·환불 처리, 고객 문의 응대에 이용합니다.'],
@@ -1606,7 +1620,7 @@ const POLICY = {
     ['8. 개인정보 보호책임자', 'QURATOR 고객센터 (카카오톡 오픈채팅)'],
     ['부칙', '이 방침은 2026년 11월 1일부터 시행합니다.']]],
   refund: ['환불·해지 규정', [
-    ['1. 해지', '언제든 카카오톡 고객센터로 해지를 요청할 수 있습니다. 해지하면 다음 결제일부터 청구되지 않으며, 이미 결제한 기간이 끝날 때까지 계속 이용할 수 있습니다.'],
+    ['1. 해지', '언제든 카카오톡 고객센터로 해지를 요청할 수 있습니다. 해지하면 다음 결제일부터 청구되지 않으며, 이미 결제한 기간이 끝날 때까지 계속 이용할 수 있습니다. 카드 자동결제 7일 무료 체험 중에 해지하면 요금이 전혀 청구되지 않으며, 체험 기간이 끝날 때까지 이용할 수 있습니다.'],
     ['2. 7일 이내 전액 환불', '결제일로부터 7일 이내이고 멤버 전용 해설(오늘의 작품 두 번째·세 번째 작품, 아카이브)을 열람하지 않은 경우 전액 환불합니다.'],
     ['3. 열람 후 환불', '디지털 콘텐츠의 특성상 멤버 전용 해설을 열람한 이후에는 청약철회가 제한될 수 있습니다. 다만 서비스 장애 등 회사 사정으로 이용하지 못한 경우 이용하지 못한 기간만큼 환불합니다.'],
     ['4. 환불 방법', '카드 결제는 결제 취소로, 계좌이체는 이용자가 알려 준 계좌로 영업일 기준 3일 이내에 환불합니다.'],
@@ -1616,7 +1630,7 @@ const POLICY = {
 function viewPolicy(kind) {
   const P = POLICY[kind] || POLICY.terms;
   app().innerHTML = `<section class="phead"><div class="wrap"><p class="eyebrow"><a href="#/support">${t('nav_support')}</a> / Policy</p><h1>${P[0]}</h1>
-    ${S.lang === 'en' ? '<p>This policy is provided in Korean, and the Korean text governs. Contact us on KakaoTalk with any questions.</p>' : ''}</div></section>
+    ${S.lang === 'en' ? `<p>This policy is provided in Korean, and the Korean text governs. Contact us on KakaoTalk with any questions.</p>${kind === 'terms' || kind === 'refund' ? '<p>Free trial (Terms, Article 3): new card auto-pay subscriptions start with a 7-day free trial with full access. The first ₩30,000 charge is made automatically on day 8, then monthly on that date. Cancel anytime before the first charge and you pay nothing. One free trial per person (by email); bank transfer has no trial.</p>' : ''}` : ''}</div></section>
     <div class="wrap policy">${P[1].map(([h, b]) => `<section><h3>${esc(h)}</h3><p>${esc(b)}</p></section>`).join('')}
     <p class="note">QURATOR · <a href="${KAKAO}" target="_blank" rel="noopener">${S.lang === 'ko' ? '카카오톡 고객센터' : 'KakaoTalk support'}</a></p></div>`;
 }
@@ -1625,9 +1639,9 @@ function viewPolicy(kind) {
 function loadScript(src) { return new Promise((res, rej) => { if ($$(`script[src="${src}"]`).length) return res(); const s = document.createElement('script'); s.src = src; s.onload = res; s.onerror = rej; document.head.appendChild(s); }); }
 const payBase = () => location.origin + location.pathname;
 function viewCheckout() {
-  const test = new URLSearchParams(location.hash.split('?')[1] || '').get('paytest') === '1' || store.get('q_paytest', false);
+  const test = payTest();
   if (test) store.set('q_paytest', true);
-  const cardOn = PAY.live || test, n = L();
+  const cardOn = PAY.live || test, n = L(), trial = TRIAL();
   // renewal: membership ends within 5 days or has ended → the order is tagged so the ledger can match it
   const renew = !!(S.memberEnded || (S.member && S.memberExp && daysLeft(S.memberExp) <= 5));
   const po = store.get('q_order', null);
@@ -1639,7 +1653,9 @@ function viewCheckout() {
       <div class="co-mark">${logoMark()}</div>
       <p class="eyebrow">Daily Art Membership</p>
       <div class="co-amt">₩${PAY.price.toLocaleString()}<small> / ${t('co_month')}</small></div>
+      ${trial ? `<p class="trial-tag" id="coTrialTag">${t('tr_price')}</p>` : ''}
       <p class="co-vat">${t('co_vat')}</p>
+      ${trial ? `<p class="co-trial" id="coTrial">${esc(t('tr_note').replace('{d}', trialDate()))}</p>` : ''}
       <ul>${T.m_l[n].map(x => `<li>${esc(x)}</li>`).join('')}</ul>
       ${giveNote('give-note-co')}
     </aside>
@@ -1648,14 +1664,20 @@ function viewCheckout() {
       <div class="field"><label>${t('co_name')}</label><input name="name" autocomplete="name" value="${esc((po && po.name) || '')}" required></div>
       <div class="field"><label>${t('co_email')}</label><input name="email" type="email" autocomplete="email" value="${esc((po && po.email) || '')}" required></div>
       <p class="co-lab">${t('co_method')}</p>
-      <label class="co-opt ${cardOn ? '' : 'off'}"><input type="radio" name="m" value="card" ${cardOn ? 'checked' : 'disabled'}><span><b>${t('co_card')}</b><small>${t('co_card_s')}</small></span>${cardOn ? '' : `<em>${t('co_soon')}</em>`}</label>
+      <label class="co-opt ${cardOn ? '' : 'off'}"><input type="radio" name="m" value="card" ${cardOn ? 'checked' : 'disabled'}><span><b>${t('co_card')}</b><small>${t(trial ? 'tr_card_s' : 'co_card_s')}</small></span>${cardOn ? '' : `<em>${t('co_soon')}</em>`}</label>
       <label class="co-opt"><input type="radio" name="m" value="bank" ${cardOn ? '' : 'checked'}><span><b>${t('co_bank')}</b><small>${t('co_bank_s')}</small></span></label>
       <label class="co-agree"><input type="checkbox" name="agree"><span>${t('co_agree')} <a href="#/policy/terms" target="_blank">${t('terms')}</a> · <a href="#/policy/privacy" target="_blank">${t('privacy')}</a> · <a href="#/policy/refund" target="_blank">${t('refund')}</a></span></label>
       <button class="btn btn-ink co-btn" type="submit" id="coBtn"></button>
     </form>
   </div>`;
   const f = $('#coForm'), btn = $('#coBtn');
-  const label = () => { const m = f.m.value; btn.innerHTML = `₩${PAY.price.toLocaleString()} · ${m === 'card' ? t('co_pay') : t('co_apply')} <span class="arrow">→</span>`; };
+  // card + trial → no amount on the button (nothing is charged today); bank transfer always pays the full month, no trial
+  const label = () => {
+    const m = f.m.value;
+    btn.innerHTML = m === 'card' && trial ? `${t('tr_cta')} <span class="arrow">→</span>` : `₩${PAY.price.toLocaleString()} · ${m === 'card' ? t('co_pay') : t('co_apply')} <span class="arrow">→</span>`;
+    const tn = $('#coTrial'); if (tn) tn.textContent = m === 'card' ? t('tr_note').replace('{d}', trialDate()) : t('tr_bank');
+    const tg = $('#coTrialTag'); if (tg) tg.hidden = m !== 'card';
+  };
   f.onchange = label; label();
   if (pending) $('#coRes').onclick = () => showOrder(pending.id, pending);
   f.onsubmit = async e => {
@@ -1707,13 +1729,16 @@ async function viewPayResult(q) {
   const ok = q.get('pay') === 'success', pend = store.get('q_pending', {});
   const box = c => { app().innerHTML = `<div class="wrap checkout"><div class="co-done"><div class="co-mark">${logoMark()}</div>${c}</div></div>`; };
   if (!ok) { box(`<h2>${t('pay_fail')}</h2><p>${esc(q.get('message') || '')}</p><p>${t('pay_fail_p')}</p><div class="co-acts"><a class="btn btn-ink" href="#/checkout">${t('co_pay')}</a><a class="btn btn-kakao" href="${KAKAO}" target="_blank" rel="noopener">${t('co_open')}</a></div>`); return; }
-  if (!PAY.apiBase) { box(`<p class="eyebrow">Toss Payments</p><h2>${t('pay_test_ok')}</h2><p>${t('pay_test_p')}</p><div class="co-acts"><a class="btn btn-ink" href="#/today">${t('nav_today')} →</a></div>`); return; }
+  if (!PAY.apiBase) { box(`<p class="eyebrow">Toss Payments</p><h2>${t('pay_test_ok')}</h2><p>${esc(t('pay_test_p').replace('{d}', trialDate()))}</p><div class="co-acts"><a class="btn btn-ink" href="#/today">${t('nav_today')} →</a></div>`); return; }
   box(`<p class="note"><span class="spinner"></span> ${t('pay_wait')}</p>`);
   try {
     const r = await fetch(PAY.apiBase + '/billing/confirm', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ authKey: q.get('authKey'), customerKey: q.get('customerKey') || pend.customerKey, name: pend.name, email: pend.email, plan: pend.plan || 'daily' }) }).then(r => r.json());
     if (!r.code) throw new Error(r.error || 'error');
     activateMember(r.code); store.set('q_pending', null);
-    box(`<p class="eyebrow">Welcome</p><h2>${t('pay_ok')}</h2><div class="co-id">${esc(r.code)}</div><p>${t('pay_ok_p')}</p><div class="co-acts"><a class="btn btn-ink" href="#/today">${t('nav_today')} →</a></div>`);
+    const nx = esc(r.next || '');
+    box(r.trial
+      ? `<p class="eyebrow">Welcome</p><h2>${t('pay_ok_trial')}</h2><div class="co-id">${esc(r.code)}</div><p>${esc(t('pay_ok_trial_p')).replace('{d}', `<b>${nx}</b>`)}</p><div class="co-acts"><a class="btn btn-ink" href="#/today">${t('nav_today')} →</a><a class="btn btn-kakao" href="${KAKAO}" target="_blank" rel="noopener">${t('co_open')}</a></div>`
+      : `<p class="eyebrow">Welcome</p><h2>${t('pay_ok')}</h2><div class="co-id">${esc(r.code)}</div><p>${t('pay_ok_p')}</p>${nx ? `<p class="note">${esc(t('pay_ok_next')).replace('{d}', nx)}</p>` : ''}<div class="co-acts"><a class="btn btn-ink" href="#/today">${t('nav_today')} →</a></div>`);
   } catch (e) { box(`<h2>${t('pay_fail')}</h2><p>${esc(e.message)}</p><p>${t('pay_fail_p')}</p><div class="co-acts"><a class="btn btn-kakao" href="${KAKAO}" target="_blank" rel="noopener">${t('co_open')}</a></div>`); }
 }
 
@@ -1725,9 +1750,9 @@ function openSubscribe() {
     <p class="eyebrow" style="color:var(--seal)">Membership</p><h3>${t('play_h')}</h3><p>${t('play_p')}</p>
     <form class="code-row" id="codeF"><input id="code" placeholder="${t('m_code')}" autocomplete="off"><button class="btn btn-line btn-sm" type="submit">${t('m_apply')}</button></form></div>` : `<div class="modal-box" role="dialog" aria-modal="true"><button class="close" aria-label="close">×</button>
     <p class="eyebrow" style="color:var(--seal)">Membership</p><h3>${t('m_h')}</h3><p>${t('m_p')}</p>
-    <div class="amt">₩30,000<small> ${t('per_month')}</small></div>
+    <div class="amt">₩30,000<small> ${t('per_month')}</small></div>${TRIAL() ? `<p class="trial-tag">${t('tr_price')}</p>` : ''}
     <ul>${T.m_l[n].map(x => `<li>${esc(x)}</li>`).join('')}</ul>
-    <a class="btn btn-ink" style="width:100%;justify-content:center" href="#/checkout">${t('m_cta')} →</a>
+    <a class="btn btn-ink" style="width:100%;justify-content:center" href="#/checkout">${TRIAL() ? t('tr_cta') : t('m_cta')} →</a>
     <form class="code-row" id="codeF"><input id="code" placeholder="${t('m_code')}" autocomplete="off"><button class="btn btn-line btn-sm" type="submit">${t('m_apply')}</button></form></div>`;
   m.hidden = false;
   m.onclick = e => { if (e.target === m || e.target.classList.contains('close')) m.hidden = true; };
