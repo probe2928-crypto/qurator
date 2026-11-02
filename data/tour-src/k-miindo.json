@@ -2,8 +2,8 @@
  "id": "k-miindo",
  "segs": [
   {
-   "ko": "비단 위에 한 여인이 홀로 서 있습니다. 왕이나 사대부의 초상이 대부분이던 조선에서, 신윤복은 이름 모를 이 여인을 실물에 가까운 크기로 그렸습니다. 세로가 114센티미터를 넘는 큰 화폭입니다.",
-   "en": "A single woman stands alone on silk. In a Joseon world where portraits were reserved for kings and scholar-officials, Shin Yun-bok painted this unnamed woman at nearly life-size scale, on a scroll more than 114 centimetres tall.",
+   "ko": "비단 위에 한 여인이 홀로 서 있습니다. 왕이나 사대부의 초상이 대부분이던 조선에서, 신윤복은 이름 모를 이 여인을 큼직한 화폭에 전신으로 그렸습니다. 세로가 114센티미터를 넘는 큰 화폭입니다.",
+   "en": "A single woman stands alone on silk. In a Joseon world where portraits were reserved for kings and scholar-officials, Shin Yun-bok painted this unnamed woman on a large hanging scroll more than 114 centimetres tall.",
    "x": 0.5,
    "y": 0.5,
    "z": 1.0,
@@ -66,8 +66,8 @@
    "tilt": 0
   },
   {
-   "ko": "신윤복 이전에는 이렇게 여인 한 사람을 전신으로 그린 그림이 거의 남아 있지 않습니다. 이 그림은 이후 19세기 미인도의 본보기가 되었고, 지금은 보물로 지정되어 있습니다.",
-   "en": "Before Shin Yun-bok, almost no paintings survive that show a single woman full-length, as the sole subject. This work became the model for nineteenth-century portraits of beauties that followed, and today it is designated a Treasure of Korea.",
+   "ko": "이렇게 여인 한 사람만 전신으로 크게 그린 그림은 조선 회화에서 매우 드뭅니다. 이 그림은 조선 후기 미인도의 대표작으로 꼽히며, 2018년 보물로 지정되었습니다.",
+   "en": "Full-length paintings of a single woman as the sole subject are very rare in Joseon art. This work is regarded as the masterpiece of late Joseon portraits of beauties, and it was designated a Treasure in 2018.",
    "x": 0.45,
    "y": 0.45,
    "z": 1.3,

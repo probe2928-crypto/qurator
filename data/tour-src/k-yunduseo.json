@@ -42,8 +42,8 @@
    "tilt": 0
   },
   {
-   "ko": "양옆의 구레나룻과 수염을 가까이 보겠습니다. 가는 붓으로 한 올 한 올 그어 올려, 불꽃처럼 사방으로 뻗어 나갑니다. 친구 이하곤은 바람에 날리는 그의 긴 수염을 시로 남겼다고 전합니다.",
-   "en": "Look closely at the side whiskers and beard. Each hair is drawn one fine stroke at a time, so the beard bursts outward like a flame. His friend Yi Ha-gon is said to have written a poem about his long beard blowing in the wind.",
+   "ko": "양옆의 구레나룻과 수염을 가까이 보겠습니다. 가는 붓으로 한 올 한 올 그어 올려, 불꽃처럼 사방으로 뻗어 나갑니다. 친구 이하곤은 이 초상을 두고 군자다운 풍모라는 평을 남겼습니다.",
+   "en": "Look closely at the side whiskers and beard. Each hair is drawn one fine stroke at a time, so the beard bursts outward like a flame. His friend Yi Ha-gon wrote an appraisal of the portrait, praising the sitter as a sincere gentleman.",
    "x": 0.23,
    "y": 0.45,
    "z": 2.2,
@@ -59,7 +59,7 @@
   },
   {
    "ko": "아래쪽 빈 여백에서도 옷깃과 옷 주름이 확인되었습니다. 1937년 조선총독부가 펴낸 사료집 도판에도 옷깃이 남아 있었습니다. 300년 가까운 세월 동안 옅은 선과 채색이 바래 얼굴만 남은 것입니다.",
-   "en": "In the empty space below, the collar and folds of a robe were found as well. A 1937 photograph in a colonial-era survey still showed the collar. Over nearly three hundred years the lighter lines and colours simply faded away, and fade is the right word: only the face remained.",
+   "en": "In the empty space below, the collar and folds of a robe were found as well. A 1937 plate published by the colonial government still showed the collar. Over nearly three hundred years the lighter lines and colours faded away, and only the face remained.",
    "x": 0.5,
    "y": 0.85,
    "z": 1.8,
@@ -82,8 +82,8 @@
    "tilt": 0
   },
   {
-   "ko": "윤두서는 거울에 비친 자신을 들여다보며 이 얼굴을 그렸다고 전해집니다. 한 걸음 물러나 그의 눈을 다시 마주해 보십시오. 300년 전의 선비는 거울 속 자신에게 어떤 질문을 던지고 있었을까요.",
-   "en": "Yun is said to have painted this face while studying his own reflection in a mirror. Step back one last time and meet his gaze again. What question was this scholar asking himself in that mirror, three hundred years ago?",
+   "ko": "윤두서는 거울에 비친 자신을 들여다보며 이 얼굴을 그렸을 것으로 추정됩니다. 한 걸음 물러나 그의 눈을 다시 마주해 보십시오. 300년 전의 선비는 거울 속 자신에게 어떤 질문을 던지고 있었을까요.",
+   "en": "Yun is thought to have painted this face while studying his own reflection in a mirror. Step back one last time and meet his gaze again. What question was this scholar asking himself in that mirror, three hundred years ago?",
    "x": 0.5,
    "y": 0.4,
    "z": 1.1,
