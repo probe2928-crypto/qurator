@@ -4,6 +4,7 @@ data/works.json 의 text.ko/en(단락을 이어 붙인 3분 해설)과 tour(카�
 사용: python3 scripts/tour.py <단락 폴더> [--check]   (--check 는 검사만, 고치지 않음)
 기준: ko 1,000~1,150자(약 3분), en 2,300~2,700자, 단락 9~12개, 첫 단락 z=1(전체)·마지막 z≈1, words[].en 단어가 en에 포함."""
 import json, os, re, sys
+sys.dont_write_bytecode = True  # narrate를 불러와도 __pycache__를 건드리지 않게
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, 'scripts'))
 from narrate import split  # 음성 파일과 같은 문장 나누기
