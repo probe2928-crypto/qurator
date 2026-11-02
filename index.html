@@ -27,6 +27,7 @@
 <link rel="icon" href="assets/logo-mark.svg" type="image/svg+xml">
 <link rel="alternate icon" href="assets/icon-192.png">
 <link rel="apple-touch-icon" href="assets/icon-192.png">
+<meta name="apple-itunes-app" content="app-id=6829093287">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -55,5 +56,7 @@
 <script src="assets/app.js?v=38"></script>
 <script>/* partner band: web only — the Google Play app shows no external promotion */
 if (!document.documentElement.classList.contains('q-play-app')) { var nb = document.createElement('script'); nb.src = 'https://probe2928-crypto.github.io/chainbrief/network.js'; nb.dataset.site = 'qurator'; nb.defer = true; document.body.appendChild(nb); }</script>
+<script>/* app install prompt: web only, off until the iOS app is live (switch in chainbrief/public/app-install.js) */
+if (!document.documentElement.classList.contains('q-play-app') && !window.QURATOR_APP) { var ai = document.createElement('script'); ai.src = 'https://probe2928-crypto.github.io/chainbrief/app-install.js'; ai.dataset.app = 'qurator'; ai.defer = true; document.body.appendChild(ai); }</script>
 </body>
 </html>

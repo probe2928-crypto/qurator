@@ -19,6 +19,7 @@ const m = html.match(/<script src="assets\/app\.js\?v=\d+"><\/script>/);
 if (!m) throw new Error("사이트 index.html에서 app.js 스크립트를 못 찾음");
 html = html.replace(m[0], '<script src="qurator-app.js"></script>' + m[0]);
 html = html.replace('<link rel="manifest" href="manifest.webmanifest">', "");
+html = html.replace(/<meta name="apple-itunes-app"[^>]*>\n?/, "");   // 웹 전용 스마트 앱 배너는 앱 안에서 뺌
 html = html.replace("</head>", '<link rel="stylesheet" href="qurator-app.css">\n</head>');
 fs.writeFileSync(path.join(OUT, "index.html"), html);
 const size = (d) => fs.readdirSync(d, { withFileTypes: true }).reduce((a, e) => a + (e.isDirectory() ? size(path.join(d, e.name)) : fs.statSync(path.join(d, e.name)).size), 0);
