@@ -98,7 +98,7 @@ const T = {
   scan_label: ['Scan · 음성 해설', 'Scan for audio guide'],
   p1_tag: ['For you · 개인 구독', 'For you · Membership'], p1_h: ['Daily Art — 매일 세 점의 명작', 'Daily Art — three masterpieces a day'],
   p1_p: ['미술사 기반으로 엄선한 작품 3점을 매일 아침 영어 해설과 한국어 번역, 음성으로 받아 보세요. 미술 교양과 영어를 함께.', 'Three works chosen with an art historian\'s eye, every morning, with English commentary, Korean translation and audio. Art and English, together.'],
-  p1_l: [['매일 3점 · 영문 해설 + 한국어 번역', '감상 포인트 3가지와 오늘의 영어 표현', '원어민 음성으로 듣는 해설', '지난 작품 아카이브 무제한'], ['3 works daily · English commentary + Korean', 'Three things to look for, plus words to know', 'Listen to every commentary', 'Unlimited archive']],
+  p1_l: [['매일 3점 · 영문 해설 + 한국어 번역', '감상 포인트 3가지와 오늘의 영어 표현', 'AI 도슨트 음성으로 듣는 해설', '지난 작품 아카이브 무제한'], ['3 works daily · English commentary + Korean', 'Three things to look for, plus words to know', 'Listen to every commentary', 'Unlimited archive']],
   p2_tag: ['For galleries · B2B', 'For galleries · B2B'], p2_h: ['QR 도슨트 — 앱 없는 오디오 가이드', 'QR Docent — the audio guide with no app'],
   p2_p: ['작품 옆 라벨에 QR 하나. 관람객의 휴대폰이 곧 도슨트가 됩니다. 해설 원고 작성부터 라벨 인쇄까지 한 번에.', 'One QR on each wall label, and every visitor\'s phone becomes a docent. From writing the texts to printing the labels.'],
   p2_l: [['작품별 해설 페이지 · 텍스트/음성', '한국어 · 영어 기본, 다국어 확장', 'QR 캡션(명제표) 인쇄 파일 자동 생성', '전시 입구용 전체 안내 QR'], ['A page per artwork, text and audio', 'Korean and English, more on request', 'Print-ready QR caption cards', 'One entrance QR for the whole show']],
@@ -118,9 +118,9 @@ const T = {
   pl4l: [['상설 작품 무제한 등록', '해설 수정 무제한', '한국어 · 영어', '소규모 갤러리·공방용'], ['Unlimited permanent works', 'Unlimited text edits', 'Korean & English', 'For small galleries & studios']],
   subscribe: ['구독 시작하기', 'Start membership'], inquire: ['문의하기', 'Get in touch'],
   f_eyebrow: ['Why us', 'Why us'],
-  f_quote: ['전시를 직접 수십 차례 열어 보며 알게 됐습니다. 관람객이 작품 앞에 머무는 시간은 해설 한 줄에 달려 있다는 것을.', 'After opening dozens of exhibitions ourselves, we learned one thing: how long a visitor stays in front of a work depends on a single line of interpretation.'],
+  f_quote: ['전시를 여러 차례 직접 열어 보며 알게 됐습니다. 관람객이 작품 앞에 머무는 시간은 해설 한 줄에 달려 있다는 것을.', 'After opening several exhibitions ourselves, we learned one thing: how long a visitor stays in front of a work depends on a single line of interpretation.'],
   f_body: ['역사학을 전공하고 여러 차례 전시를 직접 열고 기획에 참여해 온 운영진이 모든 해설 원고를 감수합니다. 기술보다 해설의 질로 승부합니다.', 'Every text is reviewed by a team trained in history that has opened and helped organize several exhibitions. We compete on the quality of interpretation, not gadgets.'],
-  fa1: ['전시 개최·기획 참여', 'Exhibitions opened & organized'], fa2: ['해설 언어', 'Languages'], fa3: ['열람 가능 작품', 'Works searchable'],
+  fa1: ['큐레이션 명작', 'Curated works'], fa2: ['해설 언어', 'Languages'], fa3: ['열람 가능 작품', 'Works searchable'],
   cta_h: ['다음 전시, 관람객의 휴대폰을 도슨트로.', 'Make every visitor\'s phone your docent.'],
   cta_btn: ['카카오톡으로 상담하기', 'Chat with us on KakaoTalk'],
   foot_note: ['작품 이미지와 데이터: 시카고 미술관, 메트로폴리탄 미술관, 클리블랜드 미술관 오픈 액세스(CC0), 위키미디어 커먼즈.', 'Images & data: Art Institute of Chicago, The Met, Cleveland Museum of Art Open Access (CC0), Wikimedia Commons.'],
@@ -381,7 +381,26 @@ function hydrate(root = document) {
     else { const w = S.byId[el.dataset.wid]; if (w) curatedImage(w, +el.dataset.size || 1200).then(put); }
   });
 }
+/* 한글은 자간을 벌리지 않는다: 대문자용 넓은 자간(eyebrow·태그) 안의 한글 구간만 감싼다 */
+const TRACKED = '.eyebrow, .plan h4, .product .tag, .words-h, .v-sec h3, .cap-k, .lock-chip, .ft-type-a';
+function hangulTrack(root = document) {
+  $$(TRACKED, root).forEach(el => {
+    if (el.dataset.hg) return; el.dataset.hg = 1;
+    const walk = document.createTreeWalker(el, NodeFilter.SHOW_TEXT); const nodes = [];
+    while (walk.nextNode()) if (/[\u3131-\uD7A3]/.test(walk.currentNode.nodeValue) && !walk.currentNode.parentElement.closest('.hg')) nodes.push(walk.currentNode);
+    const flex = /flex/.test(getComputedStyle(el).display);
+    nodes.forEach(n => {
+      const f = flex ? document.createElement('span') : document.createDocumentFragment();
+      n.nodeValue.split(/([\u3131-\uD7A3][\u3131-\uD7A3\s·,()~0-9]*[\u3131-\uD7A3)]|[\u3131-\uD7A3])/).forEach((part, i) => {
+        if (!part) return;
+        if (i % 2) { const s = document.createElement('span'); s.className = 'hg'; s.textContent = part; f.appendChild(s); } else f.appendChild(document.createTextNode(part));
+      });
+      n.replaceWith(f);
+    });
+  });
+}
 function reveal(root = document) {
+  hangulTrack(root === document ? document.body : root);
   const els = $$('.rv:not(.in)', root);
   if (!('IntersectionObserver' in self)) { els.forEach(e => e.classList.add('in')); return; }
   const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px' });
@@ -581,7 +600,7 @@ function viewHome(scrollTo) {
     <div class="sec-head rv"><div><p class="eyebrow">${t('today_eyebrow')} · ${today}</p><h2>${t('today_h')}</h2></div>
       <a class="link" href="#/today">${t('see_all')} <span class="arrow">→</span></a></div>
     <div class="trio">${ids.map((id, i) => { const w = S.byId[id]; return `<a class="tcard rv" href="#/today">${artBox(w)}<div class="meta"><span class="num">${['I', 'II', 'III'][i]}</span>
-      <h3>${esc(pick(w.title))}</h3><div class="by">${esc(pick(w.artist))} · ${esc(w.date)}</div>${i && !S.member && !IOS ? `<span class="lock-chip">● Members</span>` : ''}</div></a>`; }).join('')}</div>
+      <h3>${esc(pick(w.title))}</h3><div class="by">${esc(pick(w.artist))} · ${esc(w.date)}</div>${i && !S.member && !IOS ? `<span class="lock-chip">${S.lang === 'ko' ? '멤버 전용' : 'Members'}</span>` : ''}</div></a>`; }).join('')}</div>
   </div></section>
 
   <div id="homeFeature"></div>
@@ -593,13 +612,13 @@ function viewHome(scrollTo) {
   <section class="sec"><div class="wrap founder">
     <div class="rv"><p class="eyebrow">${t('f_eyebrow')}</p><blockquote>${esc(t('f_quote'))}</blockquote></div>
     <div class="rv"><p style="color:var(--ink-2);font-size:17px;margin:0 0 32px">${esc(t('f_body'))}</p>
-      <div class="facts"><div class="fact"><b>20+</b><span>${t('fa1')}</span></div><div class="fact"><b>2+</b><span>${t('fa2')}</span></div><div class="fact"><b>180K</b><span>${t('fa3')}</span></div></div></div>
+      <div class="facts"><div class="fact"><b>${S.works.length}</b><span>${t('fa1')}</span></div><div class="fact"><b>KO·EN</b><span>${t('fa2')}</span></div><div class="fact"><b>180K</b><span>${t('fa3')}</span></div></div></div>
   </div></section>
 
   <section class="cta-band"><div class="wrap"><h2>${t('cta_h')}</h2><a class="btn" href="${KAKAO}" target="_blank" rel="noopener">${t('cta_btn')} <span class="arrow">→</span></a></div></section>`;
   hydrate(); reveal(); startStage();
   loadFeatures().then(list => { const f = list[0], box = $('#homeFeature'); if (!f || !box) return;
-    box.innerHTML = `<section class="sec ft-home"><div class="wrap"><div class="sec-head rv"><div><p class="eyebrow">${t('nav_features')} · ${esc(pick(f.kicker))}</p><h2>${esc(pick(f.title))}</h2></div><a class="link" href="#/features/${esc(f.id)}">${t('ft_read')} <span class="arrow">→</span></a></div>
+    box.innerHTML = `<section class="sec ft-home"><div class="wrap"><div class="sec-head rv"><div><p class="eyebrow">${t('nav_features')} · ${esc(pick(f.kicker))}</p><h2>${esc(pick(f.title))}</h2></div></div>
       <a class="ft-card rv" href="#/features/${esc(f.id)}">${featCover(f)}<div class="ft-meta"><p>${esc(pick(f.dek))}</p><span class="link">${t('ft_read')} <span class="arrow">→</span></span></div></a></div></section>`;
     hydrate(box); reveal(box); });
   if (scrollTo) setTimeout(() => { const el = document.getElementById(scrollTo); if (el) el.scrollIntoView({ behavior: 'smooth' }); }, 60);
@@ -1424,7 +1443,7 @@ function viewGalleries() {
       <section class="gal-sec rv"><h2>${g.steps}</h2><ol class="gal-steps">${g.stepItems.map(([h, p]) => `<li><b>${esc(h)}</b><p>${esc(p)}</p></li>`).join('')}</ol></section>
       <section class="gal-sec rv gal-plans"><h2>${g.plans}</h2>
         <div class="gal-grid">${[['pl2', '₩300,000', t('per_show')], ['pl3', '₩1,000,000', t('per_show')], ['pl4', '₩99,000', t('per_month')]].map(([k, a, per]) => `<div class="gal-cell"><h3>${t(k)}</h3><div class="gal-amt">${a}<small> ${per}</small></div><ul>${T[k + 'l'][L()].map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>`).join('')}</div></section>
-      <section class="gal-sec rv gal-who"><h2>${g.who}</h2><p>${esc(g.whoP)}</p><div class="facts"><div class="fact"><b>20+</b><span>${t('fa1')}</span></div><div class="fact"><b>KO·EN</b><span>${t('fa2')}</span></div><div class="fact"><b>QR</b><span>${S.lang === 'ko' ? '앱 설치 없음' : 'No app needed'}</span></div></div>${giveNote()}</section>
+      <section class="gal-sec rv gal-who"><h2>${g.who}</h2><p>${esc(g.whoP)}</p><div class="facts"><div class="fact"><b>${S.works.length}</b><span>${t('fa1')}</span></div><div class="fact"><b>KO·EN</b><span>${t('fa2')}</span></div><div class="fact"><b>QR</b><span>${S.lang === 'ko' ? '앱 설치 없음' : 'No app needed'}</span></div></div>${giveNote()}</section>
       <section class="gal-sec rv"><h2>${g.faq}</h2><div class="faq">${g.faqItems.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join('')}</div></section>
       <section class="gal-end rv"><h2>${S.lang === 'ko' ? '다음 전시, 관람객의 휴대폰을 도슨트로.' : 'Make every visitor\'s phone your docent.'}</h2>
         <div class="hero-ctas"><a class="btn btn-kakao" href="${KAKAO}" target="_blank" rel="noopener">${g.cta} <span class="arrow">→</span></a><a class="btn btn-line" href="#/pricing">${g.back}</a></div>

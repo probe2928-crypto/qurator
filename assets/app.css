@@ -888,3 +888,9 @@ body.immersive .pim{color:var(--seal-2);border-color:rgba(196,85,59,.55)}
 .modal-box .trial-tag{margin:-4px 0 18px}
 .co-trial{font-size:13.5px;line-height:1.6;color:var(--cream);margin:-14px 0 24px;padding-left:12px;border-left:2px solid var(--seal-2)}
 .trial-tag[hidden]{display:none}
+
+/* 2026-11-03 디자인 ① 홈: 한글은 자간을 벌리지 않는다(대문자용 넓은 자간 안의 한글 구간) */
+.hg{letter-spacing:.03em;text-transform:none}
+.tcard .lock-chip::before{content:"";width:5px;height:5px;border-radius:50%;background:currentColor}
+.founder blockquote{text-wrap:pretty}
+.cta-band h2,.give-band h2{text-wrap:balance}
