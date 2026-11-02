@@ -924,7 +924,7 @@ async function viewWork(uid, custom) {
     } else if (S.byId[uid]) {
       const w = S.byId[uid];
       model = { kind: 'curated', w, imgCredit: w.imgCredit, title: pick(w.title), titleAlt: S.lang === 'ko' ? w.title.en : w.title.ko, artist: pick(w.artist), date: w.date,
-        medium: pick(w.medium), collection: pick(w.collection), text: w.text, tagline: w.tagline, look: w.look, words: w.words };
+        medium: pick(w.medium), collection: pick(w.collection), text: w.text, tagline: w.tagline, look: w.look, words: w.words, tour: w.tour };
     } else if (/^(aic|met|cma)-\d+$/.test(uid)) {
       const w = await getApiWork(uid);
       model = { kind: 'api', api: w, title: w.title, titleAlt: '', artist: w.artist || t('v_unknown'), date: w.date, medium: w.medium,
@@ -1065,13 +1065,15 @@ async function viewWork(uid, custom) {
       el.addEventListener('touchend', e => { if (y0 != null && e.changedTouches[0].clientY - y0 < -70) this.close(true); y0 = null; }, { passive: true });
       try { if (navigator.wakeLock) this.wake = await navigator.wakeLock.request('screen'); } catch {}
       let src = model.imageLg || model.image;
-      try { if (model.kind === 'curated') src = await curatedImage(model.w, 1600); } catch {}
-      if (src && this.el === el) { const im = el.querySelector('.im-art img'); im.onload = () => el.classList.add('loaded'); im.src = src; el.querySelector('.im-bg').style.backgroundImage = `url("${src.replace(/"/g, '%22')}")`; }
+      const tour = this.tourOn();
+      try { if (model.kind === 'curated') src = await curatedImage(model.w, tour ? 2560 : 1600); } catch {}
+      if (src && this.el === el) { const im = el.querySelector('.im-art img'); if (tour) { im.classList.add('tour'); el.classList.add('tourmode'); } im.onload = () => { el.classList.add('loaded'); this.shot = -1; setTimeout(() => this.cam(true), 50); }; im.src = src; el.querySelector('.im-bg').style.backgroundImage = `url("${src.replace(/"/g, '%22')}")`; }
+      this.onResize = () => { this.shot = -1; this.cam(true); }; addEventListener('resize', this.onResize);
       this.sent = -1; this.update();
     },
     close(toText) {
       if (!this.on) return;
-      this.on = false; clearInterval(this.tick); this.tick = null;
+      this.on = false; clearInterval(this.tick); this.tick = null; clearTimeout(this.camT); removeEventListener('resize', this.onResize);
       try { this.wake && this.wake.release(); } catch {} this.wake = null;
       const el = this.el; this.el = null; document.body.classList.remove('immersive');
       if (el) { el.classList.remove('show'); setTimeout(() => el.remove(), 700); }
@@ -1091,12 +1093,44 @@ async function viewWork(uid, custom) {
       clearTimeout(this.endT);
       if (done) this.endT = setTimeout(() => { if (this.el) this.el.querySelector('.im-end').hidden = false; }, 1800);
       else this.el.querySelector('.im-end').hidden = true;
-      if (done) { this.show(''); clearInterval(this.tick); this.tick = null; this.sent = -1; this.el.querySelector('.im-n').textContent = ''; return; }
+      if (done) { this.show(''); clearInterval(this.tick); this.tick = null; this.sent = -1; this.el.querySelector('.im-n').textContent = ''; this.shot = -1; this.pose({ x: .5, y: .5, z: 1, t: 0 }, 6); return; }
       this.el.querySelector('.im-n').textContent = n ? `${Math.min(Speech.idx + 1, n)} / ${n}` : '';
       if (Speech.idx !== this.sent) {
-        this.sent = Speech.idx; this.chunks = this.split(Speech.sents[Speech.idx] || ''); this.ci = -1; this.t0 = Date.now();
+        this.sent = Speech.idx; this.cam(); this.chunks = this.split(Speech.sents[Speech.idx] || ''); this.ci = -1; this.t0 = Date.now();
         clearInterval(this.tick); this.tick = setInterval(() => this.step(), 120); this.step();
       }
+    },
+    /* 도슨트 카메라 (세준 제안 + 회의 2026-11-02): 해설 단락마다 정해 둔 지점으로 천천히 줌인·이동·비스듬히 보기.
+       w.tour = [{x,y,z,t,ko,en}] — x·y는 작품 안 비율(0~1), z는 배율(1=전체), t는 기울기(도), ko/en은 그 단락이 시작하는 문장 번호. */
+    tourOn() { return !!(model && model.tour && model.tour.length && !matchMedia('(prefers-reduced-motion: reduce)').matches && model.text && !model.basic); },
+    cam(force) {
+      if (!this.el || !this.tourOn() || !this.el.classList.contains('loaded')) return;
+      const T = model.tour, i0 = Math.max(0, Speech.idx);
+      let k = 0; for (let j = 0; j < T.length; j++) if ((T[j][tl] ?? 0) <= i0) k = j;
+      if (!Speech.playing && !force && this.shot >= 0) return;
+      if (k === this.shot && !force) return;
+      this.shot = k;
+      // 그 단락이 이어지는 동안의 대략 길이(초): 문장 수 × 평균 6초
+      const next = T[k + 1] ? T[k + 1][tl] : Speech.sents.length;
+      const dur = Math.max(6, (next - (T[k][tl] ?? 0)) * 6.5);
+      this.pose(T[k], force && k === 0 ? 0.01 : 4.8);
+      clearTimeout(this.camT);
+      // 도착한 뒤에도 멈추지 않고 아주 천천히 다가간다
+      this.camT = setTimeout(() => { if (this.on && this.shot === k) this.pose({ ...T[k], z: (T[k].z || 1) * 1.06 }, Math.max(4, dur - 4.8), 'linear'); }, 4900);
+    },
+    pose(p, sec, ease) {
+      const im = this.el && this.el.querySelector('.im-art img'); if (!im || !im.classList.contains('tour')) return;
+      const dw = im.clientWidth, dh = im.clientHeight; if (!dw || !dh) return;
+      // 변형 전 기준 중심(offset은 변형의 영향을 받지 않는다)
+      const cx = im.offsetLeft + dw / 2 + (im.offsetParent ? im.offsetParent.getBoundingClientRect().left : 0);
+      const cy = im.offsetTop + dh / 2 + (im.offsetParent ? im.offsetParent.getBoundingClientRect().top : 0);
+      const vw = innerWidth, vh = innerHeight, tilt = +p.t || 0;
+      const z = Math.max(1, Math.min(3.2, +p.z || 1)) * (tilt ? 1.05 : 1);
+      let tx = -z * ((+p.x || .5) - .5) * dw, ty = -z * ((+p.y || .5) - .5) * dh;
+      const lim = (t, half, c, v) => { const a = v - c - half, b = half - c; return Math.min(Math.max(t, Math.min(a, b)), Math.max(a, b)); };
+      if (z > 1.001) { tx = lim(tx, z * dw / 2, cx, vw); ty = lim(ty, z * dh / 2, cy, vh); } else { tx = 0; ty = 0; }
+      im.style.transition = `opacity 1.6s var(--ease), filter 2.4s var(--ease), transform ${sec}s ${ease || 'cubic-bezier(.42,0,.22,1)'}`;
+      im.style.transform = `perspective(1400px) translate3d(${tx.toFixed(1)}px,${ty.toFixed(1)}px,0) rotateY(${tilt}deg) rotateX(${(tilt * -.25).toFixed(2)}deg) scale(${z.toFixed(3)})`;
     },
     step() {
       if (!this.el || !this.chunks.length) return;

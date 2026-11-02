@@ -25,6 +25,10 @@ jobs:
   narrate:
     runs-on: ubuntu-latest
     timeout-minutes: 150
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -66,14 +70,41 @@ jobs:
           SUPERTONIC_DIR: /tmp/supertonic
           SUPERTONIC_VOICE_KO: ${{ vars.SUPERTONIC_VOICE_KO }}
           ONLY: ${{ github.event.inputs.only }}
+          SHARD: ${{ matrix.shard }}/16
         run: |
           python scripts/narrate.py
           NARR_ALT=1 python scripts/narrate.py   # 두 번째 목소리(한국어 여성 · 영어 남성)
+      - name: Pack shard audio
+        run: |
+          # 이 묶음에 속한 작품 폴더를 통째로 넘긴다(문장 수가 줄면 옛 파일도 지워지도록)
+          python3 -c "import json;W=json.load(open('data/works.json'));print('\n'.join('audio/'+w['id'] for k,w in enumerate(W) if k%16==${{ matrix.shard }}))" > /tmp/dirs.txt
+          mkdir -p /tmp/pack && tar -cf /tmp/pack/shard.tar $(for d in $(cat /tmp/dirs.txt); do [ -d "$d" ] && echo "$d"; done) && echo "$(wc -l < /tmp/dirs.txt) dirs"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: narr-${{ matrix.shard }}
+          path: /tmp/pack/shard.tar
+          retention-days: 2
+
+  commit:
+    needs: narrate
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: /tmp/arts
+      - name: Unpack
+        run: |
+          for t in /tmp/arts/*/shard.tar; do
+            for d in $(tar -tf "$t" | cut -d/ -f1-2 | sort -u); do rm -rf "$d"; done
+            tar -xf "$t"
+          done
       - name: Commit audio
         run: |
           git config user.name "qurator-bot"
           git config user.email "qurator-bot@users.noreply.github.com"
-          git add audio
+          git add -A audio
           if git diff --cached --quiet; then echo "no changes"; exit 0; fi
           git commit -m "Narration: update docent audio"
           for i in 1 2 3; do git pull --rebase origin main && git push origin main && break; sleep 5; done

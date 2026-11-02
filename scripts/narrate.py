@@ -167,9 +167,14 @@ if ALT:
 
 def main():
     only = set(filter(None, os.environ.get('ONLY', '').split(',')))
+    # SHARD=i/N: 작품을 N개로 나눠 i번째 묶음만 만든다(3분 해설 61점 × 4목소리를 CI 여러 대가 나눠 생성)
+    sh = os.environ.get('SHARD', '')
+    si, sn = (int(x) for x in sh.split('/')) if sh else (0, 1)
     made = 0
-    for w in WORKS:
+    for k, w in enumerate(WORKS):
         if only and w['id'] not in only:
+            continue
+        if k % sn != si:
             continue
         for lang in ('ko', 'en'):
             tts = provider(lang)
