@@ -1,0 +1,93 @@
+{
+ "id": "k-miindo",
+ "segs": [
+  {
+   "ko": "비단 위에 한 여인이 홀로 서 있습니다. 왕이나 사대부의 초상이 대부분이던 조선에서, 신윤복은 이름 모를 이 여인을 실물에 가까운 크기로 그렸습니다. 세로가 114센티미터를 넘는 큰 화폭입니다.",
+   "en": "A single woman stands alone on silk. In a Joseon world where portraits were reserved for kings and scholar-officials, Shin Yun-bok painted this unnamed woman at nearly life-size scale, on a scroll more than 114 centimetres tall.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  },
+  {
+   "ko": "화가 신윤복은 혜원이라는 호로 더 잘 알려져 있습니다. 아버지 신한평은 영조와 정조의 어진 제작에 참여한 궁중 화원이었습니다. 신윤복은 기생과 한양 사람들의 풍속을 밝은 색과 섬세한 붓으로 그렸습니다.",
+   "en": "The painter is better known by his pen name, Hyewon. His father, Shin Han-pyeong, was a court painter who helped create the royal portraits of King Yeongjo and King Jeongjo. Shin himself painted kisaeng and the townspeople of Seoul in bright colour and delicate brushwork.",
+   "x": 0.5,
+   "y": 0.42,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "먼저 머리를 보겠습니다. 검고 풍성한 가체를 높이 얹었는데, 그 무게 때문인지 고개가 살짝 기울어 있습니다. 머리카락은 아주 가는 선으로 한 올 한 올 그어 내렸습니다.",
+   "en": "Let's begin with her hair. A towering black wig sits high on her head, and perhaps because of its weight, her head tilts slightly. The hair is drawn in very fine lines, strand by strand.",
+   "x": 0.52,
+   "y": 0.1,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "얼굴로 내려오면 작은 입술과 아래를 향한 눈길이 보입니다. 여인은 수줍은 듯 고개를 숙이고 있어 우리와 눈을 마주치지 않습니다. 귀밑으로는 머리카락 몇 가닥이 흘러내립니다.",
+   "en": "Moving down to her face, we find small, delicate lips and a gaze turned gently downward. She bows her head as if shy, so she never meets our eyes. A few loose strands of hair fall beside her ears.",
+   "x": 0.47,
+   "y": 0.21,
+   "z": 2.6,
+   "tilt": 0
+  },
+  {
+   "ko": "몸에 꼭 붙는 짧은 저고리와 짙은 자주색 깃, 길게 늘어진 고름을 보십시오. 짧은 저고리와 크게 부풀린 치마는 당시 한양에서 유행하던 최신 차림이었습니다. 위는 좁히고 아래는 부풀려 몸의 선을 드러냈습니다.",
+   "en": "Notice the short, fitted jacket, with its deep purple collar and the long ribbons hanging from it. This cropped jacket and billowing skirt were the height of fashion in late Joseon Seoul. Tight above and full below, the outfit reveals the line of the body.",
+   "x": 0.56,
+   "y": 0.29,
+   "z": 2.2,
+   "tilt": 0
+  },
+  {
+   "ko": "이 그림의 중심은 손입니다. 여인은 가느다란 손가락으로 노리개와 옷고름을 만지작거리고 있습니다. 그 작은 손동작 하나가 정지된 그림에 망설임과 설렘이라는 시간을 불어넣습니다.",
+   "en": "The heart of this painting is her hands. With slender fingers, she toys with the tassel ornament and the ribbon of her jacket. That small gesture brings time into a still image: hesitation, perhaps anticipation.",
+   "x": 0.41,
+   "y": 0.36,
+   "z": 2.8,
+   "tilt": 0
+  },
+  {
+   "ko": "아래로는 주름을 많이 잡은 비췻빛 치마가 크게 부풀어 있습니다. 허리께의 주홍색 끈이 차분한 색 사이에 작은 생기를 더합니다. 짧은 저고리와 넓은 치마의 대비가 실루엣을 완성합니다.",
+   "en": "Below, a jade-coloured skirt gathered in many pleats swells outward. An orange-red sash at the waist adds a small spark of life among the quiet colours. The contrast between short jacket and full skirt completes her silhouette.",
+   "x": 0.55,
+   "y": 0.62,
+   "z": 1.5,
+   "tilt": -5
+  },
+  {
+   "ko": "치마 끝을 보면 버선발이 살짝 드러나 있습니다. 감추려는 마음과 드러나는 마음이 함께 있다는 해석도 있습니다. 몸가짐은 단정하지만 그 안의 떨림까지 숨기지는 못합니다.",
+   "en": "At the hem, the tip of a white sock peeks out. Some read this detail as a heart that wants to stay hidden and yet cannot help showing itself. Her demeanor is composed, but it cannot quite conceal the flutter within.",
+   "x": 0.52,
+   "y": 0.93,
+   "z": 2.2,
+   "tilt": 0
+  },
+  {
+   "ko": "신윤복 이전에는 이렇게 여인 한 사람을 전신으로 그린 그림이 거의 남아 있지 않습니다. 이 그림은 이후 19세기 미인도의 본보기가 되었고, 지금은 보물로 지정되어 있습니다.",
+   "en": "Before Shin Yun-bok, almost no paintings survive that show a single woman full-length, as the sole subject. This work became the model for nineteenth-century portraits of beauties that followed, and today it is designated a Treasure of Korea.",
+   "x": 0.45,
+   "y": 0.45,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "이제 왼쪽 위의 글씨를 보겠습니다. 화가는 '가슴속에 서린 봄기운을 붓끝으로 옮겨 그 정신까지 담았다'는 뜻의 화제를 남겼습니다. 그 아래에는 화가의 호와 붉은 도장이 있습니다.",
+   "en": "Now look at the writing in the upper left. Beside the figure, the artist wrote an inscription saying that he had captured the spring stirring in her heart and conveyed her very spirit with his brush. Below it are his pen name and a red seal.",
+   "x": 0.13,
+   "y": 0.2,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "외모가 아니라 마음을 그렸다는 화가의 조용한 고백입니다. 이제 한 걸음 물러나 여인의 손끝과 숙인 얼굴을 다시 바라보십시오. 그녀는 지금 무엇을 망설이고 있을까요?",
+   "en": "It is a quiet declaration that he painted a mind, not just a face. Now step back and look once more at her fingertips and her lowered face. What do you think she is hesitating over?",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1,
+   "tilt": 0
+  }
+ ]
+}

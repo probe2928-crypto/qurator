@@ -1,0 +1,93 @@
+{
+ "id": "w-milkmaid",
+ "segs": [
+  {
+   "ko": "페르메이르의 '우유 따르는 여인'입니다. 부엌의 하녀가 토기 그릇에 우유를 천천히 따르고 있습니다. 가로세로 50센티미터가 안 되는 작은 그림이지만, 그 앞에 서면 시간이 멈춘 듯합니다.",
+   "en": "This is Johannes Vermeer's The Milkmaid. A kitchen maid pours milk, slowly and carefully, into an earthenware bowl. The canvas is less than fifty centimetres on each side, yet before it, time seems to stand still.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  },
+  {
+   "ko": "페르메이르는 네덜란드 델프트에서 활동했고, 이 그림은 1658년 무렵 그린 것으로 추정됩니다. 레이크스 미술관이 1908년에 사들였으며, 지금도 미술관을 대표하는 작품입니다.",
+   "en": "Vermeer spent his working life in the Dutch city of Delft, and this painting is thought to date from around 1658. The Rijksmuseum acquired it in 1908, and it remains one of the finest treasures in the museum's collection.",
+   "x": 0.5,
+   "y": 0.45,
+   "z": 1.2,
+   "tilt": 0
+  },
+  {
+   "ko": "왼쪽 창으로 들어온 빛이 작은 유리 칸들을 지나 방 안을 차분하게 채웁니다. 이 빛이 노란 상의와 짙은 파란 앞치마, 식탁 위의 빵을 차례로 비춥니다. 이 부드러운 빛은 페르메이르 그림의 상징과도 같습니다.",
+   "en": "Light enters from the window on the left. Passing through the small leaded panes, it fills the room calmly and falls in turn across her yellow bodice, her deep blue apron and the bread on the table. This soft, steady daylight is one of Vermeer's great signatures.",
+   "x": 0.06,
+   "y": 0.2,
+   "z": 1.8,
+   "tilt": 0
+  },
+  {
+   "ko": "여인은 고개를 숙이고 그릇에 온 마음을 모으고 있습니다. 하얀 두건 아래 볼은 햇빛을 받아 발그레합니다. 노란 상의에는 이 그림에서 특히 빛나는 납주석황이 쓰였습니다.",
+   "en": "Her head is bowed, all her attention on the bowl. Beneath the white cap, her cheek glows in the daylight. The yellow of her bodice is lead-tin yellow, which shines out with special brightness in this picture.",
+   "x": 0.59,
+   "y": 0.26,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "그릇으로 떨어지는 가느다란 우유 줄기를 보십시오. 끊길 듯 이어지는 한 줄기 흰 선이 이 그림의 중심입니다. 화면의 두 대각선도 바로 이 근처, 여인의 오른쪽 손목에서 만납니다.",
+   "en": "Watch the thin, steady stream of milk as she pours, never quite breaking. That white thread is the quiet heart of the picture. The composition is built on two diagonals that meet right here, by the woman's right wrist.",
+   "x": 0.34,
+   "y": 0.57,
+   "z": 2.6,
+   "tilt": 0
+  },
+  {
+   "ko": "식탁 위 빵 껍질과 바구니에는 작은 빛 점들이 흩뿌려져 있습니다. 덕분에 표면이 반짝이는 듯 보이고 거친 질감까지 느껴집니다. 페르메이르의 그림 가운데 이 기법이 가장 풍부하게 쓰인 곳입니다.",
+   "en": "Vermeer scattered tiny dots of light over the bread crust and the basket so their surfaces seem to glitter, and you can almost feel their roughness. Nowhere else in his work is this technique used so lavishly.",
+   "x": 0.32,
+   "y": 0.7,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "앞치마의 파랑은 값싼 대용 안료 대신 매우 비싼 천연 울트라마린으로 칠했습니다. 청금석을 갈아 만든 귀한 안료입니다. 식탁 위 파란 천에도 같은 깊은 파랑이 이어집니다.",
+   "en": "The blue of the apron is natural ultramarine, a costly pigment ground from lapis lazuli, which he chose over the cheaper azurite. The same deep blue runs on into the cloth on the table.",
+   "x": 0.63,
+   "y": 0.65,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "오른쪽 아래 바닥에는 발을 데우는 작은 화로가 있고, 뒤쪽 타일에는 큐피드가 그려져 있습니다. 사랑의 암시로 보는 해석도 있지만, 차가운 부엌의 실용적인 도구로 보는 견해도 있습니다.",
+   "en": "On the floor at lower right stands a small foot warmer, and a tile behind it shows Cupid. Some read them as hints of love or longing; others see simply a practical comfort for someone working in a cool kitchen.",
+   "x": 0.85,
+   "y": 0.88,
+   "z": 2.2,
+   "tilt": 5
+  },
+  {
+   "ko": "레이크스 미술관의 조사에 따르면 페르메이르는 처음에 이 벽에 지도를, 아래에는 큰 빨래 바구니를 그렸다가 지웠습니다. 그 덕분에 여인은 텅 빈 벽 앞에서 조각상처럼 단단하게 서 있습니다.",
+   "en": "Research by the Rijksmuseum shows he first painted a wall map here and a large clothes basket below, then decided to paint out both. That leaves her standing like a sculpture against a bare, bright wall, with nothing to distract us.",
+   "x": 0.75,
+   "y": 0.45,
+   "z": 1.5,
+   "tilt": 0
+  },
+  {
+   "ko": "이제 위쪽 흰 벽을 봅니다. 벽에는 얼룩과 그림자, 박힌 못과 못 자국까지 그대로 남아 있습니다. 아무것도 없는 듯한 벽이 오히려 이 방의 공기를 생생하게 만듭니다.",
+   "en": "Now look up at the bare white wall. Stains, shadows, even a nail and its little nail hole are all kept. A wall that seems empty is what makes the air of this room feel so real.",
+   "x": 0.47,
+   "y": 0.06,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "한 걸음 물러나 다시 전체를 보십시오. 페르메이르는 더하기보다 덜어 냄으로써 이 그림을 완성했습니다. 우유가 떨어지는 그 짧은 순간을 얼마나 오래 바라볼 수 있는지 시험해 보셔도 좋겠습니다.",
+   "en": "Step back and see the whole again. Vermeer made this picture great not by adding but by taking away. See how long you can hold your gaze on that brief moment as the milk falls, and how still the room becomes.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1,
+   "tilt": 0
+  }
+ ]
+}

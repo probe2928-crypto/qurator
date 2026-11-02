@@ -1,0 +1,93 @@
+{
+ "id": "k-kimjongtae-yellow",
+ "segs": [
+  {
+   "ko": "노란 저고리를 입은 여인의 상반신이 화면을 가득 채웁니다. 김종태가 1929년에 그린 유화로, 노랑과 빨강이 부딪히는 짧고 빛나는 초상입니다. 세로 52센티미터의 아담한 그림입니다.",
+   "en": "A woman in a yellow jeogori, the traditional Korean jacket, fills the canvas from the waist up. Kim Jong-tae painted it in oil in 1929, a brief, bright portrait where yellow meets red. The canvas is modest, just 52 centimetres tall.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  },
+  {
+   "ko": "왼쪽 위에는 제작 연도와 화가의 이름이 세로로 적혀 있습니다. 호가 회산인 김종태는 김포에서 태어나 경성사범학교를 나왔고, 서울에서 초등학교 교사로 일하며 그림을 그렸습니다.",
+   "en": "At the upper left, the year and the painter's name are written vertically. Kim Jong-tae, who also went by the name Hoesan, was born in Gimpo, trained as a teacher and painted while teaching at a primary school in Seoul.",
+   "x": 0.08,
+   "y": 0.16,
+   "z": 2.2,
+   "tilt": 0
+  },
+  {
+   "ko": "화면 왼쪽 뒤로는 나무 틀 같은 것이 비스듬히 서 있습니다. 화실의 소품으로 보이며, 비스듬한 갈색 선이 화면에 깊이를 더합니다. 누런 벽은 저고리의 노랑과 은은하게 어울립니다.",
+   "en": "Behind her on the left, something like a wooden frame leans at an angle, perhaps a prop in the studio. Its brown diagonals add depth, and the dull ochre wall behind quietly echoes the yellow of her jacket.",
+   "x": 0.22,
+   "y": 0.38,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "얼굴을 보십시오. 시선은 살짝 오른쪽을 향하고, 굳게 다문 입술과 반짝이는 눈망울이 빠르고 대담한 붓질 몇 번으로 잡혔습니다. 볼에 얹은 분홍빛이 얼굴에 온기를 줍니다.",
+   "en": "Look at her face. Her gaze turns slightly to the right, and her firmly closed lips and bright eyes are caught in just a few quick, bold strokes. A soft touch of pink on her cheeks gives the face its warmth.",
+   "x": 0.5,
+   "y": 0.29,
+   "z": 2.3,
+   "tilt": 0
+  },
+  {
+   "ko": "뒤쪽의 검은 천은 얼굴과 저고리를 또렷하게 띄워 올리는 무대의 막 같습니다. 어두운 바탕 위에서 노란색이 더 밝게 빛나고, 검은 머리카락은 천에 녹아들어 얼굴만 환하게 남습니다.",
+   "en": "The black cloth behind her works like a stage curtain, lifting her face and jacket forward. Against the dark ground the yellow glows even brighter, and her black hair melts into the cloth so that only her face stays bright.",
+   "x": 0.78,
+   "y": 0.28,
+   "z": 1.8,
+   "tilt": 0
+  },
+  {
+   "ko": "이제 붉은 깃과 고름으로 내려갑니다. 흰 동정 아래 붉은 깃이 브이자로 내려오고, 긴 고름이 늘어져 노란색과 강하게 부딪힙니다. 이 붉은 띠가 화면을 세로로 단단히 잡아 줍니다.",
+   "en": "Now move down to the red collar and ties. Below the white inner collar, the red band forms a V, and the long ties hang down, clashing boldly with the yellow. This red band holds the composition firmly together.",
+   "x": 0.44,
+   "y": 0.7,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "오른쪽 소매를 가까이 보면, 물감이 캔버스 결이 비칠 만큼 얇게 칠해져 있습니다. 수묵처럼 묽은 색조와 단번에 그은 붓질이 그의 특징으로, 동양화의 붓놀림을 떠올리게 합니다.",
+   "en": "Look closely at the sleeve on the right: the paint is so thin that the weave of the canvas shows through. Washes as thin as ink and single sweeping strokes mark his style, recalling the brushwork of East Asian ink painting.",
+   "x": 0.78,
+   "y": 0.76,
+   "z": 2.2,
+   "tilt": -4
+  },
+  {
+   "ko": "세부를 과감히 생략하고 색을 강하게 쓴 방식 때문에 야수파나 표현주의와 비교되기도 합니다. 그러나 단순한 자세와 한 번에 긋는 붓질로 자기만의 화풍을 이루었다고 평가됩니다.",
+   "en": "Because he chose to omit detail and use strong colour, he is often compared with the Fauves and the Expressionists. Yet his simple poses and single-stroke touch are seen as entirely his own.",
+   "x": 0.62,
+   "y": 0.62,
+   "z": 1.4,
+   "tilt": 0
+  },
+  {
+   "ko": "화가 김용준은 1936년 이 그림을 '현저하게 조선 고유의 맛을 내어 보려는 의도가 보이는 작품'이라고 평했습니다. 조선 사람이 즐기는 원색으로 향토색을 드러냈다는 뜻입니다.",
+   "en": "In 1936 the painter-critic Kim Yong-jun wrote that the picture showed a clear wish to capture a flavour unique to Korea. He meant its pure, bright colours, which Koreans were thought to love.",
+   "x": 0.45,
+   "y": 0.45,
+   "z": 1.5,
+   "tilt": 0
+  },
+  {
+   "ko": "김종태는 1926년 조선미술전람회에 처음 입선한 뒤 여러 차례 특선을 차지했습니다. 그러나 1935년 평양에서 개인전을 열던 중 갑작스러운 병으로 20대에 세상을 떠났습니다.",
+   "en": "Kim first had a work accepted at the Joseon Art Exhibition in 1926, then won its special prize again and again. He died suddenly of illness in 1935, still in his twenties, while holding a solo show in Pyongyang.",
+   "x": 0.3,
+   "y": 0.3,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "남은 작품이 매우 적어 국립현대미술관의 이 그림이 그의 대표작으로 전합니다. 한 걸음 물러나, 붉은 고름이 없다면 이 노란색이 얼마나 달라 보일지 상상해 보십시오.",
+   "en": "So few of his works survive that this one, now in Korea's National Museum of Modern and Contemporary Art, has come to stand for his whole art. Step back and imagine the yellow without those red ties.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1,
+   "tilt": 0
+  }
+ ]
+}

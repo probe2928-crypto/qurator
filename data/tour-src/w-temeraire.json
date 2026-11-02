@@ -1,0 +1,93 @@
+{
+ "id": "w-temeraire",
+ "segs": [
+  {
+   "ko": "저녁 햇살 속에서 낡은 전함 한 척이 마지막 항해를 하고 있습니다. 터너가 1839년 왕립 아카데미에 선보인 '전함 테메레르'로, 원제는 해체를 위해 마지막 정박지로 끌려가는 테메레르입니다.",
+   "en": "In the golden evening light, an old warship makes her final voyage. This is The Fighting Temeraire, shown by Turner at the Royal Academy in 1839. Its full title says she is being tugged to her last berth to be broken up.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  },
+  {
+   "ko": "테메레르는 1805년 트라팔가르 해전에서 넬슨 제독의 기함을 지켜 낸 98문 전함입니다. 1838년, 해체되기 위해 템스강을 거슬러 런던의 해체장으로 끌려가고 있습니다.",
+   "en": "The Temeraire, a ship of 98 guns, had helped protect Nelson's flagship at the Battle of Trafalgar in 1805. Here, in 1838, she is being towed up the River Thames to a London shipbreaker's yard, to be broken up for scrap.",
+   "x": 0.3,
+   "y": 0.6,
+   "z": 1.4,
+   "tilt": 0
+  },
+  {
+   "ko": "옛 전함은 유령처럼 창백한 빛깔로 그려졌습니다. 실제로는 팔리기 전에 돛대와 밧줄을 이미 떼어 냈지만, 터너는 높은 돛대를 그대로 세워 옛 모습을 지켜 주었습니다.",
+   "en": "The old warship is painted in pale, almost ghostly colours. In reality her masts and rigging had been removed before the sale, but Turner kept her tall masts standing, as she would have looked in her days of glory.",
+   "x": 0.24,
+   "y": 0.4,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "왼쪽 위 하늘에는 희미한 초승달이 떠 있습니다. 가느다란 달빛이 강물 위로 한 줄기 길을 내려놓습니다. 석양과 달이 한 하늘에 떠, 하루의 끝과 밤의 시작이 겹쳐집니다.",
+   "en": "High in the sky at the upper left, a faint crescent moon rises, casting a thin, silvery path of light down onto the water. With the sunset and the moon in one sky, the end of the day and the start of night overlap.",
+   "x": 0.1,
+   "y": 0.2,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "터너는 예인선의 굴뚝을 돛대 앞에 그려 넣었습니다. 그래서 검은 연기가 창백한 범선의 돛대 사이로 길게 흘러갑니다. 연기의 붉은빛은 하늘의 노을과 서로 메아리칩니다.",
+   "en": "Turner placed the tug's funnel in front of its mast, so the black smoke trails back past the pale, ghostly masts of the old sailing ship. Its reddish glow echoes the clouds of the sunset.",
+   "x": 0.35,
+   "y": 0.52,
+   "z": 2.2,
+   "tilt": 0
+  },
+  {
+   "ko": "앞장선 것은 검고 땅딸막한 증기 예인선입니다. 실제로는 예인선 두 척이 끌었다고 하지만, 터너는 한 척만 그려 옛것과 새것을 맞세웠습니다. 작은 배가 거인을 끌고 가는 모습입니다.",
+   "en": "Leading the way is a squat, dark steam tugboat. In fact two tugs had to tow her, but Turner painted only one, setting the old and the new face to face. It is a small, busy boat dragging a silent giant.",
+   "x": 0.4,
+   "y": 0.75,
+   "z": 2.2,
+   "tilt": 0
+  },
+  {
+   "ko": "아래 강물에는 붉은 구름과 배의 그림자가 고스란히 비칩니다. 하늘과 물이 하나로 이어져 화면 전체가 빛으로 흔들립니다. 붓 자국이 드러난 물결이 노을빛을 잘게 부숩니다.",
+   "en": "In the river below, the red clouds and the dark shadows of the ships are mirrored. Sky and water flow together until the whole canvas seems to shimmer, and loose, visible brushstrokes break the glow into ripples.",
+   "x": 0.6,
+   "y": 0.88,
+   "z": 1.8,
+   "tilt": 0
+  },
+  {
+   "ko": "반대편 오른쪽에는 불타는 석양이 하늘을 물들입니다. 이 강에서 해가 그쪽으로 질 수는 없지만, 터너는 저무는 해를 배의 운명과 겹쳐 놓았습니다. 사실보다 의미를 택한 것입니다.",
+   "en": "Opposite, on the right side of the picture, a blazing sunset sets the sky on fire. The sun could not really set in that direction on this stretch of river, but Turner matched it to the ship's fate. He chose meaning over literal fact.",
+   "x": 0.8,
+   "y": 0.62,
+   "z": 2.0,
+   "tilt": 4
+  },
+  {
+   "ko": "돛의 시대가 저물고 증기의 시대가 오는 순간을 하늘 전체로 그린 셈입니다. 영광스러운 과거가 새로운 기계에 자리를 내주는 장면이며, 그 안에 아쉬움과 경외가 함께 담겨 있습니다.",
+   "en": "The whole sky becomes a picture of the age of sail beginning to give way to the age of steam. A glorious past is yielding to a new machine, and the scene holds both regret and awe at once.",
+   "x": 0.62,
+   "y": 0.45,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "터너는 이 그림을 '내 사랑'이라 부르며 끝내 팔지 않았고, 국가에 유산으로 남겼습니다. 소설가 새커리는 어느 아카데미에 걸린 그림 못지않게 웅장하다고 했습니다.",
+   "en": "Turner called the painting his darling. He refused to sell it, and when he died he left it to the nation. The novelist Thackeray called it as grand a picture as any academy had ever hung.",
+   "x": 0.3,
+   "y": 0.62,
+   "z": 1.5,
+   "tilt": 0
+  },
+  {
+   "ko": "2005년 영국인이 가장 사랑하는 그림 투표에서 1위에 올랐습니다. 지금은 터너의 자화상과 함께 20파운드 지폐에도 실려 있습니다. 한 걸음 물러나, 이 저녁이 끝인지 시작인지 생각해 보십시오.",
+   "en": "In 2005 it was voted Britain's favourite painting in a BBC radio poll, and it now appears behind Turner's own self-portrait on the Bank of England's £20 note. Step back and ask yourself: is this evening an ending, or a beginning?",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1,
+   "tilt": 0
+  }
+ ]
+}

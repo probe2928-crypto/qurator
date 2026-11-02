@@ -1,0 +1,93 @@
+{
+ "id": "w-liberty",
+ "segs": [
+  {
+   "ko": "1830년 7월, 파리 시민들은 사흘간의 혁명으로 국왕 샤를 10세를 몰아냈습니다. 들라크루아는 바로 그해에 이 장면을 거대한 화면에 담았습니다. 지금 우리는 바리케이드 앞에 서 있습니다.",
+   "en": "In July 1830, Parisians overthrew their king, Charles X, in three days of revolution. Eugène Delacroix painted this huge canvas that very same year. Stand back for a moment: we are facing a smoking barricade.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  },
+  {
+   "ko": "들라크루아는 그해 10월 형에게 보낸 편지에 현대적인 주제, 바리케이드를 시작했다고 썼습니다. 조국을 위해 싸우지는 못했어도 조국을 위해 그리겠다는 말도 남겼습니다. 그는 낭만주의 회화의 선두에 있었습니다.",
+   "en": "That October, Delacroix wrote to his brother that he had taken on a modern subject, a barricade. If he had not fought for his country, he added, at least he would paint for her. He was already the leading painter of French Romanticism.",
+   "x": 0.55,
+   "y": 0.38,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "삼색기를 높이 든 여인은 실존 인물이 아니라 자유를 의인화한 상징입니다. 머리의 붉은 모자는 1789년 혁명 이후 자유를 뜻해 온 프리기아 모자입니다. 그녀는 공화국의 상징 마리안으로도 여겨집니다.",
+   "en": "The woman raising the tricolor flag is not a real person but an allegory of Liberty herself. Her red cap is the Phrygian cap, a symbol of freedom since the Revolution of 1789. She is also seen as Marianne, the emblem of the French Republic.",
+   "x": 0.56,
+   "y": 0.15,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "왼쪽에는 칼을 치켜든 노동자와 실크해트를 쓴 부르주아가 나란히 나아갑니다. 실크해트 남자의 모델이 누구인지는 여러 설이 있지만 정설은 없습니다. 여러 계층이 한 대열에 섰다는 것이 핵심입니다.",
+   "en": "On the left, a worker with a raised sabre advances beside a bourgeois in a top hat, gripping his gun. Many names have been suggested for the top-hatted man, but no one knows for sure. What matters is that different classes march in one line.",
+   "x": 0.2,
+   "y": 0.38,
+   "z": 1.9,
+   "tilt": 0
+  },
+  {
+   "ko": "여신의 발치에는 다친 남자가 무릎을 꿇은 채 그녀를 올려다봅니다. 그의 파란 웃옷과 붉은 허리띠, 흰 셔츠는 깃발의 세 빛깔을 되풀이합니다. 이 세 색은 화면 곳곳에서 메아리칩니다.",
+   "en": "At Liberty's feet, a wounded man kneels and lifts his eyes to her. His blue jacket, red sash and white shirt repeat the three colours of the flag. Those three colours echo all across the canvas.",
+   "x": 0.42,
+   "y": 0.55,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "여신 오른쪽에는 두 손에 권총을 든 소년이 외치며 뛰어나옵니다. 이 소년은 도시의 노동 계층을 대표합니다. 훗날 위고의 소설 '레 미제라블' 속 가브로슈를 떠올리게 하는 인물입니다.",
+   "en": "To Liberty's right, a boy charges forward shouting, a pistol in each hand. He stands for the working people of the city. He is often linked to Gavroche, the street urchin in Victor Hugo's later novel Les Misérables.",
+   "x": 0.72,
+   "y": 0.43,
+   "z": 2.1,
+   "tilt": 0
+  },
+  {
+   "ko": "오른쪽 멀리 연기 사이로 노트르담 대성당의 탑이 보입니다. 자세히 보면 탑 위에 아주 작은 삼색기가 휘날립니다. 이것이 실제 파리의 일임을 알려 주는 표지입니다.",
+   "en": "Far off to the right, the towers of Notre-Dame rise through the smoke. Look carefully and you can spot a tiny tricolor flying from them. It is a reminder that this is not a myth but a real day in Paris.",
+   "x": 0.87,
+   "y": 0.42,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "발아래 쓰러진 시신들은 혁명의 대가를 숨기지 않습니다. 왼쪽에는 옷이 벗겨진 남자가, 오른쪽에는 군복 차림의 병사가 누워 있습니다. 이 잔해와 시신 더미가 자유가 딛고 나아가는 받침대가 됩니다.",
+   "en": "The bodies at their feet make no secret of revolution's cost. On the left lies a half-stripped man; on the right, a soldier in uniform. This heap of rubble and corpses becomes the pedestal from which Liberty strides forward.",
+   "x": 0.5,
+   "y": 0.84,
+   "z": 1.5,
+   "tilt": 5
+  },
+  {
+   "ko": "화면 전체는 피라미드 구도로 정상의 깃발을 향해 솟아오릅니다. 들라크루아는 정밀한 윤곽선보다 자유로운 붓질과 색을 앞세웠습니다. 소묘를 중시한 아카데미와 다른 낭만주의의 힘입니다.",
+   "en": "The whole composition rises like a pyramid toward the flag at its peak. Delacroix favoured free brushwork and colour over precise outlines. That choice set Romanticism apart from the academic taste for careful drawing.",
+   "x": 0.5,
+   "y": 0.42,
+   "z": 1.2,
+   "tilt": 0
+  },
+  {
+   "ko": "그림은 1831년 살롱에 걸렸고 프랑스 정부가 3천 프랑에 사들였습니다. 하지만 정치적 메시지가 너무 강해 몇 달 만에 전시에서 내려졌습니다. 1874년에야 루브르 박물관에 들어와 지금에 이릅니다.",
+   "en": "The painting was first shown at the Salon of 1831, and the French government bought it for 3,000 francs. Its political message was so strong that it was taken off view within months. Only in 1874 did it enter the Louvre for good.",
+   "x": 0.55,
+   "y": 0.4,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "마지막으로 한 걸음 물러나 여신의 얼굴을 보십시오. 그녀는 앞으로 나아가면서도 고개를 돌려 뒤따르는 사람들을 부르고 있습니다. 그 대열에서 나는 어디쯤 서 있을지 생각해 보십시오.",
+   "en": "Finally, step back and look at Liberty's face. Even as she strides ahead, she turns her head to call the people behind her. Standing before this barricade, you might ask yourself where in the crowd you would be.",
+   "x": 0.5,
+   "y": 0.45,
+   "z": 1.1,
+   "tilt": 0
+  }
+ ]
+}

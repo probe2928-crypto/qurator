@@ -1,0 +1,101 @@
+{
+ "id": "w-schiele-death",
+ "segs": [
+  {
+   "ko": "에곤 실레의 '죽음과 소녀'입니다. 가로 180센티미터의 화면 한가운데, 흰 천 위에서 두 사람이 서로를 끌어안고 있습니다. 주변은 거칠고 어두운 갈색 땅입니다.",
+   "en": "This is Death and the Maiden by Egon Schiele. At the centre of a canvas 180 centimetres wide, two people embrace on a crumpled white sheet. Around them lies rough, dark brown ground, with no sky and no horizon.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  },
+  {
+   "ko": "먼저 위쪽 남자의 눈을 보시기 바랍니다. 수도복 같은 검은 옷을 입은 그는 여인을 안고 있지만, 커다란 눈은 허공을 향해 있습니다. 이 남자는 실레 자신의 모습입니다.",
+   "en": "Look first at the man's eyes. Wrapped in what looks like a dark monk's robe, he holds the woman, yet his wide eyes stare into empty space. The man is a self-portrait of Schiele.",
+   "x": 0.44,
+   "y": 0.22,
+   "z": 2.6,
+   "tilt": 0
+  },
+  {
+   "ko": "그는 한 손으로 여인의 붉은 머리를 감싸 안고 있습니다. 그런데 그 손길은 다정하기보다, 마치 마지막 인사처럼 무겁게 느껴집니다. 길고 마른 손가락이 유난히 눈에 띕니다.",
+   "en": "With one hand he cradles her red hair. Yet the gesture feels less tender than heavy, almost like a final farewell. Notice his long, bony fingers, spread wide across her head.",
+   "x": 0.39,
+   "y": 0.3,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "여인은 두 팔로 남자를 꼭 붙들고, 그의 가슴에 얼굴을 묻었습니다. 그녀는 오랫동안 실레의 연인이자 모델이었던 발리 노이칠입니다. 그녀의 손은 놓지 않으려는 듯 단단합니다.",
+   "en": "The woman clings to him with both arms, her face pressed against his chest. She is Wally Neuzil, his partner and model for several years, the woman who had shared his life and work. Her hands grip him as if she will not let go.",
+   "x": 0.38,
+   "y": 0.42,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "두 사람은 1911년에 만났고, 실레가 감옥에 갇혔던 어려운 때에도 발리는 곁을 지켰습니다. 그러나 1915년 실레가 중산층 집안의 에디트 하름스와 약혼하자, 발리는 곧바로 그를 떠났습니다.",
+   "en": "They met in 1911, and Wally stood by him even when he was briefly jailed. But in 1915 Schiele became engaged to Edith Harms, a woman from a respectable middle-class family, and Wally left him at once.",
+   "x": 0.42,
+   "y": 0.35,
+   "z": 1.4,
+   "tilt": 0
+  },
+  {
+   "ko": "실레는 그해 6월 에디트와 결혼했고, 사흘 뒤 제1차 세계대전에 징집되었습니다. 이 무렵 그의 그림에는 죽음과 사랑이 자주 함께 등장합니다. 이 그림도 그 이별 직후에 그려졌습니다.",
+   "en": "He married Edith that June and was drafted into the First World War just three days later. In his work of this period, death and love often appear together, and this painting followed straight after the break-up.",
+   "x": 0.5,
+   "y": 0.45,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "여인의 옷은 붉은색과 초록색, 흰색의 짧고 날카로운 붓질로 채워져 있습니다. 남자의 어둡고 무거운 옷과 맞닿아, 아직 살아 있는 몸의 따뜻한 체온처럼 느껴집니다.",
+   "en": "Her dress is made of short, sharp strokes of red, green and white. Pressed against his dark, heavy robe, it looks like the warmth of a body that is still very much alive.",
+   "x": 0.57,
+   "y": 0.55,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "오른쪽 뒤편은 온통 갈색과 황토색의 울퉁불퉁한 땅입니다. 바위 같기도 하고 구겨진 천 같기도 합니다. 마치 두 사람이 기댈 곳 하나 없는 거친 세상에 놓인 듯합니다.",
+   "en": "The background on the right is lumpy ground in browns and ochres. It looks like rock and like crumpled cloth at the same time, as if the pair had nowhere solid in the world to lean.",
+   "x": 0.85,
+   "y": 0.38,
+   "z": 1.8,
+   "tilt": 0
+  },
+  {
+   "ko": "두 사람은 흰 천 위에서 비스듬히 기울어, 금방이라도 미끄러질 듯합니다. 이 불안정한 자세는 곧 깨질 듯한 아슬아슬한 균형을 드러냅니다. 여인의 다리는 이미 오른쪽 아래로 흘러내립니다.",
+   "en": "The two bodies tilt across the white sheet as if about to slip. Their unstable pose shows a fragile balance that seems ready to break at any moment. Her legs are already sliding away to the lower right.",
+   "x": 0.72,
+   "y": 0.7,
+   "z": 1.9,
+   "tilt": -5
+  },
+  {
+   "ko": "실레는 처음에 이 그림을 '남자와 소녀', '뒤엉킨 사람들'이라고 불렀습니다. 지금의 제목 '죽음과 소녀'는 르네상스 시대부터 이어진 오래된 주제를 빌린 것입니다.",
+   "en": "Schiele first called the picture Man and Girl, and also Entwined People. The later title, Death and the Maiden, borrows a theme that goes back to the Renaissance, where death comes to claim a young woman.",
+   "x": 0.45,
+   "y": 0.45,
+   "z": 1.35,
+   "tilt": 0
+  },
+  {
+   "ko": "헤어진 뒤 간호사가 된 발리는 1917년 12월, 전쟁 중 성홍열로 스물세 살에 세상을 떠났습니다. 두 사람의 이야기를 품은 이 그림은 지금 빈 벨베데레 미술관에 있습니다.",
+   "en": "After they parted, Wally trained as a nurse. She died of scarlet fever in December 1917, aged twenty-three, while serving in the war. The painting that holds their story is now in the Belvedere in Vienna.",
+   "x": 0.55,
+   "y": 0.5,
+   "z": 1.2,
+   "tilt": 0
+  },
+  {
+   "ko": "한 걸음 물러나 두 사람 사이를 보세요. 꼭 끌어안았지만 이미 헤어지고 있는 이 순간, 누가 누구를 붙잡고 있는 걸까요? 그리고 둘 중 누가 먼저 손을 놓게 될까요?",
+   "en": "Step back and look at the space between them. Holding on, yet already letting go: in this moment, who is clinging to whom? And which of them will be the first to let go?",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  }
+ ]
+}

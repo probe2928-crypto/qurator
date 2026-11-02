@@ -1,0 +1,101 @@
+{
+ "id": "w-nightwatch",
+ "segs": [
+  {
+   "ko": "렘브란트의 '야경' 앞에 섰습니다. 가로 4미터가 넘는 화면 속에서 암스테르담 민병대가 막 출동하려 합니다. 창과 북소리, 사람들의 움직임이 한꺼번에 밀려옵니다.",
+   "en": "We are standing before Rembrandt's The Night Watch. Across a canvas more than four meters wide, an Amsterdam civic militia company is about to set off. Pikes, a drumbeat and moving bodies seem to rush toward us at once.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  },
+  {
+   "ko": "이 그림은 1642년에 완성되었습니다. 대장과 대원들이 주문해 본부 큰 홀에 걸었습니다. 당시 단체 초상은 모두가 일렬로 서서 얼굴을 똑같이 보여 주는 것이 관례였습니다.",
+   "en": "Rembrandt finished it in 1642. The captain and members of his company commissioned it for the great hall of their militia headquarters. Group portraits of the time usually lined everyone up so each face got equal space.",
+   "x": 0.5,
+   "y": 0.45,
+   "z": 1.2,
+   "tilt": 0
+  },
+  {
+   "ko": "렘브란트는 그 관례를 깨고 움직이는 순간을 택했습니다. 검은 옷에 붉은 띠를 두른 대장 프란스 바닝 코크가 명령을 내리며 걸어 나오고, 대원들이 움직이기 시작합니다.",
+   "en": "Rembrandt broke with that custom and chose a moment of movement. Captain Frans Banninck Cocq, in black with a red sash, strides forward as he gives the order, and the company begins to move around him.",
+   "x": 0.48,
+   "y": 0.58,
+   "z": 1.7,
+   "tilt": 0
+  },
+  {
+   "ko": "노란 옷은 부관 빌럼 판 라위턴뷔르흐입니다. 그 옷 위에 대장의 손 그림자가 드리워 있고, 손가락 사이에 암스테르담의 문장이 놓여 있습니다. 도시가 민병대 손 안에서 안전하다는 뜻으로 읽힙니다.",
+   "en": "Beside him, in yellow, is Lieutenant Willem van Ruytenburch. The shadow of the captain's hand falls across his coat, with Amsterdam's coat of arms between thumb and fingers. The city, it suggests, is safe in the militia's hands.",
+   "x": 0.6,
+   "y": 0.65,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "이제 왼쪽의 빛나는 소녀를 보십시오. 어두운 무리 속에서 혼자 환하게 떠올라 있고, 허리에는 죽은 닭을 매달고 있습니다. 눈에 띄는 닭발은 이 화승총 민병대의 상징입니다.",
+   "en": "Now find the glowing girl on the left. She shines out of the dark crowd on her own, with a dead chicken hanging at her waist. Its claw was the emblem of this militia, the arquebusiers.",
+   "x": 0.31,
+   "y": 0.67,
+   "z": 2.2,
+   "tilt": 0
+  },
+  {
+   "ko": "그 옆 붉은 옷의 남자는 총에 화약을 재고 있습니다. 렘브란트는 총을 장전하고, 쏘고, 손질하는 세 동작을 화면 곳곳에 나누어 그렸습니다. 초상이자 움직이는 장면입니다.",
+   "en": "Next to her, the man in red is loading his musket. Rembrandt spread three stages of handling a gun across the scene: loading, firing and cleaning. It is a portrait and a piece of action at the same time.",
+   "x": 0.2,
+   "y": 0.63,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "가운데 위쪽, 사람들 틈으로 반쯤 가려진 얼굴 하나가 엿보입니다. 렘브란트 자신의 모습이라는 해석이 있습니다. 화가가 슬쩍 그림 속에 들어와 행렬을 지켜보는 듯합니다.",
+   "en": "Up in the middle, half hidden between other heads, a face peeks out of the crowd. It is thought to be Rembrandt himself, slipping quietly into his own picture to watch the company march out.",
+   "x": 0.48,
+   "y": 0.42,
+   "z": 2.6,
+   "tilt": 0
+  },
+  {
+   "ko": "뒤쪽 높은 곳에는 방패 모양의 판이 걸려 있습니다. 어둠 속이라 놓치기 쉽습니다. 여기에는 민병대원 18명의 이름이 적혀 있는데, 1715년 무렵 덧그려진 것으로 알려져 있습니다.",
+   "en": "High in the background hangs a shield, easy to miss in the gloom. It bears the names of eighteen militiamen and is thought to have been added around 1715.",
+   "x": 0.59,
+   "y": 0.15,
+   "z": 1.9,
+   "tilt": 0
+  },
+  {
+   "ko": "'야경'이라는 이름은 원래 제목이 아닙니다. 세월이 흐르며 니스가 어두워지자 밤 장면처럼 보였고, 1797년 문서에 처음 이 이름이 나옵니다. 원래는 낮 장면입니다.",
+   "en": "The Night Watch is not the original title. As the varnish darkened over the years, the scene came to look like night, and the name first appears in a document of 1797. It was originally a daytime scene.",
+   "x": 0.5,
+   "y": 0.4,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "1715년 시청으로 옮길 때 두 문 사이 벽에 맞추느라 네 가장자리가 잘려 나갔습니다. 가장 많이 잘린 왼쪽에서는 인물 두 명이 사라졌고, 잘린 조각은 찾지 못했습니다.",
+   "en": "In 1715, when it was moved to the town hall, it was trimmed on all four sides to fit between two doors. The largest strip came off the left, taking two figures with it, and the pieces have never been found.",
+   "x": 0.12,
+   "y": 0.6,
+   "z": 1.5,
+   "tilt": 0
+  },
+  {
+   "ko": "이 그림은 1911년과 1975년에 칼로, 1990년에는 산으로 공격받았지만 그때마다 복원되었습니다. 2019년부터는 유리 벽 안에서 관람객이 지켜보는 가운데 복원이 이어지고 있습니다.",
+   "en": "The painting was attacked with knives in 1911 and 1975, and with acid in 1990, and each time it was restored. Since 2019, a major conservation project has carried on inside a glass room, in full view of visitors.",
+   "x": 0.45,
+   "y": 0.55,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "한 걸음 물러나 빛이 어디에 떨어지는지 따라가 보십시오. 대장과 부관, 소녀에게 빛이 모입니다. 렘브란트는 수십 명 가운데 누구를 먼저 보게 할지 빛으로 정했습니다.",
+   "en": "Step back and follow where the light lands. It gathers on the captain, the lieutenant and the girl. Among dozens of faces, Rembrandt used light to decide whom we see first.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1,
+   "tilt": 0
+  }
+ ]
+}

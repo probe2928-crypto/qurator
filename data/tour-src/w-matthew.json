@@ -1,0 +1,93 @@
+{
+ "id": "w-matthew",
+ "segs": [
+  {
+   "ko": "카라바조의 '성 마태오의 소명'입니다. 어둑한 방에서 세리 마태오가 동료들과 탁자에 둘러앉아 돈을 세고 있습니다. 그때 오른쪽 문간으로 누군가 들어와 손을 뻗어 그를 가리킵니다.",
+   "en": "This is Caravaggio's The Calling of Saint Matthew. In a dim room, the tax collector Matthew sits at a table with his companions, counting money. Then someone steps in from the doorway on the right and stretches out a hand to point at him.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  },
+  {
+   "ko": "이 그림은 1599년부터 1600년 사이 로마 산 루이지 데이 프란체시 성당의 콘타렐리 예배당을 위해 그렸습니다. 맞은편에는 '성 마태오의 순교'가 걸려 있습니다.",
+   "en": "Caravaggio painted it between 1599 and 1600 for the Contarelli Chapel in the Roman church of San Luigi dei Francesi. Its companion, The Martyrdom of Saint Matthew, hangs directly opposite.",
+   "x": 0.5,
+   "y": 0.45,
+   "z": 1.2,
+   "tilt": 0
+  },
+  {
+   "ko": "오른쪽에 선 이가 그리스도이고, 그 앞을 성 베드로가 가리고 있습니다. 그리스도의 얼굴은 어둠 속에 반쯤 잠겨 있고, 머리 위로 가느다란 후광이 보입니다. 앞에 선 베드로도 손을 들어 탁자 쪽을 가리킵니다.",
+   "en": "The figure standing at the right is Christ, partly screened by Saint Peter in front of him. His face is half sunk in shadow, with a thin halo just visible above his head. Peter, too, raises a hand toward the table.",
+   "x": 0.84,
+   "y": 0.42,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "그리스도가 뻗은 손을 보십시오. 이 손은 미켈란젤로의 '아담의 창조' 속 아담의 손을 닮았습니다. 그리스도를 새로운 아담으로 보는 생각과 이어져, 새로운 창조가 시작되는 순간임을 암시합니다.",
+   "en": "Look closely at Christ's outstretched hand, held almost loosely in the air. It echoes Adam's hand in Michelangelo's Creation of Adam. Linked to the idea of Christ as a second Adam, it hints that a new creation is beginning.",
+   "x": 0.68,
+   "y": 0.42,
+   "z": 2.6,
+   "tilt": 0
+  },
+  {
+   "ko": "빛은 그리스도 머리 위쪽, 보이지 않는 곳에서 들어와 사선으로 방을 가릅니다. 창이 아니라 이 빛이 탁자에 앉은 얼굴들을 하나씩 비춥니다. 밝음과 어둠의 경계가 벽 위에 날카로운 사선으로 남습니다.",
+   "en": "The light falls from an unseen source above Christ's head, not from the window. It slices across the room on a sharp diagonal, catching the faces at the table one by one. On the wall above, the edge between light and shadow forms a sharp slanting line.",
+   "x": 0.78,
+   "y": 0.3,
+   "z": 1.8,
+   "tilt": 5
+  },
+  {
+   "ko": "탁자 가운데 깃털 모자를 쓴 소년은 놀란 얼굴로 문 쪽을 돌아봅니다. 인물들은 화가가 살던 시대의 옷을 입고 있어, 성경 이야기가 로마의 뒷골목에서 벌어지는 듯합니다.",
+   "en": "At the middle of the table, a boy in a feathered hat turns toward the door in open surprise. Everyone wears the clothes of Caravaggio's own day, so the Bible story seems to unfold in a Roman back street.",
+   "x": 0.46,
+   "y": 0.5,
+   "z": 2.2,
+   "tilt": 0
+  },
+  {
+   "ko": "그 옆의 수염 난 남자는 손으로 가리키며 '저 말입니까?' 하고 묻는 것처럼 보입니다. 그래서 보통 이 사람을 마태오로 봅니다. 빛이 가장 환하게 닿는 얼굴 가운데 하나입니다.",
+   "en": "Beside him, a bearded man points as if to ask, \"Me?\" For that reason he is usually taken to be Matthew. His face is one of those the light touches most brightly of all.",
+   "x": 0.33,
+   "y": 0.47,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "그런데 탁자 끝에서 고개를 숙이고 동전을 세는 젊은이가 마태오라는 해석도 있습니다. 그렇다면 수염 난 남자는 이 사람 말입니까 하고 묻는 셈입니다. 일부러 모호하게 남겼다는 견해도 있습니다.",
+   "en": "Yet some argue that Matthew is the young man hunched over his coins at the end of the table. Then the bearded man would be asking, \"Him?\" Others think Caravaggio left it deliberately ambiguous.",
+   "x": 0.24,
+   "y": 0.6,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "왼쪽 끝의 안경 쓴 노인은 여전히 돈에서 눈을 떼지 않습니다. 부르심을 알아차린 사람과 알아차리지 못한 사람이 한 탁자에 함께 앉아 있습니다. 돈을 세는 손과 부르는 손이 한 화면에서 마주합니다.",
+   "en": "At the far left, an old man in spectacles still peers down at the money. Around one table sit those who notice the call and those who do not. Hands that count money and a hand that calls meet in one picture.",
+   "x": 0.22,
+   "y": 0.46,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "밝은 빛과 깊은 어둠을 날카롭게 맞세운 이 명암법은 카라바조의 이름과 함께 기억됩니다. 카라바조가 처음 맡은 대형 공공 주문작으로, 400년이 지난 지금도 처음 걸린 예배당에 그대로 있습니다.",
+   "en": "This sharp play of bright light against deep shadow, chiaroscuro pushed to its limit, became Caravaggio's signature. This was his first major public commission. More than four hundred years on, the painting still hangs in the chapel it was made for.",
+   "x": 0.5,
+   "y": 0.45,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "한 걸음 물러나 빛의 길을 다시 따라가 보십시오. 그리스도의 손에서 시작된 선이 탁자 위 누구에게 닿는지 직접 정해 보셔도 좋겠습니다. 그 손이 나를 가리킨다면 어떻게 답하겠습니까?",
+   "en": "Step back and trace the path of light once more. Decide for yourself whom the line from Christ's hand truly reaches. And if that hand pointed at you, how would you answer the call?",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1,
+   "tilt": 0
+  }
+ ]
+}

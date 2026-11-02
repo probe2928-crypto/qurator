@@ -1,0 +1,93 @@
+{
+ "id": "w-mondrian30",
+ "segs": [
+  {
+   "ko": "가로세로 45센티미터, 생각보다 작은 정사각형 그림입니다. 네덜란드 화가 피트 몬드리안이 1930년 파리에서 그렸고, 지금은 스위스의 취리히 미술관이 소장하고 있습니다.",
+   "en": "This is a square painting, just 45 centimetres on each side, smaller than many people expect. The Dutch painter Piet Mondrian made it in Paris in 1930, and today it belongs to the Kunsthaus Zürich in Switzerland.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  },
+  {
+   "ko": "몬드리안은 자연의 모습을 모두 걷어 내고 선과 원색만으로 보편적인 조화를 보여 주려 했습니다. 그는 이 방식을 신조형주의라 불렀습니다. 그의 화면에는 곡선도 사선도 없이 수직과 수평만 남았습니다.",
+   "en": "Mondrian stripped away every trace of nature to show a universal harmony with line and primary colour alone. He called this approach Neo-Plasticism. In his pictures, no curves or diagonals remain, only the vertical and the horizontal.",
+   "x": 0.55,
+   "y": 0.45,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "먼저 검은 선을 따라가 보십시오. 수직선과 수평선이 화면을 격자처럼 나누는데, 굵기가 조금씩 다르고 붓 자국도 남아 있습니다. 기계가 아니라 손으로 그은 선입니다.",
+   "en": "First, follow the black lines. Verticals and horizontals divide the surface into a grid, yet their thickness varies slightly, and you can still see the marks of the brush. These lines were drawn by hand, not by a machine.",
+   "x": 0.24,
+   "y": 0.5,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "오른쪽 위를 크게 차지한 빨간 사각형이 이 그림의 주인공으로, 화면의 거의 절반을 덮습니다. 빨강은 캔버스 위쪽과 오른쪽 끝까지 뻗어 있어, 그림 밖으로도 계속 이어질 듯한 느낌을 줍니다.",
+   "en": "The large red square filling the upper right is the star of the picture, covering almost half the surface. It runs right to the top and right edges of the canvas, as if it might continue beyond the frame.",
+   "x": 0.62,
+   "y": 0.35,
+   "z": 1.6,
+   "tilt": 0
+  },
+  {
+   "ko": "왼쪽 아래로 내려오면 파란 사각형이 있습니다. 빨강보다 훨씬 작지만, 짙고 차가운 색이라 시선을 단단히 붙잡습니다. 그 아래 가장자리에는 화가의 머리글자와 1930년을 뜻하는 작은 서명이 있습니다.",
+   "en": "Down at the lower left sits a blue rectangle. It is much smaller than the red, but its deep, cool colour holds the eye firmly. Along its bottom edge is a tiny signature, PM 30: the painter's initials and the year 1930.",
+   "x": 0.16,
+   "y": 0.89,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "아래쪽의 넓은 흰 면도 그냥 비어 있는 것이 아닙니다. 몬드리안에게 흰색은 하나의 면이었고, 색과 색 사이에 숨 쉴 공간을 만들어 줍니다. 흰 면들도 크기가 저마다 달라 화면의 리듬을 만듭니다.",
+   "en": "The broad white area along the bottom is not simply empty. For Mondrian, white was a plane in its own right, and here it gives the colours room to breathe. The white areas differ in size, too, and they set the rhythm of the surface just as much as the colours do.",
+   "x": 0.58,
+   "y": 0.86,
+   "z": 1.8,
+   "tilt": 0
+  },
+  {
+   "ko": "이제 오른쪽 아래 구석입니다. 가장 작은 노랑이 검은 선 사이에 숨어 있습니다. 이 작은 노랑이 왼쪽의 파랑, 위의 빨강과 함께 무게를 나누며 균형을 완성합니다.",
+   "en": "Now the far lower right corner. The smallest colour, a yellow, is tucked in between black lines. Together with the blue at the left and the red above, this little yellow shares the weight and completes the balance.",
+   "x": 0.93,
+   "y": 0.9,
+   "z": 2.6,
+   "tilt": 0
+  },
+  {
+   "ko": "대칭은 하나도 없는데 화면이 흔들리지 않는 것은 면의 크기와 색의 무게를 정밀하게 맞췄기 때문입니다. 균형은 거울 같은 대칭이 아니라 서로 다른 면들의 관계에서 나옵니다.",
+   "en": "There is no symmetry anywhere, yet nothing wobbles, because the size of each area and the weight of each colour are tuned so precisely. Here, balance comes from the relationships between unequal parts, not from mirror images.",
+   "x": 0.5,
+   "y": 0.6,
+   "z": 1.3,
+   "tilt": -4
+  },
+  {
+   "ko": "이 그림은 취리히의 건축가 알프레드 로트의 부탁으로 그려졌습니다. 뒷면에는 1930년 1월 파리에서 쓴 헌사가 있는데, 관계와 균형을 찾는 일이 미래를 준비한다는 내용입니다. 로트는 1987년 이 작품을 취리히 미술관에 기증했습니다.",
+   "en": "The painting was made at the request of the Zurich architect Alfred Roth. On the back, dated Paris, January 1930, Mondrian wrote a dedication to his friend about seeking relationships and balance as a way of preparing the future. Roth gave the work to the Kunsthaus Zürich in 1987.",
+   "x": 0.62,
+   "y": 0.42,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "몬드리안은 이후 같은 구성을 여러 번 다시 그렸습니다. 그때마다 화면을 5센티미터씩 키웠지만, 검은 선의 굵기는 그대로 두었다고 합니다. 작은 그림에서 시작한 실험이 조금씩 자라난 셈입니다.",
+   "en": "Mondrian later repeated this composition several times. Each time he enlarged the canvas by five centimetres, while keeping the black lines exactly the same width. An experiment that began on this small canvas slowly grew.",
+   "x": 0.5,
+   "y": 0.72,
+   "z": 1.5,
+   "tilt": 0
+  },
+  {
+   "ko": "한 걸음 물러나 전체를 다시 바라보십시오. 선 몇 개와 세 가지 원색, 그리고 흰 면이 전부입니다. 이 가운데 색 하나만 지운다면, 팽팽한 균형은 어떻게 달라질까요?",
+   "en": "Step back and look at the whole once more. A few lines, three primary colours and some white are all there is. If you took away just one colour, what would happen to this taut balance?",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1,
+   "tilt": 0
+  }
+ ]
+}

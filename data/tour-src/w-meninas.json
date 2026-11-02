@@ -1,0 +1,93 @@
+{
+ "id": "w-meninas",
+ "segs": [
+  {
+   "ko": "벨라스케스의 '시녀들'입니다. 높이 3미터가 넘는 화면 속, 스페인 왕실의 한 방에 어린 공주와 시녀들, 난쟁이 광대, 큰 개가 모여 있습니다. 첫눈에는 궁정의 평범한 한순간처럼 보입니다.",
+   "en": "This is Las Meninas by Diego Velázquez. On a canvas more than three metres tall, a little princess, her maids, a court dwarf and a large dog gather in a room of the Spanish royal palace. At first glance it looks like an ordinary moment at court.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  },
+  {
+   "ko": "한가운데 환한 빛을 받은 금발 소녀가 마르가리타 공주입니다. 펠리페 4세와 마리아나 왕비의 딸로 이때 다섯 살이었고, 당시 두 사람의 유일하게 살아남은 자녀였습니다.",
+   "en": "The fair-haired girl standing in the light at the centre is the Infanta Margarita. She was five years old, the daughter of King Philip IV and Queen Mariana, and at that time their only surviving child.",
+   "x": 0.49,
+   "y": 0.72,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "왼쪽에 무릎 꿇은 시녀는 붉은 잔을 금쟁반에 받쳐 공주에게 건넵니다. 오른쪽 시녀는 막 무릎을 굽혀 인사하려 합니다. 제목 '메니나스'가 바로 이 시녀들을 가리킵니다.",
+   "en": "On the left, a kneeling maid of honor offers the princess a small red cup on a golden tray. On the right, another is just about to curtsy. These young ladies-in-waiting, the meninas, give the painting its name.",
+   "x": 0.42,
+   "y": 0.67,
+   "z": 2.2,
+   "tilt": 0
+  },
+  {
+   "ko": "왼쪽 거대한 캔버스 앞에 붓과 팔레트를 든 사람이 화가 벨라스케스 자신입니다. 궁정 화가이자 왕궁 관리 책임자였던 그는, 붓을 멈춘 채 정확히 우리를 바라보고 있습니다.",
+   "en": "Before the huge canvas on the left, holding brush and palette, stands Velázquez himself in a self-portrait. Court painter and chamberlain of the palace, he has paused in his work and looks straight out at us.",
+   "x": 0.24,
+   "y": 0.56,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "화가 가슴의 붉은 십자가는 산티아고 기사단의 표시입니다. 그는 1659년에야 기사 작위를 받았습니다. 그래서 이 십자가는 그림이 완성되고 3년이 지난 뒤 덧그려진 것입니다.",
+   "en": "The red cross on his chest is the emblem of the Order of Santiago. Velázquez was only knighted in 1659, so the cross was added three years after the painting was finished, a late honour written onto his own portrait.",
+   "x": 0.21,
+   "y": 0.61,
+   "z": 2.8,
+   "tilt": 0
+  },
+  {
+   "ko": "이제 뒷벽 가운데의 작은 거울을 보세요. 흐릿하게 왕과 왕비의 상반신이 비칩니다. 그렇다면 화가가 그리는 대상, 그리고 우리가 선 자리는 바로 왕과 왕비의 자리입니다.",
+   "en": "Now look at the small mirror in the middle of the back wall. The king and queen appear in it, faint and blurred. So whoever the painter is portraying, and wherever we are standing, it is the place of the king and queen.",
+   "x": 0.42,
+   "y": 0.565,
+   "z": 2.8,
+   "tilt": 0
+  },
+  {
+   "ko": "거울 오른쪽 열린 문간 계단에는 한 남자가 빛을 등지고 서 있습니다. 왕비의 시종 호세 니에토로, 문을 여닫는 것이 그의 일이었습니다. 그 덕분에 방이 한층 깊어 보입니다.",
+   "en": "To the right of the mirror, a man pauses on the steps of an open doorway, silhouetted against bright light. He is José Nieto, the queen's chamberlain, whose job was to open and close doors for her. Through him, the room seems to go on and on.",
+   "x": 0.58,
+   "y": 0.58,
+   "z": 2.6,
+   "tilt": 0
+  },
+  {
+   "ko": "오른쪽 앞에는 궁정의 난쟁이 마리 바르볼라와 니콜라스 페르투사토가 서 있습니다. 소년은 졸고 있는 큰 개를 발로 장난스럽게 건드립니다. 개는 아랑곳하지 않고 눈을 감고 있습니다.",
+   "en": "In the right foreground stand the court dwarfs Mari Bárbola and Nicolás Pertusato. The boy playfully nudges the sleepy mastiff with his foot. The dog, unbothered, keeps its eyes half closed.",
+   "x": 0.85,
+   "y": 0.78,
+   "z": 2.0,
+   "tilt": 4
+  },
+  {
+   "ko": "이곳은 마드리드 알카사르 궁의 한 방으로, 벨라스케스가 작업실로 쓰던 곳입니다. 오른쪽 창에서 든 빛과 깊어지는 어둠으로 공간을 만들어, 같은 방에 선 듯한 착시를 줍니다.",
+   "en": "The room is in the Alcázar palace in Madrid, where Velázquez had his studio. Light from the windows on the right and shadow deepening toward the back create a powerful illusion that we are standing in the same room.",
+   "x": 0.55,
+   "y": 0.42,
+   "z": 1.4,
+   "tilt": 0
+  },
+  {
+   "ko": "보는 사람과 보이는 사람, 그리는 사람의 관계를 뒤섞은 이 구조는 수백 년 동안 분석되어 왔습니다. 화가 루카 조르다노는 회화의 신학이라 불렀고, 피카소는 1957년 이 그림을 58점으로 다시 그렸습니다.",
+   "en": "By scrambling the roles of viewer, viewed and painter, the picture has kept philosophers and artists arguing for centuries. The painter Luca Giordano called it the theology of painting, and in 1957 Picasso made 58 versions of his own.",
+   "x": 0.45,
+   "y": 0.55,
+   "z": 1.2,
+   "tilt": 0
+  },
+  {
+   "ko": "이제 한 걸음 물러나 화가의 눈과 마주해 보세요. 그림 속 사람들이 지금 바라보는 것은 왕과 왕비일까요, 아니면 그림 앞에 선 우리일까요? 잠시 그 자리에 머물러 보세요.",
+   "en": "Step back now and meet the painter's gaze. Are the people in this room looking at the king and queen, or at you, standing right here in front of the painting? Stay in that spot for a moment and see how it feels.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1,
+   "tilt": 0
+  }
+ ]
+}

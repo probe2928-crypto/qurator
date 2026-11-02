@@ -1,0 +1,93 @@
+{
+ "id": "k-chaekgado-yitaekgyun",
+ "segs": [
+  {
+   "ko": "열 폭을 이어 붙인 커다란 병풍 위로 칸칸이 나뉜 책장이 펼쳐집니다. 높이는 2미터 가까이, 폭은 4미터에 이릅니다. 그림 앞에 서면 서재의 한쪽 벽 앞에 선 듯합니다.",
+   "en": "Across ten joined panels, a towering bookcase unfolds compartment by compartment. The screen stands almost two meters tall and nearly four meters wide. Standing before it, you feel as if you were facing one wall of a scholar's study.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  },
+  {
+   "ko": "책가도는 책장 그림이라는 뜻입니다. 책을 아낀 정조가 18세기 후반 이런 병풍을 어좌 곁에 두면서 널리 퍼졌다고 전합니다. 신하들이 진짜 책장으로 여기자, 왕이 그림일 뿐이라 했다는 일화도 있습니다.",
+   "en": "Chaekgado means 'picture of bookshelves.' The genre spread in the late 1700s after King Jeongjo, a devoted book collector, kept such screens beside his throne. When courtiers mistook one for a real bookshelf, the king is said to have reminded them it was only a painting.",
+   "x": 0.5,
+   "y": 0.42,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "처음에는 왕실의 상징이던 책가도는 곧 양반들의 서재를 꾸미는 병풍으로도 사랑받았습니다. 귀한 책과 물건을 늘어놓은 그림은 학문과 교양, 그리고 소유의 즐거움을 함께 보여 줍니다.",
+   "en": "What began as a royal emblem soon became a favorite furnishing for aristocrats' elegant studies. Shelves full of rare books and treasures speak of learning and refinement, and also of the simple pleasure of owning beautiful things.",
+   "x": 0.4,
+   "y": 0.35,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "위쪽 칸부터 살펴보겠습니다. 서른다섯 칸 가운데 스물일곱 칸에 책이 쌓여 있습니다. 책갑에 든 책들이 눕기도 하고 겹겹이 포개지기도 하며, 칸마다 다른 리듬을 만듭니다.",
+   "en": "Let's start with the upper shelves. Twenty-seven of the thirty-five compartments hold stacks of books. In their protective cases, some lie flat and some are piled high, so that every shelf has its own rhythm.",
+   "x": 0.28,
+   "y": 0.2,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "높이 쌓인 책갑의 옆면을 보십시오. 한쪽 면에 짙은 그림자를 넣어 책이 앞으로 튀어나온 것처럼 보이게 했습니다. 명암과 원근으로 입체감을 내는 서양의 눈속임 기법을 받아들인 것입니다.",
+   "en": "Look at the sides of these tall stacks of book cases. One face is shaded darker, so the volumes seem to jut out toward us. Its painters borrowed European shading and perspective so the shelves seem to stand inside the room.",
+   "x": 0.54,
+   "y": 0.2,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "책 사이에는 귀한 물건이 놓였습니다. 청동 향로, 잔금이 간 도자기, 이싱 찻주전자, 도장, 알록달록한 작은 수석이 보입니다. 모두 당시 선비들이 갖고 싶어 하던 물건입니다.",
+   "en": "Between the books sit prized objects: bronze incense burners, crackle-glazed stoneware, Yixing teapots from China, seals and small colorful rocks. These were exactly the luxuries that a cultivated scholar of the day longed to own.",
+   "x": 0.65,
+   "y": 0.42,
+   "z": 2.2,
+   "tilt": 0
+  },
+  {
+   "ko": "아래쪽 이 칸에는 수선화와 유자를 담은 접시가 놓였습니다. 하얀 꽃과 노란 빛깔이 딱딱한 책들 사이에서 계절의 향기를 더해 줍니다. 그림 속에서도 은은한 향이 나는 듯합니다.",
+   "en": "Down in this compartment sits a plate of narcissus and citrons. The white blossoms and touches of yellow bring a breath of the season among the hard-edged books. You can almost catch their scent.",
+   "x": 0.45,
+   "y": 0.65,
+   "z": 2.6,
+   "tilt": 0
+  },
+  {
+   "ko": "책가도는 이런 서양의 착시 기법과 명암법을 받아들인 가장 이른 한국 그림으로 꼽힙니다. 선반의 안쪽 면들이 비스듬히 그려져, 평평한 비단 위에 깊은 공간이 생겨납니다.",
+   "en": "Chaekgado is counted as the earliest Korean painting form to adopt these European tricks of illusion and modelling in light and shade. The slanting inner walls of each compartment open up surprising depth on the flat silk.",
+   "x": 0.55,
+   "y": 0.45,
+   "z": 1.6,
+   "tilt": -5
+  },
+  {
+   "ko": "이 병풍의 화가는 오랫동안 알려지지 않았습니다. 그런데 한 폭 속에 몰래 그려 넣은 작은 도장이 확인되어, 19세기 후반의 이름난 궁중 화원 이택균의 작품으로 밝혀졌습니다.",
+   "en": "For a long time no one knew who had painted this screen. Then a tiny seal, slipped secretly into one of the panels, identified the artist as Yi Taek-gyun, a leading court painter of the later 1800s.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.4,
+   "tilt": 0
+  },
+  {
+   "ko": "클리블랜드 미술관은 2011년 이 병풍을 소장했습니다. 지금까지 알려진 이택균의 작품은 이것을 포함해 세 점뿐이어서, 그의 솜씨를 보여 주는 귀한 증거가 됩니다.",
+   "en": "The Cleveland Museum of Art acquired the screen in 2011. It is one of only three works by Yi known to survive, which makes it precious evidence of his skill and of the court workshop he belonged to.",
+   "x": 0.5,
+   "y": 0.45,
+   "z": 1.2,
+   "tilt": 0
+  },
+  {
+   "ko": "한 걸음 물러나 전체를 보십시오. 숨은 도장이 어느 폭에 있을지 천천히 찾아보셔도 좋습니다. 그리고 내 서재라면 이 책장에 어떤 물건을 올려 둘지 상상해 보시기 바랍니다.",
+   "en": "Step back and take in the whole screen. Try hunting for the hidden seal, panel by panel. And ask yourself what you would place on these shelves if this were your own study.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  }
+ ]
+}

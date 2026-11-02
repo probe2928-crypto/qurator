@@ -1,0 +1,101 @@
+{
+ "id": "w-arnolfini",
+ "segs": [
+  {
+   "ko": "얀 반 에이크의 '아르놀피니 부부의 초상'입니다. 높이 82센티미터 남짓한 참나무 판 위에, 한 부부가 방 안에 나란히 서서 손을 맞잡고 있습니다. 작은 그림이지만 볼 것이 아주 많습니다.",
+   "en": "This is The Arnolfini Portrait by Jan van Eyck. On an oak panel just over 82 centimetres tall, a couple stands side by side in their room, hand in hand. It is a small picture, but it rewards very close looking.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  },
+  {
+   "ko": "남자는 브뤼헤에서 일하던 이탈리아 상인 조반니 아르놀피니로 추정됩니다. 다만 가문의 어느 조반니인지, 아내가 누구인지는 지금도 의견이 갈립니다. 그는 오른손을 들어 맹세하듯 서 있습니다.",
+   "en": "The man is probably Giovanni Arnolfini, an Italian merchant who worked in Bruges. Exactly which Giovanni of the family he is, and who his wife was, is still debated. He raises his right hand, as if taking an oath.",
+   "x": 0.27,
+   "y": 0.27,
+   "z": 2.2,
+   "tilt": 0
+  },
+  {
+   "ko": "위쪽 놋쇠 샹들리에를 보세요. 촛대 여섯 개 가운데 왼쪽 앞의 하나에만 촛불이 켜져 있습니다. 대낮에 켜진 이 한 자루 촛불의 뜻을 두고 지금도 여러 해석이 있습니다.",
+   "en": "Look up at the brass chandelier. Of its six holders, only one, at the front left, holds a lit candle. A single flame burning in broad daylight has invited many different interpretations, and none is certain.",
+   "x": 0.47,
+   "y": 0.09,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "샹들리에 아래 벽에는 라틴어로 '얀 반 에이크가 여기 있었다. 1434'라고 적혀 있습니다. 벽에 직접 쓴 듯한 이 서명은 화가가 이 장면의 증인이었음을 암시합니다.",
+   "en": "On the wall below it, an elegant Latin signature reads Jan van Eyck was here, 1434. Written as if directly on the wall, it hints that the painter was a witness to this scene, not just its maker.",
+   "x": 0.49,
+   "y": 0.21,
+   "z": 2.8,
+   "tilt": 0
+  },
+  {
+   "ko": "거울 테두리에는 손톱만 한 원 안에 그리스도 수난 장면이 하나하나 그려져 있습니다. 아내 쪽에는 그리스도의 죽음과 부활이, 남편 쪽에는 그 생애의 장면들이 놓였습니다.",
+   "en": "The mirror's frame holds tiny roundels, each about half a fingernail wide, painted with scenes of Christ's Passion. His death and resurrection are on the wife's side, and scenes from his life are on the husband's.",
+   "x": 0.54,
+   "y": 0.28,
+   "z": 2.6,
+   "tilt": 0
+  },
+  {
+   "ko": "볼록 거울 속을 들여다보면 두 사람의 뒷모습과 함께, 문간으로 들어서는 두 인물이 비칩니다. 바로 우리가 서 있는 자리이고, 그중 하나가 화가라는 해석도 있습니다.",
+   "en": "Look into the convex mirror and you see the couple from behind, plus two figures entering through the doorway: exactly where we are standing. Many believe one of them is van Eyck himself.",
+   "x": 0.5,
+   "y": 0.3,
+   "z": 3.0,
+   "tilt": 0
+  },
+  {
+   "ko": "거울 오른쪽 침대 기둥에는 작은 솔이 걸려 있고, 그 위에 성인 조각이 서 있습니다. 출산의 수호성인 성 마르가리타로 보는 견해가 많습니다. 솔은 집안일을 뜻한다고 봅니다.",
+   "en": "To the right of the mirror, a small brush hangs from the bedpost, topped by a carved saint. She is most often identified as Saint Margaret, patron saint of childbirth, while the brush is thought to stand for household duties.",
+   "x": 0.63,
+   "y": 0.23,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "여인의 배가 불러 보이는 것은 임신 때문이 아닙니다. 무거운 초록 치맛자락을 끌어 올려 안은 당시의 차림새 때문으로, 같은 시대 성녀 그림에서도 볼 수 있는 모습입니다.",
+   "en": "The woman is not pregnant. Her full silhouette comes from gathering up her heavy green skirts, as fashion then required. We see exactly the same look in paintings of virgin saints from the period.",
+   "x": 0.73,
+   "y": 0.47,
+   "z": 1.9,
+   "tilt": 3
+  },
+  {
+   "ko": "두 사람 발치의 작은 털북숭이 개는 흔히 충실함의 상징으로 읽힙니다. 왼쪽 아래에는 남자가 벗어 둔 나막신이, 그 뒤쪽 바닥에는 붉은 신발 한 켤레가 놓여 있습니다.",
+   "en": "The shaggy little dog at their feet is often read as a symbol of loyalty. In the lower left lie the wooden overshoes the man has taken off, and further back on the floor stands a pair of red shoes.",
+   "x": 0.38,
+   "y": 0.86,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "왼쪽 창턱과 그 아래 궤 위의 오렌지는 당시 네덜란드에서 부를 보여 주는 귀한 과일이었습니다. 창으로 든 부드러운 빛이 방 안의 모든 물건을 조용히 비추고 있습니다.",
+   "en": "The oranges on the windowsill and the chest were a sign of wealth in the Netherlands at the time. Soft daylight from the window quietly picks out every object in the room, from fur to brass to wood.",
+   "x": 0.1,
+   "y": 0.45,
+   "z": 2.2,
+   "tilt": 0
+  },
+  {
+   "ko": "반 에이크는 얇고 투명한 유화 물감층을 여러 번 덧입혀 이 빛나는 색을 만들었습니다. 이 그림은 여러 주인의 손을 거쳐, 1842년 런던 내셔널 갤러리가 사들였습니다.",
+   "en": "Van Eyck built all of this out of thin, glowing layers of oil glaze, laid one over another. After passing through many owners, the painting was bought by the National Gallery in London in 1842.",
+   "x": 0.5,
+   "y": 0.45,
+   "z": 1.4,
+   "tilt": 0
+  },
+  {
+   "ko": "이제 한 걸음 물러나, 거울 속 문간에 선 두 사람을 다시 떠올려 보세요. 거울 안에서 우리는 이 방에 막 들어선 손님입니다. 우리는 무엇을 증언하러 이곳에 왔을까요?",
+   "en": "Step back and think of those two figures in the mirror's doorway. Inside the mirror, we are the guests who have just walked into this room. What have we come here to witness?",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1,
+   "tilt": 0
+  }
+ ]
+}

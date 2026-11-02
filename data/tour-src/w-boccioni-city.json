@@ -1,0 +1,93 @@
+{
+ "id": "w-boccioni-city",
+ "segs": [
+  {
+   "ko": "붉은 말과 사람들이 한 덩어리가 되어 화면 밖으로 쏟아져 나올 듯합니다. 가로 3미터의 캔버스 앞에 서면 먼지와 함성이 먼저 몰려오는 느낌입니다. 잠시 전체의 기세를 느껴 보십시오.",
+   "en": "Red horses and straining men surge as one mass, as if about to burst out of the frame. Standing before this canvas, three metres wide, you feel the dust and shouting first. Take a moment to feel its momentum.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  },
+  {
+   "ko": "이탈리아 화가 움베르토 보초니가 1910년에 그린 작품으로, 그의 첫 본격 미래주의 작품으로 꼽힙니다. 미래주의자들은 기계와 노동, 빠르게 커 가는 도시를 예찬했습니다. 이 그림은 그 믿음을 화면으로 옮긴 선언과 같습니다.",
+   "en": "The Italian painter Umberto Boccioni made this in 1910, and it is counted as his first major Futurist work. The artists of Futurism celebrated machines, labour and the fast-growing city. This painting turns that belief into a picture, almost like a manifesto.",
+   "x": 0.5,
+   "y": 0.4,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "먼저 화면 맨 위를 보십시오. 비계를 두른 채 올라가는 건물과 공장 굴뚝들이 희미하게 늘어서 있습니다. 도시 변두리에서 한창 진행 중인 새 도시의 공사 현장입니다.",
+   "en": "First, look along the very top. Buildings wrapped in scaffolding and factory chimneys stand in a hazy row. This is a new city under construction on the edge of town, going up before our eyes.",
+   "x": 0.62,
+   "y": 0.09,
+   "z": 2.2,
+   "tilt": 0
+  },
+  {
+   "ko": "한가운데에는 거대한 붉은 말이 몸을 앞으로 내던집니다. 목에 걸린 짙푸른 마구가 붉은 몸통을 가르며 화면을 대각선으로 내리꽂습니다. 이 말은 근대 도시가 품은 에너지와 속도의 상징입니다.",
+   "en": "At the centre, a huge red horse hurls its body forward. Its dark blue harness slashes across the red flank, driving diagonally down through the picture. This horse is a symbol of the energy and speed that the modern city carries within it.",
+   "x": 0.5,
+   "y": 0.33,
+   "z": 1.8,
+   "tilt": 0
+  },
+  {
+   "ko": "오른쪽으로 가면 고삐가 채워진 말 머리와 팽팽하게 당겨진 밧줄이 보입니다. 사람들은 고삐를 붙들지만, 말은 오히려 그들을 끌고 앞으로 나아갑니다. 길들여졌으면서도 매어 둔 줄을 거스르는 힘입니다.",
+   "en": "Move to the right, and you find a bridled horse's head and a rope pulled taut. The men cling to the reins, yet the horse drags them forward instead. It is a tamed beast still straining against its tethers.",
+   "x": 0.79,
+   "y": 0.45,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "아래쪽에서는 사람들이 몸을 비틀며 버팁니다. 다리와 팔은 흐릿한 잔상처럼 겹치고, 말발굽 같은 검은 덩어리가 바닥을 차고 나갑니다. 형체보다 움직임 자체가 먼저 보입니다.",
+   "en": "Below, men twist and brace themselves against the pull. Arms and legs blur like afterimages, and a black hoof-like shape kicks off the ground. You see motion itself before you see any figure.",
+   "x": 0.5,
+   "y": 0.76,
+   "z": 1.9,
+   "tilt": 0
+  },
+  {
+   "ko": "왼쪽에는 흰 말 곁에서 두 팔을 치켜든 사람이 휘청입니다. 말에 매달린 사람들은 끌려가는지 함께 달리는지 알 수 없을 만큼 뒤엉켜 있습니다. 인간과 짐승의 힘이 한 방향으로 쏠립니다.",
+   "en": "On the left, beside a white horse, a man with raised arms staggers. The men clinging on are so entangled that you cannot tell whether they are dragged or running along. Human and animal force all lean one way.",
+   "x": 0.15,
+   "y": 0.45,
+   "z": 1.9,
+   "tilt": -5
+  },
+  {
+   "ko": "붉은 말의 몸통을 가까이 보면 길고 가는 붓질이 실처럼 갈라지며 결을 이룹니다. 색을 섞지 않고 나란히 놓아 화면 전체가 떨리듯 빛납니다. 그러면서도 건물과 원근의 공간은 아직 남아 있습니다.",
+   "en": "Look closely at the red horse, and you will see long, thin strokes splitting like threads. Colours sit side by side instead of being blended, so the whole surface seems to vibrate. Even so, the buildings and a sense of perspective remain.",
+   "x": 0.36,
+   "y": 0.3,
+   "z": 2.6,
+   "tilt": 0
+  },
+  {
+   "ko": "보초니는 이전의 차분한 교외 풍경 대신 이렇게 소용돌이치는 화면을 택했습니다. 처음 제목은 노동이었고, 1911년 밀라노의 자유 미술전에 그 이름으로 걸렸습니다.",
+   "en": "Here Boccioni traded the calmer suburban views of his earlier work for a swirling, charged surface. Its original title was Il lavoro, or Work, and it hung under that name at the Exhibition of Free Art in Milan in 1911.",
+   "x": 0.5,
+   "y": 0.42,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "1912년 미래주의 순회전 때 작곡가 페루초 부조니가 베를린에서 이 그림을 샀습니다. 1951년에는 뉴욕 현대미술관의 소장품이 되었습니다. 보초니는 1916년 기병 훈련 중 말에서 떨어져 서른셋에 세상을 떠났습니다.",
+   "en": "The composer Ferruccio Busoni bought it in Berlin in 1912, when the Futurist exhibition toured there, and the Museum of Modern Art acquired it in 1951. Boccioni himself died in 1916, aged thirty-three, after being thrown from his horse during cavalry training.",
+   "x": 0.55,
+   "y": 0.45,
+   "z": 1.2,
+   "tilt": 0
+  },
+  {
+   "ko": "마지막으로 한 걸음 물러서서, 이 말이 사람들을 이끄는지 사람들이 말을 붙잡는지 살펴보십시오. 새 도시를 일으키는 힘이 누구의 것인지, 그림은 쉽게 답하지 않습니다.",
+   "en": "Finally, step back and ask: is the horse leading the men, or are the men holding the horse back? The picture never says plainly whose strength is raising this new city.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1,
+   "tilt": 0
+  }
+ ]
+}

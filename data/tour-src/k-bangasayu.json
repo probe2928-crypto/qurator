@@ -1,0 +1,101 @@
+{
+ "id": "k-bangasayu",
+ "segs": [
+  {
+   "ko": "어둠 속에 은은한 금빛의 보살 한 분이 앉아 계십니다. 한쪽 다리를 다른 무릎 위에 올리고, 손가락 끝을 뺨에 살며시 댄 채 깊은 생각에 잠겨 있습니다. 먼저 전체를 바라보십시오.",
+   "en": "In the dim light sits a bodhisattva with a soft golden glow. One leg rests across the other knee, and the fingertips barely touch the cheek, lost in thought. Begin by taking in the whole figure, slowly.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  },
+  {
+   "ko": "반가는 반쯤 책상다리를 한 자세, 사유는 생각한다는 뜻입니다. 이 자세의 보살은 흔히 미래에 올 부처인 미륵보살로 봅니다. 7세기 전반에 만든 것으로 보며, 높이는 93.5센티미터입니다.",
+   "en": "In Korean the pose is called bangasayu: half-cross-legged, contemplating. Bodhisattvas in this pose are usually identified as Maitreya, the Buddha of the future. This one is thought to date from the early 7th century and stands 93.5 centimetres high.",
+   "x": 0.5,
+   "y": 0.45,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "머리 위에 쓴 관부터 보십시오. 세 개의 낮은 봉우리로 이루어진 아주 단순한 모양의 관입니다. 화려한 관을 쓴 다른 반가사유상과 달리 꾸밈을 과감히 덜어 냈습니다.",
+   "en": "Look first at the crown. It is a very simple one, made of three low peaks. Unlike other pensive figures with ornate headdresses, this one strips decoration away.",
+   "x": 0.53,
+   "y": 0.15,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "이제 얼굴로 내려옵니다. 눈은 아래를 향해 가늘게 뜨였고, 입가에는 옅은 미소가 맺혀 있습니다. 그 미소는 고뇌가 아니라 깨달음 직전의 고요한 평온을 보여 줍니다.",
+   "en": "Now come down to the face. The eyes are lowered and half closed, and a faint smile rests at the corners of the mouth. It suggests not anguish but the calm that comes just before enlightenment.",
+   "x": 0.5,
+   "y": 0.25,
+   "z": 2.6,
+   "tilt": 0
+  },
+  {
+   "ko": "오른손 손가락은 뺨에 닿을 듯 말 듯 멈춰 있습니다. 손가락 마디 하나하나가 살짝 다르게 굽어 있어 생각이 막 움직이는 듯합니다. 각도를 바꿔 이 손끝을 보십시오.",
+   "en": "The right fingertips hover, just grazing the cheek. Each finger bends a little differently, as if a thought were stirring at that very moment. Try looking at these fingertips from a slightly different angle.",
+   "x": 0.46,
+   "y": 0.3,
+   "z": 2.6,
+   "tilt": -4
+  },
+  {
+   "ko": "상체는 옷을 걸치지 않은 채 목걸이 하나만 단정하게 둘렀습니다. 어깨에서 허리로 이어지는 윤곽에는 군더더기가 없습니다. 몸이 가늘면서도 단단해 보이는 이유입니다.",
+   "en": "The upper body is bare except for a single necklace. The contour from shoulders to waist is pared down, with nothing extra. That is why the body looks slender and sturdy at the same time.",
+   "x": 0.52,
+   "y": 0.42,
+   "z": 1.9,
+   "tilt": 0
+  },
+  {
+   "ko": "오른발은 왼쪽 무릎 위에 올려졌고, 왼손이 그 발목을 가볍게 감쌉니다. 발끝을 보면 발가락이 살짝 위로 젖혀져 있습니다. 고요한 몸 안에 작은 긴장이 숨어 있습니다.",
+   "en": "The right foot rests on the left knee, and the left hand lightly holds the ankle. Look at the foot, and you will see the toes turned slightly upward. A small tension hides inside this stillness.",
+   "x": 0.6,
+   "y": 0.6,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "단순한 상체와 달리 대좌를 덮은 치맛자락은 물결처럼 부드럽게 흘러내립니다. 겹겹이 접힌 깊은 주름이 정적인 몸에 리듬을 더합니다. 위는 고요하고 아래는 물처럼 흐릅니다.",
+   "en": "In contrast with the plain upper body, the skirt draped over the seat ripples down like water. Layer upon layer of folds gives rhythm to a still figure. Calm above, flowing like water below.",
+   "x": 0.47,
+   "y": 0.77,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "청동을 부어 만든 뒤 금을 입힌 금동상입니다. 얇게 주조된 금동으로 이 정도 크기와 균형을 이룬 것은 당시 최고 수준의 기술입니다. 왼발은 연꽃 받침을 디디고 전체 무게를 받칩니다.",
+   "en": "The figure was cast in bronze and then gilded, which is what we call gilt bronze. Casting it this thin at this size, in such balance, was the highest technical achievement of its time. The left foot, set on a lotus, carries it all.",
+   "x": 0.55,
+   "y": 0.85,
+   "z": 1.6,
+   "tilt": 0
+  },
+  {
+   "ko": "일본 교토 고류지에는 자세와 비례가 거의 같은 목조 반가사유상이 있습니다. 두 상의 관계, 그리고 이 상이 신라와 백제 중 어디서 만들어졌는지는 지금도 논의됩니다.",
+   "en": "At Kōryū-ji temple in Kyoto, Japan, there is a wooden pensive figure with almost the same pose and proportions. Scholars still debate how the two are related, and whether this bronze was made in Silla or in Baekje.",
+   "x": 0.5,
+   "y": 0.4,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "2021년 국립중앙박물관은 두 반가사유상만을 위한 사유의 방을 열었습니다. 바닥과 벽이 아주 미세하게 기울어 있고 벽에는 붉은 흙을 손으로 발랐습니다. 두 보살은 그곳에 나란히 앉아 있습니다.",
+   "en": "In 2021 the National Museum of Korea opened the Room of Quiet Contemplation for just two pensive bodhisattvas. Its floor and walls tilt almost imperceptibly, and the walls are finished by hand in red clay. Today the two sit there side by side.",
+   "x": 0.5,
+   "y": 0.45,
+   "z": 1.2,
+   "tilt": 0
+  },
+  {
+   "ko": "마지막으로 한 걸음 물러나 보살의 미소를 다시 보십시오. 천사백 년 가까이 이어진 이 생각은 과연 무엇이었을까요. 그리고 오늘의 나는 지금 무엇을 생각하고 있나요.",
+   "en": "Finally, step back and look at the smile once more. What might this pensive thought, held for nearly fourteen hundred years, have been? And what are you thinking about today?",
+   "x": 0.5,
+   "y": 0.45,
+   "z": 1.1,
+   "tilt": 0
+  }
+ ]
+}

@@ -1,0 +1,101 @@
+{
+ "id": "k-geumgang",
+ "segs": [
+  {
+   "ko": "금강산 전체를 하늘에서 내려다본 듯, 하나의 둥근 덩어리로 압축한 그림입니다. 겸재 정선은 일만 이천 봉우리를 세로 130센티미터가 넘는 종이 한 장 위에 모아 놓았습니다.",
+   "en": "Here Jeong Seon, also known as Gyeomjae, compresses the whole of Mount Geumgang into a single round mass, as if in a bird's-eye view from the sky. Its twelve thousand peaks are gathered onto one sheet of paper more than 130 centimetres tall.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  },
+  {
+   "ko": "정선은 1711년 가을 처음 금강산을 찾았고, 그 뒤로도 이 산을 거듭 그렸습니다. 한 시점에서는 볼 수 없는 풍경을, 여러 번의 여행 기억을 엮어 하나의 우주처럼 다시 세웠습니다.",
+   "en": "Jeong Seon first travelled to Mount Geumgang in the autumn of 1711, and he kept returning to it in his art for decades. No one could see this view from one spot; he wove together memories from several journeys to rebuild the mountain as a self-contained cosmos.",
+   "x": 0.5,
+   "y": 0.42,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "왼쪽 위 구석을 보시면 '금강전도'라는 네 글자 제목과 화가의 이름, 붉은 도장이 있습니다. 금강산의 온전한 모습을 담은 그림이라는 뜻으로, 그림의 야심이 제목에 드러납니다.",
+   "en": "In the upper left corner you can find the title, four characters meaning a complete view of Mount Geumgang, followed by the painter's name and a small red seal. The ambition of the whole picture is already written in its name.",
+   "x": 0.14,
+   "y": 0.11,
+   "z": 2.3,
+   "tilt": 0
+  },
+  {
+   "ko": "이제 화면 위쪽 산마루를 따라 시선을 옮겨 봅니다. 가장 높은 비로봉은 이 뒤편 높은 곳에 있고, 여기서 시작된 물줄기가 가운데 만폭동 골짜기로 흘러내린다고 설명됩니다.",
+   "en": "Now let your eye travel along the ridge at the top. The highest summit, Birobong, rises at the back, and its waters are said to flow down into Manpokdong, the valley at the centre, where they divide to left and right.",
+   "x": 0.44,
+   "y": 0.24,
+   "z": 1.8,
+   "tilt": 0
+  },
+  {
+   "ko": "오른쪽 위에는 금강산을 노래한 시가 적혀 있어 그림과 글이 한 몸을 이룹니다. 갑인년 겨울에 썼다는 구절로 1734년 작으로 보지만, 훗날 다른 이가 썼다는 견해도 있습니다.",
+   "en": "At the upper right, a poem praising the mountain is inscribed, so text and image work as one. A line dating it to the winter of the gapin year gives us 1734, though some scholars believe the poem was added later by an owner of the painting.",
+   "x": 0.84,
+   "y": 0.11,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "오른쪽의 뾰족한 바위 봉우리들을 보십시오. 위아래로 내리그은 날카로운 수직선으로 쪼개진 화강암의 결을 그렸습니다. 봉우리 사이도 안개로 비우지 않고 촘촘히 채웠습니다.",
+   "en": "Look at the jagged rock peaks on the right. They are drawn in sharp vertical strokes, pulled swiftly up and down, to capture the split faces of granite. Even the gaps between them are densely filled rather than left as empty mist.",
+   "x": 0.72,
+   "y": 0.52,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "이번에는 왼쪽의 흙산입니다. 붓끝으로 찍은 부드러운 먹점이 겹겹이 쌓여, 나무가 우거진 산이 무성하고 포근해 보입니다. 짙은 먹빛이 바위산의 밝은 빛깔과 뚜렷이 갈립니다.",
+   "en": "Now turn to the earthen hills on the left. Their soft forms are built from gentle ink dots, layer upon layer, so the wooded slopes look lush and welcoming. Their dark ink stands clearly apart from the pale, bright rock.",
+   "x": 0.16,
+   "y": 0.6,
+   "z": 2.0,
+   "tilt": -5
+  },
+  {
+   "ko": "두 세계 사이로 골짜기 하나가 화면 한가운데를 세로로 가릅니다. 우뚝한 바위 기둥과 그 아래 작은 건물 지붕이 깊은 골을 지킵니다. 이 골짜기가 강함과 부드러움의 경계입니다.",
+   "en": "Between these two worlds, a valley cuts down the middle of the picture. A towering pillar of rock and, below it, a small roofed building keep watch over the deep gorge. This is the seam where hard meets soft.",
+   "x": 0.42,
+   "y": 0.6,
+   "z": 2.2,
+   "tilt": 0
+  },
+  {
+   "ko": "맨 아래 골짜기 어귀로 내려오면, 무지개처럼 둥근 다리와 지붕 몇 채가 작게 보입니다. 이 거대한 산으로 들어가는 사람의 입구이자, 우리의 산행이 시작되는 곳입니다.",
+   "en": "Down at the mouth of the valley, at the very bottom, you can spot a round arched bridge and a few small roofs. This is the human doorway into the vast mountain, and the place where our own walk begins.",
+   "x": 0.3,
+   "y": 0.92,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "다시 전체를 보면 강한 바위산과 부드러운 흙산이 대비를 이루며 맞물립니다. 이 둥근 구도는 음과 양이 어우러진 태극을 떠올리게 하고, 한 연구자는 금강 행성이라 불렀습니다.",
+   "en": "Step back, and the hard rock and the soft earth interlock in strong contrast. This circular composition recalls the taegeuk, the union of yin and yang, and one scholar has even called it a Geumgang planet.",
+   "x": 0.5,
+   "y": 0.55,
+   "z": 1.2,
+   "tilt": 0
+  },
+  {
+   "ko": "정선은 금강산 그림을 100점 가까이 남겼고, 그중 가장 큰 이 작품을 최고작으로 꼽습니다. 중국 화풍 대신 조선의 실제 산천을 그린 대표작으로, 국보로 지정되어 있습니다.",
+   "en": "Jeong Seon painted around a hundred pictures of Geumgang, and this one, the largest, is considered his finest. Turning away from Chinese models to paint Korea's real landscape, it is now a designated National Treasure.",
+   "x": 0.48,
+   "y": 0.35,
+   "z": 1.4,
+   "tilt": 0
+  },
+  {
+   "ko": "시는 이 그림을 머리맡에 두고 보는 기쁨이 산을 직접 걷는 것에 견줄 만하다며 끝납니다. 풍경이자 세계관을 담은 이 지도 앞에서, 당신은 어느 골짜기로 들어서시겠습니까?",
+   "en": "The poem ends by saying that viewing this picture from your bedside is a joy to rival walking the mountain itself. It is at once a landscape and a map of a worldview. Standing here, which valley would you take into the mountain?",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1,
+   "tilt": 0
+  }
+ ]
+}

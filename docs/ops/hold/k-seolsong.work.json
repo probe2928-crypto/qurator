@@ -1,0 +1,63 @@
+{
+ "id": "k-seolsong",
+ "region": "kr",
+ "title": {
+  "ko": "설송도",
+  "en": "Snow-Covered Pines (Seolsongdo)"
+ },
+ "artist": {
+  "ko": "이인상",
+  "en": "Yi In-sang (Neunghogwan)"
+ },
+ "date": "18세기 · 18th c.",
+ "medium": {
+  "ko": "종이에 수묵, 117.3×52.6cm",
+  "en": "Ink on paper, 117.3 × 52.6 cm"
+ },
+ "collection": {
+  "ko": "국립중앙박물관",
+  "en": "National Museum of Korea"
+ },
+ "wiki": {
+  "ko": [
+   "이인상"
+  ],
+  "en": [
+   "Yi Insang"
+  ]
+ },
+ "tagline": {
+  "ko": "눈 속에서도 꺾이지 않는, 선비가 그린 자기 자신",
+  "en": "A pine that will not bend in the snow, painted by a scholar who would not either"
+ },
+ "text": {
+  "ko": "눈 내린 언덕에 소나무 한 그루가 곧게 서 있고, 그 앞을 뿌리가 드러난 다른 소나무가 비스듬히 가로지릅니다. 곧은 나무의 가지는 직각으로 꺾이며 뻗어 나가고, 줄기 아래는 모난 바위들이 지키고 있습니다. 눈은 따로 칠하지 않았습니다. 바위 윗면과 가지 위를 종이 그대로 비워 두고, 옅은 먹으로 잿빛 하늘을 깔아 쌓인 눈을 떠오르게 했습니다. 마른 붓으로 긁듯이 그은 솔잎과 짙은 먹 한 점 없는 담담한 먹빛이 차갑고 맑은 공기를 만듭니다. 이인상은 서얼 집안 출신이라 높은 벼슬에 오르지 못했지만, 원칙에 엄격한 선비로 이름이 높았습니다. 겨울에도 시들지 않는 소나무는 그가 지키고자 한 지조 그 자체였습니다.",
+  "en": "On a snowy slope, one pine stands bolt upright while a second, its roots laid bare, leans across in front of it. The straight tree's branches break off at sharp right angles, and angular rocks guard the base of its trunk. Yi In-sang never painted the snow at all. He left the tops of the rocks and branches as bare paper and laid a pale ink wash over the sky, so the white seems to settle on its own. Dry, scratchy needles and an ink tone with no dark accents give the scene its cold, clear air. Born into a branch of a noble family barred from high office, Yi rose no higher than a county magistrate, yet he was known as a scholar of unbending principle. A pine that stays green through winter was his portrait of that ideal."
+ },
+ "look": {
+  "ko": [
+   "곧은 소나무와 비스듬히 가로지르는 소나무",
+   "칠하지 않고 비워 둔 눈",
+   "직각으로 꺾인 가지와 모난 바위"
+  ],
+  "en": [
+   "One upright pine, one leaning across it",
+   "Snow made of untouched paper",
+   "Branches bent at right angles, and sharp-edged rocks"
+  ]
+ },
+ "words": [
+  {
+   "en": "integrity",
+   "ko": "지조, 고결함"
+  },
+  {
+   "en": "ink wash",
+   "ko": "먹의 번짐, 담묵 바림"
+  },
+  {
+   "en": "evergreen",
+   "ko": "상록의, 늘 푸른"
+  }
+ ]
+}

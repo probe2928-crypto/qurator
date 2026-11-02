@@ -1,0 +1,93 @@
+{
+ "id": "k-ssireum",
+ "segs": [
+  {
+   "ko": "장터의 씨름판이 손바닥만 한 화첩 한 장에 펼쳐져 있습니다. 사람들이 둥글게 둘러앉았고, 한가운데에서 두 씨름꾼이 맞붙었습니다. 먼저 구경꾼 사이에 끼어 앉은 기분으로 전체를 둘러보십시오.",
+   "en": "A market-day wrestling match unfolds on a single album leaf no bigger than a sheet of paper. People sit in a ring, and at the centre two wrestlers are locked together. First, look around the whole scene as if you had squeezed in among the spectators.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  },
+  {
+   "ko": "그린 이는 조선 후기 최고의 화가 김홍도, 호는 단원입니다. 그는 스물한 살에 도화서 화원이 되어 정조의 어진까지 그렸습니다. 이 그림은 스물다섯 장으로 된 '단원 풍속도첩'의 한 장으로, 보물로 지정되어 있습니다.",
+   "en": "The painter is Kim Hong-do, known as Danwon, the leading painter of late Joseon Korea. He joined the royal painting bureau at twenty-one and went on to paint portraits of King Jeongjo. This leaf belongs to his twenty-five-leaf album of genre painting, now a designated Treasure.",
+   "x": 0.5,
+   "y": 0.45,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "왼쪽 위에는 갓을 쓴 양반들이 부채를 들고 앉아 있습니다. 앞쪽에는 벗어 놓은 갓 두 개와 신발이 보입니다. 그 사이에는 무릎을 끌어안고 숨죽인 사람도 보입니다.",
+   "en": "At upper left, gentlemen in wide-brimmed hats sit holding fans. In front of them lie two hats that have been taken off, and a pair of shoes. Among them, one man hugs his knees and holds his breath.",
+   "x": 0.2,
+   "y": 0.22,
+   "z": 1.9,
+   "tilt": 0
+  },
+  {
+   "ko": "오른쪽 위의 구경꾼들은 몸을 앞으로 숙이고 바닥을 짚었습니다. 웃는 사람, 입을 벌린 사람, 몸을 내미는 사람까지 표정이 모두 다릅니다. 승부의 순간은 씨름꾼보다 구경꾼의 몸짓에서 더 생생하게 읽힙니다.",
+   "en": "The spectators at upper right lean forward, hands pressed to the ground. Some grin, some gape, some crane forward; no two faces are alike. The drama of the moment is easiest to read in the crowd, not the wrestlers.",
+   "x": 0.77,
+   "y": 0.13,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "이제 한가운데의 두 씨름꾼을 보십시오. 앞사람이 상대를 번쩍 들어 올렸고, 들린 사람의 다리가 허공에 떴습니다. 서로 샅바를 움켜쥔 팔에 힘이 잔뜩 실려 있습니다.",
+   "en": "Now look at the two wrestlers at the centre. The man in front has hoisted his opponent, whose leg is lifted clear of the ground. Every ounce of strength is in the arms gripping each other's sash.",
+   "x": 0.53,
+   "y": 0.48,
+   "z": 2.0,
+   "tilt": -4
+  },
+  {
+   "ko": "오른쪽 아래 구경꾼들은 몸을 뒤로 젖히며 놀라고 있습니다. 들린 씨름꾼이 넘어갈 쪽이 바로 이들 앞이기 때문이라는 해석이 있습니다. 그 곁에는 벗어 둔 신발들이 나란히 놓여 있습니다.",
+   "en": "The viewers at lower right recoil, leaning back in surprise. One reading is that the lifted wrestler is about to fall right in front of them. Beside them, pairs of shoes that someone has taken off lie neatly in a row.",
+   "x": 0.83,
+   "y": 0.8,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "화면 아래쪽의 구경꾼들도 살펴보십시오. 이 가운데 한 인물은 왼손과 오른손이 뒤바뀌어 그려진 것으로 유명합니다. 실수인지 일부러 넣은 장난인지를 두고 여러 해석이 있습니다.",
+   "en": "Look over the spectators along the bottom too. One of these figures is famous for a 'mistake': his left and right hands appear to be swapped. Whether it was an error or a deliberate joke is still debated.",
+   "x": 0.45,
+   "y": 0.86,
+   "z": 1.4,
+   "tilt": 0
+  },
+  {
+   "ko": "그 와중에 왼쪽의 엿장수 소년만은 홀로 딴 곳을 바라봅니다. 엿판을 목에 걸고 서서 씨름보다 장사에 마음이 가 있는 듯합니다. 뜨거운 판 한쪽의 이 무심함이 웃음을 자아냅니다.",
+   "en": "Amid all this, only the young taffy seller on the left turns away, uninterested. With his tray hung from his neck, he seems more interested in business than wrestling. His indifference beside all that heat makes us smile.",
+   "x": 0.17,
+   "y": 0.6,
+   "z": 2.2,
+   "tilt": 0
+  },
+  {
+   "ko": "김홍도는 배경을 과감히 비우고 사람들을 원으로 둘러 세웠습니다. 그래서 시선이 저절로 한가운데 두 씨름꾼에게 모입니다. 무엇을 그리지 않을지 정한 것이 이 그림의 구도입니다.",
+   "en": "Kim Hong-do left the background boldly empty and arranged the people in a circle. Your eye therefore drops straight to the two wrestlers at the centre. Deciding what not to paint is what shapes this composition.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.2,
+   "tilt": 0
+  },
+  {
+   "ko": "씨름꾼의 다리를 가까이 보면 먹선 몇 개가 빠르게 지나갔을 뿐입니다. 그 위에 옅은 색만 살짝 얹었는데도 근육의 힘과 무게가 느껴집니다. 단순한 선 몇 개로 소리와 열기까지 전하는 솜씨입니다.",
+   "en": "Look closely at the wrestlers' legs: only a few quick ink lines pass by. A light wash of colour is all that is added, yet you feel weight and muscle. With a handful of brushstrokes, Kim captures not just a scene but its noise and heat.",
+   "x": 0.57,
+   "y": 0.68,
+   "z": 2.3,
+   "tilt": 0
+  },
+  {
+   "ko": "마지막으로 한 걸음 물러나 구경꾼들의 얼굴만 하나씩 따라 원을 한 바퀴 돌아보십시오. 누가 이길지, 이 그림은 씨름꾼보다 그들의 표정으로 먼저 알려 줍니다. 그것이 단원 풍속화의 힘입니다.",
+   "en": "Finally, step back and travel around the ring, reading only the spectators' faces. Who is going to win? This picture tells you through the crowd before the wrestlers ever do. That is the genius of Danwon's genre painting.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05,
+   "tilt": 0
+  }
+ ]
+}

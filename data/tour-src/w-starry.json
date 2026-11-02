@@ -1,0 +1,93 @@
+{
+ "id": "w-starry",
+ "segs": [
+  {
+   "ko": "소용돌이치는 밤하늘 아래 작은 마을이 잠들어 있습니다. 빈센트 반 고흐가 1889년 6월에 그린 그림으로, 지금은 뉴욕 현대미술관에 있습니다. 세로 73.7센티미터, 가로 92.1센티미터의 캔버스입니다.",
+   "en": "Beneath a swirling night sky, a small village lies asleep. Vincent van Gogh painted this in June 1889, and today it hangs in The Museum of Modern Art in New York. The canvas measures 73.7 by 92.1 centimetres.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  },
+  {
+   "ko": "그해 고흐는 프랑스 남부 생레미의 요양원에 머물렀습니다. 동쪽으로 난 병실 창밖으로 새벽 풍경을 보았지만, 그림은 낮에 아래층 작업실에서 기억과 상상을 섞어 완성했습니다.",
+   "en": "That year he was staying at the asylum in Saint-Rémy in southern France. He watched the pre-dawn sky from his east-facing bedroom window, but he painted the picture by day in his ground-floor studio, blending memory and imagination.",
+   "x": 0.5,
+   "y": 0.42,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "하늘 한가운데를 보십시오. 거대한 소용돌이가 바람처럼, 물결처럼 서로 감기며 흐릅니다. 두껍게 바른 물감의 결이 그대로 살아 있어 화면 전체가 움직이는 듯합니다.",
+   "en": "Look at the centre of the sky. Enormous swirls coil into one another, like wind or like waves. The texture of the thickly applied paint is still alive, so the whole surface seems to move.",
+   "x": 0.5,
+   "y": 0.32,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "가까이 다가가면 짧은 붓질 하나하나가 보입니다. 물감을 두툼하게 올리는 임파스토 기법 덕분에, 붓이 지나간 방향이 그대로 빛의 흐름이 됩니다. 노랑과 흰색, 여러 겹의 파랑이 나란히 놓여 있습니다.",
+   "en": "Come closer and you can see each short brushstroke. Thanks to impasto, the technique of laying paint on thickly, the direction of every stroke becomes a current of light. Yellow, white and many shades of blue lie side by side, stroke against stroke.",
+   "x": 0.67,
+   "y": 0.47,
+   "z": 2.6,
+   "tilt": -5
+  },
+  {
+   "ko": "오른쪽 위에는 초승달이 밝은 빛무리에 싸여 있습니다. 기록에 따르면 그 무렵 실제 달은 초승달이 아니었습니다. 고흐는 눈에 보인 달이 아니라 마음속의 달을 그린 셈입니다.",
+   "en": "At the upper right, a crescent moon glows inside a bright halo. Records suggest the actual moon at the time was not a crescent. Van Gogh painted the moon he carried in his mind, not the one he actually saw.",
+   "x": 0.89,
+   "y": 0.18,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "사이프러스 바로 오른쪽의 가장 밝은 별은 샛별인 금성으로 봅니다. 고흐는 동생 테오에게, 해 뜨기 전 창밖에는 아주 크게 보이는 샛별밖에 없었다고 썼습니다. 별 둘레의 빛무리도 소용돌이칩니다.",
+   "en": "The brightest star, just to the right of the cypress, is usually identified as Venus, the morning star. Van Gogh wrote to his brother Theo that before sunrise he saw nothing but the morning star, which looked very big. Even the halo around the star swirls.",
+   "x": 0.35,
+   "y": 0.53,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "왼쪽의 사이프러스 나무는 불꽃처럼 하늘로 치솟아 땅과 하늘을 잇습니다. 유럽에서 사이프러스는 죽음과 묘지를 떠올리게 하지만, 고흐가 그런 뜻을 담았는지는 의견이 갈립니다. 어두운 나무는 화면 높이를 거의 다 채웁니다.",
+   "en": "On the left, a cypress shoots up like a flame, linking earth to sky. In Europe the cypress is associated with death and graveyards, but scholars disagree about whether Van Gogh meant that here. Dark and flickering, the tree fills almost the full height of the canvas.",
+   "x": 0.2,
+   "y": 0.45,
+   "z": 1.8,
+   "tilt": 0
+  },
+  {
+   "ko": "아래의 마을과 교회 첨탑은 창밖 풍경에 없던 것입니다. 마을은 언덕에서 그린 스케치를 바탕으로 했고, 뾰족한 첨탑은 고향 네덜란드의 교회를 닮았다는 견해가 있습니다.",
+   "en": "The village and church spire were not in his view at all. The village is based on a sketch made from a hillside, and the spire, some think, looks more like a church from his native Netherlands than one in Provence.",
+   "x": 0.57,
+   "y": 0.77,
+   "z": 2.6,
+   "tilt": 0
+  },
+  {
+   "ko": "마을의 창마다 노란 불빛이 작게 켜져 있습니다. 머리 위 하늘의 격렬한 움직임과 달리, 땅 위의 마을은 고요하고 단정한 선으로 그려졌습니다. 그 대비 덕분에 하늘은 더 크게 출렁입니다.",
+   "en": "Small yellow lights glow in the village windows. Unlike the violent movement overhead, the village below is drawn with calm, orderly lines. That contrast makes the sky heave all the more.",
+   "x": 0.76,
+   "y": 0.85,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "고흐는 같은 창밖 풍경을 스무 번 넘게 그렸지만, 정작 이 그림은 실패작이라 여겼습니다. 그러나 1941년 현대미술관에 들어온 뒤, 세상에서 가장 사랑받는 밤하늘이 되었습니다.",
+   "en": "Van Gogh painted the view from that window, in one version or another, more than twenty times, yet he considered this one a failure. Since it entered the museum in 1941, it has become the best-loved night sky in the world.",
+   "x": 0.5,
+   "y": 0.45,
+   "z": 1.2,
+   "tilt": 0
+  },
+  {
+   "ko": "한 걸음 물러나 그림 전체를 다시 천천히 바라보십시오. 불꽃 같은 사이프러스와 소용돌이치는 하늘, 그리고 잠든 마을 사이에서 당신의 눈은 어디에 가장 오래 머무르나요?",
+   "en": "Step back for a moment and take in the whole canvas once again. Between the flame-like cypress, the swirling sky and the sleeping village, where does your eye rest the longest?",
+   "x": 0.5,
+   "y": 0.52,
+   "z": 1.0,
+   "tilt": 0
+  }
+ ]
+}

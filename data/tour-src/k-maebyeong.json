@@ -1,0 +1,93 @@
+{
+ "id": "k-maebyeong",
+ "segs": [
+  {
+   "ko": "비취색 매병 한 점이 우리 앞에 서 있습니다. 높이 42.1센티미터, 어깨가 넉넉하게 부풀었다가 허리에서 날렵하게 좁아집니다. 그 표면을 구름 사이를 나는 학들이 가득 채우고 있습니다.",
+   "en": "A jade-green maebyeong, a classic Goryeo vase form, stands before us, 42.1 centimetres tall. It swells generously at the shoulder and narrows elegantly at the waist, and its whole surface is filled with cranes flying through clouds.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  },
+  {
+   "ko": "매병은 작은 입과 넓은 어깨, 좁은 아랫부분을 지닌 병입니다. 이 병은 고려 13세기 무렵에 만들어졌습니다. 1962년 국보로 지정되었고, 간송미술관이 소장하고 있습니다.",
+   "en": "A maebyeong is a vessel with a small mouth, broad shoulders and a slim lower body. This one was made in the Goryeo dynasty, around the thirteenth century. It was designated a National Treasure in 1962 and belongs to the Kansong Art Museum.",
+   "x": 0.5,
+   "y": 0.42,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "위쪽부터 보겠습니다. 작은 입 둘레에는 띠가 단정하게 둘러져 있고, 그 아래로 어깨가 둥글게 부풀어 오릅니다. 어깨에서 허리로 흘러내리는 S자 곡선이 이 병에 긴장감과 우아함을 함께 줍니다.",
+   "en": "Let's start at the top. A neat little band rings the tiny mouth, and below it the shoulder rounds outward. The S-curve flowing from shoulder to waist gives the vessel both tension and grace.",
+   "x": 0.5,
+   "y": 0.17,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "흑백 두 줄로 두른 원 안을 들여다보십시오. 원 안의 학은 구름을 헤치고 하늘로 날아오릅니다. 날개를 활짝 편 흰 학이 비취색 바탕 위에서 또렷하게 빛나고, 부리와 다리는 검은 선으로 그어졌습니다.",
+   "en": "Look inside one of the circles drawn with a double line of black and white. The crane within rises upward through the clouds, its white wings spread wide against the green ground, while its beak and legs are drawn in fine black lines.",
+   "x": 0.47,
+   "y": 0.33,
+   "z": 2.6,
+   "tilt": 0
+  },
+  {
+   "ko": "이번에는 원 밖을 보겠습니다. 원 밖의 학들은 아래로 내려오는 듯 배치되어 있습니다. 그래서 그릇을 돌려 볼 때마다 학이 오르내리며 하늘이 움직이는 것처럼 느껴집니다.",
+   "en": "Now look outside the circles. These cranes seem to be descending. So each time the vessel turns, the birds rise and fall around it, and the whole sky seems to move.",
+   "x": 0.38,
+   "y": 0.44,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "새겨진 학은 모두 69마리라고 합니다. 위아래로 엇갈려 날기 때문에 실제보다 훨씬 많아 보입니다. 학은 예로부터 장수를 뜻하는 상서로운 새였고, 구름과 함께 신선의 세계를 떠올리게 했습니다.",
+   "en": "There are said to be sixty-nine cranes in all. Because they fly in opposite directions, they seem far more numerous. Since ancient times, the crane has been an auspicious bird, a symbol of long life, and together with clouds it evoked the realm of the immortals.",
+   "x": 0.52,
+   "y": 0.55,
+   "z": 1.8,
+   "tilt": 0
+  },
+  {
+   "ko": "이 문양은 그린 것이 아닙니다. 도공은 그릇 표면을 파낸 뒤 흰 흙과 붉은 흙을 메워 넣고 다시 구웠습니다. 붉은 흙은 불 속에서 검게 변해 흑백의 선이 됩니다.",
+   "en": "None of this is painted. The potter carved the design into the clay, filled the grooves with white and red-brown slip, and fired it again. In the kiln the red clay turns black, giving these black-and-white lines.",
+   "x": 0.62,
+   "y": 0.41,
+   "z": 2.8,
+   "tilt": 5
+  },
+  {
+   "ko": "고려 도공이 꽃피운 이 상감 기법은 비취색 유약 아래에서 문양이 떠오르는 듯한 깊이를 만듭니다. 유약을 통과한 빛이 흙 속의 선을 은은하게 비추어, 문양이 물속에 잠긴 듯 보입니다.",
+   "en": "This inlay technique, perfected by Goryeo potters, is the great achievement of Korean celadon. It gives the motifs a depth that seems to float up beneath the jade-green glaze. Light passes through the glaze and softly lifts the lines set in the clay, so the pattern looks as if it lies under water.",
+   "x": 0.48,
+   "y": 0.66,
+   "z": 1.9,
+   "tilt": 0
+  },
+  {
+   "ko": "아래쪽 굽 가까이에는 꽃잎 모양의 띠가 둘러져 있습니다. 넓게 벌어진 아랫단이 위로 솟는 몸체를 단단히 받쳐 줍니다. 위의 학과 구름과는 다른, 차분한 리듬입니다.",
+   "en": "Near the foot, a band of petal-like shapes wraps around the base. The wide, flaring bottom firmly supports the body as it rises. It has a calmer rhythm than the cranes and clouds above.",
+   "x": 0.5,
+   "y": 0.87,
+   "z": 2.2,
+   "tilt": 0
+  },
+  {
+   "ko": "이 매병은 일본으로 넘어가기 직전에 지켜졌습니다. 1935년 간송 전형필은 일본인 수장가에게 2만 원을 치르고 이 병을 샀는데, 당시 기와집 스무 채 값이었다고 전해집니다.",
+   "en": "The vase was saved just before it could leave Korea. In 1935 the collector Jeon Hyeong-pil paid a Japanese collector 20,000 won for it, a sum said to equal the price of twenty tiled houses at the time.",
+   "x": 0.5,
+   "y": 0.45,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "한 걸음 물러나 이 병을 두 손으로 천천히 돌린다고 상상해 보십시오. 원 안에서 오르는 학과 원 밖에서 내려오는 학, 당신의 눈은 어느 쪽을 먼저 따라가고 있나요?",
+   "en": "Step back and imagine turning this vase slowly in your hands. Cranes rising inside the circles, cranes descending outside them: which ones does your eye follow first?",
+   "x": 0.5,
+   "y": 0.52,
+   "z": 1.1,
+   "tilt": 0
+  }
+ ]
+}

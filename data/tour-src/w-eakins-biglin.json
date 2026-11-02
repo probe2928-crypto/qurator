@@ -1,0 +1,93 @@
+{
+ "id": "w-eakins-biglin",
+ "segs": [
+  {
+   "ko": "두 형제가 탄 2인 경주 보트가 강 한가운데 꽂힌 말뚝을 돌아 나오고 있습니다. 길고 가는 보트가 화면을 가로지르고, 그 뒤로 넓은 강과 푸른 강둑이 펼쳐집니다.",
+   "en": "A pair-oared racing boat carrying two brothers swings around a stake planted in the middle of the river. The long, slim shell cuts across the picture, with the wide river and its green banks opening out behind. Everything is bathed in clear, even daylight.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  },
+  {
+   "ko": "존과 버나드 비글린은 뉴욕 출신으로 당대에 이름난 프로 조정 선수였습니다. 이 그림은 1872년 5월 필라델피아 스쿨킬강에서 열린 5마일 경기의 반환점을 그렸습니다.",
+   "en": "John and Barney Biglin were celebrated professional oarsmen from New York. The painting shows the halfway turn of a famous five-mile race on Philadelphia's Schuylkill River in May 1872. It was a match that the newspapers followed closely.",
+   "x": 0.5,
+   "y": 0.55,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "보트 곁의 말뚝을 보십시오. 꼭대기에 푸른 깃발이 달린 이 말뚝이 경기의 반환점입니다. 보트는 말뚝을 거의 다 돌아, 이제 막 출발점 쪽으로 방향을 바꾸는 중입니다.",
+   "en": "Look at the stake beside the boat. Topped with a blue flag, it marks the halfway point of the course. The shell has all but completed its pivot and is about to head back the way it came. The pole stands perfectly straight while the boat swings around it.",
+   "x": 0.71,
+   "y": 0.42,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "이제 형제의 머리를 보십시오. 두 사람 모두 푸른 수건을 둘렀고, 셔츠 테두리와 깃발, 주변 물빛도 차가운 푸른색으로 맞춰져 있습니다. 화면에 통일감을 주는 색입니다.",
+   "en": "Now look at the brothers' heads. Both wear blue kerchiefs, and the trim of their shirts, the stake flag and the water around them are all cool blues, a colour that ties the picture together. Set against the warm brown of the boat, the blue makes the pair stand out.",
+   "x": 0.51,
+   "y": 0.55,
+   "z": 2.6,
+   "tilt": 0
+  },
+  {
+   "ko": "두 사람이 맞춘 노의 각도를 살펴보십시오. 한 사람은 힘껏 노를 당기고, 다른 사람은 균형을 잡으며 회전을 돕습니다. 살짝 숙인 두 얼굴에는 고요한 집중이 가득합니다.",
+   "en": "Notice the matched angle of the two oars. One brother pulls hard while the other balances the boat through the turn. Both heads are slightly bowed, their faces full of quiet concentration. This is teamwork made visible.",
+   "x": 0.45,
+   "y": 0.64,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "오른쪽 뒤편으로는 붉은 수건을 두른 상대 보트가 따라옵니다. 피츠버그에서 온 두 선수였습니다. 이 경기의 승자는 비글린 형제였고, 1분 차이로 이겨 챔피언이 되었습니다.",
+   "en": "The rival crew, wearing red kerchiefs, trails behind on the right. They were a pair from Pittsburgh. The Biglins won that race by a full minute and were hailed as champions.",
+   "x": 0.66,
+   "y": 0.5,
+   "z": 2.6,
+   "tilt": 0
+  },
+  {
+   "ko": "건너편 강둑을 따라 길게 모인 구경꾼들도 보입니다. 1870년대 미국에서 조정은 가장 인기 있는 관람 스포츠 가운데 하나였고, 이 경기에도 수천 명이 몰렸다고 합니다.",
+   "en": "Spectators line the far bank. Rowing was one of America's most popular spectator sports in the 1870s, and this race is said to have drawn thousands of people to the river. Look closely and you can pick out tiny figures all along the shore.",
+   "x": 0.3,
+   "y": 0.46,
+   "z": 2.2,
+   "tilt": 0
+  },
+  {
+   "ko": "이킨스 자신도 파리로 유학 가기 전부터 이 강에서 노를 저었습니다. 그는 노 젓는 사람들을 여러 차례 되풀이해 그렸고, 비글린 형제는 그가 즐겨 그린 주인공이었습니다.",
+   "en": "Eakins himself rowed on the Schuylkill long before he trained in Paris. He painted oarsmen again and again, and the Biglin brothers were among his favourite subjects. For him this was a picture of teamwork as much as of a race.",
+   "x": 0.5,
+   "y": 0.45,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "그는 보트와 인물의 자리를 정밀한 원근 도면으로 먼저 계산한 뒤 그렸습니다. 그래서 화면 속 거리와 크기를 실제로 잴 수 있을 만큼 정확합니다. 물에 비친 그림자도 꼼꼼합니다.",
+   "en": "He planned each boat and figure with precise perspective drawings before painting, so the distances in the picture can actually be measured. Even the reflections on the water are carefully placed. This care for exact measurement runs through all of his work.",
+   "x": 0.5,
+   "y": 0.74,
+   "z": 1.6,
+   "tilt": -5
+  },
+  {
+   "ko": "왼쪽 아래에는 화가의 서명과 73이라는 숫자가 적혀 있습니다. 1916년 화가가 세상을 떠날 때까지 팔리지 않은 이 그림은, 아내가 간직하다 1927년 클리블랜드 미술관에 넘겼습니다.",
+   "en": "At lower left he signed his name with the year 73. Still unsold when he died in 1916, the picture passed to his widow, who sold it to the Cleveland Museum of Art in 1927. It has belonged to the museum ever since.",
+   "x": 0.15,
+   "y": 0.8,
+   "z": 2.2,
+   "tilt": 0
+  },
+  {
+   "ko": "한 걸음 물러나 보십시오. 이킨스는 승리의 순간이 아니라 승부가 갈리는 회전의 순간을 골랐습니다. 두 사람의 호흡이 하나로 맞아떨어지는 그 짧은 순간을 느껴 보시기 바랍니다.",
+   "en": "Step back once more. Eakins chose not the moment of victory, but the turn where the race is decided. Feel that brief instant when two rowers breathe and pull as one.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1,
+   "tilt": 0
+  }
+ ]
+}

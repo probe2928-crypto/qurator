@@ -1,0 +1,93 @@
+{
+ "id": "k-seodang",
+ "segs": [
+  {
+   "ko": "조선 서당의 한 장면입니다. 훈장님을 축으로 학동들이 둥글게 둘러앉았고, 그 한가운데에서 한 아이가 쪼그려 앉아 눈물을 훔치고 있습니다. 먼저 방 안 전체의 공기를 느껴 보십시오.",
+   "en": "Here is a morning at a Joseon village school. The pupils sit in a ring around their teacher, and in the middle one small boy crouches, wiping away tears. First, take in the mood of the whole room.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1,
+   "tilt": 0
+  },
+  {
+   "ko": "그린 이는 조선 후기의 화가 단원 김홍도입니다. 그는 스물한 살에 도화서 화원이 되었고, 궁중의 큰 그림을 오랫동안 맡았습니다. 그러면서도 이렇게 평범한 사람들의 하루를 즐겨 그렸습니다.",
+   "en": "The painter is Kim Hong-do, known as Danwon, of late Joseon Korea. He joined the royal painting bureau at twenty-one and handled the court's major commissions for decades. Yet he loved to paint the everyday lives of ordinary people like these.",
+   "x": 0.55,
+   "y": 0.4,
+   "z": 1.25,
+   "tilt": 0
+  },
+  {
+   "ko": "위쪽의 훈장님은 낮은 책상을 앞에 두고 앉아 아이를 내려다봅니다. 그 얼굴에는 곤란함인지 안쓰러움인지 모를 표정이 스칩니다. 웃음을 참는 얼굴로 보는 해석도 있습니다.",
+   "en": "Up above, the teacher sits behind a low desk, looking down at the boy. His face wears a look somewhere between awkward and sorry. Some even read it as a man trying not to laugh himself.",
+   "x": 0.66,
+   "y": 0.22,
+   "z": 1.9,
+   "tilt": 0
+  },
+  {
+   "ko": "훈장님 바로 앞에 앉은 아이를 자세히 보십시오. 책을 등 뒤에 두고 외우는 시험에서 막혔던 모양입니다. 종아리를 맞고 울면서 바짓단을 다시 추스르는 듯한 몸짓입니다.",
+   "en": "Look at the boy just in front of the teacher. He seems to have stumbled in a recitation, the kind of test where you recite with the book behind your back. Crying, he tugs his trouser hem down over a freshly switched calf.",
+   "x": 0.37,
+   "y": 0.5,
+   "z": 2.2,
+   "tilt": -3
+  },
+  {
+   "ko": "왼쪽에 줄지어 앉은 학동들에게로 눈을 옮겨 보십시오. 입을 가리거나 몸을 비틀며 터져 나오는 웃음을 참고 있습니다. 친구의 눈물 앞에서 참기 어려운 웃음이 오히려 정겹습니다.",
+   "en": "Now move your eyes to the pupils sitting in a row on the left. They cover their mouths or twist away, trying hard to hold back a laugh. Laughter that will not stay down, right beside a friend's tears, is oddly endearing.",
+   "x": 0.18,
+   "y": 0.42,
+   "z": 1.8,
+   "tilt": 0
+  },
+  {
+   "ko": "아래쪽 학동들도 아이 쪽을 바라보며 저마다 다른 표정을 짓습니다. 우는 아이 한 사람을 사이에 두고 방 안의 모두가 웃음을 머금은 셈입니다. 한 사람의 눈물과 여럿의 웃음이 한 화면에 함께 있습니다.",
+   "en": "The pupils below also turn toward the boy, each with a different expression. With one crying child between them, nearly everyone in the room is holding in a smile. One boy's tears and many people's laughter share a single page.",
+   "x": 0.75,
+   "y": 0.72,
+   "z": 1.7,
+   "tilt": 0
+  },
+  {
+   "ko": "이 그림에는 벽도 창도 거의 그려져 있지 않습니다. 김홍도는 배경을 비우고 인물의 몸짓과 옷 주름만으로 방 안의 공기를 살려 냈습니다. 그래서 시선은 사람들에게만 머뭅니다.",
+   "en": "There are almost no walls or windows in this picture. Kim Hong-do paints almost no background at all: the gestures and the folds of the robes carry the whole room. So our eyes stay on the people alone.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.2,
+   "tilt": 0
+  },
+  {
+   "ko": "옷 주름을 이룬 먹선은 굵고 가늘기를 바꾸며 빠르게 지나갑니다. 그 위에 옅은 색을 살짝 얹었을 뿐인데 앉은 몸의 무게와 움직임이 느껴집니다. 이것이 수묵담채의 묘미입니다.",
+   "en": "The ink lines that form the folds change from thick to thin as they sweep past. Only a light wash of colour is laid on top, yet you can feel the weight and movement of seated bodies. That is the charm of ink with light colour.",
+   "x": 0.82,
+   "y": 0.75,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "이 그림은 스물다섯 장으로 이루어진 '단원 풍속도첩' 가운데 한 장으로, 손바닥 두 개만 한 크기입니다. 화첩 전체는 보물로 지정되어 지금 국립중앙박물관에 있습니다.",
+   "en": "This leaf, about the size of two open hands, is one of twenty-five in his famous Genre Album. The album is designated a Treasure and is kept at the National Museum of Korea in Seoul.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.2,
+   "tilt": 0
+  },
+  {
+   "ko": "이 장면이 오래 사랑받는 까닭은 꾸짖음과 웃음, 서러움과 다정함이 한꺼번에 담겼기 때문일 것입니다. 이 풍속화는 서당이라는 배움터가 아이들에게 어떤 곳이었는지 짐작하게 합니다.",
+   "en": "Perhaps the scene is loved because scolding and laughter, hurt and warmth are all held in one moment. It lets us imagine what the village school was like for the children who studied there, and this genre painting keeps that memory alive.",
+   "x": 0.5,
+   "y": 0.45,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "마지막으로 한 걸음 물러나 우는 아이의 자리에 가만히 서 보십시오. 둘러앉은 친구들의 웃음이 그날은 무척 서러웠겠지만, 세월이 흐른 뒤에는 그리운 기억이 되지 않았을까요.",
+   "en": "Finally, step back and imagine yourself in the crying boy's place. His friends' laughter must have stung terribly that day. But as the years went by, might it not have become a fond memory?",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05,
+   "tilt": 0
+  }
+ ]
+}
