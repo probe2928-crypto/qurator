@@ -905,7 +905,7 @@ async function viewExhibition(payload) {
     <p class="note" style="margin-top:18px;color:#8E8676">${t('x_scan')}</p></div>
     <ul class="xlist">${x.i.map((uid, k) => { const w = S.byId[uid]; const m = (x.m && x.m[k]) || []; const href = uid.startsWith('c:') ? '#/c/' + uid.slice(2) : '#/w/' + uid;
       const title = w ? pick(w.title) : m[0], artist = w ? pick(w.artist) : m[1];
-      return `<li><a href="${href}"><span class="i">${String(k + 1).padStart(2, '0')}</span>${artBox(w ? w : { title: '' })}<span><b>${esc(title || '')}</b><small>${esc(artist || '')}${(w ? w.date : m[2]) ? ' · ' + esc(w ? w.date : m[2]) : ''}</small></span><span>→</span></a></li>`; }).join('')}</ul></div>`;
+      return `<li><a href="${esc(href)}"><span class="i">${String(k + 1).padStart(2, '0')}</span>${artBox(w ? w : { title: '' })}<span><b>${esc(title || '')}</b><small>${esc(artist || '')}${(w ? w.date : m[2]) ? ' · ' + esc(w ? w.date : m[2]) : ''}</small></span><span>→</span></a></li>`; }).join('')}</ul></div>`;
   hydrate();
   // fill API thumbnails lazily
   x.i.forEach((uid, k) => { if (/^(aic|met|cma)-/.test(uid)) getApiWork(uid).then(w => { const el = $$('.xlist .art')[k]; if (el && w.image) { el.dataset.src = w.image; el.classList.remove('h'); hydrate(el.parentNode); } }).catch(() => {}); });
