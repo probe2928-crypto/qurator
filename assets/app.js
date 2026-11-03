@@ -644,7 +644,7 @@ function heroBlock() {
     <div class="stage-copy wrap"><div class="sc-in">
       <p class="eyebrow">${t('hero_eyebrow')}</p>
       <h1>${t('hero_h')}</h1>
-      <p class="lead">${esc(t(IOS ? 'hero_lead_ios' : 'hero_lead'))}</p>
+      <p class="lead">${esc(t(PLAY ? 'hero_lead_ios' : 'hero_lead'))}</p>
       <div class="hero-ctas">
         <a class="btn btn-cream" href="#/today">${t('cta_today')} <span class="arrow">→</span></a>
         ${PLAY ? `<a class="btn btn-ghost" href="#/explore">${t('nav_explore')}</a>` : `<a class="btn btn-ghost" href="#/pricing">${t('cta_gallery')}</a>`}
