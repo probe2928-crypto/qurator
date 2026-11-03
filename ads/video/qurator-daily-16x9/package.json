@@ -1,0 +1,11 @@
+{
+  "name": "qurator-daily-16x9-16x9",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx --yes hyperframes@0.8.230 preview",
+    "check": "npx --yes hyperframes@0.8.230 check",
+    "render": "npx --yes hyperframes@0.8.230 render",
+    "build": "cd ../qurator-daily-16x9 && python3 build.py"
+  }
+}
