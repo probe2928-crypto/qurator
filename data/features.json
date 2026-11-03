@@ -1,5 +1,493 @@
 [
  {
+  "id": "winter-in-paintings-12",
+  "asof": "2026.11.04",
+  "kicker": {
+   "ko": "계절 특집",
+   "en": "Seasonal Feature"
+  },
+  "title": {
+   "ko": "그림 속 겨울, 눈과 얼음과 서리의 12점",
+   "en": "Winter in Paintings: Twelve Works of Snow, Ice and Frost"
+  },
+  "dek": {
+   "ko": "11월 7일은 겨울이 들어선다는 입동입니다. 얼어붙은 네덜란드의 강부터 유배지의 소나무, 눈보라 치는 밤길과 파리의 지붕까지, 화가들이 저마다의 겨울을 붙잡은 열두 점을 모았습니다.",
+   "en": "7 November is Ipdong, the day winter begins in the old Korean calendar. From a frozen Dutch river to pines painted in exile, a night walk through a blizzard and the rooftops of Paris, here are twelve paintings in which artists caught their own winters."
+  },
+  "intro": {
+   "ko": "겨울은 화가에게 까다로운 계절입니다. 손이 곱아 밖에서 오래 그릴 수 없고, 하얀 눈은 물감으로 옮기기가 가장 어려운 색이기도 합니다. 그래도 화가들은 겨울을 그렸습니다. 어떤 이는 얼음 위에 모인 이웃의 하루를 기록했고, 어떤 이는 자연 앞에 선 인간의 작음을, 또 어떤 이는 추위 속에서 더 또렷해지는 마음을 그렸습니다.\n열두 점을 세 갈래로 나눴습니다. 소빙기와 낭만주의의 북유럽, 소나무와 눈보라로 마음을 말한 동아시아, 그리고 눈의 색을 다시 본 인상주의와 그 뒤입니다. 모두 작가 사후 70년이 지난 작품이고, 작품마다 지금의 소장처를 적었습니다.",
+   "en": "Winter is a hard season for painters. Cold fingers make it difficult to work outdoors for long, and white snow is one of the hardest things to put into paint. Yet artists kept painting it. Some recorded a day in the life of neighbours gathered on the ice; some showed how small we are before nature; others painted a mind that grows clearer in the cold.\nThe twelve works fall into three chapters: northern Europe in the Little Ice Age and the Romantic era, East Asian painters who spoke through pines and snowstorms, and the Impressionists and after, who looked again at the colour of snow. Every artist here died more than seventy years ago, and each entry names the collection that holds the work today."
+  },
+  "cover": [
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Pieter%20Bruegel%20the%20Elder%20-%20Hunters%20in%20the%20Snow%20%28Winter%29%20-%20Google%20Art%20Project.jpg?width=1600",
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20The%20Magpie%20-%20Google%20Art%20Project.jpg?width=1600",
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Hiroshige-53-Stations-Hoeido-16-Kanbara-MFA-02.jpg?width=1600",
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Avercamp%2C%20Hendrick%20-%20Winterlandschap%20met%20schaatsers%20-%20SK-A-1718.jpg?width=1600"
+  ],
+  "sections": [
+   {
+    "title": {
+     "ko": "북유럽의 눈과 얼음 · 1565–1824",
+     "en": "Snow and Ice in Northern Europe · 1565–1824"
+    },
+    "dek": {
+     "ko": "사냥에서 돌아오는 발걸음, 얼어붙은 강 위의 마을 잔치, 알프스의 눈보라, 그리고 얼음에 삼켜지는 배.",
+     "en": "Hunters trudging home, a town at play on a frozen river, a snowstorm in the Alps, and a ship swallowed by ice."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "눈 속의 사냥꾼",
+       "en": "The Hunters in the Snow (Winter)"
+      },
+      "artist": {
+       "ko": "피터르 브뤼헐 (아버지)",
+       "en": "Pieter Bruegel the Elder"
+      },
+      "year": "1565",
+      "medium": {
+       "ko": "패널에 유채",
+       "en": "Oil on panel"
+      },
+      "headline": {
+       "ko": "빈 미술사 박물관, 빈 · 1565",
+       "en": "Kunsthistorisches Museum, Vienna · 1565"
+      },
+      "why": {
+       "ko": "안트베르펜의 은행가 니클라스 용헬링크가 주문한 계절 연작 여섯 점 가운데 하나로, 그중 한 점은 지금 전하지 않는다. 사냥꾼 셋이 개들을 데리고 지친 걸음으로 돌아오지만 어깨에 멘 것은 여우 한 마리뿐이다. 언덕 아래 얼어붙은 연못에서는 마을 사람들이 스케이트를 타, 겨울의 고단함과 즐거움이 한 화면에 함께 놓인다.",
+       "en": "It is one of a series of six paintings of the seasons commissioned by the Antwerp banker Niclaes Jongelinck; one of the six is now lost. Three hunters trudge home with their dogs, carrying only a single fox. Below the hill, villagers skate on frozen ponds, so the hardship and the pleasure of winter share one picture."
+      },
+      "pd": true,
+      "commons": "Pieter Bruegel the Elder - Hunters in the Snow (Winter) - Google Art Project.jpg",
+      "sources": [
+       {
+        "label": "The Irish Times — Bruegel: one of the most evocative representations of winter",
+        "url": "https://www.irishtimes.com/culture/art-and-design/bruegel-one-of-the-most-evocative-representations-of-winter-1.3332548"
+       },
+       {
+        "label": "Wikipedia — The Hunters in the Snow",
+        "url": "https://en.wikipedia.org/wiki/The_Hunters_in_the_Snow"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "스케이트 타는 사람들이 있는 겨울 풍경",
+       "en": "Winter Landscape with Ice Skaters"
+      },
+      "artist": {
+       "ko": "헨드릭 아베르캄프",
+       "en": "Hendrick Avercamp"
+      },
+      "year": "1608년 무렵 · c. 1608",
+      "medium": {
+       "ko": "참나무 패널에 유채, 77.3×131.9cm",
+       "en": "Oil on oak panel, 77.3 × 131.9 cm"
+      },
+      "headline": {
+       "ko": "레이크스뮤지엄, 암스테르담 · 1608년 무렵",
+       "en": "Rijksmuseum, Amsterdam · c. 1608"
+      },
+      "why": {
+       "ko": "소빙기 가운데서도 혹독했던 1607–08년 겨울 무렵, 높은 곳에서 내려다본 얼음 위에 수백 명이 모였다. 대부분 놀러 나왔지만 생계를 위해 나온 이들도 있고, 왼쪽 아래에는 얼어 죽은 말 곁에 개와 까마귀가 모여 있다. 말을 하지 못해 '캄펀의 말 없는 이'로 불린 아베르캄프는 네덜란드 최초의 겨울 풍경 전문 화가로 꼽힌다.",
+       "en": "Painted around the harsh winter of 1607–08, in the depths of the Little Ice Age, it shows hundreds of people on the ice from a high viewpoint. Most are out for fun, some are working, and at lower left a dog and crows gather by a horse that froze to death. Avercamp, who could not speak and was known as the Mute of Kampen, is counted as the first Dutch painter to specialise in winter scenes."
+      },
+      "pd": true,
+      "commons": "Avercamp, Hendrick - Winterlandschap met schaatsers - SK-A-1718.jpg",
+      "sources": [
+       {
+        "label": "Rijksmuseum — Winter Landscape with Ice Skaters",
+        "url": "https://www.rijksmuseum.nl/en/collection/SK-A-1718"
+       },
+       {
+        "label": "Wikipedia — Winter Landscape with Skaters",
+        "url": "https://en.wikipedia.org/wiki/Winter_Landscape_with_Skaters"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "눈보라: 알프스를 넘는 한니발과 그의 군대",
+       "en": "Snow Storm: Hannibal and his Army Crossing the Alps"
+      },
+      "artist": {
+       "ko": "J. M. W. 터너",
+       "en": "J. M. W. Turner"
+      },
+      "year": "1812",
+      "medium": {
+       "ko": "캔버스에 유채, 146×237.5cm",
+       "en": "Oil on canvas, 146 × 237.5 cm"
+      },
+      "headline": {
+       "ko": "테이트 브리튼, 런던 · 1812",
+       "en": "Tate Britain, London · 1812"
+      },
+      "why": {
+       "ko": "1810년 요크셔의 후원자 월터 포크스의 집에 머물던 터너는 몰아치는 폭풍을 편지 봉투 뒷면에 스케치했고, 그것이 이 그림의 바탕이 됐다. 거대한 먹구름이 해를 휘감는 동안 주인공 한니발은 지평선 근처 코끼리 위에 아주 작게 보일 뿐이다. 나폴레옹과 전쟁 중이던 영국에서, 알프스를 넘는 나폴레옹을 그린 다비드의 그림과 겹쳐 읽히기도 한다.",
+       "en": "In 1810, while staying with his patron Walter Fawkes in Yorkshire, Turner sketched a passing storm on the back of an envelope; it became the basis of this painting. As a vast black cloud curls around the sun, Hannibal himself is only a tiny figure on an elephant near the horizon. Shown while Britain was at war with Napoleon, it is often read against David's portrait of Napoleon crossing the Alps."
+      },
+      "pd": true,
+      "sources": [
+       {
+        "label": "Wikipedia — Snow Storm: Hannibal and his Army Crossing the Alps",
+        "url": "https://en.wikipedia.org/wiki/Snow_Storm:_Hannibal_and_his_Army_Crossing_the_Alps"
+       },
+       {
+        "label": "Smarthistory — Turner, Snowstorm: Hannibal and his Army Crossing the Alps",
+        "url": "https://smarthistory.org/jmw-turner-snowstorm-hannibal-army-crossing-alps/"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "얼음 바다",
+       "en": "The Sea of Ice"
+      },
+      "artist": {
+       "ko": "카스파어 다비트 프리드리히",
+       "en": "Caspar David Friedrich"
+      },
+      "year": "1823–24",
+      "medium": {
+       "ko": "캔버스에 유채, 96.7×126.9cm",
+       "en": "Oil on canvas, 96.7 × 126.9 cm"
+      },
+      "headline": {
+       "ko": "함부르크 미술관, 함부르크 · 1823–24",
+       "en": "Hamburger Kunsthalle, Hamburg · 1823–24"
+      },
+      "why": {
+       "ko": "부서진 얼음판이 하늘을 향해 뾰족하게 쌓이고, 그 곁에서 배 한 척이 얼음에 반쯤 묻혀 사라져 간다. 프리드리히는 1820–21년 겨울 드레스덴 근처 엘베강의 얼음덩이를 유화로 연구했다. 1824년 프라하에서 처음 전시됐을 때 사람들은 이 낯선 그림을 이해하지 못했고, 1840년 화가가 죽을 때까지 팔리지 않았지만 지금은 그의 대표작으로 꼽힌다.",
+       "en": "Shattered slabs of ice are stacked into a sharp peak, and beside them a ship half buried in the ice is disappearing. Friedrich had made oil studies of ice floes on the Elbe near Dresden in the winter of 1820–21. Viewers in Prague were baffled when it was first shown in 1824, and it was still unsold at his death in 1840; today it is counted among his masterpieces."
+      },
+      "pd": true,
+      "commons": "Caspar David Friedrich - Das Eismeer - Hamburger Kunsthalle - 02.jpg",
+      "sources": [
+       {
+        "label": "Wikipedia — The Sea of Ice",
+        "url": "https://en.wikipedia.org/wiki/The_Sea_of_Ice"
+       },
+       {
+        "label": "Random Old Art — The Sea of Ice",
+        "url": "https://randomoldart.beehiiv.com/p/the-sea-of-ice"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": {
+     "ko": "동아시아의 설경 · 18–19세기",
+     "en": "Snowscapes of East Asia · 18th–19th Century"
+    },
+    "dek": {
+     "ko": "눈을 이고 선 소나무, 손가락으로 그린 눈보라, 눈이 오지 않는 마을의 상상 설경, 그리고 유배지에서 그린 의리.",
+     "en": "Pines bearing snow, a blizzard painted with the fingers, an imagined snowfall in a town where it rarely snows, and loyalty painted in exile."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "설송도 (雪松圖)",
+       "en": "Snow-Covered Pines"
+      },
+      "artist": {
+       "ko": "이인상",
+       "en": "Yi In-sang"
+      },
+      "year": "18세기 · 18th century",
+      "medium": {
+       "ko": "종이에 수묵, 117.3×52.6cm",
+       "en": "Ink on paper, 117.3 × 52.6 cm"
+      },
+      "headline": {
+       "ko": "국립중앙박물관, 서울 · 18세기",
+       "en": "National Museum of Korea, Seoul · 18th century"
+      },
+      "why": {
+       "ko": "능호관 이인상(1710–1760)은 서얼 출신이었지만 명문가 선비들과 벗하며 선비의 기개를 그림에 담았고, 훗날 김정희가 높이 인정한 선배로 꼽힌다. 눈을 맞고도 곧게 선 소나무는 '날이 추워진 뒤에야 소나무와 잣나무가 늦게 시듦을 안다'는 『논어』 구절을 떠올리게 한다. 꾸밈을 덜어 낸 먹빛에서 18세기 문인화의 맑은 기운이 느껴진다.",
+       "en": "Yi In-sang (1710–1760), known as Neunghogwan, was born to a secondary line of his family, yet he lived among scholars of leading houses and put a scholar's spirit into his painting; Kim Jeong-hui later held him in high regard. A pine standing straight under snow recalls the Analects: only when the year grows cold do we see that pines and cypresses are the last to wither. Its restrained ink carries the clear air of eighteenth-century literati painting."
+      },
+      "pd": true,
+      "sources": [
+       {
+        "label": "국립중앙박물관 소장품 — 눈내린 소나무 그림(雪松圖)",
+        "url": "https://www.museum.go.kr/site/main/relic/search/view?relicId=1423"
+       },
+       {
+        "label": "세계일보 — 능호관 이인상 (2016.8.4)",
+        "url": "https://www.segye.com/view/20160804002565"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "풍설야귀인 (風雪夜歸人)",
+       "en": "Returning Home on a Snowy Night"
+      },
+      "artist": {
+       "ko": "최북",
+       "en": "Choe Buk"
+      },
+      "year": "18세기 · 18th century",
+      "medium": {
+       "ko": "종이에 수묵담채, 66.3×42.9cm",
+       "en": "Ink and light colour on paper, 66.3 × 42.9 cm"
+      },
+      "headline": {
+       "ko": "개인 소장 · 18세기",
+       "en": "Private collection · 18th century"
+      },
+      "why": {
+       "ko": "붓 대신 손가락에 먹을 묻혀 그린 지두화로, 거친 선이 눈보라의 기세를 그대로 전한다. 제목은 당나라 시인 유장경의 시 '사립문에 개 짖는 소리, 눈보라 치는 밤 돌아오는 사람'에서 왔다. 사립문 앞 검은 개가 짖고, 지팡이 짚은 나그네와 아이가 눈보라 속을 걸어간다. 권세가의 강요에 맞서 스스로 한쪽 눈을 찔렀다는 일화로 유명한 최북의 대표작이다.",
+       "en": "It is a finger painting, made by dipping the fingers rather than a brush in ink, and its rough lines carry the force of the storm. The title comes from a poem by the Tang poet Liu Changqing: a dog barks at the brushwood gate; someone comes home through wind and snow at night. A black dog barks by the gate as a traveller with a staff and a boy walk into the blizzard. It is a signature work of Choe Buk, famous for the story that he pierced his own eye rather than paint on a powerful man's command."
+      },
+      "pd": true,
+      "sources": [
+       {
+        "label": "법보신문 — 최북의 '풍설야귀인'",
+        "url": "https://www.beopbo.com/news/articleView.html?idxno=209210"
+       },
+       {
+        "label": "우리문화신문 — 손가락으로 그린 그림 지두화",
+        "url": "https://www.koya-culture.com/news/article.html?no=149405"
+       },
+       {
+        "label": "전북일보 — 조선의 반 고흐, 최칠칠 최북",
+        "url": "https://www.jjan.kr/article/20210428731270"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "가바라: 밤의 눈 (도카이도 53역참)",
+       "en": "Evening Snow at Kambara (Fifty-three Stations of the Tōkaidō)"
+      },
+      "artist": {
+       "ko": "우타가와 히로시게",
+       "en": "Utagawa Hiroshige"
+      },
+      "year": "1833",
+      "medium": {
+       "ko": "다색 목판화",
+       "en": "Colour woodblock print"
+      },
+      "headline": {
+       "ko": "클리블랜드 미술관·메트로폴리탄 미술관 등 · 1833",
+       "en": "Cleveland Museum of Art, The Met and others · 1833"
+      },
+      "why": {
+       "ko": "에도와 교토를 잇는 도카이도의 역참을 그린 연작 가운데 열여섯 번째 장이다. 내리는 눈송이는 판을 파내어 종이의 흰 바탕이 그대로 남게 했고, 이것이 히로시게가 처음 내리는 눈을 그린 판화일 수 있다고 본다. 정작 바닷가 마을 가바라에는 눈이 드물어, 화가가 상상으로 지어낸 설경으로 여겨진다.",
+       "en": "It is number sixteen in the series on the post stations of the Tōkaidō road between Edo and Kyoto. The falling snow was carved out of the block so that the white paper shows through, and it may be Hiroshige's first print of falling snow. Kambara is a coastal town where snow is rare, so the scene is thought to be imagined."
+      },
+      "pd": true,
+      "commons": "Hiroshige-53-Stations-Hoeido-16-Kanbara-MFA-02.jpg",
+      "sources": [
+       {
+        "label": "Cleveland Museum of Art — Evening Snow at Kambara",
+        "url": "https://www.clevelandart.org/art/1985.317"
+       },
+       {
+        "label": "The Met via Ukiyo-e.org — Evening Snow at Kanbara",
+        "url": "https://ukiyo-e.org/image/met/DP109333"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "세한도 (歲寒圖)",
+       "en": "Sehando (Winter Scene)"
+      },
+      "artist": {
+       "ko": "김정희",
+       "en": "Kim Jeong-hui (Chusa)"
+      },
+      "year": "1844",
+      "medium": {
+       "ko": "종이에 수묵",
+       "en": "Ink on paper"
+      },
+      "headline": {
+       "ko": "국립중앙박물관, 서울 · 1844 · 국보",
+       "en": "National Museum of Korea, Seoul · 1844 · National Treasure"
+      },
+      "why": {
+       "ko": "제주에 유배된 59세의 김정희가, 중국에서 귀한 책을 구해 꾸준히 보내 준 제자 역관 이상적에게 그려 준 그림이다. 제목은 날이 추워진 뒤에야 소나무와 잣나무의 푸름을 안다는 『논어』 구절에서 왔다. 이듬해 이상적이 베이징에서 청나라 문인 16명의 글을 받아 두루마리로 꾸몄고, 2020년 소장가 손창근이 국가에 기증했다.",
+       "en": "Kim Jeong-hui painted it at fifty-nine, in exile on Jeju Island, for his pupil Yi Sang-jeok, an interpreter who kept sending him rare books from China. The title comes from the Analects line about seeing the green of pines and cypresses only when the year turns cold. The next year Yi gathered colophons from sixteen Qing scholars in Beijing and mounted them as a scroll; in 2020 the collector Son Chang-keun donated it to the nation."
+      },
+      "pd": true,
+      "commons": "SehandoLarge.jpg",
+      "sources": [
+       {
+        "label": "한경비즈니스 — 세한도의 진짜 주인공 '역관 이상적'",
+        "url": "https://magazine.hankyung.com/business/amp/202102226331b"
+       },
+       {
+        "label": "서울신문 — 세한도 기증자 손창근 금관문화훈장 (2020.12.9)",
+        "url": "https://m.seoul.co.kr/news/2020/12/09/20201209500163"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": {
+     "ko": "눈의 색을 다시 보다 · 1868–1912",
+     "en": "Seeing the Colour of Snow Again · 1868–1912"
+    },
+    "dek": {
+     "ko": "푸른 그림자 위의 까치, 비평가가 조롱한 서리 낀 밭, 사람 없는 파리의 지붕, 그리고 노르웨이 바닷가 마을의 겨울.",
+     "en": "A magpie above blue shadows, a frosty field a critic mocked, the empty rooftops of Paris, and winter in a Norwegian coastal town."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "까치",
+       "en": "The Magpie"
+      },
+      "artist": {
+       "ko": "클로드 모네",
+       "en": "Claude Monet"
+      },
+      "year": "1868–69",
+      "medium": {
+       "ko": "캔버스에 유채, 89×130cm",
+       "en": "Oil on canvas, 89 × 130 cm"
+      },
+      "headline": {
+       "ko": "오르세 미술관, 파리 · 1868–69",
+       "en": "Musée d'Orsay, Paris · 1868–69"
+      },
+      "why": {
+       "ko": "노르망디 에트르타 근처, 눈 덮인 들판의 나무 울타리 문 위에 까치 한 마리가 앉아 있다. 노란 햇빛을 받은 눈 위로 푸른 보랏빛 그림자가 드리우는데, 모네가 색이 있는 그림자를 쓴 이른 예로 꼽힌다. 1869년 살롱에 냈지만 너무 평범하고 거칠다는 이유로 떨어졌고, 오르세 미술관은 1984년에 이 그림을 소장했다.",
+       "en": "Near Étretat in Normandy, a single magpie perches on a wooden gate in a snow-covered field. Blue-violet shadows fall across snow lit by yellow sunlight, an early example of Monet's coloured shadows. He sent it to the 1869 Salon, where the jury rejected it as too common and coarse; the Musée d'Orsay acquired it in 1984."
+      },
+      "pd": true,
+      "commons": "Claude Monet - The Magpie - Google Art Project.jpg",
+      "sources": [
+       {
+        "label": "Wikipedia — The Magpie (Monet)",
+        "url": "https://en.wikipedia.org/wiki/The_Magpie_(Monet)"
+       },
+       {
+        "label": "Artnet — 3 Surprising Facts About Monet's 'The Magpie'",
+        "url": "https://news.artnet.com/art-world/monet-the-magpie-three-facts-2399720"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "하얀 서리",
+       "en": "Hoarfrost"
+      },
+      "artist": {
+       "ko": "카미유 피사로",
+       "en": "Camille Pissarro"
+      },
+      "year": "1873",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "오르세 미술관, 파리 · 1873",
+       "en": "Musée d'Orsay, Paris · 1873"
+      },
+      "why": {
+       "ko": "피사로가 살던 퐁투아즈 근처 엔느리로 가는 옛길, 서리 내린 밭 사이로 짐을 진 사람이 지나간다. 나이프와 촘촘한 붓질로 겨울 아침의 한순간을 붙잡은 이 그림은 1874년 첫 인상파 전시에 나온 피사로의 다섯 점 가운데 하나였다. 비평가 루이 르루아는 더러운 캔버스에 물감을 긁어 놓았을 뿐이라며 조롱했다.",
+       "en": "On the old road to Ennery near Pontoise, where Pissarro lived, a figure carrying a load passes between frosted fields. Built with the palette knife and dense strokes to catch one moment of a winter morning, it was one of five works Pissarro showed at the first Impressionist exhibition in 1874. The critic Louis Leroy mocked it as mere scratches of paint on a dirty canvas."
+      },
+      "pd": true,
+      "commons": "Camille Pissarro - Gelée blanche, ancienne route d´Ennery, Pontoise - 1873.jpg",
+      "sources": [
+       {
+        "label": "Musée d'Orsay — Gelée blanche",
+        "url": "https://www.musee-orsay.fr/en/artworks/gelee-blanche-368"
+       },
+       {
+        "label": "World History Encyclopedia — Hoar Frost by Pissarro",
+        "url": "https://www.worldhistory.org/image/15668/hoar-frost-by-pissarro/"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "눈 덮인 지붕들",
+       "en": "Rooftops in the Snow (Snow Effect)"
+      },
+      "artist": {
+       "ko": "귀스타브 카유보트",
+       "en": "Gustave Caillebotte"
+      },
+      "year": "1878–79",
+      "medium": {
+       "ko": "캔버스에 유채, 65×81cm",
+       "en": "Oil on canvas, 65 × 81 cm"
+      },
+      "headline": {
+       "ko": "오르세 미술관, 파리 · 1878–79",
+       "en": "Musée d'Orsay, Paris · 1878–79"
+      },
+      "why": {
+       "ko": "높은 곳에서 아찔하게 내려다본 파리의 지붕들이 회색과 차가운 푸른빛, 흰빛으로만 이어진다. 사람 하나 없는 고요한 도시는 비 오는 파리 거리를 그린 같은 화가의 그림과 또 다른 근대 도시의 얼굴이다. 1879년 제4회 인상파 전시에 나왔으나 주목받지 못했고, 1894년 화가가 세상을 떠난 뒤 동생 마르시알이 뤽상부르 미술관에 기증했다.",
+       "en": "Seen from a dizzying height, the rooftops of Paris run on in greys, cool blues and off-whites. Without a single figure, this silent city is another face of modern Paris from the painter of Paris Street; Rainy Day. It drew little attention at the fourth Impressionist exhibition in 1879, and after Caillebotte's death his brother Martial gave it to the Musée du Luxembourg in 1894."
+      },
+      "pd": true,
+      "commons": "G. Caillebotte - Vue de toits, effet de neige.jpg",
+      "sources": [
+       {
+        "label": "Wikipedia — Vue de toits (Effet de neige)",
+        "url": "https://en.wikipedia.org/wiki/Vue_de_toits_(Effet_de_neige)"
+       },
+       {
+        "label": "Artprice — Vue de toits, effet de neige by Gustave Caillebotte",
+        "url": "https://news.artprice.com/en/12701/vue-de-toits-effet-de-neige-by-gustave-caillebotte-an-impressionist-masterpiece-and-a-modern-vision-of-paris-under-the-snow"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "크라게뢰의 겨울",
+       "en": "Winter in Kragerø"
+      },
+      "artist": {
+       "ko": "에드바르 뭉크",
+       "en": "Edvard Munch"
+      },
+      "year": "1912",
+      "medium": {
+       "ko": "캔버스에 유채, 132.5×131.5cm",
+       "en": "Oil on canvas, 132.5 × 131.5 cm"
+      },
+      "headline": {
+       "ko": "뭉크 미술관, 오슬로 · 1912",
+       "en": "MUNCH, Oslo · 1912"
+      },
+      "why": {
+       "ko": "뭉크는 1909년부터 1915년까지 노르웨이 남쪽 바닷가 마을 크라게뢰의 '스크루벤'이라는 집에 살며 이곳 풍경을 많이 그렸다. 눈 덮인 소나무와 마을의 집들이 정사각형에 가까운 큰 화면에 담겼다. 불안과 절규의 화가로 알려진 뭉크가 바라본, 밝고 차가운 겨울빛이다.",
+       "en": "From 1909 to 1915 Munch lived at a house called Skrubben in Kragerø, a coastal town in southern Norway, and painted much of its scenery. Snow-laden pines and the town's houses fill a large, almost square canvas. This is the bright, cold winter light seen by a painter better known for anxiety and the scream."
+      },
+      "pd": true,
+      "sources": [
+       {
+        "label": "MUNCH — Winter in Kragerø (MM.M.00392)",
+        "url": "https://www.munch.no/en/object/MM.M.00392"
+       },
+       {
+        "label": "Kragerø kommune — In Munch's Footsteps",
+        "url": "https://www.kragero.kommune.no/_f/p1/i19204771-6cbe-4273-a937-5611dd7c5dc1/i-munchs-fotspor-2017-engelsk.pdf"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "note": {
+   "ko": "소장처·연도·크기·제작 경위는 미술관 소장품 페이지와 백과사전·언론 등 두 곳 이상에서 확인했습니다(2026년 11월 4일 기준). 입동 날짜는 2026년 달력 기준입니다. 열두 점 모두 작가 사후 70년이 지난 퍼블릭 도메인 작품이며, 이미지는 위키미디어 커먼즈에서 불러오고 파일을 확인하지 못한 작품은 글 카드로 보여 드립니다. 「풍설야귀인」은 개인 소장이라 공개 전시가 드물고, 국립중앙박물관 서화실 작품은 보존을 위해 주기적으로 교체 전시되니 관람 전 전시 일정을 확인해 주세요.",
+   "en": "Collections, dates, sizes and backstories were checked against at least two sources, including museum collection pages, encyclopedias and the press, as of 4 November 2026. The date of Ipdong follows the 2026 calendar. All twelve works are in the public domain, as their artists died more than seventy years ago; images load from Wikimedia Commons, and works whose files could not be confirmed appear as text cards. Returning Home on a Snowy Night is in a private collection and rarely shown, and works on paper at the National Museum of Korea are rotated for conservation, so check exhibition schedules before you go."
+  }
+ },
+ {
   "id": "monet-100-twelve",
   "asof": "2026.11.02",
   "kicker": {
