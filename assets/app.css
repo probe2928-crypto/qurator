@@ -324,7 +324,7 @@ body.v .lang button.on{background:var(--cream);color:var(--night)}
 .xlist small{color:var(--cream-2);font-size:13px}
 
 /* modal + toast */
-.modal{position:fixed;inset:0;z-index:100;background:rgba(15,14,12,.55);backdrop-filter:blur(4px);display:grid;place-items:center;padding:16px}
+.modal{position:fixed;inset:0;z-index:100;background:rgba(15,14,12,.55);backdrop-filter:blur(4px);display:grid;place-items:center;padding:16px;grid-template-columns:minmax(0,1fr)}
 .modal[hidden]{display:none}
 .modal-box{background:var(--paper);color:var(--ink);max-width:460px;width:100%;padding:34px 30px 28px;position:relative;animation:rise .45s var(--ease)}
 .modal-box h3{font-family:var(--serif);font-size:26px;letter-spacing:-.03em;margin:8px 0 10px;line-height:1.25}

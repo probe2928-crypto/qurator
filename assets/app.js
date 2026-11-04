@@ -155,14 +155,14 @@ const T = {
   gv_log_cols: [['날짜', '금액', '내용'], ['Date', 'Amount', 'Note']],
   gv_fine: ['구독료와 갤러리 프로젝트 비용은 기부금이 아니며, 기부금 영수증이나 세액공제 대상이 아닙니다. 기부는 QURATOR가 자기 수익에서 직접 합니다.', 'Subscription and project fees are not donations and are not tax-deductible. QURATOR gives from its own revenue.'],
   play_unlock: ['멤버 코드로 열기', 'Unlock with member code'], play_h: ['멤버 전용 해설', 'Members-only commentary'],
-  play_p: ['Daily Art 멤버십은 QURATOR 웹사이트에서 신청할 수 있습니다. 받은 멤버 링크나 코드를 아래에 붙여 넣으면 이용 기간 동안 이 기기에서 열람됩니다.', 'Daily Art membership is available on the QURATOR website. Paste the member link or code you received below and this device stays unlocked for your membership period.'],
+  play_p: ['멤버 링크나 코드가 있다면 아래에 붙여 넣어 주세요. 이용 기간 동안 이 기기에서 멤버 전용 해설이 열립니다.', 'Have a member link or code? Paste it below and the members-only commentary stays open on this device for your membership period.'],
   m_cta: ['구독 신청하기', 'Subscribe now'], m_code: ['멤버 코드 또는 링크', 'Member code or link'], m_apply: ['확인', 'Apply'],
   m_ok: ['멤버십이 활성화되었습니다', 'Membership activated'], m_bad: ['코드를 다시 확인해 주세요', 'Please check the code'],
   sp_p_ios: ['작품 해설, 앱 사용, 갤러리 도입에 관한 문의는 카카오톡으로 편하게 남겨 주세요.', 'Questions about the commentary, the app or bringing QURATOR to your gallery: message us on KakaoTalk.'],
   hero_lead_ios: ['작품 옆 QR을 찍으면 해설이 텍스트·음성·다국어로 열립니다. 그리고 매일 한 점, 미술사를 바탕으로 고른 명작을 영어 해설과 함께 소개합니다.', 'Scan the QR code beside an artwork and its story opens in text, voice and several languages. And every day, one masterpiece chosen through the lens of art history, with English commentary.'],
   daily_p_ios: ['매일 한 점, 명작과 영어 해설. 미술과 영어를 함께 읽는 하루 5분.', 'One masterpiece a day with English commentary. Five minutes of art and English.'],
   ios_archive_p: ['지난 3주 동안 매일 소개한 첫 번째 작품을 다시 볼 수 있습니다.', 'Revisit the first work featured each day over the past three weeks.'],
-  m_until: ['{d}까지', 'until {d}'], m_renew: ['연장하기', 'Renew'], m_renew_play: ['연장은 QURATOR 웹사이트에서 할 수 있습니다.', 'You can renew on the QURATOR website.'],
+  m_until: ['{d}까지', 'until {d}'], m_renew: ['연장하기', 'Renew'], m_renew_play: ['새 멤버 링크를 받으면 같은 방법으로 다시 열 수 있습니다.', 'Received a new member link? Open it the same way.'],
   m_ended: ['멤버십이 {d}에 끝났습니다.', 'Your membership ended on {d}.'],
   ml_ok_h: ['멤버십이 열렸습니다', 'Membership unlocked'], ml_ok_p: ['{d}까지 이 기기에서 모든 해설을 볼 수 있습니다. 다른 기기에서는 같은 링크를 한 번 더 누르면 됩니다.', 'Everything is open on this device until {d}. On another device, just open the same link.'],
   ml_exp_h: ['기간이 끝난 링크입니다', 'This link has expired'], ml_exp_p: ['{d}에 끝난 멤버십입니다. 연장하면 새 링크를 보내 드립니다.', 'This membership ended on {d}. Renew and we will send you a new link.'],
@@ -1596,11 +1596,11 @@ async function viewGiving() {
 }
 
 const FAQ_PLAY = [
-  ['멤버십은 어떻게 이용하나요?', 'How does membership work?', 'Daily Art 멤버십은 QURATOR 웹사이트에서 신청할 수 있습니다. 받은 멤버 링크를 누르거나, 앱의 \'멤버 코드로 열기\'에 링크나 코드를 붙여 넣으면 이용 기간 동안 열람됩니다.', 'Daily Art membership is available on the QURATOR website. Open the member link you received, or paste the link or code into "Unlock with member code", and everything stays open for your membership period.']
+  ['멤버십은 어떻게 이용하나요?', 'How does membership work?', '받은 멤버 링크를 누르거나, 앱의 \'멤버 코드로 열기\'에 링크나 코드를 붙여 넣으면 이용 기간 동안 멤버 전용 해설이 열립니다. 기간이 끝나면 다시 잠기고, 새 멤버 링크로 같은 방법으로 열 수 있습니다.', 'Open the member link you received, or paste the link or code into "Unlock with member code", and the members-only commentary stays open for your membership period. When it ends the pages lock again; a new member link opens them the same way.']
 ];
 function viewSupport() {
   const k = L();
-  app().innerHTML = `<section class="phead"><div class="wrap"><p class="eyebrow">Service client</p><h1>${t('sp_h')}</h1><p>${t(IOS ? 'sp_p_ios' : 'sp_p')}</p></div></section>
+  app().innerHTML = `<section class="phead"><div class="wrap"><p class="eyebrow">Service client</p><h1>${t('sp_h')}</h1><p>${t(IOS || PLAY ? 'sp_p_ios' : 'sp_p')}</p></div></section>
   <div class="wrap support">
     <a class="kakao-card" href="${KAKAO}" target="_blank" rel="noopener">
       <span class="kk-ico"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3.5c-5 0-9 3.1-9 7 0 2.5 1.7 4.7 4.2 6l-.9 3.4c-.1.3.3.5.5.3l4-2.7c.4 0 .8.1 1.2.1 5 0 9-3.1 9-7s-4-7.1-9-7.1Z"/></svg></span>
@@ -1611,7 +1611,7 @@ function viewSupport() {
         `<a class="sp-cell" href="${h}" ${h.startsWith('http') ? 'target="_blank" rel="noopener"' : ''}><span>${k ? b : a}</span><i>→</i></a>`).join('')}
     </div>
     <h2 class="sp-h">${t('sp_faq')}</h2>
-    <div class="faq">${(IOS ? FAQ.filter(f => !/결제|구독|멤버|환불|해지|요금|가격|앱을 설치|갤러리 도입|갤러리가/.test(f[0])) : PLAY ? FAQ_PLAY.concat(FAQ.filter(f => !/결제는|앱을 설치|갤러리 도입|갤러리가/.test(f[0]))) : FAQ).map(f => `<details><summary>${esc(f[k])}</summary><p>${esc(f[2 + k])}</p></details>`).join('')}</div>
+    <div class="faq">${(IOS ? FAQ.filter(f => !/결제|구독|멤버|환불|해지|요금|가격|앱을 설치|갤러리 도입|갤러리가/.test(f[0])) : PLAY ? FAQ_PLAY.concat(FAQ.filter(f => !/결제는|앱을 설치|갤러리 도입|갤러리가|멤버 코드는 어디/.test(f[0]))) : FAQ).map(f => `<details><summary>${esc(f[k])}</summary><p>${esc(f[2 + k])}</p></details>`).join('')}</div>
     <h2 class="sp-h">${t('sp_docs')}</h2>
     <div class="sp-grid"><a class="sp-cell" href="#/policy/terms"><span>${t('terms')}</span><i>→</i></a><a class="sp-cell" href="#/policy/privacy"><span>${t('privacy')}</span><i>→</i></a>${IOS ? '' : `<a class="sp-cell" href="#/policy/refund"><span>${t('refund')}</span><i>→</i></a>`}</div>
   </div>`;
@@ -1661,7 +1661,7 @@ const POLICY = {
 function viewPolicy(kind) {
   const P = POLICY[kind] || POLICY.terms;
   app().innerHTML = `<section class="phead"><div class="wrap"><p class="eyebrow"><a href="#/support">${t('nav_support')}</a> / Policy</p><h1>${P[0]}</h1>
-    ${S.lang === 'en' ? `<p>This policy is provided in Korean, and the Korean text governs. Contact us on KakaoTalk with any questions.</p>${kind === 'terms' || kind === 'refund' ? '<p>Free trial (Terms, Article 3): new card auto-pay subscriptions start with a 7-day free trial with full access. The first ₩30,000 charge is made automatically on day 8, then monthly on that date. Cancel anytime before the first charge and you pay nothing. One free trial per person (by email); bank transfer has no trial.</p>' : ''}` : ''}</div></section>
+    ${S.lang === 'en' ? `<p>This policy is provided in Korean, and the Korean text governs. Contact us on KakaoTalk with any questions.</p>${(kind === 'terms' || kind === 'refund') && TRIAL() ? '<p>Free trial (Terms, Article 3): new card auto-pay subscriptions start with a 7-day free trial with full access. The first ₩30,000 charge is made automatically on day 8, then monthly on that date. Cancel anytime before the first charge and you pay nothing. One free trial per person (by email); bank transfer has no trial.</p>' : ''}` : ''}</div></section>
     <div class="wrap policy">${P[1].map(([h, b]) => `<section><h3>${esc(h)}</h3><p>${esc(b)}</p></section>`).join('')}
     <p class="note">QURATOR · <a href="${KAKAO}" target="_blank" rel="noopener">${S.lang === 'ko' ? '카카오톡 고객센터' : 'KakaoTalk support'}</a></p></div>`;
 }
