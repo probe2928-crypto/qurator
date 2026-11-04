@@ -569,7 +569,8 @@ function renderShell(route) {
     <div class="foot-brand">${logoMark()}<div><div class="fw">qurator</div><div class="fs">MAISON DE DOCENT · SÉOUL</div></div></div>
     <nav class="foot-links">${PLAY ? '' : `<a href="#/galleries">${S.lang === 'ko' ? '갤러리 도입 안내' : 'For galleries'}</a>`}<a href="#/giving">${t('nav_giving')} · Oriel</a><a href="#/support">${t('nav_support')}</a><a href="${KAKAO}" target="_blank" rel="noopener">${S.lang === 'ko' ? '카카오톡 문의' : 'KakaoTalk'}</a><a href="#/policy/terms">${t('terms')}</a><a href="#/policy/privacy"><b>${t('privacy')}</b></a>${IOS ? '' : `<a href="#/policy/refund">${t('refund')}</a>`}</nav>
   </div>
-  <div class="foot-in foot-legal"><span>${esc(t('biz'))}</span><span>© 2026 QURATOR · ${esc(t('foot_note'))}</span></div>`;
+  <div class="foot-in foot-legal"><span>${esc(t('biz'))}</span><span>© 2026 QURATOR · ${esc(t('foot_note'))}</span></div>
+  <div class="foot-in seren-line" style="margin-top:14px;font:12px/1.6 'Tenor Sans',sans-serif"><span><span style="letter-spacing:.2em">SEREN</span> <span style="color:#8C8478">/</span> QURATOR</span></div>`;
 }
 
 /* ---------------- views ---------------- */
