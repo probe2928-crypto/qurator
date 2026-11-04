@@ -2,6 +2,24 @@
 
 규칙: 공식 홈페이지·공개된 대표 문의 채널만 적는다. 개인 이메일·개인 정보 금지. 이미 있는 곳은 중복하지 않는다.
 
+## 2026-11-05 (리서치팀)
+
+전시 정보 출처: [아트앤컬처 전시 캘린더](https://art-culture.co.kr/)·[아트넷](https://artnet.kr/)·갤러리 공식 페이지(2026-11-05 열람). 연락처는 갤러리 공식 페이지 또는 한국화랑협회 회원 페이지 기준. 개인 이름·개인 휴대전화(하랑갤러리 블로그의 010 번호 등)·개인 메일은 적지 않음.
+
+| # | 이름 | 지역 | 전시·기간 | 공식 홈페이지 | 공식 문의 채널 | 메모 |
+|---|---|---|---|---|---|---|
+| 1 | 갤러리 헤세드 | 서울 강남구 도곡동 458-6 네오빌딩 1층 | 방진태 《흔한 산 Common Mountains》 2026.11.03~11.24 ([공식 전시 페이지](https://galleryhesed.com/commonmountains), [아트앤컬처](https://art-culture.co.kr/magazine_art_ca/4771)) | https://galleryhesed.com | 02-6958-5385 · **info@galleryhesed.com** ([공식 Contact](https://galleryhesed.com/contact)) | 공식 사이트에 대표 메일이 직접 있는 드문 곳 → 메일 제안 1순위. 산 그림이라 정선 〈인왕제색도〉·〈금강전도〉 해설을 예시로 보여 주기 좋음(전시 내용은 제목 기준, 미확인) |
+| 2 | 표갤러리 PYO Gallery | 서울 종로구 자하문로5길 18-4(체부동, 서촌) | 김유준 《자연에서 선 찾기 Finding a Line in Nature》 2026.11.04~11.30 ([공식 홈페이지](https://www.pyogallery.com/), [아트앤컬처](https://art-culture.co.kr/magazine_art_ca/4767)) | https://www.pyogallery.com | 02-543-7337 · **info@pyogallery.com** ([한국화랑협회 회원 페이지](https://koreagalleries.or.kr/galleries/%ED%91%9C%EA%B0%A4%EB%9F%AC%EB%A6%AC/)) | 1981년 개관·LA 지점이 있는 중견 화랑 → '소규모' 기준엔 다소 큼. 갤러리 월 구독보다 전시 단위 제안이 맞을 수 있음(판단은 마케팅영업팀) |
+| 3 | 갤러리 무모 Gallery MUMO | 서울 송파구 가락로19길 5 B1층 | 1관 이지은 《비어 있는 관계의 구도》·2관 순호 〈머무는 공기의 겹겹의 틈사이〉 2026.11.07~12.13 ([아트앤컬처 4769](https://art-culture.co.kr/magazine_art_ca/4769), [4768](https://art-culture.co.kr/magazine_art_ca/4768)) | mumogallery.com (접속 시 403, 미확인) | 대표전화 0507-1320-0543([공식 페이스북](https://www.facebook.com/gallerymumo/)) · 카카오채널 [pf.kakao.com/_jYIPG](https://pf.kakao.com/_jYIPG) · 대표 메일 미확인 | 이번 리드 중 전시가 가장 길게(12.13) 이어짐 → 개막(11/7) 직후 연락하면 이번 전시에 적용 여지. 카카오채널 문의 문안이 현실적 |
+| 4 | 하랑갤러리 | 서울 종로구 자하문로38길 45 1층(부암동) | 임지향·홍선미 2인전 《Layered Time》 2026.11.04~11.15 ([공식 사이트](https://galleryharang.com/), [아트넷](https://artnet.kr/p/group-exhibitions/1371)) | https://galleryharang.com | 02-365-9545 · galleryharang@gmail.com(갤러리 명의, 공식 사이트 전시 공지 '문의'란) | 전시가 11/15에 끝남 → 다음 전시 기준 제안 |
+| 5 | 오이코스8 OIKOS8 | 경기 파주시 조리읍 기곡길 306-19 | 기획전 《찰나의 연금술: Alchemy of Moments》 2026.09.15~11.17 ([공식 Programs](https://oikos8.com/programs/?vid=2), [아트넷](https://artnet.kr/p/group-exhibitions/1317)) | https://oikos8.com | info@oikos8.com(공식 전시 공지 '문의'란) · 대표전화 미확인 | 11/17 종료 → 다음 기획전 기준. 파주(헤이리·화이트블럭과 같은 권역) — 화이트블럭과 묶어 파주 방문 동선 가능 |
+
+예비(채널 확인 후 승격):
+- 레인보우큐브(마포구 토정로2길 6-19) — 《3 in 1》 10.30~11.22 ([아트앤컬처](https://art-culture.co.kr/magazine_art_ca/4760)). 인스타그램만 확인, 대표전화·메일 미확인.
+- 낫어플레이스 N.A.P(성북구 안암로9길 31 B1) — 《Not A Home》 10.31~11.24 ([아트앤컬처](https://art-culture.co.kr/magazine_art_ca/4757)). 인스타그램만 확인, 대표전화·메일 미확인.
+
+기존 리드 확인(PRIORITIES 3): **갤러리 플래닛 — 확인됨.** 김한나 개인전 《종이, 연필, 지우개, 책》 2026.11.04~11.27, 화~토 11~18시([공식 전시 페이지](http://galleryplanet.co.kr/paper-pencil-eraser-book%EC%A2%85%EC%9D%B4-%EC%97%B0%ED%95%84-%EC%A7%80%EC%9A%B0%EA%B0%9C-%EC%B1%85nov-04-2026-nov-27-2026kim-hanna/), [한국화랑협회](https://koreagalleries.or.kr/exhibition/%E3%80%8A%EC%A2%85%EC%9D%B4-%EC%97%B0%ED%95%84-%EC%A7%80%EC%9A%B0%EA%B0%9C-%EC%B1%85paper-pencil-eraser-book%E3%80%8B/)). info@galleryplanet.co.kr·02-540-4853은 한국화랑협회 회원 페이지 이메일 칸에 기재. 주소 압구정로71길 14, 2층(옛 '청담동 101-5'는 이전 주소).
+
 ## 2026-11-04 (리서치팀)
 
 전시 정보 출처: [아트넷 전시 목록](https://artnet.kr/)(2026-11-04 열람)·아트코리아방송 기사·갤러리 공식 페이지. 연락처는 갤러리 공식 페이지 또는 관광 정보 페이지(K-TRIP TIPS·육아크루) 기준 — 그 페이지의 사이트 운영자 메일은 쓰지 않음. 갤러리 자체 홈페이지는 인사아트 한 곳만 열림.
