@@ -894,3 +894,24 @@ body.immersive .pim{color:var(--seal-2);border-color:rgba(196,85,59,.55)}
 .tcard .lock-chip::before{content:"";width:5px;height:5px;border-radius:50%;background:currentColor}
 .founder blockquote{text-wrap:pretty}
 .cta-band h2,.give-band h2{text-wrap:balance}
+
+/* App Store promo (website only) */
+.appbar{position:relative;z-index:41;background:#14120F;color:#F3EDE1;font-size:13px;line-height:1.4}
+.appbar .ab-in{display:flex;align-items:center;justify-content:center;gap:14px;padding:9px 48px 9px var(--gut);flex-wrap:wrap;text-align:center}
+.appbar .ab-new{font:600 10.5px/1 Manrope,sans-serif;letter-spacing:.16em;background:var(--seal-2);color:#fff;padding:5px 7px;border-radius:2px}
+.appbar .ab-t b{color:#F0C98A;font-weight:600}
+.appbar .ab-go{display:inline-flex;align-items:center;gap:6px;font-weight:600;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;white-space:nowrap}
+.appbar .apl{width:12px;height:14px}
+.appbar .ab-x{position:absolute;right:max(10px,env(safe-area-inset-right,0px));top:50%;transform:translateY(-50%);width:32px;height:32px;border:0;background:none;color:#B9B0A0;font-size:20px;cursor:pointer}
+.appbar .ab-x:hover,.appbar .ab-x:focus-visible{color:#fff}
+@media (max-width:600px){.appbar .ab-in{gap:6px 10px;font-size:12.5px;justify-content:flex-start;text-align:left}.appbar .ab-new{display:none}}
+.hero-app{gap:10px;padding:0 18px 0 14px;border:1px solid rgba(237,230,216,.5);border-radius:10px;color:#F3EDE1;background:rgba(20,18,15,.35);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.hero-app:hover{background:rgba(20,18,15,.6);border-color:#F3EDE1}
+.hero-app .apl{width:20px;height:24px;flex:none}
+.hero-app span{display:flex;flex-direction:column;align-items:flex-start;font-weight:600;font-size:15px;line-height:1.15}
+.hero-app small{font-size:10.5px;font-weight:500;letter-spacing:.04em;opacity:.8}
+/* home: the header floats over the hero, so the strip floats too and the header sits under it */
+html.has-appbar body.home .appbar{position:fixed;top:0;left:0;right:0}
+html.has-appbar body.home .top{top:var(--abh,0px)}
+html.has-appbar body.home .nav{top:calc(61px + var(--abh,0px))}
+@media (max-width:600px){.hero-ctas .hero-app{flex:1 1 100%;justify-content:center}}

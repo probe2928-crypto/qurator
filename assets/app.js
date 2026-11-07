@@ -22,6 +22,9 @@ const BASE = () => APPX ? APPX.remote : location.origin + location.pathname;
 const pageURL = () => BASE() + location.hash;
 const TOUCH = () => matchMedia('(pointer:coarse)').matches;
 const KAKAO = 'https://open.kakao.com/o/gQLZj9Ti';
+/* iPhone app (free reader) on the App Store — shown to website visitors only, never inside the store apps */
+const APPSTORE = 'https://apps.apple.com/kr/app/qurator-daily-art/id6829093287';
+const APPLE_GLYPH = '<svg class="apl" viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>';
 /* Payments: set live:true + clientKey (토스페이먼츠 라이브 클라이언트 키) + apiBase (worker URL) when the merchant contract is ready. ?paytest=1 runs the Toss test flow. */
 const BANK = { name: '우리은행', number: '56731673402101', holder: '박*준' };
 const PAY = { live: false, clientKey: '', apiBase: '', testClientKey: 'test_ck_D5GePWvyJnrK0W0k6q8gLzN97Eoq', price: 30000 };
@@ -560,10 +563,23 @@ function splitSentences(text) {
 }
 
 /* ---------------- shell ---------------- */
+/* Website-only strip: the free iPhone app. Hidden in the Play/iOS apps; closing it is remembered on this device. */
+function appBar() {
+  let bar = $('#appbar');
+  if (PLAY || store.get('q_appbar_off', false)) { if (bar) bar.remove(); document.documentElement.classList.remove('has-appbar'); return; }
+  document.documentElement.classList.add('has-appbar');
+  if (!bar) { bar = document.createElement('div'); bar.id = 'appbar'; bar.className = 'appbar'; document.body.insertBefore(bar, document.body.firstChild); }
+  const ko = S.lang === 'ko';
+  bar.innerHTML = `<a class="ab-in" href="${APPSTORE}" target="_blank" rel="noopener"><span class="ab-new">NEW</span><span class="ab-t">${ko ? '아이폰 앱 출시 · <b>무료</b>로 받고 매일 아침 명작을 3분 도슨트 해설로' : 'The QURATOR iPhone app is out · <b>free</b> to download, a masterpiece every morning with a 3-minute docent talk'}</span><span class="ab-go">${APPLE_GLYPH}${ko ? 'App Store에서 받기' : 'Get it on the App Store'} →</span></a><button class="ab-x" aria-label="${ko ? '닫기' : 'Close'}">×</button>`;
+  bar.querySelector('.ab-x').onclick = () => { store.set('q_appbar_off', true); bar.remove(); document.documentElement.classList.remove('has-appbar'); };
+  const fit = () => document.documentElement.style.setProperty('--abh', bar.offsetHeight + 'px');
+  fit(); if (!bar._ro && 'ResizeObserver' in window) { bar._ro = new ResizeObserver(fit); bar._ro.observe(bar); }
+}
 function renderShell(route) {
   $('#nav').innerHTML = [['today', '#/today'], ['features', '#/features'], ['explore', '#/explore'], ['studio', '#/studio'], ['pricing', '#/pricing'], ['support', '#/support']].filter(([k]) => !(PLAY && k === 'pricing'))
     .map(([k, h]) => `<a href="${h}" class="${route === k ? 'on' : ''}">${t('nav_' + k)}</a>`).join('');
   $$('.lang button').forEach(b => b.classList.toggle('on', b.dataset.lang === S.lang));
+  appBar();
   document.documentElement.lang = S.lang;
   $('#foot').innerHTML = `<div class="foot-in">
     <div class="foot-brand">${logoMark()}<div><div class="fw">qurator</div><div class="fs">MAISON DE DOCENT · SÉOUL</div></div></div>
@@ -649,6 +665,7 @@ function heroBlock() {
       <div class="hero-ctas">
         <a class="btn btn-cream" href="#/today">${t('cta_today')} <span class="arrow">→</span></a>
         ${PLAY ? `<a class="btn btn-ghost" href="#/explore">${t('nav_explore')}</a>` : `<a class="btn btn-ghost" href="#/pricing">${t('cta_gallery')}</a>`}
+        ${PLAY ? '' : `<a class="btn hero-app" href="${APPSTORE}" target="_blank" rel="noopener">${APPLE_GLYPH}<span><small>${S.lang === 'ko' ? '아이폰 앱 무료' : 'Free iPhone app'}</small>App Store</span></a>`}
       </div>
     </div></div>
     <div class="stage-foot wrap">
