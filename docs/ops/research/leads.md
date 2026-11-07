@@ -2,6 +2,23 @@
 
 규칙: 공식 홈페이지·공개된 대표 문의 채널만 적는다. 개인 이메일·개인 정보 금지. 이미 있는 곳은 중복하지 않는다.
 
+## 2026-11-08 (리서치팀)
+
+전시 정보 출처: 갤러리·미술관 공식 페이지(2026-11-08 열람), 일부 기간은 [Seoul ArtRadar](https://seoulartradar.com/m/2026-11.html)(비공식 집계). 연락처는 각 공식 사이트 푸터·소개·공지에 나온 기관 대표 채널만. 6곳 모두 확인한 페이지에서 '이메일 무단 수집 거부' 문구는 보지 못함. 인천은 조건에 맞는 소규모 리드를 이번에도 못 찾음.
+
+| # | 이름 | 지역 | 전시·기간 | 공식 홈페이지 | 공식 문의 채널 | 메모 |
+|---|---|---|---|---|---|---|
+| 1 | 아뜰리에 아키 ATELIER AKI | 서울 성동구 서울숲2길 32-14 갤러리아 포레 1F/B1F | 정그림·진지현·최유성 《형태의 사이 Between Forms》 2026.11.05~12.19 ([공식 전시 페이지](https://www.atelieraki.com/html/sub2_1_view.php?IDX=153)) | https://www.atelieraki.com/ | aki@atelieraki.com · 02-464-7710 / 070-4402-7710 (공식 사이트 푸터) | 성수 — 전시 기간이 길어 QR 해설 시범 제안에 여유 |
+| 2 | 챕터투 CHAPTER II | 서울 마포구 동교로27길 54(연남동) | 김병진 개인전 《Unknown》 2026.11.13~12.24 (예정, [공식 전시 페이지](https://chapterii.org/exhibitions/89-kim-byoung-jin-unknown/)) | https://chapterii.org/ | info@chapterii.org · 070-4895-1031 ([공식 Contact](https://chapterii.org/contact/)) | 개막 전이라 '개막에 맞춘 작품 해설 QR' 제안 시점이 좋음 |
+| 3 | 피비갤러리 PIBI Gallery | 서울 종로구 북촌로 125-6 | 《Imagination: Young Japanese Artists Group Exhibition》 2026.10.15~11.28 ([공식 전시 페이지](http://www.pibigallery.com/pages/board/board.view.php?board_no=72&no=2646)) | http://www.pibigallery.com/ | 대표전화 02-6263-2004 ([공식 About](http://www.pibigallery.com/pages/about.php)) — 대표 메일 미확인 | 북촌 관광객 동선 → 한·영 해설 강점. 메일이 없어 전화·방문 문안으로 |
+| 4 | 상히읗 sangheeut | 서울 용산구 신흥로 30(해방촌) | 그룹전 《Organic Recipes》(오가영·윤영빈·이영·한이경) 10.16~11.21 (기간은 [Seoul ArtRadar](https://seoulartradar.com/e/ext-exh-ext-user-sangheeut-3.html) 기준, [공식 전시 페이지](https://sangheeut.net/Organic-Recipe-sangheeut)엔 날짜 없음 — 공식 기간 미확인) | https://sangheeut.net/ | info@sangheeut.net ([공식 About](https://sangheeut.net/About-sangheeut)) — 전화 미확인 | 11.21 종료 → 다음 전시 기준으로 제안 |
+| 5 | 서호미술관 | 경기 남양주시 화도읍 북한강로 1344 | 2026 기획전 '사이의 결' 3부 《유동하는 경계》(류종대·문보리·조연경) 2026.09.04~11.22 ([공식 공지](http://www.seohoart.com/bbs/board.php?bo_table=m_notice&wr_id=325)) | http://www.seohoart.com/ | 관람문의 031-592-1865 · seohoarts@daum.net (같은 공식 공지에 기재된 관람문의 채널) | 사립 미술관. 11.22 종료 → 2027 기획전 대비 제안 |
+| 6 | 모란미술관 | 경기 남양주시 화도읍 경춘로2110번길 8 | 《대항해 시대, 미확정 지도 The Age of Exploration: Uncharted Maps》 2026.08.25~11.22 ([공식 전시 페이지](https://www.moranmuseum.org/now/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=172711618&t=board)) | https://www.moranmuseum.org/ | 대표번호 031-594-8001 · moran1990@hanmail.net (공식 사이트 푸터) | 1990년 개관 사립 조각공원 미술관(야외 조각 → QR 표지판과 궁합). 규모는 '소규모' 경계. 푸터 팩스 번호 두 곳이 서로 다름 |
+
+예비(채널 확인 후 승격):
+- 16아카이브(서울 중구 퇴계로45길 31-15, 2층) — 《마주하는, 마주하지 않는》 2026.11.06~11.29 ([공식 전시 페이지](https://16akaiv.com/exhibitions/facing-without-facing)). 공식 사이트에 메일·전화 없음 → 미확인.
+- 의정부문화역 이음(경기 의정부시 평화로 525) — 김남정 개인전 10.27~11.14. 전화는 비공식 집계에서만 봄, 공식 페이지 미확인. 시 재단 운영 공공시설이라 영업 대상 적합성 검토 필요.
+
 ## 2026-11-05 (리서치팀)
 
 전시 정보 출처: [아트앤컬처 전시 캘린더](https://art-culture.co.kr/)·[아트넷](https://artnet.kr/)·갤러리 공식 페이지(2026-11-05 열람). 연락처는 갤러리 공식 페이지 또는 한국화랑협회 회원 페이지 기준. 개인 이름·개인 휴대전화(하랑갤러리 블로그의 010 번호 등)·개인 메일은 적지 않음.
