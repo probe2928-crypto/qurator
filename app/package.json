@@ -1,7 +1,7 @@
 {
   "name": "qurator-app",
   "private": true,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "QURATOR iOS 앱 (Capacitor) — 사이트 화면을 앱에 넣고, 작품·음성은 사이트에서 받아옴. 안드로이드는 기존 TWA(android/)",
   "scripts": {
     "www": "node build-www.mjs",
