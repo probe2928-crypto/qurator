@@ -188,7 +188,7 @@ const T = {
   st_count: ['점', 'works'], copied: ['링크를 복사했습니다', 'Link copied'], go_explore: ['작품 탐색으로', 'Go to Explore'],
   // viewer
   v_card: ['카드 이미지', 'Share card'], v_copy: ['링크 복사', 'Copy link'], v_share: ['공유', 'Share'], ft_share: ['이 특집 공유하기', 'Share this feature'], ft_copy: ['이 특집 링크 복사', 'Copy link to this feature'], share_daily: ['QURATOR 오늘의 작품', 'QURATOR Daily Art'], share_feat: ['QURATOR 특집', 'QURATOR Features'], v_copied: ['링크를 복사했어요', 'Link copied'], v_card_ok: ['카드 이미지를 저장했어요', 'Card image saved'], v_card_wait: ['카드를 만드는 중…', 'Making your card…'],
-  v_listen: ['해설 듣기', 'Listen'], v_voice: ['목소리 바꾸기', 'Change voice'], v_female: ['여성', 'F'], v_male: ['남성', 'M'], v_to_f: ['여성 목소리로 들려드려요', 'Switched to a female voice'], v_to_m: ['남성 목소리로 들려드려요', 'Switched to a male voice'], v_voice_soon: ['이 작품의 다른 목소리는 곧 준비돼요', 'The other voice for this work is coming soon'], im_label: ['작품 감상', 'Viewing'], im_again: ['다시 듣기', 'Listen again'], im_read: ['해설 글로 보기', 'Read the text'], v_bgm: ['배경음악', 'Background music'], v_bgm_on: ['해설에 잔잔한 클래식이 함께 흐릅니다', 'Soft classical music under the narration'], v_bgm_off: ['배경음악을 껐습니다', 'Background music off'], v_look: ['이것을 찾아보세요', 'Look closer'], v_words: ['Words to know', 'Words to know'], v_info: ['작품 정보', 'Details'],
+  v_listen: ['해설 듣기', 'Listen'], v_voice: ['목소리 바꾸기', 'Change voice'], v_female: ['여성', 'F'], v_male: ['남성', 'M'], v_to_f: ['여성 목소리로 들려드려요', 'Switched to a female voice'], v_to_m: ['남성 목소리로 들려드려요', 'Switched to a male voice'], v_voice_soon: ['이 작품의 다른 목소리는 곧 준비돼요', 'The other voice for this work is coming soon'], im_label: ['작품 감상', 'Viewing'], im_pinch: ['두 손가락으로 그림을 확대해 보세요. 두 번 톡 치면 그 자리가 커져요', 'Pinch to zoom into the painting. Double-tap to zoom in on a spot'], listen_now: ['3분 해설 바로 듣기', 'Listen now · 3 min'], im_again: ['다시 듣기', 'Listen again'], im_read: ['해설 글로 보기', 'Read the text'], v_bgm: ['배경음악', 'Background music'], v_bgm_on: ['해설에 잔잔한 클래식이 함께 흐릅니다', 'Soft classical music under the narration'], v_bgm_off: ['배경음악을 껐습니다', 'Background music off'], v_look: ['이것을 찾아보세요', 'Look closer'], v_words: ['Words to know', 'Words to know'], v_info: ['작품 정보', 'Details'],
   v_more: ['함께 보면 좋은 작품', 'You may also like'], v_artist: ['작가', 'Artist'], v_date: ['연도', 'Date'], v_medium: ['재료', 'Medium'],
   v_coll: ['소장', 'Collection'], v_src: ['출처', 'Source'], v_notfound: ['작품을 찾을 수 없습니다.', 'Artwork not found.'],
   v_orig: ['원문(영어) 해설입니다. ', 'Original English text. '], v_gt: ['구글 번역으로 보기', 'Open in Google Translate'],
@@ -761,6 +761,7 @@ function viewToday(date) {
     <p class="eyebrow">${S.lang === 'ko' ? t('daily_h') + ' · Daily Art' : 'Daily Art'}</p>
     <div class="today-date"><span class="d">${f.d}</span><span class="m">${esc(f.m)}</span></div>
     <p style="margin-top:18px">${t(IOS ? 'daily_p_ios' : 'daily_p')}</p>
+    ${(isToday || S.member) && S.byId[ids[0]] ? `<a class="btn btn-seal today-listen" href="#/w/${ids[0]}/listen"><span class="dl-ic" aria-hidden="true">▶</span><span><small>${esc(S.lang === 'ko' ? (S.byId[ids[0]].title.ko || S.byId[ids[0]].title.en) : S.byId[ids[0]].title.en)}</small>${t('listen_now')}</span><span class="arrow">→</span></a>` : ''}
     ${memberBar()}
     <button class="btn btn-line btn-sm install" id="installBtn" style="margin-top:18px">↓ ${t('install')}</button>
   </div></section>
@@ -778,6 +779,7 @@ function dayCard(w, i, open) {
       <h2>${esc(w.title.en)}</h2>
       <p class="kot">${esc(w.title.ko)}</p>
       <p class="byline"><span>${esc(w.artist.en)}</span><span>${esc(w.date)}</span><span>${esc(w.collection.en)}</span></p>
+      ${open ? `<a class="btn btn-seal day-listen" href="#/w/${w.id}/listen"><span class="dl-ic" aria-hidden="true">▶</span> ${t('listen_now')} <span class="arrow">→</span></a>` : ''}
       <p class="tagline">${esc(w.tagline.en)}</p>
       ${open ? `
         <div class="commentary" lang="en"><p>${esc(w.text.en)}</p></div>
@@ -1112,8 +1114,10 @@ async function viewWork(uid, custom) {
       requestAnimationFrame(() => el.classList.add('show'));
       el.querySelector('.im-x').onclick = () => this.close(true);
       el.querySelector('.im-end').onclick = e => { const a = e.target.closest('button'); if (!a) return; if (a.dataset.a === 'again') { el.querySelector('.im-end').hidden = true; el.classList.remove('ended'); Speech.speakFrom(0); } else this.close(true); };
-      let y0 = null; el.addEventListener('touchstart', e => { y0 = e.touches[0].clientY; }, { passive: true });
-      el.addEventListener('touchend', e => { if (y0 != null && e.changedTouches[0].clientY - y0 < -70) this.close(true); y0 = null; }, { passive: true });
+      let y0 = null; el.addEventListener('touchstart', e => { y0 = e.touches.length === 1 ? e.touches[0].clientY : null; }, { passive: true });
+      el.addEventListener('touchend', e => { if (y0 != null && !this.manualOn() && !(this.cur && this.cur.z > 1.05 && e.target.closest('.im-art')) && e.changedTouches[0].clientY - y0 < -70) this.close(true); y0 = null; }, { passive: true });
+      this.cur = null; this.manual = 0; this.bindTouch(el);
+      if (!store.get('q_pinch_hint', false)) { store.set('q_pinch_hint', true); setTimeout(() => this.on && toast(t('im_pinch')), 2600); }
       try { if (navigator.wakeLock) this.wake = await navigator.wakeLock.request('screen'); } catch {}
       let src = model.imageLg || model.image;
       const tour = this.tourOn();
@@ -1153,21 +1157,75 @@ async function viewWork(uid, custom) {
     },
     /* 도슨트 카메라 (세준 제안 + 회의 2026-11-02): 해설 단락마다 정해 둔 지점으로 천천히 줌인·이동·비스듬히 보기.
        w.tour = [{x,y,z,t,ko,en}] — x·y는 작품 안 비율(0~1), z는 배율(1=전체), t는 기울기(도), ko/en은 그 단락이 시작하는 문장 번호. */
-    tourOn() { return !!(model && model.tour && model.tour.length && !matchMedia('(prefers-reduced-motion: reduce)').matches && model.text && !model.basic); },
+    tourOn() { return !!(model && model.tour && model.tour.length && model.text && !model.basic); },
     cam(force) {
       if (!this.el || !this.tourOn() || !this.el.classList.contains('loaded')) return;
       const T = model.tour, i0 = Math.max(0, Speech.idx);
       let k = 0; for (let j = 0; j < T.length; j++) if ((T[j][tl] ?? 0) <= i0) k = j;
       if (!Speech.playing && !force && this.shot >= 0) return;
+      if (!force && this.manualOn()) return;
       if (k === this.shot && !force) return;
       this.shot = k;
       // 그 단락이 이어지는 동안의 대략 길이(초): 문장 수 × 평균 6초
       const next = T[k + 1] ? T[k + 1][tl] : Speech.sents.length;
       const dur = Math.max(6, (next - (T[k][tl] ?? 0)) * 6.5);
-      this.pose(T[k], force && k === 0 ? 0.01 : 4.8);
+      /* 세준 피드백 2026-11-08: 고정된 그림이 아니라 미술관에서 보듯 — 설명하는 부분으로 줌인, 근처로 천천히 옆 이동, 다음 부분 전에 한 걸음 물러났다 다시 다가가기 */
+      const zz = v => Math.min(3.2, 1 + ((+v || 1) - 1) * 1.3);          // 지점 배율을 조금 더 깊게
+      const tgt = { ...T[k], x: T[k].x ?? .5, y: T[k].y ?? .5, z: zz(T[k].z) };
+      const prev = this.cur || { x: .5, y: .5, z: 1 };
+      const far = Math.hypot(tgt.x - prev.x, tgt.y - prev.y);
+      const side = k % 2 ? 1 : -1;
+      const drift = (after) => { this.camT = setTimeout(() => {
+        if (!this.on || this.shot !== k || this.manualOn()) return;
+        // 도착한 뒤에도 멈추지 않고: 옆으로 천천히 지나가며 조금 더 다가간다
+        this.pose({ ...tgt, x: tgt.x + side * .05 / tgt.z, y: tgt.y + .025 / tgt.z, z: Math.min(3.2, tgt.z * 1.12) }, Math.max(4, dur - after / 1000), 'linear');
+      }, after); };
       clearTimeout(this.camT);
-      // 도착한 뒤에도 멈추지 않고 아주 천천히 다가간다
-      this.camT = setTimeout(() => { if (this.on && this.shot === k) this.pose({ ...T[k], z: (T[k].z || 1) * 1.06 }, Math.max(4, dur - 4.8), 'linear'); }, 4900);
+      if (!force && prev.z > 1.12 && tgt.z > 1.12 && far > .16) {
+        // 두 디테일 사이가 멀면 한 걸음 물러나 전체를 보여 준 뒤 다음 부분으로 다가간다
+        this.pose({ x: (prev.x + tgt.x) / 2, y: (prev.y + tgt.y) / 2, z: Math.max(1, Math.min(prev.z, tgt.z) * .6) }, 1.9, 'cubic-bezier(.45,0,.55,1)');
+        this.camT = setTimeout(() => { if (this.on && this.shot === k && !this.manualOn()) { this.pose(tgt, 3.6); drift(3700); } }, 1950);
+      } else { this.pose(tgt, force && k === 0 ? 0.01 : 4.8); drift(4900); }
+    },
+    manualOn() { return this.manual && Date.now() - this.manual < 9000; },
+    /* 손가락으로 확대·이동: 핀치 줌, 확대한 상태에서 끌기, 두 번 톡 치면 그 자리 확대/원래대로. 손을 떼고 9초 뒤 해설 카메라가 다시 이어진다 */
+    manualPose(p, sec) { this.manual = Date.now(); clearTimeout(this.camT); this.pose(p, sec ?? .06, 'cubic-bezier(.2,.7,.2,1)'); },
+    bindTouch(el) {
+      const art = el.querySelector('.im-art'), img = () => el.querySelector('.im-art img');
+      let g = null, lastTap = 0;
+      const two = t => ({ d: Math.hypot(t[0].clientX - t[1].clientX, t[0].clientY - t[1].clientY), mx: (t[0].clientX + t[1].clientX) / 2, my: (t[0].clientY + t[1].clientY) / 2 });
+      el.addEventListener('gesturestart', e => e.preventDefault());
+      art.addEventListener('touchstart', e => {
+        const c = this.cur || { x: .5, y: .5, z: 1 };
+        if (e.touches.length >= 2) { g = { pinch: true, ...two(e.touches), x: c.x, y: c.y, z: c.z }; this.manual = Date.now(); }
+        else { const t0 = e.touches[0]; g = { pinch: false, sx: t0.clientX, sy: t0.clientY, x: c.x, y: c.y, z: c.z, moved: false }; }
+      }, { passive: true });
+      art.addEventListener('touchmove', e => {
+        const im = img(); if (!g || !im || !im.classList.contains('tour')) return;
+        const dw = im.clientWidth, dh = im.clientHeight; if (!dw || !dh) return;
+        if (g.pinch && e.touches.length >= 2) {
+          e.preventDefault(); const n = two(e.touches);
+          const z = Math.min(3.2, Math.max(1, g.z * n.d / g.d));
+          this.manualPose({ x: g.x - (n.mx - g.mx) / (z * dw), y: g.y - (n.my - g.my) / (z * dh), z });
+        } else if (!g.pinch && g.z > 1.03) {
+          e.preventDefault(); const t0 = e.touches[0], dx = t0.clientX - g.sx, dy = t0.clientY - g.sy;
+          if (Math.abs(dx) + Math.abs(dy) > 6) g.moved = true;
+          if (g.moved) this.manualPose({ x: g.x - dx / (g.z * dw), y: g.y - dy / (g.z * dh), z: g.z });
+        }
+      }, { passive: false });
+      art.addEventListener('touchend', e => {
+        if (!g) return;
+        if (!g.pinch && !g.moved && e.touches.length === 0) {
+          const now = Date.now(), im = img(), t0 = e.changedTouches[0];
+          if (now - lastTap < 320 && im && im.classList.contains('tour')) {
+            const c = this.cur || { z: 1 };
+            if (c.z > 1.3) this.manualPose({ x: .5, y: .5, z: 1 }, .55);
+            else { const r = im.getBoundingClientRect(); this.manualPose({ x: (t0.clientX - r.left) / r.width, y: (t0.clientY - r.top) / r.height, z: 2.4 }, .55); }
+            lastTap = 0;
+          } else lastTap = now;
+        }
+        if (e.touches.length === 0) g = null;
+      }, { passive: true });
     },
     pose(p, sec, ease) {
       const im = this.el && this.el.querySelector('.im-art img'); if (!im || !im.classList.contains('tour')) return;
@@ -1182,6 +1240,7 @@ async function viewWork(uid, custom) {
       if (z > 1.001) { tx = lim(tx, z * dw / 2, cx, vw); ty = lim(ty, z * dh / 2, cy, vh); } else { tx = 0; ty = 0; }
       im.style.transition = `opacity 1.6s var(--ease), filter 2.4s var(--ease), transform ${sec}s ${ease || 'cubic-bezier(.42,0,.22,1)'}`;
       im.style.transform = `perspective(1400px) translate3d(${tx.toFixed(1)}px,${ty.toFixed(1)}px,0) rotateY(${tilt}deg) rotateX(${(tilt * -.25).toFixed(2)}deg) scale(${z.toFixed(3)})`;
+      this.cur = { x: .5 - tx / (z * dw), y: .5 - ty / (z * dh), z };
     },
     step() {
       if (!this.el || !this.chunks.length) return;
@@ -1849,7 +1908,14 @@ async function route() {
   else if (r === 'features') parts[1] ? await viewFeature(decodeURIComponent(parts[1])) : await viewFeatures();
   else if (r === 'policy') viewPolicy(parts[1]);
   else if (r === 'checkout') viewCheckout();
-  else if (r === 'w' && parts[1]) await viewWork(decodeURIComponent(parts[1]));
+  else if (r === 'w' && parts[1]) {
+    await viewWork(decodeURIComponent(parts[1]));
+    if (parts[2] === 'listen') {   // '오늘의 작품'의 해설 듣기 버튼: 작품 페이지를 열고 바로 재생 (막히면 재생 버튼만 눈에 띄게)
+      history.replaceState(null, '', '#/w/' + parts[1]);
+      for (let i = 0; i < 40 && !(Speech.ok || Speech.urls); i++) await sleep(100);
+      const b = $('#play'); if (b && !Speech.playing) { b.click(); b.classList.add('nudge'); }
+    }
+  }
   else if (r === 'c' && parts[1]) await viewWork(null, parts[1]);
   else if (r === 'x' && parts[1]) await viewExhibition(parts[1]);
   else if (r === 'pay') viewToday();

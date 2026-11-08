@@ -915,3 +915,17 @@ html.has-appbar body.home .appbar{position:fixed;top:0;left:0;right:0}
 html.has-appbar body.home .top{top:var(--abh,0px)}
 html.has-appbar body.home .nav{top:calc(61px + var(--abh,0px))}
 @media (max-width:600px){.hero-ctas .hero-app{flex:1 1 100%;justify-content:center}}
+
+/* 감상 모드 손가락 확대 (2026-11-08) */
+.immerse .im-art{touch-action:none;-webkit-user-select:none;user-select:none}
+/* 오늘의 작품: 제목 바로 아래 해설 듣기 */
+.day-card .day-listen{margin:6px 0 18px;height:52px;padding:0 22px;font-size:15.5px;font-weight:600;gap:12px}
+.day-card .day-listen .dl-ic{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.18);font-size:11px;padding-left:2px}
+@media (max-width:600px){.day-card .day-listen{display:flex;width:100%;justify-content:center}}
+#play.nudge{animation:playnudge 1.4s ease-in-out 3}
+@keyframes playnudge{50%{box-shadow:0 0 0 10px rgba(194,65,43,.25)}}
+.today-listen{margin-top:22px;height:auto;min-height:58px;padding:10px 22px 10px 14px;gap:14px;font-size:16px;font-weight:600}
+.today-listen span:not(.dl-ic):not(.arrow){display:flex;flex-direction:column;align-items:flex-start;line-height:1.25}
+.today-listen small{font-size:12px;font-weight:500;opacity:.85;white-space:normal;text-align:left}
+.today-listen .dl-ic{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.2);font-size:12px;padding-left:2px;flex:none}
+@media (max-width:600px){.today-listen{display:flex;width:100%;white-space:normal}.today-listen .arrow{margin-left:auto}}
