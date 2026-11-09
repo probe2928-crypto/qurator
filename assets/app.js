@@ -421,7 +421,10 @@ function fmtDate(date, lang) {
   const d = new Date(date + 'T12:00:00+09:00');
   return {
     d: d.getDate(),
-    m: d.toLocaleDateString(lang === 'ko' ? 'ko-KR' : 'en-GB', { month: 'long', year: 'numeric', weekday: 'long', timeZone: 'Asia/Seoul' })
+    m: lang === 'ko' ? d.toLocaleDateString('ko-KR', { month: 'long', year: 'numeric', weekday: 'long', timeZone: 'Asia/Seoul' })
+      : d.toLocaleDateString('en-GB', { month: 'long', year: 'numeric', timeZone: 'Asia/Seoul' }) + ' · ' + d.toLocaleDateString('en-GB', { weekday: 'long', timeZone: 'Asia/Seoul' }),
+    wd: d.toLocaleDateString(lang === 'ko' ? 'ko-KR' : 'en-GB', { weekday: lang === 'ko' ? 'short' : 'long', timeZone: 'Asia/Seoul' }),
+    my: d.toLocaleDateString(lang === 'ko' ? 'ko-KR' : 'en-GB', { month: 'long', year: 'numeric', timeZone: 'Asia/Seoul' })
   };
 }
 
@@ -549,6 +552,12 @@ const BGM = {
   toggle() { this.on = !this.on; store.set('q_bgm', this.on); this.sync(this.on && Speech.playing); return this.on; }
 };
 if (Speech.ok) { speechSynthesis.getVoices(); speechSynthesis.onvoiceschanged = () => speechSynthesis.getVoices(); }
+function paras(text, min = 340) {   // long single-block commentary → readable paragraphs at sentence boundaries
+  const out = []; let buf = '';
+  splitSentences(text || '').forEach(x => { buf += (buf ? ' ' : '') + x; if (buf.length >= min) { out.push(buf); buf = ''; } });
+  if (buf) { if (out.length && buf.length < min / 2.5) out[out.length - 1] += ' ' + buf; else out.push(buf); }
+  return out.map(x => `<p>${esc(x)}</p>`).join('');
+}
 function splitSentences(text) {
   const out = [];
   text.split(/\n+/).forEach(par => {
@@ -782,8 +791,8 @@ function dayCard(w, i, open) {
       ${open ? `<a class="btn btn-seal day-listen" href="#/w/${w.id}/listen"><span class="dl-ic" aria-hidden="true">▶</span> ${t('listen_now')} <span class="arrow">→</span></a>` : ''}
       <p class="tagline">${esc(w.tagline.en)}</p>
       ${open ? `
-        <div class="commentary" lang="en"><p>${esc(w.text.en)}</p></div>
-        <details class="ko-trans"><summary>${t('ko_trans')}</summary><div lang="ko">${esc(w.text.ko)}</div></details>
+        <div class="commentary" lang="en">${paras(w.text.en)}</div>
+        <details class="ko-trans"><summary>${t('ko_trans')}</summary><div lang="ko">${paras(w.text.ko, 200)}</div></details>
         <p class="words-h">${t('words_h')}</p>
         <div class="words">${(w.words || []).map(x => `<div><b>${esc(x.en)}</b><span>${esc(x.ko)}</span></div>`).join('')}</div>
         <a class="btn btn-ink" href="#/w/${w.id}">♪ ${t('open_v')} <span class="arrow">→</span></a>`
@@ -798,11 +807,12 @@ function viewArchive() {
   for (let i = 0; i < 21; i++) { const d = new Date(Date.parse(today + 'T00:00:00Z') - i * 864e5).toISOString().slice(0, 10); days.push(d); }
   app().innerHTML = `<section class="phead"><div class="wrap"><p class="eyebrow">Daily Art</p><h1>${t('archive')}</h1>
     <p>${S.member ? t('member_on') : t('locked_p')}</p>${S.member ? '' : `<button class="btn btn-seal" style="margin-top:20px" data-act="subscribe">${PLAY ? t('play_unlock') : TRIAL() ? t('tr_cta') : t('subscribe')}</button>${!PLAY && TRIAL() ? `<p class="trial-tag">${t('tr_price')}</p>` : ''}`}</div></section>
-    <div class="wrap" style="padding-bottom:90px">${days.map(d => {
-      const f = fmtDate(d, S.lang);
-      return `<div style="border-top:1px solid var(--line);padding:26px 0">
-      <a href="#/today/${d}" style="display:flex;gap:14px;align-items:baseline;margin-bottom:16px"><span style="font-family:var(--serif-en);font-size:40px;line-height:1">${f.d}</span><span class="note">${esc(f.m)}</span></a>
-      <div class="grid">${dailyIds(d).map(id => { const w = S.byId[id]; return `<a class="gcard" href="${S.member ? '#/w/' + id : '#/today/' + d}">${artBox(w)}<h3>${esc(w.title.en)}</h3><div class="by">${esc(w.artist.en)}</div></a>`; }).join('')}</div></div>`;
+    <div class="wrap arc">${days.map((d, n) => {
+      const f = fmtDate(d, S.lang), mh = n === 0 || d.slice(0, 7) !== days[n - 1].slice(0, 7);
+      return `${mh ? `<h2 class="arc-month">${esc(f.my)}</h2>` : ''}<section class="arc-day">
+      <a class="arc-date" href="#/today/${d}"><span class="d">${f.d}</span><span class="wd">${esc(f.wd)}</span></a>
+      <div class="arc-works">${dailyIds(d).map((id, i) => { const w = S.byId[id]; if (!w) return ''; return `<a class="gcard" href="${S.member ? '#/w/' + id : '#/today/' + d}">${artBox(w)}<span class="arc-n">${['I', 'II', 'III'][i]}</span><h3>${esc(S.lang === 'ko' ? (w.title.ko || w.title.en) : w.title.en)}</h3><div class="by">${esc(S.lang === 'ko' ? (w.artist.ko || w.artist.en) : w.artist.en)}</div></a>`; }).join('')}</div>
+      <a class="arc-go link" href="#/today/${d}">${S.lang === 'ko' ? '이날 펼치기' : 'Open this day'} <span class="arrow">→</span></a></section>`;
     }).join('')}</div>`;
   hydrate();
 }

@@ -929,3 +929,29 @@ html.has-appbar body.home .nav{top:calc(61px + var(--abh,0px))}
 .today-listen small{font-size:12px;font-weight:500;opacity:.85;white-space:normal;text-align:left}
 .today-listen .dl-ic{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.2);font-size:12px;padding-left:2px;flex:none}
 @media (max-width:600px){.today-listen{display:flex;width:100%;white-space:normal}.today-listen .arrow{margin-left:auto}}
+
+/* archive — day ledger (2026-11-10): date column + three works, month headings */
+.arc{padding-bottom:90px}
+.arc-month{font-family:var(--serif-en);font-style:italic;font-weight:500;font-size:clamp(26px,2.6vw,34px);letter-spacing:-.01em;margin:clamp(30px,4vw,48px) 0 0;padding-bottom:14px;border-bottom:1px solid var(--ink)}
+.arc-day{display:grid;grid-template-columns:150px minmax(0,780px) minmax(0,1fr);gap:clamp(20px,3vw,48px);padding:clamp(26px,3vw,38px) 0;border-bottom:1px solid var(--line)}
+.arc-date{display:flex;flex-direction:column;gap:8px;align-self:start;position:sticky;top:calc(90px + var(--sat,0px))}
+.arc-date .d{font-family:var(--serif-en);font-size:clamp(44px,4.4vw,60px);line-height:.85;font-weight:500;letter-spacing:-.03em}
+.arc-date .wd{font-size:12.5px;color:var(--muted);letter-spacing:.04em}
+.arc-date:hover .d{color:var(--seal,#A8361F)}
+.arc-works{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,2vw,28px)}
+.arc-n{display:block;font-family:var(--serif-en);font-style:italic;font-size:14px;color:var(--seal,#A8361F);margin-top:12px}
+.arc-works .gcard h3{margin-top:2px}
+.arc-go{justify-self:end;align-self:end;font-size:13.5px;white-space:nowrap}
+@media (max-width:760px){
+  .arc-day{grid-template-columns:1fr;gap:14px;padding:22px 0 24px}
+  .arc-go{display:none}
+  .arc-date{position:static;flex-direction:row;align-items:baseline;gap:10px}
+  .arc-date .d{font-size:38px}
+  .arc-works{gap:10px}
+  .arc-n{font-size:12.5px;margin-top:8px}
+  .arc-works .gcard h3{font-size:13px;line-height:1.35}
+  .arc-works .gcard .by{font-size:11.5px}
+}
+/* commentary paragraphs: quiet paragraph rhythm for long docent text */
+.ko-trans div p{margin:0 0 1em}
+.ko-trans div p:last-child{margin-bottom:0}
