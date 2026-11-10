@@ -21,7 +21,7 @@
 7. 갤러리용 소개서 페이지(#/for-galleries): 도입 절차, 캡션 예시, 사례
 8. 다국어 확장(일본어·중국어) — 큐레이션 작품부터
 
-5-2. [명화솔 11/8] 주의: data/tour-src 의 k-ganghuian-gosa·w-avercamp-skaters·w-klee-parnassum 단락 파일이 works.json 정정 전 문장(예: 강희안 '문종·세조와 사촌' → 정정본 '세종의 처조카')이라, `python3 scripts/tour.py data/tour-src` 를 전체로 돌리면 정정이 되돌아감. 새 작품만 별도 폴더에 복사해 돌릴 것. 다음 회차에 세 파일을 works.json 정정본에 맞춰 동기화 필요
+5-2. [명화솔 11/8] 주의: data/tour-src 의 k-ganghuian-gosa·w-avercamp-skaters·w-klee-parnassum 단락 파일이 works.json 정정 전 문장(예: 강희안 '문종·세조와 사촌' → 정정본 '세종의 처조카')이라, `python3 scripts/tour.py data/tour-src` 를 전체로 돌리면 정정이 되돌아감. 새 작품만 별도 폴더에 복사해 돌릴 것. → [밤이사 11/10] 세 파일을 works.json 정정본에 맞춰 동기화 완료. 이제 `python3 scripts/tour.py data/tour-src` 전체 실행해도 68점 해설·동선 변화 0(복사본에서 확인)
 5-3. [명화솔 11/8] k-kangsehwang-yeongtong(영통동구)은 커먼즈 파일을 못 찾아 wiki 검색을 비워 둠(작가 초상이 잡히지 않게) → 위키미디어 접속되는 회차에 파일 확인 후 commons 고정. k-geumgang 소장처가 works.json '리움미술관'인데 10/27 특집·한국경제(2026.9) 캡션은 '개인 소장' → 확인 후 통일
 5-1. 11/4 새 작품 4점(k-ganghuian-gosa, w-avercamp-skaters, w-friedrich-seaofice, w-klee-parnassum)은 이미지를 직접 못 봐서 tour가 기본 동선(generic). 위키미디어 접속되는 회차에 이미지 보고 data/tour-src/<id>.json 에 좌표 넣고 scripts/tour.py 재실행. 서양 3점은 wiki 문서 이미지, 고사관수도는 커먼즈 파일 고정
 
