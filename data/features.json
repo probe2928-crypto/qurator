@@ -1,5 +1,514 @@
 [
  {
+  "id": "cassatt-100-twelve",
+  "asof": "2026.11.11",
+  "kicker": {
+   "ko": "작가 깊이 읽기",
+   "en": "Artist in Depth"
+  },
+  "title": {
+   "ko": "메리 커샛 100년, 독립을 그린 12점",
+   "en": "Mary Cassatt at 100: Twelve Works of an Independent Painter"
+  },
+  "dek": {
+   "ko": "올해는 미국인 인상주의 화가 메리 커샛이 세상을 떠난 지 100년입니다. 파리 오르세와 시카고에서 회고전이 열리고, 11월 18일 뉴욕 경매에도 그녀의 그림이 나옵니다. 극장과 판화와 사라진 벽화까지, 열두 점으로 따라갑니다.",
+   "en": "This year marks a century since the death of the American Impressionist Mary Cassatt. Retrospectives are open in Paris and Chicago, and on 18 November one of her paintings goes under the hammer in New York. Follow her through twelve works, from the opera box to the print studio to a mural that vanished."
+  },
+  "intro": {
+   "ko": "메리 커샛(1844–1926)은 미국 피츠버그에서 태어나 인생의 대부분을 프랑스에서 보냈습니다. 살롱에서 두 번 낙선한 뒤 드가의 초대로 1879년 인상주의 전시에 합류했고, 극장과 거실에 있는 여성, 그리고 어머니와 아이를 평생의 주제로 삼았습니다. \"나는 독립적이다\"라는 그녀의 말처럼, 결혼하지 않고 자기 작업실과 수입으로 화가의 길을 지켰습니다.\n열두 점을 세 갈래로 나눴습니다. 인상주의에 들어선 1878~1886년의 극장과 정원, 일본 판화에서 배운 선과 색으로 새 길을 낸 1890년대 초의 판화와 유화, 그리고 사라진 시카고 벽화 '현대 여성'과 그 뒤의 그림입니다. 파리 오르세 미술관 《메리 커샛, 독립적인 삶》(2027년 1월 31일까지)은 프랑스 국립미술관이 처음 여는 대규모 커샛전이고, 시카고 미술관 《메리 커샛: 인상주의 이후》는 2027년 1월 3일까지 이어집니다.",
+   "en": "Mary Cassatt (1844–1926) was born near Pittsburgh and spent most of her life in France. After the Salon rejected her, Degas invited her to join the Impressionist exhibition of 1879, and she made women at the theatre and at home, and mothers with their children, her lifelong subjects. True to her own words, 'I am independent', she never married and kept her career going with her own studio and her own income.\nThe twelve works fall into three chapters: the theatres and gardens of her Impressionist years, 1878 to 1886; the prints and paintings of the early 1890s, when Japanese art gave her a new line and a new colour; and the lost Chicago mural Modern Woman and what came after it. In Paris, Mary Cassatt: Being independent at the Musée d'Orsay (until 31 January 2027) is the first major Cassatt exhibition by a French national museum, and Mary Cassatt: After Impressionism runs at the Art Institute of Chicago until 3 January 2027."
+  },
+  "cover": [
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Mary%20Cassatt%20-%20Little%20Girl%20in%20a%20Blue%20Armchair%20-%20NGA%201983.1.18.jpg?width=1600",
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Mary%20Stevenson%20Cassatt%20-%20In%20the%20Loge%20-%20Google%20Art%20Project.jpg?width=1600",
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Mary%20Cassatt%20-%20The%20Child%27s%20Bath%20-%20Google%20Art%20Project.jpg?width=1600",
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Mary%20Cassatt%20-%20The%20Boating%20Party%20-%20Google%20Art%20Project.jpg?width=1600"
+  ],
+  "sections": [
+   {
+    "title": {
+     "ko": "극장과 정원 · 인상주의에 들어서다 (1878–1886)",
+     "en": "Theatre and Garden · Joining the Impressionists (1878–1886)"
+    },
+    "dek": {
+     "ko": "지루한 소녀, 오페라글라스를 든 여인, 거울 앞의 언니, 꽃밭의 바느질.",
+     "en": "A bored child, a woman with opera glasses, a sister before a mirror, sewing in a garden."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "파란 안락의자의 소녀",
+       "en": "Little Girl in a Blue Armchair"
+      },
+      "artist": {
+       "ko": "메리 커샛",
+       "en": "Mary Cassatt"
+      },
+      "year": "1878",
+      "medium": {
+       "ko": "캔버스에 유채, 89.5×129.8cm",
+       "en": "Oil on canvas, 89.5 × 129.8 cm"
+      },
+      "headline": {
+       "ko": "내셔널 갤러리 오브 아트, 워싱턴 · 1878",
+       "en": "National Gallery of Art, Washington · 1878"
+      },
+      "why": {
+       "ko": "청록색 안락의자에 아이가 다리를 벌리고 기대 누웠다. 얌전한 초상 대신 지루함이 그대로 드러난 자세를 그린 것이 새로웠다. 모델은 드가 친구의 딸이고, 커샛은 훗날 드가가 배경에 직접 손을 댔다고 편지에 적었다. 1878년 파리 만국박람회 미국관에 냈다가 떨어졌지만, 지금은 그녀가 인상주의에 들어서던 순간을 보여 주는 대표작이다.",
+       "en": "A child sprawls across a turquoise armchair, legs apart. Instead of a well-behaved portrait, Cassatt painted boredom just as it looks. The sitter was the daughter of friends of Degas, and Cassatt later wrote that Degas himself had worked on the background. The American section of the 1878 Paris World's Fair turned it down; today it marks the moment she joined the Impressionists."
+      },
+      "pd": true,
+      "commons": "Mary Cassatt - Little Girl in a Blue Armchair - NGA 1983.1.18.jpg",
+      "sources": [
+       {
+        "label": "National Gallery of Art — Little Girl in a Blue Armchair",
+        "url": "https://www.nga.gov/artworks/61368-little-girl-blue-armchair.html"
+       },
+       {
+        "label": "Wikipedia — Little Girl in a Blue Armchair",
+        "url": "https://en.wikipedia.org/wiki/Little_Girl_in_a_Blue_Armchair"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "특별석에서",
+       "en": "In the Loge"
+      },
+      "artist": {
+       "ko": "메리 커샛",
+       "en": "Mary Cassatt"
+      },
+      "year": "1878",
+      "medium": {
+       "ko": "캔버스에 유채, 81×66cm",
+       "en": "Oil on canvas, 81 × 66 cm"
+      },
+      "headline": {
+       "ko": "보스턴 미술관 · 1878",
+       "en": "Museum of Fine Arts, Boston · 1878"
+      },
+      "why": {
+       "ko": "검은 옷의 여인이 오페라 극장 특별석에서 오페라글라스로 어딘가를 본다. 그런데 뒤쪽 객석의 남자는 무대가 아니라 그녀를 보고 있다. 보는 여성과 보이는 여성, 그리고 그 둘을 다시 보는 우리. 같은 극장을 그린 남성 화가들과 달리, 커샛은 여성을 바라보는 주체로 세웠다는 평가를 받는다.",
+       "en": "A woman in black looks through her opera glasses from a box at the opera. Behind her, a man in another box is looking not at the stage but at her. She looks, she is looked at, and we look at both of them. Unlike the male painters of the same theatres, Cassatt is credited with making the woman the one who does the looking."
+      },
+      "pd": true,
+      "commons": "Mary Stevenson Cassatt - In the Loge - Google Art Project.jpg",
+      "sources": [
+       {
+        "label": "Museum of Fine Arts, Boston — In the Loge",
+        "url": "https://collections.mfa.org/objects/31365"
+       },
+       {
+        "label": "Wikipedia — In the Loge",
+        "url": "https://en.wikipedia.org/wiki/In_the_Loge"
+       },
+       {
+        "label": "Smarthistory — Mary Cassatt, In the Loge",
+        "url": "https://smarthistory.org/mary-cassatt-in-the-loge"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "진주 목걸이를 한 여인, 특별석에서",
+       "en": "Woman with a Pearl Necklace in a Loge"
+      },
+      "artist": {
+       "ko": "메리 커샛",
+       "en": "Mary Cassatt"
+      },
+      "year": "1879",
+      "medium": {
+       "ko": "캔버스에 유채, 81×60cm",
+       "en": "Oil on canvas, 81 × 60 cm"
+      },
+      "headline": {
+       "ko": "필라델피아 미술관 · 1879",
+       "en": "Philadelphia Museum of Art · 1879"
+      },
+      "why": {
+       "ko": "언니 리디아가 붉은 의자에 앉아 있고, 뒤의 큰 거울에 극장의 샹들리에와 객석이 비친다. 가스등 불빛이 살결에 닿는 효과를 빠른 붓질로 잡았다. 1879년 제4회 인상주의 전시에 드가의 초대로 처음 참여한 커샛이 내놓은 작품 가운데 하나다. 비평은 거칠었지만 드가와 커샛만은 눈에 띈다는 평도 실렸다.",
+       "en": "Her sister Lydia sits in a red chair, and the large mirror behind her reflects the chandelier and the tiers of the theatre. Quick strokes catch the way artificial light falls on skin. It was among the works Cassatt showed at the fourth Impressionist exhibition of 1879, her first, at Degas's invitation. The reviews were harsh, but one singled out Degas and Cassatt as the only artists who stood out."
+      },
+      "pd": true,
+      "commons": "Mary Stevenson Cassatt, American - Woman with a Pearl Necklace in a Loge - Google Art Project.jpg",
+      "sources": [
+       {
+        "label": "Wikipedia — Woman with a Pearl Necklace in a Loge",
+        "url": "https://en.wikipedia.org/wiki/Woman_with_a_Pearl_Necklace_in_a_Loge"
+       },
+       {
+        "label": "Wikipedia — Mary Cassatt (1879 Impressionist exhibition)",
+        "url": "https://en.wikipedia.org/wiki/Mary_Cassatt"
+       },
+       {
+        "label": "Philadelphia Museum of Art — collection",
+        "url": "https://www.philamuseum.org/objects/72182"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "정원의 소녀 (바느질하는 젊은 여인)",
+       "en": "Girl in the Garden (Young Woman Sewing)"
+      },
+      "artist": {
+       "ko": "메리 커샛",
+       "en": "Mary Cassatt"
+      },
+      "year": "1880–82",
+      "medium": {
+       "ko": "캔버스에 유채, 92.5×65cm",
+       "en": "Oil on canvas, 92.5 × 65 cm"
+      },
+      "headline": {
+       "ko": "오르세 미술관, 파리 · 1880–82",
+       "en": "Musée d'Orsay, Paris · 1880–82"
+      },
+      "why": {
+       "ko": "젊은 여인이 꽃밭 앞에서 바느질에 몰두해 있다. 실내의 여성을 주로 그린 커샛이 드물게 인물을 바깥 빛 속에 앉혔다. 치마는 빠르게 스치듯 칠했지만 얼굴과 상체의 윤곽은 단단해, 그녀가 소묘의 정확함을 놓지 않았음을 보여 준다. 1886년 마지막 인상주의 전시에 걸렸고, 2026년 전까지 오르세가 가진 커샛의 유일한 유화였다.",
+       "en": "A young woman bends over her sewing in front of a bed of flowers. Cassatt, who mostly painted women indoors, set this figure out in the open light. The skirt is brushed in quickly, but the face and shoulders are firmly drawn, showing that she never gave up the precision of drawing. It hung in the last Impressionist exhibition in 1886, and until 2026 it was the only Cassatt oil in the Musée d'Orsay."
+      },
+      "pd": true,
+      "commons": "Mary Cassatt - Girl in the Garden - Google Art Project.jpg",
+      "sources": [
+       {
+        "label": "Musée d'Orsay — Jeune fille au jardin",
+        "url": "https://www.musee-orsay.fr/fr/oeuvres/jeune-fille-au-jardin-1296"
+       },
+       {
+        "label": "Musée d'Orsay — Special acquisition: Girl with a banjo (Cassatt at Orsay)",
+        "url": "https://www.musee-orsay.fr/en/magazine/2026-10-05/special-acquisition-girl-banjo-mary-cassatt"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": {
+     "ko": "일본에서 배운 선 · 판화와 새로운 구성 (1890–1894)",
+     "en": "Lines Learned from Japan · Prints and New Compositions (1890–1894)"
+    },
+    "dek": {
+     "ko": "우키요에 전시 한 번이 바꿔 놓은 판화와 유화.",
+     "en": "Prints and paintings transformed by one exhibition of Japanese woodblocks."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "편지",
+       "en": "The Letter"
+      },
+      "artist": {
+       "ko": "메리 커샛",
+       "en": "Mary Cassatt"
+      },
+      "year": "1890–91",
+      "medium": {
+       "ko": "드라이포인트와 애쿼틴트, 컬러 판화",
+       "en": "Colour drypoint and aquatint"
+      },
+      "headline": {
+       "ko": "필라델피아 미술관·메트로폴리탄 미술관 등 · 1890–91",
+       "en": "Philadelphia Museum of Art, The Met and others · 1890–91"
+      },
+      "why": {
+       "ko": "여인이 봉투를 입술에 대고 봉하는 순간을 푸른 꽃무늬 벽지 앞에 담았다. 1890년 봄 파리 국립미술학교에서 본 일본 우키요에 대전에 자극받아 만든 컬러 판화 열 점 연작의 하나다. 가는 드라이포인트 선 위에 수채화 같은 애쿼틴트 색을 겹쳤고, 판화 아래에 인쇄공 르루아의 이름을 함께 적었다. 그림 속 여성의 하루를 판화로 새로 짠 실험이었다.",
+       "en": "A woman seals an envelope against her lips in front of blue patterned wallpaper. It belongs to a set of ten colour prints Cassatt made after seeing a large exhibition of Japanese woodblock prints at the École des Beaux-Arts in Paris in spring 1890. She layered watercolour-like aquatint over fine drypoint lines and credited her printer, Leroy, in the inscription beneath. It was an experiment in rebuilding a woman's day in print."
+      },
+      "pd": true,
+      "commons": "The Letter MET 34930.jpg",
+      "sources": [
+       {
+        "label": "Philadelphia Museum of Art — The Letter",
+        "url": "https://www.philamuseum.org/objects/59486"
+       },
+       {
+        "label": "The Met — The Letter (first state)",
+        "url": "https://www.metmuseum.org/art/collection/search/352204"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "목욕하는 여인 (화장)",
+       "en": "Woman Bathing (La Toilette)"
+      },
+      "artist": {
+       "ko": "메리 커샛",
+       "en": "Mary Cassatt"
+      },
+      "year": "1890–91",
+      "medium": {
+       "ko": "드라이포인트와 애쿼틴트, 컬러 판화",
+       "en": "Colour drypoint and aquatint"
+      },
+      "headline": {
+       "ko": "메트로폴리탄 미술관 등 · 1890–91",
+       "en": "The Met and others · 1890–91"
+      },
+      "why": {
+       "ko": "등을 드러낸 여인이 세면대 앞에 몸을 숙였다. 굵은 윤곽선, 평평한 색면, 줄무늬 치마와 카펫의 무늬가 우키요에의 목욕하는 여인 그림을 떠올리게 한다. 커샛은 검정을 거의 쓰지 않고 맑은 색만으로 화면을 짰다. 커샛 카탈로그 레조네를 쓴 브리스킨은 이 컬러 판화 연작을 그녀의 가장 독창적인 업적으로 꼽았다.",
+       "en": "A woman, her back bare, leans over a washbasin. The firm outlines, flat areas of colour and the patterns of the striped skirt and carpet recall Japanese prints of women bathing. Cassatt built the image almost without black, using only clear colours. Adelyn Breeskin, author of the Cassatt catalogues raisonnés, called these colour prints her most original contribution."
+      },
+      "pd": true,
+      "commons": "Woman bathing - Mary Cassatt. LCCN2002718955.jpg",
+      "sources": [
+       {
+        "label": "The Met — Woman Bathing (La Toilette)",
+        "url": "https://www.metmuseum.org/art/collection/search/337064"
+       },
+       {
+        "label": "Wikipedia — Mary Cassatt (1891 colour prints)",
+        "url": "https://en.wikipedia.org/wiki/Mary_Cassatt"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "아이의 목욕",
+       "en": "The Child's Bath"
+      },
+      "artist": {
+       "ko": "메리 커샛",
+       "en": "Mary Cassatt"
+      },
+      "year": "1893",
+      "medium": {
+       "ko": "캔버스에 유채, 101.3×67.3cm",
+       "en": "Oil on canvas, 101.3 × 67.3 cm"
+      },
+      "headline": {
+       "ko": "시카고 미술관 · 1893",
+       "en": "Art Institute of Chicago · 1893"
+      },
+      "why": {
+       "ko": "줄무늬 옷의 여인이 아이를 무릎에 앉히고 대야 속 작은 발을 씻긴다. 위에서 내려다본 가파른 시점 때문에 카펫이 화면에 세워진 듯 납작해지고, 무늬가 화면 전체를 채운다. 1890년대 일본 미술에 깊이 빠진 결과다. 1910년 시카고 미술관이 사들인 첫 커샛 작품이며, 지금 열리는 《메리 커샛: 인상주의 이후》(2027년 1월 3일까지)의 중심에 있다.",
+       "en": "A woman in a striped dress holds a child on her lap and washes its small foot in a basin. The steep view from above flattens the carpet as if it stood upright, and pattern fills the whole canvas, the fruit of her deep engagement with Japanese art in the 1890s. Bought in 1910, it was the first Cassatt to enter the Art Institute of Chicago, and it anchors the current exhibition Mary Cassatt: After Impressionism (until 3 January 2027)."
+      },
+      "pd": true,
+      "commons": "Mary Cassatt - The Child's Bath - Google Art Project.jpg",
+      "sources": [
+       {
+        "label": "Art Institute of Chicago — The Child's Bath (collection API)",
+        "url": "https://api.artic.edu/api/v1/artworks/111442"
+       },
+       {
+        "label": "Art Institute of Chicago — 2026 July–December exhibitions",
+        "url": "https://www.artic.edu/press/press-releases/421/art-institute-of-chicago-announces-2026-july-december-exhibition-schedule"
+       },
+       {
+        "label": "Chicago Sun-Times / WBEZ — After Impressionism (2026.9.8)",
+        "url": "https://chicago.suntimes.com/art/2026/09/08/mary-cassatt-after-impressionism-art-institute-chicago-paintings-impressionist-mural-worlds-fair-1893"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "뱃놀이",
+       "en": "The Boating Party"
+      },
+      "artist": {
+       "ko": "메리 커샛",
+       "en": "Mary Cassatt"
+      },
+      "year": "1893–94",
+      "medium": {
+       "ko": "캔버스에 유채, 90×117.3cm",
+       "en": "Oil on canvas, 90 × 117.3 cm"
+      },
+      "headline": {
+       "ko": "내셔널 갤러리 오브 아트, 워싱턴 · 1893–94",
+       "en": "National Gallery of Art, Washington · 1893–94"
+      },
+      "why": {
+       "ko": "노 젓는 남자의 검은 등이 화면 앞을 막고, 그 너머에 아기를 안은 여인과 노란 배가 있다. 수평선을 화면 꼭대기로 밀어 올리고 배를 비스듬히 잘라, 일본 판화처럼 평평하고 대담한 구성을 만들었다. 1893–94년 겨울 남프랑스 앙티브에서 그린, 그녀의 유화 가운데 가장 큰 축에 드는 그림이다. 1966년 미국 우표에도 실렸다.",
+       "en": "The dark back of the oarsman blocks the foreground; beyond him sit a woman holding a baby and a bright yellow boat. Pushing the horizon to the top edge and cropping the boat at an angle, Cassatt made a flat, bold design in the manner of Japanese prints. Painted in Antibes on the French Riviera in the winter of 1893–94, it is one of her largest oil paintings, and it appeared on a US postage stamp in 1966."
+      },
+      "pd": true,
+      "commons": "Mary Cassatt - The Boating Party - Google Art Project.jpg",
+      "sources": [
+       {
+        "label": "National Gallery of Art — The Boating Party",
+        "url": "https://www.nga.gov/artworks/46569-boating-party"
+       },
+       {
+        "label": "Wikipedia — The Boating Party",
+        "url": "https://en.wikipedia.org/wiki/The_Boating_Party"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": {
+     "ko": "현대 여성 · 사라진 벽화와 그 뒤 (1893–1900)",
+     "en": "Modern Woman · The Lost Mural and After (1893–1900)"
+    },
+    "dek": {
+     "ko": "18m 벽화의 흔적, 2026년 오르세에 온 파스텔, 경매에 나온 여름, 참정권 전시의 어머니.",
+     "en": "Traces of an 18-metre mural, a pastel new to Orsay in 2026, a summer at auction, a mother in the suffrage show."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "현대 여성 (벽화, 소실)",
+       "en": "Modern Woman (mural, lost)"
+      },
+      "artist": {
+       "ko": "메리 커샛",
+       "en": "Mary Cassatt"
+      },
+      "year": "1893",
+      "medium": {
+       "ko": "캔버스에 유채, 벽화, 길이 약 18m",
+       "en": "Oil on canvas, mural, about 18 m long"
+      },
+      "headline": {
+       "ko": "1893 시카고 만국박람회 여성관 · 1893 · 행방불명",
+       "en": "Woman's Building, World's Columbian Exposition, Chicago · 1893 · Lost"
+      },
+      "why": {
+       "ko": "시카고 만국박람회 여성관의 북쪽 벽을 장식한 길이 약 18m의 세 폭 벽화다. 가운데에는 '지식의 열매를 따는 젊은 여성들', 양옆에는 '명성을 좇는 소녀들'과 '예술·음악·춤'을 그렸다. 인상주의 화가가 받은 유일한 공공 주문으로 꼽히며, 커샛은 남성 벽화가들과 같은 보수를 받아 냈다고 한다. 박람회 뒤 1910년대 초를 끝으로 행방이 끊겨, 지금은 사진과 습작으로만 남았다.",
+       "en": "This three-part mural, about eighteen metres long, filled the north wall of the Woman's Building at the 1893 Chicago World's Fair. The centre showed Young Women Plucking the Fruits of Knowledge or Science, flanked by Young Girls Pursuing Fame and Arts, Music, Dancing. It is described as the only public commission ever given to an Impressionist, and Cassatt is said to have secured the same pay as the male muralists. Its trail goes cold in the early 1910s; today it survives only in photographs and related works."
+      },
+      "pd": true,
+      "sources": [
+       {
+        "label": "Musée d'Orsay — Special acquisition: Girl with a banjo",
+        "url": "https://www.musee-orsay.fr/en/magazine/2026-10-05/special-acquisition-girl-banjo-mary-cassatt"
+       },
+       {
+        "label": "Chicago Sun-Times / WBEZ — the lost Chicago mural (2026.9.8)",
+        "url": "https://chicago.suntimes.com/art/2026/09/08/mary-cassatt-after-impressionism-art-institute-chicago-paintings-impressionist-mural-worlds-fair-1893"
+       },
+       {
+        "label": "Wikipedia — Mary Cassatt (Modern Woman)",
+        "url": "https://en.wikipedia.org/wiki/Mary_Cassatt"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "밴조를 든 소녀",
+       "en": "Girl with a Banjo"
+      },
+      "artist": {
+       "ko": "메리 커샛",
+       "en": "Mary Cassatt"
+      },
+      "year": "1894",
+      "medium": {
+       "ko": "파스텔",
+       "en": "Pastel"
+      },
+      "headline": {
+       "ko": "오르세 미술관, 파리 · 1894 · 2026년 매입",
+       "en": "Musée d'Orsay, Paris · 1894 · acquired 2026"
+      },
+      "why": {
+       "ko": "적갈색 머리의 소녀가 밴조를 안고 있다. 밴조는 당시 가장 미국적이고 새로운 악기였고, 소실된 벽화 '현대 여성'의 '예술·음악·춤' 폭 한가운데에도 밴조 치는 소녀가 있었다. 모델은 커샛의 시골 성 근처 마을에 살던 슈람 자매 가운데 조제핀으로 최근에야 밝혀졌다. 오르세가 2026년에 사들여 이번 회고전에서 처음 공개했다.",
+       "en": "An auburn-haired girl holds a banjo, then the most modern and most American of instruments; a girl playing one sat at the centre of the Arts, Music, Dancing panel of the lost Modern Woman mural. The model, only recently identified, was Joséphine Schramm, one of two sisters from a town near Cassatt's country château. The Musée d'Orsay bought the pastel in 2026 and shows it for the first time in its retrospective."
+      },
+      "pd": true,
+      "sources": [
+       {
+        "label": "Musée d'Orsay — Special acquisition: Girl with a banjo",
+        "url": "https://www.musee-orsay.fr/en/magazine/2026-10-05/special-acquisition-girl-banjo-mary-cassatt"
+       },
+       {
+        "label": "Musée d'Orsay — Mary Cassatt. Being independent",
+        "url": "https://www.musee-orsay.fr/en/program/whats-on/exhibitions/mary-cassatt-being-independent"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "여름날",
+       "en": "Summertime"
+      },
+      "artist": {
+       "ko": "메리 커샛",
+       "en": "Mary Cassatt"
+      },
+      "year": "1894–95",
+      "medium": {
+       "ko": "캔버스에 유채, 73.7×100cm",
+       "en": "Oil on canvas, 73.7 × 100 cm"
+      },
+      "headline": {
+       "ko": "소더비 뉴욕 · 2026.11.18 · 추정가 700만~1,000만 달러 (수수료 제외)",
+       "en": "Sotheby's New York · 18 Nov 2026 · Estimate $7–10 million (excluding fees)"
+      },
+      "why": {
+       "ko": "커샛이 1894년 시골 성을 마련한 뒤 쏟아낸 밝은 야외 그림들의 하나로, 같은 제목의 다른 판본이 시카고 테라 미국미술재단에도 있다. 소더비 출품작은 석유 사업가 아먼드 해머의 개인 소장품으로, 11월 18일 모던 이브닝 경매에 나온다. 결과는 경매 뒤 이 특집에 덧붙인다.",
+       "en": "One of the bright outdoor pictures that followed Cassatt's purchase of a country château in 1894; another version of the same title belongs to the Terra Foundation for American Art in Chicago. The canvas at Sotheby's comes from the private collection of the oil magnate Armand Hammer and goes on sale in the Modern Evening Auction on 18 November. We will add the result after the sale."
+      },
+      "pd": true,
+      "sources": [
+       {
+        "label": "Sotheby's — Mary Cassatt, Summertime (Modern Evening Auction)",
+        "url": "https://www.sothebys.com/en/buy/auction/2026/modern-evening-auction-4/summertime"
+       },
+       {
+        "label": "Art Collector News — New York November Auctions 2026",
+        "url": "https://artcollectornews.com/post/new-york-november-auctions-2026-the-10-lots-that-will-test-the-high-end-94872"
+       },
+       {
+        "label": "Wikipedia — Mary Cassatt (Terra Foundation version)",
+        "url": "https://en.wikipedia.org/wiki/Mary_Cassatt"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "바느질하는 젊은 어머니",
+       "en": "Young Mother Sewing"
+      },
+      "artist": {
+       "ko": "메리 커샛",
+       "en": "Mary Cassatt"
+      },
+      "year": "1900",
+      "medium": {
+       "ko": "캔버스에 유채, 92.4×73.7cm",
+       "en": "Oil on canvas, 92.4 × 73.7 cm"
+      },
+      "headline": {
+       "ko": "메트로폴리탄 미술관, 뉴욕 · 1900",
+       "en": "The Metropolitan Museum of Art, New York · 1900"
+      },
+      "why": {
+       "ko": "창가에서 바느질하는 여인의 무릎에 흰 옷의 아이가 기대어 우리를 똑바로 본다. 어머니와 아이로 보이지만 미술관에 따르면 서로 남남인 두 모델이다. 친구이자 컬렉터인 루이진 해브마이어가 1901년에 샀고, 그녀는 훗날 여성 참정권 운동을 위해 자기 소장품으로 전시를 열었다. 1915년 그 전시에 커샛도 작품을 보탰다.",
+       "en": "A child in white leans on the lap of a woman sewing by a window and looks straight out at us. They seem to be mother and child, but according to the Met they were two unrelated models. Cassatt's friend the collector Louisine Havemeyer bought it in 1901, and later lent her collection to exhibitions raising money for women's suffrage; in 1915 Cassatt added her own works to the cause."
+      },
+      "pd": true,
+      "commons": "Young Mother Sewing MET DP139632.jpg",
+      "sources": [
+       {
+        "label": "Wikipedia — Young Mother Sewing",
+        "url": "https://en.wikipedia.org/wiki/Young_Mother_Sewing_(Mary_Cassatt)"
+       },
+       {
+        "label": "The Met — Young Mother Sewing",
+        "url": "https://www.metmuseum.org/art/collection/search/10425"
+       },
+       {
+        "label": "Musée d'Orsay — Mary Cassatt. Being independent (1915 suffrage exhibition)",
+        "url": "https://www.musee-orsay.fr/en/program/whats-on/exhibitions/mary-cassatt-being-independent"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "note": {
+   "ko": "제작 연도·크기·소장처는 미술관 공식 소장품 페이지(내셔널 갤러리 오브 아트·시카고 미술관·오르세·필라델피아·메트로폴리탄)와 백과사전 등 두 곳 이상에서 확인했습니다(2026년 11월 11일 기준). 보스턴 미술관 페이지는 이번에 직접 열지 못해 위키백과·스마트히스토리와 소장품 번호로 대조했습니다. 전시 기간은 오르세·시카고 미술관 공식 페이지, 경매 정보는 소더비 출품 페이지에서 확인했으며 낙찰 결과는 경매 뒤에 덧붙입니다. 커샛은 1926년에 세상을 떠나 모든 작품이 퍼블릭 도메인입니다. 이미지는 위키미디어 커먼즈에서 불러오고, 파일을 확인하지 못한 작품(소실된 벽화·밴조를 든 소녀·여름날)은 글 카드로 보여 드립니다. 판화는 여러 장이 찍혀 여러 미술관에 있습니다.",
+   "en": "Dates, sizes and collections were checked against at least two sources, including the collection pages of the National Gallery of Art, the Art Institute of Chicago, the Musée d'Orsay, the Philadelphia Museum of Art and the Met, as of 11 November 2026. The Boston MFA page could not be opened this time, so that entry was cross-checked against Wikipedia, Smarthistory and the museum's object number. Exhibition dates come from the Orsay and Art Institute of Chicago websites, and the auction details from Sotheby's lot page; the result will be added after the sale. Cassatt died in 1926, so all her works are in the public domain. Images load from Wikimedia Commons; works without a confirmed file (the lost mural, Girl with a Banjo, Summertime) appear as text cards. The prints exist in several impressions held by different museums."
+  }
+ },
+ {
   "id": "joseon-treasures-11",
   "asof": "2026.11.08",
   "kicker": {
