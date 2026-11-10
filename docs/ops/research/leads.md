@@ -2,6 +2,20 @@
 
 규칙: 공식 홈페이지·공개된 대표 문의 채널만 적는다. 개인 이메일·개인 정보 금지. 이미 있는 곳은 중복하지 않는다.
 
+## 2026-11-11 (리서치팀 · 새벽큐)
+
+전시·연락처는 이번 회차에 갤러리 공식 홈페이지를 직접 열어 확인(TinyFish 읽기 도구). 기관 대표 메일·전화만 적고, 대표자 개인 정보·휴대전화는 적지 않는다.
+
+| # | 이름 | 지역 | 전시·기간 | 공식 홈페이지 | 공식 문의 채널 | 메모 |
+|---|---|---|---|---|---|---|
+| 1 | BB&M | 서울 성북구 성북로23길 10 | 남다훈 개인전 《The Real Real》 2026.10.31~12.12 (공식 '현재 전시') | [gallerybbm.com](https://www.gallerybbm.com/) · [현재 전시](https://www.gallerybbm.com/exhibitions/current/) | contact@gallerybbm.com · 02-3674-7773 · [문의 폼](https://www.gallerybbm.com/contact/form/) ([Contact](https://www.gallerybbm.com/contact/)) | 화~토 11~18시. 칼더·허스트·자코메티 대표작을 생활 재료로 '불완전하게 복제'하는 전시 → 제안 문안은 "원작(명화)을 알고 보면 더 재밌는 전시" 관점, QURATOR 고전 해설과 연결. 11/10 예비 목록에서 승격 |
+| 2 | 청화랑 CHUNG ART GALLERY | 서울 강남구 삼성로147길 4, 2층(청담) | 우병출 개인전 2026.11.05~11.28 (공식 인스타 소개란) · 인천아트쇼 참가 기간 11.18~11.22 갤러리 휴관(갤러리 인스타 게시) | [chungartgallery.com](https://www.chungartgallery.com/) · [About](https://www.chungartgallery.com/about) · [인스타 @chung_art_gallery](https://www.instagram.com/chung_art_gallery/) | 대표전화 02-543-1663 · 메일: 공식 사이트 바닥글(검색 색인) **office@chungartgallery.com** / 한국화랑협회 등록 정보 **official@chungartgallery.com** — **두 주소가 달라 발송 전 공식 사이트 바닥글로 재확인** | 1987년 개관, 1994년부터 청담동(공식 About). 인천아트쇼(11.19~22 송도컨벤시아) 참가 → 아트쇼 현장 동선과 묶기 좋음. 아트쇼 기간 휴관이니 연락은 11/17 전 또는 11/23 이후 |
+| 3 | P21 (P TWO ONE) | 서울 용산구 회나무로 66(이태원동) | 김지영 개인전 《휘청이는 새벽 Wavering Dawn》 — 본문 2026.10.30~12.12 / 공식 페이지 머리글 10.29~12.11로 **표기 불일치**(언론 보도는 10.30~12.12) | [p21.kr](https://p21.kr/) · [전시 소개](https://p21.kr/exhibition/KEEM_Jiyoung/description) | info@p21.kr · 02-790-5503 ([Contact](https://p21.kr/gallery/contact)) | 화~금 11~18시, 토 12~18시. 회화 9·드로잉 22점 등 35점(공식 소개). 촛불의 푸른 불꽃 관찰 회화 → '빛을 오래 보는 법' 해설 관점. 11/10 예비 목록에서 승격 |
+
+예비(공식 메일 없음 — 승격 보류):
+- 라보체갤러리(인천 남동구 남동대로 809, 인천시청 신관 405호 '구월관') — 박영조 개인전 《2026 소리-하늘 아래》 2026.11.10~11.16 ([인천문화재단 문화정보](https://ifac.or.kr/culturalInfo/cuturalEvents/performanceSrch/view.do?key=m2501152621396&eventSn=13931)). 공개 채널은 [공식 블로그](http://blog.naver.com/lavocegall)·인스타그램 DM뿐(공개 전화는 휴대전화라 적지 않음). 전시가 1주 단위로 바뀌는 곳이라 다음 전시 확인 후 판단.
+- 갤러리은(인사동, 기존 예비) — 공식 사이트 지난 전시 목록이 11.04~11.09까지라 현재 전시 미확인. 대관 중심이라 작가 대상 문안이 맞을 수 있음.
+
 ## 2026-11-10 (리서치팀 · 새벽큐)
 
 이번 회차는 갤러리 공식 홈페이지 열람이 모두 막힘(무인 실행 권한 요청 무응답). 아래 1·2는 **경기도청 공식 소식지 '나의 경기도' 11월호**([11월의 전시 PICK](https://www.gg.go.kr/myggd/vol209/3_4.php))에 기관 대표 번호·홈페이지로 실린 곳만. 메일은 홈페이지에서 직접 확인 못 해 '미확인'. 인천 신규 리드는 못 찾음.
