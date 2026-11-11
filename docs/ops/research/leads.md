@@ -2,6 +2,20 @@
 
 규칙: 공식 홈페이지·공개된 대표 문의 채널만 적는다. 개인 이메일·개인 정보 금지. 이미 있는 곳은 중복하지 않는다.
 
+## 2026-11-12 (리서치팀 · 새벽큐)
+
+전시·연락처는 이번 회차에 갤러리 공식 홈페이지를 직접 열어 확인(TinyFish 읽기 도구). 홈페이지에 적힌 기관 대표 메일·전화·문의 폼만 적고, 직원·대표자 개인 이름과 휴대전화는 적지 않는다.
+
+| # | 이름 | 지역 | 전시·기간 | 공식 홈페이지 | 공식 문의 채널 | 메모 |
+|---|---|---|---|---|---|---|
+| 1 | 갤러리밈 GalleryMEME | 서울 종로구 인사동5길 3 | M'VOID 김세일 《바람으로 서는 것들》 2026.11.11~12.26 · M'cube 황호석 《순간 (Instant)》 2026.10.21~11.21 (공식 첫 화면) | [gallerymeme.com](http://www.gallerymeme.com/web/main.html) · [Contact](http://www.gallerymeme.com/web/contact.html) | info@gallerymeme.com · 02-733-8877 (공식 Contact '전시·작품구매·대관 문의') | 2015년 개관, 4개 전시장 중 3·4층은 대관(포트폴리오 심사), 5·6층은 기획전 전용(공식 소개). 인사동 관광 동선 → 외국인 관람객용 QR 해설 제안이 맞음. 12/26까지 전시라 시간 여유 있음 |
+| 2 | 스페이스 윌링앤딜링 Space Willing N Dealing | 서울 용산구 회나무로6길 5 혜광빌딩 4층(경리단길) | 장성은 개인전 《Take Time to See White》 2026.10.29~11.21 (공식 전시 페이지) | [willingndealing.org](https://www.willingndealing.org/) · [전시 페이지](https://www.willingndealing.org/a-changsungeun2026) | willingndealing02@gmail.com · T/F 02-797-7893 (공식 사이트 하단 표기) | 아티스트 토크 영상·팟캐스트·전시 도록 판매를 꾸준히 하는 곳(공식 공지 목록) → '작가 해설을 QR로' 제안이 결이 맞음. 전시가 11/21 종료라 다음 전시 기준으로 접근 |
+| 3 | OKNP 서울 (오케이앤피) | 서울 종로구 평창33길 1 | 오희원 개인전 《는개 NeunGae》 2026.10.15~11.27 (공식 전시 페이지 · artnet.kr 목록은 11.17로 표기 — 공식 페이지 우선) | [oknp.kr](https://oknp.kr/) · [전시 페이지](https://oknp.kr/exhibition/%eb%8a%94%ea%b0%9c-neungae/) | [공식 문의 폼](https://oknp.kr/contact) (사이트에 대표 메일·전화 표기 없음) | 2013년 가나아트에서 분사, 공공미술·아트 마케팅·작품 임대 사업(공식 About). 부산 해운대에도 공간. 갤러리보다 '기업 고객 작품 임대에 QR 해설 붙이기' 제휴 제안이 맞을 수 있음 |
+
+예비(공식 문의 채널 없음 — 승격 보류):
+- 갤러리 에스피 Gallery SP(서울 용산구 회나무로44가길 30, 1층) — 잭슨홍 개인전 《연옥의 사물들 Objects of Purgatory》 2026.11.05~12.04 ([공식 전시 페이지](https://www.gallerysp.com/exhibitions/current)). 공식 Information 페이지엔 주소·운영시간만 있고 메일·전화 없음([Information](https://www.gallerysp.com/information)). 11/9 절의 전화(02-546-3560)는 K-TRIP TIPS 표기라 공식 채널로 보지 않음.
+- 확인했지만 제외: 유엠갤러리 《수상한 표면》(~11.19)은 전시 장소가 충북 진천 공예마을 sight_B(갤러리 인스타그램)라 수도권 기준 밖.
+
 ## 2026-11-11 (리서치팀 · 새벽큐)
 
 전시·연락처는 이번 회차에 갤러리 공식 홈페이지를 직접 열어 확인(TinyFish 읽기 도구). 기관 대표 메일·전화만 적고, 대표자 개인 정보·휴대전화는 적지 않는다.
