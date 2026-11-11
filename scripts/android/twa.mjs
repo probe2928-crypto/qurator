@@ -16,7 +16,7 @@ const m = new TwaManifest({
   themeColor: cfg.themeColor, themeColorDark: cfg.themeColor,
   navigationColor: cfg.navigationColor, navigationColorDark: cfg.navigationColor,
   navigationDividerColor: cfg.navigationColor, navigationDividerColorDark: cfg.navigationColor,
-  backgroundColor: cfg.backgroundColor, enableNotifications: false, fallbackType: 'customtabs',
+  backgroundColor: cfg.backgroundColor, enableNotifications: false, fallbackType: 'webview',
   enableSiteSettingsShortcut: false, orientation: 'portrait', shortcuts: [], minSdkVersion: 24,
 });
 fs.mkdirSync(out, { recursive: true });
