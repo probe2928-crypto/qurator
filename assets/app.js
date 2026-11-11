@@ -181,7 +181,14 @@ const T = {
   st_name: ['전시 제목', 'Exhibition title'], st_sub: ['부제 · 기간 · 장소', 'Subtitle · dates · venue'],
   st_custom: ['직접 작품 등록', 'Add your own work'], st_t: ['작품명', 'Title'], st_a: ['작가', 'Artist'], st_y: ['연도', 'Year'], st_m: ['재료·크기', 'Medium & size'],
   st_img: ['이미지 URL (선택)', 'Image URL (optional)'], st_ko: ['한국어 해설', 'Korean text'], st_en: ['영어 해설', 'English text'], st_add: ['라벨에 추가', 'Add label'],
-  st_hint: ['갤러리 작품 해설은 QR 안에 담기므로 서버가 필요 없습니다. 해설이 길수록 QR이 촘촘해지니 1,000자 이내를 권장합니다.', 'Your text is stored inside the QR itself, so no server is needed. Keep it under ~1,000 characters for an easy-to-scan code.'],
+  st_hint: ['해설은 QR 안에 그대로 담겨 서버 없이 열립니다. 해설이 길수록 QR이 촘촘해져 인쇄 크기가 커지니, 한국어·영어 합쳐 300자 안팎을 권장합니다. 더 긴 해설은 카카오톡으로 문의해 주세요.', 'Your text is stored inside the QR itself, so no server is needed. Longer texts make a denser code that must print larger; about 300 characters in total works best. For longer texts, contact us on KakaoTalk.'],
+  qr_ok: ['예상 QR 3cm · 휴대폰으로 바로 읽힙니다', 'Estimated QR 3 cm · scans easily'],
+  qr_big: ['해설이 길어 QR을 {cm}cm로 크게 인쇄합니다', 'Long text: this QR prints larger, {cm} cm'],
+  qr_bad: ['해설이 너무 길어 QR이 촘촘합니다 — 휴대폰으로 읽기 어려우니 해설을 줄여 주세요', 'Text too long: the QR is too dense to scan reliably. Please shorten it.'],
+  qr_xbad: ['작품이 많아 입구 QR이 촘촘합니다 — 전시를 둘로 나누거나 작품 수를 줄여 주세요', 'Too many works for one entrance QR. Split the show or remove some works.'],
+  qr_long: ['QR에 담기엔 너무 깁니다 — 해설을 줄여 주세요', 'Too long for a QR. Please shorten the text.'],
+  st_xk: ['전시 안내 · Exhibition guide', 'Exhibition guide'],
+  x_onsite: ['해설은 작품 옆 캡션 QR로', 'Scan the caption beside the work'],
   st_print: ['캡션 인쇄 (A4)', 'Print captions (A4)'], st_copy: ['전시 링크 복사', 'Copy exhibition link'], st_clear: ['모두 비우기', 'Clear all'],
   st_empty: ['아직 담긴 작품이 없습니다. 작품 탐색에서 + 를 누르거나 왼쪽에서 직접 등록하세요.', 'No works yet. Tap + in Explore or add your own on the left.'],
   st_xqr: ['전시 입구용 QR — 관람객이 전체 작품 목록을 봅니다.', 'Entrance QR — visitors see the full list of works.'],
@@ -911,7 +918,7 @@ function viewStudio() {
           <div class="field"><label>${t('st_img')}</label><input name="i" type="url" placeholder="https://…"></div>
           <div class="field"><label>${t('st_ko')}</label><textarea name="ko"></textarea></div>
           <div class="field"><label>${t('st_en')}</label><textarea name="en"></textarea></div>
-          <p class="note" style="margin:0 0 14px">${t('st_hint')}</p>
+          <p class="note" style="margin:0 0 10px">${t('st_hint')}</p><p class="qest" id="qest" aria-live="polite"></p>
           <button class="btn btn-ink btn-sm" type="submit">${t('st_add')}</button>
         </form></details>
     </aside>
@@ -927,16 +934,28 @@ function viewStudio() {
         <button class="rm" data-i="${i}" aria-label="remove">×</button>
         <div><div class="lt">${esc(f.ko)}</div>${f.en && f.en !== f.ko ? `<div class="le">${esc(f.en)}</div>` : ''}
         <div class="la">${esc(f.artist || '')}${f.date ? ', ' + esc(f.date) : ''}</div><div class="lm">${esc(f.medium || '')}</div></div>
-        <div class="lq" data-q="${esc(itemLink(it))}"></div>
+        <div class="lq" data-q="${esc(itemLink(it))}"></div><p class="lwarn" hidden></p>
         <div class="ls"><span>Scan · 음성 해설 · Audio guide</span><span>${String(i + 1).padStart(2, '0')}</span></div></div>`; }).join('')}</div>
-        <div class="xqr"><div class="q" id="xq"></div><div><b style="font-family:var(--serif);font-size:19px">${esc(st.name || 'Exhibition')}</b><p style="margin:6px 0 0;color:#CFC8BA;font-size:14px">${t('st_xqr')}</p></div></div>`
+        <div class="xqr"><div class="q" id="xq"></div><div><span class="xk">${t('st_xk')}</span><b>${esc(st.name || 'Exhibition')}</b>${st.sub ? `<span class="xs">${esc(st.sub)}</span>` : ''}<p>${t('st_xqr')}</p><p class="lwarn" id="xqw" hidden></p></div></div>`
       : `<div class="empty" style="border:1px dashed var(--line)">${t('st_empty')}</div>`}
     </section></div>`;
   const save = () => { st.name = $('#xn').value; st.sub = $('#xs').value; store.set('q_studio', st); };
   $('#xn').oninput = $('#xs').oninput = save;
   $('#xn').onchange = $('#xs').onchange = () => { save(); viewStudio(); };
-  $$('.lq').forEach(el => makeQR(el, el.dataset.q, 192));
-  if (st.items.length) exhibitionLink().then(u => makeQR($('#xq'), u, 220));
+  $$('.labels .lq').forEach(el => {
+    const p = qrPrint(makeQR(el, el.dataset.q, 256)), lab = el.closest('.label'), w = lab.querySelector('.lwarn');
+    lab.style.setProperty('--qmm', p.mm + 'mm'); lab.dataset.qr = p.level;
+    if (p.level !== 'ok') { w.textContent = qrNote(p); w.hidden = false; }
+  });
+  if (st.items.length) exhibitionLink(true).then(u => { const p = qrPrint(makeQR($('#xq'), u, 256)); $('.xqr').style.setProperty('--qmm', Math.max(45, p.mm) + 'mm'); const w = $('#xqw'); if (p.level === 'bad') { w.textContent = t('qr_xbad'); w.hidden = false; } });
+  const est = $('#qest'), cf = $('#cform'); let estT;
+  const estimate = async () => {
+    const fd = Object.fromEntries(new FormData(cf)); if (!fd.ko && !fd.en) { est.textContent = ''; est.dataset.qr = ''; return; }
+    const obj = { t: fd.t, a: fd.a, y: fd.y, m: fd.m, i: fd.i, ko: fd.ko, en: fd.en }; Object.keys(obj).forEach(k => { if (!obj[k]) delete obj[k]; });
+    const p = qrPrint(qrModsFor(BASE() + '#/c/' + await pack(obj)));
+    est.dataset.qr = p.level; est.textContent = p.level === 'ok' ? t('qr_ok') : qrNote(p);
+  };
+  cf.oninput = () => { clearTimeout(estT); estT = setTimeout(estimate, 250); };
   $('#cform').onsubmit = async e => {
     e.preventDefault();
     const fd = Object.fromEntries(new FormData(e.target));
@@ -951,14 +970,32 @@ function viewStudio() {
   const cp = $('#cp'); if (cp) cp.onclick = async () => { const u = await exhibitionLink(); try { await navigator.clipboard.writeText(u); toast(t('copied')); } catch { prompt('URL', u); } };
   const clr = $('#clr'); if (clr) clr.onclick = () => { if (confirm(t('st_clear') + '?')) { st.items = []; store.set('q_studio', st); viewStudio(); } };
 }
-async function exhibitionLink() { const st = S.studio; return BASE() + '#/x/' + await pack({ n: st.name, s: st.sub, i: st.items.map(x => x.uid), m: st.items.map(x => [x.title, x.artist, x.date]) }); }
+/* entrance=true: the printed entrance QR leaves out the texts of the gallery's own works (each one's caption QR already carries it),
+   so the code stays scannable; the copied link keeps everything for sharing online. */
+async function exhibitionLink(entrance) { const st = S.studio; return BASE() + '#/x/' + await pack({ n: st.name, s: st.sub, i: st.items.map(x => entrance && x.uid.startsWith('c:') ? '-' : x.uid), m: st.items.map(x => entrance && S.byId[x.uid] ? 0 : [x.title, x.artist, x.date]) }); }
 
 function makeQR(el, text, size) {
-  if (!el || typeof QRCode === 'undefined') return;
+  if (!el || typeof QRCode === 'undefined') return 0;
   el.innerHTML = '';
-  try { new QRCode(el, { text, width: size, height: size, colorDark: '#16140F', colorLight: '#ffffff', correctLevel: text.length > 600 ? QRCode.CorrectLevel.L : QRCode.CorrectLevel.M }); }
-  catch { el.innerHTML = '<small style="color:#A8361F">QR too long — shorten text</small>'; }
+  try { const q = new QRCode(el, { text, width: size, height: size, colorDark: '#16140F', colorLight: '#ffffff', correctLevel: text.length > 600 ? QRCode.CorrectLevel.L : QRCode.CorrectLevel.M }); return (q._oQRCode && q._oQRCode.moduleCount) || 0; }
+  catch { el.innerHTML = `<small style="color:#A8361F">${t('qr_long')}</small>`; return Infinity; }
 }
+/* Printed QR size: a phone camera reads a caption QR reliably when one module is ≥ 0.4 mm.
+   Curated works (short links) fit 30 mm; texts packed into the QR grow the code, so the print size grows with it up to 52 mm. */
+const QR_MM = 0.4, QR_MIN = 30, QR_MAX = 52;
+function qrPrint(mods) {
+  if (!mods) return { mm: QR_MIN, level: 'ok' };
+  if (!isFinite(mods)) return { mm: QR_MAX, level: 'bad' };
+  const mm = Math.min(QR_MAX, Math.max(QR_MIN, Math.ceil(mods * QR_MM)));
+  return { mm, level: mods * QR_MM <= QR_MIN ? 'ok' : mods * QR_MM <= QR_MAX ? 'big' : 'bad' };
+}
+function qrModsFor(text) {
+  if (typeof QRCode === 'undefined') return 0;
+  const d = document.createElement('div');
+  try { const q = new QRCode(d, { text, width: 40, height: 40, correctLevel: text.length > 600 ? QRCode.CorrectLevel.L : QRCode.CorrectLevel.M }); return (q._oQRCode && q._oQRCode.moduleCount) || 0; }
+  catch { return Infinity; }
+}
+const qrNote = p => p.level === 'ok' ? '' : (p.level === 'big' ? t('qr_big').replace('{cm}', (p.mm / 10).toFixed(1)) : t('qr_bad'));
 
 /* exhibition guide (visitor) */
 async function viewExhibition(payload) {
@@ -968,7 +1005,8 @@ async function viewExhibition(payload) {
     <p class="note" style="margin-top:18px;color:#8E8676">${t('x_scan')}</p></div>
     <ul class="xlist">${x.i.map((uid, k) => { const w = S.byId[uid]; const m = (x.m && x.m[k]) || []; const href = uid.startsWith('c:') ? '#/c/' + uid.slice(2) : '#/w/' + uid;
       const title = w ? pick(w.title) : m[0], artist = w ? pick(w.artist) : m[1];
-      return `<li><a href="${esc(href)}"><span class="i">${String(k + 1).padStart(2, '0')}</span>${artBox(w ? w : { title: '' })}<span><b>${esc(title || '')}</b><small>${esc(artist || '')}${(w ? w.date : m[2]) ? ' · ' + esc(w ? w.date : m[2]) : ''}</small></span><span>→</span></a></li>`; }).join('')}</ul></div>`;
+      const inner = `<span class="i">${String(k + 1).padStart(2, '0')}</span>${artBox(w ? w : { title: '' })}<span><b>${esc(title || '')}</b><small>${esc(artist || '')}${(w ? w.date : m[2]) ? ' · ' + esc(w ? w.date : m[2]) : ''}</small>${uid === '-' ? `<small class="xonsite">${t('x_onsite')}</small>` : ''}</span>`;
+      return uid === '-' ? `<li><div class="xrow">${inner}<span></span></div></li>` : `<li><a href="${esc(href)}">${inner}<span>→</span></a></li>`; }).join('')}</ul></div>`;
   hydrate();
   // fill API thumbnails lazily
   x.i.forEach((uid, k) => { if (/^(aic|met|cma)-/.test(uid)) getApiWork(uid).then(w => { const el = $$('.xlist .art')[k]; if (el && w.image) { el.dataset.src = w.image; el.classList.remove('h'); hydrate(el.parentNode); } }).catch(() => {}); });

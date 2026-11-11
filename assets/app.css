@@ -232,11 +232,24 @@ a:hover .art img.in{transform:scale(1.035)}
 .label .le{font-family:var(--serif-en);font-style:italic;font-size:15px;color:var(--ink-2);margin-top:2px}
 .label .la{font-size:13px;margin-top:10px}
 .label .lm{font-size:11.5px;color:var(--muted);margin-top:2px;line-height:1.45}
-.label .lq{align-self:end}
+.label .lq{align-self:end;margin-top:18px}
 .label .lq canvas,.label .lq img{width:96px!important;height:96px!important}
 .label .ls{grid-column:1/-1;border-top:1px solid var(--line);padding-top:10px;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;display:flex;justify-content:space-between;color:var(--seal)}
 .label .rm{position:absolute;top:8px;right:10px;font-size:18px;color:var(--muted);line-height:1}
 .label .rm:hover{color:var(--seal)}
+.label .lwarn{grid-column:1/-1;margin:-4px 0 0;font-size:12px;line-height:1.5;color:var(--muted)}
+.label[data-qr="bad"] .lwarn{color:var(--seal)}
+.label[data-qr="bad"]{border-color:var(--seal)}
+.qest{margin:0 0 14px;font-size:12.5px;line-height:1.5;color:var(--muted);min-height:1.5em}
+.qest[data-qr="ok"]{color:var(--ink-2)}
+.qest[data-qr="bad"]{color:var(--seal)}
+.xqr .xk{display:block;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#E3A08F;margin-bottom:8px}
+.xqr b{display:block;font-family:var(--serif);font-size:19px;font-weight:600;letter-spacing:-.02em}
+.xqr .xs{display:block;font-size:13.5px;color:#CFC8BA;margin-top:4px}
+.xqr p{margin:8px 0 0;color:#CFC8BA;font-size:14px}
+.xqr .lwarn{color:#E3A08F}
+.xlist .xrow{display:grid;grid-template-columns:34px 76px 1fr 20px;gap:14px;align-items:center;padding:14px 0;border-top:1px solid rgba(237,230,216,.1)}
+.xlist .xonsite{display:block;margin-top:2px;color:var(--seal-2)}
 .studio-bar{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 20px;align-items:center}
 .studio-bar .cnt{margin-left:auto;font-size:13px;color:var(--muted)}
 .xqr{display:flex;gap:24px;align-items:center;background:var(--ink);color:var(--paper);padding:22px;margin-top:24px}
@@ -387,11 +400,19 @@ body.v .toast{bottom:96px;background:var(--cream);color:var(--night)}
 @media print{
   @page{size:A4;margin:10mm}
   body{background:#fff!important}
-  .top,.foot,.panel,.studio-bar,.phead,.xqr,.toast,.modal,.label .rm,.note{display:none!important}
+  body::after,.appbar{display:none!important}
+  .top,.foot,.panel,.studio-bar,.phead,.toast,.modal,.label .rm,.lwarn,.note{display:none!important}
   .studio{display:block;padding:0}
   .labels{display:grid;grid-template-columns:1fr 1fr;gap:6mm}
-  .label{break-inside:avoid;border:0.3mm solid #999;min-height:62mm;padding:6mm;grid-template-columns:1fr 30mm}
-  .label .lq canvas,.label .lq img{width:30mm!important;height:30mm!important}
+  .label{break-inside:avoid;border:0.3mm solid #999;min-height:62mm;padding:6mm;grid-template-columns:1fr var(--qmm,30mm)}
+  .label .lq canvas,.label .lq img{width:var(--qmm,30mm)!important;height:var(--qmm,30mm)!important}
+  .label[data-qr]{border-color:#999}
+  /* entrance card: last on the sheet, its own page if it does not fit */
+  .xqr{break-inside:avoid;background:#fff!important;color:var(--ink)!important;border:0.3mm solid #999;margin-top:6mm;padding:8mm;gap:8mm;flex-direction:row!important;align-items:center!important}
+  .xqr .q{padding:0}
+  .xqr .q canvas,.xqr .q img{width:var(--qmm,45mm)!important;height:var(--qmm,45mm)!important}
+  .xqr .xk{color:var(--seal)!important}
+  .xqr .xs,.xqr p{color:var(--ink-2)!important}
 }
 
 /* =====================================================================
@@ -761,6 +782,10 @@ body{word-break:keep-all;overflow-wrap:break-word}
   body.gal-page .gal-sec,body.gal-page .gal-hero{break-inside:avoid}
   body.gal-page .gal-hero-in{grid-template-columns:1.2fr .8fr}
   body.gal-page .gal-grid{grid-template-columns:repeat(2,1fr)}
+  body.gal-page .gal-plans .gal-grid{grid-template-columns:repeat(3,1fr)}
+  /* the brochure leaves the screen: the contact line and the scan hint must print */
+  body.gal-page .gal-contact,body.gal-page .gal-sample .note{display:block!important}
+  body.gal-page .gal-contact{font-size:11pt;color:var(--ink);border-top:0.3mm solid var(--ink);padding-top:4mm;margin-top:6mm}
 }
 
 /* ---------- v6 · giving · Oriel Foundation (금색은 창 하나에만) ---------- */

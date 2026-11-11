@@ -1,5 +1,5 @@
-const V = 'qurator-v56';
-const SHELL = ['./', 'index.html', 'assets/app.css', 'assets/app.js', 'assets/icon-192.png', 'manifest.webmanifest'];
+const V = 'qurator-v57';
+const SHELL = ['./', 'index.html', 'assets/app.css', 'assets/app.js', 'assets/icon-192.png', 'manifest.webmanifest', 'assets/vendor/qrcode.min.js'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(V).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== V).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
 self.addEventListener('fetch', e => {
