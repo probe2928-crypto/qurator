@@ -20,12 +20,12 @@
     "path": "./android.keystore",
     "alias": "android"
   },
-  "appVersionName": "1.0.1",
-  "appVersionCode": 2,
+  "appVersionName": "1.0.2",
+  "appVersionCode": 3,
   "shortcuts": [],
   "generatorApp": "unknown",
   "webManifestUrl": "https://probe2928-crypto.github.io/qurator/manifest.webmanifest",
-  "fallbackType": "customtabs",
+  "fallbackType": "webview",
   "features": {},
   "alphaDependencies": {
     "enabled": false
@@ -43,5 +43,5 @@
   "fileHandlers": [],
   "launchHandlerClientMode": "",
   "displayOverride": [],
-  "appVersion": "1.0.1"
+  "appVersion": "1.0.2"
 }
