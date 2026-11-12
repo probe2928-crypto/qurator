@@ -3732,7 +3732,8 @@
     "ko": 29,
     "en": 27
    }
-  ]
+  ],
+  "commons": "Yun Du-seo.jpg"
  },
  {
   "id": "k-pajeok",
@@ -3796,7 +3797,7 @@
     "ko": "풍속화"
    }
   ],
-  "commons": "긍재전신첩 야묘도추.jpg",
+  "commons": "Geungjae-Pajeokdo.jpg",
   "short": {
    "ko": "제목의 '파적(破寂)'은 고요함을 깬다는 뜻입니다. 봄날 한낮의 농가 마당, 들고양이가 병아리 한 마리를 물고 달아납니다. 어미 닭은 날개를 퍼덕이며 필사적으로 뒤쫓고, 나머지 병아리들은 사방으로 흩어집니다. 마루에 있던 집주인은 긴 담뱃대를 휘두르며 몸을 날리고, 그 뒤로 아내가 맨발로 뛰쳐나옵니다. 고양이는 달아나면서도 고개를 돌려 이 소동을 태연히 돌아봅니다. 김홍도의 화풍을 이어받은 김득신은 이렇게 일상의 한순간을 붙잡아 소리와 웃음까지 화면에 담았습니다.",
    "en": "The title means \"breaking the stillness,\" and that is exactly what happens. On a lazy spring afternoon in a farmhouse yard, a wild cat dashes off with a chick in its mouth. The mother hen flaps after it in desperate pursuit while the other chicks scatter in every direction. The man of the house lunges off the wooden veranda swinging his long tobacco pipe, and his wife rushes out barefoot behind him. Even mid-escape, the cat glances back at the chaos it has caused, completely unbothered. Kim Deuk-sin, who carried on Kim Hong-do's style of genre painting, freezes one ridiculous second of village life so well that you can almost hear it."
@@ -11312,6 +11313,1006 @@
     "z": 1.1,
     "ko": 27,
     "en": 30
+   }
+  ]
+ },
+ {
+  "id": "w-repin-bargehaulers",
+  "region": "world",
+  "title": {
+   "ko": "볼가강의 배 끄는 인부들",
+   "en": "Barge Haulers on the Volga"
+  },
+  "artist": {
+   "ko": "일리야 레핀",
+   "en": "Ilya Repin"
+  },
+  "date": "1870–1873",
+  "medium": {
+   "ko": "캔버스에 유채, 131.5×281cm",
+   "en": "Oil on canvas, 131.5 × 281 cm"
+  },
+  "collection": {
+   "ko": "국립러시아미술관, 상트페테르부르크",
+   "en": "State Russian Museum, St Petersburg"
+  },
+  "wiki": {
+   "en": [
+    "Barge Haulers on the Volga"
+   ],
+   "ko": [
+    "일리야 레핀"
+   ]
+  },
+  "tagline": {
+   "ko": "강을 거슬러 배를 끄는 열한 사람의 긴 행렬",
+   "en": "Eleven men in one long line, hauling a barge against the current"
+  },
+  "look": {
+   "ko": [
+    "머리에 천을 동여매고 맨 앞에서 끈을 멘 카닌",
+    "줄 한가운데서 몸을 젖히고 고개를 든 분홍 셔츠의 젊은이",
+    "먼 강물 위에 연기를 내뿜는 작은 증기선"
+   ],
+   "en": [
+    "Kanin at the front, a rag tied around his head",
+    "The young man in the pink shirt at the centre, leaning back with his head raised",
+    "The small steamboat sending up smoke far out on the river"
+   ]
+  },
+  "words": [
+   {
+    "en": "barge",
+    "ko": "바지선, 짐배"
+   },
+   {
+    "en": "strap",
+    "ko": "끈, 멜빵"
+   },
+   {
+    "en": "upstream",
+    "ko": "상류로, 물을 거슬러"
+   }
+  ],
+  "short": {
+   "ko": "강가 모래밭을 따라 남자 열한 명이 가슴에 끈을 두르고 몸을 숙인 채 무거운 배를 끌어 옵니다. 러시아 화가 일리야 레핀이 1870년부터 1873년까지 그린 그림으로, 이런 인부들을 러시아에서는 부를라키라고 불렀습니다. 레핀은 1870년 여름 볼가강가 시랴예보 마을에 머물며 실제 인부들을 사귀고 습작을 그렸습니다. 맨 앞에서 머리에 천을 동여맨 사람은 사제였다가 인부가 된 카닌이고, 한가운데에서는 분홍 셔츠의 젊은이 혼자 몸을 젖히고 고개를 듭니다. 먼 강물 위의 작은 증기선은 나중에 더해진 것으로, 기계가 이미 이 일을 대신할 수 있던 시대임을 보여 줍니다. 1873년 빈 만국박람회에서 동메달을 받았고, 지금은 상트페테르부르크의 국립러시아미술관이 소장하고 있습니다.",
+   "en": "Eleven men with straps across their chests lean forward as they drag a heavy barge along a sandy riverbank. Ilya Repin painted this between 1870 and 1873; in Russia such workers were called burlaki. In the summer of 1870 Repin stayed in the Volga village of Shiryaevo, where he got to know real haulers and made many studies. The man at the front with a rag around his head is Kanin, a former priest, and in the centre a young man in a pink shirt alone leans back and raises his head. The small steamboat on the distant water was added later, a sign that machines could already do this work. The painting won a bronze medal at the 1873 World's Fair in Vienna and now belongs to the State Russian Museum in St Petersburg."
+  },
+  "commons": "Ilya Repin - Barge Haulers on the Volga - Google Art Project.jpg",
+  "text": {
+   "ko": "강가 모래밭을 따라 남자 열한 명이 몸을 숙인 채 한 줄로 다가옵니다. 가슴에 두른 끈은 모두 뒤쪽의 무거운 배로 이어집니다. 가운데의 젊은이 하나만 고개를 들고 있습니다. 러시아 화가 일리야 레핀이 1870년부터 1873년까지 그린 '볼가강의 배 끄는 인부들'입니다. 캔버스에 유채로, 가로가 약 2.8미터에 이르는 큰 그림입니다. 상트페테르부르크의 국립러시아미술관이 소장합니다. 이런 인부들을 러시아에서는 부를라키라고 불렀습니다. 강가를 걸으며 배를 상류로 끌어 올리는 일꾼들입니다. 학생 시절 네바강에서 이들을 처음 본 레핀은 사람이 가축 대신 매여 있다는 데 충격을 받았다고 회고했습니다. 1870년 여름, 레핀은 풍경화가 표도르 바실리예프 등과 볼가강으로 떠나 시랴예보 마을에 머물렀습니다. 그곳에서 인부들을 사귀며 습작을 많이 그렸고, 그림 속 인물들은 그때 만난 실제 사람들을 바탕으로 했습니다. 맨 앞, 왼쪽에서 두 번째 사람을 보십시오. 머리에 천을 동여맨 카닌입니다. 사제였다가 그 자리를 잃고 인부가 된 사람이었습니다. 레핀은 그의 넓은 이마와 깊은 눈빛에 끌려, 그가 성자 같았다고 적었습니다. 이제 줄 한가운데의 젊은이를 보십시오. 모두 앞으로 기울어 걷는데, 그만 몸을 뒤로 젖히고 가슴의 끈을 손으로 붙잡았습니다. 분홍빛 셔츠는 갈색과 잿빛으로 가라앉은 무리 속에서 유일하게 밝은 색입니다. 인부들 뒤쪽의 배를 보십시오. 돛대의 깃발이 거꾸로 달려 있습니다. 오른쪽 먼 강물 위에는 연기를 내뿜는 작은 증기선이 보입니다. 첫 번째 판에는 없다가 나중에 더해진 배입니다. 지평선을 낮게 잡아 인부들이 하늘을 등지고 크게 솟아 보입니다. 오르내리는 머리들의 선을 따라가 보십시오. 멈췄다 다시 나아가는 무거운 걸음처럼 느껴집니다. 1873년 완성작이 공개되자 비평가 스타소프는 큰 찬사를 보냈고, 도스토옙스키는 누구도 관객에게 동정을 구하지 않는다며 감탄했습니다. 황제의 아들 블라디미르 대공이 그림을 샀고, 혁명 뒤인 1918년 지금의 미술관으로 옮겨졌습니다. 한 걸음 물러나 보십시오. 넓은 강과 하늘 아래, 열한 사람이 하나의 긴 줄이 되어 배 한 척을 끌고 있습니다. 오늘은 무거운 짐을 함께 끌어 주는 곁의 사람을 떠올려 보시기 바랍니다.",
+   "en": "Eleven men come toward us in a single line along a sandy riverbank, their bodies bent forward. Each wears a strap across his chest, and every strap leads back to a heavy barge. Only one young man in the middle holds his head up. This is Barge Haulers on the Volga by the Russian painter Ilya Repin, who worked on it from 1870 to 1873. It is oil on canvas and about 2.8 metres wide. It belongs to the State Russian Museum in St Petersburg. In Russia these workers were called burlaki. They walked along the bank and pulled boats upstream, against the current. Repin first saw them on the Neva River as an art student, and later remembered being shocked that people were tied to boats in place of animals. In the summer of 1870, Repin travelled to the Volga with the landscape painter Fyodor Vasilyev and others, and stayed in the village of Shiryaevo. There he got to know the haulers and made many studies. The figures in the painting are based on real men he met. Look at the second man from the left, at the front. He has a rag tied around his head. His name was Kanin, and he had been a priest before he lost his position. Repin was drawn to his broad forehead and deep eyes, and wrote that the man seemed like a saint. Now find the young man in the centre of the line. Everyone else leans forward, but he leans back and grips the strap on his chest. His head is raised, as if he wants to break free. His pink shirt is the one bright colour in a group of heavy browns and greys. Look at the barge behind the men. The flag on its mast hangs upside down. Far away on the water, near the right edge, a small steamboat sends up smoke. It was not in the first version and was added later, a quiet sign that machines could already do this work. The horizon is low, so the men rise up large against the sky. Follow the line of their heads as it goes up and down. It feels like the rhythm of heavy steps that stop and start again. When the finished painting was shown in 1873, the critic Vladimir Stasov praised it loudly, and Fyodor Dostoevsky admired that none of the men begs the viewer for pity. Grand Duke Vladimir, a son of the tsar, bought it, and in 1918, after the revolution, it moved to the museum. Step back and see the whole scene. Under the wide river and sky, eleven men become one long line pulling a single boat. Today, think of the people beside you who help you pull your own heavy load."
+  },
+  "tour": [
+   {
+    "x": 0.5,
+    "y": 0.5,
+    "z": 1,
+    "ko": 0,
+    "en": 0
+   },
+   {
+    "x": 0.5,
+    "y": 0.5,
+    "z": 1,
+    "ko": 3,
+    "en": 3
+   },
+   {
+    "x": 0.5,
+    "y": 0.45,
+    "z": 1.25,
+    "ko": 7,
+    "en": 7
+   },
+   {
+    "x": 0.5,
+    "y": 0.45,
+    "z": 1.25,
+    "ko": 10,
+    "en": 10
+   },
+   {
+    "x": 0.42,
+    "y": 0.4,
+    "z": 1.45,
+    "ko": 12,
+    "en": 13
+   },
+   {
+    "x": 0.58,
+    "y": 0.55,
+    "z": 1.45,
+    "ko": 16,
+    "en": 17
+   },
+   {
+    "x": 0.58,
+    "y": 0.55,
+    "z": 1.45,
+    "ko": 19,
+    "en": 21
+   },
+   {
+    "x": 0.5,
+    "y": 0.62,
+    "z": 1.3,
+    "ko": 23,
+    "en": 25
+   },
+   {
+    "x": 0.5,
+    "y": 0.62,
+    "z": 1.3,
+    "ko": 26,
+    "en": 28
+   },
+   {
+    "x": 0.5,
+    "y": 0.5,
+    "z": 1.1,
+    "ko": 28,
+    "en": 30
+   }
+  ]
+ },
+ {
+  "id": "w-vallotton-ball",
+  "region": "world",
+  "title": {
+   "ko": "공",
+   "en": "The Ball"
+  },
+  "artist": {
+   "ko": "펠릭스 발로통",
+   "en": "Félix Vallotton"
+  },
+  "date": "1899",
+  "medium": {
+   "ko": "판지에 유채, 나무판에 붙임, 48×61cm",
+   "en": "Oil on cardboard mounted on wood, 48 × 61 cm"
+  },
+  "collection": {
+   "ko": "오르세 미술관, 파리",
+   "en": "Musée d'Orsay, Paris"
+  },
+  "wiki": {
+   "en": [
+    "Félix Vallotton"
+   ]
+  },
+  "tagline": {
+   "ko": "위에서 내려다본 공원, 빨간 공을 쫓는 작은 아이",
+   "en": "Seen from above, a small child chases a red ball across a park"
+  },
+  "look": {
+   "ko": [
+    "빨간 띠를 두른 노란 모자와 바람에 날리는 흰 덧옷",
+    "아이 앞으로 굴러가는 빨간 공과 짙은 그림자",
+    "멀리 나란히 선 파란 옷과 흰 옷의 두 사람"
+   ],
+   "en": [
+    "The yellow hat with its red ribbon and the white smock flying in the wind",
+    "The red ball rolling ahead and the dark shadow in front of the child",
+    "The two distant figures side by side, one in blue and one in white"
+   ]
+  },
+  "words": [
+   {
+    "en": "shadow",
+    "ko": "그림자"
+   },
+   {
+    "en": "chase",
+    "ko": "뒤쫓다"
+   },
+   {
+    "en": "flat",
+    "ko": "평평한, 납작한"
+   }
+  ],
+  "short": {
+   "ko": "위에서 내려다본 공원의 황토빛 땅 위로, 흰 옷에 노란 모자를 쓴 아이가 빨간 공을 쫓아 달려갑니다. 스위스 태생 화가 펠릭스 발로통이 1899년에 판지에 유채로 그린 작은 그림입니다. 발로통은 1890년대 파리에서 나비파 화가들과 가까이 지냈고, 흑백 목판화로 먼저 이름을 알렸습니다. 일본 목판화에서 배운 높은 시점과 평평한 색면이 이 그림에도 보입니다. 햇빛 드는 땅과 짙은 나무 그늘이 크게 맞서고, 멀리에는 파란 옷과 흰 옷의 두 여인이 아주 작게 서 있습니다. 1953년 카를 드레퓌스의 유증으로 프랑스 국가 소장품이 되어 지금은 파리 오르세 미술관에 있습니다.",
+   "en": "Seen from above, a child in white with a yellow hat runs across the ochre ground of a park, chasing a red ball. The Swiss-born artist Félix Vallotton painted this small picture in oil on cardboard in 1899. In the 1890s Vallotton was close to the Nabis in Paris, and he first became known for his black-and-white woodcuts. The high viewpoint and flat areas of colour he learned from Japanese prints appear here too. Sunny ground and the deep shade of trees face each other, and far away two tiny women, one in blue and one in white, stand side by side. The painting entered the French national collection in 1953, left by Carle Dreyfus, and now hangs in the Musée d'Orsay in Paris."
+  },
+  "commons": "Félix Vallotton - The Ball - Google Art Project.jpg",
+  "text": {
+   "ko": "위에서 내려다본 공원의 황토빛 땅 위를 흰 옷의 아이가 달려갑니다. 앞에는 빨간 공이 굴러가고, 아이 앞으로 짙은 그림자가 드리웁니다. 화면의 다른 쪽은 나무들의 깊은 그늘이 넓게 덮고 있습니다. 스위스 태생 화가 펠릭스 발로통이 1899년에 그린 '공'입니다. 판지에 유채로 그려 나무판에 붙인, 세로 48센티미터, 가로 61센티미터의 작은 그림입니다. 파리 오르세 미술관이 소장하고 있습니다. 발로통은 1865년 스위스 로잔에서 태어나 열여섯 살에 파리로 건너가 그림을 배웠습니다. 1890년대에는 보나르, 뷔야르 같은 나비파 화가들과 가까이 지냈고, 동료들은 그를 외국인 나비라고 불렀습니다. 그는 먼저 목판화로 이름을 알렸습니다. 검은 면과 흰 면을 크게 나누고 잔손질을 줄인 판화였습니다. 일본 목판화를 모으며 높은 데서 내려다보는 시점과 평평한 색면도 익혔습니다. 아이를 자세히 보십시오. 빨간 띠를 두른 챙 넓은 노란 모자 아래로 금발이 삐져나옵니다. 등 뒤로 단추를 채운 흰 덧옷은 바람에 뒤로 날리고, 작은 장화는 흐린 주황빛입니다. 이제 빨간 공을 보십시오. 아이는 이 공을 쫓아 달리고 있습니다. 공과 아이, 그 앞의 그림자가 모두 단순한 모양으로 밝은 땅 위에 또렷이 떠 있습니다. 멀리 서 있는 두 사람을 찾아보십시오. 하나는 파란 옷, 하나는 흰 옷을 입고 나란히 서 있습니다. 미술관은 이 둘을 여인들로 설명합니다. 이들의 옅은 색은 아이의 흰 옷과 서로 메아리칩니다. 그런데 두 사람이 아주 작으니 멀리 있어야 하는데, 화면은 평평한 색면으로만 짜여 거리가 잘 느껴지지 않습니다. 미술관도 공간이 납작해 보인다고 말합니다. 빛과 그늘을 보십시오. 햇빛이 드는 황토빛 땅과 짙은 나무 그늘이 크게 맞서고, 그늘 속에는 밝은 틈이 하나 뚫려 있습니다. 놀이 장면에 긴장이 감도는 것은 이 대비 때문입니다. 같은 해 발로통은 결혼했고, 이듬해 프랑스 국적을 얻었습니다. 공원은 보나르와 뷔야르도 즐겨 그린 장소였습니다. 이 그림은 1953년 카를 드레퓌스의 유증으로 프랑스 국립 컬렉션에 들어왔습니다. 한 걸음 물러나 보십시오. 넓은 땅과 그늘 사이에서 공 하나를 쫓는 작은 아이가 화면 전체를 움직이고 있습니다. 오늘은 무언가를 쫓아 마냥 달리던 어린 날의 한순간을 떠올려 보시기 바랍니다.",
+   "en": "Seen from above, a child in white runs across the ochre ground of a park. A red ball rolls ahead, and a dark shadow falls in front of the child. The rest of the picture is filled with the deep shade of trees. This is The Ball, painted in 1899 by the Swiss-born artist Félix Vallotton. It is oil on cardboard, later mounted on a wooden panel. The picture is small, only 48 by 61 centimetres, and it belongs to the Musée d'Orsay in Paris. Vallotton was born in Lausanne, Switzerland, in 1865, and moved to Paris at sixteen to study art. In the 1890s he was close to the Nabis, a group of young painters that included Pierre Bonnard and Édouard Vuillard. His friends called him the foreign Nabi. He first became known for his woodcuts, made of large areas of black and white with very little detail. He also collected Japanese prints, and learned from them how to look down on a scene from above and how to use flat areas of colour. Look closely at the child. A wide yellow hat with a red ribbon sits on the head, and blond hair escapes from under the brim. The white smock, buttoned at the back, flies out behind in the wind. The little boots are a dull orange. Now look at the red ball. The child is running to chase it. The ball, the child and the shadow are all simple, clear shapes, sitting sharply on the bright ground like cut paper. Find the two figures standing far away. They stand side by side, one in blue and one in white. The museum describes them as two women. Their pale colours echo the white of the running child. But something is strange here. The two women are tiny, so they must be far away. Yet the picture is built from flat areas of colour, and it is hard to feel the distance. The museum notes that the space seems flat and frontal. Look at the light and the shade. The sunny ochre ground and the dark mass of the trees face each other, and the shade is pierced by one pale opening. The scene shows a happy game, yet the strong contrast gives it a feeling of quiet tension. In the same year Vallotton married, and the following year he became a French citizen. Parks and public gardens were favourite subjects of his friends Bonnard and Vuillard too. The painting came to the French national collection in 1953, left by the collector Carle Dreyfus. Step back and see the whole picture. Between the open ground and the dark trees, one small child chasing one ball sets everything in motion. Today, remember a moment from childhood when you ran after something with your whole heart."
+  },
+  "tour": [
+   {
+    "x": 0.5,
+    "y": 0.5,
+    "z": 1,
+    "ko": 0,
+    "en": 0
+   },
+   {
+    "x": 0.5,
+    "y": 0.5,
+    "z": 1,
+    "ko": 3,
+    "en": 3
+   },
+   {
+    "x": 0.5,
+    "y": 0.45,
+    "z": 1.25,
+    "ko": 6,
+    "en": 6
+   },
+   {
+    "x": 0.5,
+    "y": 0.45,
+    "z": 1.25,
+    "ko": 8,
+    "en": 9
+   },
+   {
+    "x": 0.42,
+    "y": 0.4,
+    "z": 1.45,
+    "ko": 11,
+    "en": 11
+   },
+   {
+    "x": 0.42,
+    "y": 0.4,
+    "z": 1.45,
+    "ko": 14,
+    "en": 15
+   },
+   {
+    "x": 0.58,
+    "y": 0.55,
+    "z": 1.45,
+    "ko": 17,
+    "en": 18
+   },
+   {
+    "x": 0.58,
+    "y": 0.55,
+    "z": 1.45,
+    "ko": 21,
+    "en": 22
+   },
+   {
+    "x": 0.5,
+    "y": 0.62,
+    "z": 1.3,
+    "ko": 23,
+    "en": 26
+   },
+   {
+    "x": 0.5,
+    "y": 0.62,
+    "z": 1.3,
+    "ko": 25,
+    "en": 29
+   },
+   {
+    "x": 0.5,
+    "y": 0.5,
+    "z": 1.1,
+    "ko": 28,
+    "en": 32
+   }
+  ]
+ },
+ {
+  "id": "w-sorolla-stroll",
+  "region": "world",
+  "title": {
+   "ko": "해변 산책",
+   "en": "Strolling along the Seashore"
+  },
+  "artist": {
+   "ko": "호아킨 소로야",
+   "en": "Joaquín Sorolla"
+  },
+  "date": "1909",
+  "medium": {
+   "ko": "캔버스에 유채, 205×200cm",
+   "en": "Oil on canvas, 205 × 200 cm"
+  },
+  "collection": {
+   "ko": "소로야 미술관, 마드리드",
+   "en": "Museo Sorolla, Madrid"
+  },
+  "wiki": {
+   "en": [
+    "Walk on the Beach"
+   ]
+  },
+  "tagline": {
+   "ko": "바닷바람 속을 걷는 화가의 아내와 딸",
+   "en": "The painter's wife and daughter walk through the sea breeze"
+  },
+  "look": {
+   "ko": [
+    "바람에 날리는 베일을 붙잡고 흰 양산을 든 클로틸데",
+    "모래 위로 길게 늘어진 두 사람의 그림자",
+    "수평선 대신 화면 위쪽을 가로지르는 하얀 물거품"
+   ],
+   "en": [
+    "Clotilde holding down her windblown veil, with a white parasol",
+    "The two long shadows stretching across the sand",
+    "The line of white foam across the top instead of a horizon"
+   ]
+  },
+  "words": [
+   {
+    "en": "parasol",
+    "ko": "양산"
+   },
+   {
+    "en": "breeze",
+    "ko": "산들바람"
+   },
+   {
+    "en": "shadow",
+    "ko": "그림자"
+   }
+  ],
+  "short": {
+   "ko": "흰 옷을 입은 두 여인이 바닷바람을 맞으며 모래밭을 걷습니다. 스페인 화가 호아킨 소로야가 1909년 여름 고향 발렌시아의 바닷가에서 그린 그림으로, 두 사람은 화가의 아내 클로틸데와 큰딸 마리아입니다. 그해 초 뉴욕 전시로 큰 성공을 거둔 뒤 돌아와 그린 작품입니다. 화가는 조금 위에서 내려다보는 자리를 골라 수평선을 없애고, 바다를 파랑과 연보라, 청록의 긴 붓질로 칠했습니다. 아내의 모자 윗부분을 잘라 내고 아래쪽 모래를 비워 두어 사진처럼 한순간을 붙잡은 느낌을 줍니다. 화가의 옛 집이자 작업실인 마드리드 소로야 미술관이 소장하고 있습니다.",
+   "en": "Two women in white walk across the sand as the sea breeze catches their clothes. Joaquín Sorolla painted this in the summer of 1909 on the beach of his home city, Valencia: the women are his wife Clotilde and their eldest daughter María. He made it soon after a hugely successful exhibition in New York earlier that year. Looking down from a slightly higher point, he left out the horizon and painted the sea in long strokes of blue, mauve and turquoise. Cutting off the top of Clotilde's hat and leaving a band of empty sand gives the scene the feel of a snapshot. The painting belongs to the Museo Sorolla in Madrid, the artist's former home and studio."
+  },
+  "commons": "Joaquín Sorolla y Bastida - Strolling along the Seashore - Google Art Project.jpg",
+  "text": {
+   "ko": "흰 옷을 입은 두 여인이 바닷가 모래밭을 걷습니다. 바닷바람에 치맛자락과 얇은 천이 뒤로 날리고, 두 사람 뒤로는 푸른 바다가 화면 위쪽까지 차오릅니다. 스페인 화가 호아킨 소로야가 1909년 여름에 그린 '해변 산책'입니다. 두 사람은 화가의 아내 클로틸데와 큰딸 마리아입니다. 가로세로 2미터쯤 되는 거의 정사각형 캔버스에 두 사람을 실물에 가까운 크기로 그렸습니다. 소로야는 1863년 발렌시아에서 태어나 두 살 무렵 부모를 잃고 친척 손에서 자랐습니다. 1900년 파리 만국박람회에서 대상을 받으며 유럽에 이름을 알렸습니다. 1909년 초 그는 뉴욕에서 미국 첫 전시를 열어 큰 성공을 거두었습니다. 그해 여름 고향 발렌시아의 바닷가로 돌아와 쉼 없이 그렸고, 이 그림도 그때 나왔습니다. 이제 왼쪽의 클로틸데를 보십시오. 넓은 밀짚모자를 쓰고, 바람에 날리는 얇은 베일을 오른손으로 붙잡고 있습니다. 왼손에는 펼친 흰 양산을 들었습니다. 모자 윗부분은 화면 가장자리에서 잘려 나갔습니다. 그 곁의 마리아를 보십시오. 얼굴을 드러낸 채 걸으며, 벗은 모자를 손에 들었습니다. 두 사람 모두 흰 옷이지만, 그 흰색 속에는 파랑과 노랑, 보라가 섞여 있습니다. 발치를 보십시오. 해가 낮게 기울어 모래 위로 두 사람의 그림자가 길게 늘어집니다. 화면 아래쪽에는 빈 모래밭이 넓은 띠처럼 남아 있습니다. 눈을 위로 올려 보십시오. 화가가 조금 위에서 내려다본 탓에 수평선이 보이지 않습니다. 대신 하얀 물거품 한 줄이 화면 위쪽을 가로지릅니다. 물과 물가는 파랑, 연보라, 청록의 긴 붓질로 칠해 뒤에 친 막처럼 보입니다. 모자를 자르고 모래를 비워 둔 구도는 사진처럼 한순간을 붙잡은 느낌을 줍니다. 소로야는 이 바닷가에서 일하는 어부와 물놀이하는 아이들을 즐겨 그렸지만, 이 그림은 잘 차려입은 사람들이 물가를 거니는 우아한 산책 장면입니다. 화가는 이 그림을 세상을 떠날 때까지 곁에 두었습니다. 지금은 마드리드의 옛 집이자 작업실인 소로야 미술관에 있습니다. 아내 클로틸데가 집과 작품을 나라에 남겨 1932년 미술관이 문을 열었습니다. 한 걸음 물러나 보십시오. 바람과 햇빛 속을 두 사람이 천천히 걸어갑니다. 오늘 바람이 불면 잠시 멈추어, 그 바람이 무엇을 흔들고 가는지 바라보시기 바랍니다.",
+   "en": "Two women dressed in white are walking across the sand by the sea. The breeze pulls their skirts and thin veils backward, and behind them the blue water rises almost to the top of the picture. This is Strolling along the Seashore, painted in the summer of 1909 by the Spanish artist Joaquín Sorolla. The two women are his wife, Clotilde, and their eldest daughter, María. The canvas is almost square, about two metres each way, and the figures are close to life-size. Sorolla was born in Valencia in 1863. He lost both parents at about the age of two and was raised by relatives. In 1900 he won the Grand Prix at the World's Fair in Paris, and his name spread across Europe. Early in 1909 he held his first American exhibition in New York, and it was a huge success. That summer he went home to the beach at Valencia and painted almost without stopping. This picture comes from that summer. Now look at Clotilde, on the left. She wears a wide straw hat, and with her right hand she holds down a thin veil that the wind keeps trying to lift away. In her left hand she carries an open white parasol. Notice that the top of her hat is cut off by the edge of the canvas. Now look at María beside her. Her face is open to the light, and she lets her own hat hang from one hand. Both women wear white, but look closely. That white is mixed with touches of blue, yellow and lilac. Look down at their feet. Long shadows stretch across the sand, because the sun is already low. Along the bottom of the picture, a wide band of empty sand is left with nothing in it. Now raise your eyes. Sorolla looked down on the scene from a slightly higher point, so there is no horizon. Instead, a single white line of foam runs across the top. The water is painted in long strokes of blue, mauve and turquoise, which the museum calls an abstract backdrop. The cut-off hat and the empty sand make it feel like a photograph of one passing moment. On this beach Sorolla often painted fishermen at work and children in the waves. This is different: an elegant stroll by well-dressed people beside the sea. Sorolla kept this painting until his death in 1923. Today it hangs in the Sorolla Museum in Madrid, his former home and studio. Clotilde left the house and its contents to the state, and the museum opened in 1932. Step back and take in the whole canvas. Two people walk slowly through wind and sunlight. Today, when the wind blows, stop for a moment and watch what it moves as it passes."
+  },
+  "tour": [
+   {
+    "x": 0.5,
+    "y": 0.5,
+    "z": 1,
+    "ko": 0,
+    "en": 0
+   },
+   {
+    "x": 0.5,
+    "y": 0.5,
+    "z": 1,
+    "ko": 2,
+    "en": 2
+   },
+   {
+    "x": 0.5,
+    "y": 0.45,
+    "z": 1.25,
+    "ko": 5,
+    "en": 5
+   },
+   {
+    "x": 0.5,
+    "y": 0.45,
+    "z": 1.25,
+    "ko": 7,
+    "en": 8
+   },
+   {
+    "x": 0.42,
+    "y": 0.4,
+    "z": 1.45,
+    "ko": 9,
+    "en": 11
+   },
+   {
+    "x": 0.42,
+    "y": 0.4,
+    "z": 1.45,
+    "ko": 13,
+    "en": 15
+   },
+   {
+    "x": 0.58,
+    "y": 0.55,
+    "z": 1.45,
+    "ko": 16,
+    "en": 19
+   },
+   {
+    "x": 0.58,
+    "y": 0.55,
+    "z": 1.45,
+    "ko": 18,
+    "en": 22
+   },
+   {
+    "x": 0.5,
+    "y": 0.62,
+    "z": 1.3,
+    "ko": 22,
+    "en": 26
+   },
+   {
+    "x": 0.5,
+    "y": 0.62,
+    "z": 1.3,
+    "ko": 24,
+    "en": 29
+   },
+   {
+    "x": 0.5,
+    "y": 0.5,
+    "z": 1.1,
+    "ko": 27,
+    "en": 32
+   }
+  ]
+ },
+ {
+  "id": "w-kuroda-lakeside",
+  "region": "world",
+  "title": {
+   "ko": "호반 (湖畔)",
+   "en": "Lakeside"
+  },
+  "artist": {
+   "ko": "구로다 세이키",
+   "en": "Kuroda Seiki"
+  },
+  "date": "1897",
+  "medium": {
+   "ko": "캔버스에 유채, 69×84.7cm",
+   "en": "Oil on canvas, 69 × 84.7 cm"
+  },
+  "collection": {
+   "ko": "도쿄국립박물관 (중요문화재)",
+   "en": "Tokyo National Museum (Important Cultural Property)"
+  },
+  "wiki": {
+   "en": [
+    "Kuroda Seiki"
+   ]
+  },
+  "tagline": {
+   "ko": "한여름 호숫가, 부채를 든 여인의 짧은 휴식",
+   "en": "A short rest with a fan by a lake in midsummer"
+  },
+  "look": {
+   "ko": [
+    "흰 바탕에 분홍 싸리꽃을 그린 둥근 부채",
+    "흰 세로줄무늬가 들어간 연한 푸른 유카타",
+    "엷은 푸른빛으로 가라앉은 호수와 건너편 산"
+   ],
+   "en": [
+    "The round white fan painted with pink bush clover",
+    "The pale blue summer kimono with thin white stripes",
+    "The lake and far mountains softened in pale blue"
+   ]
+  },
+  "words": [
+   {
+    "en": "fan",
+    "ko": "부채"
+   },
+   {
+    "en": "humid",
+    "ko": "습한"
+   },
+   {
+    "en": "pale",
+    "ko": "엷은, 옅은"
+   }
+  ],
+  "short": {
+   "ko": "엷은 푸른빛 속에 유카타 차림의 여인이 바위에 앉아 둥근 부채를 들고 쉬고 있습니다. 일본 서양화의 선구자 구로다 세이키가 1897년 여름 하코네의 아시노코 호숫가에서 그린 '호반'입니다. 모델은 뒷날 그의 아내가 된 데루코로, 바위에 앉아 보라는 말에 앉은 것이 시작이었고 그림은 한 달쯤 걸려 완성되었다고 회상했습니다. 구로다는 파리에서 라파엘 콜랭에게 배운 외광 표현을 일본의 여름 풍경에 옮겼습니다. 화면 전체를 차가운 색조로 묶고 물감을 얇게 발라, 고원의 습한 공기와 고요한 물빛을 담았습니다. 도쿄국립박물관 구로다 기념관이 소장하며, 1999년 중요문화재로 지정되었습니다.",
+   "en": "In a soft, pale blue light, a woman in a summer kimono sits on a rock by a lake, resting with a round fan. Kuroda Seiki, a pioneer of Western-style painting in Japan, painted Lakeside in the summer of 1897 on the shore of Lake Ashi in Hakone. The model, Teruko, later his wife, recalled that he simply asked her to sit on a rock, and that the painting took about a month. Kuroda had learned to paint outdoor light in Paris under Raphaël Collin, and here he applied it to a Japanese summer scene. Thin paint and cool, pale tones capture the humid highland air and the still water. The painting belongs to the Tokyo National Museum's Kuroda Memorial Hall and was named an Important Cultural Property in 1999."
+  },
+  "commons": "Kuroda-seiki-kohan00-6-1b.jpeg",
+  "text": {
+   "ko": "엷은 푸른빛 속에 유카타를 입은 여인이 바위에 앉아 쉬고 있습니다. 손에는 둥근 부채를 들었고, 뒤로는 잔잔한 호수와 건너편 산줄기가 펼쳐집니다. 일본 화가 구로다 세이키가 1897년 하코네의 아시노코 호숫가에서 그린 '호반'입니다. 캔버스에 유채로 그렸고, 1999년 일본 중요문화재로 지정되었습니다. 구로다는 1866년 가고시마에서 태어났습니다. 법률을 공부하러 프랑스에 갔다가 화가의 길을 택해 파리에서 라파엘 콜랭에게 배웠고, 1893년 돌아와 밝은 빛의 새 화풍을 일본에 들여왔습니다. 1897년 여름, 구로다는 더위를 피해 하코네에 머물렀습니다. 모델은 뒷날 그의 아내가 된 가네코 다네, 훗날의 데루코입니다. 그녀는 호숫가에서 일하는 그를 보러 갔다가 저 바위에 앉아 보라는 말을 들었다고 회상했습니다. 다음 날부터 그는 그녀와 뒤의 풍경을 그리기 시작했습니다. 비 오고 안개 낀 날이 있어 모두 한 달쯤 걸렸다고 합니다. 그 무렵 구로다는 날마다 호수의 물을 그리는 연구를 하고 있었습니다. 이제 여인의 옷을 보십시오. 연한 푸른 바탕에 흰 세로줄무늬가 들어간 무명 유카타에, 짙은 남색 띠를 둘렀습니다. 옷의 빛깔과 무늬가 뒤쪽 물빛과 서로 통합니다. 손에 든 부채를 보십시오. 흰 바탕에 분홍빛 싸리꽃을 그린 둥근 부채로, 묵던 여관의 것이었다고 합니다. 여인은 고개를 왼쪽으로 비스듬히 돌려 먼 곳을 바라봅니다. 화면 전체를 보십시오. 엷은 푸른색을 바탕으로 차가운 색조로 묶어, 여름 고원의 습기 머금은 공기를 담았습니다. 물감을 얇게 발라 유화 특유의 번들거림도 피했습니다. 그 가운데 입술과 비녀의 붉은빛이 작게 빛납니다. 이 크기의 캔버스는 보통 세로로 세워 인물을 그릴 때 씁니다. 구로다는 이것을 가로로 눕혀 호수와 산까지 함께 담았습니다. 그림은 그해 가을 백마회 전시에 '피서'라는 제목으로 처음 걸렸고, 1900년 파리 만국박람회에도 나갔습니다. 1967년에는 우표에 실려 널리 사랑받게 되었습니다. 구로다는 1924년에 세상을 떠났고, 그림은 그의 유언으로 세워진 미술연구소에 기증되었습니다. 지금은 도쿄국립박물관의 구로다 기념관 소장품입니다. 한 걸음 물러나 보십시오. 한여름 호숫가에서 부채를 든 한 사람이 잠시 더위를 잊고 앉아 있습니다. 오늘 하루, 잠깐 앉아 바람을 맞을 자리를 하나 찾아보시기 바랍니다.",
+   "en": "In a soft, pale blue light, a woman in a summer kimono sits resting on a rock. She holds a round fan in her hand, and behind her lie a calm lake and a line of mountains on the far shore. This is Lakeside, painted in 1897 by the Japanese artist Kuroda Seiki on the shore of Lake Ashi in Hakone, a mountain area southwest of Tokyo. It is an oil painting on canvas, and in 1999 it was designated an Important Cultural Property of Japan. Kuroda was born in Kagoshima in 1866. He went to France to study law, but chose painting instead and trained in Paris under Raphaël Collin. He came home in 1893 and brought a bright new style of outdoor light to Japan. In the summer of 1897, Kuroda went to Hakone to escape the heat. His model was Kaneko Tane, later called Teruko, who would become his wife. She remembered going to watch him work by the lake. He asked her to sit on a rock, and she did. From the next day he began to paint her and the view behind her. With rainy and foggy days, it took about a month. At that time, she said, he had been studying the water of the lake every day. Now look at her clothes. She wears a cotton summer kimono, pale blue with thin white stripes, and a dark blue sash. The colour and pattern of the kimono echo the water behind her. Look at the fan in her hand. It is round and white, with small pink bush clover flowers, and she later said it came from the inn where they stayed. She turns her head slightly to the left and gazes into the distance. Now take in the colours of the whole picture. Cool, pale blues hold everything together and capture the humid air of the highlands in summer. The paint is thin, without the heavy shine of much oil painting. Against all that blue, the small red notes of her lips and hairpin stand out. A canvas of this size was normally used upright, for a figure. Kuroda turned it on its side so that the lake and the mountains could share the space with her. That autumn it was first shown at the White Horse Society, the group Kuroda had founded, under the title Summering. In 1900 it went to the World's Fair in Paris. In 1967 it appeared on a postage stamp, and it is now one of the best-loved Western-style paintings in Japan. Kuroda died in 1924, and the painting was given to an art research institute set up under his will. Today it belongs to the Tokyo National Museum, as part of the Kuroda Memorial Hall collection in Ueno. Step back and look at the whole scene. By a lake in midsummer, a woman with a fan sits quietly and forgets the heat for a while. Today, find one place where you can sit for a moment and feel a cool breeze."
+  },
+  "tour": [
+   {
+    "x": 0.5,
+    "y": 0.5,
+    "z": 1,
+    "ko": 0,
+    "en": 0
+   },
+   {
+    "x": 0.5,
+    "y": 0.5,
+    "z": 1,
+    "ko": 2,
+    "en": 2
+   },
+   {
+    "x": 0.5,
+    "y": 0.45,
+    "z": 1.25,
+    "ko": 4,
+    "en": 4
+   },
+   {
+    "x": 0.5,
+    "y": 0.45,
+    "z": 1.25,
+    "ko": 6,
+    "en": 7
+   },
+   {
+    "x": 0.42,
+    "y": 0.4,
+    "z": 1.45,
+    "ko": 9,
+    "en": 11
+   },
+   {
+    "x": 0.42,
+    "y": 0.4,
+    "z": 1.45,
+    "ko": 12,
+    "en": 14
+   },
+   {
+    "x": 0.58,
+    "y": 0.55,
+    "z": 1.45,
+    "ko": 15,
+    "en": 17
+   },
+   {
+    "x": 0.58,
+    "y": 0.55,
+    "z": 1.45,
+    "ko": 18,
+    "en": 20
+   },
+   {
+    "x": 0.5,
+    "y": 0.62,
+    "z": 1.3,
+    "ko": 21,
+    "en": 24
+   },
+   {
+    "x": 0.5,
+    "y": 0.62,
+    "z": 1.3,
+    "ko": 23,
+    "en": 26
+   },
+   {
+    "x": 0.5,
+    "y": 0.5,
+    "z": 1.1,
+    "ko": 25,
+    "en": 29
+   },
+   {
+    "x": 0.5,
+    "y": 0.5,
+    "z": 1.1,
+    "ko": 27,
+    "en": 31
+   }
+  ]
+ },
+ {
+  "id": "k-jangseungeop-gimyeong",
+  "region": "kr",
+  "title": {
+   "ko": "기명절지도 10폭 병풍 (器皿折枝圖)",
+   "en": "Still Life with Bronze Vessels and Flowering Plants"
+  },
+  "artist": {
+   "ko": "전 장승업",
+   "en": "Attributed to Jang Seung-eop (Owon)"
+  },
+  "date": "1894",
+  "medium": {
+   "ko": "종이에 수묵, 10폭 병풍, 195.6×431.8cm",
+   "en": "Ten-panel folding screen, ink on paper, 195.6 × 431.8 cm"
+  },
+  "collection": {
+   "ko": "메트로폴리탄 미술관, 뉴욕",
+   "en": "The Metropolitan Museum of Art, New York"
+  },
+  "wiki": {
+   "en": [
+    "Chang Sŭngŏp"
+   ],
+   "ko": [
+    "장승업"
+   ]
+  },
+  "tagline": {
+   "ko": "옛 청동 그릇과 꽃가지로 세운 열 폭의 벽",
+   "en": "A ten-panel wall of old bronzes and flowering branches"
+  },
+  "look": {
+   "ko": [
+    "열 폭에 걸쳐 이어지는 옛 청동 그릇들",
+    "그릇 곁에 놓인 꽃 핀 가지",
+    "색 없이 먹의 짙고 옅음만으로 낸 금속의 무게"
+   ],
+   "en": [
+    "The old bronze vessels running across ten panels",
+    "The flowering branches set beside the vessels",
+    "The weight of metal made only from dark and pale ink"
+   ]
+  },
+  "words": [
+   {
+    "en": "bronze",
+    "ko": "청동"
+   },
+   {
+    "en": "vessel",
+    "ko": "그릇"
+   },
+   {
+    "en": "folding screen",
+    "ko": "병풍"
+   }
+  ],
+  "short": {
+   "ko": "열 폭의 키 큰 화면에 옛 청동 그릇과 꽃 핀 가지가 이어지는 병풍입니다. 조선 말 화가 장승업이 그렸다고 전하는 기명절지도로, 메트로폴리탄 미술관은 1894년 작으로 적되 작가는 전칭으로 남겨 둡니다. 기명절지화는 옛 청동기나 도자기에 꽃가지와 과일을 곁들인 정물 그림으로, 장승업이 청나라 그림을 받아들여 새로 만든 형식으로 평가됩니다. 청동기는 선비의 품격을, 꽃과 과일은 부귀와 장수를 바라는 마음을 담아 궁중에서 민간까지 사랑받았습니다. 장승업은 1843년에 태어나 가난 속에 자랐고, 오늘날 단원, 혜원과 함께 삼원으로 불립니다. 높이 약 196센티미터, 너비 4미터가 넘는 이 병풍은 종이에 먹만으로 그렸습니다.",
+   "en": "Across ten tall panels, old bronze vessels and flowering branches follow one another. This folding screen of still life is attributed to Jang Seung-eop, a painter of the late Joseon dynasty; the Metropolitan Museum of Art dates it to 1894 but does not claim it is certainly his. In this genre, ancient bronze or ceramic pots are shown with flowering branches and fruit, a form Jang is credited with creating from Chinese models. The bronzes stood for a scholar's taste, and the flowers and fruit for wealth and long life, so such pictures were loved from the palace to ordinary homes. Born in 1843, Jang grew up poor, and he is remembered with Danwon and Hyewon as one of the Three Wons of Joseon painting. Nearly two metres tall and over four metres wide, the screen is painted in ink alone on paper."
+  },
+  "commons": "전(傳) 오원 장승업 (1843–1897) 청동기와 화초가 있는 정물화 조선-傳 吾園 張承業 器皿折枝圖 朝鮮-Still life with bronze vessels and flowering plants MET DP328595.jpg",
+  "text": {
+   "ko": "키 큰 화면 열 폭이 나란히 섰습니다. 그 위로 옛 청동 그릇과 꽃이 핀 가지가 이어지는데, 모두 먹 하나로 그렸습니다. 조선 말 화가 장승업이 그렸다고 전하는 기명절지도 열 폭 병풍입니다. 뉴욕 메트로폴리탄 미술관이 소장하며, 제작 연도를 1894년으로 적습니다. 다만 미술관은 그의 작품이라고 단정하지 않고 전칭으로 남겨 둡니다. 크기를 떠올려 보십시오. 높이는 약 196센티미터로 어른 키보다 높고, 펼친 너비는 4미터가 넘습니다. 접으면 약 43센티미터로 줄어듭니다. 기명은 그릇, 절지는 꺾은 꽃가지를 뜻합니다. 기명절지화는 옛 청동기나 도자기에 꽃가지와 과일, 채소를 곁들인 정물 그림으로, 뿌리는 옛 기물과 서재의 물건을 그리던 중국 그림에 있습니다. 한국민족문화대백과사전은 장승업이 청나라 양주와 상해에서 유행하던 그릇과 꽃 그림을 받아들여 이 형식을 새로 만들었다고 설명합니다. 화가 김용준도 이런 그림을 조선 화단에 퍼뜨린 사람이 오원이라고 썼습니다. 그림 속 사물에는 뜻이 담겼습니다. 청동기는 학식 있는 선비의 품격을, 꽃과 과일과 괴석은 부귀와 장수, 많은 아들을 바라는 마음을 나타냅니다. 그래서 궁중에서 민간까지 두루 사랑받았습니다. 이제 그릇들을 보십시오. 장승업은 흔히 먹에 색을 곁들였지만, 미술관은 이 병풍을 종이에 먹으로만 적습니다. 색 없이 먹의 짙고 옅음만으로 금속의 무게와 빛을 가늠하게 됩니다. 꽃가지로 눈을 옮겨 보십시오. 백과사전은 장승업 기명절지의 특징으로 대담한 붓질과 기물이 지그재그로 가득 찬 구도를 꼽습니다. 폭에서 폭으로 천천히 따라가며 그 특징을 찾아보십시오. 장승업은 1843년에 태어나 1897년에 세상을 떠났습니다. 일찍 부모를 잃고 가난하게 자라, 역관 이응헌의 집에 얹혀살며 옛 명화를 어깨너머로 보았습니다. 마흔 무렵 이름이 높아져 왕실의 부름을 받았고, 술을 몹시 즐겼다고 전합니다. 오늘날 단원, 혜원과 함께 삼원으로 불립니다. 그의 화풍은 안중식과 조석진에게 이어졌고, 기명절지화는 20세기 초 한국 화단에서 크게 유행했습니다. 이 병풍은 2014년 기증으로 미술관에 들어갔습니다. 한 걸음 물러나 열 폭을 한눈에 보십시오. 오래된 그릇과 막 핀 꽃이 한 화면에서 만나 좋은 날을 비는 벽이 됩니다. 오늘 하루, 오래 곁에 둔 물건 옆에 꽃 한 가지를 놓아 보시기 바랍니다.",
+   "en": "Ten tall panels stand side by side like a wall. Across them run old bronze vessels and branches of flowering plants, and everything is painted in black ink alone. This is a ten-panel folding screen attributed to Jang Seung-eop, a painter of the last years of the Joseon dynasty. The Metropolitan Museum of Art in New York owns it and dates it to 1894. The museum calls it attributed, so it does not claim for certain that he painted it. Think about its size. It stands about 196 centimetres high, taller than most adults, and opened out it is over four metres wide. Folded, it is only about 43 centimetres across. The Korean name of the genre means vessels and cut branches. It is a kind of still life that shows ancient bronze or ceramic pots with flowering branches, fruit and vegetables. Its roots lie in Chinese pictures of antiques and objects from a scholar's study. The Encyclopedia of Korean Culture says Jang created this form after studying vessel and flower paintings popular in the Chinese cities of Yangzhou and Shanghai. The painter Kim Yong-jun also wrote that Owon was the one who spread such pictures in Korea. Each object carries a meaning. Ancient bronzes stood for the good taste of a learned scholar. Flowers, fruit and strange rocks stood for wealth, long life and many sons. So the genre was loved everywhere, from the royal palace to ordinary homes. Now look at the vessels. Jang often added colour to his ink, but the museum lists this screen as ink on paper only. Without colour, the weight and shine of the metal must come from the dark and pale tones of the ink. Move your eyes to the flowering branches. The encyclopedia names bold, free brushwork and a zigzag layout packed with objects as marks of Jang's still lifes. Walk slowly from panel to panel and see whether you can find them here. Jang Seung-eop was born in 1843 and died in 1897. He lost his parents early and grew up poor. Living in the house of Yi Eung-heon, a government interpreter, he could study old masterpieces. Around the age of forty he was called to paint for the royal court. Stories say he loved drink and hated rules. Today he is remembered with Danwon and Hyewon as one of the Three Wons of Joseon painting. His style passed to An Jung-sik and Jo Seok-jin, and in the early twentieth century this kind of still life became very popular in Korean painting. The screen came to the museum as a gift in 2014. Step back and take in all ten panels at once. Old vessels and fresh blossoms meet on one long surface and become a wall of good wishes. Today, try placing a single flower beside something old you have kept for years."
+  },
+  "tour": [
+   {
+    "x": 0.5,
+    "y": 0.5,
+    "z": 1,
+    "ko": 0,
+    "en": 0
+   },
+   {
+    "x": 0.5,
+    "y": 0.5,
+    "z": 1,
+    "ko": 2,
+    "en": 2
+   },
+   {
+    "x": 0.5,
+    "y": 0.45,
+    "z": 1.25,
+    "ko": 5,
+    "en": 5
+   },
+   {
+    "x": 0.5,
+    "y": 0.45,
+    "z": 1.25,
+    "ko": 8,
+    "en": 8
+   },
+   {
+    "x": 0.42,
+    "y": 0.4,
+    "z": 1.45,
+    "ko": 10,
+    "en": 11
+   },
+   {
+    "x": 0.42,
+    "y": 0.4,
+    "z": 1.45,
+    "ko": 12,
+    "en": 13
+   },
+   {
+    "x": 0.58,
+    "y": 0.55,
+    "z": 1.45,
+    "ko": 15,
+    "en": 17
+   },
+   {
+    "x": 0.58,
+    "y": 0.55,
+    "z": 1.45,
+    "ko": 18,
+    "en": 20
+   },
+   {
+    "x": 0.5,
+    "y": 0.62,
+    "z": 1.3,
+    "ko": 21,
+    "en": 23
+   },
+   {
+    "x": 0.5,
+    "y": 0.62,
+    "z": 1.3,
+    "ko": 25,
+    "en": 29
+   },
+   {
+    "x": 0.5,
+    "y": 0.5,
+    "z": 1.1,
+    "ko": 27,
+    "en": 31
+   }
+  ]
+ },
+ {
+  "id": "w-hals-cavalier",
+  "region": "world",
+  "title": {
+   "ko": "웃는 기사",
+   "en": "The Laughing Cavalier"
+  },
+  "artist": {
+   "ko": "프란스 할스",
+   "en": "Frans Hals"
+  },
+  "date": "1624",
+  "medium": {
+   "ko": "캔버스에 유채, 83×67.3cm",
+   "en": "Oil on canvas, 83 × 67.3 cm"
+  },
+  "collection": {
+   "ko": "월리스 컬렉션, 런던",
+   "en": "The Wallace Collection, London"
+  },
+  "wiki": {
+   "en": [
+    "Laughing Cavalier"
+   ]
+  },
+  "tagline": {
+   "ko": "웃지 않는데 '웃는 기사'가 된 이름 모를 청년",
+   "en": "A nameless young man who smiles, but never quite laughs"
+  },
+  "look": {
+   "ko": [
+    "위로 말려 올라간 콧수염과 다문 입가의 엷은 미소",
+    "꿀벌·화살·사랑의 매듭을 수놓은 소매",
+    "나이 스물여섯과 1624년을 적은 오른쪽 위의 글귀"
+   ],
+   "en": [
+    "The upturned moustache and the faint, closed-lip smile",
+    "The sleeve embroidered with bees, arrows and lovers' knots",
+    "The inscription at top right giving his age, 26, and the year 1624"
+   ]
+  },
+  "words": [
+   {
+    "en": "embroidery",
+    "ko": "자수"
+   },
+   {
+    "en": "moustache",
+    "ko": "콧수염"
+   },
+   {
+    "en": "confident",
+    "ko": "자신감 있는"
+   }
+  ],
+  "short": {
+   "ko": "검은 모자를 쓴 젊은 남자가 왼손을 허리에 얹고 우리를 똑바로 바라봅니다. 네덜란드 화가 프란스 할스가 1624년에 그린 초상화로, 런던 월리스 컬렉션은 이 그림을 할스의 가장 유명한 작품으로 소개합니다. 오른쪽 위 글귀로 그가 스물여섯 살이었다는 것은 알지만, 이름은 전하지 않습니다. '웃는 기사'라는 제목도 할스가 아니라 19세기 영국에서 붙은 별칭이며, 그는 실제로 입을 다문 채 미소 지을 뿐입니다. 소매에는 꿀벌, 화살, 사랑의 매듭처럼 사랑의 기쁨과 아픔을 뜻하는 무늬가 수놓여 있습니다. 가까이 보면 화려한 옷과 레이스가 길고 빠른 붓질로 그려져 있습니다.",
+   "en": "A young man in a black hat rests his left hand on his hip and looks straight at us. Frans Hals painted this portrait in 1624, and the Wallace Collection in London calls it his most famous work. An inscription at top right tells us the man was 26, but his name is lost. The title is not Hals's own; it was given in nineteenth-century Britain, and in fact the man only smiles, with his lips closed. His sleeve is embroidered with bees, arrows and lovers' knots, emblems of the pleasures and pains of love. Up close, the rich costume and lace dissolve into long, quick brushstrokes."
+  },
+  "commons": "Frans Hals – The Laughing Cavalier.jpg",
+  "text": {
+   "ko": "검은 모자를 쓴 젊은 남자가 몸을 살짝 돌린 채 우리를 똑바로 바라봅니다. 위로 말려 올라간 콧수염 아래 입가에는 엷은 미소가 걸려 있습니다. 왼손은 허리에 얹었고, 화려하게 수놓은 소매가 화면 아래쪽을 채웁니다. 네덜란드 화가 프란스 할스가 1624년에 그린 초상화로, 흔히 '웃는 기사'라고 부릅니다. 캔버스에 유채로, 세로 83센티미터, 가로 약 67센티미터입니다. 런던의 월리스 컬렉션이 소장하며, 미술관은 이 그림을 할스의 가장 유명한 작품으로 소개합니다. 할스는 1582년 무렵 안트베르펜에서 태어났습니다. 어릴 때 가족이 전쟁을 피해 하를럼으로 옮겼고, 그는 평생 그곳에서 일했습니다. 1666년 그곳에서 세상을 떠났습니다. 오른쪽 위를 보십시오. 그의 나이 스물여섯, 1624년이라는 라틴어 글귀가 적혀 있습니다. 하지만 이름은 어디에도 없습니다. 그가 누구인지는 아직 확실히 모릅니다. 제목에도 사연이 있습니다. 할스가 붙인 이름이 아닙니다. 1870년대 런던 전시 도록에는 그냥 '기사'로 실렸고, 1888년 무렵 지금의 '웃는 기사'가 되었습니다. 그런데 그는 소리 내어 웃지 않습니다. 입을 다문 채 미소 지을 뿐이고, 군인이었는지도 알 수 없습니다. 이제 얼굴을 보십시오. 위로 치켜 올라간 콧수염이 미소를 더 크게 보이게 합니다. 눈이 정면을 향하고 있어, 어디에 서도 그가 나를 따라보는 듯합니다. 소매의 자수를 가까이 보십시오. 꿀벌, 화살, 불꽃이 이는 풍요의 뿔, 사랑의 매듭, 불의 혀가 수놓여 있습니다. 모두 사랑의 기쁨과 아픔을 뜻하던 상징입니다. 옷은 당시 부유층만 입을 수 있던 최신 프랑스 유행입니다. 가까이 다가가면 정교해 보이던 레이스와 자수가 길고 빠른 붓질로 흩어집니다. 검은 옷도 한 가지 검정이 아닙니다. 빈센트 반 고흐는 할스에게 검정이 스물일곱 가지는 있었을 것이라며 감탄했습니다. 1865년 파리 경매에서 영국의 하트퍼드 후작이 로스차일드 남작과 겨룬 끝에 이 그림을 샀습니다. 그의 수집품은 훗날 영국 국민에게 기증되어 월리스 컬렉션이 되었습니다. 한 걸음 물러나 보십시오. 이름도 직업도 잊혔지만, 사백 년 전 스물여섯 살 청년의 자신감 있는 눈빛은 그대로 남았습니다. 오늘 하루, 거울 속 내 얼굴에 작은 미소 하나를 얹어 보시기 바랍니다.",
+   "en": "A young man in a broad black hat turns his body slightly and looks straight at us. Under his upturned moustache, a faint smile plays on his lips. His left hand rests on his hip, and a richly embroidered sleeve fills the lower part of the picture. This portrait was painted in 1624 by the Dutch artist Frans Hals and is known as The Laughing Cavalier. It is oil on canvas, 83 centimetres high and about 67 centimetres wide. It hangs in the Wallace Collection in London, which calls it the most famous painting Hals ever made. Hals was born around 1582 in Antwerp. When he was a small child, his family moved north to Haarlem to escape the turmoil of war, and he worked there for the rest of his life. He died in Haarlem in 1666. Look at the top right corner. A short Latin inscription says that he was 26 years old, in the year 1624. But his name appears nowhere. Scholars have suggested names, but no one knows for certain who he was. The title has a story too. Hals never gave the picture this name. In a London exhibition catalogue of the 1870s it was simply called A Cavalier, and by around 1888 it had become The Laughing Cavalier. Yet the man is not laughing. His lips are closed in a smile, and we do not even know whether he was a soldier. Now look at his face. The upturned moustache makes the smile look wider than it really is. His eyes look straight ahead, so wherever you stand, they seem to follow you. Look closely at the embroidery on his sleeve. You can find bees, arrows, flaming horns of plenty, lovers' knots and tongues of fire. In his time, these were signs of the pleasures and pains of love. The costume itself follows the latest French fashion, which only the Dutch elite could afford. Step closer, and the fine lace and embroidery break up into long, quick brushstrokes. The black clothes are not one flat black either. Vincent van Gogh, full of admiration, said that Hals must have had twenty-seven different blacks. In 1865, at an auction in Paris, the 4th Marquess of Hertford bought the painting after a bidding battle with Baron James de Rothschild. His collection was later given to the British nation and became the Wallace Collection. Step back and take in the whole portrait. His name and his work are lost, but the confident look of a young man of 26 has lasted four hundred years. Today, try giving the face in the mirror a small, knowing smile."
+  },
+  "tour": [
+   {
+    "x": 0.5,
+    "y": 0.5,
+    "z": 1,
+    "ko": 0,
+    "en": 0
+   },
+   {
+    "x": 0.5,
+    "y": 0.5,
+    "z": 1,
+    "ko": 3,
+    "en": 3
+   },
+   {
+    "x": 0.5,
+    "y": 0.45,
+    "z": 1.25,
+    "ko": 6,
+    "en": 6
+   },
+   {
+    "x": 0.5,
+    "y": 0.45,
+    "z": 1.25,
+    "ko": 9,
+    "en": 9
+   },
+   {
+    "x": 0.42,
+    "y": 0.4,
+    "z": 1.45,
+    "ko": 12,
+    "en": 13
+   },
+   {
+    "x": 0.58,
+    "y": 0.55,
+    "z": 1.45,
+    "ko": 17,
+    "en": 18
+   },
+   {
+    "x": 0.58,
+    "y": 0.55,
+    "z": 1.45,
+    "ko": 19,
+    "en": 21
+   },
+   {
+    "x": 0.5,
+    "y": 0.62,
+    "z": 1.3,
+    "ko": 23,
+    "en": 25
+   },
+   {
+    "x": 0.5,
+    "y": 0.62,
+    "z": 1.3,
+    "ko": 26,
+    "en": 28
+   },
+   {
+    "x": 0.5,
+    "y": 0.5,
+    "z": 1.1,
+    "ko": 28,
+    "en": 30
+   }
+  ]
+ },
+ {
+  "id": "w-duncanson-rainbow",
+  "region": "world",
+  "title": {
+   "ko": "무지개가 있는 풍경",
+   "en": "Landscape with Rainbow"
+  },
+  "artist": {
+   "ko": "로버트 S. 던컨슨",
+   "en": "Robert S. Duncanson"
+  },
+  "date": "1859",
+  "medium": {
+   "ko": "캔버스에 유채, 76.3×132.7cm",
+   "en": "Oil on canvas, 76.3 × 132.7 cm"
+  },
+  "collection": {
+   "ko": "스미스소니언 미국미술관, 워싱턴 D.C.",
+   "en": "Smithsonian American Art Museum, Washington, D.C."
+  },
+  "wiki": {
+   "en": [
+    "Landscape with Rainbow (Duncanson)"
+   ]
+  },
+  "tagline": {
+   "ko": "남북전쟁 직전, 무지개 끝의 집으로 걸어가는 두 사람",
+   "en": "On the eve of the Civil War, a couple walks toward a home at the rainbow's end"
+  },
+  "look": {
+   "ko": [
+    "들판 위로 크게 걸린 무지개와 그 끝의 집",
+    "집을 가리키는 남자와 붉은 옷의 여자, 그리고 개",
+    "집으로 돌아가는 소 떼와 저무는 햇빛"
+   ],
+   "en": [
+    "The great rainbow and the house at its end",
+    "The man pointing to the house, the woman in red, and their dog",
+    "The cattle heading home in the light of the setting sun"
+   ]
+  },
+  "words": [
+   {
+    "en": "rainbow",
+    "ko": "무지개"
+   },
+   {
+    "en": "pasture",
+    "ko": "목초지"
+   },
+   {
+    "en": "hope",
+    "ko": "희망"
+   }
+  ],
+  "short": {
+   "ko": "넓은 초록 들판 위로 무지개가 걸리고, 젊은 남녀가 개와 함께 무지개 끝의 집을 향해 걷습니다. 남북전쟁 무렵 미국에서 가장 이름난 흑인 화가 로버트 S. 던컨슨이 1859년 신시내티에서 그린 풍경화입니다. 뉴욕주에서 자유인 흑인 가정에 태어난 그는 노예제 폐지 운동가들의 후원을 받으며 화가로 자리 잡았습니다. 지형은 오하이오강을 사이에 둔 신시내티와 켄터키주 코빙턴 일대를 떠올리게 합니다. 스미스소니언 미국미술관은 이 그림을 전쟁이 터지기 전 평화를 향한 마지막 희망으로 읽습니다. 2021년 대통령 취임식 날 미국 국회의사당에 걸리기도 했습니다.",
+   "en": "A rainbow arches over green fields as a young couple and their dog walk toward the house at its end. Robert S. Duncanson, America's best-known African American painter around the time of the Civil War, painted it in Cincinnati in 1859. Born into a free Black family in New York State, he built his career with the support of abolitionist patrons. The land recalls the Cincinnati area and Covington, Kentucky, on either side of the Ohio River. The Smithsonian American Art Museum reads the picture as a last hope for peace before the war. On Inauguration Day in 2021, it was displayed at the U.S. Capitol."
+  },
+  "commons": "Landscape with Rainbow SAAM-1983.95.160 1FXD.jpg",
+  "text": {
+   "ko": "넓은 초록 들판 위로 무지개가 크게 걸려 있습니다. 젊은 남녀가 개와 함께 들길을 걷고, 소 떼가 숲속의 집 쪽으로 돌아갑니다. 무지개가 끝나는 곳에 바로 그 집이 있습니다. 미국 화가 로버트 던컨슨이 1859년에 그린 '무지개가 있는 풍경'입니다. 캔버스에 유채로, 세로 약 76센티미터, 가로 약 133센티미터의 화면입니다. 1983년부터 워싱턴의 스미스소니언 미국미술관이 소장하고 있습니다. 던컨슨은 1821년 무렵 뉴욕주 페이엣에서 목수와 칠장이 일을 하던 자유인 흑인 가정에서 태어났습니다. 1840년 무렵 오하이오주 신시내티로 옮겼습니다. 신시내티에는 노예제 폐지 운동가가 많았고, 그들이 그의 그림을 사 주었습니다. 부호 니컬러스 롱워스는 자기 저택 현관홀에 큰 풍경 벽화 여덟 점을 맡겼습니다. 지금의 태프트 미술관입니다. 그는 1853년 유럽에 건너가 옛 거장들의 그림을 공부했습니다. 이제 길 위의 두 사람을 보십시오. 소박한 시골 옷에 모자를 쓴 남자가 집을 가리킵니다. 붉은 옷을 입은 여자는 치맛단을 살짝 들고 걷습니다. 미술관은 집으로 돌아가는 소 떼가 사람과 자연의 조화를 보여 준다고 설명합니다. 하늘을 올려다보십시오. 저무는 햇빛이 목초지를 비추고, 그 위로 무지개가 둥글게 걸립니다. 지형은 신시내티와 강 건너 켄터키주 코빙턴 일대를 떠올리게 합니다. 두 도시 사이를 흐르는 오하이오강은 노예주와 자유주의 경계였습니다. 두 해 전, 화가 프레더릭 처치가 무지개 걸린 나이아가라 폭포를 그려 큰 찬사를 받았습니다. 던컨슨은 같은 소재에 과감히 도전했습니다. 처음 전시되었을 때 한 평론가는 앨러게니 산맥 이쪽에서 그려진 가장 아름다운 그림 가운데 하나라고 칭찬했습니다. 미술관은 이 그림을 남북전쟁이 터지기 전, 평화를 향한 마지막 희망으로 읽습니다. 전쟁이 깊어지자 던컨슨은 신시내티를 떠나 캐나다 몬트리올로 갔습니다. 그는 1872년 세상을 떠났습니다. 2021년 대통령 취임식 날에는 이 그림이 미국 국회의사당에 걸렸습니다. 태프트 미술관은 2027년 가을, 그의 작품 80여 점을 모은 회고전을 연다고 밝혔습니다. 한 걸음 물러나 보십시오. 전쟁의 그림자가 다가오던 해에, 한 화가는 무지개 끝의 집으로 걸어가는 두 사람을 그렸습니다. 오늘 하루, 내가 걸어가고 싶은 무지개 끝은 어디인지 떠올려 보시기 바랍니다.",
+   "en": "A rainbow arches over wide green fields. A young couple walks along a country track with their dog, and a herd of cattle heads home toward a house among the trees. The house stands right at the end of the rainbow. This is Landscape with Rainbow, painted in 1859 by the American artist Robert S. Duncanson. It is oil on canvas, about 76 centimetres high and 133 centimetres wide. Since 1983 it has belonged to the Smithsonian American Art Museum in Washington, D.C. Duncanson was born around 1821 in Fayette, New York, into a family of free African Americans who worked as carpenters and house painters. Around 1840 he moved to Cincinnati, Ohio. Cincinnati was home to many abolitionists, people working to end slavery, and they bought his paintings. The wealthy Nicholas Longworth asked him to paint eight large landscape murals in the entrance hall of his mansion. That house is now the Taft Museum of Art. In 1853 Duncanson travelled to Europe to study the Old Masters. Now look at the two people on the path. The man, in plain country clothes and a hat, points toward the house. The woman in a red dress lifts her hem a little as she walks. The museum says the cattle heading home show people living in harmony with nature. Look up at the sky. The light of the setting sun falls across the pasture, and above it the rainbow forms a wide arc. The land recalls the area around Cincinnati and Covington, Kentucky, just across the river. The Ohio River between them divided a slave state from a free state. Two years earlier, Frederic Church had won great praise for Niagara, with its own rainbow over the falls. Duncanson boldly took on the same subject. When the painting was first shown, a reviewer called it \"one of the most beautiful pictures painted on this side of the mountains.\" The museum reads the picture as a last hope for peace before the Civil War began. As the war went on, Duncanson left Cincinnati for Montreal in Canada. He died in 1872. On Inauguration Day in January 2021, this painting was displayed at the U.S. Capitol. The Taft Museum of Art has announced a retrospective of more than 80 of his works, opening in fall 2027. Step back and see the whole landscape. In a year when war was drawing near, a painter showed two people walking toward a home at the end of a rainbow. Today, think about where your own rainbow ends, and take one small step toward it."
+  },
+  "tour": [
+   {
+    "x": 0.5,
+    "y": 0.5,
+    "z": 1,
+    "ko": 0,
+    "en": 0
+   },
+   {
+    "x": 0.5,
+    "y": 0.5,
+    "z": 1,
+    "ko": 3,
+    "en": 3
+   },
+   {
+    "x": 0.5,
+    "y": 0.45,
+    "z": 1.25,
+    "ko": 6,
+    "en": 6
+   },
+   {
+    "x": 0.5,
+    "y": 0.45,
+    "z": 1.25,
+    "ko": 8,
+    "en": 8
+   },
+   {
+    "x": 0.42,
+    "y": 0.4,
+    "z": 1.45,
+    "ko": 12,
+    "en": 12
+   },
+   {
+    "x": 0.58,
+    "y": 0.55,
+    "z": 1.45,
+    "ko": 16,
+    "en": 16
+   },
+   {
+    "x": 0.58,
+    "y": 0.55,
+    "z": 1.45,
+    "ko": 19,
+    "en": 20
+   },
+   {
+    "x": 0.5,
+    "y": 0.62,
+    "z": 1.3,
+    "ko": 22,
+    "en": 23
+   },
+   {
+    "x": 0.5,
+    "y": 0.62,
+    "z": 1.3,
+    "ko": 25,
+    "en": 26
+   },
+   {
+    "x": 0.5,
+    "y": 0.5,
+    "z": 1.1,
+    "ko": 27,
+    "en": 28
    }
   ]
  }

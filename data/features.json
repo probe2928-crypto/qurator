@@ -1,5 +1,521 @@
 [
  {
+  "id": "rijksmuseum-twelve",
+  "asof": "2026.11.13",
+  "kicker": {
+   "ko": "미술관 가이드",
+   "en": "Museum Guide"
+  },
+  "title": {
+   "ko": "암스테르담 레이크스미술관에서 꼭 봐야 할 12점",
+   "en": "Twelve Works Not to Miss at the Rijksmuseum, Amsterdam"
+  },
+  "dek": {
+   "ko": "〈야경〉은 지금 유리 방 안에서 복원 중이고, 11월 11일부터는 그림에 사는 미생물이 가까운 미생물 박물관에서 전시되고 있습니다. 렘브란트와 페르메이르, 황금시대 사람들의 일상, 그리고 고야와 반 고흐까지, 레이크스미술관에서 놓치지 말아야 할 열두 점을 골랐습니다.",
+   "en": "The Night Watch is being restored inside a glass room, and since 11 November the microbes living on it have been on show at a nearby microbe museum. From Rembrandt and Vermeer to everyday life in the Golden Age and on to Goya and Van Gogh, here are twelve works not to miss at the Rijksmuseum."
+  },
+  "intro": {
+   "ko": "2026년 11월 11일, 암스테르담 동물원 아르티스 안의 미생물 박물관 아르티스-미크로피아에서 설치 작품 《야경은 살아 있다》가 관람객에게 공개됐습니다. 레이크스미술관 복원가와 미크로피아 연구자가 반년에 걸쳐 〈야경〉의 바니시가 남은 곳과 걷어 낸 곳에서 시료를 채취해 배양했고, 그 결과를 실물 크기 복제화 위에 보여 줍니다. 피부 세균부터 흙에 사는 미생물까지 나왔고, 시료가 늘어날수록 전시도 자랍니다. 이는 2019년 시작된 '오퍼레이션 나이트워치'의 일부로, 〈야경〉은 지금도 미술관 명예의 전당에 마련된 유리 방 안에서 관람객이 보는 가운데 1970년대에 칠한 누런 바니시를 벗겨 내고 있습니다.\n열두 점을 세 갈래로 나눴습니다. 먼저 렘브란트와 페르메이르의 대표작 다섯 점, 이어 할스·스테인·아셀레인·아베르캄프가 그린 황금시대 네덜란드의 일상과 풍경 네 점, 마지막으로 고야와 브라이트너르, 반 고흐로 이어지는 19세기 세 점입니다. 올해는 얀 스테인 탄생 400주년이고, 레이크스미술관에서는 《작업하는 빌럼 데 쿠닝》(2027년 1월 17일까지)이 열리는 중이라 명예의 전당에 데 쿠닝의 〈여인 I〉도 함께 걸려 있습니다.",
+   "en": "On 11 November 2026, the installation The Night Watch Lives opened at ARTIS-Micropia, the microbe museum inside Amsterdam's ARTIS zoo. Over six months, Rijksmuseum conservators and Micropia staff took samples from parts of The Night Watch with and without varnish and grew them in the lab; the results are shown on a life-size reproduction of the painting. They range from skin bacteria to soil microbes, and the installation will keep growing as more samples come in. It is part of Operation Night Watch, begun in 2019: the painting itself is still in a glass room in the museum's Gallery of Honour, where conservators are removing the yellowed varnish from the 1970s in full view of visitors.\nThe twelve works fall into three groups: five key paintings by Rembrandt and Vermeer; four scenes of everyday life and landscape from the Dutch Golden Age by Hals, Steen, Asselijn and Avercamp; and three nineteenth-century works by Goya, Breitner and Van Gogh. This year marks 400 years since Jan Steen's birth, and the Rijksmuseum is showing Willem de Kooning at Work until 17 January 2027, with de Kooning's Woman I hanging in the Gallery of Honour alongside the Dutch masters."
+  },
+  "cover": [
+   "https://commons.wikimedia.org/wiki/Special:FilePath/La%20ronda%20de%20noche%2C%20por%20Rembrandt%20van%20Rijn.jpg?width=1600",
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Johannes%20Vermeer%20-%20Het%20melkmeisje%20-%20Google%20Art%20Project.jpg?width=1600",
+   "https://commons.wikimedia.org/wiki/Special:FilePath/De%20bedreigde%20zwaan%20Rijksmuseum%20SK-A-4.jpeg?width=1600",
+   "https://commons.wikimedia.org/wiki/Special:FilePath/George%20Hendrik%20Breitner%20-%20Meisje%20in%20witte%20kimono%20%28Geesje%20Kwak%29.jpg?width=1600"
+  ],
+  "sections": [
+   {
+    "title": {
+     "ko": "렘브란트와 페르메이르 · 레이크스의 중심",
+     "en": "Rembrandt and Vermeer · The Heart of the Rijksmuseum"
+    },
+    "dek": {
+     "ko": "민병대의 출발, 말년의 연인, 우유 한 줄기, 델프트의 골목, 푸른 아침.",
+     "en": "A militia sets out, a late portrait of love, a stream of milk, a Delft alley, a blue morning."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "야경 (프란스 바닝 코크 대장의 민병대)",
+       "en": "The Night Watch"
+      },
+      "artist": {
+       "ko": "렘브란트 판 레인",
+       "en": "Rembrandt van Rijn"
+      },
+      "year": "1642",
+      "medium": {
+       "ko": "캔버스에 유채, 379.5×453.5cm",
+       "en": "Oil on canvas, 379.5 × 453.5 cm"
+      },
+      "headline": {
+       "ko": "레이크스미술관 · 1642",
+       "en": "Rijksmuseum · 1642"
+      },
+      "why": {
+       "ko": "암스테르담 화승총 민병대가 본부 연회장에 걸려고 주문한 단체 초상이다. 줄 맞춰 선 기존 단체 초상과 달리, 렘브란트는 대장이 출발을 지시하고 대원들이 대열을 갖추는 순간을 그렸고, 빛으로 대장의 손과 뒤편 소녀를 짚어 냈다. 1715년 시청으로 옮길 때 네 변이 잘려 나갔고, 지금은 2019년 시작된 '오퍼레이션 나이트워치'의 유리 방 안에서 1970년대에 칠한 누런 바니시를 걷어 내는 중이다.",
+       "en": "The Amsterdam arquebusiers ordered this group portrait for the great hall of their headquarters. Instead of a neat row of faces, Rembrandt painted the moment the captain gives the order to march and the men fall into line, using light to pick out the captain's hand and the girl behind him. Strips were cut from all four sides when it moved to the town hall in 1715. Today conservators are removing the yellowed 1970s varnish inside a glass room, as part of Operation Night Watch, which began in 2019."
+      },
+      "pd": true,
+      "commons": "La ronda de noche, por Rembrandt van Rijn.jpg",
+      "sources": [
+       {
+        "label": "Rijksmuseum — The Night Watch (SK-C-5)",
+        "url": "https://www.rijksmuseum.nl/en/collection/SK-C-5"
+       },
+       {
+        "label": "Rijksmuseum — For the first time in 300 years The Night Watch is complete again (2021)",
+        "url": "https://www.rijksmuseum.nl/en/press/press-releases/for-the-first-time-in-300-years-the-night-watch-is-complete-again"
+       },
+       {
+        "label": "Rijksmuseum — Exhibition programme 2026 (Operation Night Watch)",
+        "url": "https://www.rijksmuseum.nl/en/press/press-releases/programme/story/programme-2026"
+       },
+       {
+        "label": "Wikipedia — The Night Watch",
+        "url": "https://en.wikipedia.org/wiki/The_Night_Watch"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "이삭과 리브가 ('유대인 신부')",
+       "en": "Isaac and Rebecca, Known as 'The Jewish Bride'"
+      },
+      "artist": {
+       "ko": "렘브란트 판 레인",
+       "en": "Rembrandt van Rijn"
+      },
+      "year": "1665–69년 무렵 · c. 1665–69",
+      "medium": {
+       "ko": "캔버스에 유채, 121.5×166.5cm",
+       "en": "Oil on canvas, 121.5 × 166.5 cm"
+      },
+      "headline": {
+       "ko": "레이크스미술관 · 1665–69년 무렵",
+       "en": "Rijksmuseum · c. 1665–69"
+      },
+      "why": {
+       "ko": "남자가 여자의 가슴에 손을 얹고, 여자는 그 손에 자기 손을 포갠다. 미술관은 남매인 척하던 구약의 이삭과 리브가가 들킨 순간으로 보지만, 실제 부부를 성경 인물로 그린 초상이라는 해석도 오래 이어졌다. 말년의 렘브란트는 아주 자유롭게 물감을 두껍게 올리고, 붓대 끝으로 긁어 내기도 했다. 1885년 이 그림을 본 반 고흐는 동생에게 '불의 손으로' 그렸다고 썼다.",
+       "en": "A man rests his hand on a woman's breast, and she lays her own hand over it. The museum reads them as Isaac and Rebecca, the Old Testament couple who pretended to be brother and sister, though the painting has also long been seen as a portrait of a real couple in biblical roles. Late in life Rembrandt worked with great freedom, piling on the paint and scratching into it with the end of his brush. Seeing it in 1885, Van Gogh wrote to his brother that it was painted 'with a hand of fire'."
+      },
+      "pd": true,
+      "commons": "Rembrandt Harmensz. van Rijn - Portret van een paar als oudtestamentische figuren, genaamd 'Het Joodse bruidje' - Google Art Project.jpg",
+      "sources": [
+       {
+        "label": "Rijksmuseum — Isaac and Rebecca, Known as 'The Jewish Bride' (SK-C-216)",
+        "url": "https://www.rijksmuseum.nl/en/collection/SK-C-216"
+       },
+       {
+        "label": "Wikipedia — The Jewish Bride",
+        "url": "https://en.wikipedia.org/wiki/The_Jewish_Bride"
+       },
+       {
+        "label": "Van Gogh Letters — letter 534 to Theo (c. 10 October 1885)",
+        "url": "https://vangoghletters.org/en/let534"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "우유 따르는 여인",
+       "en": "The Milkmaid"
+      },
+      "artist": {
+       "ko": "요하네스 페르메이르",
+       "en": "Johannes Vermeer"
+      },
+      "year": "1660년 무렵 · c. 1660",
+      "medium": {
+       "ko": "캔버스에 유채, 45.5×41cm",
+       "en": "Oil on canvas, 45.5 × 41 cm"
+      },
+      "headline": {
+       "ko": "레이크스미술관 · 1660년 무렵",
+       "en": "Rijksmuseum · c. 1660"
+      },
+      "why": {
+       "ko": "하녀가 항아리에서 우유를 따르는 데만 몰두해 있다. 흐르는 우유 말고는 모든 것이 멈춘 듯하고, 창으로 든 빛은 빵 껍질과 바구니 위에 작은 빛 점들로 흩어진다. 부엌일이라는 평범한 장면을 조각상처럼 단단한 인물로 세운 점이 이 그림의 힘이다. 레이크스미술관은 1908년 식스 가문 소장품을 사들이며 이 작품을 얻었다.",
+       "en": "A maid pours milk from a jug, completely absorbed in the task. Apart from the thin stream of milk, everything seems still, and the window light breaks into tiny dots on the bread crust and the basket. Vermeer turned a plain kitchen chore into a figure as solid as a statue. The Rijksmuseum acquired it in 1908, when it bought paintings from the Six family collection."
+      },
+      "pd": true,
+      "commons": "Johannes Vermeer - Het melkmeisje - Google Art Project.jpg",
+      "sources": [
+       {
+        "label": "Rijksmuseum — The Milkmaid (SK-A-2344)",
+        "url": "https://www.rijksmuseum.nl/en/collection/SK-A-2344"
+       },
+       {
+        "label": "Wikipedia — The Milkmaid (Vermeer)",
+        "url": "https://en.wikipedia.org/wiki/The_Milkmaid_(Vermeer)"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "델프트의 집 풍경 ('작은 거리')",
+       "en": "View of Houses in Delft, Known as 'The Little Street'"
+      },
+      "artist": {
+       "ko": "요하네스 페르메이르",
+       "en": "Johannes Vermeer"
+      },
+      "year": "1658년 무렵 · c. 1658",
+      "medium": {
+       "ko": "캔버스에 유채, 54.3×44cm",
+       "en": "Oil on canvas, 54.3 × 44 cm"
+      },
+      "headline": {
+       "ko": "레이크스미술관 · 1658년 무렵",
+       "en": "Rijksmuseum · c. 1658"
+      },
+      "why": {
+       "ko": "평범한 집의 정면을 주인공으로 삼은 그림은 당시 드물었다. 금 간 벽돌, 덧칠한 회벽, 골목에서 빨래하는 여인과 문간에서 바느질하는 여인이 손에 잡힐 듯하다. 2015년 암스테르담 대학 프란스 흐레이전하우트 교수가 1667년 운하 준설세 장부를 근거로 이곳이 델프트 플라밍스트라트 40–42번지라고 밝혔고, 오른쪽 집에는 페르메이르의 고모가 살았다.",
+       "en": "Paintings that made an ordinary house front the main subject were rare at the time. The cracked brick, patched whitewash, a woman washing in the alley and another sewing in the doorway feel close enough to touch. In 2015 Professor Frans Grijzenhout of the University of Amsterdam used a 1667 canal-tax ledger to identify the spot as Vlamingstraat 40–42 in Delft, and Vermeer's aunt lived in the house on the right."
+      },
+      "pd": true,
+      "commons": "Johannes Vermeer - Gezicht op huizen in Delft, bekend als 'Het straatje' - Google Art Project.jpg",
+      "sources": [
+       {
+        "label": "Rijksmuseum — View of Houses in Delft, Known as 'The Little Street' (SK-A-2860)",
+        "url": "https://www.rijksmuseum.nl/en/collection/SK-A-2860"
+       },
+       {
+        "label": "Wikipedia — The Little Street",
+        "url": "https://en.wikipedia.org/wiki/The_Little_Street"
+       },
+       {
+        "label": "The Art Newspaper — Exact location of Vermeer's Little Street discovered (2015)",
+        "url": "https://www.theartnewspaper.com/2015/11/20/exact-location-of-vermeers-little-street-discovered"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "편지를 읽는 여인 (푸른 옷의 여인)",
+       "en": "Woman Reading a Letter (Woman in Blue)"
+      },
+      "artist": {
+       "ko": "요하네스 페르메이르",
+       "en": "Johannes Vermeer"
+      },
+      "year": "1663년 무렵 · c. 1663",
+      "medium": {
+       "ko": "캔버스에 유채, 46.5×39cm",
+       "en": "Oil on canvas, 46.5 × 39 cm"
+      },
+      "headline": {
+       "ko": "레이크스미술관 · 1663년 무렵",
+       "en": "Rijksmuseum · c. 1663"
+      },
+      "why": {
+       "ko": "아침 빛 속에서 푸른 실내복 차림의 젊은 여인이 선 채로 편지를 읽는다. 그림 전체가 청금석에서 얻은 값비싼 파란색을 중심으로 짜여 있다. 페르메이르는 살갗의 그늘을 옅은 회색으로, 벽에 진 그림자를 하늘색으로 칠해 빛을 새롭게 다뤘다. 편지의 내용은 끝내 보여 주지 않아, 보는 사람이 그 침묵을 채우게 된다.",
+       "en": "In the morning light a young woman in a blue jacket stands reading a letter. The whole picture is built around a costly blue made from lapis lazuli. Vermeer handled light in a new way, painting the shadows on her skin in pale grey and the shadows on the wall in light blue. He never shows what the letter says, so the viewer is left to fill the silence."
+      },
+      "pd": true,
+      "commons": "Vermeer, Johannes - Woman reading a letter - ca. 1662-1663.jpg",
+      "sources": [
+       {
+        "label": "Rijksmuseum — Woman Reading a Letter (SK-C-251)",
+        "url": "https://www.rijksmuseum.nl/en/collection/SK-C-251"
+       },
+       {
+        "label": "Wikipedia — Woman Reading a Letter (Vermeer)",
+        "url": "https://en.wikipedia.org/wiki/Woman_Reading_a_Letter_(Vermeer)"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": {
+     "ko": "황금시대의 일상 · 술잔, 가족, 백조, 얼음",
+     "en": "Golden Age Life · A Glass, a Family, a Swan, the Ice"
+    },
+    "dek": {
+     "ko": "건배하는 남자, 시끌벅적한 집, 정치가 된 백조, 꽁꽁 언 강.",
+     "en": "A man raising a toast, a noisy household, a swan turned political, a frozen river."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "즐거운 술꾼",
+       "en": "The Merry Drinker"
+      },
+      "artist": {
+       "ko": "프란스 할스",
+       "en": "Frans Hals"
+      },
+      "year": "1628–30년 무렵 · c. 1628–30",
+      "medium": {
+       "ko": "캔버스에 유채, 81×66.5cm",
+       "en": "Oil on canvas, 81 × 66.5 cm"
+      },
+      "headline": {
+       "ko": "레이크스미술관 · 1628–30년 무렵",
+       "en": "Rijksmuseum · c. 1628–30"
+      },
+      "why": {
+       "ko": "잔을 든 남자가 막 우리에게 건배를 청하려는 참이다. 짧은 붓질이 화면 위에서 엇갈리며 빠르게 그린 듯한 인상과 움직임을 동시에 만든다. 미술관은 이 '거친' 붓질을 할스 화풍의 정점으로 꼽는다. 가죽 조끼와 메달로 보아 모델은 민병대원이나 군인이었을 가능성이 크다.",
+       "en": "A man with a glass in his hand is about to raise a toast to us. Short brushstrokes cross each other across the canvas, giving both a sense of speed and of movement. The museum calls this loose, 'rough' manner the peak of Hals's style. His leather jerkin and medallion suggest he was a civic guardsman or a soldier."
+      },
+      "pd": true,
+      "commons": "Een schutter die een berkenmeier vasthoudt, bekend als ‘De vrolijke drinker’, SK-A-135.jpg",
+      "sources": [
+       {
+        "label": "Rijksmuseum — The Merry Drinker (SK-A-135)",
+        "url": "https://www.rijksmuseum.nl/en/collection/SK-A-135"
+       },
+       {
+        "label": "Wikipedia — The Merry Drinker",
+        "url": "https://en.wikipedia.org/wiki/The_Merry_Drinker"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "즐거운 가족",
+       "en": "The Merry Family"
+      },
+      "artist": {
+       "ko": "얀 스테인",
+       "en": "Jan Steen"
+      },
+      "year": "1668",
+      "medium": {
+       "ko": "캔버스에 유채, 110.5×141cm",
+       "en": "Oil on canvas, 110.5 × 141 cm"
+      },
+      "headline": {
+       "ko": "레이크스미술관 · 1668",
+       "en": "Rijksmuseum · 1668"
+      },
+      "why": {
+       "ko": "아버지는 잔을 들고 노래하고, 어머니와 할머니도 목청을 높이며, 아이들은 피리를 불고 파이프 담배까지 문다. 벽난로에 걸린 쪽지의 속담 '어른이 노래하면 아이도 따라 분다'가 교훈을 알려 준다. 부모가 본을 잘못 보이면 아이들은 어떻게 될까, 스테인은 웃음 속에 그 물음을 숨겼다. 2026년은 스테인 탄생 400주년으로, 고향 레이던의 라켄할 미술관이 기념전을 열었다.",
+       "en": "Father sings with his glass raised, mother and grandmother sing along, and the children play pipes and even smoke. A note on the mantelpiece gives the moral, a proverb that says the young will pipe the tune the old sing. What becomes of children whose parents set a bad example? Steen hides the question inside the joke. 2026 marks 400 years since Steen's birth, and Museum De Lakenhal in his home town of Leiden held an anniversary exhibition."
+      },
+      "pd": true,
+      "commons": "Jan Steen Vrolijke huisgezin.jpg",
+      "sources": [
+       {
+        "label": "Rijksmuseum — The Merry Family (SK-C-229)",
+        "url": "https://www.rijksmuseum.nl/en/collection/SK-C-229"
+       },
+       {
+        "label": "Wikipedia — The Happy Family (painting)",
+        "url": "https://en.wikipedia.org/wiki/The_Happy_Family_(painting)"
+       },
+       {
+        "label": "Museum De Lakenhal — At Home with Jan Steen: 400 Years of Merrymaking",
+        "url": "https://www.lakenhal.nl/en/story/at-home-with-jan-steen-400-years-of-merrymaking"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "위협받는 백조",
+       "en": "The Threatened Swan"
+      },
+      "artist": {
+       "ko": "얀 아셀레인",
+       "en": "Jan Asselijn"
+      },
+      "year": "1650년 무렵 · c. 1650",
+      "medium": {
+       "ko": "캔버스에 유채, 144×171cm",
+       "en": "Oil on canvas, 144 × 171 cm"
+      },
+      "headline": {
+       "ko": "레이크스미술관 · 1650년 무렵",
+       "en": "Rijksmuseum · c. 1650"
+      },
+      "why": {
+       "ko": "백조가 날개를 활짝 펴고 물에서 다가오는 개로부터 둥지의 알을 지킨다. 원래는 동물화였지만, 화가가 죽은 뒤 백조 아래에 '재상', 알에 '홀란트', 개 위에 '나라의 적'이라는 글씨가 더해지며 정치인 요한 더 빗을 빗댄 그림이 됐다. 이 그림은 1800년 레이크스미술관의 전신인 국립미술관이 처음 사들인 작품이다.",
+       "en": "A swan spreads its wings wide to guard its eggs from a dog swimming towards the nest. It began as an animal painting, but after the artist's death someone added words: 'the Grand Pensionary' under the swan, 'Holland' on an egg and 'the enemy of the state' above the dog. That turned it into an allegory of the statesman Johan de Witt. In 1800 it became the very first purchase of the national gallery that grew into the Rijksmuseum."
+      },
+      "pd": true,
+      "commons": "De bedreigde zwaan Rijksmuseum SK-A-4.jpeg",
+      "sources": [
+       {
+        "label": "Rijksmuseum — The Threatened Swan (SK-A-4)",
+        "url": "https://www.rijksmuseum.nl/en/collection/SK-A-4"
+       },
+       {
+        "label": "Wikipedia — The Threatened Swan",
+        "url": "https://en.wikipedia.org/wiki/The_Threatened_Swan"
+       },
+       {
+        "label": "CODART Canon — The Threatened Swan",
+        "url": "https://canon.codart.nl/artwork/the-threatened-swan/"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "스케이트 타는 사람들이 있는 겨울 풍경",
+       "en": "Winter Landscape with Ice Skaters"
+      },
+      "artist": {
+       "ko": "헨드릭 아베르캄프",
+       "en": "Hendrick Avercamp"
+      },
+      "year": "1608년 무렵 · c. 1608",
+      "medium": {
+       "ko": "참나무 패널에 유채, 77.3×131.9cm",
+       "en": "Oil on oak panel, 77.3 × 131.9 cm"
+      },
+      "headline": {
+       "ko": "레이크스미술관 · 1608년 무렵",
+       "en": "Rijksmuseum · c. 1608"
+      },
+      "why": {
+       "ko": "높은 곳에서 내려다본 얼어붙은 강 위에 수백 명이 스케이트를 타고, 썰매를 끌고, 골프의 조상인 콜프를 친다. 왼쪽 앞에는 얼어 죽은 말을 개와 까마귀가 뜯고 있어, 놀이와 고된 겨울이 한 화면에 함께 있다. 태어날 때부터 듣고 말하지 못해 '캄펀의 벙어리'로 불린 아베르캄프는 겨울 풍경을 전문으로 그린 첫 네덜란드 화가였고, 이 그림은 그가 남긴 가장 크고 야심 찬 겨울 그림이다.",
+       "en": "Seen from high above, hundreds of people skate, pull sledges and play kolf, an early form of golf, on a frozen river. In the left foreground a dog and crows feed on a horse that froze to death, so play and the hardship of winter share the same scene. Avercamp, deaf and unable to speak from birth and known as 'the Mute of Kampen', was the first Dutch painter to specialise in winter scenes, and this is the largest and most ambitious one he made."
+      },
+      "pd": true,
+      "commons": "Hendrick Avercamp - Winterlandschap met ijsvermaak.jpg",
+      "sources": [
+       {
+        "label": "Rijksmuseum — Winter Landscape with Ice Skaters (SK-A-1718)",
+        "url": "https://www.rijksmuseum.nl/en/collection/SK-A-1718"
+       },
+       {
+        "label": "Wikipedia — Winter Landscape with Skaters",
+        "url": "https://en.wikipedia.org/wiki/Winter_Landscape_with_Skaters"
+       },
+       {
+        "label": "Getty — Hendrick Avercamp, the 'Mute from Kampen'",
+        "url": "https://www.getty.edu/news/on-thin-ice-dutch-depictions-of-extreme-weather-and%e2%80%93hendrick-avercamp-the-mute-from-kampen/"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": {
+     "ko": "황금시대 너머 · 19세기로",
+     "en": "Beyond the Golden Age · Into the Nineteenth Century"
+    },
+    "dek": {
+     "ko": "일흔여섯 고야의 판사, 암스테르담의 기모노, 파리에 간 반 고흐.",
+     "en": "A judge painted by Goya at 76, a kimono in Amsterdam, Van Gogh in Paris."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "돈 라몬 사투에의 초상",
+       "en": "Portrait of Don Ramón Satué"
+      },
+      "artist": {
+       "ko": "프란시스코 고야",
+       "en": "Francisco de Goya"
+      },
+      "year": "1823",
+      "medium": {
+       "ko": "캔버스에 유채, 107×83.5cm",
+       "en": "Oil on canvas, 107 × 83.5 cm"
+      },
+      "headline": {
+       "ko": "레이크스미술관 · 1823",
+       "en": "Rijksmuseum · 1823"
+      },
+      "why": {
+       "ko": "카스티야 최고 법정의 판사가 두 손을 주머니에 넣고 셔츠 깃을 풀어 헤친 채 서 있다. 이런 편한 자세와 차림은 고야가 보통 가까운 친구의 초상에나 허락하던 것이다. 그린 해 고야는 일흔여섯이었다. 레이크스미술관은 1922년 렘브란트 협회의 후원으로 이 그림을 사들였다.",
+       "en": "A judge of Castile's highest court stands with his hands in his pockets and his collar open. Goya usually kept such a relaxed pose and dress for portraits of his closest friends. Goya was 76 when he painted it. The Rijksmuseum bought it in 1922 with the support of the Vereniging Rembrandt."
+      },
+      "pd": true,
+      "commons": "Portret van Don Ramón Satué Rijksmuseum SK-A-2963.jpeg",
+      "sources": [
+       {
+        "label": "Rijksmuseum — Portrait of Don Ramón Satué (SK-A-2963)",
+        "url": "https://www.rijksmuseum.nl/en/collection/SK-A-2963"
+       },
+       {
+        "label": "Wikipedia — Portrait of Don Ramón Satué",
+        "url": "https://en.wikipedia.org/wiki/Portrait_of_Don_Ram%C3%B3n_Satu%C3%A9"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "흰 기모노를 입은 소녀",
+       "en": "Girl in a White Kimono"
+      },
+      "artist": {
+       "ko": "헤오르허 헨드릭 브라이트너르",
+       "en": "George Hendrik Breitner"
+      },
+      "year": "1894",
+      "medium": {
+       "ko": "캔버스에 유채, 59×57cm",
+       "en": "Oil on canvas, 59 × 57 cm"
+      },
+      "headline": {
+       "ko": "레이크스미술관 · 1894",
+       "en": "Rijksmuseum · 1894"
+      },
+      "why": {
+       "ko": "열여섯 살 암스테르담 처녀 헤이셰 크박이 흰 기모노를 입고 소파에 비스듬히 누워 있다. 일본 판화를 수집하던 브라이트너르는 기모노 입은 소녀를 열세 점이나 그렸고, 같은 모델을 사진으로도 여러 장 남겼다. 일본 판화에서 배운 구성과 흰 비단의 넓은 면에 19세기 말 유럽의 자포니즘이 드러난다. 미술관은 동양 옷을 입힌 여성 그림에 성적 시선이 섞여 있었다는 점도 함께 짚는다.",
+       "en": "Sixteen-year-old Geesje Kwak, a young woman from Amsterdam, reclines on a sofa in a white kimono. Breitner, who collected Japanese prints, painted thirteen pictures of girls in kimonos and also photographed the same model many times. The composition learned from Japanese prints and the broad areas of white silk show the Japonisme of late 19th-century Europe. The museum also notes that European pictures of women in Asian dress often carried a sexual undertone."
+      },
+      "pd": true,
+      "commons": "George Hendrik Breitner - Meisje in witte kimono (Geesje Kwak).jpg",
+      "sources": [
+       {
+        "label": "Rijksmuseum — Girl in a White Kimono (SK-A-3584)",
+        "url": "https://www.rijksmuseum.nl/en/collection/SK-A-3584"
+       },
+       {
+        "label": "Wikipedia — Girl in a White Kimono",
+        "url": "https://en.wikipedia.org/wiki/Girl_in_a_White_Kimono"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "자화상",
+       "en": "Self-portrait"
+      },
+      "artist": {
+       "ko": "빈센트 반 고흐",
+       "en": "Vincent van Gogh"
+      },
+      "year": "1887",
+      "medium": {
+       "ko": "판지에 유채",
+       "en": "Oil on cardboard"
+      },
+      "headline": {
+       "ko": "레이크스미술관 · 1887",
+       "en": "Rijksmuseum · 1887"
+      },
+      "why": {
+       "ko": "1886년 파리로 간 반 고흐는 동생 테오에게서 들은 밝은 프랑스 회화를 곧장 시험했고, 모델료를 아끼려고 자기 얼굴을 여러 번 그렸다. 회색 펠트 모자를 쓴 세련된 파리 사람의 모습을 리듬감 있는 짧은 붓질과 강한 색으로 쌓아 올렸다. 반 고흐는 이 그림을 테오의 처남 안드리스 봉어르에게 주었고, 봉어르의 부인이 1936년 미술관에 기증했다.",
+       "en": "After moving to Paris in 1886, Van Gogh quickly tried out the bright new French painting his brother Theo had told him about, and painted himself many times to save on models. Here he builds up the image of a well-dressed Parisian in a grey felt hat with short, rhythmic strokes of strong colour. He gave it to Andries Bonger, his brother Theo's brother-in-law, and Bonger's widow gave it to the museum in 1936."
+      },
+      "pd": true,
+      "commons": "Zelfportret Rijksmuseum SK-A-3262.jpeg",
+      "sources": [
+       {
+        "label": "Rijksmuseum — Self-portrait (SK-A-3262)",
+        "url": "https://www.rijksmuseum.nl/en/collection/SK-A-3262"
+       },
+       {
+        "label": "PubHist — Vincent van Gogh, Self-portrait with grey felt hat",
+        "url": "https://www.pubhist.com/w16866"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "note": {
+   "ko": "제작 연도·크기·소장품 번호는 레이크스미술관 공식 소장품 페이지와 위키백과·CODART·PubHist 등 두 곳 이상에서 확인했습니다(2026년 11월 13일 기준). 크기는 미술관 표기를 따랐고, 〈야경〉은 소장품 페이지(379.5×453.5cm)와 2021년 미술관 보도자료(379.5×436cm) 수치가 달라 소장품 페이지를 적었습니다. 반 고흐 〈자화상〉은 미술관 페이지에 크기가 없어 적지 않았습니다. 《야경은 살아 있다》는 아르티스-미크로피아에서 열리며(레이크스미술관 본관이 아님), 공개일은 아르티스 공식 안내와 암스테르담 관광청·더 아트 뉴스페이퍼·AT5 보도로 확인했습니다. 종료일은 공식 안내에 없어 적지 않았습니다. 〈야경〉 복원 상황과 데 쿠닝전 기간은 레이크스미술관 공식 페이지에서 확인했습니다. 작품은 대여·보존 작업으로 자리를 옮기거나 잠시 빠질 수 있으니 방문 전 미술관 공지를 확인해 주세요. 열두 점 모두 작가 사후 70년이 지난 퍼블릭 도메인 작품이며, 이미지는 위키미디어 커먼즈에서 불러옵니다.",
+   "en": "Dates, sizes and object numbers were checked against the Rijksmuseum's collection pages and at least one other source, such as Wikipedia, CODART or PubHist, as of 13 November 2026. Sizes follow the museum. For The Night Watch, the collection page (379.5 × 453.5 cm) and the museum's 2021 press release (379.5 × 436 cm) differ; the collection page figure is used. No size is given for Van Gogh's Self-portrait because the museum's page lists none. The Night Watch Lives is at ARTIS-Micropia, not in the Rijksmuseum building; its opening date comes from ARTIS's own page, the Amsterdam tourist board, The Art Newspaper and AT5. No closing date is given because the official page does not list one. The restoration status and the de Kooning exhibition dates come from the Rijksmuseum website. Works can move or be taken off view for loans or conservation, so check the museum's notices before you go. All twelve artists died more than seventy years ago; images load from Wikimedia Commons."
+  }
+ },
+ {
   "id": "cassatt-100-twelve",
   "asof": "2026.11.11",
   "kicker": {
