@@ -96,8 +96,11 @@ const T = {
   nav_today: ['오늘의 작품', 'Daily Art'], nav_explore: ['작품 탐색', 'Explore'], nav_studio: ['QR 스튜디오', 'QR Studio'], nav_pricing: ['요금', 'Pricing'],
   hero_eyebrow: ['QR 도슨트 · Daily Art', 'QR Docent · Daily Art'],
   hero_h: ['작품 앞에서,<br>한 번의 <em>scan.</em>', 'One scan.<br>The <em>whole story.</em>'],
-  hero_lead: ['관람객이 QR을 찍으면 작품 해설이 텍스트·음성·다국어로 열립니다. 앱 설치 없이. 그리고 매일 아침, 세 점의 명작과 영어 해설이 당신에게 도착합니다.', 'Visitors scan a QR code and the artwork opens up in text, voice and multiple languages, with no app to install. And every morning, three masterpieces with English commentary arrive for you.'],
-  cta_today: ['오늘의 작품 보기', "See today's art"], cta_gallery: ['갤러리 도입 문의', 'For galleries'],
+  hero_lead: ['전시장에서는 작품 옆 QR 하나로 해설이 텍스트·음성·다국어로 열립니다. 앱 설치 없이. 그리고 매일 아침, 미술사를 바탕으로 고른 세 점의 명작이 영어 해설과 함께 열립니다.', 'In the gallery, one QR beside each work opens its story in text, voice and several languages, with no app to install. And every morning, three masterpieces chosen through the lens of art history open with English commentary.'],
+  cta_today: ['오늘의 작품 보기', "See today's art"], cta_gallery: ['갤러리 도입 안내', 'For galleries'],
+  cta_today_free: ['오늘 한 점 무료로 보기', "Today's first work, free"],
+  pr_sub: ['Daily Art는 매일 첫 번째 작품이 누구나 무료입니다. 나머지 두 점과 한국어 번역·음성·아카이브는 멤버에게 열립니다. 갤러리 요금은 전시 규모에 맞춰 카카오톡으로 상담해 드립니다.', 'With Daily Art the first work of every day is free for everyone; the other two, the Korean translation, audio and archive open for members. For galleries, tell us about your show on KakaoTalk.'],
+  inquire_kakao: ['카카오톡으로 문의', 'Ask on KakaoTalk'], cta_band_2: ['도입 안내 먼저 보기', 'See how it works first'],
   scan_label: ['Scan · 음성 해설', 'Scan for audio guide'],
   p1_tag: ['For you · 개인 구독', 'For you · Membership'], p1_h: ['Daily Art — 매일 세 점의 명작', 'Daily Art — three masterpieces a day'],
   p1_p: ['미술사 기반으로 엄선한 작품 3점을 매일 아침 영어 해설과 한국어 번역, 음성으로 받아 보세요. 미술 교양과 영어를 함께.', 'Three works chosen through the lens of art history, every morning, with English commentary, Korean translation and audio. Art and English, together.'],
@@ -648,7 +651,7 @@ function viewHome(scrollTo) {
       <div class="facts"><div class="fact"><b>${S.works.length}</b><span>${t('fa1')}</span></div><div class="fact"><b>KO·EN</b><span>${t('fa2')}</span></div><div class="fact"><b>180K</b><span>${t('fa3')}</span></div></div></div>
   </div></section>
 
-  <section class="cta-band"><div class="wrap"><h2>${t('cta_h')}</h2><a class="btn" href="${KAKAO}" target="_blank" rel="noopener">${t('cta_btn')} <span class="arrow">→</span></a></div></section>`;
+  <section class="cta-band"><div class="wrap"><h2>${t('cta_h')}</h2><div class="cta-band-row"><a class="btn" href="${KAKAO}" target="_blank" rel="noopener">${t('cta_btn')} <span class="arrow">→</span></a>${PLAY || IOS ? '' : `<a class="cta-band-2" href="#/galleries">${t('cta_band_2')} <span class="arrow">→</span></a>`}</div></div></section>`;
   hydrate(); reveal(); startStage();
   loadFeatures().then(list => { const f = list[0], box = $('#homeFeature'); if (!f || !box) return;
     box.innerHTML = `<section class="sec ft-home"><div class="wrap"><div class="sec-head rv"><div><p class="eyebrow">${t('nav_features')} · ${esc(pick(f.kicker))}</p><h2>${esc(pick(f.title))}</h2></div></div>
@@ -679,8 +682,8 @@ function heroBlock() {
       <h1>${t('hero_h')}</h1>
       <p class="lead">${esc(t(PLAY ? 'hero_lead_ios' : 'hero_lead'))}</p>
       <div class="hero-ctas">
-        <a class="btn btn-cream" href="#/today">${t('cta_today')} <span class="arrow">→</span></a>
-        ${PLAY ? `<a class="btn btn-ghost" href="#/explore">${t('nav_explore')}</a>` : `<a class="btn btn-ghost" href="#/pricing">${t('cta_gallery')}</a>`}
+        <a class="btn btn-cream" href="#/today">${t(PLAY || IOS || S.member ? 'cta_today' : 'cta_today_free')} <span class="arrow">→</span></a>
+        ${PLAY ? `<a class="btn btn-ghost" href="#/explore">${t('nav_explore')}</a>` : `<a class="btn btn-ghost" href="#/galleries">${t('cta_gallery')}</a>`}
         ${PLAY ? '' : `<a class="btn hero-app" href="${APPSTORE}" target="_blank" rel="noopener">${APPLE_GLYPH}<span><small>${S.lang === 'ko' ? '아이폰 앱 무료' : 'Free iPhone app'}</small>App Store</span></a>`}
       </div>
     </div></div>
@@ -758,12 +761,12 @@ function pricingBlock() {
   const plan = (k, amt, per, cls, btn, offer) => `<div class="plan ${cls}"><h4>${t(k)}</h4><div class="amt">${amt}<small>${per}</small></div>${offer ? `<p class="trial-tag">${offer}</p>` : ''}
     <ul>${T[k + 'l'][n].map(x => `<li>${esc(x)}</li>`).join('')}</ul>${btn}</div>`;
   return `<section class="sec" id="pricing"><div class="wrap">
-    <div class="sec-head rv"><div><p class="eyebrow">${t('pr_eyebrow')}</p><h2>${t('pr_h')}</h2></div></div>
+    <div class="sec-head rv"><div><p class="eyebrow">${t('pr_eyebrow')}</p><h2>${t('pr_h')}</h2></div><p>${esc(t('pr_sub'))}</p></div>
     <div class="pricing rv">
       ${plan('pl1', '₩30,000', t('per_month'), 'feat', `<button class="btn btn-seal" data-act="subscribe">${TRIAL() ? t('tr_cta') : t('subscribe')}</button>`, TRIAL() ? t('tr_price') : '')}
-      ${plan('pl2', '₩300,000', t('per_show'), '', `<a class="btn btn-line" href="${KAKAO}" target="_blank" rel="noopener">${t('inquire')}</a>`)}
-      ${plan('pl3', '₩1,000,000', t('per_show'), '', `<a class="btn btn-line" href="${KAKAO}" target="_blank" rel="noopener">${t('inquire')}</a>`)}
-      ${plan('pl4', '₩99,000', t('per_month'), '', `<a class="btn btn-line" href="${KAKAO}" target="_blank" rel="noopener">${t('inquire')}</a>`)}
+      ${plan('pl2', '₩300,000', t('per_show'), '', `<a class="btn btn-line" href="${KAKAO}" target="_blank" rel="noopener">${t('inquire_kakao')}</a>`)}
+      ${plan('pl3', '₩1,000,000', t('per_show'), '', `<a class="btn btn-line" href="${KAKAO}" target="_blank" rel="noopener">${t('inquire_kakao')}</a>`)}
+      ${plan('pl4', '₩99,000', t('per_month'), '', `<a class="btn btn-line" href="${KAKAO}" target="_blank" rel="noopener">${t('inquire_kakao')}</a>`)}
     </div>${giveNote('rv')}</div></section>`;
 }
 
