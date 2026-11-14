@@ -986,4 +986,4 @@ html.has-appbar body.home .nav{top:calc(61px + var(--abh,0px))}
 .ko-trans div p:last-child{margin-bottom:0}
 /* 2026-11-14 landing: hidden mobile menu must clear the app banner too (last link peeked under it) */
 @media (max-width:820px){html.has-appbar body.home .nav{transform:translateY(calc(-100% - 90px - var(--sat) - var(--abh,0px)))}html.has-appbar body.home.menu-open .nav{transform:none}}
-@media (max-width:560px){.hero-ctas .btn:not(.hero-app){padding:0 10px;gap:6px;font-size:14px}}
+@media (max-width:560px){.hero-ctas .btn:not(.hero-app){padding:0 10px;gap:6px;font-size:14px;flex:1 1 auto}}
