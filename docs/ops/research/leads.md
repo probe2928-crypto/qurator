@@ -2,6 +2,29 @@
 
 규칙: 공식 홈페이지·공개된 대표 문의 채널만 적는다. 개인 이메일·개인 정보 금지. 이미 있는 곳은 중복하지 않는다.
 
+## 2026-11-16 (리서치팀 · 새벽큐)
+
+연락처는 각 갤러리 공식 홈페이지의 About·Contact에서 확인한 대표 채널만 적었다. 개인 이름과 휴대전화는 적지 않는다(코소 홈페이지 전화번호는 휴대폰이라 뺐다). 기존 leads.md 이름과 대조했고 중복은 없다. 1·2는 공식 사이트에서 전시와 채널을 모두 확인했다. 3·4는 채널만 공식 사이트에서 확인했고, 전시는 전시 정보 사이트(gallr·Seoul ArtRadar)로 확인했다.
+
+| # | 이름 | 지역 | 전시·기간 | 공식 홈페이지 | 공식 문의 채널 | 메모 |
+|---|---|---|---|---|---|---|
+| 1 | 아트큐브투알투 ARTCUBE 2R2 | 서울 강남구 선릉로 563, 1F~B1(삼성동) | 성태진·미미·진환민 3인전 《익숙하지만 낯선》 **2026.11.12~12.31** ([공식 전시 목록](https://www.artcube2r2.com/exhibitions)) | [artcube2r2.com](https://www.artcube2r2.com/) | artcube2r2@arttoken.ai · 문의 폼 [artcube2r2.com/contact](https://www.artcube2r2.com/contact) ([About](https://www.artcube2r2.com/about)) · 홈페이지에 전화번호 없음 | 연말까지 7주 동안 여는 3인 기획전이라 작가별 해설이 필요하다. 해외 아트페어에도 나가므로 한·영 QR 해설 제안에 맞는다. |
+| 2 | 테오 THEO | 서울 강남구 봉은사로68길 55-3, B1 | 김세진 《멈춘 몸, 멈춘 숨 Still, Body, Still, Breath》 **2026.11.14~12.12** ([공식 Exhibitions](https://gallerytheo.com/exhibitions_theo/)) | [gallerytheo.com](https://gallerytheo.com/) | 02-556-7290 · director@gallerytheo.com(직함 주소) ([About](https://gallerytheo.com/about/)) | 2020년 개관한 소형 현대미술 갤러리이고 자카르타에 지점이 있다. 국내외 관람객이 섞여 있어 한·영 해설이 맞는다. 영상 작업이 포함되었는지는 미확인이다. |
+| 3 | 코소 COSO | 서울 중구 창경궁로5길 32, 3층(을지로) | 안부 《Ta-Ta : 못다 한 인사》 **2026.11.06~11.22** ([gallr](https://gallrmap.com/exhibitions/ta-ta-unfinished-goodbyes-anbuh-1de8/) · [Seoul ArtRadar](https://seoulartradar.com/e/ext-exh-ext-user-coso-4.html)). 공식 전시 상세 페이지는 접속이 막혀 직접 보지 못했다. | [cosocoso.kr](https://cosocoso.kr/) | coso_seoul@naver.com(갤러리 대표 메일) ([About](https://cosocoso.kr/about)) | 매년 신진작가 공모전을 열어 전시가 자주 바뀐다. 전시마다 해설을 새로 쓰는 구조라 저비용 웹 QR이 맞는다. 이번 전시는 11/22에 끝나므로 다음 전시를 기준으로 제안한다. |
+| 4 | 드로잉룸 drawingRoom | 서울 종로구 자하문로7길 68-4, 2층(서촌) | 권순영·함진 2인전 《미물 Small Things》 **2026.11.06~12.12** ([gallr](https://gallrmap.com/exhibitions/small-things-kwon-soon-young-ham-jin-0e9b/) · [Seoul ArtRadar](https://seoulartradar.com/e/ext-exh-ext-user-drawingroom-3.html)). 공식 홈 첫 화면은 아직 8~9월 전시라 이번 전시는 공식 사이트에서 확인하지 못했다. | [drawingroom.kr](https://www.drawingroom.kr/) | 02-794-3134 · drawingroomseoul@gmail.com(갤러리 계정) ([About](https://www.drawingroom.kr/about)) | 프리즈 서울에 참가하는 서촌 소형 갤러리다. 비평문 중심으로 운영해 작품별 텍스트를 QR로 옮기기 쉽다. |
+
+예비(공식 문의 채널 미확인 — 승격 보류):
+- 갤러리도올(종로 삼청로 87) — 최혜연 《뱉어진 그림》 11.06~11.29 ([ArtRadar](https://seoulartradar.com/e/ext-exh-ext-user-gallerydoll-3.html)). 공식 사이트 gallerydoll.com이 http 전용이라 열리지 않았다.
+- 김종영미술관(종로 평창) — 오귀원 초대전 2026.11.13~2027.01.10 ([ArtRadar](https://seoulartradar.com/e/kimchongyung-8a0661f1c9.html)). 공식 사이트 접속이 막혔다. 검색 결과에 이 도메인 아래 스팸 페이지가 보여 사이트가 해킹됐을 수 있다. 연락 전에 확인해야 한다.
+- 사비나미술관(은평) — 이명호 《장막과 장면 사이 혹은 너머》 10.21~12.13 ([gallr](https://gallrmap.com/exhibitions/between-or-beyond-act-and-scene-myoung-ho-lee-c253/)). 공식 사이트가 http 전용이다.
+- 코리아나미술관 space*c(강남) — 《산수/풍경》 9.10~11.27 ([문체부](https://www.mcst.go.kr/kor/s_culture/culture/cultureView.jsp?pSeq=75533)). 공식 사이트는 열지 못했다. 11/27에 끝난다.
+- 에이피오프로젝트 서울(용산 서빙고로71길 25) — 김대유 《블루노트》 11.14~12.12 ([gallr](https://gallrmap.com/exhibitions/blue-note-daeyou-kim-3a60/)). 공식 사이트 http 전용, 예약제 관람.
+- 눈 컨템포러리(용산 소월로 72) — 조현선·허지혜 《겉과 살》 11.13~12.13 ([gallr](https://gallrmap.com/exhibitions/surface-and-flesh-dc4c/)). 공식 사이트 http 전용.
+- 떼아트갤러리(종로 평동) — 이승인 초대전 《우선은 안녕》 11.17~11.29 ([아트코리아방송](https://www.artkoreatv.com/news/articleView.html?idxno=105601)). 공식 홈페이지를 찾지 못했다.
+- 갤러리 바이올렛(인사동) — 김경인 《김경인의 십이월전》 12.02~12.28 ([시민일보](https://www.siminilbo.co.kr/news/newsview.php?ncode=1160304682078313)). 공식 홈페이지를 찾지 못했다.
+- 앤갤러리(경기 성남) — 김선형 《The Bell, The Bird, The Sky》 11.24~12.11 ([중부일보](https://www.joongboo.com/news/articleView.html?idxno=363740266)). 공식 홈페이지를 찾지 못했다.
+- 패치워크 4층 전시공간(인천 제물포구 금곡동) — 곽은비 《기억의 모양》 11.07~11.22 ([인천일보](https://www.incheonilbo.com/news/articleView.html?idxno=1335949)). 공식 채널을 찾지 못했다.
+
 ## 2026-11-15 (리서치팀 · 새벽큐)
 
 전시는 기사로 확인했고, 연락처는 각 갤러리 공식 홈페이지 또는 공식 인스타그램 소개란만 적었다. 대표자 개인 휴대전화·개인 메일·개인 이름은 적지 않는다. 기존 leads.md와 이름을 대조했다. 장은선갤러리는 11/04 절 '예비'(채널 미확인)에만 있어 이번에 확인해 승격한다. 갤러리 내일(11/04 #4)은 새 전시 이호국 초대전(11.20~12.09)이 있지만 중복이라 제외한다.
