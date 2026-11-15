@@ -1,5 +1,528 @@
 [
  {
+  "id": "early-netherlandish-13",
+  "asof": "2026.11.16",
+  "kicker": {
+   "ko": "미술사 입문",
+   "en": "Art History 101"
+  },
+  "title": {
+   "ko": "초기 네덜란드 회화 입문, 반 에이크에서 보스까지 13점",
+   "en": "Early Netherlandish Painting in 13 Works, from van Eyck to Bosch"
+  },
+  "dek": {
+   "ko": "11월 21일 런던 내셔널 갤러리에서 《반 에이크: 초상화들》이 개막합니다. 유화로 세상을 처음 '있는 그대로' 그려 낸 15세기 플랑드르 화가들, 캉팽과 반 에이크에서 로히어르와 멤링을 거쳐 보스까지 열세 점으로 읽습니다.",
+   "en": "Van Eyck: The Portraits opens at the National Gallery in London on 21 November. Here are thirteen works by the fifteenth-century Flemish painters who first used oil to show the world as it is, from Campin and van Eyck through Rogier and Memling to Bosch."
+  },
+  "intro": {
+   "ko": "2026년 11월 21일, 런던 내셔널 갤러리에서 《반 에이크: 초상화들》이 개막합니다(2027년 4월 11일까지). 유럽 곳곳에 흩어진 얀 반 에이크의 초상화 아홉 점이 처음으로 한자리에 모이고, 그가 남긴 유일한 드로잉도 함께 걸립니다. 현존하는 그의 진작은 스무 점 남짓이니 절반 가까이가 한 방에 모이는 셈입니다. 미술관은 '우리가 아는 초상화는 반 에이크에서 시작된다'고 소개합니다. 핏발 선 눈, 자라난 수염, 헝클어진 머리카락까지, 600년 전 사람들이 지금도 살아 있는 듯 보이는 이유를 직접 확인할 기회입니다.\n'초기 네덜란드 회화'는 15세기 부르고뉴 공국이 다스리던 브뤼헤·헨트·브뤼셀·루뱅 같은 도시에서 꽃핀 그림을 말합니다. 얇고 투명한 유화 물감을 여러 겹 쌓아 금속의 광택, 벨벳의 결, 창밖의 먼 풍경까지 그려 냈고, 그 기법은 알프스를 넘어 이탈리아 화가들까지 바꿔 놓았습니다. 열세 점을 세 시기로 나눴습니다. 캉팽과 반 에이크가 새로운 눈을 연 1420~1440년대, 로히어르 판 데르 베이던·페트뤼스 크리스튀스·휘호 판 데르 후스가 감정과 도시의 삶을 그린 시기, 그리고 멤링과 보스로 이어지는 마지막 장입니다. 11월 30일 Daily Art에서는 이 기법을 배워 베네치아를 바꾼 안토넬로 다 메시나의 〈서재의 성 히에로니무스〉를 소개합니다.",
+   "en": "On 21 November 2026, Van Eyck: The Portraits opens at the National Gallery in London (until 11 April 2027). For the first time, all nine of Jan van Eyck's painted portraits, now scattered across Europe, come together, joined by his only surviving drawing. With only about twenty autograph works by him surviving, close to half will be in one place. The Gallery's own line is that portraiture as we know it begins with van Eyck. Bloodshot eyes, stubble, untidy hair: it is a chance to see for yourself why people painted 600 years ago still seem alive.\n'Early Netherlandish painting' means the art that flourished in the fifteenth century in cities ruled by the Dukes of Burgundy, such as Bruges, Ghent, Brussels and Leuven. By building up thin, translucent layers of oil paint, these artists captured the gleam of metal, the nap of velvet and the far-off view through a window, and their technique went on to change painters across the Alps in Italy. The thirteen works fall into three chapters: the 1420s to 1440s, when Campin and van Eyck opened a new way of seeing; the years when Rogier van der Weyden, Petrus Christus and Hugo van der Goes painted emotion and city life; and a final chapter with Memling and Bosch. On 30 November, Daily Art features Antonello da Messina's Saint Jerome in his Study, painted by an Italian who learned this technique and changed Venice."
+  },
+  "cover": [
+   "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Arnolfini%20portrait%20%281434%29.jpg?width=1600",
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Ghent%20Altarpiece%20Google%20Art%20Project.jpg?width=1600",
+   "https://commons.wikimedia.org/wiki/Special:FilePath/El%20Descendimiento%2C%20by%20Rogier%20van%20der%20Weyden%2C%20from%20Prado%20in%20Google%20Earth.jpg?width=1600",
+   "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Garden%20of%20earthly%20delights.jpg?width=1600"
+  ],
+  "sections": [
+   {
+    "title": {
+     "ko": "1420–1440 · 새로운 눈의 탄생",
+     "en": "1420–1440 · A New Way of Seeing"
+    },
+    "dek": {
+     "ko": "거실로 내려온 수태고지, 형제의 제단화, 붉은 터번의 화가, 거울 속 두 남자, 재상의 기도, 화가의 아내.",
+     "en": "An Annunciation in the living room, the brothers' altarpiece, the painter in red, two men in a mirror, a chancellor's prayer, the artist's wife."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "수태고지 세 폭 제단화 (메로드 제단화)",
+       "en": "Annunciation Triptych (Mérode Altarpiece)"
+      },
+      "artist": {
+       "ko": "로베르 캉팽과 공방",
+       "en": "Robert Campin and workshop"
+      },
+      "year": "c. 1422–32",
+      "medium": {
+       "ko": "참나무 판에 유채, 세 폭",
+       "en": "Oil on oak, triptych"
+      },
+      "headline": {
+       "ko": "메트로폴리탄 미술관 클로이스터스, 뉴욕 · 1420년대 무렵",
+       "en": "The Met Cloisters, New York · c. 1420s"
+      },
+      "why": {
+       "ko": "천사가 마리아를 찾아오는 성스러운 장면을 15세기 플랑드르 중산층의 거실로 옮겨 놓았다. 마리아의 순결을 뜻하는 백합, 오른쪽 폭에서 쥐덫을 만드는 목수 요셉, 창밖의 도시 거리까지 일상의 사물이 모두 상징이 되는, 초기 네덜란드 회화의 출발점이다. 1956년 클로이스터스가 사들였다.",
+       "en": "It moves the angel's visit to Mary into the living room of a fifteenth-century Flemish townhouse. The lily of Mary's purity, Joseph the carpenter making a mousetrap in the right wing, the street beyond his window: everyday objects all carry meaning, which makes this a founding work of Early Netherlandish painting. The Cloisters acquired it in 1956."
+      },
+      "pd": true,
+      "commons": "Robert Campin 006.jpg",
+      "sources": [
+       {
+        "label": "The Met — Annunciation Triptych (Merode Altarpiece)",
+        "url": "https://www.metmuseum.org/art/collection/search/470304"
+       },
+       {
+        "label": "Wikipedia — Mérode Altarpiece",
+        "url": "https://en.wikipedia.org/wiki/M%C3%A9rode_Altarpiece"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "헨트 제단화 (신비한 어린 양에 대한 경배)",
+       "en": "The Ghent Altarpiece (Adoration of the Mystic Lamb)"
+      },
+      "artist": {
+       "ko": "휘베르트·얀 반 에이크",
+       "en": "Hubert and Jan van Eyck"
+      },
+      "year": "1432",
+      "medium": {
+       "ko": "참나무 판에 유채, 펼쳤을 때 약 375×520cm",
+       "en": "Oil on oak, c. 375 × 520 cm (open)"
+      },
+      "headline": {
+       "ko": "성 바보 대성당, 헨트 · 1432",
+       "en": "St Bavo's Cathedral, Ghent · 1432"
+      },
+      "why": {
+       "ko": "형 휘베르트가 시작하고 그가 1426년 세상을 떠난 뒤 동생 얀이 1432년 완성했다는 사행시가 액자에 남아 있다. 벨기에 왕립문화유산연구소가 2012년부터 복원하며 16세기 덧칠 아래 숨어 있던 얀의 원래 그림을 되살렸고, 두 형제가 각각 어디를 그렸는지도 밝혀냈다. 유화가 낼 수 있는 빛과 세부를 큰 화면에 펼쳐 보여, '최초의 주요 유화'로 불리기도 한다.",
+       "en": "A verse on the frame says Hubert van Eyck began it and his brother Jan finished it in 1432, after Hubert's death in 1426. Since 2012 the Royal Institute for Cultural Heritage has restored it, uncovering Jan's original painting beneath sixteenth-century overpaint and showing which parts each brother painted. Showing on a grand scale the light and detail oil paint could achieve, it is sometimes called the first major oil painting."
+      },
+      "pd": true,
+      "commons": "Ghent Altarpiece Google Art Project.jpg",
+      "sources": [
+       {
+        "label": "KIK-IRPA — The mystery of Hubert van Eyck and the Ghent Altarpiece solved",
+        "url": "https://www.kikirpa.be/en/projects/the-mystery-of-hubert-van-eyck-and-the-ghent-altarpiece-solved"
+       },
+       {
+        "label": "Wikipedia — Ghent Altarpiece",
+        "url": "https://en.wikipedia.org/wiki/Ghent_Altarpiece"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "남자의 초상 (자화상?)",
+       "en": "Portrait of a Man (Self Portrait?)"
+      },
+      "artist": {
+       "ko": "얀 반 에이크",
+       "en": "Jan van Eyck"
+      },
+      "year": "1433",
+      "medium": {
+       "ko": "참나무 판에 유채, 25.5×19cm",
+       "en": "Oil on oak, 25.5 × 19 cm"
+      },
+      "headline": {
+       "ko": "내셔널 갤러리, 런던 · 1433",
+       "en": "The National Gallery, London · 1433"
+      },
+      "why": {
+       "ko": "붉은 샤프롱을 감아올린 남자가 거울을 보듯 몸을 살짝 내밀고 있어, 내셔널 갤러리는 반 에이크 자신일 가능성이 매우 높다고 본다. 위 액자에는 '내가 할 수 있는 만큼'이라는 그의 좌우명이, 아래에는 1433년 10월 21일에 그렸다는 글귀가 적혀 있다. 새로 보존 처리를 마치고 《반 에이크: 초상화들》에서 아내 마르하리타의 초상과 나란히 걸린다.",
+       "en": "The man in the red chaperon leans forward slightly as if looking into a mirror, and the National Gallery considers him almost certainly van Eyck himself. His motto, Als Ich Can, is painted on the upper frame, and the lower frame says he made it on 21 October 1433. Newly conserved, it hangs beside his wife Margaret's portrait in Van Eyck: The Portraits."
+      },
+      "pd": true,
+      "commons": "Jan van Eyck - Portrait of a Man (Self Portrait?) 1433.jpg",
+      "sources": [
+       {
+        "label": "National Gallery — Portrait of a Man (Self Portrait?) NG222",
+        "url": "https://www.nationalgallery.org.uk/paintings/jan-van-eyck-portrait-of-a-man-self-portrait"
+       },
+       {
+        "label": "Wikipedia — Portrait of a Man (Self Portrait?)",
+        "url": "https://en.wikipedia.org/wiki/Portrait_of_a_Man_(Self_Portrait%3F)"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "아르놀피니 초상",
+       "en": "The Arnolfini Portrait"
+      },
+      "artist": {
+       "ko": "얀 반 에이크",
+       "en": "Jan van Eyck"
+      },
+      "year": "1434",
+      "medium": {
+       "ko": "참나무 판에 유채, 82.2×60cm",
+       "en": "Oil on oak, 82.2 × 60 cm"
+      },
+      "headline": {
+       "ko": "내셔널 갤러리, 런던 · 1434",
+       "en": "The National Gallery, London · 1434"
+      },
+      "why": {
+       "ko": "브뤼헤에서 일하던 이탈리아 상인 조반니 아르놀피니 부부로 여겨지는 두 사람을 방 안에 세운 전신 이중 초상이다. 뒷벽 볼록거울에는 방에 들어서는 두 남자가 비치고, 바로 위에 반 에이크의 서명이 있다. 유화로 사물과 사람을 사실처럼 그려 낸 서유럽 초기 그림의 상징이며, 1842년 내셔널 갤러리가 샀다.",
+       "en": "A full-length double portrait, probably of the Italian merchant Giovanni Arnolfini and his wife, standing in a room in Bruges. The convex mirror on the back wall reflects two men entering, and van Eyck's signature sits just above it. It is one of the earliest Western paintings to show off what oil paint could do, and the National Gallery bought it in 1842."
+      },
+      "pd": true,
+      "commons": "The Arnolfini portrait (1434).jpg",
+      "sources": [
+       {
+        "label": "National Gallery — The Arnolfini Portrait NG186",
+        "url": "https://www.nationalgallery.org.uk/paintings/jan-van-eyck-the-arnolfini-portrait"
+       },
+       {
+        "label": "Wikipedia — Arnolfini Portrait",
+        "url": "https://en.wikipedia.org/wiki/Arnolfini_Portrait"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "롤랭 재상의 성모",
+       "en": "The Madonna of Chancellor Rolin"
+      },
+      "artist": {
+       "ko": "얀 반 에이크",
+       "en": "Jan van Eyck"
+      },
+      "year": "c. 1435",
+      "medium": {
+       "ko": "판에 유채, 66×62cm",
+       "en": "Oil on panel, 66 × 62 cm"
+      },
+      "headline": {
+       "ko": "루브르 박물관, 파리 · 1435년 무렵",
+       "en": "Musée du Louvre, Paris · c. 1435"
+      },
+      "why": {
+       "ko": "부르고뉴 공국의 재상 니콜라 롤랭이 성모자 앞에 무릎 꿇은 장면으로, 그의 고향 오툉의 교회를 위해 주문됐다. 기둥 너머로 강과 다리, 도시가 아주 작게 펼쳐진다. 루브르에 들어온 뒤 처음으로 복원돼 누런 바니시를 덜어 냈고, 2024년 루브르는 이 그림 한 점으로 전시를 열었다.",
+       "en": "Nicolas Rolin, chancellor of Burgundy, kneels before the Virgin and Child in a painting he ordered for a church in his home town of Autun. Beyond the columns, a river, a bridge and a city unfold in miniature. Restored for the first time since it entered the Louvre, with darkened varnish thinned, it was the focus of a Louvre exhibition in 2024."
+      },
+      "pd": true,
+      "commons": "The Virgin with Chancellor Rolin by Jan van Eyck (Louvre).webp",
+      "sources": [
+       {
+        "label": "Louvre — Revoir Van Eyck. La Vierge du chancelier Rolin (2024)",
+        "url": "https://www.louvre.fr/expositions-et-evenements/expositions/revoir-van-eyck"
+       },
+       {
+        "label": "Wikipedia — Madonna of Chancellor Rolin",
+        "url": "https://en.wikipedia.org/wiki/Madonna_of_Chancellor_Rolin"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "화가의 아내 마르하리타",
+       "en": "Margaret, the Artist's Wife"
+      },
+      "artist": {
+       "ko": "얀 반 에이크",
+       "en": "Jan van Eyck"
+      },
+      "year": "1439",
+      "medium": {
+       "ko": "참나무 판에 유채, 32.6×25.8cm",
+       "en": "Oil on oak, 32.6 × 25.8 cm"
+      },
+      "headline": {
+       "ko": "흐루닝어 미술관(브뤼헤 시립미술관) · 1439",
+       "en": "Groeningemuseum, Musea Brugge · 1439"
+      },
+      "why": {
+       "ko": "날짜가 적혀 있고 누구인지 알 수 있는 초상 가운데, 귀족이 아닌 여성을 그린 첫 작품으로 꼽힌다. 초상화가 왕실의 기록에서 장인과 가족, 친구에게로 넓어지는 순간을 보여 준다. 《반 에이크: 초상화들》에서 남편의 자화상(?)과 함께 걸린다.",
+       "en": "It is considered the first dated, identifiable portrait of a woman who was not an aristocrat. It marks the moment portraiture moved beyond dynastic records to craftsmen, family and friends. In Van Eyck: The Portraits it hangs beside her husband's probable self-portrait."
+      },
+      "pd": true,
+      "commons": "Jan van Eyck - Portrait of Margaret van Eyck (1439).jpg",
+      "sources": [
+       {
+        "label": "National Gallery — Van Eyck: The Portraits (press release)",
+        "url": "https://www.nationalgallery.org.uk/about-us/press-and-media/press-releases-archive/van-eyck-the-portraits-2"
+       },
+       {
+        "label": "IanVisits — All ten surviving Van Eyck portraits to reunite in London (2026.8.7)",
+        "url": "https://www.ianvisits.co.uk/articles/all-ten-surviving-van-eyck-portraits-to-reunite-in-london-for-first-time-91649/"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": {
+     "ko": "1435–1480 · 슬픔과 경건, 그리고 도시",
+     "en": "1435–1480 · Grief, Devotion and the City"
+    },
+    "dek": {
+     "ko": "석궁처럼 휜 몸, 베일 아래의 침묵, 금세공인의 가게, 피렌체를 놀라게 한 목자들.",
+     "en": "A body bent like a crossbow, silence beneath a veil, a goldsmith's shop, shepherds who astonished Florence."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "십자가에서 내려지심",
+       "en": "The Descent from the Cross"
+      },
+      "artist": {
+       "ko": "로히어르 판 데르 베이던",
+       "en": "Rogier van der Weyden"
+      },
+      "year": "c. 1435",
+      "medium": {
+       "ko": "판에 유채, 220×262cm",
+       "en": "Oil on panel, 220 × 262 cm"
+      },
+      "headline": {
+       "ko": "프라도 미술관, 마드리드 · 1435년 무렵",
+       "en": "Museo del Prado, Madrid · c. 1435"
+      },
+      "why": {
+       "ko": "루뱅의 석궁 길드가 예배당을 위해 주문한 그림으로, 그리스도의 몸이 석궁처럼 휘어 있고 양쪽 모서리에 작은 석궁이 그려져 있다. 스승 캉팽에게서 배운 조각 같은 형태와 선명한 빨강·하양·파랑 위로, 눈물 흘리는 사람들의 슬픔이 그대로 전해진다. 이후 두 세기 동안 수없이 모사된, 가장 영향력 있는 십자가 그림으로 꼽힌다.",
+       "en": "The crossbowmen's guild of Leuven ordered it for their chapel, and Christ's body bends like a crossbow, with tiny crossbows painted in the corners. Sculpted forms and vivid reds, whites and blues learned from his master Campin carry the raw grief of the weeping mourners. It is often called the most influential Netherlandish image of the Passion, copied endlessly for two centuries."
+      },
+      "pd": true,
+      "commons": "El Descendimiento, by Rogier van der Weyden, from Prado in Google Earth.jpg",
+      "sources": [
+       {
+        "label": "Museo del Prado — The Descent from the Cross",
+        "url": "https://www.museodelprado.es/en/easy-to-read/the-descent-from-the-cross-rogier-van-der-weyden/f041df0d-d96f-6fd0-4f7c-7e13bd8b77b1"
+       },
+       {
+        "label": "Wikipedia — The Descent from the Cross (van der Weyden)",
+        "url": "https://en.wikipedia.org/wiki/The_Descent_from_the_Cross_(van_der_Weyden)"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "여인의 초상",
+       "en": "Portrait of a Lady"
+      },
+      "artist": {
+       "ko": "로히어르 판 데르 베이던",
+       "en": "Rogier van der Weyden"
+      },
+      "year": "c. 1460",
+      "medium": {
+       "ko": "판에 유채, 34×25.5cm(그림 면)",
+       "en": "Oil on panel, 34 × 25.5 cm (painted surface)"
+      },
+      "headline": {
+       "ko": "내셔널 갤러리 오브 아트, 워싱턴 D.C. · 1460년 무렵",
+       "en": "National Gallery of Art, Washington · c. 1460"
+      },
+      "why": {
+       "ko": "베일과 깃, 얼굴과 팔이 이루는 기하학적 선, 어둠과 빛의 대비가 얼굴을 떠오르게 하고, 내리뜬 눈과 꼭 맞잡은 손가락이 겸손한 성품을 전한다. 반 에이크의 감각적인 화려함과 달리 로히어르 특유의 절제된 영성을 보여 주는 대표작이다. 모델의 이름은 전하지 않으며, 1937년 앤드루 멜런 재단이 미술관에 기증했다.",
+       "en": "The geometric lines of veil, neckline, face and arms, and the contrast of dark and light, lift the face forward, while lowered eyes and tightly clasped fingers suggest humility. Set against van Eyck's sensuous richness, it shows the austere spirituality Rogier is known for. The sitter's name is unknown; the Andrew W. Mellon trust gave the panel to the museum in 1937."
+      },
+      "pd": true,
+      "commons": "Rogier van der Weyden - Portrait of a Lady - Google Art Project.jpg",
+      "sources": [
+       {
+        "label": "National Gallery of Art — Portrait of a Lady (1937.1.44)",
+        "url": "https://www.nga.gov/artworks/51-portrait-lady"
+       },
+       {
+        "label": "Wikipedia — Portrait of a Lady (van der Weyden)",
+        "url": "https://en.wikipedia.org/wiki/Portrait_of_a_Lady_(van_der_Weyden)"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "작업장의 금세공인",
+       "en": "A Goldsmith in his Shop"
+      },
+      "artist": {
+       "ko": "페트뤼스 크리스튀스",
+       "en": "Petrus Christus"
+      },
+      "year": "1449",
+      "medium": {
+       "ko": "참나무 판에 유채, 98×85.2cm(그림 면)",
+       "en": "Oil on oak, 98 × 85.2 cm (painted surface)"
+      },
+      "headline": {
+       "ko": "메트로폴리탄 미술관(로버트 리먼 컬렉션), 뉴욕 · 1449",
+       "en": "The Met (Robert Lehman Collection), New York · 1449"
+      },
+      "why": {
+       "ko": "15세기 중반 브뤼헤를 대표한 화가가 젊은 남녀가 찾아온 금세공인의 가게를 그렸다. 작업대 위 볼록거울에는 두 남자가 비치는데, 그중 한 사람은 매를 들고 있다. 아래쪽에 '페트뤼스 크리스튀스가 1449년에 나를 만들었다'는 글귀가 있고, 금세공 길드의 홍보용 그림이었다는 해석도 있다.",
+       "en": "A leading Bruges painter of the mid-fifteenth century shows a young couple visiting a goldsmith's shop. A convex mirror on the workbench reflects two men, one of them holding a falcon. An inscription reads that Master Petrus Christus made it in 1449, and some think the goldsmiths' guild commissioned it as an advertisement."
+      },
+      "pd": true,
+      "commons": "A Goldsmith in his Shop MET DT711.jpg",
+      "sources": [
+       {
+        "label": "The Met — A Goldsmith in his Shop (1975.1.110)",
+        "url": "https://www.metmuseum.org/art/collection/search/459052"
+       },
+       {
+        "label": "Wikipedia — A Goldsmith in His Shop",
+        "url": "https://en.wikipedia.org/wiki/A_Goldsmith_in_His_Shop"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "포르티나리 제단화 (목자들의 경배)",
+       "en": "The Portinari Altarpiece (Adoration of the Shepherds)"
+      },
+      "artist": {
+       "ko": "휘호 판 데르 후스",
+       "en": "Hugo van der Goes"
+      },
+      "year": "c. 1477–78",
+      "medium": {
+       "ko": "목판에 유채, 펼쳤을 때 274×652cm",
+       "en": "Oil on wood, 274 × 652 cm (open)"
+      },
+      "headline": {
+       "ko": "우피치 미술관, 피렌체 · 1477–78년 무렵",
+       "en": "Uffizi Galleries, Florence · c. 1477–78"
+      },
+      "why": {
+       "ko": "브뤼헤에서 메디치 은행을 맡았던 피렌체 사람 톰마소 포르티나리가 고향 병원 성당의 가족 예배당을 위해 주문했다. 1483년 바닷길로 피사를 거쳐 피렌체에 도착하자, 사물과 풍경과 얼굴을 그대로 옮긴 듯한 사실감이 피렌체 화가들을 놀라게 했다. 앞쪽 꽃병의 붓꽃·백합·매발톱꽃에도 각각 뜻이 담겨 있다.",
+       "en": "Tommaso Portinari, the Florentine who ran the Medici bank in Bruges, ordered it for his family chapel in a Florentine hospital church. When it arrived in Florence by way of Pisa in 1483, its lifelike objects, landscape and faces astonished the city's painters. Even the irises, lily and columbines in the foreground vases carry symbolic meaning."
+      },
+      "pd": true,
+      "commons": "Hugo van der Goes - Portinari Triptych (c. 1477).jpg",
+      "sources": [
+       {
+        "label": "Uffizi — Adoration of the Shepherds (Portinari Triptych)",
+        "url": "https://www.uffizi.it/en/artworks/adoration-of-the-shepherds-with-angels-and-saints-recto-annunciation-verso"
+       },
+       {
+        "label": "Wikipedia — Portinari Altarpiece",
+        "url": "https://en.wikipedia.org/wiki/Portinari_Altarpiece"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": {
+     "ko": "1467–1510 · 브뤼헤의 황혼과 보스의 상상",
+     "en": "1467–1510 · Twilight in Bruges, Bosch's Imagination"
+    },
+    "dek": {
+     "ko": "해적에게 빼앗긴 심판, 거울 속 기도, 아무도 본 적 없는 정원.",
+     "en": "A Judgement seized by privateers, a prayer in a mirror, a garden no one had ever seen."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "최후의 심판",
+       "en": "The Last Judgement"
+      },
+      "artist": {
+       "ko": "한스 멤링",
+       "en": "Hans Memling"
+      },
+      "year": "1467–73",
+      "medium": {
+       "ko": "판에 유채, 세 폭",
+       "en": "Oil on panel, triptych"
+      },
+      "headline": {
+       "ko": "그단스크 국립미술관, 폴란드 · 1467–73",
+       "en": "National Museum in Gdańsk · 1467–73"
+      },
+      "why": {
+       "ko": "메디치 은행 브뤼헤 지점장 안젤로 타니가 피렌체 근처 성당을 위해 주문했지만, 1473년 이탈리아로 가던 배가 그단스크의 사략선에 붙잡히면서 그림은 그단스크 성모 마리아 성당에 걸렸다. 나폴레옹 군대가 루브르로 가져갔다가 돌아왔고, 2차 대전 뒤에는 에르미타주로 갔다가 10년 만에 폴란드로 돌아왔다. 심판과 구원을 한 화면에 펼친 멤링 초기의 대작이다.",
+       "en": "Angelo Tani of the Medici bank in Bruges ordered it for a church near Florence, but in 1473 the ship carrying it was seized by a Gdańsk privateer, and the triptych ended up in Gdańsk's St Mary's Church. Napoleon's troops took it to the Louvre and it came back; after the Second World War it went to the Hermitage and returned to Poland ten years later. It is Memling's great early panorama of judgement and salvation."
+      },
+      "pd": true,
+      "commons": "Das Jüngste Gericht (Memling).jpg",
+      "sources": [
+       {
+        "label": "National Museum in Gdańsk — The History of the Painting",
+        "url": "https://sadostateczny.mng.gda.pl/en/the-history-of-the-painting"
+       },
+       {
+        "label": "Wikipedia — The Last Judgment (Memling)",
+        "url": "https://en.wikipedia.org/wiki/The_Last_Judgment_(Memling)"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "마르턴 판 니우엔호버의 두 폭 제단화",
+       "en": "Diptych of Maarten van Nieuwenhove"
+      },
+      "artist": {
+       "ko": "한스 멤링",
+       "en": "Hans Memling"
+      },
+      "year": "1487",
+      "medium": {
+       "ko": "판에 유채, 각 폭 44.7×33.5cm",
+       "en": "Oil on panel, each 44.7 × 33.5 cm"
+      },
+      "headline": {
+       "ko": "성 요한 병원(브뤼헤 시립미술관) · 1487",
+       "en": "St John's Hospital, Musea Brugge · 1487"
+      },
+      "why": {
+       "ko": "스물세 살의 브뤼헤 귀족 마르턴이 성모자와 같은 방에서 기도하는 모습을 두 폭에 나눠 그렸다. 성모 뒤 볼록거울에 두 사람이 한 방에 함께 있는 모습이 비쳐, 환영이 아니라 현실처럼 보이게 한다. 창밖으로 브뤼헤의 미너호수 다리가 보이고, 원래 액자와 경첩이 그대로 남아 있다.",
+       "en": "Maarten van Nieuwenhove, a Bruges patrician aged twenty-three, prays in the same room as the Virgin and Child across two hinged panels. A convex mirror behind Mary reflects them together, as if this were reality rather than a vision. Through the window you can see the bridge over Bruges's Minnewater, and the original frame and hinges survive."
+      },
+      "pd": true,
+      "commons": "Hans Memling - Diptych of Maarten Nieuwenhove - WGA14955.jpg",
+      "sources": [
+       {
+        "label": "Musea Brugge — Diptych of Maarten van Nieuwenhove",
+        "url": "https://www.museabrugge.be/en/collection/work/id/O_SJ0178_I"
+       },
+       {
+        "label": "Wikipedia — Diptych of Maarten van Nieuwenhove",
+        "url": "https://en.wikipedia.org/wiki/Diptych_of_Maarten_van_Nieuwenhove"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "쾌락의 정원",
+       "en": "The Garden of Earthly Delights"
+      },
+      "artist": {
+       "ko": "히에로니무스 보스",
+       "en": "Hieronymus Bosch"
+      },
+      "year": "c. 1490–1510",
+      "medium": {
+       "ko": "참나무 판에 유채, 세 폭, 205.5×384.9cm",
+       "en": "Oil on oak, triptych, 205.5 × 384.9 cm"
+      },
+      "headline": {
+       "ko": "프라도 미술관, 마드리드 · 1490–1510년 무렵",
+       "en": "Museo del Prado, Madrid · c. 1490–1510"
+      },
+      "why": {
+       "ko": "왼쪽 낙원, 가운데 벌거벗은 사람들과 거대한 과일·새가 뒤섞인 정원, 오른쪽 지옥으로 이어지고, 날개를 닫으면 천지창조 셋째 날의 세상이 나타난다. 앞선 거장들이 현실을 정밀하게 옮겼다면, 보스는 같은 정밀함으로 아무도 본 적 없는 세계를 그렸다. 경고인지 잃어버린 낙원인지 지금도 해석이 갈리며, 1939년부터 프라도에 있다.",
+       "en": "Paradise on the left, a garden of naked figures, giant fruit and birds in the centre, hell on the right; closed, the wings show the world on the third day of creation. Where earlier masters recorded reality precisely, Bosch used the same precision to paint a world no one had ever seen. Scholars still debate whether it is a warning or a lost paradise; it has been in the Prado since 1939."
+      },
+      "pd": true,
+      "commons": "The Garden of earthly delights.jpg",
+      "sources": [
+       {
+        "label": "Museo del Prado — The Garden of Earthly Delights Triptych",
+        "url": "https://www.museodelprado.es/en/the-collection/art-work/the-garden-of-earthly-delights-triptych/02388242-6d6a-4e9e-a992-e1311eab3609"
+       },
+       {
+        "label": "Wikipedia — The Garden of Earthly Delights",
+        "url": "https://en.wikipedia.org/wiki/The_Garden_of_Earthly_Delights"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "note": {
+   "ko": "전시 기간과 출품 내용은 내셔널 갤러리 전시 페이지·보도자료와 IanVisits(2026.8.7) 기사로 확인했습니다(2026년 11월 16일 기준). 작품의 제작 연도·크기·소장처는 각 소장처 공식 페이지(내셔널 갤러리, 루브르, 내셔널 갤러리 오브 아트, 우피치, 브뤼헤 시립미술관, 그단스크 국립미술관, 벨기에 왕립문화유산연구소)와 위키백과로 대조했고, 메트로폴리탄 미술관과 프라도 미술관 페이지는 이번에 직접 열리지 않아 위키백과와 검색 색인의 소장 번호로 확인했습니다. 메로드 제단화의 제작 연도는 연구자마다 1420년대 초~1430년대 초로 달라 넓게 적었고, 크기가 소장처마다 다르게 표기된 작품은 크기를 생략했습니다. 소장처 사정에 따라 일부 작품은 전시되지 않을 수 있습니다. 이미지는 모두 퍼블릭 도메인(위키미디어 커먼즈)입니다.",
+   "en": "Exhibition dates and loans were checked against the National Gallery's exhibition page and press release and an IanVisits article (7 Aug 2026), as of 16 November 2026. Dates, dimensions and locations were cross-checked between the owners' official pages (National Gallery, Louvre, National Gallery of Art, Uffizi, Musea Brugge, National Museum in Gdańsk, KIK-IRPA) and Wikipedia; the Met and Prado pages could not be opened this time, so those entries rely on Wikipedia and the accession numbers shown in search indexes. Scholars date the Mérode Altarpiece anywhere from the early 1420s to the early 1430s, so a broad range is given; dimensions are omitted where sources disagree. Some works may be off view. All images are public domain (Wikimedia Commons)."
+  }
+ },
+ {
   "id": "rijksmuseum-twelve",
   "asof": "2026.11.13",
   "kicker": {
