@@ -198,7 +198,7 @@ const T = {
   st_count: ['점', 'works'], copied: ['링크를 복사했습니다', 'Link copied'], go_explore: ['작품 탐색으로', 'Go to Explore'],
   // viewer
   v_card: ['카드 이미지', 'Share card'], v_copy: ['링크 복사', 'Copy link'], v_share: ['공유', 'Share'], ft_share: ['이 특집 공유하기', 'Share this feature'], ft_copy: ['이 특집 링크 복사', 'Copy link to this feature'], share_daily: ['QURATOR 오늘의 작품', 'QURATOR Daily Art'], share_feat: ['QURATOR 특집', 'QURATOR Features'], v_copied: ['링크를 복사했어요', 'Link copied'], v_card_ok: ['카드 이미지를 저장했어요', 'Card image saved'], v_card_wait: ['카드를 만드는 중…', 'Making your card…'],
-  v_listen: ['해설 듣기', 'Listen'], v_voice: ['목소리 바꾸기', 'Change voice'], v_female: ['여성', 'F'], v_male: ['남성', 'M'], v_to_f: ['여성 목소리로 들려드려요', 'Switched to a female voice'], v_to_m: ['남성 목소리로 들려드려요', 'Switched to a male voice'], v_voice_soon: ['이 작품의 다른 목소리는 곧 준비돼요', 'The other voice for this work is coming soon'], im_label: ['작품 감상', 'Viewing'], im_pinch: ['두 손가락으로 그림을 확대해 보세요. 두 번 톡 치면 그 자리가 커져요', 'Pinch to zoom into the painting. Double-tap to zoom in on a spot'], listen_now: ['3분 해설 바로 듣기', 'Listen now · 3 min'], im_again: ['다시 듣기', 'Listen again'], im_read: ['해설 글로 보기', 'Read the text'], v_bgm: ['배경음악', 'Background music'], v_bgm_on: ['해설에 잔잔한 클래식이 함께 흐릅니다', 'Soft classical music under the narration'], v_bgm_off: ['배경음악을 껐습니다', 'Background music off'], v_look: ['이것을 찾아보세요', 'Look closer'], v_words: ['Words to know', 'Words to know'], v_info: ['작품 정보', 'Details'],
+  v_listen: ['해설 듣기', 'Listen'], v_voice: ['목소리 바꾸기', 'Change voice'], v_female: ['여성', 'Female'], v_male: ['남성', 'Male'], v_to_f: ['여성 목소리로 들려드려요', 'Switched to a female voice'], v_to_m: ['남성 목소리로 들려드려요', 'Switched to a male voice'], v_voice_soon: ['이 작품의 다른 목소리는 곧 준비돼요', 'The other voice for this work is coming soon'], im_label: ['작품 감상', 'Viewing'], im_pinch: ['두 손가락으로 그림을 확대해 보세요. 두 번 톡 치면 그 자리가 커져요', 'Pinch to zoom into the painting. Double-tap to zoom in on a spot'], listen_now: ['3분 해설 바로 듣기', 'Listen now · 3 min'], im_again: ['다시 듣기', 'Listen again'], im_read: ['해설 글로 보기', 'Read the text'], v_bgm: ['배경음악', 'Background music'], v_bgm_on: ['해설에 잔잔한 클래식이 함께 흐릅니다', 'Soft classical music under the narration'], v_bgm_off: ['배경음악을 껐습니다', 'Background music off'], v_look: ['이것을 찾아보세요', 'Look closer'], v_words: ['Words to know', 'Words to know'], v_info: ['작품 정보', 'Details'],
   v_more: ['함께 보면 좋은 작품', 'You may also like'], v_artist: ['작가', 'Artist'], v_date: ['연도', 'Date'], v_medium: ['재료', 'Medium'],
   v_coll: ['소장', 'Collection'], v_src: ['출처', 'Source'], v_notfound: ['작품을 찾을 수 없습니다.', 'Artwork not found.'],
   v_orig: ['원문(영어) 해설입니다. ', 'Original English text. '], v_gt: ['구글 번역으로 보기', 'Open in Google Translate'],
@@ -1068,13 +1068,13 @@ async function viewWork(uid, custom) {
   </div>
   <div class="player"><div class="player-in">
     <button class="play" id="play" aria-label="${t('v_listen')}"></button>
-    <div class="p-info"><div class="p-title">${t('v_listen')} · ${esc(model.title)}</div><div class="p-bar"><i id="pbar"></i></div><div class="p-sub"><span id="pstat"></span><span id="plang"></span></div></div>
+    <div class="p-info"><div class="p-title"><span class="p-k">${t('v_listen')}</span>${esc(model.title)}</div><div class="p-bar"><i id="pbar"></i></div><div class="p-sub"><span id="pstat"></span><span id="plang"></span></div></div>
     <button class="pim" id="pim" aria-label="${t('im_label')}" title="${t('im_label')}"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="5" width="16" height="12" rx="1"/><path d="M8 20h8"/></svg></button>
     <button class="pvoice" id="pvoice" aria-label="${t('v_voice')}" title="${t('v_voice')}"></button>
     <button class="bgm${BGM.on ? ' on' : ''}" id="bgm" aria-pressed="${BGM.on}" aria-label="${t('v_bgm')}" title="${t('v_bgm')}"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></svg></button>
     <button class="rate" id="rate">${Speech.rate}×</button>
   </div></div>`;
-  hydrate();
+  hydrate(); hangulTrack(app());   // 뷰어 eyebrow·섹션 제목의 한글도 자간을 벌리지 않게
 
   const ICON_PLAY = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15l13-7.5z"/></svg>';
   const ICON_PAUSE = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg>';
@@ -1113,8 +1113,17 @@ async function viewWork(uid, custom) {
     const sents = r.rec ? r.rec.sentences : splitSentences(r.text || '');
     const vt = $('#vtext');
     vt.className = 'v-text ' + (l === 'en' ? 'en' : '');
-    let k = 0;
-    vt.innerHTML = sents.map(s => s === '\n' ? '<br><br>' : `<span class="s" data-i="${k++}">${esc(s)}</span> `).join('');
+    // 문단: 원문 줄바꿈(\n)은 그대로, 한 덩어리 해설은 문장 경계에서 영문 약 340자·한국어 약 200자마다 나눔(오늘의 작품 paras와 같은 기준)
+    const min = l === 'en' ? 340 : 200, ps = [[]]; let len = 0, k = 0;
+    sents.forEach(s => {
+      if (s === '\n') { if (ps[ps.length - 1].length) { ps.push([]); len = 0; } return; }
+      if (len >= min) { ps.push([]); len = 0; }
+      ps[ps.length - 1].push(`<span class="s" data-i="${k++}">${esc(s)}</span>`); len += s.length;
+    });
+    if (ps.length > 1 && !ps[ps.length - 1].length) ps.pop();
+    const last = ps[ps.length - 1];   // 짧은 꼬리 문단은 앞 문단에 붙임
+    if (ps.length > 1 && last.join('').replace(/<[^>]+>/g, '').length < min / 2.5) ps[ps.length - 2].push(...ps.pop());
+    vt.innerHTML = ps.map(p => `<p>${p.join(' ')}</p>`).join('');
     $('#vnote').innerHTML = r.note || '';
     const speakSents = sents.filter(s => s !== '\n');
     // for mixed (ko header + english original) speak in English except header line
@@ -1132,6 +1141,7 @@ async function viewWork(uid, custom) {
     if (done) $('#pbar').style.width = '100%';
     $('#pstat').textContent = n ? `${Math.min(Speech.idx + 1, n)} / ${n}` : '';
     $$('#vtext .s').forEach(s => s.classList.toggle('cur', Speech.playing && +s.dataset.i === Speech.idx));
+    $('#vtext').classList.toggle('playing', Speech.playing);
     const cur = $('#vtext .s.cur');
     if (IM.on) IM.update(done);
     else if (cur && Speech.playing && Date.now() - IM.userScroll > 8000) { const r = cur.getBoundingClientRect(); if (r.top < 80 || r.bottom > innerHeight - 110) cur.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
