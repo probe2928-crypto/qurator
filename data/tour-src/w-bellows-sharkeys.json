@@ -1,0 +1,82 @@
+{
+ "id": "w-bellows-sharkeys",
+ "segs": [
+  {
+   "ko": "어두운 방 한가운데, 밝은 조명 아래에서 두 남자가 맞붙어 있습니다. 링 아래에는 구경꾼들의 얼굴이 몰려 있습니다. 미국 화가 조지 벨로스가 1909년에 그린 '샤키 클럽의 스태그 경기'입니다.",
+   "en": "In the middle of a dark room, under hard light, two men are locked in a fight. Below the ring, the faces of the spectators are packed close together. This is Stag at Sharkey's, painted in 1909 by the American artist George Bellows.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0
+  },
+  {
+   "ko": "벨로스는 1882년 오하이오주 콜럼버스에서 태어났습니다. 오하이오 주립대학에서는 야구와 농구 선수로 뛰었습니다. 1904년 대학을 떠나 뉴욕으로 가서 로버트 헨리에게 그림을 배웠습니다. 도시의 일상을 그린 애시캔 화파의 젊은 주역이 되었습니다.",
+   "en": "Bellows was born in Columbus, Ohio, in 1882. At Ohio State University he played baseball and basketball. In 1904 he left college for New York, where he studied painting with Robert Henri. He soon became the leading young member of the Ashcan School, a group of artists who painted everyday life in the city.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "그의 화실 길 건너편에는 톰 샤키가 운영하는 술집이 있었습니다. 샤키는 해군 출신의 전직 헤비급 권투 선수였고, 술집 뒷방에 권투 링을 두었습니다. 당시 뉴욕에서는 공개 권투 경기가 법으로 금지되어 있었습니다.",
+   "en": "Across the street from his studio was a saloon run by Tom Sharkey, a former heavyweight boxer and Navy veteran. In the back room, Sharkey kept a boxing ring. At the time, public boxing matches were against the law in New York.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "그래서 경기는 회원끼리 여는 사설 클럽 행사의 모양을 갖추었습니다. 바깥에서 온 선수는 그날 밤만 임시 회원이 되었고, 이들을 스태그라고 불렀습니다. 그림의 제목은 바로 이 관습에서 나왔습니다.",
+   "en": "So the fights were staged as private club events, open only to members. A fighter from outside was given a temporary membership for the night, and such a fighter was called a stag. The title of the painting comes from this custom.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "화면 가운데의 두 선수를 보십시오. 두 사람은 머리를 맞댄 채 한 덩어리로 엉켜 있습니다. 몸은 검은 배경 앞에 실루엣처럼 떠오르고, 거친 전등 빛이 그 위를 비춥니다.",
+   "en": "Now look at the two boxers in the center. Their heads meet, and their bodies are tangled into a single shape. They stand out like silhouettes against the black background, lit by harsh electric light.",
+   "x": 0.5,
+   "y": 0.45,
+   "z": 1.35
+  },
+  {
+   "ko": "벨로스는 빠른 붓질로 윤곽을 흐려 움직임을 살렸습니다. 선수들 곁에는 심판도 함께 서 있습니다.",
+   "en": "Bellows used quick brushstrokes that blur the edges, so the bodies seem to move. A referee stands with the fighters as well.",
+   "x": 0.5,
+   "y": 0.45,
+   "z": 1.35
+  },
+  {
+   "ko": "이번에는 화면 아래 링 가장자리를 보십시오. 구경꾼들의 머리가 바로 앞에 놓여 있습니다. 시점이 낮아서, 보는 사람은 관중 틈에 끼어 링을 올려다보게 됩니다.",
+   "en": "Next, look down at the edge of the ring at the bottom of the picture. The heads of the spectators are right in front of us. The point of view is low, so we seem to stand among the crowd, looking up at the ring.",
+   "x": 0.5,
+   "y": 0.8,
+   "z": 1.3
+  },
+  {
+   "ko": "구도는 흔히 2년 전 작품 '클럽의 밤'의 삼각형 구성을 다시 쓴 것으로 봅니다. 물감은 두껍게 올렸고 붓 자국을 감추지 않았습니다. 벨로스는 권투는 전혀 모른다고 말했다고 전해집니다. 그저 서로 죽이려 드는 두 남자를 그린다고요.",
+   "en": "The composition is often seen as a return to the triangle he had used in Club Night, painted two years earlier. The paint is laid on thickly, and the brushstrokes are left in plain view. Bellows is said to have claimed he knew nothing about boxing. He was simply painting \"two men trying to kill each other.\"",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1
+  },
+  {
+   "ko": "당시 권투를 두고 의견이 갈렸습니다. 천박하다는 비판도 있었지만 시어도어 루스벨트처럼 건강한 남성다움의 표현으로 본 사람들도 있었습니다. 이 그림도 처음에는 몹시 저속하다는 말을 들었습니다.",
+   "en": "In those years, people were divided about boxing. Some called it crude and brutal, while supporters such as Theodore Roosevelt saw it as a healthy expression of manliness. This painting, too, was first thought shockingly vulgar.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "1917년 벨로스는 같은 장면을 석판화로도 만들었습니다. 그림은 1922년 클리블랜드 미술관에 들어가 지금까지 그곳에 있습니다. 벨로스는 1925년 맹장이 터져 마흔둘에 세상을 떠났습니다.",
+   "en": "In 1917 Bellows made a lithograph of the same scene. The painting entered the Cleveland Museum of Art in 1922 and has stayed there ever since. Bellows died in 1925, at the age of forty-two, after his appendix burst.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "이제 한 걸음 물러나 화면 전체를 보십시오. 빛을 받은 두 몸과 어둠 속의 관중이 하나의 장면을 이룹니다. 링 아래 관중 사이에 서 있다면 어떤 기분일지 떠올려 보십시오.",
+   "en": "Now step back and take in the whole picture. The two lit bodies and the crowd in the shadows make a single scene. Imagine yourself standing among the spectators below the ring. What would you feel?",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0
+  }
+ ]
+}

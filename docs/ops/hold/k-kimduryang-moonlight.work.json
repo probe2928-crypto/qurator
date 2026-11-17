@@ -1,0 +1,58 @@
+{
+ "id": "k-kimduryang-moonlight",
+ "region": "kr",
+ "title": {
+  "ko": "달밤 산수 (월야산수도 月夜山水圖)",
+  "en": "Moonlit Landscape (Woryasansudo)"
+ },
+ "artist": {
+  "ko": "김두량",
+  "en": "Kim Duryang"
+ },
+ "date": "1744",
+ "medium": {
+  "ko": "종이에 수묵담채, 81.8×48.8cm",
+  "en": "Ink and light colour on paper, 81.8 × 48.8 cm"
+ },
+ "collection": {
+  "ko": "국립중앙박물관, 서울",
+  "en": "National Museum of Korea, Seoul"
+ },
+ "wiki": {
+  "en": []
+ },
+ "tagline": {
+  "ko": "한가위 보름달 아래, 잎 진 나무와 안개 속 숲의 고요",
+  "en": "Under the harvest full moon, bare trees and a forest lost in mist"
+ },
+ "look": {
+  "ko": [
+   "크고 둥근 한가위 보름달",
+   "게의 발처럼 꺾여 뻗은 잎 진 나뭇가지",
+   "왼쪽 위에 적힌 '갑자년 한가을' 관지"
+  ],
+  "en": [
+   "The large, round harvest full moon",
+   "Bare branches bending like crab claws",
+   "The inscription in the upper left dating it to mid-autumn 1744"
+  ]
+ },
+ "words": [
+  {
+   "en": "full moon",
+   "ko": "보름달"
+  },
+  {
+   "en": "bare",
+   "ko": "앙상한"
+  },
+  {
+   "en": "mist",
+   "ko": "안개"
+  }
+ ],
+ "short": {
+  "ko": "크고 둥근 보름달 아래 잎이 다 떨어진 나무가 서 있고, 그 너머로 안개 속 숲이 펼쳐집니다. 조선의 궁중 화원 김두량이 1744년 한가위 무렵, 49세에 그린 '달밤 산수'입니다. 왼쪽 위에 갑자년 한가을에 그렸다는 관지가 남아 있어 제작 시기를 알 수 있습니다. 나뭇가지는 게의 발처럼 꺾인 해조묘로, 바위와 언덕은 전통 준법으로 그렸습니다. 남종화풍이 퍼지던 시기에 앞 시대의 화풍을 지킨 작품으로 평가됩니다. 국립중앙박물관이 소장하고 있습니다.",
+  "en": "Beneath a large, round full moon stand trees stripped of their leaves, and beyond them a forest fades into the mist. This is Moonlit Landscape, painted by the Joseon court painter Kim Duryang around Chuseok in 1744, when he was 49. An inscription in the upper left records that he painted it in mid-autumn of the gapja year. The bare branches are drawn in the crab-claw manner, and the rocks and slopes with traditional texture strokes. The work is seen as one that kept to an older style at a time when the Southern School was spreading. It belongs to the National Museum of Korea."
+ }
+}

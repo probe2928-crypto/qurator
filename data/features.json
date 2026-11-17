@@ -1,5 +1,472 @@
 [
  {
+  "id": "korea-exhibitions-2026-winter",
+  "asof": "2026.11.18",
+  "kicker": {
+   "ko": "전시 가이드",
+   "en": "Exhibition Guide"
+  },
+  "title": {
+   "ko": "이번 겨울 꼭 봐야 할 국내 전시 10",
+   "en": "10 Exhibitions to See in Korea This Winter"
+  },
+  "dek": {
+   "ko": "취리히에서 온 모네, 몽마르트르의 로트렉, 히스패닉 소사이어티의 엘 그레코부터 백남준의 '행성'과 56년 만에 다시 세운 정강자의 전시까지. 겨울 동안 미술관에서 볼 만한 전시를 대표작 한 점씩과 함께 골랐습니다.",
+   "en": "From Monet out of Zürich, Toulouse-Lautrec's Montmartre and El Greco from the Hispanic Society to Nam June Paik's planets and a Jung Kangja show rebuilt after 56 years: the exhibitions worth your winter, each with one key work."
+  },
+  "intro": {
+   "ko": "가을의 큰 전시들이 하나둘 막을 내리는 사이, 겨울 시즌을 겨냥한 서양 근대 미술 대여전이 서울에 잇달아 문을 열고 있습니다. 11월 18일 현재 열려 있거나 11월 말에 개막하는 전시 가운데, 미술사적 의미가 분명하고 실제로 발걸음을 옮길 가치가 있는 열 곳을 골랐습니다. 지난 10월 특집에 실은 전시는 이번 목록에서 뺐습니다.\n고전과 근대 거장의 원화, 그리고 근현대에서 동시대로 이어지는 한국 미술과 미디어 아트의 두 갈래로 나누었습니다. 11월과 12월에 폐막하는 전시는 설명에 따로 표시했습니다. 관람 시간과 휴관일, 예약 여부는 방문 전 각 기관 공지를 한 번 더 확인해 주세요.",
+   "en": "As the big autumn shows close one by one, a run of loan exhibitions of Western modern art is opening in Seoul for the winter season. From the shows open as of 18 November or opening by the end of the month, we picked ten that matter for art history and are worth the trip. Exhibitions covered in our October feature are left out.\nThey fall into two groups: original works by classical and modern masters, and Korean and media art from the modern era to now. Shows closing in November or December are flagged in the notes. Please check each venue's opening hours, closing days and booking rules before you go."
+  },
+  "cover": [
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Le%20Parlement%2C%20coucher%20de%20soleil%20-%201995-0003%20-%20Kunsthaus%20Z%C3%BCrich.jpg?width=1600"
+  ],
+  "sections": [
+   {
+    "title": {
+     "ko": "고전과 근대, 거장의 원화",
+     "en": "Classical and modern masters"
+    },
+    "dek": {
+     "ko": "추사의 말년 글씨부터 엘 그레코, 로트렉, 모네, 오키프까지.",
+     "en": "From Chusa's late calligraphy to El Greco, Toulouse-Lautrec, Monet and O'Keeffe."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "산호가·비취병 대련",
+       "en": "'Coral Song, Jade Vase' couplet"
+      },
+      "artist": {
+       "ko": "김정희",
+       "en": "Kim Jeong-hui (Chusa)"
+      },
+      "year": "1856",
+      "medium": {
+       "ko": "서예 대련",
+       "en": "Calligraphy couplet"
+      },
+      "headline": {
+       "ko": "추사 김정희와 그의 동반자 · 국립중앙박물관 서화실 · 2026.08.11–11.22",
+       "en": "Chusa Kim Jeong-hui and His Companions · National Museum of Korea, Painting and Calligraphy Gallery · 11 Aug – 22 Nov 2026"
+      },
+      "why": {
+       "ko": "서화실 재개관 기념 주제전의 세 번째 순서로, 편지·글씨·그림·탁본 31건 38점을 통해 추사가 조선과 청의 문인, 제자들과 주고받은 교류를 따라간다. 세상을 떠난 해인 일흔한 살에 쓴 이 대련은 과감한 필치의 말년 추사체를 가까이에서 볼 수 있는 작품이다. 11월 22일 폐막이라 이번 주가 마지막 기회이며, 보물 〈불이선란도〉는 9월 13일까지만 걸렸다.",
+       "en": "The third theme show marking the reopening of the museum's painting and calligraphy gallery uses 38 pieces (31 entries) of letters, calligraphy, painting and rubbings to trace Chusa's exchanges with Joseon and Qing scholars and his pupils. Written in 1856, the year he died at 71, this couplet shows the bold brushwork of his late style up close. The show closes on 22 November, so this week is the last chance; note that the Treasure Orchid Painting of Non-Duality was on view only until 13 September."
+      },
+      "record": {
+       "ko": "11월 22일 폐막",
+       "en": "Closes 22 November"
+      },
+      "pd": true,
+      "img": null,
+      "sources": [
+       {
+        "label": "세계일보",
+        "url": "https://www.segye.com/newsView/20260810516883"
+       },
+       {
+        "label": "뉴스1",
+        "url": "https://www.news1.kr/life-culture/performance-exhibition/6254024"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "성가족",
+       "en": "The Holy Family"
+      },
+      "artist": {
+       "ko": "엘 그레코",
+       "en": "El Greco"
+      },
+      "year": "1585",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "스페인 미술 500년: 빛과 어둠의 연대기 · 예술의전당 한가람디자인미술관 · 2026.09.22–2027.01.20",
+       "en": "500 Years of Spanish Art: A Chronicle of Light and Darkness · Hangaram Design Museum, Seoul Arts Center · 22 Sep 2026 – 20 Jan 2027"
+      },
+      "why": {
+       "ko": "뉴욕 히스패닉 소사이어티 박물관·도서관 소장품 95점으로 15세기부터 20세기까지 스페인 회화를 여섯 구역에 나눠 보여 준다. 엘 그레코의 〈성가족〉, 벨라스케스의 〈카밀로 아스탈리(팜필리 추기경)의 초상〉, 고야의 전신 초상 〈돈 마누엘 라페냐〉, 소로야의 작품이 한 동선에 놓인다. 길게 늘인 인체와 차가운 빛의 엘 그레코에서 사실적인 초상의 벨라스케스와 고야로 넘어가는 흐름을 원화로 비교할 수 있다.",
+       "en": "Ninety-five works from the Hispanic Society Museum & Library in New York survey Spanish painting from the 15th to the 20th century in six sections. El Greco's Holy Family, Velázquez's portrait of Camillo Astalli (Cardinal Pamphili), Goya's full-length Don Manuel Lapeña and works by Sorolla share one route. In the original paint, you can compare El Greco's elongated figures and cold light with the direct portraiture of Velázquez and Goya."
+      },
+      "record": {
+       "ko": "히스패닉 소사이어티 박물관·도서관 소장",
+       "en": "Hispanic Society Museum & Library, New York"
+      },
+      "pd": true,
+      "img": null,
+      "sources": [
+       {
+        "label": "예술의전당 전시 안내",
+        "url": "https://www.sac.or.kr/site/main/show/show_view?SN=77679"
+       },
+       {
+        "label": "한국경제",
+        "url": "https://www.hankyung.com/article/2026092217191"
+       },
+       {
+        "label": "보그 코리아",
+        "url": "https://www.vogue.co.kr/?p=868641"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "화장하는 푸풀 부인",
+       "en": "Madame Poupoule at Her Toilette"
+      },
+      "artist": {
+       "ko": "앙리 드 툴루즈 로트렉",
+       "en": "Henri de Toulouse-Lautrec"
+      },
+      "year": "1898",
+      "medium": {
+       "ko": "나무판에 유채",
+       "en": "Oil on wood"
+      },
+      "headline": {
+       "ko": "툴루즈 로트렉 & 수잔 발라동: 몽마르트르의 화가들 · 세종문화회관 세종미술관 · 2026.11.07–2027.02.09",
+       "en": "Toulouse-Lautrec & Suzanne Valadon: Painters of Montmartre · Sejong Museum of Art, Sejong Center · 7 Nov 2026 – 9 Feb 2027"
+      },
+      "why": {
+       "ko": "한불 수교 140주년 전시로, 알비의 툴루즈 로트렉 미술관과 몽마르트르 미술관, 와이즈먼&미셸 컬렉션이 협력해 작가 31명의 작품 110여 점을 모았다. 로트렉 미술관이 이만한 분량의 로트렉 작품을 한국에 보낸 것은 처음이다. 로트렉의 모델이었다가 화가가 된 수잔 발라동의 〈곡예〉, 〈마담 G의 초상〉도 함께 나와, 같은 동네에서 활동한 두 사람이 주변 사람들을 어떻게 다르게 그렸는지 비교할 수 있다.",
+       "en": "Marking 140 years of Korea–France relations, this show brings together some 110 works by 31 artists with the Musée Toulouse-Lautrec in Albi, the Musée de Montmartre and the Wiseman & Michel collection. It is the first time the Albi museum has sent this much of Lautrec's work to Korea. With Acrobatics and Portrait of Madame G by Suzanne Valadon, who modelled for Lautrec before becoming a painter herself, also on view, you can compare how two Montmartre neighbours painted the people around them."
+      },
+      "pd": true,
+      "img": null,
+      "sources": [
+       {
+        "label": "MTN 뉴스",
+        "url": "https://news.mtn.co.kr/article/2026111010265020017"
+       },
+       {
+        "label": "공식 예매 페이지",
+        "url": "https://nol.yanolja.com/ticket/products/26013617"
+       },
+       {
+        "label": "supple",
+        "url": "https://supple.kr/news/cmw5ncw8g3rkaal9pg6otcywc"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "국회의사당, 석양",
+       "en": "The Houses of Parliament, Sunset"
+      },
+      "artist": {
+       "ko": "클로드 모네",
+       "en": "Claude Monet"
+      },
+      "year": "1904",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "모던 아트의 탄생 – 스위스 쿤스트하우스 취리히 소장품 특별전 · 국립중앙박물관 특별전시실 1 · 2026.11.27–2027.04.18",
+       "en": "The Birth of Modern Art: Works from the Kunsthaus Zürich Collection · National Museum of Korea, Special Exhibition Gallery 1 · 27 Nov 2026 – 18 Apr 2027"
+      },
+      "why": {
+       "ko": "쿤스트하우스 취리히 소장품이 처음으로 한국에 오는 전시로, 1760년대부터 1950년대까지의 회화와 조각 85점을 보여 준다. 모네의 런던 연작 한 점과 함께 로댕 〈청동시대〉, 마티스 〈마르고〉, 칸딘스키 〈검은 얼룩〉, 클레 〈사냥꾼 나무〉, 자코메티 〈숲〉이 나오고 뭉크·달리·마그리트도 포함된다. 안개 낀 템스강 위로 지는 해를 붙잡은 모네에서 출발해 추상과 초현실주의까지, 근대 미술이 어떻게 갈라져 나갔는지 한 번에 훑을 수 있다. 11월 27일 개막.",
+       "en": "The first Korean showing of the Kunsthaus Zürich collection brings 85 paintings and sculptures from the 1760s to the 1950s. Alongside this canvas from Monet's London series are Rodin's The Age of Bronze, Matisse's Margot, Kandinsky's Black Spot, Klee's The Hunter's Tree and Giacometti's The Forest, with Munch, Dalí and Magritte also included. Starting from Monet's sun setting through the Thames fog and moving on to abstraction and Surrealism, you can follow in one visit how modern art branched out. Opens 27 November."
+      },
+      "record": {
+       "ko": "쿤스트하우스 취리히 소장 · 11월 27일 개막",
+       "en": "Kunsthaus Zürich · Opens 27 November"
+      },
+      "pd": true,
+      "commons": "Claude Monet - Le Parlement, coucher de soleil - 1995-0003 - Kunsthaus Zürich.jpg",
+      "sources": [
+       {
+        "label": "서울신문",
+        "url": "https://www.twig24.com/news/2026/10/13/20261013001007"
+       },
+       {
+        "label": "Asia Business Daily",
+        "url": "https://view.asiae.co.kr/en/article/2026101214315781577"
+       },
+       {
+        "label": "The Korea Herald",
+        "url": "https://www.koreaherald.com/article/10899629"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "옥양목 꽃이 있는 소의 두개골",
+       "en": "Cow's Skull with Calico Roses"
+      },
+      "artist": {
+       "ko": "조지아 오키프",
+       "en": "Georgia O'Keeffe"
+      },
+      "year": "1931",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "조지아 오키프와 미국 모더니즘 · 국립현대미술관 과천 · 2026.11.12–2027.03.21",
+       "en": "Georgia O'Keeffe and American Modernism · MMCA Gwacheon · 12 Nov 2026 – 21 Mar 2027"
+      },
+      "why": {
+       "ko": "시카고미술관 소장품을 바탕으로 작가 13명의 회화·사진·영상·가구 117점을 모은 전시로, 오키프의 회화 16점은 국내 전시 가운데 가장 많다. 알프레드 스티글리츠의 사진 〈삼등선실〉(1907) 같은 동료들의 작업 옆에 오키프를 놓고, 미국 모더니즘이 유럽을 따르는 대신 자기 땅의 풍경에서 언어를 찾아간 과정을 보여 준다. 사막에서 주운 소뼈를 천 조화와 함께 화면 한가운데 세운 이 그림은 그 전환을 상징하는 작품이다.",
+       "en": "Drawing on the Art Institute of Chicago's collection, the show gathers 117 paintings, photographs, films and pieces of furniture by 13 artists, including 16 paintings by O'Keeffe, the most ever shown in Korea. Placing her beside peers such as Alfred Stieglitz, whose photograph The Steerage (1907) is included, it shows how American modernism stopped following Europe and found its language in its own landscape. This painting, with a cow skull picked up in the desert set at the center beside cloth roses, stands for that turn."
+      },
+      "record": {
+       "ko": "2027년 4월 부산현대미술관 순회",
+       "en": "Tours to the Museum of Contemporary Art Busan in April 2027"
+      },
+      "pd": false,
+      "img": null,
+      "sources": [
+       {
+        "label": "파이낸셜뉴스",
+        "url": "https://www.fnnews.com/news/202611120557567779"
+       },
+       {
+        "label": "Korea JoongAng Daily",
+        "url": "https://www.koreajoongangdaily.com/lifestyle/mmcas-georgia-okeeffe-exhibit-traces-how-american-modernism-found-its-own-landscape/12965612"
+       },
+       {
+        "label": "The Korea Herald",
+        "url": "https://www.koreaherald.com/article/10934964"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": {
+     "ko": "근현대에서 동시대로",
+     "en": "From modern to contemporary"
+    },
+    "dek": {
+     "ko": "다시 세운 1970년의 전위, 수묵과 탁본, 백남준의 우주, 그리고 미디어 아트의 개척자.",
+     "en": "A 1970 avant-garde show rebuilt, ink and rubbings, Nam June Paik's cosmos and a media art pioneer."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "무체전(無體展) 재현",
+       "en": "Mucheonjeon (Formless Exhibition), reconstructed"
+      },
+      "artist": {
+       "ko": "정강자",
+       "en": "Jung Kangja"
+      },
+      "year": "1970 / 2026",
+      "medium": {
+       "ko": "환경 설치(재현)",
+       "en": "Environmental installation (reconstruction)"
+      },
+      "headline": {
+       "ko": "다른 공간 안으로: 여성 작가들의 공감각적 환경 1956–1976 · 리움미술관 · 2026.05.05–11.29",
+       "en": "Inside Other Spaces: Environments by Women Artists 1956–1976 · Leeum Museum of Art, Seoul · 5 May – 29 Nov 2026"
+      },
+      "why": {
+       "ko": "주디 시카고, 리지아 클라크, 야마자키 츠루코 등 여성 작가 11명이 1956~1976년에 만든 '환경' 작품을 실물 크기로 다시 세운 전시다. 정강자가 1970년 국립공보관에서 연 첫 개인전 〈무체전〉은 정부 지시로 사흘 만에 철거됐는데, 리움이 작가의 메모와 스케치, 당시 기사를 바탕으로 56년 만에 재구성했다. 아시아에서 처음 선보이는 마리안 자질라·라 몬테 영의 〈드림 하우스〉도 함께 볼 수 있다. 11월 29일 폐막.",
+       "en": "This show rebuilds at full scale the 'environments' made between 1956 and 1976 by 11 women artists, including Judy Chicago, Lygia Clark and Tsuruko Yamazaki. Jung Kangja's first solo show, held at the National Information Center in 1970, was torn down on government orders after three days; Leeum has reconstructed it 56 years later from her notes, sketches and press reports. Marian Zazeela and La Monte Young's Dream House, shown in Asia for the first time, is also on view. Closes 29 November."
+      },
+      "record": {
+       "ko": "11월 29일 폐막",
+       "en": "Closes 29 November"
+      },
+      "pd": false,
+      "img": null,
+      "sources": [
+       {
+        "label": "아시아경제",
+        "url": "https://view.asiae.co.kr/article/2026042915145194698"
+       },
+       {
+        "label": "중앙일보(다음 뉴스)",
+        "url": "https://v.daum.net/v/20260429164902850"
+       },
+       {
+        "label": "파이낸셜뉴스",
+        "url": "https://www.fnnews.com/news/202605071840035329"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "남향집",
+       "en": "South-Facing House"
+      },
+      "artist": {
+       "ko": "서세옥",
+       "en": "Suh Se Ok"
+      },
+      "year": "1977",
+      "medium": {
+       "ko": "종이에 먹·색, 67×58.5cm",
+       "en": "Ink and color on paper, 67 × 58.5 cm"
+      },
+      "headline": {
+       "ko": "서세옥·서도호: 어루만지다(撫) · 성북구립미술관 · 2026.10.20–12.20",
+       "en": "Suh Se Ok · Suh Do Ho: Caressing the Memory · Seongbuk Museum of Art, Seoul · 20 Oct – 20 Dec 2026"
+      },
+      "why": {
+       "ko": "수묵 추상의 서세옥과 그의 아들 서도호가 처음으로 함께 여는 2인전이다. 서세옥의 〈남향집〉과 '인간' 연작, 대작 〈춤추는 사람들〉 옆에 서도호가 성북동 한옥을 탁본으로 옮긴 2026년 신작과 실 드로잉이 놓인다. 붓으로 집과 사람을 줄여 그린 아버지와, 집을 천과 종이로 떠 온 아들의 작업이 같은 동네의 기억 위에서 만난다. 무료, 12월 20일 폐막.",
+       "en": "This is the first joint show by Suh Se Ok, a pioneer of abstract ink painting, and his son Do Ho Suh. South-Facing House, the People series and the large Dancing People hang beside Suh's 2026 rubbings of a hanok in Seongbuk-dong and his thread drawings. The father reduced houses and people to a few brushstrokes; the son casts houses in fabric and paper; here both work from the memory of the same neighbourhood. Free entry; closes 20 December."
+      },
+      "record": {
+       "ko": "성북구립미술관 소장 · 12월 20일 폐막",
+       "en": "Seongbuk Museum of Art collection · Closes 20 December"
+      },
+      "pd": false,
+      "img": null,
+      "sources": [
+       {
+        "label": "스페셜타임스",
+        "url": "https://www.specialtimes.co.kr/news/articleView.html?idxno=474035"
+       },
+       {
+        "label": "하퍼스 바자 코리아",
+        "url": "https://www.harpersbazaar.co.kr/artwalk/exhibitions/detail/1912386"
+       },
+       {
+        "label": "보그 코리아",
+        "url": "https://www.vogue.co.kr/?p=883328"
+       },
+       {
+        "label": "서울신문",
+        "url": "https://www.twig24.com/news/2026/10/21/20261021016003"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "새 몸",
+       "en": "New Body"
+      },
+      "artist": {
+       "ko": "박웅규",
+       "en": "Wunggyu Park"
+      },
+      "year": "2026",
+      "medium": {
+       "ko": "종이에 먹과 안료, 247.5×160.5cm",
+       "en": "Ink and pigment on paper, 247.5 × 160.5 cm"
+      },
+      "headline": {
+       "ko": "2026 아트스펙트럼: 방이있고모든라디오가각기다른주파수를향하고있다 · 호암미술관(용인) · 2026.09.01–12.27",
+       "en": "2026 Art Spectrum: ARoomWhereEveryRadioIsTunedtoDifferentStations · Hoam Museum of Art, Yongin · 1 Sep – 27 Dec 2026"
+      },
+      "why": {
+       "ko": "삼성문화재단의 신진 작가전 아트스펙트럼이 호암미술관으로 무대를 옮겨 파리 팔레 드 도쿄와 함께 기획했다. 10개국 23명(팀)이 63점을 내놓았고 그중 26점은 이 전시를 위해 새로 만들었다. 호암미술관 커미션인 박웅규의 〈새 몸〉은 2.5m에 가까운 종이에 먹과 안료로 그린 작품으로, 전통 재료로 지금의 몸을 다루는 한국 젊은 작가의 방식을 보여 준다. 12월 27일 폐막.",
+       "en": "The Samsung Foundation's emerging-artist show Art Spectrum has moved to the Hoam Museum and was co-curated with the Palais de Tokyo in Paris. Twenty-three artists and teams from ten countries show 63 works, 26 of them made for the occasion. Wunggyu Park's New Body, a Hoam commission in ink and pigment on a sheet nearly 2.5 meters tall, shows how a young Korean artist uses traditional materials to picture the body today. Closes 27 December."
+      },
+      "record": {
+       "ko": "호암미술관 커미션 · 12월 27일 폐막",
+       "en": "Hoam Museum of Art commission · Closes 27 December"
+      },
+      "pd": false,
+      "img": null,
+      "sources": [
+       {
+        "label": "e-flux",
+        "url": "https://www.e-flux.com/announcements/6785709/2026-art-spectrumaroomwhereeveryradiolstunedtodifferentstations"
+       },
+       {
+        "label": "보그 코리아",
+        "url": "https://www.vogue.co.kr/?p=868641"
+       },
+       {
+        "label": "파이낸셜뉴스",
+        "url": "https://www.fnnews.com/news/202610081828418169"
+       },
+       {
+        "label": "디자인프레스",
+        "url": "https://design.co.kr/article/176112/"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "버추얼 비너스로 향하는 우주선",
+       "en": "Spaceship to Virtual Venus"
+      },
+      "artist": {
+       "ko": "백남준",
+       "en": "Nam June Paik"
+      },
+      "year": "1991",
+      "medium": {
+       "ko": "TV 36대, 19세기 석조 불두, 네온 등",
+       "en": "36 TV monitors, 19th-century stone Buddha head, neon and other materials"
+      },
+      "headline": {
+       "ko": "별, 괘卦(제1회 백남준미디어아트페스티벌) · 백남준아트센터(용인) · 2026.07.16–2027.02.14",
+       "en": "Stars, Gwae (1st Nam June Paik Media Art Festival) · Nam June Paik Art Center, Yongin · 16 Jul 2026 – 14 Feb 2027"
+      },
+      "why": {
+       "ko": "백남준 20주기에 맞춰 처음 열린 미디어아트페스티벌의 중심 전시로, 1990년대 '행성' 연작을 축으로 그의 우주적 상상력과 동양 철학, 전자 매체를 엮었다. TV 36대와 19세기 석조 불두, 네온을 결합한 이 대형 설치는 국내에서 처음 공개된다. 〈TV 부처〉, 주역의 괘를 새긴 〈역경〉·〈로제타석〉과 함께 보면, 텔레비전을 명상과 우주의 도구로 바꾼 백남준의 사고가 또렷해진다.",
+       "en": "The central show of the first Nam June Paik Media Art Festival, held on the 20th anniversary of his death, builds on his 1990s planet series to connect his cosmic imagination, East Asian philosophy and electronic media. This large installation of 36 TV sets, a 19th-century stone Buddha head and neon is shown in Korea for the first time. Seen with TV Buddha and works inscribed with I Ching hexagrams such as I Ching and Rosetta Stone, it makes clear how Paik turned television into a tool for meditation and for thinking about the cosmos."
+      },
+      "pd": false,
+      "img": null,
+      "sources": [
+       {
+        "label": "뉴시스",
+        "url": "https://mobile.newsis.com/view/NISX20260716_0003712249"
+       },
+       {
+        "label": "헤럴드경제",
+        "url": "https://www.heraldk.com/article/2026071621444434855"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "로베르타의 구성 차트 #1",
+       "en": "Roberta's Construction Chart #1"
+      },
+      "artist": {
+       "ko": "린 허쉬만 리슨",
+       "en": "Lynn Hershman Leeson"
+      },
+      "year": "1975",
+      "medium": {
+       "ko": "종이에 프린트, 66×45.7cm",
+       "en": "Print on paper, 66 × 45.7 cm"
+      },
+      "headline": {
+       "ko": "린 허쉬만 리슨: 나의 [나]들 · 서울시립미술관 서소문본관 · 2026.10.21–2027.02.21",
+       "en": "Lynn Hershman Leeson · Seoul Museum of Art, Seosomun · 21 Oct 2026 – 21 Feb 2027"
+      },
+      "why": {
+       "ko": "드로잉·회화·사진·조각·미디어 설치·영화 200여 점으로 미디어 아트와 페미니즘 미술의 개척자를 돌아보는 대규모 개인전이다. 이 차트는 1970년대 작가가 만들어 실제로 살게 한 가상 인물 '로베르타'의 얼굴을 화장으로 '조립'하는 방법을 적은 작품으로, 정체성이 만들어지고 연출된다는 생각을 일찍이 보여 준다. 〈전자일기〉와 〈사이버로베르타〉까지 이어 보면, 50년 전의 '부캐'가 오늘의 아바타와 AI 챗봇 논의에 어떻게 닿는지 알 수 있다. 무료.",
+       "en": "Some 200 drawings, paintings, photographs, sculptures, media installations and films make this a major survey of a pioneer of media art and feminist art. This chart sets out how to 'assemble' with makeup the face of Roberta, a fictional persona Hershman Leeson created and lived as in the 1970s, an early statement that identity is constructed and performed. Followed through The Electronic Diary and CyberRoberta, it shows how an alter ego from fifty years ago speaks to today's debates about avatars and AI chatbots. Free entry."
+      },
+      "pd": false,
+      "img": null,
+      "sources": [
+       {
+        "label": "서울특별시 문화 누리집",
+        "url": "https://news.seoul.go.kr/culture/?p=535023"
+       },
+       {
+        "label": "보그 코리아",
+        "url": "https://www.vogue.co.kr/?p=883328"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "note": {
+   "ko": "전시명·장소·기간은 기관·예매 안내와 언론 보도 가운데 두 곳 이상에서 확인했습니다. 일정은 기관 사정으로 바뀔 수 있으니 방문 전 공식 공지를 확인해 주세요. 영문 전시명과 작품명 가운데 공식 영문명이 확인되지 않은 것은 QURATOR가 옮겼습니다. 저작권이 남아 있는 작품은 이미지를 싣지 않았습니다.",
+   "en": "Titles, venues and dates were checked against at least two sources among venue or ticketing pages and press reports. Schedules can change, so check the venue's own notice before you go. Where no official English title for an exhibition or work was found, the translation is QURATOR's. Works still in copyright are shown without images."
+  }
+ },
+ {
   "id": "early-netherlandish-13",
   "asof": "2026.11.16",
   "kicker": {

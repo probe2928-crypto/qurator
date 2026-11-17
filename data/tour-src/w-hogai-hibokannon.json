@@ -1,0 +1,89 @@
+{
+ "id": "w-hogai-hibokannon",
+ "segs": [
+  {
+   "ko": "세로로 긴 화면 위쪽에 관음이 공중에 떠 있고, 그 발아래에 갓난아기가 있습니다. 관음은 아기를 내려다봅니다. 일본 화가 가노 호가이가 1888년에 그린 '비모관음'입니다.",
+   "en": "In a tall, narrow picture, Kannon, the Buddhist figure of compassion, floats in the air, and below, at her feet, there is a newborn infant. Kannon is looking down at the child. This is Hibo Kannon, painted in 1888 by the Japanese artist Kanō Hōgai.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0
+  },
+  {
+   "ko": "호가이는 1828년 지금의 야마구치현에서 태어나 가노파 화가로 자랐습니다. 메이지 유신 뒤에는 도자기 밑그림을 그리며 생계를 이었습니다.",
+   "en": "Hōgai was born in 1828 in what is now Yamaguchi Prefecture and trained as a painter of the Kanō school. After the Meiji Restoration, commissions dried up, and he made a living with jobs such as drawing designs for export ceramics.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "1882년 미국인 학자 페놀로사가 그의 그림을 눈여겨보면서 길이 열렸습니다. 1886년에는 오카쿠라 덴신과 함께 나라의 옛 절을 조사했고, 그때 그린 관음상 스케치가 이 얼굴의 바탕이 되었다고 합니다.",
+   "en": "His fortunes changed in 1882, when the American scholar Ernest Fenollosa noticed his work. In 1886 he travelled with Okakura Tenshin to study old temples in Nara, and the sketches of Kannon statues he made there are said to lie behind the face in this painting.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "위쪽의 관음부터 보십시오. 공중에 뜬 채 아래를 굽어보는 모습입니다. 제목에 어머니라는 말이 들어 있지만, 이 제목은 호가이가 붙인 것이 아니라 뒷날 붙여진 이름이라고 합니다.",
+   "en": "Start with Kannon at the top. She hangs in the air, bending her gaze downward. The title calls her a merciful mother, but that name is said to have been given later, not by Hōgai himself.",
+   "x": 0.5,
+   "y": 0.32,
+   "z": 1.3
+  },
+  {
+   "ko": "관음의 손을 보십시오. 한 손에는 버드나무 가지를, 다른 손에는 수정 병을 들었습니다. 버드나무 가지를 든 관음을 양류관음이라 부릅니다.",
+   "en": "Look at her hands. In one she holds a willow branch, and in the other a crystal vase. A Kannon holding a willow branch is known as a Willow Kannon.",
+   "x": 0.5,
+   "y": 0.42,
+   "z": 1.4
+  },
+  {
+   "ko": "병에서 맑은 물이 아래로 떨어집니다. 아기가 그 물방울을 받는 장면은 이전 관음 그림에서 볼 수 없던 것이어서, 흔히 호가이의 창안으로 봅니다.",
+   "en": "Clear water falls from the vase. The infant receiving these drops is not found in earlier pictures of Kannon, so it is usually seen as Hōgai's own invention.",
+   "x": 0.5,
+   "y": 0.55,
+   "z": 1.35
+  },
+  {
+   "ko": "아래쪽, 관음의 발치에 있는 아기를 보십시오. 생명을 받아 이제 땅의 세상으로 내려가는 아기처럼 읽히곤 합니다. 화면에는 산도 그려져, 실제 같은 공간과 공중에 뜬 세계가 겹쳐 있습니다.",
+   "en": "Now look lower, at the infant by Kannon's feet. The child is often read as a new life about to descend into the human world. Mountains appear in the picture too, so a believable space and a floating, unreal world overlap.",
+   "x": 0.5,
+   "y": 0.7,
+   "z": 1.45
+  },
+  {
+   "ko": "재료는 비단에 전통 광물 안료입니다. 서양 안료는 쓰지 않았고, 먹선 없이 윤곽까지 색으로 그렸습니다. 색을 여러 번 겹쳐 파스텔화 같은 부드러운 색조를 냈고, 화면 곳곳에 금가루를 뿌렸습니다.",
+   "en": "The materials are traditional mineral pigments on silk. He used no Western pigments, and drew even the outlines in colour rather than ink. Layer upon layer of colour gives a soft tone close to a pastel drawing, and gold dust is scattered across the surface.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1
+  },
+  {
+   "ko": "그러면서도 화면에는 깊이와 입체감이 있습니다. 페놀로사는 호가이에게 서양의 원근법과 공간 표현을 권했고, 이 그림은 전통 화법에 명암을 들인 시도로 평가됩니다.",
+   "en": "Yet the picture also has depth and volume. Fenollosa had encouraged Hōgai to learn Western perspective and ways of showing space, and this work is seen as an attempt to bring light and shadow into a traditional style.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "호가이는 새로 세워질 도쿄미술학교의 교관으로 정해졌지만, 1888년 11월 5일 개교를 보지 못하고 세상을 떠났습니다. 그림을 마친 지 나흘 뒤였다고 전하며, 마지막 금가루는 벗 하시모토 가호가 뿌렸다고 합니다. 그래서 서명이 없습니다.",
+   "en": "Hōgai had been chosen to teach at the new Tokyo School of Fine Arts, but on 5 November 1888 he died before it opened. Accounts say this was four days after he finished the painting, and that his friend Hashimoto Gahō added the last gold dust. That is why it carries no signature.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "이 그림은 그의 절필이자 근대 일본화의 출발점으로 꼽힙니다. 1955년 중요문화재로 지정되었고, 지금은 도쿄예술대학 대학미술관에 있습니다.",
+   "en": "It was his last painting, and it is often called the starting point of modern Japanese painting. It was named an Important Cultural Property in 1955 and now belongs to the University Art Museum of Tokyo University of the Arts.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "한 걸음 물러서서 위의 관음과 아래의 아기를 한눈에 보십시오. 생을 마감하던 화가가 새 생명을 그렸다는 사실을 떠올리면, 이 그림이 어떻게 다르게 보이십니까.",
+   "en": "Step back and take in Kannon above and the infant below in a single view. Remembering that a painter near the end of his life chose to paint a new life, how does the picture look to you now?",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0
+  }
+ ]
+}

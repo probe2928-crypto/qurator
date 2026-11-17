@@ -1,0 +1,82 @@
+{
+ "id": "w-christus-younggirl",
+ "segs": [
+  {
+   "ko": "작은 화면 속에서 한 소녀가 우리를 똑바로 바라봅니다. 높은 모자를 쓴 채 어두운 벽 앞에 상반신만 드러내고 있습니다. 잠시 그 시선을 그대로 받아 보십시오.",
+   "en": "From a small panel, a young girl looks straight back at us. She wears a tall hat and is shown from the chest up, in front of a dark wall. Take a moment and simply meet her gaze.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0
+  },
+  {
+   "ko": "15세기 플랑드르 화가 페트뤼스 크리스튀스가 1465년에서 1470년 무렵에 그린 '어린 소녀의 초상'입니다. 그는 1444년 화가로 일하려고 브뤼헤 시민권을 샀습니다. 얀 반 에이크가 세상을 떠난 뒤 브뤼헤를 대표한 화가로 꼽힙니다.",
+   "en": "This is Portrait of a Young Girl, painted around 1465 to 1470 by the Flemish painter Petrus Christus. In 1444 he bought citizenship in Bruges so that he could work there as a painter. He is often seen as the leading painter in Bruges after the death of Jan van Eyck.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "먼저 눈을 보십시오. 두 눈의 높이가 아주 조금 어긋나 있고, 눈썹도 살짝 비뚤어져 있습니다. 이 작은 어긋남이 시선을 오래 붙잡습니다. 이 시대 여성 초상과 달리 소녀는 관람자를 차분히 마주합니다.",
+   "en": "Look first at her eyes. They are very slightly out of line with each other, and her eyebrows are faintly uneven too. This small break from symmetry holds our attention. Unlike many women in portraits of the time, she calmly faces the viewer.",
+   "x": 0.5,
+   "y": 0.4,
+   "z": 1.5
+  },
+  {
+   "ko": "얼굴은 창백하고 이마는 높으며, 목은 길게 뻗어 있습니다. 모두 당시 궁정이 아름답게 여기던 모습입니다. 표정은 나이에 비해 퍽 침착합니다.",
+   "en": "Her face is pale, her forehead high and her neck long. All of these features match the ideals of beauty at court in her day. Her expression seems calm well beyond her young years.",
+   "x": 0.5,
+   "y": 0.45,
+   "z": 1.35
+  },
+  {
+   "ko": "머리에 쓴 높은 모자는 부르고뉴 궁정에서 유행한 헤닌으로, 검은 벨벳에 금빛 테두리와 작은 진주가 둘려 있습니다. 턱 아래로는 검은 끈이 지나갑니다. 같은 시대 그림에서 보기 드문 장식으로, 남성 모자에서 빌려 왔다는 견해도 있습니다.",
+   "en": "Her tall hat is a hennin, a headdress in fashion at the Burgundian court, made of black velvet with a gold border and small pearls. A black strap runs under her chin. Such straps are rare in pictures of the period, and some scholars think the idea was borrowed from a man's hat.",
+   "x": 0.5,
+   "y": 0.25,
+   "z": 1.4
+  },
+  {
+   "ko": "가슴께로 내려오면 담비 털로 가장자리를 두른 푸른 옷이 보입니다. 목에는 세 줄로 된 금 목걸이가 걸려 있습니다.",
+   "en": "Moving down to her chest, we see a blue dress trimmed with ermine. Around her neck hangs a gold chain in three rows.",
+   "x": 0.5,
+   "y": 0.75,
+   "z": 1.35
+  },
+  {
+   "ko": "이제 뒤쪽을 보십시오. 회갈색 벽 아래로 나무 판벽이 둘러져 있습니다. 빛은 왼쪽에서 들어와 벽에 모자의 그림자를 드리웁니다. 크리스튀스는 인물을 실제 방 안에 세운 초상을 처음 시도한 화가로 평가됩니다.",
+   "en": "Now look behind her. Below a greyish-brown wall runs a wooden wainscot. Light enters from the left, and her hat casts a shadow on the wall. Christus is credited with being the first to place a portrait sitter inside a real room.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1
+  },
+  {
+   "ko": "옷감과 장신구의 세밀한 묘사에는 반 에이크의 영향이 짙습니다. 그러나 크리스튀스는 부피감을 줄이고 형태를 가늘고 길게 다듬었습니다. 말년에는 복잡한 공간보다 균형 잡힌 구성을 택했습니다.",
+   "en": "The careful detail of fabric and ornament shows van Eyck's influence. Yet Christus reduced the sense of volume and gave his forms a slender, elongated shape. In late works like this, he preferred a calm, balanced, geometric composition to complicated effects of space.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1
+  },
+  {
+   "ko": "소녀가 누구인지는 알 수 없습니다. 사라진 원래 액자의 글귀 때문에 영국 탤벗 가문 사람이라는 설이 있지만 증명되지 않았습니다. 1492년 메디치 가문의 목록에 오른 프랑스 귀부인의 작은 초상이 이 그림으로 여겨집니다.",
+   "en": "We do not know who the girl was. An inscription on the lost original frame suggested she belonged to the English Talbot family, but this has never been proven. A small portrait of a French lady in a Medici inventory of 1492 is thought to be this picture.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "그림은 1821년 에드워드 솔리의 수집품과 함께 프로이센 왕실 소장품이 되었습니다. 지금은 베를린 회화관에 있으며, 북유럽 르네상스 초상 가운데 가장 섬세한 작품의 하나로 꼽힙니다.",
+   "en": "The painting entered the Prussian royal collection in 1821, with the purchase of Edward Solly's collection. Today it hangs in the Gemäldegalerie in Berlin, and it is often counted among the most refined portraits of the Northern Renaissance.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "한 걸음 물러나 다시 소녀의 눈을 마주해 보십시오. 그녀는 우리를 살피고 있는 걸까요, 아니면 아무것도 내보이지 않으려는 걸까요?",
+   "en": "Step back and meet the girl's eyes once more. Is she studying us, or is she careful to reveal nothing at all?",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0
+  }
+ ]
+}

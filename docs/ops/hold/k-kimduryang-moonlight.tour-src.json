@@ -1,0 +1,82 @@
+{
+ "id": "k-kimduryang-moonlight",
+ "segs": [
+  {
+   "ko": "크고 둥근 보름달이 떠 있고, 그 아래에 잎이 다 떨어진 나무가 서 있습니다. 나무 너머로는 안개에 잠긴 숲이 보입니다. 달은 밝지만, 화면에는 가을의 쓸쓸함과 적막함이 감돕니다.",
+   "en": "A large, round full moon hangs in the sky, and beneath it stand trees that have lost all their leaves. Beyond them, a forest sinks into the mist. The moon is bright, yet the picture is filled with the loneliness and stillness of autumn.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0
+  },
+  {
+   "ko": "먼저 그림 왼쪽 위의 글씨를 보십시오. 갑자년 한가을에 김두량이 그렸다는 기록입니다. 갑자년은 1744년이고, 화가는 그해 49세였습니다. 국립중앙박물관은 이 가을을 음력 8월 보름, 곧 한가위로 풀이합니다.",
+   "en": "First, look at the writing in the upper left corner. It says Kim Duryang painted this in mid-autumn of the gapja year. That year was 1744, and the painter was 49 years old. The National Museum of Korea reads this mid-autumn as the fifteenth day of the eighth lunar month, the night of Chuseok.",
+   "x": 0.2,
+   "y": 0.15,
+   "z": 1.45
+  },
+  {
+   "ko": "김두량은 1696년에 태어나 1763년에 세상을 떠난 조선의 궁중 화원입니다. 아버지 김효강도 도화서 화원이었고, 아들과 조카도 같은 길을 걸었습니다. 호는 남리입니다. 산수와 인물, 동물을 두루 잘 그렸습니다.",
+   "en": "Kim Duryang (1696–1763) was a court painter of the Joseon dynasty. His father, Kim Hyogang, also served the royal painting bureau, and his son and nephew followed the same path. His art name was Namni. He was skilled at landscapes, figures and animals alike.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "그는 왕실 책봉 의식와 공신 초상 제작에 참여했고, 도화서 별제라는 벼슬에 올랐습니다. 그가 그린 삽살개 그림에는 영조가 쓴 시가 적혀 있습니다.",
+   "en": "He worked on a royal investiture and on portraits of honoured officials, and rose to an official post in the bureau. One of his pictures, a shaggy Sapsal dog, carries a poem written by King Yeongjo himself.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "이제 달을 보십시오. 한가위 보름달답게 크고 둥급니다. 명절의 달은 흔히 넉넉함을 떠올리게 하지만, 여기서는 달이 밝을수록 아래 풍경이 더 비어 보이는 듯합니다.",
+   "en": "Now look at the moon. As befits the Chuseok full moon, it is large and round. A festival moon usually suggests plenty, but here, the brighter the moon, the emptier the land below seems to grow.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1
+  },
+  {
+   "ko": "달 아래의 나무는 잎을 모두 떨구었습니다. 앙상한 가지 끝은 게의 발처럼 꺾이며 뻗어 나갑니다. 이렇게 가지를 그리는 법을 해조묘라고 하는데, 전통 기법입니다. 거침없는 붓질에서 화가의 자신감이 읽힌다고 평가됩니다.",
+   "en": "The trees under the moon have shed every leaf. Their bare branches bend and reach out like the claws of a crab. This way of drawing branches is called the crab-claw technique, a traditional method. Critics often see the painter's confidence in these quick, unhesitating strokes.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.15
+  },
+  {
+   "ko": "백과사전은 이 장면을 비탈진 계곡에 급류가 흐르는 늦가을 달밤으로 설명합니다. 물살 역시 망설임 없는 필치로 그어졌습니다. 고요한 밤에 이 물줄기만 움직입니다.",
+   "en": "A Korean encyclopedia describes the scene as a late autumn night, with a rushing stream in a steep valley. The water, too, is drawn with bold, sure strokes. In the quiet night, only the stream moves.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1
+  },
+  {
+   "ko": "나무 뒤를 보십시오. 안개가 끼어 있고, 그 너머로 숲이 물러나 있습니다. 안개가 가까운 나무와 먼 숲 사이를 갈라 놓아, 작은 화면에 깊이가 생깁니다.",
+   "en": "Look behind the trees. There is mist, and the forest lies back beyond it. The mist divides near trees from distant woods, giving the small picture real depth.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1
+  },
+  {
+   "ko": "이 그림은 종이에 먹을 쓰고 옅은 색을 더해 그렸습니다. 바위와 언덕의 주름은 전통적인 준법으로 표현했습니다. 남종화풍이 널리 퍼지던 때였지만, 그는 여기서 앞 시대의 방식을 지켰습니다. 그래서 그의 보수적인 면을 보여 주는 예로 꼽힙니다.",
+   "en": "The picture is painted in ink with light colour on paper. The wrinkles of the rocks and slopes are made with traditional texture strokes. Though the literati Southern School style was spreading, he kept to the older manner here, so the work is often cited as showing his conservative side.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1
+  },
+  {
+   "ko": "그렇다고 옛 방식만 고집한 화가는 아니었습니다. 그가 그린 검은 개 그림에는 청나라를 거쳐 들어온 서양 화법의 흔적이 보인다고 합니다. 이 그림은 지금 국립중앙박물관에 있습니다.",
+   "en": "That does not mean he clung only to the old ways. In his painting of a black dog, scholars see traces of Western methods that came by way of Qing China. This moonlit landscape now belongs to the National Museum of Korea.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "이제 한 걸음 물러나 그림 전체를 다시 보십시오. 둥근 달과 빈 가지, 안개 속의 숲이 한 화면에 모여 있습니다. 여러분에게 한가위 보름달은 넉넉한 달입니까, 아니면 쓸쓸한 달입니까?",
+   "en": "Now step back and take in the whole painting. The round moon, the bare branches and the forest in the mist all share one sheet of paper. For you, is the harvest full moon a moon of plenty, or a lonely one?",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0
+  }
+ ]
+}
