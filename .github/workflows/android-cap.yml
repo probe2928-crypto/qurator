@@ -44,14 +44,13 @@ jobs:
         working-directory: app/android
         run: |
           yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null || true
-          chmod +x gradlew && ./gradlew bundleRelease assembleDebug --no-daemon -q
-          ls -la app/build/outputs/bundle/release/ app/build/outputs/apk/debug/
+          chmod +x gradlew && ./gradlew bundleRelease --no-daemon -q
+          ls -la app/build/outputs/bundle/release/
       - name: android-build 브랜치에 올리기
         run: |
           V=$(node -p "require('./app/package.json').version"); C=${{ github.event.inputs.versionCode }}
           mkdir -p /tmp/out
           cp app/android/app/build/outputs/bundle/release/app-release.aab /tmp/out/qurator-$V-$C-cap-unsigned.aab
-          cp app/android/app/build/outputs/apk/debug/app-debug.apk /tmp/out/qurator-$V-$C-cap-debug.apk
           git config user.name "qurator-bot"; git config user.email "qurator-bot@users.noreply.github.com"
           git fetch origin android-build && git checkout android-build
           cp /tmp/out/* . && git add -A && git commit -qm "Android Capacitor build $V ($C)"
