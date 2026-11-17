@@ -1,0 +1,93 @@
+{
+ "id": "w-rousseau-gypsy",
+ "segs": [
+  {
+   "ko": "앙리 루소의 '잠자는 집시'입니다. 가로 2미터에 이르는 화면에 달빛 비치는 메마른 사막이 펼쳐집니다. 그 위에 잠든 여인과 사자 한 마리가 아주 고요히 등장합니다.",
+   "en": "This is The Sleeping Gypsy by Henri Rousseau. Across a canvas two metres wide stretches a moonlit, arid desert under a deep blue sky. On it, very quietly, appear a sleeping woman and a single lion, and nothing else moves.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  },
+  {
+   "ko": "루소는 파리로 들어오는 물품에 세금을 걷는 관리로 일해, 세관원이라는 별명을 얻었습니다. 마흔 무렵 본격적으로 그림을 시작했고, 1893년 일찍 은퇴해 그림에 전념했습니다.",
+   "en": "Rousseau worked collecting taxes on goods entering Paris, which earned him the nickname Le Douanier, the customs officer. He took up painting seriously in his early forties and retired early in 1893 to paint full time.",
+   "x": 0.4,
+   "y": 0.35,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "꼬리를 높이 든 사자의 몸은 단순한 윤곽과 넓은 색면으로 그려졌습니다. 정식 미술 교육을 받지 않은 독학 화가의 이런 그림법이, 오히려 꿈처럼 고요하고 낯선 분위기를 만듭니다.",
+   "en": "The lion, its tail raised high, is drawn with simple outlines and broad blocks of colour. Critics at first mocked this self-taught painter's plain manner, yet it is exactly what gives the scene its still, dreamlike strangeness.",
+   "x": 0.38,
+   "y": 0.4,
+   "z": 1.8,
+   "tilt": 0
+  },
+  {
+   "ko": "이제 사자의 머리 쪽으로 가 보겠습니다. 갈기가 무성한 사자는 잠든 여인에게 고개를 숙이고 있습니다. 동그랗게 크게 뜬 눈으로, 조심스레 그녀의 냄새를 맡는 중입니다.",
+   "en": "Now follow the lion's body to its head. The maned lion lowers its head toward the sleeper. With wide, watchful eyes, it cautiously sniffs at her, as if trying to understand who she is.",
+   "x": 0.68,
+   "y": 0.5,
+   "z": 2.4,
+   "tilt": -4
+  },
+  {
+   "ko": "오른쪽 위에는 얼굴처럼 보이는 보름달이 떠 있고, 짙푸른 하늘에 별 몇 개가 반짝입니다. 루소는 이 그림에 매우 시적인 달빛 효과가 있다고 직접 설명하기도 했습니다.",
+   "en": "In the upper right hangs a full moon with an almost human face, and a few stars glitter in the deep blue sky. Rousseau himself said the picture had a very poetic moonlight effect, and the cool light falls evenly over everything.",
+   "x": 0.84,
+   "y": 0.13,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "달빛 아래 여인은 지팡이를 쥔 채 깊이 잠들어 있습니다. 루소는 그녀를 지쳐 곯아떨어진 떠돌이 만돌린 연주자라 했고, 사자는 냄새만 맡을 뿐 해치지 않는다고 했습니다.",
+   "en": "Under the moon, the woman sleeps deeply, still holding her staff. Rousseau described her as a wandering mandolin player overcome by fatigue, and a lion that picks up her scent yet does not devour her.",
+   "x": 0.77,
+   "y": 0.66,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "그녀의 옷과 깔개는 무지갯빛 줄무늬로 덮여 있습니다. 차가운 밤 풍경 속에서 이 따뜻한 색 띠들이 화면의 중심을 단단히 잡아 줍니다. 색 띠는 천의 주름을 따라 부드럽게 휘어집니다.",
+   "en": "Her robe and the blanket beneath her are covered in rainbow stripes. Against the cool night landscape, these warm bands of colour anchor the whole composition, bending gently with the folds of the cloth.",
+   "x": 0.6,
+   "y": 0.74,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "곁에는 만돌린과 목이 가느다란 물항아리가 놓여 있습니다. 음악과 물, 떠돌이의 짐 몇 가지만으로 그녀의 긴 여정을 짐작하게 합니다. 만돌린의 줄까지 또렷하게 그렸습니다.",
+   "en": "Beside her, within easy reach, lie a mandolin and a tall water jar with a slender neck. Music, water and a traveller's few belongings are enough to hint at her long journey. Even the mandolin's strings are carefully drawn.",
+   "x": 0.86,
+   "y": 0.81,
+   "z": 2.2,
+   "tilt": 0
+  },
+  {
+   "ko": "루소는 1897년 앵데팡당전에 이 그림을 처음 내놓았고, 고향 라발의 시장에게 팔려 했지만 뜻을 이루지 못했습니다. 그 뒤 그림은 파리의 한 숯 상인 집에 묻혀 있었습니다.",
+   "en": "He first showed the picture at the Salon des Indépendants in 1897 and tried, without success, to sell it to the mayor of his hometown, Laval. It then sat for years in the collection of a Paris charcoal merchant.",
+   "x": 0.3,
+   "y": 0.6,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "1924년 비평가 루이 보셀이 이 그림을 찾아내면서 다시 세상에 나왔고, 1939년 뉴욕 현대미술관에 기증되었습니다. 루소의 그림은 피카소와 초현실주의 화가들에게도 영향을 주었습니다.",
+   "en": "It resurfaced in 1924, when the critic Louis Vauxcelles came across it, and in 1939 it was given to the Museum of Modern Art in New York. Rousseau's work went on to influence Picasso and the Surrealists.",
+   "x": 0.5,
+   "y": 0.45,
+   "z": 1.2,
+   "tilt": 0
+  },
+  {
+   "ko": "한 걸음 물러나 보면 바람 한 점 없이 모든 것이 멈춘 듯합니다. 이것은 여인의 꿈일까요, 아니면 우리가 꾸는 꿈일까요? 그 깊은 고요 속에 잠시 머물러 보세요.",
+   "en": "Step back, and everything seems to hold its breath, without a breath of wind anywhere. Is this the woman's dream, or one we are dreaming ourselves? Stay for a moment inside that stillness before moving on.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  }
+ ]
+}

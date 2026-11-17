@@ -1,0 +1,85 @@
+{
+ "id": "w-uemura-flame",
+ "segs": [
+  {
+   "ko": "우에무라 쇼엔의 '불꽃'입니다. 기모노를 입은 여인이 검은 머리 한 가닥을 입에 물고 고개를 돌려 이쪽을 돌아봅니다. 높이 2미터에 가까운 세로 화면, 텅 빈 배경 앞에 여인 하나만 서 있습니다.",
+   "en": "This is Uemura Shōen's Flame. A woman in a kimono holds a strand of her black hair between her teeth as she turns to look back at us over her shoulder. On a silk panel almost two meters tall, she stands entirely alone against an empty ground.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  },
+  {
+   "ko": "쇼엔은 교토 출신으로, 청초하고 단아한 미인화로 이름난 화가입니다. 훗날 여성 최초로 문화훈장을 받았습니다. 그런 쇼엔이 힘든 시기를 보내던 1918년, 평소와 전혀 다른 주제를 골라 이 그림을 그렸습니다.",
+   "en": "Born in Kyoto, Shōen was famous for serene, graceful paintings of beautiful women, and she later became the first woman to receive Japan's Order of Culture. In 1918, during a difficult time in her life, she chose a subject utterly unlike her usual work.",
+   "x": 0.5,
+   "y": 0.45,
+   "z": 1.2,
+   "tilt": 0
+  },
+  {
+   "ko": "얼굴은 창백하고 치아는 검게 물들였습니다. 이 여인은 '겐지 이야기'를 바탕으로 한 노 '아오이노우에'의 로쿠조 미야스도코로입니다. 질투 끝에 생령이 되어 연적을 괴롭히는 인물입니다.",
+   "en": "Her face is pale and her teeth are blackened. She is Lady Rokujō from the Noh play Aoi no Ue, adapted from The Tale of Genji. Her jealousy turns her into a living spirit that leaves her body and torments her rival, Lady Aoi.",
+   "x": 0.67,
+   "y": 0.25,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "가늘게 뜬 눈을 가까이 보십시오. 노가쿠 스승 곤고 이와오는 노 가면 데이간의 눈에 금이 쓰인다고 일러 주었습니다. 그래서 쇼엔은 비단 뒤쪽에서 금니를 칠해 눈이 눈물 맺힌 듯 빛나게 했다고 전해집니다.",
+   "en": "Look closely at her narrowed, downcast eyes. Her Noh teacher, Kongō Iwao, told her that the deigan mask has gold in its eyes. So she painted gold onto the back of the silk, making this woman's eyes glint as if with tears.",
+   "x": 0.71,
+   "y": 0.225,
+   "z": 2.8,
+   "tilt": 0
+  },
+  {
+   "ko": "입에 문 머리카락 한 가닥이 손끝에 감겨 아래로 당겨집니다. 머리카락을 물어뜯으려는 듯한 이 몸짓 하나로 쇼엔은 끓어오르는 질투를 표현했습니다. 가늘고 우아한 손가락이라 더 섬뜩합니다.",
+   "en": "The strand of hair caught between her teeth is wound around her fingertips and pulled down. With this single gesture, as if to bite the hair through, Shōen shows jealousy boiling over. The slender, elegant fingers make it more chilling.",
+   "x": 0.66,
+   "y": 0.3,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "검은 머리카락은 등 뒤로 길게 흘러내려 몸을 반쯤 덮습니다. 한 올 한 올 그은 머리가 흐트러진 마음처럼 출렁입니다. 흰 옷 위의 검은 물결이 화면을 위아래로 가르는 선이 됩니다.",
+   "en": "Her black hair streams down her back and half covers her body. Painted strand by strand, it ripples like a troubled mind. Against the pale robe, this dark current becomes a line that divides the picture from top to bottom.",
+   "x": 0.48,
+   "y": 0.45,
+   "z": 1.8,
+   "tilt": 0
+  },
+  {
+   "ko": "옷에는 등나무 꽃과 거미줄 무늬가 그려져 있습니다. 노랑과 보라의 등꽃 사이로 가는 거미줄이 촘촘히 얽혀 있습니다. 가련한 꽃에 얽혀 드는 거미줄이 으스스한 기운을 더하는데, 등나무 역시 무언가를 휘감으며 자라는 덩굴입니다.",
+   "en": "Her white robe bears wisteria and a spider-web pattern. Fine webs are strung between the yellow and purple blossoms. Delicate flowers caught in a clinging web add to the unsettling mood. Wisteria, too, is a vine that clings and twines around whatever it touches.",
+   "x": 0.28,
+   "y": 0.55,
+   "z": 2.2,
+   "tilt": 0
+  },
+  {
+   "ko": "이제 아래로 내려가 옷자락 끝을 보십시오. 옷자락과 발끝은 흐릿하게 사라져 바탕에 녹아들고, 여인은 땅에 닿지 않은 듯합니다. 이 여인이 살아 있는 몸이 아니라 몸을 떠난 생령임을 암시하는 장치입니다.",
+   "en": "Now let your eyes move down to the hem. The edge of her robe and her feet fade softly away into the silk. With no feet showing, she seems not to touch the ground at all. It is a quiet sign that this is not a living body, but a spirit that has left its body behind.",
+   "x": 0.3,
+   "y": 0.93,
+   "z": 2.0,
+   "tilt": -5
+  },
+  {
+   "ko": "이 그림은 1918년 제12회 문부성미술전람회에 출품되었습니다. 쇼엔은 이 작품을 자신의 그림 가운데 단 한 장의 처절하게 아름다운 그림이라 불렀다고 전해집니다. 지금은 도쿄국립박물관에 있습니다.",
+   "en": "She showed it at the 12th Bunten, the Ministry of Education's annual art exhibition, in 1918. Shōen is said to have called it her one and only painting of terrible, haunting beauty. Today it belongs to the Tokyo National Museum.",
+   "x": 0.55,
+   "y": 0.4,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "한 걸음 물러나 여인의 전체 모습을 보십시오. 아름다움과 두려움이 한 화면 안에 함께 있습니다. 이 여인을 만든 것은 미움이었을까요, 아니면 끝내 놓지 못한 사랑이었을까요?",
+   "en": "Step back and see her whole figure once more. Beauty and dread share this one silk panel. Was it hatred that made her what she is, or a love she could never bring herself to let go?",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1,
+   "tilt": 0
+  }
+ ]
+}

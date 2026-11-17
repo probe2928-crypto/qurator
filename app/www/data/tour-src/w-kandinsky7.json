@@ -1,0 +1,93 @@
+{
+ "id": "w-kandinsky7",
+ "segs": [
+  {
+   "ko": "가로 3미터에 이르는 화면이 가장자리까지 빈틈없이 색과 선으로 가득 차 있습니다. 무엇을 그렸는지 찾기보다 먼저 이 소란스러운 색의 합창을 그대로 느껴 보시기 바랍니다.",
+   "en": "A canvas three metres wide, filled edge to edge with colour and line. Before you search the picture for what it depicts, simply let this noisy chorus of colour wash over you for a moment.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  },
+  {
+   "ko": "러시아 출신 화가 바실리 칸딘스키가 1913년 뮌헨에 살며 그린 대작입니다. 그는 이 그림을 위해 30점이 넘는 습작을 만들었고, 본 그림은 단 나흘 만에 그렸다고 전해집니다. 지금은 모스크바 트레티야코프 미술관에 있습니다.",
+   "en": "The Russian-born painter Wassily Kandinsky made this large canvas in 1913, while living in Munich. He prepared more than thirty studies for it, and the final painting is said to have taken only four days. Today it hangs in the Tretyakov Gallery in Moscow.",
+   "x": 0.5,
+   "y": 0.45,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "화면 위쪽부터 천천히 보겠습니다. 날카로운 쐐기와 둥근 얼룩, 눈동자 같은 고리가 사방으로 튀어 나갑니다. 처음 보면 모든 것이 폭발하듯 흩어지는 것처럼 느껴집니다.",
+   "en": "Let us begin at the top. Sharp wedges, round blots and eye-like rings fly off in every direction. At first glance, everything seems to explode outward and scatter, and nothing stays still long enough to be named.",
+   "x": 0.48,
+   "y": 0.18,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "그런데 왼쪽 가운데에는 짙은 파랑과 검정이 휘감긴 소용돌이가 있습니다. 그 안에 눈처럼 보이는 작은 타원이 자리 잡고 있습니다. 화면의 색면과 선은 모두 이 중심을 둘러싸고 돕니다.",
+   "en": "Yet just left of centre lies a dark vortex of deep blue and black. Inside it sits a small oval that looks almost like an eye. Look again at the whole, and you will notice that all the colour patches and lines of the picture turn around this dark core.",
+   "x": 0.4,
+   "y": 0.5,
+   "z": 2.3,
+   "tilt": 0
+  },
+  {
+   "ko": "소용돌이 아래쪽으로 검은 선들이 화면을 가로지릅니다. 굵고 가는 선, 곧고 휘어진 선이 엇갈리며 박자를 만들어 냅니다. 마치 악보 위의 음표처럼 시선을 이끌어 갑니다.",
+   "en": "Below the vortex, black lines cut across the canvas. Thick and thin, straight and curved, they cross each other and set up a rhythm. Like notes on a score, they pull your eye along.",
+   "x": 0.3,
+   "y": 0.63,
+   "z": 2.4,
+   "tilt": 5
+  },
+  {
+   "ko": "왼쪽 아래 구석에는 굵은 검은 곡선이 여러 겹으로 겹쳐 있습니다. 주변의 분홍과 초록 색면 위에 얹힌 이 형태는 무언가를 닮은 듯하면서도 끝내 이름을 붙이기 어렵습니다.",
+   "en": "In the lower left corner, heavy black curves are layered over one another. Set against pinks and greens, the shape seems to resemble something, yet it never quite lets you name it.",
+   "x": 0.12,
+   "y": 0.82,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "화면 아래 가운데로 오면 노랑과 파랑, 분홍의 색면이 서로 부딪힙니다. 따뜻한 색은 앞으로 튀어나오고 차가운 색은 뒤로 물러나며 화면이 울렁입니다. 색끼리 대화하는 장면입니다.",
+   "en": "Toward the bottom centre, yellow, blue and pink patches collide. Warm colours leap forward while cool ones fall back, and the surface seems to pulse. It is colour in lively conversation with colour, with no object standing in between.",
+   "x": 0.5,
+   "y": 0.78,
+   "z": 2.2,
+   "tilt": 0
+  },
+  {
+   "ko": "오른쪽으로 눈을 옮기면 밝은 흰빛의 넓은 면과 커다란 곡선이 나타납니다. 왼쪽의 격렬함과 달리 이곳은 숨을 고르는 쉼표처럼 느껴집니다. 화면 안에도 빠르고 느린 악장이 있습니다.",
+   "en": "Move your eyes to the right, and a broad pale field opens up, crossed by large sweeping curves. Compared with the turmoil on the left, it feels like a pause for breath. Even this canvas has fast and slow movements.",
+   "x": 0.8,
+   "y": 0.55,
+   "z": 1.9,
+   "tilt": 0
+  },
+  {
+   "ko": "미술사가들은 이 안에 대홍수와 부활, 최후의 심판, 에덴동산 같은 주제가 녹아 있다고 읽습니다. 앞선 그림들의 종말론적 형상이 점점 추상화되며 이어졌다는 해석입니다.",
+   "en": "Art historians read in it the Flood, the Resurrection, the Last Judgment and the Garden of Eden, dissolved into one another. In this view, apocalyptic figures from his earlier pictures grew more and more abstract until they arrived here.",
+   "x": 0.45,
+   "y": 0.45,
+   "z": 1.4,
+   "tilt": 0
+  },
+  {
+   "ko": "칸딘스키는 색이 음악처럼 마음을 직접 울린다고 믿었습니다. 그래서 작곡이라는 뜻도 지닌 음악 용어 콤포지션을 제목에 붙였습니다. 오랫동안 무르익은 내면의 느낌을 담은 그림에만 이 이름을 썼습니다.",
+   "en": "Kandinsky believed colour moves the soul directly, the way music does. That is why he gave the work a musical title, Composition, a word that also means writing music. He reserved it for pictures that grew from a feeling slowly matured.",
+   "x": 0.55,
+   "y": 0.4,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "무언가의 모습 대신 느낌 자체를 그린 이 그림은 추상미술이 무엇을 할 수 있는지 보여 준 기념비가 되었습니다. 작가는 이것을 자신이 그린 가장 복잡한 그림이라고 말했습니다. 한 걸음 물러나 어떤 소리가 들리는지 귀 기울여 보십시오.",
+   "en": "Painting a feeling rather than a thing, this work became a landmark of what abstract art could do. Kandinsky called it the most complex piece he ever painted. Step back now, and listen: what kind of sound does it make for you?",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1,
+   "tilt": 0
+  }
+ ]
+}

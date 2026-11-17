@@ -1,0 +1,93 @@
+{
+ "id": "w-malevich-square",
+ "segs": [
+  {
+   "ko": "흰 테두리 안에 검은 사각형 하나, 그것이 전부입니다. 그런데 이 그림은 20세기 미술에서 가장 유명한 그림 가운데 하나입니다. 가로세로 79.5센티미터의 캔버스입니다.",
+   "en": "There is nothing else to look at: a single black square inside a white border is all there is. Yet this is one of the most famous paintings of the twentieth century, a square canvas 79.5 centimetres on each side.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  },
+  {
+   "ko": "러시아 아방가르드 화가 카지미르 말레비치는 1915년 이 작품으로 절대주의의 출발을 알렸습니다. 그는 이것을 회화의 영점이라 불렀고, 0에서 다시 시작하겠다는 선언이었습니다.",
+   "en": "With this work the Russian avant-garde artist Kazimir Malevich launched Suprematism in 1915. He called it the zero point of painting, a declaration that art would wipe the slate clean and start again from nothing.",
+   "x": 0.5,
+   "y": 0.45,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "검은 사각형은 1913년, 그가 무대 디자인을 맡은 미래주의 오페라 '태양에 대한 승리'에서 처음 등장했습니다. 태양이 사라지는 장면에 검은 사각형들이 쓰였습니다.",
+   "en": "The black square first appeared in 1913, in the stage designs Malevich created for the Futurist opera Victory over the Sun. In the scene where the sun is defeated and dies, black squares filled the stage.",
+   "x": 0.4,
+   "y": 0.38,
+   "z": 1.4,
+   "tilt": 0
+  },
+  {
+   "ko": "1915년 페트로그라드의 '마지막 미래주의 전시회 0,10'에서 그는 이 그림을 방 모서리 높은 곳에 걸었습니다. 러시아 가정이 이콘을 모시는 그 자리에서, 정교회 전통과 새 미술이 정면으로 부딪쳤습니다.",
+   "en": "At the Last Futurist Exhibition 0,10 in Petrograd in 1915, he hung it high in the corner of the room. That is the place a Russian home reserves for its icon, so Orthodox tradition and the new art met head-on.",
+   "x": 0.16,
+   "y": 0.17,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "이제 검은 면을 둘러싼 흰 테두리를 보십시오. 가장자리는 자로 그은 듯 완벽한 직선이 아니고 조금씩 흔들립니다. 손으로 칠한 사각형이라는 사실이 그대로 드러납니다.",
+   "en": "Now look at the white border framing the black. The edges are not perfectly ruler-straight; they waver slightly as they run along. They reveal that this geometric square was painted by a human hand.",
+   "x": 0.1,
+   "y": 0.5,
+   "z": 2.2,
+   "tilt": 0
+  },
+  {
+   "ko": "검은 물감은 두툼하게 올라 있고 넓은 붓질의 자국이 그대로 남아 있습니다. 멀리서는 평평한 검정처럼 보이지만, 가까이서 보면 표면이 고르지 않고 결이 살아 있습니다.",
+   "en": "The black paint is thick, laid on in broad strokes whose marks remain. From a distance it reads as a flat, even black, but up close the surface is uneven and full of texture, alive with the movement of the brush.",
+   "x": 0.22,
+   "y": 0.6,
+   "z": 2.6,
+   "tilt": 0
+  },
+  {
+   "ko": "위쪽을 덮은 거미줄 같은 균열을 보십시오. 갈라진 틈 사이로 아래층의 밝은 색이 희미하게 비칩니다. 이 균열은 오랜 방치의 흔적이기도 해서, 그림이 지나온 세월을 고스란히 보여 줍니다.",
+   "en": "Now the web of cracks across the upper part. Through the narrow gaps, faint traces of lighter colour glimmer from the layers beneath. These cracks are partly the result of long neglect, and they show plainly the years this painting has lived through.",
+   "x": 0.47,
+   "y": 0.3,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "스탈린 시대에 그의 작품은 금지되었고, 이 그림은 숨겨진 채 방치되었습니다. 그래서 1980년대에야 다시 전시될 수 있었습니다. 균열은 그 긴 침묵의 시간을 말해 줍니다.",
+   "en": "Under Stalin his work was banned, and the painting was hidden away in storage and neglected for decades. It was not exhibited again until the 1980s. The cracks speak of that long, enforced silence.",
+   "x": 0.72,
+   "y": 0.72,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "2015년 엑스선 조사에서는 검은 물감 아래에 숨은 다른 그림 두 점이 확인되었습니다. 밝은 색의 입체미래주의 그림과 그 위에 덧그린 초기 절대주의 구성이고, 손글씨 메모도 발견되었습니다.",
+   "en": "In 2015, X-rays revealed two earlier compositions hidden beneath the black paint: a brightly coloured Cubo-Futurist work and, painted over it, an early Suprematist design. A handwritten inscription was found as well.",
+   "x": 0.55,
+   "y": 0.55,
+   "z": 1.6,
+   "tilt": -4
+  },
+  {
+   "ko": "말레비치는 이런 그림을 대상 세계의 짐에서 미술을 해방하려는 필사적인 투쟁이라 했습니다. 그는 훗날 같은 그림을 세 번 더 그렸고, 1929년 작 한 점도 트레티야코프 미술관에 있습니다.",
+   "en": "Malevich described such paintings as a desperate struggle to free art from the ballast of the objective world. In later years he painted the same image three more times, and one of them, from 1929, is also in the Tretyakov Gallery.",
+   "x": 0.45,
+   "y": 0.42,
+   "z": 1.25,
+   "tilt": 0
+  },
+  {
+   "ko": "한 걸음 물러나 검은 면을 오래 바라보십시오. 처음에는 텅 비어 보이던 사각형이 조금씩 달리 보이기 시작합니다. 당신은 여기서 끝을 보나요, 아니면 시작을 보나요?",
+   "en": "Step back and look into the black for a while. A square that at first seemed empty slowly begins to look different. Standing before it, do you see an ending, or a beginning?",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1,
+   "tilt": 0
+  }
+ ]
+}

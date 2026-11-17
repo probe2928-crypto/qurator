@@ -1,0 +1,93 @@
+{
+ "id": "k-sehando",
+ "segs": [
+  {
+   "ko": "지금 우리 앞에 있는 그림은 추사 김정희의 '세한도'입니다. 화면에는 허름한 집 한 채와 나무 네 그루뿐입니다. 나머지는 텅 빈 겨울의 공기로 고요하게 채워져 있습니다.",
+   "en": "Before us is Sehando, Winter Scene, by the scholar Kim Jeong-hui, known by his pen name Chusa. The picture holds just a humble house and four trees. Everything else is empty, silent winter air.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1,
+   "tilt": 0
+  },
+  {
+   "ko": "1844년, 김정희는 제주도에서 유배 생활을 하고 있었습니다. 권세를 잃은 스승을 모두가 외면할 때, 역관이던 제자 이상적은 중국에서 귀한 책을 구해 먼 바다 건너 보내 주었습니다.",
+   "en": "In 1844, Kim was living in exile on Jeju Island. When everyone else abandoned the disgraced scholar, his student Yi Sang-jeok, an interpreter, kept sending him rare books obtained in China, carried across the sea.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.15,
+   "tilt": 0
+  },
+  {
+   "ko": "오른쪽 위를 보시면 '세한도'라는 제목과 낙관이 있습니다. 곁의 작은 글씨는 우선, 이것을 감상하게라는 뜻으로, 우선은 이상적의 호입니다. 이 그림이 한 사람을 위한 선물임을 알려 줍니다.",
+   "en": "At the upper right are the title, Sehando, and the painter's seals. The small line beside it reads, roughly, Useon, please enjoy this, signed with Kim's pen name Wandang; Useon was Yi's pen name. It tells us the picture was a gift for one person.",
+   "x": 0.84,
+   "y": 0.18,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "제목 아래쪽으로 늙은 소나무 한 그루가 서 있습니다. 줄기는 굽고 잎은 거의 남지 않아 오랜 세월을 견딘 모습입니다. 그 곁에도 나무 한 그루가 함께 서서 겨울을 버티고 있습니다.",
+   "en": "Below the title stands an old pine. Its trunk is bent and it has almost no needles left, a tree that has endured many years. Another tree stands right beside it, holding out against the winter together.",
+   "x": 0.58,
+   "y": 0.45,
+   "z": 1.9,
+   "tilt": 0
+  },
+  {
+   "ko": "가운데에는 허름한 집 한 채가 놓여 있습니다. 둥근 창 하나만 뚫린 단순한 모습으로, 사람의 기척은 보이지 않습니다. 유배지에서 홀로 지내던 화가 자신의 처지로 읽히기도 합니다.",
+   "en": "In the middle sits the humble house, plain and simple, with a single round window and no sign of anyone inside. Some read it as a portrait of the painter's own situation, living alone and far from home in exile.",
+   "x": 0.42,
+   "y": 0.8,
+   "z": 1.9,
+   "tilt": 0
+  },
+  {
+   "ko": "선을 가까이 보면 먹을 적게 묻힌 마른 붓으로 거칠게 그었습니다. 붓이 종이에 걸리며 남긴 갈라진 자국이 그대로 보입니다. 꾸밈이 없어서 오히려 단단한 선입니다.",
+   "en": "Come closer to the lines. They were drawn with a dry brush carrying very little ink, and you can still see where the bristles split and caught on the paper. The lines are plain and therefore strong.",
+   "x": 0.55,
+   "y": 0.65,
+   "z": 2.6,
+   "tilt": 4
+  },
+  {
+   "ko": "집 왼쪽에도 나무 두 그루가 서 있습니다. 김정희는 날이 추워진 뒤에야 소나무와 잣나무가 늦게 시든다는 것을 안다는 논어의 구절로 제자의 의리에 답했습니다. 이 나무들이 바로 그 이야기를 대신합니다.",
+   "en": "Two more trees stand to the left of the house. Kim answered his student's loyalty with a line from Confucius: only when the year turns cold do we see that the pine and the cypress are the last to fade. These trees carry that message for him.",
+   "x": 0.2,
+   "y": 0.5,
+   "z": 1.8,
+   "tilt": 0
+  },
+  {
+   "ko": "그림 왼쪽으로는 김정희가 직접 쓴 발문이 이어집니다. 칸을 나눈 종이에 반듯한 글씨로 이 그림을 그린 까닭과 이상적에 대한 고마움을 적었습니다. 그림과 글이 함께 한 통의 편지가 됩니다.",
+   "en": "To the left of the picture continues Kim's own handwritten note. On paper ruled into a grid, in upright, disciplined script, he explains why he made the painting and thanks Yi for his books and his faithfulness. Picture and words together become a single letter.",
+   "x": 0.08,
+   "y": 0.5,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "이상적은 이 그림을 들고 베이징에 가서 청나라 문인 16명의 감상글을 받았습니다. 이후 우리나라 문인들의 글도 더해져, 지금은 길이가 15미터에 가까운 두루마리가 되었습니다.",
+   "en": "Yi carried the painting to Beijing, where sixteen Chinese scholars added their own colophons. Later Korean writers added theirs too, and today the scroll stretches nearly fifteen meters. The painting kept gathering voices long after Kim set down his brush.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.15,
+   "tilt": 0
+  },
+  {
+   "ko": "한때 일본 학자 후지쓰카 지카시의 손에 있던 이 그림은 1944년 서예가 손재형이 일본에 건너가 되찾아 왔습니다. 2020년 손창근 선생이 기증해 지금은 국립중앙박물관에 있습니다.",
+   "en": "The painting once belonged to the Japanese scholar Fujitsuka Chikashi. In 1944 the calligrapher Son Jae-hyeong went to Japan and brought it home. In 2020 Son Chang-geun donated it to the National Museum of Korea.",
+   "x": 0.6,
+   "y": 0.5,
+   "z": 1.25,
+   "tilt": 0
+  },
+  {
+   "ko": "이제 한 걸음 물러나 빈 여백을 바라보십시오. 가장 추운 날에야 변치 않는 것이 보인다고 합니다. 나의 겨울에 곁을 지켜 준 사람은 누구였는지 떠올려 보셔도 좋겠습니다.",
+   "en": "Now step back and look at all that empty space. Only in the coldest season, Kim tells us, do we see what stays green. Before you go, think for a moment: who stood by you in your own winter?",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1,
+   "tilt": 0
+  }
+ ]
+}

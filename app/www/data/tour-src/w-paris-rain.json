@@ -1,0 +1,93 @@
+{
+ "id": "w-paris-rain",
+ "segs": [
+  {
+   "ko": "비에 젖은 돌길이 반짝이는 파리의 교차로입니다. 우산을 함께 쓴 남녀가 우리 쪽으로 걸어옵니다. 가로 2.7미터가 넘는 큰 화면에 사람들이 거의 실물 크기로 등장해, 우리도 그 길 위에 서 있는 것처럼 느껴집니다.",
+   "en": "We are at a Paris crossroads where the wet paving stones shine. A couple sharing one umbrella walks toward us. The canvas is more than 2.7 metres wide and the figures are close to life-size, so we seem to stand on the street ourselves.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  },
+  {
+   "ko": "이곳은 생라자르 역에서 몇 분 거리, 지금의 더블린 광장입니다. 화가가 어릴 적 좁고 구불구불한 골목이던 곳으로, 오스만 남작의 도시 개조 때 넓은 대로가 새로 깔렸습니다. 카유보트 집안의 집도 이 근처에 있었습니다.",
+   "en": "This is today's Place de Dublin, minutes from the Gare Saint-Lazare. When Gustave Caillebotte was a boy it was a tangle of narrow, crooked streets, until Baron Haussmann's rebuilding laid out wide new avenues. His family home stood nearby.",
+   "x": 0.4,
+   "y": 0.35,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "멀리 뱃머리처럼 뾰족하게 솟은 건물을 보십시오. 같은 높이와 창문이 반복되는 새 건물들이 길게 뻗어 있습니다. 반듯하고 엄격한 이 풍경이 오스만이 바꾼 새 파리의 얼굴입니다.",
+   "en": "Look at the building in the distance, pointed like the prow of a ship. New buildings of equal height and identical windows stretch along each boulevard. This orderly, austere view is the new face of Haussmann's Paris.",
+   "x": 0.3,
+   "y": 0.24,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "왼쪽에는 마차 한 대가 서 있고, 우산을 쓴 행인들이 비 오는 광장을 오갑니다. 모두 각자의 길을 갈 뿐 서로 눈길을 주지 않습니다. 도시가 넓어진 만큼 사람 사이도 멀어진 듯합니다.",
+   "en": "On the left a carriage waits, and passers-by with umbrellas cross the rainy square. Each goes his own way, and no one looks at anyone else. In the widened city, the distance between people seems to have widened too.",
+   "x": 0.12,
+   "y": 0.47,
+   "z": 2.2,
+   "tilt": 0
+  },
+  {
+   "ko": "이제 발밑의 돌바닥을 보십시오. 네모난 돌 하나하나가 빗물에 젖어 희미한 빛을 반사합니다. 앞쪽 돌은 또렷하고 뒤로 갈수록 흐려져, 마치 카메라 렌즈로 찍은 듯합니다.",
+   "en": "Now look down at the paving stones at your feet. Each square stone is wet with rain and holds a faint shine. The foreground is crisp while the distance blurs, much as it would through a camera lens.",
+   "x": 0.3,
+   "y": 0.82,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "그림 한가운데 선 초록 가로등을 보십시오. 가로등이 화면을 정확히 둘로 나눕니다. 왼쪽은 트인 광장, 오른쪽은 눈앞의 인물들로 먼 곳과 가까운 곳이 나란히 놓입니다.",
+   "en": "Look at the green lamppost in the middle. It divides the scene exactly in half. On the left lies the open square, on the right the figures right in front of us, so far and near sit side by side.",
+   "x": 0.51,
+   "y": 0.42,
+   "z": 1.8,
+   "tilt": 0
+  },
+  {
+   "ko": "오른쪽의 남녀는 한 우산 아래 나란히 걸으며 화면 밖의 무언가를 바라봅니다. 실크해트와 외투, 잘 차려입은 옷차림의 두 사람은 새 도시의 부유한 시민을 보여 줍니다.",
+   "en": "The couple on the right walk together under one umbrella, gazing at something outside the picture. With his top hat and her fine coat, the two are well-dressed citizens of the new city, at ease on its boulevard.",
+   "x": 0.7,
+   "y": 0.5,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "오른쪽 끝의 남자는 화면 가장자리에서 반쯤 잘려 나갑니다. 몸도 우산도 다 보이지 않아, 마치 사진의 한 장면을 잘라 낸 것 같습니다. 거리가 그림 밖으로 이어지는 듯합니다.",
+   "en": "The man on the far right is cropped by the edge of the canvas. We see neither his whole body nor his whole umbrella, as if a photograph had been trimmed. The street seems to carry on beyond the frame.",
+   "x": 0.93,
+   "y": 0.6,
+   "z": 2.0,
+   "tilt": -5
+  },
+  {
+   "ko": "카유보트는 두 소실점을 쓰는 정교한 원근법으로 이 거리를 짰습니다. 사진을 따라 밑그림을 그렸다는 설이 유명합니다. 2015년 시카고 미술관 보고서는 카메라 루시다라는 광학 도구를 썼을 것으로 봅니다.",
+   "en": "Caillebotte built this street with a precise two-point perspective. A popular theory holds that he traced his preparatory sketches from photographs. A 2015 Art Institute report suggests he more likely used an optical drawing aid called a camera lucida.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.4,
+   "tilt": 0
+  },
+  {
+   "ko": "이 그림은 1877년 4월 제3회 인상파 전시에 처음 걸렸고, 한 평론가는 전시의 걸작이라 불렀습니다. 카유보트는 이 전시부터 인상파 전시를 직접 꾸리다시피 했습니다. 시카고 미술관은 1964년 이 그림을 사들였습니다.",
+   "en": "The picture made its debut at the third Impressionist exhibition in April 1877, where one critic called it the masterpiece of the show. Caillebotte largely organised the exhibitions from then on. The Art Institute of Chicago bought it in 1964.",
+   "x": 0.6,
+   "y": 0.4,
+   "z": 1.2,
+   "tilt": 0
+  },
+  {
+   "ko": "다시 한 걸음 물러나 화면 전체를 보십시오. 실물 크기의 사람들이 우리 쪽으로 걸어오고, 우리는 그 길 위에 함께 서 있습니다. 두 사람은 화면 밖의 무엇을 보고 있을까요.",
+   "en": "Step back and take in the whole canvas. Life-size figures stroll toward us, and we share the same pavement. What do you imagine the couple are looking at, just beyond the edge of the picture?",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1,
+   "tilt": 0
+  }
+ ]
+}

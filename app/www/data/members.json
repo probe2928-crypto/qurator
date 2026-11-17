@@ -1,0 +1,17 @@
+{
+ "v": 1,
+ "note": "Short member codes, stored only as SHA-256. Subscriber links are signed tokens (see README, Membership).",
+ "codes": [
+  {
+   "h": "e3103249d5dd7ea88dd0dd814b51a5bab4ef6d0d58d45181c37784188369ec7c",
+   "exp": "2027-06-30",
+   "label": "Google Play 심사·베타"
+  },
+  {
+   "h": "7b268106a6dad0d3a0852ca4c2eb1520ca7d80630bd18cc0d26e410cad681183",
+   "exp": "2026-12-31",
+   "label": "초기 공용 코드(만료 예정)"
+  }
+ ],
+ "revoked": []
+}

@@ -1,0 +1,8 @@
+/* QURATOR iOS 앱 전용 */
+.q-store-app .install{display:none!important}
+.q-store-app body{-webkit-touch-callout:none}
+.q-store-app a,.q-store-app button{-webkit-tap-highlight-color:transparent}
+/* QR 스캔 버튼 (앱 전용, 머리줄) */
+.q-scan{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;margin-right:8px;padding:0;border:1px solid currentColor;border-radius:999px;background:transparent;color:inherit;opacity:.92}
+.q-scan svg{width:20px;height:20px}
+body > .q-scan{position:fixed;right:16px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:80;background:#14120F;color:#F3EFE6;border:0;width:50px;height:50px}

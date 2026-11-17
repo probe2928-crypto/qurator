@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">QURATOR</string>
+    <string name="title_activity_main">QURATOR</string>
+    <string name="package_name">kr.qurator.dailyart</string>
+    <string name="custom_url_scheme">kr.qurator.dailyart</string>
+</resources>

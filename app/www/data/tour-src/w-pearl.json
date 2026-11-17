@@ -1,0 +1,93 @@
+{
+ "id": "w-pearl",
+ "segs": [
+  {
+   "ko": "어두운 배경 속에서 한 소녀가 어깨 너머로 막 뒤돌아보며 입술을 살짝 벌린 순간입니다. 마치 우리가 방금 그녀를 불러 세운 것처럼, 시선이 곧장 우리에게 닿습니다.",
+   "en": "Against a dark background, a girl glances back over the shoulder, lips slightly parted, as if we have just caught her attention. Her eyes meet ours directly, as though someone had called her name a moment ago.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  },
+  {
+   "ko": "요하네스 페르메이르가 1665년 무렵 그린 이 그림은 특정 인물의 초상이 아닙니다. 이국적인 의상과 표정을 연구한 '트로니'라는 네덜란드 장르로, 세로 45센티미터가 안 되는 작은 그림입니다.",
+   "en": "Johannes Vermeer of Delft painted this around 1665, yet it is not a portrait of a specific person. It is a tronie, a Dutch genre for studying exotic costumes and expressions, painted on a canvas less than 45 centimetres tall.",
+   "x": 0.45,
+   "y": 0.42,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "지금은 검게 보이는 배경도 원래는 초록 커튼이었습니다. 2018년 조사에서 반투명한 초록 덧칠의 흔적이 드러났습니다. 그 색을 내던 식물성 안료가 세월 속에 바래 어두워진 것입니다.",
+   "en": "The background, black today, was once a deep green curtain. A 2018 research project revealed traces of a translucent green glaze laid over painted folds. Its plant-based colours have faded over the centuries and darkened.",
+   "x": 0.16,
+   "y": 0.35,
+   "z": 1.6,
+   "tilt": 0
+  },
+  {
+   "ko": "머리에 두른 터번을 보십시오. 이 파란색은 청금석을 갈아 만든 울트라마린으로, 당시 금보다 비쌌던 안료로 알려져 있습니다. 밝은 쪽은 하늘빛, 그늘진 쪽은 짙은 남색입니다.",
+   "en": "Look at the turban wrapped around her head. Its blue is ultramarine, a pigment ground from lapis lazuli and known to have been more costly than gold at the time. It shifts from sky blue in the light to deep indigo in shadow.",
+   "x": 0.55,
+   "y": 0.28,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "이제 눈을 가까이 봅니다. 촉촉한 눈동자마다 작은 빛 점이 찍혀 있어 시선이 살아 움직입니다. 같은 조사에서는 맨눈으로 보이지 않던 가는 속눈썹도 확인되었습니다.",
+   "en": "Now come closer to her eyes. A tiny dot of light sits in each moist pupil and keeps her gaze alive. The same research even found fine eyelashes, far too delicate to see with the naked eye.",
+   "x": 0.42,
+   "y": 0.39,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "살짝 벌어진 입술에도 반짝이는 빛 점이 있습니다. 무언가 말하려는 듯한 이 작은 하이라이트가 그림에 숨결을 불어넣습니다. 입가의 촉촉한 붉은빛은 얼굴에서 가장 따뜻한 부분입니다.",
+   "en": "Her parted lips also catch tiny dots of light. These small highlights, as if she were about to speak, breathe life into the whole painting. The moist red at the corner of her mouth is the warmest note in her face.",
+   "x": 0.38,
+   "y": 0.52,
+   "z": 2.5,
+   "tilt": 0
+  },
+  {
+   "ko": "가장 유명한 진주를 가까이 들여다보십시오. 윤곽조차 없이 아래쪽 흰 깃의 반사광과 위쪽의 밝은 점 하나로만 이루어져 있습니다. 귀에 거는 고리도 그려져 있지 않습니다.",
+   "en": "Lean in and look closely at the famous pearl: it has no outline at all, only a soft reflection of her white collar below and a single bright highlight above. There is not even a hook attaching it to her ear.",
+   "x": 0.6,
+   "y": 0.55,
+   "z": 2.8,
+   "tilt": 0
+  },
+  {
+   "ko": "터번 위쪽에서 흘러내린 노란 천은 어깨 뒤로 길게 늘어집니다. 페르메이르가 남긴 재산 목록에 '터키풍' 트로니 두 점이 있었는데, 이 그림이 그중 하나일 수 있습니다.",
+   "en": "A length of yellow cloth falls from the top of the turban down behind her shoulder. Vermeer's estate inventory listed two tronies painted in the Turkish fashion, and this painting may well be one of them.",
+   "x": 0.8,
+   "y": 0.58,
+   "z": 1.8,
+   "tilt": 5
+  },
+  {
+   "ko": "그 아래 흰 깃과 황갈색 옷은 넓고 굵은 붓질로 아주 단순하게 처리되었습니다. 얼굴과 진주의 섬세함과 대비되어, 우리의 시선은 자연스럽게 다시 얼굴 쪽으로 올라갑니다.",
+   "en": "Below, the white collar and ochre jacket are handled very simply, with broad, loose strokes. Set against the delicacy of the face and the pearl, this plainness quietly sends your eye back up toward her face.",
+   "x": 0.58,
+   "y": 0.8,
+   "z": 1.7,
+   "tilt": 0
+  },
+  {
+   "ko": "이 그림은 1881년 헤이그 경매에서 단 2길더 남짓에 팔렸고, 당시 상태도 좋지 않았습니다. 산 사람은 상속인이 없어 1902년 마우리츠하위스에 기증했고, 지금도 그곳에 있습니다.",
+   "en": "In 1881 this painting, then in poor condition, sold at auction in The Hague for just over two guilders. Its buyer had no heirs and bequeathed it to the Mauritshuis in 1902, where it still hangs today.",
+   "x": 0.55,
+   "y": 0.4,
+   "z": 1.4,
+   "tilt": 0
+  },
+  {
+   "ko": "관람객의 눈이 나머지를 스스로 채워 넣도록 한 것, 그것이 빛의 화가 페르메이르다운 마법입니다. 한 걸음 물러나서도 진주가 여전히 둥글고 단단해 보이는지 확인해 보십시오.",
+   "en": "Vermeer lets your eye complete the rest, and that is the magic of the painter of light. Step back, and see whether the pearl still looks perfectly round and solid to you, even though it is only a few touches of paint.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1,
+   "tilt": 0
+  }
+ ]
+}

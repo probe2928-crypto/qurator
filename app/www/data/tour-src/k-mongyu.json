@@ -1,0 +1,93 @@
+{
+ "id": "k-mongyu",
+ "segs": [
+  {
+   "ko": "지금 보시는 그림은 안견의 '몽유도원도'입니다. 가로로 긴 비단 두루마리 위로 바위산이 물결처럼 이어집니다. 그 끝 어딘가에 한 왕자가 꿈에서 본 이상향이 숨어 있습니다.",
+   "en": "This is Dream Journey to the Peach Blossom Land by An Gyeon. Across a long silk handscroll, rocky mountains roll on like waves. Somewhere at the end of them lies a utopia that a prince once saw in a dream.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  },
+  {
+   "ko": "왼쪽 끝의 글씨는 세종의 셋째 아들 안평대군이 남긴 글입니다. 1447년 4월 20일 밤, 그는 꿈에서 박팽년 등과 함께 복숭아꽃 핀 골짜기를 거닐었다고 적었습니다.",
+   "en": "The calligraphy at the far left was written by Prince Anpyeong, third son of King Sejong. He records a dream on the night of the twentieth day of the fourth month in 1447. In it, he wandered with friends such as Bak Paeng-nyeon into a valley of peach blossoms.",
+   "x": 0.07,
+   "y": 0.5,
+   "z": 1.7,
+   "tilt": 0
+  },
+  {
+   "ko": "안평대군이 꿈 이야기를 들려주자, 궁중 화가 안견은 사흘 만에 이 그림을 그려 냈습니다. 비단에 먹과 엷은 색을 썼고, 크기는 세로 38.7센티미터, 가로 106.5센티미터입니다.",
+   "en": "When the prince described his dream, the court painter An Gyeon turned it into this scroll in just three days. It is painted in ink and light colour on silk, 38.7 centimetres high and 106.5 centimetres long.",
+   "x": 0.3,
+   "y": 0.5,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "대부분의 두루마리는 오른쪽에서 왼쪽으로 펼쳐 읽지만, 이 그림은 왼쪽에서 시작합니다. 왼쪽 아래의 나지막하고 부드러운 흙산이 바로 우리가 매일 사는 현실 세계입니다.",
+   "en": "Most East Asian handscrolls are unrolled and read from right to left, but this one begins at the left. The low, gentle earthen hills in the lower left stand for the ordinary world, the one we live in every day.",
+   "x": 0.2,
+   "y": 0.66,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "가운데로 오면 산이 갑자기 험해집니다. 기이한 바위 봉우리가 치솟고 좁은 협곡이 굽이굽이 이어집니다. 도원으로 가는 길이 결코 쉽지 않음을 몸으로 느끼게 합니다.",
+   "en": "Move toward the centre and the mountains suddenly turn harsh. Strange rocky peaks shoot upward and a narrow, steep gorge winds between them. You can almost feel in your legs that the road to paradise is never easy.",
+   "x": 0.46,
+   "y": 0.52,
+   "z": 2.0,
+   "tilt": -4
+  },
+  {
+   "ko": "바위 표면은 구름처럼 말린 먹선이 겹겹이 쌓여 있습니다. 북송 화가 곽희의 화풍에서 영향을 받은 표현으로 봅니다. 시선은 왼쪽 아래에서 오른쪽 위로 비스듬히 올라갑니다.",
+   "en": "The rock faces are built from layer upon layer of curling, cloud-like ink strokes, a manner traced to the Northern Song painter Guo Xi. Your eye climbs on a diagonal, from the lower left toward the upper right.",
+   "x": 0.6,
+   "y": 0.33,
+   "z": 2.2,
+   "tilt": 0
+  },
+  {
+   "ko": "오른쪽 끝, 봉우리들이 병풍처럼 둘러싼 넓은 골짜기가 바로 도원입니다. 안개 속에 복숭아꽃이 만발하고 작은 집들이 자리 잡았습니다. 그런데 이곳에는 사람도 동물도 그려져 있지 않습니다.",
+   "en": "At the far right, a broad valley ringed by peaks like a folding screen: this is the Peach Blossom Land. Blossoms fill the mist and a few small houses stand quietly. Yet not a single person or animal appears anywhere.",
+   "x": 0.82,
+   "y": 0.45,
+   "z": 2.2,
+   "tilt": 0
+  },
+  {
+   "ko": "현실 세계는 정면에서 본 시점으로, 도원은 위에서 내려다본 시점으로 그렸습니다. 여러 시점을 한 화면에 자연스럽게 이어 붙여, 마치 꿈속을 걷는 듯한 경험을 줍니다.",
+   "en": "The everyday world is seen straight on, while the paradise is seen from high above. Several viewpoints are stitched seamlessly into one picture, so looking at it feels like walking through a dream, where the ground keeps shifting beneath you.",
+   "x": 0.68,
+   "y": 0.5,
+   "z": 1.4,
+   "tilt": 0
+  },
+  {
+   "ko": "그림 뒤로는 안평대군의 글과 함께 신숙주, 박팽년, 성삼문 등 당대 최고 문사 스무 명 남짓의 시문이 붙었습니다. 승려 한 명을 포함해 찬문이 모두 23편입니다.",
+   "en": "After the painting come the prince's own texts and poems by some twenty of the finest scholars of the day, among them Sin Suk-ju, Bak Paeng-nyeon and Seong Sam-mun. Counting one monk, there are twenty-three tributes in all.",
+   "x": 0.42,
+   "y": 0.5,
+   "z": 1.25,
+   "tilt": 0
+  },
+  {
+   "ko": "그래서 이 두루마리는 그림과 시와 글씨로 조선 초 문화의 절정을 모은 기록이 되었습니다. 지금은 일본 덴리대학 중앙도서관에 있어, 한국에서는 아주 드물게만 공개되었습니다.",
+   "en": "That makes the scroll a time capsule of early Joseon culture at its height, with painting, poetry and calligraphy side by side. Today it belongs to the Tenri University Central Library in Japan, and it has been shown in Korea only on rare occasions.",
+   "x": 0.6,
+   "y": 0.45,
+   "z": 1.35,
+   "tilt": 0
+  },
+  {
+   "ko": "이제 한 걸음 물러나, 왼쪽 흙산에서 오른쪽 골짜기까지 천천히 걸어 보시기 바랍니다. 안평대군이 꿈에서 찾은 이상향에서, 나라면 어디쯤 머물고 싶은지 떠올려 보세요.",
+   "en": "Now step back and walk slowly with your eyes, from the soft hills on the left to the hidden valley on the right. In the paradise the prince found in his dream, where would you choose to stop and stay?",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  }
+ ]
+}

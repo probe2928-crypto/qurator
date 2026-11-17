@@ -1,0 +1,93 @@
+{
+ "id": "w-morisot-cradle",
+ "segs": [
+  {
+   "ko": "얇은 천을 드리운 요람 속에서 아기가 잠들어 있고, 그 곁에서 젊은 엄마가 조용히 아기를 내려다봅니다. 방 안의 공기마저 숨을 죽인 듯 고요하고 평화로운 순간입니다.",
+   "en": "A baby sleeps in a cradle draped with sheer fabric while a young mother quietly watches over her. It is a hushed moment, and even the air in the room seems to be holding its breath. Nothing happens, and that is exactly the point.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  },
+  {
+   "ko": "그린 이는 프랑스 화가 베르트 모리조입니다. 엄마는 화가의 언니 에드마, 아기는 에드마의 딸 블랑슈입니다. 1872년 파리에서 그린 이 그림은 모리조의 가장 유명한 작품으로 꼽힙니다.",
+   "en": "The painter is the French artist Berthe Morisot. The mother is her sister Edma, and the baby is Edma's daughter Blanche. Painted in Paris in 1872, it is widely considered Morisot's most famous work.",
+   "x": 0.55,
+   "y": 0.55,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "에드마도 동생과 함께 그림을 배운 화가였습니다. 하지만 1869년 결혼한 뒤로는 붓을 거의 놓았습니다. 계속 그림을 그린 동생이, 엄마가 된 언니를 그린 셈입니다.",
+   "en": "Edma was a painter too, and the two sisters had trained together. After her marriage in 1869, though, she largely gave up painting. So here the sister who kept painting portrays the sister who became a mother.",
+   "x": 0.3,
+   "y": 0.55,
+   "z": 1.4,
+   "tilt": 0
+  },
+  {
+   "ko": "엄마의 얼굴로 가 보겠습니다. 손으로 턱을 괴고 비스듬히 아기를 내려다보는 눈길에는, 다정함과 함께 조금의 피로도 비치는 듯합니다. 목에 두른 검은 리본이 얼굴을 또렷하게 받쳐 줍니다.",
+   "en": "Let's move to the mother's face. Chin resting on her hand, she looks down at the baby at a slant. Her gaze is tender, with perhaps a trace of weariness, and a black ribbon at her throat frames the face.",
+   "x": 0.39,
+   "y": 0.46,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "엄마는 다른 손으로 요람의 얇은 천을 붙잡고 있습니다. 그 천이 보는 이와 아기 사이를 살짝 가려, 엄마와 아기만의 은밀하고 보호받는 공간이 생깁니다. 우리는 그 천 너머를 조심스레 들여다보게 됩니다.",
+   "en": "With her other hand she holds the edge of the cradle's sheer curtain. It slips between us and the baby, creating a private, protected space that belongs to mother and child alone. We find ourselves peering in gently, careful not to wake her.",
+   "x": 0.16,
+   "y": 0.73,
+   "z": 2.2,
+   "tilt": 0
+  },
+  {
+   "ko": "천 너머로 잠든 아기의 얼굴이 희미하게 비칩니다. 아기의 작은 팔도 엄마처럼 구부러져 얼굴 곁에 놓였습니다. 엄마와 아기의 똑같이 구부린 팔이 두 사람을 하나로 묶어 줍니다.",
+   "en": "Through the gauze we glimpse the sleeping baby, her face only softly suggested in a few touches of pink and white. Her little arm is bent beside her face, just like her mother's. The matching bent arms of mother and baby quietly bind the two together.",
+   "x": 0.73,
+   "y": 0.7,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "이제 엄마의 눈길에서 시작해 요람의 천으로 이어지는 대각선을 따라가 보십시오. 위에서 비스듬히 흘러내리는 요람 덮개의 흐름이 이 대각선을 한 번 더 강조해 줍니다.",
+   "en": "Now follow the diagonal that starts from the mother's gaze and runs down to the cradle's veil. The canopy, sweeping down at a slant from above, strengthens that line once more. Together they quietly guide our eye from her face down to the child.",
+   "x": 0.6,
+   "y": 0.45,
+   "z": 1.4,
+   "tilt": -5
+  },
+  {
+   "ko": "모리조는 색의 수를 줄이고 붓을 물 흐르듯 가볍게 움직였습니다. 희고 투명한 천과 엄마의 짙은 옷이 맑은 대비를 이룹니다. 가까운 친구였던 화가 마네의 영향도 엿보입니다.",
+   "en": "Morisot works with only a few colours and a fluid, light brush. The translucent white fabric sets off the mother's dark dress in clear contrast. Look how loosely the veil is painted, in quick, transparent strokes. You can sense the influence of her friend Édouard Manet as well.",
+   "x": 0.4,
+   "y": 0.7,
+   "z": 1.6,
+   "tilt": 0
+  },
+  {
+   "ko": "모리조는 이 그림을 1874년 봄 파리에서 열린 첫 인상주의 전시회에 내놓았습니다. 그녀는 이 전시의 유일한 여성 화가였습니다. 비평가들은 우아함을 칭찬했지만 그림은 팔리지 않았습니다.",
+   "en": "Morisot showed the picture at the first Impressionist exhibition in Paris in the spring of 1874, where she was the only woman exhibiting. Critics praised its grace and elegance, yet it did not sell.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "그 뒤 가족이 간직하다 1930년 루브르가 사들였고, 지금은 오르세 미술관에 걸려 있습니다. 모성을 처음 다룬 이 그림 이후, 모리조는 평생 여성과 아이의 일상을 가까이에서 그렸습니다.",
+   "en": "It stayed in the family until the Louvre bought it in 1930, and it now hangs in the Musée d'Orsay. It was her first painting of motherhood, and she went on to paint the daily lives of women and children for the rest of her career.",
+   "x": 0.62,
+   "y": 0.55,
+   "z": 1.2,
+   "tilt": 0
+  },
+  {
+   "ko": "이제 한 걸음 물러나 그림 전체를 다시 보십시오. 엄마의 표정은 행복일까요, 아니면 깊은 생각일까요? 아기를 지켜보는 그 고요한 시간에 잠시 함께 머물러 보시기 바랍니다.",
+   "en": "Step back and look once more. Is the mother's expression one of happiness, or of deep thought? Linger for a moment in that quiet, tender hour of watching over a cradle.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1,
+   "tilt": 0
+  }
+ ]
+}

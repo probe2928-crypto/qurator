@@ -1,0 +1,93 @@
+{
+ "id": "w-folies",
+ "segs": [
+  {
+   "ko": "파리의 화려한 극장식 술집 폴리베르제르, 대리석 바 뒤에 한 여인이 서 있습니다. 화면 한가운데에서 그녀만 조용히 우리를 바라봅니다. 주변은 소란한데 그녀의 얼굴은 멈춰 있는 듯합니다.",
+   "en": "A young woman stands behind the marble bar at the Folies-Bergère, one of the most glittering music halls in Paris. At the centre of the canvas, she alone looks quietly back at us. All around is noise; her face is perfectly still.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  },
+  {
+   "ko": "에두아르 마네는 1882년 이 그림을 살롱에 출품했습니다. 그는 현장에서 스케치한 뒤 작업실에 바를 차려 그렸습니다. 이곳에서 실제로 일하던 쉬종이라는 여성이 작업실에 와서 포즈를 취했습니다.",
+   "en": "Édouard Manet showed this painting at the Paris Salon of 1882. He made sketches on site, then set up a bar in his studio and painted the whole picture there. The model was Suzon, a real barmaid at the Folies-Bergère, who came to pose for him.",
+   "x": 0.5,
+   "y": 0.3,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "그녀의 얼굴을 가까이 보겠습니다. 앞머리를 내린 그녀는 표정 없는 눈길로 앞을 응시합니다. 웃지도 말을 걸지도 않는 이 얼굴을 코톨드 갤러리는 그림의 고요한 중심이라고 부릅니다.",
+   "en": "Let's look closely at her face. Beneath her fringe, she gazes ahead with an expression that gives nothing away. She neither smiles nor speaks, and the Courtauld calls her the still centre of the painting.",
+   "x": 0.48,
+   "y": 0.17,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "그녀 뒤로 보이는 샹들리에와 객석의 군중은 모두 커다란 거울에 비친 모습입니다. 그러니 이 소란은 사실 우리가 서 있는 바 이쪽에 있는 셈입니다. 느슨한 붓질이 반짝이는 소음처럼 보입니다.",
+   "en": "The chandeliers and the crowded balcony behind her are all a reflection in a huge mirror. That means the noisy room is really on our side of the bar. Loose, rapid brushwork turns the crowd into a kind of glittering hum.",
+   "x": 0.22,
+   "y": 0.24,
+   "z": 1.9,
+   "tilt": 0
+  },
+  {
+   "ko": "왼쪽 위 구석을 보십시오. 초록 신발을 신은 두 발이 살짝 보입니다. 객석 위에서 공연하던 공중그네 곡예사의 발입니다. 이 두 발이 화면 밖의 공연을 알려 줍니다.",
+   "en": "Look into the top left corner. A pair of feet in green boots dangles into view. They belong to a trapeze artist performing above the audience. With just these two feet, Manet hints at the whole show happening out of frame.",
+   "x": 0.06,
+   "y": 0.07,
+   "z": 2.6,
+   "tilt": 0
+  },
+  {
+   "ko": "이제 바 위 왼쪽의 병들로 내려와 보겠습니다. 금박을 두른 샴페인과 빨간 삼각형 상표의 영국 맥주병이 놓여 있습니다. 맨 왼쪽 병의 라벨에는 마네의 서명과 1882라는 연도가 적혀 있습니다.",
+   "en": "Now come down to the bottles on the left of the counter. There is gold-foiled champagne, and bottles of English beer marked with a red triangle. On the label of the bottle at the far left, Manet signed his name and the date, 1882.",
+   "x": 0.12,
+   "y": 0.82,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "오른쪽으로 시선을 옮기면 유리 그릇에 수북한 오렌지와 물컵에 꽂힌 꽃 두 송이가 보입니다. 차가운 대리석과 유리, 따뜻한 과일빛이 어우러져 정물만으로도 한 폭의 그림이 됩니다.",
+   "en": "Move your eyes to the right, and you will find a glass bowl heaped with oranges and two flowers in a tumbler. Cool marble and glass meet the warm glow of fruit, and the still life could stand as a painting on its own.",
+   "x": 0.67,
+   "y": 0.74,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "이제 오른쪽 위를 보십시오. 거울 속 그녀의 뒷모습은 오른쪽으로 훌쩍 비켜나 있고, 실크해트를 쓴 남자 손님과 마주하고 있습니다. 그런데 정면의 그녀 앞에는 그 남자가 없습니다.",
+   "en": "Now look to the upper right. Her reflected back has slipped far off to the right, where she seems to face a male customer in a top hat. Yet in front of the woman we see head-on, there is no such man.",
+   "x": 0.88,
+   "y": 0.25,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "이 어긋난 반사는 1882년 처음 공개된 뒤로 지금까지 논쟁거리입니다. 코톨드 갤러리는 마네가 일반적인 원근법을 무시하고 반사를 오른쪽으로 옮겼다고 설명합니다. 2000년에는 실제로 가능한 장면임을 재현해 보인 연구도 있습니다.",
+   "en": "That misplaced reflection has been argued over ever since the picture was first shown in 1882. The Courtauld explains that Manet ignored normal perspective and shifted it to the right. In 2000, one art historian staged a reconstruction showing the view was physically possible.",
+   "x": 0.7,
+   "y": 0.35,
+   "z": 1.4,
+   "tilt": 5
+  },
+  {
+   "ko": "이 그림은 마네가 1883년 세상을 떠나기 1년 전에 완성한 마지막 대작입니다. 그가 죽은 뒤 작곡가 샤브리에가 사서 피아노 위에 걸었습니다. 1926년 코톨드가 구입해 지금은 런던에 있습니다.",
+   "en": "It was Manet's last major painting, finished a year before he died in 1883. After his death the composer Emmanuel Chabrier bought it and hung it over his piano. Samuel Courtauld acquired it in 1926, and it now hangs at the Courtauld Gallery in London.",
+   "x": 0.5,
+   "y": 0.45,
+   "z": 1.2,
+   "tilt": 0
+  },
+  {
+   "ko": "다시 한 걸음 물러나 그녀의 얼굴과 거울 속 뒷모습을 번갈아 보십시오. 소란한 밤 한가운데서 그녀는 무엇을 생각하고 있을까요. 우리가 바로 그 손님의 자리에 서 있는 것은 아닐까요.",
+   "en": "Step back and let your eyes move between her face and her reflection. In the middle of this noisy night, what might she be thinking? And are we, perhaps, standing exactly where that gentleman stands?",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1,
+   "tilt": 0
+  }
+ ]
+}

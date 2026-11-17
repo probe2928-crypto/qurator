@@ -1,0 +1,93 @@
+{
+ "id": "w-cassatt-bath",
+ "segs": [
+  {
+   "ko": "한 여인이 아이를 무릎에 앉혀 단단히 붙잡고, 아래 대야에 담근 아이의 발을 씻기고 있습니다. 미국 화가 메리 커샛이 1893년에 그린 그림으로, 시카고 미술관에 있습니다.",
+   "en": "A woman holds a small child firmly on her lap and washes the child's foot in the basin below. The American painter Mary Cassatt made this picture in 1893, and it belongs to the Art Institute of Chicago.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  },
+  {
+   "ko": "커샛은 파리에서 활동했고, 프랑스 인상주의 화가들과 함께 전시한 유일한 미국인 화가였습니다. 여성과 아이가 몸을 맞댄 친밀한 순간은 그녀를 대표하는 주제였습니다.",
+   "en": "Cassatt worked in Paris and was the only American artist to exhibit with the French Impressionists. Moments of physical closeness between a woman and a child, full of intimacy, were her signature subject.",
+   "x": 0.45,
+   "y": 0.4,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "벽지와 가구, 옷과 바닥까지 화면 곳곳을 무늬가 채웁니다. 이는 그녀가 1890년 파리에서 일본 목판화를 본 뒤 깊이 빠져든 일본 미술의 영향입니다. 특히 우타마로의 목욕 장면을 아꼈다고 합니다.",
+   "en": "Pattern fills the picture, from wallpaper and painted furniture to clothing and floor. It reflects her intense engagement with Japanese art after she saw Japanese woodblock prints in Paris in 1890. She especially admired a bathing scene by Utamaro.",
+   "x": 0.25,
+   "y": 0.13,
+   "z": 1.8,
+   "tilt": 0
+  },
+  {
+   "ko": "두 사람의 머리를 보십시오. 여인과 아이는 나란히 고개를 숙이고 같은 곳을 내려다봅니다. 얼굴이 반쯤 가려져 있어, 우리는 두 사람의 몰입을 조용히 지켜보게 됩니다.",
+   "en": "Look at the two heads, one with dark hair pinned up and one with a short fringe. Woman and child bow together, gazing down at the same spot. Their faces are half hidden, so we quietly watch how absorbed they are.",
+   "x": 0.5,
+   "y": 0.25,
+   "z": 2.2,
+   "tilt": 0
+  },
+  {
+   "ko": "여인의 한 손은 아이의 배를 감싸 단단히 받치고 있습니다. 아이는 배에 흰 천을 둘렀고, 팔을 굽혀 몸의 균형을 잡습니다. 두 사람의 몸이 하나의 덩어리처럼 붙어 있습니다.",
+   "en": "One of the woman's hands wraps around the child's belly, holding the child steady. A white cloth circles the child's middle, and a bent arm helps keep the balance. The two bodies press together as a single form.",
+   "x": 0.66,
+   "y": 0.46,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "여인의 옷은 초록, 분홍, 흰색의 세로 줄무늬입니다. 위에서 가파르게 내려다보는 시점 때문에 공간이 얕아지고, 카펫이 깔린 바닥은 화면 위에 곧추선 것처럼 보입니다.",
+   "en": "Her dress has bold vertical stripes of green, pink and white that run all the way down to the floor. The steep viewpoint from above makes the space shallow, so the carpeted floor seems to stand upright on the surface of the canvas.",
+   "x": 0.72,
+   "y": 0.62,
+   "z": 1.5,
+   "tilt": 5
+  },
+  {
+   "ko": "이 가파른 시점과 목욕이라는 주제는 드가에게서 배운 것입니다. 이제 아래를 보십시오. 여인의 손이 아이의 발을 붙잡고 물속에서 씻기고 있고, 손과 발이 맞닿는 이 지점이 그림의 중심입니다.",
+   "en": "Cassatt took this sharp angle and the bathing subject from her friend Degas. Now look lower. The woman's hand holds the child's foot and washes it in the water, and this point where hand meets foot is the heart of the painting.",
+   "x": 0.3,
+   "y": 0.78,
+   "z": 2.6,
+   "tilt": 0
+  },
+  {
+   "ko": "여인의 팔 아래, 화면 왼쪽 아래 바닥을 보십시오. 파란 물감으로 쓴 메리 커샛이라는 서명이 남아 있습니다. 카펫 무늬 사이에 조용히 섞여 있어 찾아보는 재미가 있습니다.",
+   "en": "Look at the floor in the lower left, below the woman's arm. There, in blue paint, she signed her name, Mary Cassatt. It blends quietly into the carpet pattern, so it is fun to search for.",
+   "x": 0.24,
+   "y": 0.97,
+   "z": 2.6,
+   "tilt": 0
+  },
+  {
+   "ko": "둥근 대야와 물 위의 반사를 보십시오. 대야의 타원은 두 사람의 둥근 머리와 호응하고, 오른쪽의 꽃무늬 물주전자가 대야와 짝을 이룹니다. 두 사람의 시선은 바로 이 물 위로 떨어집니다.",
+   "en": "Notice the round basin and the reflections on the water. Its oval echoes the rounded heads of the two figures, and the flowered water jug at the right makes a pair with it. Both of their gazes fall right here, onto the water.",
+   "x": 0.56,
+   "y": 0.86,
+   "z": 1.6,
+   "tilt": 0
+  },
+  {
+   "ko": "이 그림은 1893년 파리 뒤랑뤼엘 화랑의 커샛 전시에 처음 걸렸습니다. 이후 여러 전시를 거쳐 1910년 시카고 미술관이 사들였습니다. 1926년 커샛이 세상을 떠나자, 미술관은 그해 말 추모 전시에 이 그림을 다시 걸었습니다.",
+   "en": "The painting was first shown at her exhibition at the Galeries Durand-Ruel in Paris in 1893. It was widely exhibited after that, and the Art Institute of Chicago bought it in 1910. After Cassatt died in 1926, the museum hung it again that December in a memorial exhibition.",
+   "x": 0.45,
+   "y": 0.55,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "이제 한 걸음 물러나, 두 사람이 내려다보는 대야 속 물을 함께 바라보십시오. 특별할 것 없는 일상의 이 조용한 순간 앞에서, 당신에게는 무엇이 가장 먼저 느껴지나요?",
+   "en": "Now step back and look with them at the water below. Before this quiet, ordinary moment, what is the first thing you feel?",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05,
+   "tilt": 0
+  }
+ ]
+}

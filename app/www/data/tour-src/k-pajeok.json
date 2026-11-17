@@ -1,0 +1,93 @@
+{
+ "id": "k-pajeok",
+ "segs": [
+  {
+   "ko": "봄날 한낮, 조용하던 농가 마당이 한순간에 소란스러워졌습니다. 제목의 '파적'은 고요함을 깬다는 뜻입니다. 이 작은 그림 한 장에 비명과 퍼덕임, 고함이 한꺼번에 담겨 있습니다.",
+   "en": "It is midday in spring, and a quiet farmhouse yard has suddenly erupted. The title means \"breaking the stillness,\" and that is exactly what happens here. This one small sheet of paper holds shrieks, flapping wings and shouting, all at the same moment.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1,
+   "tilt": 0
+  },
+  {
+   "ko": "그린 이는 조선 후기의 화원 김득신입니다. 호는 긍재이며, 큰아버지와 동생들, 아들들까지 화원이었던 집안에서 났습니다. 그는 김홍도의 화풍을 이어받아 서민의 일상을 익살스럽게 그렸습니다.",
+   "en": "The painter is Kim Deuk-sin, a court painter of the late Joseon period. He came from a whole family of court artists, including his uncle, his brothers and his sons. He carried on Kim Hong-do's style of genre painting, full of wit about ordinary lives.",
+   "x": 0.5,
+   "y": 0.45,
+   "z": 1.25,
+   "tilt": 0
+  },
+  {
+   "ko": "먼저 들고양이를 보겠습니다. 병아리 한 마리를 입에 물고 달아나면서도, 고개를 뒤로 돌려 이 소동을 태연히 돌아봅니다. 검은색과 흰색의 강한 대비가 눈길을 먼저 끕니다.",
+   "en": "Start with the wild cat. It dashes off with a chick in its mouth, yet even mid-escape it turns its head to glance back at the chaos it has caused, completely unbothered. The strong contrast of black and white draws your eye there first.",
+   "x": 0.14,
+   "y": 0.62,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "그 뒤를 어미 닭이 날개를 활짝 펴고 쫓습니다. 새끼를 빼앗긴 어미는 땅을 박차고 몸을 날려 필사적으로 달려듭니다. 다급한 날갯짓 소리가 그림 밖까지 들리는 듯합니다.",
+   "en": "Right behind comes the mother hen, wings spread wide, in pursuit. Robbed of her chick, she launches herself off the ground and charges desperately at the thief. You can almost hear the frantic beating of her wings.",
+   "x": 0.3,
+   "y": 0.78,
+   "z": 2.3,
+   "tilt": 0
+  },
+  {
+   "ko": "나머지 병아리들은 놀라서 사방으로 흩어집니다. 저마다 다른 방향으로 내달리는 작은 몸짓들이 마당 전체에 번진 혼란을 보여 줍니다. 작은 생명 하나하나에도 움직임이 살아 있습니다.",
+   "en": "The other chicks scatter in every direction. Each tiny body runs a different way, and together they spread the commotion across the whole yard. Even the smallest creatures here are full of movement.",
+   "x": 0.28,
+   "y": 0.9,
+   "z": 1.9,
+   "tilt": 0
+  },
+  {
+   "ko": "마루에 있던 집주인은 긴 담뱃대를 휘두르며 몸을 날립니다. 고양이를 쫓으려는 마음이 앞서 마루에서 뛰어내리듯 몸을 던졌습니다. 다음 순간 어떻게 될지 생각하면 웃음이 먼저 납니다.",
+   "en": "The man of the house lunges off the wooden veranda, swinging his long tobacco pipe. In his hurry to stop the cat he has thrown himself forward with no thought for his footing. Imagining the next second, we cannot help laughing.",
+   "x": 0.55,
+   "y": 0.5,
+   "z": 2.0,
+   "tilt": 0
+  },
+  {
+   "ko": "그 뒤로 아내가 맨발로 뛰쳐나옵니다. 신을 신을 겨를도 없을 만큼 다급했던 것이지요. 아내의 놀란 외침까지 들리는 듯해, 소리와 움직임이 종이 위에 그대로 붙잡힌 셈입니다.",
+   "en": "Behind him, his wife rushes out barefoot. There was clearly no time even to put on her shoes. We can almost hear her startled cry, as if sound and motion had been caught right there on the paper.",
+   "x": 0.78,
+   "y": 0.3,
+   "z": 2.2,
+   "tilt": -4
+  },
+  {
+   "ko": "이 그림은 가로 27센티미터 남짓한 종이에 그렸습니다. 먹선으로 형태를 빠르게 잡고 엷은 색을 살짝 얹는 담채 기법 덕분에, 장면 전체가 가볍고 생기 있게 움직입니다.",
+   "en": "The picture is painted on paper only about 27 centimeters wide. Quick ink lines set down each shape, and light washes of color are laid over them, so the whole scene feels airy, fresh and alive.",
+   "x": 0.6,
+   "y": 0.45,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "이 그림은 간송미술관이 소장한 김득신의 풍속화첩에 들어 있습니다. 서민의 일상을 해학적으로 담은 여덟 점으로 이루어진 이 화첩은, 2018년 보물로 지정되었습니다.",
+   "en": "It belongs to an album of Kim's genre scenes in the Kansong Art Museum. The album gathers eight humorous pictures of ordinary people's lives, and in 2018 it was designated a national Treasure of Korea.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.2,
+   "tilt": 0
+  },
+  {
+   "ko": "고양이를 백성을 괴롭히던 관리에 빗대어 읽는 해석도 있습니다. 그러나 무엇보다 이 그림은 평범한 하루의 한순간을 붙잡아 웃음으로 바꾼 풍속화의 즐거움을 보여 줍니다.",
+   "en": "Some read the cat as a stand-in for the petty officials who preyed on ordinary people. Above all, though, the picture shows the joy of genre painting, freezing one ridiculous second of village life so well that you can almost hear it.",
+   "x": 0.2,
+   "y": 0.65,
+   "z": 1.5,
+   "tilt": 0
+  },
+  {
+   "ko": "한 걸음 물러나 다시 보십시오. 고양이의 여유, 주인의 다급함, 어미 닭의 분노 가운데 어느 쪽에 마음이 가시나요? 그 순간 마당에 울렸을 소리를 떠올려 보셔도 좋겠습니다.",
+   "en": "Step back and take it all in again. Whose side are you on: the cool cat, the frantic master, or the furious hen? Try imagining the noise that filled this yard for that one second.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1,
+   "tilt": 0
+  }
+ ]
+}

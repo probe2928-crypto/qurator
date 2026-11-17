@@ -1,0 +1,93 @@
+{
+ "id": "k-inwang",
+ "segs": [
+  {
+   "ko": "지금 우리 앞에는 비가 막 그친 인왕산이 펼쳐져 있습니다. 가로 1미터 38센티미터의 화면을 검은 바위산이 가득 채웁니다. 먼저 한 걸음 떨어져 전체의 무게를 느껴 보십시오.",
+   "en": "Before us is Mount Inwang, moments after the rain has stopped. The scroll is about 1.38 metres wide, and a dark mass of rock fills almost all of it. Stand back for a moment and simply feel its weight.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  },
+  {
+   "ko": "이 그림을 그린 겸재 정선은 당시 일흔다섯이었습니다. 그 무렵 화가들은 주로 중국 화보 속 이상적인 산수를 따라 그렸습니다. 정선은 눈앞의 조선 산천을 직접 보고 그리는 진경산수를 완성했습니다.",
+   "en": "Jeong Seon, known as Gyeomjae, was seventy-five when he painted this. Most painters of his day copied idealized landscapes from Chinese model books, but Jeong perfected true-view landscape, painting the actual mountains of Korea in front of him.",
+   "x": 0.45,
+   "y": 0.35,
+   "z": 1.3,
+   "tilt": 0
+  },
+  {
+   "ko": "이제 화면 한가운데의 거대한 바위를 보겠습니다. 짙은 먹을 여러 번 겹쳐 쌓아, 비에 젖어 검게 번들거리는 화강암의 무게를 그대로 전합니다. 위에서 아래로 내리그은 굵은 붓자국도 겹겹이 보입니다.",
+   "en": "Now look at the great rock face in the centre. It is built from layer upon layer of dense ink, conveying the weight of granite still dark and glistening with rain. Broad strokes, pulled from top to bottom, are stacked across its surface.",
+   "x": 0.45,
+   "y": 0.2,
+   "z": 1.9,
+   "tilt": 0
+  },
+  {
+   "ko": "오른쪽 위에는 화가가 직접 쓴 글씨가 있습니다. 인왕제색이라는 제목과 겸재라는 호, 신미년 윤달 하순이라는 날짜가 적혀 있습니다. 학자들은 이를 1751년 윤오월 하순으로 읽습니다.",
+   "en": "In the upper right, the artist wrote the title, Inwang jesaek, his pen name Gyeomjae, and a date: the last days of the leap month in the sinmi year. Scholars read this as late in the intercalary fifth month of 1751.",
+   "x": 0.91,
+   "y": 0.2,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "봉우리 오른쪽 골짜기에는 하얀 물줄기가 몇 갈래 흘러내립니다. 며칠 내린 빗물이 모여 떨어지는 모습입니다. 그해 윤오월 하순에 비가 이어지다 갰다는 궁중 기록도 있습니다.",
+   "en": "In the gully to the right of the peak, thin white streams pour down. This is rainwater gathering between the rocks after days of rain. Court weather records from late in that same leap month note several rainy days, then clearing skies.",
+   "x": 0.65,
+   "y": 0.27,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "이제 산허리를 감싸며 피어오르는 흰 안개를 보십시오. 이 안개는 물감이 아니라 아무것도 칠하지 않은 종이의 여백입니다. 칠한 곳과 비워 둔 곳의 대비가 비 갠 아침의 축축한 공기를 만들어 냅니다.",
+   "en": "Now follow the white mist rising around the mountain's waist. It is not paint at all; it is simply bare paper, left untouched. This negative space, set against heavy ink, creates the damp air of a morning after rain.",
+   "x": 0.3,
+   "y": 0.6,
+   "z": 1.8,
+   "tilt": 0
+  },
+  {
+   "ko": "안개 아래로는 소나무와 잡목 숲이 이어집니다. 나뭇잎은 먹점을 짧게 툭툭 찍어 표현했고, 줄기는 몇 번의 붓질로 빠르게 그었습니다. 무거운 바위와 달리 숲은 가볍고 리듬감이 있습니다.",
+   "en": "Below the mist, a forest of pines and other trees spreads out. The leaves are short dabs of ink, and the trunks are laid down in a few quick strokes. Unlike the heavy rock, the woods feel light and rhythmic.",
+   "x": 0.6,
+   "y": 0.66,
+   "z": 1.9,
+   "tilt": 4
+  },
+  {
+   "ko": "오른쪽 아래 숲속에는 기와집 한 채가 자리하고 있습니다. 이 집을 정선의 오랜 벗이자 시인인 이병연의 집으로 보는 해석이 있습니다. 병중의 친구가 낫기를 바라며 그렸다는 이야기도 그래서 생겨났습니다.",
+   "en": "Tucked into the trees at lower right is a house with a tiled roof. Some scholars see it as the home of Yi Byeong-yeon, a poet and Jeong's old friend. From that reading came the story that Jeong painted this hoping his sick friend would recover.",
+   "x": 0.79,
+   "y": 0.83,
+   "z": 2.4,
+   "tilt": 0
+  },
+  {
+   "ko": "이병연은 실제로 그해 윤오월 이십구일에 세상을 떠났습니다. 다만 그림의 글씨에는 이병연의 이름이 없고, 집의 위치가 맞지 않는다는 반론도 있습니다. 그림과 시를 주고받은 두 사람의 깊은 우정만은 분명합니다.",
+   "en": "Yi did in fact die on the twenty-ninth day of that same leap month. Yet the inscription never names him, and others argue the house does not match where he lived. What the records do confirm is a deep friendship, shared through paintings and poems.",
+   "x": 0.7,
+   "y": 0.72,
+   "z": 1.4,
+   "tilt": 0
+  },
+  {
+   "ko": "이 그림은 국보로 지정되어 있습니다. 오랫동안 이건희 회장이 소장했고, 2021년 유족이 국립중앙박물관에 기증했습니다. 진경산수의 정점이자 조선 회화를 대표하는 걸작으로 꼽힙니다.",
+   "en": "The painting is designated a National Treasure of Korea. It belonged for many years to the Samsung chairman Lee Kun-hee, and in 2021 his family donated it to the National Museum of Korea. It is counted among the high points of Joseon painting.",
+   "x": 0.5,
+   "y": 0.4,
+   "z": 1.2,
+   "tilt": 0
+  },
+  {
+   "ko": "다시 한 걸음 물러나 그림 전체를 보십시오. 오늘날 서울에서 올려다보는 인왕산과 비교해 보면 그 사실감에 놀라게 됩니다. 비 갠 뒤의 젖은 숲 냄새를 떠올려 보십시오.",
+   "en": "Step back once more and take in the whole scroll. Look up at Inwangsan from Seoul today and you will be struck by how true it is. Can you almost smell the wet rock and pine after the rain?",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0,
+   "tilt": 0
+  }
+ ]
+}
