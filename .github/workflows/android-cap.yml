@@ -37,6 +37,7 @@ jobs:
           npm run assets -- --android || true
           V="$(node -p "require('./package.json').version")"
           sed -i "s/versionCode [0-9]*/versionCode ${{ github.event.inputs.versionCode }}/; s/versionName \"[^\"]*\"/versionName \"$V\"/" android/app/build.gradle
+          sed -i "s/minSdkVersion = [0-9]*/minSdkVersion = 26/" android/variables.gradle   # QR 스캐너 라이브러리가 Android 8.0(26) 이상 필요
           grep -nE "applicationId|versionCode|versionName|minSdk|targetSdk" android/app/build.gradle android/variables.gradle || true
           npx cap sync android
       - name: 출시용 AAB (서명 전)
