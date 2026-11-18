@@ -184,7 +184,7 @@ const T = {
   st_name: ['전시 제목', 'Exhibition title'], st_sub: ['부제 · 기간 · 장소', 'Subtitle · dates · venue'],
   st_custom: ['직접 작품 등록', 'Add your own work'], st_t: ['작품명', 'Title'], st_a: ['작가', 'Artist'], st_y: ['연도', 'Year'], st_m: ['재료·크기', 'Medium & size'],
   st_img: ['이미지 URL (선택)', 'Image URL (optional)'], st_ko: ['한국어 해설', 'Korean text'], st_en: ['영어 해설', 'English text'], st_add: ['라벨에 추가', 'Add label'],
-  st_hint: ['해설은 QR 안에 그대로 담겨 서버 없이 열립니다. 해설이 길수록 QR이 촘촘해져 인쇄 크기가 커지니, 한국어·영어 합쳐 300자 안팎을 권장합니다. 더 긴 해설은 카카오톡으로 문의해 주세요.', 'Your text is stored inside the QR itself, so no server is needed. Longer texts make a denser code that must print larger; about 300 characters in total works best. For longer texts, contact us on KakaoTalk.'],
+  st_hint: ['해설은 QR 안에 그대로 담겨 서버 없이 열립니다. 그래서 해설을 고치면 QR도 바뀌니, 고친 작품은 캡션을 다시 인쇄해 주세요. 해설이 길수록 QR이 촘촘해져 인쇄 크기가 커지니, 한국어·영어 합쳐 300자 안팎을 권장합니다. 더 긴 해설은 카카오톡으로 문의해 주세요.', 'Your text is stored inside the QR itself, so no server is needed; editing it changes the QR, so reprint that caption. Longer texts make a denser code that must print larger; about 300 characters in total works best. For longer texts, contact us on KakaoTalk.'],
   qr_ok: ['예상 QR 3cm · 휴대폰으로 바로 읽힙니다', 'Estimated QR 3 cm · scans easily'],
   qr_big: ['해설이 길어 QR을 {cm}cm로 크게 인쇄합니다', 'Long text: this QR prints larger, {cm} cm'],
   qr_bad: ['해설이 너무 길어 QR이 촘촘합니다 — 휴대폰으로 읽기 어려우니 해설을 줄여 주세요', 'Text too long: the QR is too dense to scan reliably. Please shorten it.'],
@@ -1532,12 +1532,12 @@ const GAL = {
       ['상담', '카카오톡으로 전시 일정과 작품 목록(작품명·작가·연도·이미지)을 보내 주세요.'],
       ['해설 작성', '작품별 해설을 작성해 검토용 링크로 보내 드립니다. 수정 요청을 반영합니다.'],
       ['캡션 인쇄', '작품명·작가·연도와 QR이 들어간 캡션(명제표) A4 인쇄 파일과 입구용 전시 안내 QR을 드립니다.'],
-      ['전시 운영', '관람객은 카메라로 QR을 찍기만 하면 됩니다. 전시 기간 동안 해설 수정도 바로 반영됩니다.']],
+      ['전시 운영', '관람객은 카메라로 QR을 찍기만 하면 됩니다. 앱 설치도, 갤러리 와이파이도 필요 없습니다.']],
     sample: '실제 캡션과 해설 화면', sampleP: '위 캡션의 QR을 휴대폰 카메라로 찍어 보세요. 관람객이 보게 될 해설 화면이 열립니다.',
     plans: '요금', who: '운영진', whoP: '역사학을 전공했고, 여러 차례 전시를 직접 열거나 기획에 참여해 왔습니다. 전시를 여는 쪽의 사정을 알기에, 일정과 예산에 맞춰 함께 준비합니다.',
     faq: '자주 묻는 질문', faqItems: [
       ['작품 이미지는 어떻게 하나요?', '갤러리가 보유한 작품 이미지를 받아 해설 화면에 사용합니다. 이미지 없이 해설만 운영할 수도 있습니다.'],
-      ['해설을 우리가 직접 써도 되나요?', '네. QR 스튜디오에서 직접 등록하고 수정할 수 있습니다. 원고 작성까지 맡기려면 Premium을 선택하세요.'],
+      ['해설을 우리가 직접 써도 되나요?', '네. QR 스튜디오에서 직접 등록하고 수정할 수 있습니다. 직접 등록한 해설은 QR 안에 담기므로 고친 작품은 캡션을 다시 인쇄합니다. 원고 작성까지 맡기려면 Premium을 선택하세요.'],
       ['인터넷이 안 되는 공간이면요?', '관람객 휴대폰의 모바일 데이터로 열리므로 갤러리 와이파이가 없어도 됩니다.'],
       ['전시가 끝나면 링크는 어떻게 되나요?', '전시 기간 동안 운영하며, 이후 보관 여부는 상담으로 정합니다.']],
     cta: '도입 상담하기', print: '소개서 PDF로 저장', back: '요금 자세히 보기'
@@ -1554,12 +1554,12 @@ const GAL = {
       ['Talk to us', 'Send your dates and list of works (title, artist, year, image) on KakaoTalk.'],
       ['We write', 'We draft a text per work and send a review link; your edits are applied.'],
       ['Print', 'You receive A4 caption files with QR codes and an entrance QR for the whole show.'],
-      ['Open the show', 'Visitors just point their camera. Edits during the show go live immediately.']],
+      ['Open the show', 'Visitors just point their camera. No app to install, no gallery Wi-Fi needed.']],
     sample: 'A real caption and guide', sampleP: 'Scan the QR on the caption above with your phone camera to open the page your visitors will see.',
     plans: 'Pricing', who: 'Who we are', whoP: 'We trained in history and have opened or helped organize several exhibitions. We know the organizer\'s side, so we prepare everything around your schedule and budget.',
     faq: 'FAQ', faqItems: [
       ['What about artwork images?', 'We use the images you provide; you can also run texts without images.'],
-      ['Can we write the texts ourselves?', 'Yes, in QR Studio. Choose Premium if you want us to write them.'],
+      ['Can we write the texts ourselves?', 'Yes, in QR Studio. Your text lives inside the QR, so an edited work needs its caption reprinted. Choose Premium if you want us to write them.'],
       ['What if the space has no Wi-Fi?', 'Pages open on visitors\' mobile data; gallery Wi-Fi is not required.'],
       ['What happens after the show?', 'The guide runs for the exhibition period; archiving afterwards is agreed with you.']],
     cta: 'Talk to us', print: 'Save as PDF brochure', back: 'See pricing'
@@ -1682,15 +1682,17 @@ async function viewMemberLink(tok) {
 
 /* ---------------- support / CS ---------------- */
 const FAQ = [
-  ['오늘의 작품은 언제 올라오나요?', 'When do the daily works arrive?', '매일 아침(한국 시간) 세 점이 새로 올라옵니다. 첫 번째 작품은 누구나 무료로 볼 수 있고, 나머지 두 점과 아카이브는 멤버에게 열립니다.', 'Three new works go up every morning, Korea time. The first is free for everyone; the other two and the archive are for members.'],
-  ['앱을 설치해야 하나요?', 'Do I need to install an app?', '아니요. 브라우저에서 바로 열립니다. 오늘의 작품 페이지에서 홈 화면에 추가하면 앱처럼 쓸 수 있습니다.', 'No. It runs in your browser. Add it to your home screen from the Daily Art page to use it like an app.'],
+  ['오늘의 작품은 언제 올라오나요?', 'When do the daily works arrive?', '매일 0시(한국 시간)에 새 세 점으로 바뀌어, 아침에 열면 오늘의 작품이 준비되어 있습니다. 첫 번째 작품은 누구나 무료로 볼 수 있고, 나머지 두 점과 아카이브는 멤버에게 열립니다.', 'Three new works go up at midnight Korea time, ready when you wake up. The first is free for everyone; the other two and the archive are for members.'],
+  ['앱을 설치해야 하나요?', 'Do I need to install an app?', '아니요. 브라우저에서 바로 열립니다. 안드로이드 크롬은 오늘의 작품 페이지의 \'홈 화면에 설치\' 버튼으로, 아이폰 사파리는 공유 버튼 → \'홈 화면에 추가\'로 앱처럼 쓸 수 있습니다. 홈 화면 아이콘으로 처음 열었을 때 멤버 전용 해설이 잠겨 보이면, 받은 멤버 링크를 구독 버튼 아래 입력칸에 한 번 붙여 넣어 주세요. App Store의 아이폰 앱은 무료 열람용(오늘의 무료 작품·특집·QR 해설)이라 멤버 링크로 열리지 않으니, 멤버 전용 해설은 웹에서 이용해 주세요.', 'No. It runs in your browser. On Android Chrome, use "Install app" on the Daily Art page; on iPhone Safari, tap Share → "Add to Home Screen". If members-only pages look locked the first time you open the home-screen icon, paste your member link once into the field under Subscribe. The iPhone app on the App Store is a free reader (today\'s free work, features, QR guides) and does not take member links, so use the website for members-only commentary.'],
   ['결제는 어떻게 하나요?', 'How do I pay?', '구독 신청 페이지에서 계좌이체를 선택하면 입금 계좌가 바로 안내됩니다. 입금 후 카카오톡으로 주문번호를 보내 주시면 확인 후 멤버 링크를 보내 드립니다. 카드 자동결제(토스페이먼츠)는 곧 열립니다.', 'Choose bank transfer on the checkout page to see our account details; send your order number on KakaoTalk after paying and we will send your member link. Card billing via Toss Payments opens soon.'],
   ['멤버 코드는 어디에 입력하나요?', 'Where do I enter my member code?', '입금이 확인되면 카카오톡으로 멤버 링크를 보내 드립니다. 링크를 누르면 바로 열리고, 화면에 이용 기간(만료일)이 표시됩니다. 다른 기기에서는 같은 링크를 한 번 더 누르면 됩니다. 링크를 열기 어려우면 구독 버튼 아래 입력칸에 링크를 붙여 넣어도 됩니다. 만료 5일 전부터 연장 안내가 나옵니다.', 'Once your payment is confirmed we send a member link on KakaoTalk. Open it and everything unlocks, with your end date shown. On another device, open the same link again, or paste it into the field under Subscribe. A renewal reminder appears 5 days before the end date.'],
+  ['멤버십 연장은 어떻게 하나요?', 'How do I renew?', '만료 5일 전부터 화면에 연장 안내가 나오고, 구독 신청 페이지가 \'멤버십 연장\'으로 바뀝니다. 연장 신청은 지금 멤버십과 이어서 확인되며, 입금이 확인되면 기간을 늘린 새 멤버 링크를 카카오톡으로 보내 드립니다.', 'A renewal notice appears 5 days before your end date, and the checkout page switches to "Renew". Renewals are matched to your current membership; once payment is confirmed we send a new member link with the extended date on KakaoTalk.'],
+  ['계좌이체로 결제했는데 따로 해지해야 하나요?', 'I paid by bank transfer. Do I need to cancel?', '아니요. 계좌이체 멤버십은 자동으로 청구되지 않고, 멤버 링크에 표시된 이용 기간이 끝나면 그대로 종료됩니다. 계속 보시려면 위의 연장 신청을 해 주세요.', 'No. Bank-transfer memberships are never charged automatically; they simply end on the date shown with your member link. Renew as above to continue.'],
   ['해지는 어떻게 하나요?', 'How do I cancel?', '카카오톡으로 해지를 요청하시면 다음 결제일부터 청구되지 않으며, 이미 결제한 기간이 끝날 때까지 계속 이용하실 수 있습니다.', 'Message us on KakaoTalk. You will not be billed again and keep access until the end of the paid period.'],
   ['환불되나요?', 'Can I get a refund?', '결제 후 7일 이내이고 멤버 전용 해설을 열람하지 않았다면 전액 환불됩니다. 자세한 기준은 환불·해지 규정을 확인해 주세요.', 'Within 7 days of payment, if you have not opened member content, you get a full refund. See the Refund & Cancellation policy for details.'],
   ['수익금 기부는 어떻게 이루어지나요?', 'How does the giving work?', 'QURATOR는 Daily Art 구독과 갤러리 프로젝트 수익의 일부를 오리엘 재단에 기부합니다. 재단은 지금 비영리 등록을 준비 중이며, 등록 후 첫 기부를 보내고 날짜와 금액을 나눔 페이지와 재단 공개 장부에 공개합니다. 구독료 자체는 기부금이 아니어서 세액공제 대상이 아닙니다.', 'QURATOR gives a share of its subscription and gallery revenue to Oriel Foundation. The foundation is preparing its nonprofit registration; the first gift goes out after that, with its date and amount published on our Giving page and in the foundation\'s public ledger. Fees themselves are not donations and are not tax-deductible.'],
   ['갤러리 도입은 어떻게 진행되나요?', 'How does a gallery project work?', '카카오톡으로 전시 일정과 작품 목록을 보내 주시면 견적을 드립니다. 해설 작성(Premium)부터 QR 캡션 인쇄 파일, 전시 입구 QR까지 한 번에 준비됩니다.', 'Send your dates and list of works on KakaoTalk for a quote. We prepare texts (Premium), QR caption files and an entrance QR.'],
-  ['갤러리가 해설을 직접 수정할 수 있나요?', 'Can a gallery edit the texts itself?', '네. QR 스튜디오에서 작품과 해설을 직접 등록하고 캡션을 바로 인쇄할 수 있습니다.', 'Yes. Add works and texts in QR Studio and print captions immediately.']
+  ['갤러리가 해설을 직접 수정할 수 있나요?', 'Can a gallery edit the texts itself?', '네. QR 스튜디오에서 작품과 해설을 직접 등록하고 캡션을 바로 인쇄할 수 있습니다. 직접 등록한 해설은 내용이 QR 안에 담기므로, 고친 뒤에는 그 작품의 캡션을 다시 인쇄해 주세요.', 'Yes. Add works and texts in QR Studio and print captions immediately. Texts you add yourself are stored inside the QR, so reprint that caption after an edit.']
 ];
 /* ---------------- giving ---------------- */
 const giveUrl = () => S.lang === 'ko' ? GIVE.urlKo : GIVE.url;
@@ -1748,7 +1750,7 @@ function viewSupport() {
         `<a class="sp-cell" href="${h}" ${h.startsWith('http') ? 'target="_blank" rel="noopener"' : ''}><span>${k ? b : a}</span><i>→</i></a>`).join('')}
     </div>
     <h2 class="sp-h">${t('sp_faq')}</h2>
-    <div class="faq">${(IOS ? FAQ.filter(f => !/결제|구독|멤버|환불|해지|요금|가격|앱을 설치|갤러리 도입|갤러리가/.test(f[0])) : PLAY ? FAQ_PLAY.concat(FAQ.filter(f => !/결제는|앱을 설치|갤러리 도입|갤러리가|멤버 코드는 어디/.test(f[0]))) : FAQ).map(f => `<details><summary>${esc(f[k])}</summary><p>${esc(f[2 + k])}</p></details>`).join('')}</div>
+    <div class="faq">${(IOS ? FAQ.filter(f => !/결제|구독|멤버|환불|해지|요금|가격|앱을 설치|갤러리 도입|갤러리가/.test(f[0])) : PLAY ? FAQ_PLAY.concat(FAQ.filter(f => !/결제|연장|앱을 설치|갤러리 도입|갤러리가|멤버 코드는 어디/.test(f[0]))) : FAQ).map(f => `<details><summary>${esc(f[k])}</summary><p>${esc(f[2 + k])}</p></details>`).join('')}</div>
     <h2 class="sp-h">${t('sp_docs')}</h2>
     <div class="sp-grid"><a class="sp-cell" href="#/policy/terms"><span>${t('terms')}</span><i>→</i></a><a class="sp-cell" href="#/policy/privacy"><span>${t('privacy')}</span><i>→</i></a>${IOS ? '' : `<a class="sp-cell" href="#/policy/refund"><span>${t('refund')}</span><i>→</i></a>`}</div>
   </div>`;
