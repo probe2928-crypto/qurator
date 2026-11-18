@@ -216,7 +216,7 @@ const T = {
   sp_kakao: ['카카오톡으로 문의하기', 'Message us on KakaoTalk'], sp_kakao_s: ['오픈채팅 · QURATOR 고객센터', 'Open chat · QURATOR Support'],
   sp_faq: ['자주 묻는 질문', 'Frequently asked'], sp_docs: ['약관 및 정책', 'Policies'],
   terms: ['이용약관', 'Terms of Service'], privacy: ['개인정보처리방침', 'Privacy Policy'], refund: ['환불·해지 규정', 'Refund & Cancellation'],
-  biz: ['상호 QURATOR(큐레이터) · 사업자등록번호·통신판매업 신고번호·대표자 정보는 등록 완료 후 게시됩니다.', 'QURATOR. Business registration details will be published once registration is complete.'],
+  biz: ['상호 큐레이터(QURATOR) · 대표 박세준 · 사업자등록번호 778-09-03291 · 통신판매업 신고 준비 중 · 인천광역시 영종구 은하수로 306, 102동 1504호 · 010-9129-5086', 'QURATOR (큐레이터) · Representative: Sejun Park · Business reg. no. 778-09-03291 · 306 Eunhasu-ro, Yeongjong-gu, Incheon, Korea · +82 10-9129-5086'],
   co_h: ['Daily Art 구독 신청', 'Subscribe to Daily Art'], co_name: ['이름', 'Name'], co_email: ['이메일 (주문 확인·멤버 안내)', 'Email (order & membership notices)'],
   co_method: ['결제 방법', 'Payment method'], co_card: ['카드 자동결제', 'Card, billed monthly'], co_card_s: ['토스페이먼츠 · 매월 자동 결제', 'Toss Payments · renews monthly'],
   co_soon: ['곧 오픈', 'Coming soon'], co_bank: ['계좌이체', 'Bank transfer'], co_bank_s: ['우리은행 계좌로 입금 · 확인 후 멤버 링크 발송', 'Transfer to our Woori Bank account · member link after confirmation'],
