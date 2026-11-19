@@ -2,6 +2,23 @@
 
 규칙: 공식 홈페이지·공개된 대표 문의 채널만 적는다. 개인 이메일·개인 정보 금지. 이미 있는 곳은 중복하지 않는다.
 
+## 2026-11-20 (리서치팀 · 새벽큐)
+
+이번 회차에 각 기관 공식 홈페이지를 직접 열어(서브에이전트 WebFetch) 전시와 대표 문의 채널을 확인했다. 개인 이름·휴대전화(미메시스 대관용 010 번호 등)는 적지 않는다. 기존 leads.md 이름과 대조했고 중복은 없다.
+
+| # | 이름 | 지역 | 전시·기간 | 공식 홈페이지 | 공식 문의 채널 | 메모 |
+|---|---|---|---|---|---|---|
+| 1 | 미메시스 아트 뮤지엄 Mimesis Art Museum | 경기 파주시 문발로 253(파주출판도시) | 《BOOK+IMAGE 14: 보이저-데어》 · 《2026 MIMESIS COLLECTION: 보이저-히어》 **2026.11.4~2027.2.14** ([공식 현재 전시](https://www.mimesisartmuseum.co.kr/%ED%98%84%EC%9E%AC-%EC%A0%84%EC%8B%9C-Current)) | [mimesisartmuseum.co.kr](https://www.mimesisartmuseum.co.kr) | info@mimesisartmuseum.co.kr · 031-955-4100 ([공식 이용 안내](https://mimesisartmuseum.co.kr/%EC%9D%B4%EC%9A%A9-%EC%95%88%EB%82%B4-Visit)) | **1순위.** 유료 관람(성인 11,000원, 공식 이용 안내)·석 달 넘는 전시. 이용 안내에 도슨트 프로그램은 있지만 오디오 가이드는 없다 → 도슨트가 없는 시간을 QR 해설로 메우는 제안이 맞다. 출판사 계열 미술관이라 '책·이미지' 주제 해설과도 결이 맞다. |
+| 2 | 갤러리JJ Gallery JJ | 서울 강남구 압구정로30길 63 | Gallery JJ Project 53 《수자 라인하르트: 더 익숙하고 훨씬 낯선》 — 공식 첫 화면 **2026.12.4~2027.1.16**, 같은 사이트 /upcoming은 12.3~12.31 → **기간 불일치, 미확인**(강남문화재단 아트큐브 목록은 첫 화면과 같음) | [galleryjj.org](https://www.galleryjj.org) | galleryjjinfo@gmail.com(갤러리 대표 info 주소) · 02-322-3979 · [공식 문의 폼](https://galleryjj.org/contact)(포트폴리오·광고 발송 금지 안내 있음) | 번호를 붙인 프로젝트로 작가 중심 전시를 이어 가는 소규모 상업 갤러리. 해외 작가 전시가 많아 작품마다 맥락 해설(국문·영문) 수요가 있다. 문의 폼에 '광고 금지' 문구가 있으니 제안은 협업 형식으로, 대표 메일로. |
+| 3 | 갤러리 소소 Gallery SoSo | 경기 파주시 탄현면 헤이리마을길 92(헤이리) · 서울 분관 '더 소소' 중구 청계천로 172-1 4~5층 | 고니 개인전 《망원경 Telescope》 **2026.10.30~11.27**(헤이리). 다음 전시는 '준비 중' 표기라 **미확인** ([공식 Current](https://www.gallerysoso.com/current)) | [gallerysoso.com](https://www.gallerysoso.com) | sosogallery@gmail.com · 031-949-8154 ([공식 Contact](https://www.gallerysoso.com/contact)), 문의 폼 없음 | 주말 관광객이 많은 헤이리 2층 공간, 상주 도슨트 없음. 한 번 만든 해설을 서울 분관에서도 다시 쓸 수 있다. 현재 전시가 11/27에 끝나니 다음 전시 개막 전에 제안하는 편이 낫다. |
+| 4 | 서울시립 백남준을 기억하는 집 SeMA Nam June Paik House | 서울 종로구 종로53길 12-1(창신동) | 《메가트론 랩소디》 2025.6.17~ **상시** — SeMA 현재 전시 목록에 있음 ([공식 방문 안내](https://sema.seoul.go.kr/kr/visit/nam_june_paik_house) · [SeMA 현재 전시](https://sema.seoul.go.kr/kr/whatson/landing?whatsonMenuDivList=EX&whatChoice2=N&whatChoice3=N)) | [SeMA 백남준을 기억하는 집](https://sema.seoul.go.kr/kr/visit/nam_june_paik_house) | 02-2124-5268(공식 방문 안내). 대표 메일 **미확인** | 아주 작은 기념관이고 설명이 필요한 미디어아트 상설전이라 작품별 짧은 해설 효과가 크다. 다만 서울시립미술관 분관이라 구매 결정은 본관(SeMA)에서 할 가능성이 높다 → **우선순위 낮음**, 공공기관 제안 형식 필요. |
+
+예비(공식 홈페이지를 열지 못해 승격 보류):
+- 씨엘아트 갤러리 CLart Gallery(서울 강남구 논현로150길 25 논현빌딩 7층) — 홍장오 개인전 《잠자는 새의 눈물을 나방이 먹는다 ver.02》 11.11~12.5 ([강남문화재단 아트큐브 목록](https://www.gangnam.go.kr/office/gfac/board/gfac_artcube_02/509/view.do?mid=gfac_artcube_02)). 공식 사이트(clartgallery.com)는 http 전용이라 열리지 않았다. 재단 목록의 연락처가 공식 사이트에도 있는지 미확인이라 적지 않는다.
+- 환기미술관(서울 종로구 부암동) — 제3자 목록([musa.guide](https://www.musa.guide/en/discover/seoul/exhibitions/november-2026))에 《WHANKI MUSEUM Highlights II》·《환기재단 소장품전: 수집가 김향안과 그 너머》 ~12.31. 공식 사이트(whankimuseum.org)가 열리지 않아 기간·문의 채널 **미확인**. 한 작가 미술관이라 결은 매우 맞다 — 다음 회차 재확인.
+
+확인했지만 제외: 박서보미술관(공식 연락처가 휴대전화·개인 메일뿐), 갤러리 마롱(전시 11.18~22 단기, 전화만), 더 페이지 갤러리·구하우스(전시 종료). 성북구립 최만린미술관·비커밍갤러리·페리지갤러리 등은 공식 사이트 접속 실패로 미확인.
+
 ## 2026-11-19 (리서치팀 · 새벽큐)
 
 이번 회차에 각 기관 공식 홈페이지를 직접 열어(TinyFish) 전시와 대표 문의 채널을 확인했다. 개인 이름·휴대전화는 적지 않는다. 기존 leads.md 이름과 대조했고 중복은 없다. PKM은 '소규모'보다는 중견 화랑이라 우선순위는 뒤로 둔다.
