@@ -1,0 +1,82 @@
+{
+ "id": "w-kiyochika-ikenohata",
+ "segs": [
+  {
+   "ko": "여름밤, 연못가에 사람들이 모였습니다. 모두 검은 그림자뿐입니다. 그들이 올려다보는 밤하늘에 불꽃이 피어오릅니다. 일본 메이지 시대의 판화가 고바야시 기요치카가 1881년에 펴낸 '이케노하타의 불꽃놀이'입니다.",
+   "en": "On a summer night, people have gathered by a pond. They are nothing but black shadows. Above them, in the night sky they are watching, fireworks are blooming. This is Fireworks at Ikenohata, published in 1881 by the Japanese printmaker Kobayashi Kiyochika.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0
+  },
+  {
+   "ko": "종이에 먹과 색으로 찍은 목판화로, 화면은 세로 20.3센티미터, 가로 31.4센티미터입니다. 이케노하타는 도쿄 우에노의 시노바즈 연못 가장자리를 말합니다. 이 판화는 2016년 기증되어 뉴욕 메트로폴리탄 미술관에 들어왔습니다.",
+   "en": "It is a woodblock print in ink and colour on paper, with an image 20.3 centimetres high and 31.4 wide. Ikenohata means the edge of the pond, here Shinobazu Pond in the Ueno district of Tokyo. The print was given to The Metropolitan Museum of Art in New York in 2016.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "먼저 하늘을 보십시오. 어둠 속에서 불꽃이 피어납니다. 기요치카는 밝은 대낮보다 해 질 녘과 깊은 밤, 빛이 어둠으로 번지는 순간에 마음을 빼앗긴 화가였습니다.",
+   "en": "Look first at the sky. Fireworks open out against the dark. Kiyochika was an artist captivated less by bright daylight than by dusk and deep night, by the moment when light seeps into darkness.",
+   "x": 0.5,
+   "y": 0.3,
+   "z": 1.4
+  },
+  {
+   "ko": "이제 아래쪽의 사람들을 보십시오. 얼굴도 옷 무늬도 없이 검은 실루엣으로만 찍혔습니다. 함께 모여 있지만 저마다 혼자인 듯, 무대의 주인공이라기보다 조용히 지켜보는 관객처럼 보입니다.",
+   "en": "Now look at the people below. They are printed only as black silhouettes, without faces or patterns on their clothes. They stand together, yet each seems alone, quiet spectators rather than actors in the scene.",
+   "x": 0.5,
+   "y": 0.7,
+   "z": 1.45
+  },
+  {
+   "ko": "물가의 등롱과 버드나무도 찾아보십시오. 하늘의 불꽃과 물가의 등불, 서로 다른 불빛이 한 장의 판화 안에서 저마다의 밝기로 빛납니다. 나무판 몇 장으로 이런 어둠과 빛의 차이를 찍어 냈습니다.",
+   "en": "Find the lanterns and the willow trees by the water. Fireworks in the sky, lanterns by the pond: different kinds of light glow at their own strengths within a single print, all achieved by inking and printing a handful of carved wooden blocks.",
+   "x": 0.5,
+   "y": 0.6,
+   "z": 1.3
+  },
+  {
+   "ko": "기요치카는 1847년 에도에서 막부의 하급 관리 집안에 태어났습니다. 1868년 막부가 무너지자 마지막 쇼군을 따라 시즈오카로 내려가 여러 일을 하며 지냈습니다.",
+   "en": "Kiyochika was born in Edo in 1847, into a family of minor officials serving the shogun. When the shogunate fell in 1868, he followed the last shogun into exile in Shizuoka and got by with all kinds of odd jobs.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "1874년 도쿄로 이름이 바뀐 수도에 돌아온 그는 1876년부터 도쿄 명소 판화를 펴내기 시작했습니다. 1881년까지 아흔세 점을 남겼는데, 그 가운데 스물다섯 점이 밤 풍경입니다. 빛을 그린 그림이라는 뜻으로 광선화라고 불렸습니다.",
+   "en": "In 1874 he returned to the capital, now renamed Tokyo, and from 1876 he began publishing prints of its famous places. By 1881 there were ninety-three, and twenty-five of them are night scenes. They became known as kosenga, pictures of light.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "그가 돌아왔을 때 도쿄에는 가스등이 켜지기 시작했습니다. 같은 시기 다른 판화가들은 기차와 벽돌 건물, 서양 옷차림을 화려한 색으로 찬양했지만, 기요치카의 도쿄는 조용하고 어딘가 쓸쓸합니다. 사라져 가는 옛 도시와 새 도시가 겹쳐 있기 때문입니다.",
+   "en": "His return coincided with the arrival of gas street lighting in Tokyo. Other printmakers of the time celebrated trains, brick buildings and Western dress in loud colours, but Kiyochika's Tokyo is quiet and faintly melancholy, because in it the vanishing old city and the new one overlap.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1
+  },
+  {
+   "ko": "그의 본보기는 히로시게의 에도 명소 백경이었습니다. 하지만 히로시게의 에도가 대개 한낮의 햇빛 아래 반짝인다면, 기요치카의 도쿄는 저녁과 밤으로 기웁니다.",
+   "en": "His model was Hiroshige's One Hundred Famous Views of Edo. But where Hiroshige's Edo usually sparkles under the midday sun, Kiyochika's Tokyo leans toward evening and night.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "이 판화가 나온 1881년, 도쿄에 큰불이 두 번 났습니다. 기요치카는 집과 작업실, 태어난 동네를 모두 잃었고, 연작은 아흔세 점에서 멈췄습니다.",
+   "en": "In 1881, the year this print appeared, two great fires swept through Tokyo. Kiyochika lost his home, his studio and the neighbourhood where he was born, and the series stopped at ninety-three prints.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "한 걸음 물러나 보십시오. 불꽃은 한순간에 사라지지만, 그 한순간을 바라보던 사람들의 그림자는 백사십여 년째 이 종이 위에 남아 있습니다. 오늘 밤에는 창밖의 불빛을 잠시 바라보시기 바랍니다.",
+   "en": "Step back and see it whole. Fireworks vanish in an instant, yet the shadows of the people who watched them have stayed on this paper for more than a hundred and forty years. Tonight, spend a moment looking at the lights outside your window.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0
+  }
+ ]
+}

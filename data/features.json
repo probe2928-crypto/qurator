@@ -1,5 +1,601 @@
 [
  {
+  "id": "ny-auctions-2026-november",
+  "asof": "2026.11.20",
+  "kicker": {
+   "ko": "경매 리포트",
+   "en": "Auction Report"
+  },
+  "title": {
+   "ko": "11월 뉴욕 경매 리포트, 기록과 사연의 14점",
+   "en": "New York's November Auctions: 14 Lots of Records and Stories"
+  },
+  "dek": {
+   "ko": "반 고흐 1억 9,040만 달러, 칸딘스키 8,580만 달러, 커샛 신기록. 11월 16~18일 뉴욕 경매 주간에 나온 기록과 그림이 지나온 길을 미술사의 눈으로 읽습니다.",
+   "en": "Van Gogh at $190.4m, Kandinsky at $85.8m, a new record for Cassatt. The records of New York's 16–18 November sales, and the journeys these works made, read through art history."
+  },
+  "intro": {
+   "ko": "뉴욕의 가을 메이저 경매 주간이 11월 16일 막을 올렸습니다. 첫날 소더비의 두 세일이 3억 7,870만 달러, 17일 필립스 이브닝이 1억 440만 달러, 같은 날 크리스티 20세기 이브닝이 6억 2,660만 달러, 18일 소더비의 블라키에르-아리에타 컬렉션과 모던 이브닝이 7억 7,780만 달러를 기록했습니다(모두 구매 수수료 포함). 반 고흐, 칸딘스키, 커샛, 구사마 야요이, 위프레도 람, 에런 더글러스, 그리고 16세기 화가 코르넬리스 판 하를럼까지 작가 최고가가 잇따랐습니다.\n그러나 숫자만 보면 놓치는 것이 많습니다. 경매 전날에야 이전 소유자 상속인과 합의한 반 고흐, 40년 동안 옷장에 있던 오키프, 1986년 6만 5,000달러였던 조앤 미첼처럼 그림이 지나온 길이 값만큼 흥미롭습니다. 열네 점을 '기록을 다시 쓴 그림', '명작의 무게', '그림이 지나온 길' 세 묶음으로 나눴습니다. 가격은 낙찰가(해머 가격)에 구매 수수료를 더한 금액이며, 저작권이 남아 있는 작품은 이미지 없이 글로만 소개합니다.",
+   "en": "New York's autumn marquee auction week opened on 16 November. Sotheby's two sales that night made $378.7m; on the 17th Phillips's evening sale took $104.4m and Christie's 20th Century Evening Sale $626.6m; and on the 18th Sotheby's Blaquier-Arrieta collection and Modern Evening sales totalled $777.8m (all figures with buyer's fees). Auction records fell for Van Gogh, Kandinsky, Cassatt, Yayoi Kusama, Wifredo Lam, Aaron Douglas and even the sixteenth-century painter Cornelis van Haarlem.\nThe numbers alone miss a great deal. A Van Gogh cleared for sale only after a last-minute settlement with a former owner's heirs, an O'Keeffe that spent forty years in a closet, a Joan Mitchell bought for $65,000 in 1986: the journeys are as interesting as the prices. The fourteen lots fall into three groups: records rewritten, the weight of masterpieces, and the roads these works travelled. Prices are the hammer price plus buyer's premium, and works still in copyright appear as text only, without images."
+  },
+  "cover": [
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20van%20Gogh%20-%20Ch%C3%A2taigniers%20en%20fleurs.jpg?width=1600",
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Wassily%20Kandinsky%20-%20Betonte%20Ecken.jpg?width=1600",
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Paul%20C%C3%A9zanne%20-%20Arlequin%20%28CR%20670%29.jpg?width=1600",
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Champ%20d%27avoine%20et%20coquelicots%20%28W1257%29.jpg?width=1600"
+  ],
+  "sections": [
+   {
+    "title": {
+     "ko": "기록을 다시 쓴 그림",
+     "en": "Records Rewritten"
+    },
+    "dek": {
+     "ko": "반 고흐의 마지막 봄, 바우하우스의 칸딘스키, 커샛의 여름, 16세기의 헤라클레스, 할렘 르네상스의 터브먼, 람의 신들, 구사마의 그물.",
+     "en": "Van Gogh's last spring, Kandinsky at the Bauhaus, Cassatt's summer, a sixteenth-century Hercules, a Harlem Renaissance Tubman, Lam's gods and Kusama's nets."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "꽃 핀 밤나무",
+       "en": "Chestnut Trees in Blossom (Châtaigniers en fleurs)"
+      },
+      "artist": {
+       "ko": "빈센트 반 고흐",
+       "en": "Vincent van Gogh"
+      },
+      "year": "1890",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "record": {
+       "ko": "반 고흐 경매 최고가 (이전 1억 1,720만 달러, 2022)",
+       "en": "Auction record for Van Gogh (previously $117.2m, 2022)"
+      },
+      "headline": {
+       "ko": "소더비 뉴욕 · 2026년 11월 18일 · 수수료 포함 1억 9,040만 달러",
+       "en": "Sotheby's New York · 18 November 2026 · $190.4 million with fees"
+      },
+      "why": {
+       "ko": "1890년 5월 요양원을 나와 오베르쉬르우아즈에 머문 마지막 두 달 사이에 그린 그림으로, 그는 두 달 뒤 세상을 떠났다. 아르헨티나의 블라키에르-아리에타 부부가 1975년에 사들인 뒤 반세기 가까이 공개되지 않았고, 1936년 이 그림을 판 유대계 출판인 사무엘·헤트비히 피셔의 상속인들과 경매 전날에야 합의가 이뤄졌다(조건 비공개). 약 5분 경합 끝에 아쿠아벨라 갤러리의 윌리엄 아쿠아벨라가 낙찰받았고, 경매에 나온 회화 가운데 역대 4위 가격이다.",
+       "en": "Painted in May 1890 at Auvers-sur-Oise, in the final two months after Van Gogh left the asylum; he died two months later. The Argentine collectors Carlos Pedro Blaquier and Nelly Arrieta de Blaquier bought it in 1975 and it stayed out of public view for about half a century. A settlement with the heirs of Samuel and Hedwig Fischer, the Jewish publishing family who sold it in 1936, was announced only the day before the sale, on undisclosed terms. After nearly five minutes of bidding it went to the dealer William Acquavella, the fourth highest price ever paid for a painting at auction."
+      },
+      "pd": true,
+      "commons": "Vincent van Gogh - Châtaigniers en fleurs.jpg",
+      "sources": [
+       {
+        "label": "The Art Newspaper — Van Gogh painting sells for record $190m (2026.11.19)",
+        "url": "https://www.theartnewspaper.com/2026/11/19/van-gogh-painting-sells-for-record-7778m-after-nazi-loot-claims"
+       },
+       {
+        "label": "AP (KSAT) — A van Gogh with a complex past sells for a record $190 million (2026.11.19)",
+        "url": "https://www.ksat.com/entertainment/2026/11/19/a-van-gogh-with-a-complex-past-sells-for-a-record-190-million-at-auction/"
+       },
+       {
+        "label": "Artlyst — Van Gogh makes auction history at Sotheby's (2026.11.19)",
+        "url": "https://artlyst.com/van-gogh-makes-auction-history-with-195m-painting-at-sothebys/"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "강조된 모서리",
+       "en": "Betonte Ecken (Accented Corners)"
+      },
+      "artist": {
+       "ko": "바실리 칸딘스키",
+       "en": "Wassily Kandinsky"
+      },
+      "year": "1922–23",
+      "medium": {
+       "ko": "캔버스에 그린 추상화",
+       "en": "Abstract painting on canvas"
+      },
+      "record": {
+       "ko": "칸딘스키 경매 최고가 (이전 4,480만 달러, 2023)",
+       "en": "Auction record for Kandinsky (previously $44.8m, 2023)"
+      },
+      "headline": {
+       "ko": "크리스티 뉴욕 · 2026년 11월 17일 · 수수료 포함 8,580만 달러",
+       "en": "Christie's New York · 17 November 2026 · $85.8 million with fees"
+      },
+      "why": {
+       "ko": "바우하우스 시절 칸딘스키가 원·삼각형·직선으로 화면을 짜던 무렵의 추상화다. 출품 전부터 기록 경신이 보장된 작품이었고, 해머 가격 7,400만 달러로 2023년 소더비 런던의 〈무르나우 교회 II〉 기록을 거의 두 배로 올렸다. 출품자 나마드 가문은 1986년 보스턴의 바칼라 부부에게서 약 110만 달러에 산 것으로 알려졌다.",
+       "en": "An abstraction from Kandinsky's Bauhaus years, when he built pictures from circles, triangles and straight lines. Christie's said before the sale that it was guaranteed to set a record, and the $74m hammer nearly doubled the artist's previous best, Murnau mit Kirche II at Sotheby's London in 2023. The consignors, the Nahmad family, reportedly bought it in 1986 from the Boston collectors Sandra and David Bakalar for about $1.1m."
+      },
+      "pd": true,
+      "commons": "Wassily Kandinsky - Betonte Ecken.jpg",
+      "sources": [
+       {
+        "label": "ARTnews — Christie's 20th-century sale totals $626.6 M. (2026.11.18)",
+        "url": "https://www.artnews.com/art-news/market/christies-20th-century-sale-starry-lots-kandinsky-klimt-1234806613/"
+       },
+       {
+        "label": "Observer — A record Kandinsky, a Klimt landscape and a Modigliani head (2026.11.18)",
+        "url": "https://observer.com/2026/11/auction-news-christies-phillips-new-york-auction-week-kandinsky/"
+       },
+       {
+        "label": "Christie's press release — 20th Century Evening Sale results (2026.11.17)",
+        "url": "https://press.christies.com/wp-content/uploads/2026/11/933e22e813996325f39d80272a577215.pdf"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "여름날",
+       "en": "Summertime"
+      },
+      "artist": {
+       "ko": "메리 커샛",
+       "en": "Mary Cassatt"
+      },
+      "year": "1894–95",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "record": {
+       "ko": "커샛 경매 최고가 (이전 749만 달러, 2022)",
+       "en": "Auction record for Cassatt (previously $7.49m, 2022)"
+      },
+      "headline": {
+       "ko": "소더비 뉴욕 · 2026년 11월 18일 · 수수료 포함 1,330만 달러",
+       "en": "Sotheby's New York · 18 November 2026 · $13.3 million with fees"
+      },
+      "why": {
+       "ko": "서거 100주년을 맞은 커샛의 그림이 추정가 700만~1,000만 달러를 넘겨 온라인 응찰자에게 낙찰됐다. 석유 사업가 아먼드 해머의 컬렉션에서 나왔고, 수익은 해머 재단으로 간다. QURATOR 특집 '메리 커샛 100년, 독립을 그린 12점'에서 이 그림의 의미를 더 읽을 수 있다.",
+       "en": "In the centenary year of Cassatt's death, this painting beat its $7–10m estimate and went to an online bidder. It came from the collection of the oil magnate Armand Hammer, with proceeds going to his foundation. Read more about it in our feature 'Mary Cassatt at 100: Twelve Works on Independence'."
+      },
+      "pd": true,
+      "sources": [
+       {
+        "label": "The Art Newspaper — Van Gogh painting sells for record $190m (2026.11.19)",
+        "url": "https://www.theartnewspaper.com/2026/11/19/van-gogh-painting-sells-for-record-7778m-after-nazi-loot-claims"
+       },
+       {
+        "label": "Artlyst — Van Gogh makes auction history at Sotheby's (2026.11.19)",
+        "url": "https://artlyst.com/van-gogh-makes-auction-history-with-195m-painting-at-sothebys/"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "헤라클레스와 아켈로오스",
+       "en": "Hercules and Achelous"
+      },
+      "artist": {
+       "ko": "코르넬리스 코르넬리스 판 하를럼",
+       "en": "Cornelis Cornelisz. van Haarlem"
+      },
+      "year": "1590",
+      "medium": {
+       "ko": "캔버스에 유채, 91.45×242.57cm",
+       "en": "Oil on canvas, 91.45 × 242.57 cm"
+      },
+      "record": {
+       "ko": "작가 경매 최고가",
+       "en": "Auction record for the artist"
+      },
+      "headline": {
+       "ko": "크리스티 뉴욕 · 2026년 11월 17일 · 수수료 포함 1,390만 달러",
+       "en": "Christie's New York · 17 November 2026 · $13.9 million with fees"
+      },
+      "why": {
+       "ko": "황소로 변한 강의 신과 맞붙은 헤라클레스를 근육과 움직임의 소용돌이로 그린, 하를럼 매너리즘의 대작이다. 오랫동안 메트로폴리탄 미술관에 대여돼 있었고, 현대미술가 제프 쿤스가 2008년에 사들인 소장품 묶음으로 나왔다. 20세기 세일에 끼어든 16세기 그림이 이날 작가 신기록을 썼다.",
+       "en": "A Haarlem Mannerist showpiece, a swirl of muscle and motion as Hercules wrestles the river god Achelous, who has turned himself into a bull. Long on loan to the Metropolitan Museum, it was among works consigned by the artist Jeff Koons, who bought it in 2008. A sixteenth-century canvas in a twentieth-century sale, it set a new record for the painter."
+      },
+      "pd": true,
+      "sources": [
+       {
+        "label": "ARTnews — Christie's 20th-century sale totals $626.6 M. (2026.11.18)",
+        "url": "https://www.artnews.com/art-news/market/christies-20th-century-sale-starry-lots-kandinsky-klimt-1234806613/"
+       },
+       {
+        "label": "Observer — A record Kandinsky, a Klimt landscape and a Modigliani head (2026.11.18)",
+        "url": "https://observer.com/2026/11/auction-news-christies-phillips-new-york-auction-week-kandinsky/"
+       },
+       {
+        "label": "Artlyst — Kandinsky record leads selective $626.6m night at Christie's (2026.11.18)",
+        "url": "https://artlyst.com/kandinsky-record-leads-selective-626-6m-night-at-christies-new-york"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "해리엇 터브먼",
+       "en": "Harriet Tubman"
+      },
+      "artist": {
+       "ko": "에런 더글러스",
+       "en": "Aaron Douglas"
+      },
+      "year": "1931",
+      "medium": {
+       "ko": "회화",
+       "en": "Painting"
+      },
+      "record": {
+       "ko": "작가 경매 최고가 (이전 60만 달러, 2008)",
+       "en": "Auction record for the artist (previously $600,000, 2008)"
+      },
+      "headline": {
+       "ko": "소더비 뉴욕 · 2026년 11월 18일 · 수수료 포함 1,448만 달러",
+       "en": "Sotheby's New York · 18 November 2026 · $14.48 million with fees"
+      },
+      "why": {
+       "ko": "할렘 르네상스를 대표하는 화가가 노예 해방 운동가 해리엇 터브먼을 그렸다. 두 팔을 머리 위로 들어 사슬을 끊는 터브먼 뒤로 무성한 풍경과 연기 나는 대포가 보인다. 추정가 250만~350만 달러에서 7분 경합 끝에 기록을 스무 배 넘게 올렸고, 수익은 미국에 두 곳뿐인 흑인 여자대학 가운데 하나인 베넷 칼리지로 간다.",
+       "en": "A leading painter of the Harlem Renaissance portrays the abolitionist Harriet Tubman, arms raised overhead as she breaks a chain, with a leafy landscape and a smoking cannon behind her. Estimated at $2.5–3.5m, it sold after a seven-minute contest for more than twenty times the artist's previous record. Proceeds go to Bennett College, one of only two historically Black women's colleges in the US."
+      },
+      "pd": false,
+      "sources": [
+       {
+        "label": "The Art Newspaper — Van Gogh painting sells for record $190m (2026.11.19)",
+        "url": "https://www.theartnewspaper.com/2026/11/19/van-gogh-painting-sells-for-record-7778m-after-nazi-loot-claims"
+       },
+       {
+        "label": "citybiz — Aaron Douglas' Harriet Tubman sells for $14.48 million at Sotheby's (2026.11.19)",
+        "url": "https://www.citybiz.co/article/936031/aaron-douglas-harriet-tubman-sells-for-14-48-million-at-sothebys-more-than-four-times-its-high-estimate/"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "오구에 오리사 (신들의 풀)",
+       "en": "Ogue Orisa (Eggue Orissa, l'herbe des dieux)"
+      },
+      "artist": {
+       "ko": "위프레도 람",
+       "en": "Wifredo Lam"
+      },
+      "year": "1943",
+      "medium": {
+       "ko": "회화",
+       "en": "Painting"
+      },
+      "record": {
+       "ko": "작가 경매 최고가 (이전 960만 달러, 2020)",
+       "en": "Auction record for the artist (previously $9.6m, 2020)"
+      },
+      "headline": {
+       "ko": "크리스티 뉴욕 · 2026년 11월 17일 · 수수료 포함 1,160만 달러",
+       "en": "Christie's New York · 17 November 2026 · $11.6 million with fees"
+      },
+      "why": {
+       "ko": "쿠바 출신 람이 아프리카계 쿠바 문화와 초현실주의를 엮어 낸 시기의 그림으로, 뉴욕 현대미술관의 대표작 〈정글〉과 같은 시기에 그렸다. 1944년 뉴욕 피에르 마티스 갤러리 개인전에 〈정글〉과 함께 걸린 13점 가운데 하나였다. 출품자는 1997년 소더비에서 약 132만 달러에 샀다.",
+       "en": "Painted in the same period as The Jungle, Lam's celebrated canvas at the Museum of Modern Art, when the Cuban artist was fusing Afro-Cuban culture with Surrealism. It was one of thirteen paintings, The Jungle among them, in his 1944 show at the Pierre Matisse Gallery in New York. The consignors bought it at Sotheby's in 1997 for about $1.32m."
+      },
+      "pd": false,
+      "sources": [
+       {
+        "label": "ARTnews — Christie's 20th-century sale totals $626.6 M. (2026.11.18)",
+        "url": "https://www.artnews.com/art-news/market/christies-20th-century-sale-starry-lots-kandinsky-klimt-1234806613/"
+       },
+       {
+        "label": "Observer — A record Kandinsky, a Klimt landscape and a Modigliani head (2026.11.18)",
+        "url": "https://observer.com/2026/11/auction-news-christies-phillips-new-york-auction-week-kandinsky/"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "No. 3P.B.",
+       "en": "No. 3P.B."
+      },
+      "artist": {
+       "ko": "구사마 야요이",
+       "en": "Yayoi Kusama"
+      },
+      "year": "1960",
+      "medium": {
+       "ko": "회화 (무한의 그물 연작)",
+       "en": "Painting (Infinity Nets series)"
+      },
+      "record": {
+       "ko": "구사마 경매 최고가",
+       "en": "Auction record for Kusama"
+      },
+      "headline": {
+       "ko": "소더비 뉴욕 · 2026년 11월 16일 · 수수료 포함 약 1,510만 달러",
+       "en": "Sotheby's New York · 16 November 2026 · about $15.1 million with fees"
+      },
+      "why": {
+       "ko": "올해 8월 세상을 떠난 구사마의 초기 '무한의 그물' 연작 가운데 손꼽히는 작품이다. 1961년 휘트니 미술관 전시에 걸려, 작가가 미국 미술관 전시에 처음 이름을 올린 무렵의 그림이기도 하다. 경매 주간 첫날 밤의 기록이었다.",
+       "en": "One of the landmark early Infinity Nets by Kusama, who died in August this year. It hung in a 1961 exhibition at the Whitney Museum of American Art, among her earliest appearances in an American museum show. It was the record of the week's opening night."
+      },
+      "pd": false,
+      "sources": [
+       {
+        "label": "The Art Newspaper — Yayoi Kusama sets $15m record as Sotheby's opens New York mega-sales (2026.11.16)",
+        "url": "https://theartnewspaper.com/2026/11/16/yayoi-kusama-sets-15m-auction-record-as-sothebys-opens-new-york-mega-sales"
+       },
+       {
+        "label": "ARTnews — Yayoi Kusama 'Infinity Net' painting sells for $15.1 M., setting a record (2026.11.17)",
+        "url": "https://www.artnews.com/art-news/market/yayoi-kusama-infinity-net-painting-record-sale-sothebys-1234806198/"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": {
+     "ko": "명작의 무게",
+     "en": "The Weight of Masterpieces"
+    },
+    "dek": {
+     "ko": "세잔의 어릿광대, 모딜리아니의 돌 머리, 모네의 양귀비 들판, 마그리트의 중절모.",
+     "en": "Cézanne's harlequin, Modigliani's stone head, Monet's poppy field and Magritte's bowler hat."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "아를캥",
+       "en": "Arlequin (Harlequin)"
+      },
+      "artist": {
+       "ko": "폴 세잔",
+       "en": "Paul Cézanne"
+      },
+      "year": "1888–90",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "소더비 뉴욕 · 2026년 11월 18일 · 수수료 포함 1억 1,100만 달러",
+       "en": "Sotheby's New York · 18 November 2026 · $111 million with fees"
+      },
+      "why": {
+       "ko": "세잔이 1888~90년에 그린 아를캥 연작 네 점 가운데 개인 손에 남은 마지막 한 점이다. 해머 가격 9,900만 달러로 추정가 1억 2,000만 달러에는 못 미쳤고, 세잔 최고가(2022년 〈생트빅투아르산〉 1억 3,800만 달러)도 넘지 못했다. 그래도 이 연작이 경매에서 받은 가장 높은 값이다.",
+       "en": "The last of Cézanne's four Harlequin paintings from 1888–90 still in private hands. The $99m hammer fell short of the $120m estimate and did not beat the Cézanne record, $138m for La Montagne Sainte-Victoire in 2022, but it is the highest price yet for a painting from this series."
+      },
+      "pd": true,
+      "commons": "Paul Cézanne - Arlequin (CR 670).jpg",
+      "sources": [
+       {
+        "label": "The Art Newspaper — Van Gogh painting sells for record $190m (2026.11.19)",
+        "url": "https://www.theartnewspaper.com/2026/11/19/van-gogh-painting-sells-for-record-7778m-after-nazi-loot-claims"
+       },
+       {
+        "label": "AP (KSAT) — A van Gogh with a complex past sells for a record $190 million (2026.11.19)",
+        "url": "https://www.ksat.com/entertainment/2026/11/19/a-van-gogh-with-a-complex-past-sells-for-a-record-190-million-at-auction/"
+       },
+       {
+        "label": "Artlyst — Van Gogh makes auction history at Sotheby's (2026.11.19)",
+        "url": "https://artlyst.com/van-gogh-makes-auction-history-with-195m-painting-at-sothebys/"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "머리",
+       "en": "Tête"
+      },
+      "artist": {
+       "ko": "아메데오 모딜리아니",
+       "en": "Amedeo Modigliani"
+      },
+      "year": "1911–12",
+      "medium": {
+       "ko": "석회암 조각",
+       "en": "Limestone"
+      },
+      "headline": {
+       "ko": "필립스 뉴욕 · 2026년 11월 17일 · 수수료 포함 4,460만 달러",
+       "en": "Phillips New York · 17 November 2026 · $44.6 million with fees"
+      },
+      "why": {
+       "ko": "화가로 더 유명한 모딜리아니가 남긴 조각 28점 가운데 하나로, 같은 제목의 석회암 머리 연작에 속한다. 추정가 2,800만~3,500만 달러에서 10분간 세 응찰자가 맞붙었다. 그의 조각 최고가는 2014년 소더비의 7,070만 달러로 그대로 남았다.",
+       "en": "One of only 28 sculptures by Modigliani, better known as a painter, and part of his series of limestone heads all titled Tête. Estimated at $28–35m, it drew a ten-minute, three-way contest. His sculpture record, $70.7m at Sotheby's in 2014, still stands."
+      },
+      "pd": true,
+      "sources": [
+       {
+        "label": "The Art Newspaper — Modigliani sculpture heads Phillips's New York evening sale at $44.6m (2026.11.18)",
+        "url": "https://www.theartnewspaper.com/2026/11/18/modigliani-heads-phillipss-new-york-evening-sale-at-446m"
+       },
+       {
+        "label": "Observer — A record Kandinsky, a Klimt landscape and a Modigliani head (2026.11.18)",
+        "url": "https://observer.com/2026/11/auction-news-christies-phillips-new-york-auction-week-kandinsky/"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "귀리밭과 양귀비",
+       "en": "Champ d'avoine et coquelicots"
+      },
+      "artist": {
+       "ko": "클로드 모네",
+       "en": "Claude Monet"
+      },
+      "year": "1890",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "크리스티 뉴욕 · 2026년 11월 17일 · 수수료 포함 약 2,600만 달러",
+       "en": "Christie's New York · 17 November 2026 · about $26 million with fees"
+      },
+      "why": {
+       "ko": "모네가 지베르니 근처 들판을 그리던 1890년의 그림으로, 같은 해 그는 건초더미 연작을 시작했다. 윌리엄 I. 코크 컬렉션에서 나와 전화 응찰 셋과 현장 응찰 둘이 붙으며 추정가 1,200만~1,800만 달러를 크게 넘겼다. 모네 서거 100주기(12월 5일)를 앞두고 시장의 관심을 보여 준 결과다.",
+       "en": "From 1890, when Monet was painting the fields around Giverny, the same year he began his Haystacks. Consigned from the collection of William I. Koch, it drew three phone bidders and two in the room and sailed past its $12–18m estimate, a sign of the market's appetite ahead of the centenary of Monet's death on 5 December."
+      },
+      "pd": true,
+      "commons": "Claude Monet - Champ d'avoine et coquelicots (W1257).jpg",
+      "sources": [
+       {
+        "label": "ARTnews — Christie's 20th-century sale totals $626.6 M. (2026.11.18)",
+        "url": "https://www.artnews.com/art-news/market/christies-20th-century-sale-starry-lots-kandinsky-klimt-1234806613/"
+       },
+       {
+        "label": "Observer — A record Kandinsky, a Klimt landscape and a Modigliani head (2026.11.18)",
+        "url": "https://observer.com/2026/11/auction-news-christies-phillips-new-york-auction-week-kandinsky/"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "질서의 친구",
+       "en": "L'Ami de l'ordre"
+      },
+      "artist": {
+       "ko": "르네 마그리트",
+       "en": "René Magritte"
+      },
+      "year": "1964",
+      "medium": {
+       "ko": "회화",
+       "en": "Painting"
+      },
+      "headline": {
+       "ko": "소더비 뉴욕 · 2026년 11월 18일 · 수수료 포함 4,550만 달러",
+       "en": "Sotheby's New York · 18 November 2026 · $45.5 million with fees"
+      },
+      "why": {
+       "ko": "중절모를 쓴 남자와 밤 풍경을 한 화면에 엮은, 마그리트를 대표하는 이미지다. 추정가 2,500만~3,500만 달러를 넘어 이날 모던 이브닝 세일 최고가를 기록했고, 중절모 인물이 나오는 마그리트 그림으로는 경매 최고가다. 미용업계 개척자 시델 밀러의 유산에서 나왔다.",
+       "en": "Magritte's signature bowler-hatted man set against a night landscape. It beat its $25–35m estimate to top the Modern Evening sale and is now the most valuable bowler-hat Magritte ever sold at auction. It came from the estate of the beauty-industry pioneer Sydell Miller."
+      },
+      "pd": false,
+      "sources": [
+       {
+        "label": "The Art Newspaper — Van Gogh painting sells for record $190m (2026.11.19)",
+        "url": "https://www.theartnewspaper.com/2026/11/19/van-gogh-painting-sells-for-record-7778m-after-nazi-loot-claims"
+       },
+       {
+        "label": "Artlyst — Van Gogh makes auction history at Sotheby's (2026.11.19)",
+        "url": "https://artlyst.com/van-gogh-makes-auction-history-with-195m-painting-at-sothebys/"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": {
+     "ko": "그림이 지나온 길",
+     "en": "The Roads They Travelled"
+    },
+    "dek": {
+     "ko": "29년 만에 돌아온 클림트, 옷장에서 나온 오키프, 300배가 된 미첼.",
+     "en": "A Klimt back after 29 years, an O'Keeffe out of a closet, a Mitchell worth 300 times its 1986 price."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "리츨베르크켈러",
+       "en": "Litzlbergkeller"
+      },
+      "artist": {
+       "ko": "구스타프 클림트",
+       "en": "Gustav Klimt"
+      },
+      "year": "1915–16",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "크리스티 뉴욕 · 2026년 11월 17일 · 수수료 포함 8,230만 달러",
+       "en": "Christie's New York · 17 November 2026 · $82.3 million with fees"
+      },
+      "why": {
+       "ko": "클림트가 여름마다 머문 오스트리아 아터제 호숫가를 그린 풍경화다. 1997년 소더비 뉴욕에서 당시 클림트 최고가인 1,470만 달러에 팔렸고, 지난해까지 빈 레오폴트 미술관에 장기 대여돼 있었다. 29년 만에 값이 5.6배가 됐다.",
+       "en": "A landscape of the Attersee in Austria, where Klimt spent his summers. It sold at Sotheby's New York in 1997 for $14.7m, then a record for the artist, and until last year was on long-term loan to the Leopold Museum in Vienna. In 29 years its price has risen 5.6 times."
+      },
+      "pd": true,
+      "sources": [
+       {
+        "label": "ARTnews — Christie's 20th-century sale totals $626.6 M. (2026.11.18)",
+        "url": "https://www.artnews.com/art-news/market/christies-20th-century-sale-starry-lots-kandinsky-klimt-1234806613/"
+       },
+       {
+        "label": "Observer — A record Kandinsky, a Klimt landscape and a Modigliani head (2026.11.18)",
+        "url": "https://observer.com/2026/11/auction-news-christies-phillips-new-york-auction-week-kandinsky/"
+       },
+       {
+        "label": "Christie's press release — 20th Century Evening Sale results (2026.11.17)",
+        "url": "https://press.christies.com/wp-content/uploads/2026/11/933e22e813996325f39d80272a577215.pdf"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "아비키우 근처, 뉴멕시코 I",
+       "en": "Near Abiquiu, New Mexico I"
+      },
+      "artist": {
+       "ko": "조지아 오키프",
+       "en": "Georgia O'Keeffe"
+      },
+      "year": "1930",
+      "medium": {
+       "ko": "캔버스에 유채, 25.4×61cm",
+       "en": "Oil on canvas, 25.4 × 61 cm"
+      },
+      "headline": {
+       "ko": "크리스티 뉴욕 · 2026년 11월 17일 · 487만 8,000달러",
+       "en": "Christie's New York · 17 November 2026 · $4,878,000"
+      },
+      "why": {
+       "ko": "1931년 사진 한 장으로만 알려졌던 그림이 맨해튼 이스트빌리지 아파트 옷장에서 나왔다. 1963년 3,800달러에 산 그림을 소장자가 1980년대 중반부터 코트와 상자 뒤에 숨겨 두었다. 로보 피크를 그린 세 점 가운데 첫 번째로 여겨지며, 두 번째 그림은 메트로폴리탄 미술관에 있다. 국립현대미술관 과천에서 열리는 오키프전과 함께 보면 좋다.",
+       "en": "Known only from a 1931 photograph, the painting turned up in a closet in an East Village apartment. Bought in 1963 for $3,800, it was hidden behind coats and boxes from the mid-1980s. It is thought to be the first of three views of Lobo Peak; the second is at the Metropolitan Museum. Pair it with the O'Keeffe exhibition now at MMCA Gwacheon."
+      },
+      "pd": false,
+      "sources": [
+       {
+        "label": "AP (ABC News) — Long-lost Georgia O'Keeffe painting found in Manhattan closet sells for $4.8M (2026.11.17)",
+        "url": "https://abcnews.com/Business/wireStory/long-lost-georgia-okeeffe-painting-found-manhattan-closet-138233488"
+       },
+       {
+        "label": "Observer — A record Kandinsky, a Klimt landscape and a Modigliani head (2026.11.18)",
+        "url": "https://observer.com/2026/11/auction-news-christies-phillips-new-york-auction-week-kandinsky/"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "바버라 게스트의 녹색 책",
+       "en": "Green Book of Barbara Guest"
+      },
+      "artist": {
+       "ko": "조앤 미첼",
+       "en": "Joan Mitchell"
+      },
+      "year": "1960s",
+      "medium": {
+       "ko": "회화",
+       "en": "Painting"
+      },
+      "headline": {
+       "ko": "소더비 뉴욕 · 2026년 11월 16일 · 수수료 포함 1,930만 달러",
+       "en": "Sotheby's New York · 16 November 2026 · $19.3 million with fees"
+      },
+      "why": {
+       "ko": "케이블TV 사업가 시어도어 바움과 루스 바움 부부가 1986년 6만 5,000달러에 산 그림이 약 300배 값에 팔렸다. 부부의 컬렉션 24점은 한 점도 남김없이 팔렸고, 이 그림이 그중 최고가였다. 시인 바버라 게스트의 이름을 제목에 담은, 미첼과 뉴욕 시인들의 우정을 보여 주는 작품이다.",
+       "en": "Bought in 1986 by the cable-television magnate Theodore Baum and his wife Ruth for $65,000, it sold for almost 300 times that. All 24 works from the Baums' collection found buyers, and this was the top lot. Its title names the poet Barbara Guest, a reminder of Mitchell's ties to the New York poets."
+      },
+      "pd": false,
+      "sources": [
+       {
+        "label": "The Art Newspaper — Yayoi Kusama sets $15m record as Sotheby's opens New York mega-sales (2026.11.16)",
+        "url": "https://theartnewspaper.com/2026/11/16/yayoi-kusama-sets-15m-auction-record-as-sothebys-opens-new-york-mega-sales"
+       },
+       {
+        "label": "ARTnews — Sotheby's New York evening auctions bring in $378.7 million (2026.11.17)",
+        "url": "https://artnews.com/art-news/market/sothebys-november-2026-baum-collection-contemporary-auction-1234806277"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "note": {
+   "ko": "가격은 경매사 발표와 언론 보도(The Art Newspaper, ARTnews, AP, Observer, Artlyst 등) 가운데 두 곳 이상에서 확인한 구매 수수료 포함 금액이며(2026년 11월 20일 기준), 원화로 환산하지 않았습니다. 오키프 작품은 AP가 밝힌 낙찰 금액을 그대로 적었습니다. 구사마 작품 가격은 매체에 따라 1,500만~1,510만 달러로 반올림이 달라 '약'으로 표기했고, 모네 작품도 2,590만~2,600만 달러로 엇갈려 '약'으로 적었습니다. 조앤 미첼 작품의 제작 연도는 자료마다 달라(1960, 1965–68) 1960년대로 적었습니다. 11월 19일(뉴욕 시간) 크리스티 21세기 이브닝 세일 결과는 이 글을 쓸 때 나오지 않아 넣지 않았습니다. 이미지는 작가 사후 70년이 지난 작품만 위키미디어 커먼즈 파일로 실었고, 저작권이 남아 있는 작품은 이미지를 싣지 않았습니다.",
+   "en": "Prices include buyer's premium and were checked against at least two sources among auction-house releases and press reports (The Art Newspaper, ARTnews, AP, Observer, Artlyst and others) as of 20 November 2026; we have not converted them to won. The O'Keeffe price is the figure given by AP. Reports round the Kusama price between $15m and $15.1m and the Monet between $25.9m and $26m, so both are marked 'about'. Sources differ on the date of the Joan Mitchell (1960 or 1965–68), so we give the 1960s. Results of Christie's 21st Century Evening Sale on 19 November (New York time) were not available at the time of writing. Images appear only for artists who died more than 70 years ago, from Wikimedia Commons; works still in copyright are shown without images."
+  }
+ },
+ {
   "id": "korea-exhibitions-2026-winter",
   "asof": "2026.11.18",
   "kicker": {

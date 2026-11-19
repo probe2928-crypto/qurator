@@ -1,0 +1,82 @@
+{
+ "id": "w-astrup-foxgloves",
+ "segs": [
+  {
+   "ko": "하얀 자작나무 줄기들이 화면을 촘촘히 가르고 서 있습니다. 그 사이로 몇 그루가 베어져 빈틈이 생겼고, 틈 너머에서 두 소녀가 산딸기를 따고 있습니다. 노르웨이 화가 니콜라이 아스트루프가 그린 '디기탈리스'입니다.",
+   "en": "White birch trunks stand close together across the whole canvas. A few have been cut down, opening a gap, and beyond it two little girls are picking berries. This is Foxgloves, painted by the Norwegian artist Nikolai Astrup.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0
+  },
+  {
+   "ko": "캔버스에 유채로 그렸고, 세로 77센티미터, 가로 99센티미터입니다. 1919년에서 1920년 무렵의 그림으로, 노르웨이의 디엔비 저축은행재단이 소장하고 베르겐의 코데 미술관에서 볼 수 있습니다.",
+   "en": "It is painted in oil on canvas, 77 centimetres high and 99 centimetres wide, around 1919 or 1920. It belongs to the Norwegian foundation Sparebankstiftelsen DNB and can be seen at KODE, the art museums of Bergen.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "먼저 자작나무를 보십시오. 하얀 줄기들이 화면 가득 촘촘히 늘어서 있습니다. 숲 앞에 드리운 발처럼, 우리 눈을 잠시 멈춰 세웁니다.",
+   "en": "Look first at the birches. Their white trunks stand close together right across the picture. Like a screen drawn across the woods, they make our eyes pause before going further in.",
+   "x": 0.5,
+   "y": 0.4,
+   "z": 1.3
+  },
+  {
+   "ko": "이제 베어 낸 틈 너머를 보십시오. 두 소녀가 산딸기를 따고 있습니다. 재단의 설명처럼 둘은 대칭을 이루며 자리 잡았고, 나무줄기들과 함께 화면에 고요한 분위기를 만듭니다.",
+   "en": "Now look through the opening. Two girls are picking berries. As the foundation's description notes, they are placed symmetrically, and together with the trunks they give the whole picture a calm, serene mood.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.8
+  },
+  {
+   "ko": "비탈을 따라 흘러내리는 개울도 찾아보십시오. 물이 빠르게 굽이치며 내려옵니다. 고요한 숲 속에서 움직이는 것은 이 물줄기와 소녀들의 손뿐입니다.",
+   "en": "Find the little stream winding down the slope, its water running briskly. In this still wood, the only things moving are the stream and the girls' busy hands.",
+   "x": 0.5,
+   "y": 0.6,
+   "z": 1.4
+  },
+  {
+   "ko": "앞쪽을 보십시오. 이끼 낀 돌과 자작나무 줄기 사이로 디기탈리스 꽃대가 키 크게 솟았습니다. 우리말로는 여우장갑이라고도 부르는 꽃입니다. 그림의 제목이 바로 이 꽃입니다.",
+   "en": "Now look at the foreground. Among the moss-covered stones and birch trunks, tall spikes of foxglove rise up. The flower gives the painting its title. In English it is called the foxglove.",
+   "x": 0.5,
+   "y": 0.78,
+   "z": 1.5
+  },
+  {
+   "ko": "이 풍경은 아스트루프의 고향 욀스테르입니다. 그는 1880년에 태어나 세 살 때 목사인 아버지를 따라 욀스테르로 옮겨 왔습니다. 맏아들이라 목사가 되기를 바랐지만, 열일곱 살 무렵 학업을 그만두고 화가의 길을 택했습니다.",
+   "en": "The landscape is Jølster, Astrup's home valley. Born in 1880, he moved there at the age of three, when his father became the parish priest. As the eldest son he was expected to join the priesthood, but at about seventeen he left his studies to become an artist.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "오슬로의 하리에트 바케르 화실에서 배웠고, 1901년에서 1902년 사이 파리에서 공부했습니다. 그러나 1902년 봄 곧장 욀스테르로 돌아왔습니다. 훗날 그는 파리에서야 고향 풍경이 그림이 될 수 있음을 깨달았다고 말한 것으로 전합니다.",
+   "en": "He trained at Harriet Backer's painting school in Kristiania, now Oslo, and studied in Paris in 1901 and 1902. But by the spring of 1902 he was back in Jølster. He is said to have claimed later that it was in Paris that he realised what Jølster could become in paint.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "아스트루프는 화가이자 판화가였고, 손수 땅을 일군 정원사이기도 했습니다. 1907년 결혼한 아내 엥엘과 여덟 아이를 두었지만, 평생 천식과 폐병에 시달리다 1928년 1월 폐렴으로 세상을 떠났습니다.",
+   "en": "Astrup was a painter, a printmaker and a gardener who worked his own land. He married Engel in 1907 and they had eight children, but he suffered from asthma and lung disease all his life and died of pneumonia in January 1928.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "재단은 그를 노르웨이에서 가장 사랑받는 화가 가운데 한 사람으로, 노르웨이 사람들이 제 나라 풍경을 바라보는 방식을 만든 화가로 소개합니다.",
+   "en": "The foundation describes him as one of Norway's most beloved artists, a painter who helped shape the way Norwegians see and understand their own landscape.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "한 걸음 물러나 보십시오. 하얀 나무들의 리듬, 그 사이의 작은 사람들, 그리고 발치의 꽃. 오늘은 늘 지나치던 동네 풍경을 한 번 천천히 바라보시기 바랍니다.",
+   "en": "Step back and see it whole: the rhythm of white trunks, the small figures between them, the flowers at our feet. Today, take a slow look at a familiar view near your home that you usually walk straight past.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0
+  }
+ ]
+}

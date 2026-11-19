@@ -1,0 +1,82 @@
+{
+ "id": "k-danwon-mudong",
+ "segs": [
+  {
+   "ko": "여섯 사람이 모여 앉아 악기를 연주하고, 그 앞에서 한 아이가 춤을 춥니다. 옷자락이 바람을 가르며 펄럭입니다. 조선 후기 화가 단원 김홍도가 그린 '춤추는 아이', 무동입니다.",
+   "en": "Six men sit together playing their instruments, and in front of them a boy is dancing. His robes swirl and flap as he moves. This is A Dancing Boy, known in Korean as Mudong, painted by Kim Hong-do, whose pen name was Danwon, in the late Joseon period.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0
+  },
+  {
+   "ko": "이 그림은 단원 풍속도첩이라는 화첩의 한 장입니다. 세로 26.8센티미터, 가로 22.7센티미터로 손바닥을 조금 넘는 크기입니다. 화첩에는 서당, 씨름, 빨래터처럼 조선 사람들이 일하고 노는 모습 스물다섯 장면이 담겼습니다. 보물로 지정되어 국립중앙박물관이 소장하고 있습니다.",
+   "en": "The painting is one leaf of an album known as the Danwon Genre Album. It measures 26.8 by 22.7 centimetres, only a little larger than the palm of your hand. The album holds twenty-five scenes of ordinary people at work and at play, among them the village school, a wrestling match and women doing laundry by a stream. It is a designated Treasure of Korea and belongs to the National Museum of Korea in Seoul.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "먼저 춤추는 아이를 보십시오. 옷자락이 날리고 얼굴에는 흥이 가득합니다. 온몸으로 장단을 타고 있습니다.",
+   "en": "Look first at the dancing boy. His sleeves and the skirts of his robe fly out, and his face is full of delight. His whole body is moving with the rhythm of the music.",
+   "x": 0.32,
+   "y": 0.6,
+   "z": 1.5
+  },
+  {
+   "ko": "이렇게 춤추는 아이를 무동이라 불렀습니다. 대개 십 대 초반의 아이를 뽑아 춤을 가르쳤는데, 금세 자라 어른이 되는 것이 늘 고민이었다고 합니다.",
+   "en": "A boy who danced like this was called a mudong, a dancing child. Boys were usually chosen in their early teens and trained to dance, and the constant problem, records suggest, was that they soon grew up into men.",
+   "x": 0.32,
+   "y": 0.55,
+   "z": 1.35
+  },
+  {
+   "ko": "이제 악사들을 보십시오. 왼쪽 위에서 벙거지를 쓴 사내가 매달아 놓은 북, 좌고를 칩니다. 그 오른쪽에서 갓을 쓴 사내가 장구를 칩니다.",
+   "en": "Now turn to the musicians. At the upper left, a man in a felt hat beats a large drum hung from a frame, called a jwago. To his right, a man in a black gat hat plays the janggu, the hourglass drum.",
+   "x": 0.35,
+   "y": 0.28,
+   "z": 1.6
+  },
+  {
+   "ko": "그 오른쪽의 두 사람은 피리를 붑니다. 푸른 저고리를 입은 사내는 볼이 불룩합니다. 소리를 내느라 한창 힘을 쓰는 중입니다. 그 아래로 대금을 부는 사람과 해금을 켜는 사람이 이어집니다.",
+   "en": "Further right, two men play the piri, a double-reed pipe. The one in the blue jacket has his cheeks puffed out, putting all his breath into the sound. Below them come a man playing the daegeum, a long bamboo flute, and a man bowing the haegeum, a two-stringed fiddle.",
+   "x": 0.68,
+   "y": 0.4,
+   "z": 1.5
+  },
+  {
+   "ko": "북 하나, 장구 하나, 피리 둘, 대금 하나, 해금 하나. 이 여섯 악기의 편성을 삼현육각이라 합니다. 조선 후기 잔치의 흥을 돋우고 춤을 반주하던, 말하자면 그 시대의 인기 악단이었습니다.",
+   "en": "One drum, one hourglass drum, two pipes, one flute and one fiddle. This group of six is called samhyeon yukgak. In late Joseon it livened up birthday feasts and parties and accompanied dancers. It was, in effect, the most popular band of the day, and you could hire one for a celebration.",
+   "x": 0.6,
+   "y": 0.45,
+   "z": 1.2
+  },
+  {
+   "ko": "배경을 보십시오. 땅도, 집도, 나무도 그리지 않았습니다. 국립중앙박물관은 이 화첩이 대체로 배경을 생략하고 인물의 자세와 동작만으로 화면을 짰다고 설명합니다. 그래서 텅 빈 종이 위에서도 눈길이 소리와 몸짓으로 모입니다.",
+   "en": "Now notice the background. There is none. No ground, no house, no tree. The National Museum of Korea explains that the album mostly leaves out the setting and builds each scene from the poses and movements of the figures alone. On the empty paper, our eyes go straight to the music and the movement.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1
+  },
+  {
+   "ko": "김홍도는 1745년에 태어나 궁중 화원으로 정조의 신임을 받았습니다. 산수와 신선 그림에도 뛰어났지만, 오늘날 많은 사람에게는 이런 풍속화로 가장 먼저 기억됩니다.",
+   "en": "Kim Hong-do was born in 1745 and became a court painter trusted by King Jeongjo. He excelled at landscapes and paintings of Daoist immortals, but today most people remember him first for genre painting like this, scenes of everyday life.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "이 화첩은 1918년에 구입되어 지금 국립중앙박물관에 전해집니다. 처음에는 스물일곱 점이었는데, 1957년 앞뒤의 신선 그림 두 점을 떼어 족자로 꾸미고 풍속화 스물다섯 점만 다시 엮었습니다.",
+   "en": "The album was purchased in 1918 and is now kept at the National Museum of Korea. It first held twenty-seven pictures. In 1957, the two paintings of immortals at its beginning and end were remounted as hanging scrolls, and the twenty-five genre scenes were bound together again as the album we know.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "한 걸음 물러나 보십시오. 소리는 그림에 담을 수 없지만, 불룩한 볼과 날리는 옷자락에서 이백여 년 전 잔치의 장단이 들려오는 듯합니다. 오늘은 좋아하는 음악 한 곡에 몸을 맡겨 보시기 바랍니다.",
+   "en": "Step back and take in the whole sheet. A picture cannot hold sound, yet in those puffed cheeks and flying robes you can almost hear the rhythm of a party more than two hundred years ago. Today, let yourself move to one favourite piece of music.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0
+  }
+ ]
+}
