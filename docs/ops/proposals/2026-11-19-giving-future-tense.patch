@@ -1,0 +1,64 @@
+diff --git a/assets/app.js b/assets/app.js
+index e29440b9..45de07c9 100644
+--- a/assets/app.js
++++ b/assets/app.js
+@@ -143,14 +143,14 @@ const T = {
+   nav_giving: ['나눔', 'Giving'],
+   gv_eyebrow: ['QURATOR × Oriel Foundation', 'QURATOR × Oriel Foundation'],
+   gv_h: ['작품을 읽는 시간이,<br>아이의 <em>첫 교실</em>이 됩니다.', 'Time spent with art<br>becomes a child\'s <em>first classroom.</em>'],
+-  gv_lead: ['QURATOR는 수익의 일부를 오리엘 재단(Oriel Foundation · 明窗基金會)에 기부합니다. 도움이 필요한 가정과 사랑스런 아이들을 위해, 배움에서 시작해 아이가 계속 학교에 올 수 있게 하는 생활 지원, 그리고 교실과 학교를 짓는 일까지 하려고 준비 중인 재단입니다.', 'QURATOR gives a share of its revenue to Oriel Foundation, a foundation in the making for families who need a hand and the children we love. It starts with learning, adds the everyday support that keeps a child in class, and grows toward classrooms and schools.'],
+-  gv_short: ['QURATOR 수익의 일부는 오리엘 재단에 기부되어 도움이 필요한 가정과 사랑스런 아이들에게 쓰입니다.', 'A share of QURATOR\'s revenue goes to Oriel Foundation, for families who need a hand and the children we love.'],
++  gv_lead: ['QURATOR는 수익의 일부를 오리엘 재단(Oriel Foundation · 明窗基金會)에 기부할 예정입니다. 도움이 필요한 가정과 사랑스런 아이들을 위해, 배움에서 시작해 아이가 계속 학교에 올 수 있게 하는 생활 지원, 그리고 교실과 학교를 짓는 일까지 하려고 준비 중인 재단입니다.', 'QURATOR will give a share of its revenue to Oriel Foundation, a foundation in the making for families who need a hand and the children we love. It starts with learning, adds the everyday support that keeps a child in class, and grows toward classrooms and schools.'],
++  gv_short: ['QURATOR 수익의 일부는 오리엘 재단에 기부되어 도움이 필요한 가정과 사랑스런 아이들에게 쓰일 예정입니다.', 'A share of QURATOR\'s revenue will go to Oriel Foundation, for families who need a hand and the children we love.'],
+   gv_band_h: ['명작 한 점의 시간,<br>아이 한 명의 배움으로.', 'One masterpiece at a time,<br>one child\'s learning at a time.'],
+   gv_status: ['재단은 지금 비영리 등록을 준비하고 있습니다. QURATOR의 첫 기부는 등록이 끝난 뒤 보내고, 날짜와 금액을 공개합니다.', 'The foundation is preparing its nonprofit registration. QURATOR sends its first gift once that is done, and publishes the date and amount.'],
+   gv_more: ['나눔 이야기', 'How we give'], gv_visit: ['오리엘 재단 보기', 'Visit Oriel Foundation'],
+   gv_how: ['어떻게 이어지나요', 'How it works'],
+-  gv_how_l: [[['구독과 갤러리 프로젝트', 'Daily Art 구독료와 갤러리 QR 도슨트 프로젝트 수익이 모두 대상입니다.'], ['오리엘 재단으로', 'QURATOR가 자기 수익에서 정해진 몫을 재단에 직접 보냅니다. 여러분이 따로 내는 돈은 없습니다.'], ['공개 기록', '보낸 날짜와 금액은 이 페이지와 재단의 공개 장부에 함께 남깁니다. 재단은 모든 기부를 공개 블록체인에서 확인할 수 있게 할 계획입니다.']],
+-             [['Subscriptions and gallery projects', 'Both Daily Art subscriptions and gallery QR docent projects count.'], ['To Oriel Foundation', 'QURATOR sends a set share of its own revenue to the foundation. You pay nothing extra.'], ['On the record', 'Each gift\'s date and amount is logged here and in the foundation\'s public ledger, which it plans to keep on a public blockchain.']]],
++  gv_how_l: [[['구독과 갤러리 프로젝트', 'Daily Art 구독료와 갤러리 QR 도슨트 프로젝트 수익이 모두 대상입니다.'], ['오리엘 재단으로', 'QURATOR가 자기 수익에서 정해진 몫을 재단에 직접 보낼 예정입니다. 여러분이 따로 내는 돈은 없습니다.'], ['공개 기록', '보낸 날짜와 금액은 이 페이지와 재단의 공개 장부에 함께 남깁니다. 재단은 모든 기부를 공개 블록체인에서 확인할 수 있게 할 계획입니다.']],
++             [['Subscriptions and gallery projects', 'Both Daily Art subscriptions and gallery QR docent projects count.'], ['To Oriel Foundation', 'QURATOR will send a set share of its own revenue to the foundation. You pay nothing extra.'], ['On the record', 'Each gift\'s date and amount is logged here and in the foundation\'s public ledger, which it plans to keep on a public blockchain.']]],
+   gv_why: ['왜 미술과 가정, 그리고 아이들인가', 'Why art, and why families and children'],
+   gv_why_p: ['QURATOR는 작품 한 점을 깊이 읽는 시간을 만듭니다. 그렇게 생긴 수익의 일부가 도움이 필요한 가정의 하루와 사랑스런 아이들의 배움으로 이어지도록, QURATOR 운영진이 오리엘 재단을 함께 준비하고 있습니다. 배움에는 빛을, 기부에는 창을.', 'QURATOR makes time to read one work of art in depth. So that part of what that earns reaches the everyday lives of families who need a hand and the learning of the children we love, the people behind QURATOR are building Oriel Foundation. Light for learning. Glass for giving.'],
+   gv_plan: ['재단의 계획', 'The foundation\'s plan'],
+@@ -159,7 +159,7 @@ const T = {
+   gv_now: ['지금 단계', 'Now'],
+   gv_log: ['기부 기록', 'Giving record'], gv_log_empty: ['아직 기부 기록이 없습니다. 재단 등록 후 첫 기부가 이곳에 기록됩니다.', 'No gifts yet. The first one is recorded here once the foundation is registered.'],
+   gv_log_cols: [['날짜', '금액', '내용'], ['Date', 'Amount', 'Note']],
+-  gv_fine: ['구독료와 갤러리 프로젝트 비용은 기부금이 아니며, 기부금 영수증이나 세액공제 대상이 아닙니다. 기부는 QURATOR가 자기 수익에서 직접 합니다.', 'Subscription and project fees are not donations and are not tax-deductible. QURATOR gives from its own revenue.'],
++  gv_fine: ['구독료와 갤러리 프로젝트 비용은 기부금이 아니며, 기부금 영수증이나 세액공제 대상이 아닙니다. 기부는 QURATOR가 자기 수익에서 직접 할 예정입니다.', 'Subscription and project fees are not donations and are not tax-deductible. QURATOR will give from its own revenue.'],
+   play_unlock: ['멤버 코드로 열기', 'Unlock with member code'], play_h: ['멤버 전용 해설', 'Members-only commentary'],
+   play_p: ['멤버 링크나 코드가 있다면 아래에 붙여 넣어 주세요. 이용 기간 동안 이 기기에서 멤버 전용 해설이 열립니다.', 'Have a member link or code? Paste it below and the members-only commentary stays open on this device for your membership period.'],
+   m_cta: ['구독 신청하기', 'Subscribe now'], m_code: ['멤버 코드 또는 링크', 'Member code or link'], m_apply: ['확인', 'Apply'],
+@@ -1690,7 +1690,7 @@ const FAQ = [
+   ['계좌이체로 결제했는데 따로 해지해야 하나요?', 'I paid by bank transfer. Do I need to cancel?', '아니요. 계좌이체 멤버십은 자동으로 청구되지 않고, 멤버 링크에 표시된 이용 기간이 끝나면 그대로 종료됩니다. 계속 보시려면 위의 연장 신청을 해 주세요.', 'No. Bank-transfer memberships are never charged automatically; they simply end on the date shown with your member link. Renew as above to continue.'],
+   ['해지는 어떻게 하나요?', 'How do I cancel?', '카카오톡으로 해지를 요청하시면 다음 결제일부터 청구되지 않으며, 이미 결제한 기간이 끝날 때까지 계속 이용하실 수 있습니다.', 'Message us on KakaoTalk. You will not be billed again and keep access until the end of the paid period.'],
+   ['환불되나요?', 'Can I get a refund?', '결제 후 7일 이내이고 멤버 전용 해설을 열람하지 않았다면 전액 환불됩니다. 자세한 기준은 환불·해지 규정을 확인해 주세요.', 'Within 7 days of payment, if you have not opened member content, you get a full refund. See the Refund & Cancellation policy for details.'],
+-  ['수익금 기부는 어떻게 이루어지나요?', 'How does the giving work?', 'QURATOR는 Daily Art 구독과 갤러리 프로젝트 수익의 일부를 오리엘 재단에 기부합니다. 재단은 지금 비영리 등록을 준비 중이며, 등록 후 첫 기부를 보내고 날짜와 금액을 나눔 페이지와 재단 공개 장부에 공개합니다. 구독료 자체는 기부금이 아니어서 세액공제 대상이 아닙니다.', 'QURATOR gives a share of its subscription and gallery revenue to Oriel Foundation. The foundation is preparing its nonprofit registration; the first gift goes out after that, with its date and amount published on our Giving page and in the foundation\'s public ledger. Fees themselves are not donations and are not tax-deductible.'],
++  ['수익금 기부는 어떻게 이루어지나요?', 'How does the giving work?', 'QURATOR는 Daily Art 구독과 갤러리 프로젝트 수익의 일부를 오리엘 재단에 기부할 예정입니다. 재단은 지금 비영리 등록을 준비 중이며, 등록 후 첫 기부를 보내고 날짜와 금액을 나눔 페이지와 재단 공개 장부에 공개합니다. 구독료 자체는 기부금이 아니어서 세액공제 대상이 아닙니다.', 'QURATOR will give a share of its subscription and gallery revenue to Oriel Foundation. The foundation is preparing its nonprofit registration; the first gift goes out after that, with its date and amount published on our Giving page and in the foundation\'s public ledger. Fees themselves are not donations and are not tax-deductible.'],
+   ['갤러리 도입은 어떻게 진행되나요?', 'How does a gallery project work?', '카카오톡으로 전시 일정과 작품 목록을 보내 주시면 견적을 드립니다. 해설 작성(Premium)부터 QR 캡션 인쇄 파일, 전시 입구 QR까지 한 번에 준비됩니다.', 'Send your dates and list of works on KakaoTalk for a quote. We prepare texts (Premium), QR caption files and an entrance QR.'],
+   ['갤러리가 해설을 직접 수정할 수 있나요?', 'Can a gallery edit the texts itself?', '네. QR 스튜디오에서 작품과 해설을 직접 등록하고 캡션을 바로 인쇄할 수 있습니다. 직접 등록한 해설은 내용이 QR 안에 담기므로, 고친 뒤에는 그 작품의 캡션을 다시 인쇄해 주세요.', 'Yes. Add works and texts in QR Studio and print captions immediately. Texts you add yourself are stored inside the QR, so reprint that caption after an edit.']
+ ];
+diff --git a/index.html b/index.html
+index cd9145c5..d728c53e 100644
+--- a/index.html
++++ b/index.html
+@@ -55,7 +55,7 @@
+ <div class="toast" id="toast" role="status"></div>
+ <div class="modal" id="modal" hidden></div>
+ <script src="assets/vendor/qrcode.min.js"></script>
+-<script src="assets/app.js?v=58"></script>
++<script src="assets/app.js?v=59"></script>
+ <script src="auth-config.js" defer></script>
+ <script src="event/event-config.js" defer></script>
+ <script>/* partner band: web only — the Google Play app shows no external promotion */
+diff --git a/sw.js b/sw.js
+index 13d74331..9bfe29da 100644
+--- a/sw.js
++++ b/sw.js
+@@ -1,4 +1,4 @@
+-const V = 'qurator-v67';
++const V = 'qurator-v68';
+ const SHELL = ['./', 'index.html', 'assets/app.css', 'assets/app.js', 'assets/icon-192.png', 'manifest.webmanifest', 'assets/vendor/qrcode.min.js'];
+ self.addEventListener('install', e => { e.waitUntil(caches.open(V).then(c => c.addAll(SHELL)).then(() => self.skipWaiting())); });
+ self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== V).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
