@@ -1,0 +1,22 @@
+diff --git a/.github/workflows/narration.yml b/.github/workflows/narration.yml
+index e9d69cc..0217ee8 100644
+--- a/.github/workflows/narration.yml
++++ b/.github/workflows/narration.yml
+@@ -35,9 +35,15 @@ jobs:
+         with:
+           python-version: "3.12"
+       - name: System packages
+-        timeout-minutes: 10
++        timeout-minutes: 25
+         run: |
+-          for i in 1 2 3; do sudo timeout 240 apt-get update -qq && sudo timeout 300 apt-get install -y -qq --no-install-recommends espeak-ng ffmpeg && break; echo "apt retry $i"; sleep 10; done
++          APTO="-o Acquire::Retries=3 -o Acquire::http::Timeout=20 -o Acquire::https::Timeout=20"
++          for i in 1 2 3; do
++            sudo dpkg --configure -a || true
++            sudo timeout 150 apt-get $APTO update -qq || echo "apt update failed $i"
++            if sudo timeout 300 apt-get $APTO install -y -qq --no-install-recommends espeak-ng ffmpeg; then break; fi
++            echo "apt retry $i"; sleep 15
++          done
+           command -v ffmpeg
+       - name: Cache voice model
+         uses: actions/cache@v4
