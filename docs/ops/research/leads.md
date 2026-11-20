@@ -2,6 +2,20 @@
 
 규칙: 공식 홈페이지·공개된 대표 문의 채널만 적는다. 개인 이메일·개인 정보 금지. 이미 있는 곳은 중복하지 않는다.
 
+## 2026-11-21 (리서치팀 · 새벽큐)
+
+**확인 방법 한계:** 이번 회차에는 각 기관 공식 홈페이지를 WebFetch로 직접 열지 못했다(권한 거부·프록시 차단). 공식 도메인으로 좁힌 검색(TinyFish 검색) 결과 요약과 보도로 확인했다. **메일 초안 전에 공식 사이트를 한 번 직접 열어 전시·연락처를 재확인할 것.** 개인 이름·휴대전화는 적지 않는다. 기존 leads.md 이름과 대조했고 중복은 없다.
+
+| # | 이름 | 지역 | 전시·기간 | 공식 홈페이지 | 공식 문의 채널 | 메모 |
+|---|---|---|---|---|---|---|
+| 1 | 성북구립미술관 Seongbuk Museum of Art | 서울 성북구 성북로 134 | 《서세옥·서도호: 어루만지다(撫)》 **2026.10.20~12.20** — 공식 현재 전시(검색 요약)와 [하퍼스바자](https://www.harpersbazaar.co.kr/artwalk/gallery/detail/343) 기간 일치 ([공식 현재 전시](https://sma.sbculture.or.kr/sma/exhibition/current.do)) | [sma.sbculture.or.kr](https://sma.sbculture.or.kr) | 대표전화 02-6925-5011 ([공식 FAQ](https://sma.sbculture.or.kr/sma/news/faq.do)) | 구립·무료, 매일 15시 해설 1회([스페셜타임스](https://www.specialtimes.co.kr/news/articleView.html?idxno=474035)). 운영은 성북문화재단 — 기존 예비 '최만린미술관'과 같은 재단이라 한 번에 제안 가능. 우리 특집 겨울 전시에 이 전시가 이미 소개됨 |
+| 2 | 뮤지엄한미 삼청 Museum Hanmi Samcheong | 서울 종로구 삼청동 | 《Roger Ballen. The Works: Drawing meets Photography》 **2026.10.16~2027.2.21** ([공식 전시 페이지 EN](http://museumhanmi.or.kr/en/post_exhibition/%E3%80%8Aroger-ballen-the-works-drawing-meets-photography%E3%80%8B)) | [museumhanmi.or.kr](https://museumhanmi.or.kr) | 02-733-1315 · museum@museumhanmi.or.kr ([공식 What's on](https://museumhanmi.or.kr/en/whats-on/)) | 사진 전문 사립, 유료(성인 15,000원 — [popnol](https://popnol.co.kr/events/roger-ballen-the-works-museumhanmi-2026), 공식 미확인). 국·영문 오디오가이드가 **이미 있음**([공식](https://museumhanmi.or.kr/en/program/)) → QR 다국어·소장품 해설 보완 각도 |
+| 3 | 석파정 서울미술관 Seoul Museum | 서울 종로구 창의문로11길 4-1 | 《대체로 그렇다 그렇지 않다》 2026.10.7~2027.2.14 — 출처는 블로그·인스타뿐, **공식 사이트 기간 미확인** | [seoulmuseum.org](https://seoulmuseum.org) | info@seoulmuseum.org ([공식 CONTACT](https://www.seoulmuseum.org/CONTACT)) | 통합관람권 유료, 소장품 기반(이중섭 〈황소〉 등 — 이중섭은 팀 규칙상 2027.1.1 전 이미지 금지). 정규 해설 하루 2회·단체 해설([visitseoul](https://korean.visitseoul.net/area/%EC%84%9D%ED%8C%8C%EC%A0%95/KOP037164)) |
+| 4 | 아트사이드 갤러리 Artside Gallery | 서울 종로구 자하문로6길 15(서촌) | 《Holly》 **2026.11.13~12.26** ([공식 전시 목록](https://www.artside.org/exhibition)) · 아트사이드 템포러리 강준석 《Towards Purification》 ~12.26([뉴시스](https://newsis.com/view/NISX20261113_0003867542)) | [artside.org](https://artside.org) | 공식 contact 페이지에서 주소만 확인([contact](https://artside.org/contact)) — **전화·이메일 미확인** | 1999년 인사동 개관 상업 갤러리. 8인전 70여 점(보도). 공개 연락처 확보가 먼저 |
+| 5 | 도가헌미술관 Dogaheon Art Museum | 경기 용인시 | 《십자가의 길에서, 다시 빛으로》 2026.11.5~12.6 — 보도([가톨릭신문](https://www.catholictimes.org/article/20261111500083)·[nnewss](https://www.nnewss.com/news/articleView.html?idxno=8945)) 기준, **공식 사이트 기간 미확인** | [artmuseumdogaheon.com](https://www.artmuseumdogaheon.com) | **미확인**(공식 사이트에서 찾지 못함) | 등록사립미술관(용인-사립21-2026-01호, 공식 첫 화면). 신생 소규모, 매달 전시 교체(보도) — 정기 교체형이라 QR 해설 템플릿 수요 가능 |
+
+확인했지만 제외: 아람미술관·오산시립미술관(시립·대형 또는 야외 전시), 수원시립만석전시관(공공 교육전시, 12.4 종료), 파넬아트센터(성격·공식 사이트 미확인), 뮤지엄한미 B1 스크리닝(9월 종료).
+
 ## 2026-11-20 (리서치팀 · 새벽큐)
 
 이번 회차에 각 기관 공식 홈페이지를 직접 열어(서브에이전트 WebFetch) 전시와 대표 문의 채널을 확인했다. 개인 이름·휴대전화(미메시스 대관용 010 번호 등)는 적지 않는다. 기존 leads.md 이름과 대조했고 중복은 없다.
