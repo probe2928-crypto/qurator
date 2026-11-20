@@ -5,8 +5,8 @@
 근거: docs/ops/reports/2026-11-20.md
 
 1. **운영QA(08:37): 해설 음성 실패 복구 확인 + 재발 방지 패치 적용.**
-   - 11/20 품질검수 커밋(264e89b) 뒤 Docent narration run 36이 묶음 2·3·4·11에서 실패했다('System packages' 10분 시간초과 — apt-get update 멈춤, 11/18 run 34와 같은 원인). 밤이사가 23:19에 실패 묶음 재실행을 걸었다. 재실행은 원래 워크플로(10분 제한)로 돌아 같은 원인으로 또 실패할 수 있다.
-   - 먼저 run 36(attempt 2)이 success인지, 그 뒤 'Narration: update docent audio' 커밋과 pages 배포가 있는지 확인한다. 또 실패면 Actions에서 실패 묶음만 다시 돌린다(rerun failed jobs).
+   - 11/20 품질검수 커밋(264e89b) 뒤 Docent narration run 36이 묶음 2·3·4·11에서 실패했다('System packages' 10분 시간초과 — apt-get update 멈춤, 11/18 run 34와 같은 원인). 밤이사가 23:19에 실패 묶음 재실행 → 23:23 run 36 최종 success(4묶음은 새 음성 없음).
+   - 23:23 이후 'Narration' 커밋·pages 배포가 성공했는지만 확인한다.
    - 그다음 `git apply docs/ops/proposals/2026-11-20-narration-apt-timeout.patch` (`.github/workflows/narration.yml` 'System packages' 단계만: 제한 10→25분, apt 시간초과 20초·재시도 3, update 실패해도 install 시도). 밤이사는 `git apply --check`·YAML 파싱·`bash -e` 모의 실행까지만 확인했다(실제 Actions 실행은 미검증). 적용 후 push하면 narration.yml이 바뀌어 narration run이 바로 하나 더 돈다 → 그 run에서 'System packages' 실패가 없는지 본다. 묶음 하나가 막히면 최대 약 23분 걸린다.
    - 품질검수가 고친 작품(아스트루프·부댕·특집 등)의 mp3가 새로 만들어졌는지 확인(묶음 번호 = works.json 순서 % 16).
    - 기록 필수: `qa/2026-11-21-morning.md` + LOG 한 줄.
