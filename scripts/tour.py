@@ -63,7 +63,9 @@ for w in W:
     rows.append((w['id'], f"ko {len(ko)} ({nk}문장) en {len(en)} ({ne}) segs {len(segs)}{' generic' if nocoord else ''}" + (' !! ' + '; '.join(probs) if probs else '')))
     if probs: bad.append(w['id'])
     if not check:
-        w.setdefault('short', {'ko': w['text']['ko'], 'en': w['text']['en']})
+        if 'short' not in w:  # 새 작품(text 없음)도 안 멈추게 — 기존 text가 없으면 새 해설로
+            prev = w.get('text') or {'ko': ko, 'en': en}
+            w['short'] = {'ko': prev['ko'], 'en': prev['en']}
         w['text'] = {'ko': ko, 'en': en}
         w['tour'] = tour
 for r in rows: print(*r)
