@@ -1,0 +1,82 @@
+{
+ "id": "w-oi-yoshiwara",
+ "segs": [
+  {
+   "ko": "어두운 밤, 격자 창 안쪽이 환하게 밝습니다. 곱게 차려입은 여인들이 불빛 속에 앉아 있고, 격자 밖 어둠 속에서는 남자들이 그 안을 들여다봅니다. 가쓰시카 오이가 그린 '요시와라 격자 앞 그림'입니다.",
+   "en": "It is night. Behind a lattice window, a room glows with light. Finely dressed women sit inside the brightness, while out in the dark, men peer in through the bars. This is Night Scene in the Yoshiwara, painted by Katsushika Ōi.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0
+  },
+  {
+   "ko": "세로 26.3센티미터, 가로 39.8센티미터의 작은 육필화입니다. 판화가 아니라 화가가 붓으로 직접 그린 단 한 점의 그림입니다. 도쿄의 오타 기념미술관이 소장하고 있습니다.",
+   "en": "It is a small painting, 26.3 centimetres high and 39.8 centimetres wide. It is not a print but a nikuhitsu-ga, a one-of-a-kind picture painted directly by the artist's own brush. It belongs to the Ota Memorial Museum of Art in Tokyo.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "오이는 우키요에의 거장 호쿠사이의 딸입니다. 태어나고 죽은 해가 분명하지 않고, 지금까지 그의 작품으로 확인된 그림은 열 점 남짓뿐입니다. 그런데도 아버지와는 다른 독특한 화풍으로 많은 사람을 사로잡고 있습니다.",
+   "en": "Ōi was a daughter of the great ukiyo-e master Hokusai. Her dates of birth and death are not known, and only around ten works by her have been confirmed. Even so, her pictures, quite unlike her father's, continue to fascinate people.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "이제 격자 안을 보십시오. 방 안의 등불이 여인들을 비추어, 화려한 옷의 색과 무늬가 어둠 위로 떠오릅니다. 미술관은 이 그림을 빛과 그림자로 그린 걸작이라고 소개합니다.",
+   "en": "Look inside the lattice. The lamps of the room light up the women, so the colours and patterns of their robes float out of the darkness. The museum describes the work as a masterpiece painted in light and shadow.",
+   "x": 0.45,
+   "y": 0.4,
+   "z": 1.35
+  },
+  {
+   "ko": "격자 가까이 다가온 한 여인을 찾아보십시오. 단골손님이라도 온 것일까요. 그녀의 얼굴은 검은 그림자로만 그려져 있어, 표정을 알 수 없습니다. 보여 주지 않음으로써 오히려 눈길을 붙잡습니다.",
+   "en": "Find the woman who has come up close to the lattice. Perhaps a regular customer has arrived. Her face is drawn only as a black silhouette, so we cannot read her expression. By showing us nothing, the painter holds our gaze all the more.",
+   "x": 0.5,
+   "y": 0.45,
+   "z": 1.5
+  },
+  {
+   "ko": "이제 격자 밖, 손님들의 손에 들린 등롱을 보십시오. 등불을 든 사람마다 몸의 한쪽만 밝고 나머지는 어둠에 잠깁니다. 여러 개의 불빛이 화면 곳곳에서 꿈처럼 사람들을 불러냅니다.",
+   "en": "Now look outside the lattice, at the paper lanterns in the visitors' hands. Each figure holding a lantern is lit on one side and sinks into darkness on the other. These many small sources of light call people out of the dark here and there, like figures in a dream.",
+   "x": 0.5,
+   "y": 0.75,
+   "z": 1.35
+  },
+  {
+   "ko": "이 그림에는 화가의 서명이 없습니다. 대신 등롱 세 개에 글자가 숨어 있습니다. 오른쪽 큰 등롱에 응, 가운데 남자의 등롱에 위, 두건 쓴 남자의 긴 등롱에 영이라는 한자가 적혀 있습니다.",
+   "en": "There is no signature on this painting. Instead, characters are hidden on three lanterns. The large lantern on the right carries the character ō, the lantern of the man in the centre carries i, and the long lantern held by a man in a hood carries Ei.",
+   "x": 0.85,
+   "y": 0.35,
+   "z": 1.45
+  },
+  {
+   "ko": "응과 위를 합치면 화가의 호인 오이가 되고, 영은 그의 본래 이름 에이를 가리킵니다. 그래서 이 세 글자는 화가가 몰래 남긴 서명으로 여겨집니다.",
+   "en": "Put ō and i together and you have her art name, Ōi, while Ei is her real name, O-Ei. So the three characters are read as a hidden signature, left quietly inside the picture.",
+   "x": 0.5,
+   "y": 0.6,
+   "z": 1.3
+  },
+  {
+   "ko": "이 그림은 1929년 잡지에 처음 기록되었지만, 1946년을 끝으로 행방이 끊겼습니다. 1982년에야 오카야마의 옛 집안에 피란해 있던 것이 다시 알려졌고, 지금은 오타 기념미술관이 소장하고 있습니다.",
+   "en": "The painting first appears in the record in a magazine of 1929, but after 1946 it vanished from view. Only in 1982 was it reported again, having been sheltered from the war in an old family house in Okayama. Today it belongs to the Ota Memorial Museum of Art.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "미술관은 이 그림을 늘 걸어 두지 않습니다. 2026년 가을, 밤 풍경의 계보를 따라가는 전시에서 3년 만에 다시 공개했습니다. 우키요에가 밤을 어떻게 그려 왔는지 보여 주는 자리였습니다.",
+   "en": "The museum does not keep it on permanent view. In the autumn of 2026 it was shown again for the first time in three years, at an exhibition tracing how ukiyo-e artists painted the night.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "한 걸음 물러나 보십시오. 밝은 방과 어두운 거리, 그리고 그 사이의 격자. 오늘 밤 불 켜진 창 하나를 바라보게 된다면, 그 안과 밖에 어떤 이야기가 있을지 상상해 보시기 바랍니다.",
+   "en": "Step back and look again: a bright room, a dark street, and the lattice between them. If you find yourself looking at a lit window tonight, imagine the stories on either side of it.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0
+  }
+ ]
+}

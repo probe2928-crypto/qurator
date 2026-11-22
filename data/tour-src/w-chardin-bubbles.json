@@ -1,0 +1,82 @@
+{
+ "id": "w-chardin-bubbles",
+ "segs": [
+  {
+   "ko": "창턱에 몸을 기댄 젊은이가 비눗방울을 불고 있습니다. 방울은 이제 막 부풀어 올라, 햇빛을 받아 무지갯빛으로 비칩니다. 프랑스 화가 장 시메옹 샤르댕의 '비눗방울'입니다.",
+   "en": "A young man leans on a window ledge and blows a soap bubble. It has just swollen into shape, and its thin, translucent skin catches the sunlight in shimmering colours. This is Soap Bubbles by the French painter Jean Siméon Chardin.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0
+  },
+  {
+   "ko": "캔버스에 유채로 그렸고, 세로 61센티미터, 가로 63.2센티미터로 거의 정사각형입니다. 1733년에서 1734년 무렵 그린 것으로 보며, 뉴욕 메트로폴리탄 미술관이 소장하고 있습니다.",
+   "en": "It is painted in oil on canvas, 61 centimetres high and 63.2 centimetres wide, almost a perfect square. It is dated to around 1733 or 1734, and it belongs to The Metropolitan Museum of Art in New York.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "먼저 방울을 보십시오. 비눗물이 담긴 유리잔에서 시작된 숨 한 번이, 투명한 공이 되어 창턱 밖으로 나와 있습니다. 곧 터질 것을 알기에, 보는 우리도 저절로 숨을 멈추게 됩니다.",
+   "en": "Look first at the bubble. A single breath, begun at a glass of soapy water, has become a clear sphere floating out beyond the ledge. Because we know it will burst at any moment, we find ourselves holding our breath too.",
+   "x": 0.55,
+   "y": 0.45,
+   "z": 1.5
+  },
+  {
+   "ko": "이제 창턱 아래쪽을 보십시오. 어린아이 하나가 턱 너머로 고개를 내밀고 방울을 바라봅니다. 아이는 몹시 궁금해하지만 소리 내지 않습니다. 화면 전체를 감싼 조용한 집중이 깨지지 않습니다.",
+   "en": "Now look down along the ledge. A small child peers eagerly over it, eyes fixed on the bubble. The child is curious, but silent, and the hush of concentration that fills the picture is not broken.",
+   "x": 0.42,
+   "y": 0.75,
+   "z": 1.45
+  },
+  {
+   "ko": "젊은이의 옷과 머리카락, 이마와 손을 보십시오. 샤르댕은 물감을 거칠게 얹은 듯하면서도 섬세하게 다듬어, 천의 결과 살갗의 온기를 살려 냈습니다. 그는 이런 놀라운 표면 효과로 이름을 얻었습니다.",
+   "en": "Look at the young man's jacket and hair, his forehead and his hands. Chardin lays on the paint in a way that looks rough yet is finely judged, bringing out the weave of the cloth and the warmth of skin. It was these astonishing surface effects that made him famous.",
+   "x": 0.45,
+   "y": 0.4,
+   "z": 1.4
+  },
+  {
+   "ko": "비눗방울은 오래전부터 그림 속에서 덧없는 삶을 뜻했습니다. 앞 시대 북유럽 그림에서는 인생이 방울처럼 금세 사라진다는 교훈을 담는 소재였습니다. 그러나 샤르댕은 그 뜻을 앞세우지 않고, 누구나 해 본 평범한 놀이의 한순간으로 바꾸어 놓았습니다.",
+   "en": "In earlier Northern European painting, soap bubbles carried a moral message about the brevity of life: our days, like bubbles, vanish in an instant. Chardin does not preach. He shifts the subject from allegory to everyday life, turning it into a moment of the ordinary game that everyone has played.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1
+  },
+  {
+   "ko": "샤르댕은 1699년 파리에서 태어나 1779년 파리에서 세상을 떠났습니다. 그는 평생 왕립 회화 조각 아카데미의 회원이었지만, 아카데미에서 공부하지 않았고 모델을 보고 그리는 정식 훈련도 거의 받지 않았습니다. 이 그림은 그가 인물을 본격적으로 그리기 시작하던 무렵의 작품으로 꼽힙니다.",
+   "en": "Chardin was born in Paris in 1699 and died there in 1779. Although he was a member of the Royal Academy of Painting and Sculpture throughout his career, he did not study at the Academy and had little traditional training in drawing from the model. This picture is counted among the works from the years when he first turned seriously to the human figure.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "그는 반응이 좋았던 그림을 손수 다시 그리곤 했습니다. 이 그림의 뒤 판본이 로스앤젤레스 카운티 미술관과 워싱턴 내셔널 갤러리에 있고, 메트의 그림이 그중 가장 이른 것으로 알려져 있습니다.",
+   "en": "He made his own copies of his most successful compositions. Later versions of Soap Bubbles belong to the Los Angeles County Museum of Art and to the National Gallery of Art in Washington, and the Met's canvas is known as the earliest of them.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "이 그림에는 아픈 역사도 있습니다. 나치가 파리의 소장가 제인 만하이머에게서 빼앗았고, 1944년 히틀러의 이른바 총통 미술관을 위해 불법으로 사들였습니다. 전쟁 뒤 프랑스로 돌아갔다가 1948년 이후 반환되었고, 메트는 1949년에 이 그림을 들였습니다.",
+   "en": "The painting also has a painful history. It was seized by the Nazis from the collector Jane Mannheimer in Paris and illegally purchased in 1944 for Hitler's planned Führer Museum. After the war it was returned to France and restituted in or after 1948, and the Met acquired it in 1949.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "지금은 메트 5번가 본관 629 전시실에 걸려 있습니다. 미술관은 이 그림에 오디오 가이드 해설도 따로 마련해 두었습니다.",
+   "en": "Today it hangs in gallery 629 of The Met Fifth Avenue, and the museum has recorded its own audio guide track for it, so you can stand in front of the bubble and listen.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1
+  },
+  {
+   "ko": "한 걸음 물러나 보십시오. 터지기 직전의 방울, 숨을 참은 젊은이, 올려다보는 아이. 오늘 하루 중 사라질 것을 알면서도 끝까지 지켜본 순간이 있었는지 떠올려 보시기 바랍니다.",
+   "en": "Step back and take it in: a bubble about to burst, a young man holding his breath, a child looking up. Think of a moment today that you watched to the very end, even though you knew it would not last.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0
+  }
+ ]
+}

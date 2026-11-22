@@ -1,0 +1,82 @@
+{
+ "id": "w-gallen-kallela-keitele",
+ "segs": [
+  {
+   "ko": "잔잔한 호수 위로 은빛 줄무늬가 지그재그로 뻗어 나갑니다. 멀리 작은 숲섬이 떠 있고, 화면 맨 위로 파란 하늘과 흰 구름이 가는 띠처럼 걸려 있습니다. 핀란드 화가 악셀리 갈렌칼렐라의 '케이텔레 호수'입니다.",
+   "en": "Across a calm lake, silvery stripes run out in a zigzag. A small wooded island floats in the distance, and at the very top a thin band of blue sky and bright white clouds. This is Lake Keitele by the Finnish painter Akseli Gallen-Kallela.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0
+  },
+  {
+   "ko": "캔버스에 유채로 그렸고, 세로 53센티미터, 가로 66센티미터입니다. 1905년에 완성했고, 1999년부터 런던 내셔널 갤러리가 소장하고 있습니다.",
+   "en": "It is painted in oil on canvas, 53 centimetres high and 66 centimetres wide, and was completed in 1905. The National Gallery in London has owned it since 1999.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "케이텔레는 핀란드 한가운데의 외딴 호수입니다. 화가는 1904년 여름을 이 호숫가에서 보내며, 맑은 물과 북쪽의 빛을 그렸습니다. 그 무렵 같은 호수를 네 점 그렸는데, 모두 이 지그재그 무늬가 들어 있습니다.",
+   "en": "Keitele is a remote lake in central Finland. The painter spent the summer of 1904 on its shores, painting its clear water and brilliant northern light. Around that time he made four pictures of the lake, and every one of them shows this zigzag pattern on the water.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "먼저 물 위의 줄무늬를 보십시오. 바람과 물살이 만나 생기는 자연 현상입니다. 그러나 화가는 이것을 바이네뫼이넨의 항적이라고 불렀습니다. 핀란드 서사시 칼레발라의 노래하는 영웅이 노를 저어 호수를 건너간 자국이라는 뜻입니다.",
+   "en": "Look first at the stripes on the water. They are a natural effect of the wind meeting the lake's currents. But the painter called them Väinämöinen's wake, the trail left by the singing hero of the Finnish epic Kalevala as he rows across the lake.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.35
+  },
+  {
+   "ko": "칼레발라는 1835년 처음 책으로 나온 핀란드 민간 서사시입니다. 그때 핀란드는 러시아 제국 아래의 대공국이었고, 1917년에야 독립했습니다. 자치를 바라던 사람들에게 신화가 깃든 풍경은 곧 나라를 말하는 방법이었습니다.",
+   "en": "The Kalevala, a body of ancient Finnish folk poetry, was first published in 1835. At the time Finland was an autonomous Grand Duchy of the Russian Empire, and it became independent only in 1917. For people longing for self-rule, a landscape filled with myth was a way of speaking about the nation.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "화면 아래쪽 앞물을 보십시오. 위쪽의 넓고 평평한 띠와 달리, 여기서는 반짝이는 잔물결을 실제처럼 그렸습니다. 군데군데 칠하지 않은 캔버스가 드러나 질감과 빛을 더합니다.",
+   "en": "Look at the water in the foreground at the bottom. Unlike the broad, flat bands further out, here the shimmering ripples are painted realistically. In places the bare canvas is left showing, adding texture and light.",
+   "x": 0.5,
+   "y": 0.82,
+   "z": 1.4
+  },
+  {
+   "ko": "이제 호수를 가로지르는 넓은 청회색 띠들을 보십시오. 거의 평면처럼 단순하게 처리했습니다. 고갱의 장식적인 화면과 핀란드 민속 미술의 영향을 받은 의도적으로 예스러운 양식으로, 스테인드글라스와 직물을 떠올리게 합니다.",
+   "en": "Now look at the broad blue-grey bands crossing the lake. They are treated almost as a flat design. It is a deliberately archaic style, shaped by Gauguin's decorative abstraction and by Finnish folk art, and it recalls stained glass and textiles, both media he also worked in.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.25
+  },
+  {
+   "ko": "멀리 숲섬과 수평선을 보십시오. 우리는 단단한 호숫가에 서 있지 않고, 물 위를 곧장 내다보고 있습니다. 그래서 작은 캔버스인데도 공간이 끝없이 열린 듯 느껴집니다.",
+   "en": "Find the wooded island and the horizon far away. We are not standing safely on the shore but looking straight out over the water. That is why, on such a small canvas, the space feels as if it opens out without end.",
+   "x": 0.45,
+   "y": 0.22,
+   "z": 1.45
+  },
+  {
+   "ko": "화가는 1865년 핀란드 포리에서 악셀 갈렌으로 태어났습니다. 파리에서 공부했고, 칼레발라를 그린 그림으로 핀란드 국민 미술의 개척자가 되었습니다. 1907년에는 이름을 핀란드식으로 바꾸었고, 1931년 스톡홀름에서 폐렴으로 세상을 떠났습니다.",
+   "en": "The artist was born Axel Gallén in Pori, Finland, in 1865. He studied in Paris and became a pioneer of a distinctly Finnish national art through his paintings of the Kalevala. In 1907 he officially changed his name to a Finnish form, and he died of pneumonia in Stockholm in 1931.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "그는 한 친구에게 보낸 편지에서, 고요한 물 위의 은빛 줄무늬를 곧 닥쳐올 격정을 미리 알리는 작은 물결이라고 적었습니다. 사람 하나 없는 풍경 속에, 오직 이 자국만이 누군가 지나갔음을 알려 줍니다.",
+   "en": "In a letter to a friend he described the silver stripes on the still water as small waves heralding a storm of feeling yet to come. In a landscape with no figures at all, only this trace tells us that someone has passed by.",
+   "x": 0.5,
+   "y": 0.55,
+   "z": 1.25
+  },
+  {
+   "ko": "한 걸음 물러나 다시 보십시오. 고요한 물과 움직이는 바람, 오래된 노래와 새 나라의 꿈이 한 화면에 있습니다. 오늘 지나온 길에도 누군가 남긴 자국이 있었는지 떠올려 보시기 바랍니다.",
+   "en": "Step back and look again. Still water and moving wind, an ancient song and the dream of a new nation share one small canvas. Think back over the path you took today, and whether someone had left a trace on it before you.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0
+  }
+ ]
+}

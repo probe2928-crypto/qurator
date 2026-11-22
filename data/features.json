@@ -1,5 +1,482 @@
 [
  {
+  "id": "overseas-exhibitions-2026-winter",
+  "asof": "2026.11.23",
+  "kicker": {
+   "ko": "전시 가이드",
+   "en": "Exhibition Guide"
+  },
+  "title": {
+   "ko": "이번 겨울 해외에서 꼭 볼 전시 11",
+   "en": "11 Exhibitions Worth the Trip Abroad This Winter"
+  },
+  "dek": {
+   "ko": "만들어진 뒤 처음 잉글랜드로 돌아온 바이외 태피스트리, 23년 만에 도쿄에 온 밀레의 〈이삭 줍는 여인들〉, 등롱 속에 이름을 숨긴 호쿠사이의 딸까지. 런던·유럽·미국·도쿄에서 이번 겨울 볼 만한 전시를 대표작 한 점씩과 함께 골랐습니다.",
+   "en": "From the Bayeux Tapestry, back in England for the first time since it was made, to Millet's Gleaners in Tokyo after 23 years and Hokusai's daughter hiding her name in lanterns: the winter's best exhibitions in London, Europe, the US and Tokyo, each with one key work."
+  },
+  "intro": {
+   "ko": "11월은 해외 미술관들이 겨울 시즌의 큰 전시를 한꺼번에 여는 달입니다. 11월 23일 현재 열려 있거나 이달 안에 개막하는 전시 가운데, 미술사적으로 의미가 분명하고 여행 일정에 넣을 만한 열한 곳을 골랐습니다. 지난 10월 해외 전시 특집에 실은 전시(런던 내셔널 갤러리의 반 에이크·르누아르, 오르세의 커샛 등)는 이번 목록에서 뺐습니다.\n런던, 유럽과 미국, 도쿄의 세 갈래로 나누었습니다. 12월 초에 막을 내리는 전시와 이번 주에 개막하는 전시는 설명에 따로 표시했습니다. 휴관일과 예약 여부, 연말 휴관은 기관마다 다르니 방문 전 공식 안내를 한 번 더 확인해 주세요.",
+   "en": "November is when museums abroad open their big winter shows all at once. From the exhibitions open on 23 November or opening before the month is out, we picked eleven that matter for art history and are worth building a trip around. Shows covered in our October feature on exhibitions abroad (Van Eyck and Renoir at the National Gallery, Cassatt at the Orsay and others) are left out.\nThey fall into three groups: London, Europe and the US, and Tokyo. Shows closing in early December or opening this week are flagged in the notes. Closing days, booking rules and holiday closures vary, so check each venue's own notice before you go."
+  },
+  "cover": [
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Bayeux%20Tapestry%20scene57%20Harold%20death.jpg?width=1600",
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Jean-Fran%C3%A7ois%20Millet%20-%20Gleaners%20-%20Google%20Art%20Project%202.jpg?width=1600",
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Gentile%20Bellini%20003.jpg?width=1600",
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Yoshiwara%20K%C5%8Dshisakinozu.jpg?width=1600"
+  ],
+  "sections": [
+   {
+    "title": {
+     "ko": "런던의 겨울",
+     "en": "Winter in London"
+    },
+    "dek": {
+     "ko": "중세의 자수에서 술탄의 초상, 호쿠사이의 후지산, 300살을 맞는 게인즈버러까지.",
+     "en": "From a medieval embroidery and a sultan's portrait to Hokusai's Fuji and Gainsborough at 300."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "바이외 태피스트리",
+       "en": "The Bayeux Tapestry"
+      },
+      "artist": {
+       "ko": "작가 미상 (잉글랜드 자수가들로 추정)",
+       "en": "Unknown (probably English embroiderers)"
+      },
+      "year": "11세기 · 11th century",
+      "medium": {
+       "ko": "자수, 길이 약 70m",
+       "en": "Embroidery, about 70 m long"
+      },
+      "headline": {
+       "ko": "바이외 태피스트리 · 영국박물관 30번 전시실 · 2026.09.10–2027.07.11",
+       "en": "The Bayeux Tapestry · British Museum, Room 30 · 10 Sep 2026 – 11 Jul 2027"
+      },
+      "why": {
+       "ko": "1066년 노르만 정복과 헤이스팅스 전투에 이르는 사건을 70미터에 걸쳐 수놓은 중세의 경이로 꼽히는 이 자수가, 만들어진 지 약 1,000년 만에 처음으로 잉글랜드에 돌아왔다. 노르만 쪽 후원자가 주문하고 캔터베리의 필사본 그림을 바탕으로 잉글랜드 자수가들이 만든 것으로 보여, 전쟁의 기록이자 11세기 생활사의 보고로 읽힌다. 프랑스와의 협약으로 이루어진 이번 대여는 미술 전시라기보다 한 세기에 한 번 있을 사건에 가깝다.",
+       "en": "One of the wonders of the medieval world, this picture-story of the events leading to the Norman Conquest and the Battle of Hastings in 1066, embroidered over 70 metres, has returned to England for the first time since it was made nearly 1,000 years ago. Likely commissioned by a Norman patron and made by English embroiderers working from Canterbury manuscript drawings, it is both a record of war and a treasury of 11th-century daily life. Made possible by an agreement with France, the loan is less an exhibition than a once-in-a-century event."
+      },
+      "record": {
+       "ko": "2027년 3월 31일까지 관람권 매진 (공식 안내 기준)",
+       "en": "Tickets to 31 March 2027 sold out (per the museum)"
+      },
+      "pd": true,
+      "commons": "Bayeux Tapestry scene57 Harold death.jpg",
+      "sources": [
+       {
+        "label": "British Museum",
+        "url": "https://www.britishmuseum.org/exhibitions/bayeux-tapestry"
+       },
+       {
+        "label": "Londontopia (2026.11.5)",
+        "url": "https://londontopia.net/culture/museums/londons-must-see-winter-exhibitions-2026-27-van-eyck-peggy-guggenheim-agatha-christie-and-more/"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "술탄 메흐메트 2세",
+       "en": "The Sultan Mehmet II"
+      },
+      "artist": {
+       "ko": "젠틸레 벨리니",
+       "en": "Gentile Bellini"
+      },
+      "year": "1480",
+      "medium": {
+       "ko": "유채",
+       "en": "Oil"
+      },
+      "headline": {
+       "ko": "콘스탄티노폴리스에서 이스탄불로: 한 도시, 두 제국 · V&A 사우스켄싱턴 · 2026.11.07–2027.05.09",
+       "en": "Constantinople to Istanbul: One City, Two Empires · V&A South Kensington · 7 Nov 2026 – 9 May 2027"
+      },
+      "why": {
+       "ko": "330년 콘스탄티누스의 재건부터 비잔티움과 오스만 두 제국을 거쳐 1922년까지, 한 도시의 1,600년을 200점 넘는 유물로 잇는 영국 첫 전시다. 콘스탄티노폴리스를 정복한 술탄을 베네치아 화가가 그린 이 초상은 동서 미술이 직접 만난 상징적인 장면으로, 전시의 두 이야기를 한 점에 담고 있다. 14세기 수녀원 필사본 〈링컨 티피콘〉도 60년 만에 공개됐다.",
+       "en": "The first UK exhibition to tell the full 1,600-year story of one city, from Constantine's refounding in 330 through the Byzantine and Ottoman empires to 1922, with more than 200 objects. This portrait of the sultan who conquered Constantinople, painted by a Venetian artist, is an emblem of East and West meeting face to face, and holds both halves of the show in one image. The 14th-century Lincoln Typikon is also on public view for the first time in six decades."
+      },
+      "pd": true,
+      "commons": "Gentile Bellini 003.jpg",
+      "sources": [
+       {
+        "label": "V&A",
+        "url": "https://www.vam.ac.uk/exhibitions/constantinople-to-istanbul-one-city-two-empires"
+       },
+       {
+        "label": "Smithsonian Magazine",
+        "url": "https://smithsonianmag.com/smart-news/actually-you-can-go-back-to-constantinople-a-landmark-exhibition-reconstructs-the-imperial-city-with-1600-years-of-treasures-from-byzantine-and-ottoman-times-180989812"
+       },
+       {
+        "label": "Londontopia",
+        "url": "https://londontopia.net/culture/museums/londons-must-see-winter-exhibitions-2026-27-van-eyck-peggy-guggenheim-agatha-christie-and-more/"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "구겐하임 죈 화랑의 출품작들",
+       "en": "Works from the Guggenheim Jeune shows"
+      },
+      "artist": {
+       "ko": "칸딘스키·달리·몬드리안·무어·헵워스 외",
+       "en": "Kandinsky, Dalí, Mondrian, Moore, Hepworth and others"
+      },
+      "year": "1938–",
+      "medium": {
+       "ko": "회화·조각",
+       "en": "Painting and sculpture"
+      },
+      "headline": {
+       "ko": "런던의 페기 구겐하임: 컬렉터의 탄생 · 영국 왕립미술원 · 2026.11.21–2027.03.14",
+       "en": "Peggy Guggenheim in London: The Making of a Collector · Royal Academy of Arts · 21 Nov 2026 – 14 Mar 2027"
+      },
+      "why": {
+       "ko": "20세기 가장 영향력 있는 현대미술 후원자가 컬렉터가 되기 전, 1938년 1월 런던에 연 작은 화랑 구겐하임 죈을 되살린다. 보수적이던 런던 미술계에 초현실주의와 추상을 소개한 그 화랑의 전시작들이 다시 모이며, 칸딘스키의 영국 첫 개인전도 이곳에서 열렸다. 뉴욕의 아트 오브 디스 센추리와 베네치아 컬렉션으로 이어지는 출발점을 볼 수 있다.",
+       "en": "Before she became the most famous collector of modern art in the world, Peggy Guggenheim opened a small London gallery, Guggenheim Jeune, in January 1938. Key works from its pioneering shows, which introduced Surrealism and abstraction to a conservative London, are reunited; Kandinsky's first solo show in Britain was held there. It is the starting point of the road to Art of This Century in New York and her collection in Venice."
+      },
+      "record": {
+       "ko": "이번 주 개막",
+       "en": "Opened this week"
+      },
+      "pd": false,
+      "sources": [
+       {
+        "label": "Art Fund",
+        "url": "https://www.artfund.org/explore/exhibitions/2026/11/21/peggy-guggenheim-in-london-the-making-of-a-collector"
+       },
+       {
+        "label": "Londontopia",
+        "url": "https://londontopia.net/culture/museums/londons-must-see-winter-exhibitions-2026-27-van-eyck-peggy-guggenheim-agatha-christie-and-more/"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "개풍쾌청 (붉은 후지)",
+       "en": "Fine Wind, Clear Morning (Red Fuji)"
+      },
+      "artist": {
+       "ko": "가쓰시카 호쿠사이",
+       "en": "Katsushika Hokusai"
+      },
+      "year": "1830–33",
+      "medium": {
+       "ko": "다색 목판화, 25.6×37.6cm",
+       "en": "Colour woodblock print, 25.6 × 37.6 cm"
+      },
+      "headline": {
+       "ko": "호쿠사이: 이우치 컬렉션의 후지산 36경 · 덜위치 픽처 갤러리 · 2026.10.20–2027.01.17",
+       "en": "Hokusai: Thirty-six Views of Mount Fuji from the Iuchi Collection · Dulwich Picture Gallery · 20 Oct 2026 – 17 Jan 2027"
+      },
+      "why": {
+       "ko": "호쿠사이가 일흔 무렵 펴낸 〈후지산 36경〉은 흥행 덕에 열 점이 더해져 46점이 되었는데, 그 전부를 영국에서 처음 한자리에 모은다. 새로 들어온 안료 프러시안 블루를 과감히 쓴 시리즈라는 점에서 판화사의 전환점이다. 〈가나가와 앞바다〉 초기 인쇄본 세 점을 나란히 비교하고, 현존 약 열 점뿐이라는 파란색 판 〈개풍쾌청〉까지 볼 수 있다.",
+       "en": "Hokusai's Thirty-six Views of Mount Fuji, made in his seventies, grew to 46 prints after its success, and this is the first time UK audiences can see the complete set. With its bold use of the newly imported Prussian blue, the series marks a turning point in printmaking. Three early impressions of Under the Wave off Kanagawa hang side by side, along with a rare blue impression of Fine Wind, Clear Morning, one of only about ten known."
+      },
+      "pd": true,
+      "commons": "Red Fuji southern wind clear morning.jpg",
+      "sources": [
+       {
+        "label": "ianVisits",
+        "url": "https://www.ianvisits.co.uk/calendar/hokusai-thirty-six-views-of-mount-fuji-from-the-iuchi-collection-434270/"
+       },
+       {
+        "label": "Londontopia",
+        "url": "https://londontopia.net/culture/museums/londons-must-see-winter-exhibitions-2026-27-van-eyck-peggy-guggenheim-agatha-christie-and-more/"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "앤드루스 부부",
+       "en": "Mr and Mrs Andrews"
+      },
+      "artist": {
+       "ko": "토머스 게인즈버러",
+       "en": "Thomas Gainsborough"
+      },
+      "year": "1750년 무렵 · about 1750",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "잉카 쇼니바레와 토머스 게인즈버러: 대화 · 런던 내셔널 갤러리 1번 전시실 · ~2027.02.07 (무료)",
+       "en": "Yinka Shonibare and Thomas Gainsborough: A Conversation · National Gallery, Room 1 · until 7 Feb 2027 (free)"
+      },
+      "why": {
+       "ko": "영지를 배경으로 앉은 부부의 초상은 18세기 영국의 부와 특권을 보여 주는 대표작이다. 게인즈버러 탄생 300주년을 기념해, 이 그림과 그 인물들의 머리를 지우고 서아프리카풍 직물 옷을 입힌 쇼니바레의 조각(1998)을 처음 나란히 놓았다. 명화 한 점이 식민지 착취의 그물과 어떻게 이어지는지 묻는 작은 전시다.",
+       "en": "This portrait of a couple seated before their estate is a classic image of wealth and privilege in 18th-century Britain. For the 300th anniversary of Gainsborough's birth, it is shown for the first time beside Shonibare's 1998 sculpture, which removes the sitters' heads and dresses them in West African textiles. A small show that asks how one famous painting connects to the networks of colonial exploitation."
+      },
+      "pd": true,
+      "commons": "Thomas Gainsborough - Mr and Mrs Andrews.jpg",
+      "sources": [
+       {
+        "label": "National Gallery",
+        "url": "https://nationalgallery.org.uk/exhibitions/yinka-shonibare-and-thomas-gainsborough-a-conversation"
+       },
+       {
+        "label": "Londontopia",
+        "url": "https://londontopia.net/culture/museums/londons-must-see-winter-exhibitions-2026-27-van-eyck-peggy-guggenheim-agatha-christie-and-more/"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": {
+     "ko": "유럽과 미국",
+     "en": "Europe and the US"
+    },
+    "dek": {
+     "ko": "마드리드의 섭정 왕비, 파리의 조선 선비, 로스앤젤레스의 촛불 그림.",
+     "en": "A queen regent in Madrid, Joseon scholars in Paris and candlelight in Los Angeles."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "섭정 왕비 마리아나 데 아우스트리아",
+       "en": "Mariana of Austria, Queen Regent"
+      },
+      "artist": {
+       "ko": "후안 카레뇨 데 미란다",
+       "en": "Juan Carreño de Miranda"
+      },
+      "year": "1670년 무렵 · about 1670",
+      "medium": {
+       "ko": "유채",
+       "en": "Oil"
+      },
+      "headline": {
+       "ko": "마리아나 데 아우스트리아 · 프라도 미술관 · 2026.11.26–2027.03.28 (곧 개막)",
+       "en": "Mariana of Austria · Museo Nacional del Prado · 26 Nov 2026 – 28 Mar 2027 (opening soon)"
+      },
+      "why": {
+       "ko": "프라도가 여성 예술 후원자에게 바치는 첫 전시다. 열네 살에 스페인에 와 펠리페 4세의 왕비가 되고, 남편이 죽은 뒤 세 살 아들 카를로스 2세의 섭정이 된 마리아나가 미술로 권위를 세운 과정을 회화·조각·판화·직물·필사본 약 100점으로 보여 준다. 젊은 왕비를 그린 벨라스케스부터 검은 상복의 섭정을 그린 카레뇨까지, 궁정 초상이 정치의 언어였음을 확인할 수 있다.",
+       "en": "The Prado's first exhibition devoted to a female art patron. Mariana came to Spain at 14 to marry Philip IV, and after his death became regent for their three-year-old son Charles II; some 100 paintings, sculptures, prints, textiles and manuscripts show how she used art to assert her authority. From Velázquez's young queen to Carreño's widow in austere black, it shows court portraiture working as a political language."
+      },
+      "record": {
+       "ko": "11월 26일 개막",
+       "en": "Opens 26 November"
+      },
+      "pd": true,
+      "sources": [
+       {
+        "label": "spain.info",
+        "url": "https://www.spain.info/en/calendar/mariana-austria-exhibition/"
+       },
+       {
+        "label": "Airmail",
+        "url": "https://airmail.news/arts-intel/events/mariana-of-austria"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "코레, 문인의 왕국 1600–1900",
+       "en": "Corée. Le Royaume des lettrés 1600–1900"
+      },
+      "artist": {
+       "ko": "조선의 화가와 장인들",
+       "en": "Painters and craftsmen of Joseon"
+      },
+      "year": "1600–1900",
+      "medium": {
+       "ko": "회화·복식·도자·가구·생활 기물",
+       "en": "Painting, costume, ceramics, furniture and everyday objects"
+      },
+      "headline": {
+       "ko": "코레, 문인의 왕국 1600–1900 · 파리 세르누스키 미술관 · 2026.11.20–2027.04.04",
+       "en": "Corée. Le Royaume des lettrés 1600–1900 · Musée Cernuschi, Paris · 20 Nov 2026 – 4 Apr 2027"
+      },
+      "why": {
+       "ko": "한불 수교 140주년을 기념해, 조선의 미술과 물질문화를 이끈 문인 엘리트 양반의 세계를 회화와 복식, 도자, 가구로 재구성한다. 과거 시험과 신분이 함께 떠받친 양반의 지위가 300년 동안 어떻게 미감과 한국적 정체성을 만들었는지 따라가며, 조선 회화의 걸작들이 그 길목마다 놓인다. 파리에서 조선을 '문인의 나라'로 소개하는 드문 기회다.",
+       "en": "Marking 140 years of diplomatic relations between France and Korea, the exhibition rebuilds the world of the yangban, the scholar elite who shaped the art and material culture of Joseon, through painting, costume, ceramics and furniture. It follows how a status founded on both civil examinations and birth shaped an aesthetic and a Korean identity over three centuries, with masterpieces of Joseon painting along the way. A rare chance to see Joseon presented in Paris as a kingdom of letters."
+      },
+      "pd": true,
+      "sources": [
+       {
+        "label": "L'Officiel des spectacles",
+        "url": "https://www.offi.fr/expositions-musees/musee-cernuschi-1751/coree-le-royaume-des-lettres-1600-1900-107316.html"
+       },
+       {
+        "label": "Sortiraparis",
+        "url": "https://www.sortiraparis.com/en/what-to-visit-in-paris/exhibit-museum/guides/278168-autumn-2026-exhibitions-to-visit-in-paris-and-ile-de-france"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "오러리 강의",
+       "en": "A Philosopher Giving that Lecture on the Orrery"
+      },
+      "artist": {
+       "ko": "조지프 라이트 오브 더비",
+       "en": "Joseph Wright of Derby"
+      },
+      "year": "1766",
+      "medium": {
+       "ko": "캔버스에 유채, 147.3×203.2cm",
+       "en": "Oil on canvas, 147.3 × 203.2 cm"
+      },
+      "headline": {
+       "ko": "어둠 속의 빛: 조지프 라이트 오브 더비 · 게티 센터 · 2026.11.24–2027.03.14 (곧 개막, 무료)",
+       "en": "A Light in the Dark: Joseph Wright of Derby · Getty Center · 24 Nov 2026 – 14 Mar 2027 (opening soon, free)"
+      },
+      "why": {
+       "ko": "램프 하나를 태양 삼아 태양계 모형을 설명하는 장면은 18세기 사람들에게 '마법 같은 불꽃'으로 그렸다는 말을 들었다. 게티가 2020년에 사들인, 잃어버린 줄 알았던 〈부레를 든 두 소년〉이 짝 그림 〈촛불 아래 새끼 고양이를 꾸미는 두 소녀〉와 1772년 이후 처음 나란히 걸린다. X선 형광 분석으로 찾아낸, 빛을 살리려 화면에 붙인 은박의 비밀도 공개한다.",
+       "en": "This scene of a lecturer using a lamp as the sun to demonstrate an orrery was said by 18th-century writers to be lit by a 'magic mimic blaze'. Two Boys with a Bladder, thought lost until the Getty acquired it in 2020, hangs beside its companion Two Girls Dressing a Kitten by Candlelight for the first time since 1772. The show also reveals, through X-ray fluorescence mapping, the silver leaf Wright laid under his paint to make light glow."
+      },
+      "record": {
+       "ko": "11월 24일 개막",
+       "en": "Opens 24 November"
+      },
+      "pd": true,
+      "commons": "Wright of Derby, The Orrery.jpg",
+      "sources": [
+       {
+        "label": "Getty Museum (exhibition)",
+        "url": "https://www.getty.edu/exhibitions/wright-of-derby/"
+       },
+       {
+        "label": "Getty News (2026.10.29)",
+        "url": "https://www.getty.edu/news/getty-exhibition-joseph-wright-of-derby/"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": {
+     "ko": "도쿄",
+     "en": "Tokyo"
+    },
+    "dek": {
+     "ko": "오르세의 명작들, 노르웨이 화가의 일본 첫 회고전, 그리고 폐막을 앞둔 호쿠사이의 딸.",
+     "en": "Orsay masterpieces, a Norwegian painter's first Japanese retrospective and Hokusai's daughter in her final weeks."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "이삭 줍는 여인들",
+       "en": "The Gleaners"
+      },
+      "artist": {
+       "ko": "장 프랑수아 밀레",
+       "en": "Jean-François Millet"
+      },
+      "year": "1857",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "오르세 미술관 소장: 지금을 사는 기쁨 · 도쿄도미술관 · 2026.11.14–2027.03.28",
+       "en": "What a Wonderful World: Masterworks from the Musée d'Orsay · Tokyo Metropolitan Art Museum · 14 Nov 2026 – 28 Mar 2027"
+      },
+      "why": {
+       "ko": "도쿄도미술관 개관 100주년과 오르세 개관 40주년을 함께 기념해, 오르세 소장품 약 110점을 '지금을 사는 기쁨'이라는 주제로 일곱 장에 나누어 보여 준다. 19세기 화가들이 가까운 '지금'의 삶과 풍경을 새 양식으로 그려 낸 흐름을 따라간다. 〈이삭 줍는 여인들〉은 23년 만에, 오르세의 반 고흐 〈별이 빛나는 밤〉과 고갱의 〈아레아레아〉는 16년 만에 일본에 왔다.",
+       "en": "Celebrating the Tokyo Metropolitan Art Museum's centenary and the Musée d'Orsay's 40th anniversary, about 110 works from the Orsay are arranged in seven chapters on the theme of the joy of living now, tracing how 19th-century artists found new styles for the life and landscapes around them. The Gleaners is in Japan for the first time in 23 years, and the Orsay's Van Gogh Starry Night and Gauguin's Arearea for the first time in 16."
+      },
+      "pd": true,
+      "commons": "Jean-François Millet - Gleaners - Google Art Project 2.jpg",
+      "sources": [
+       {
+        "label": "東京都美術館",
+        "url": "https://www.tobikan.jp/exhibition/2026_orsay.html"
+       },
+       {
+        "label": "美術手帖",
+        "url": "https://bijutsutecho.com/magazine/news/exhibition/31647"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "니콜라이 아스트루프, 창조하는 정원",
+       "en": "Nikolai Astrup: The Garden of Growth"
+      },
+      "artist": {
+       "ko": "니콜라이 아스트루프",
+       "en": "Nikolai Astrup"
+      },
+      "year": "1880–1928",
+      "medium": {
+       "ko": "유화·목판화·직물 디자인",
+       "en": "Oil painting, woodcuts and textile design"
+      },
+      "headline": {
+       "ko": "니콜라이 아스트루프 창조하는 정원 · 도쿄 스테이션 갤러리 · 2026.11.21–2027.01.31",
+       "en": "Nikolai Astrup: The Garden of Growth · Tokyo Station Gallery · 21 Nov 2026 – 31 Jan 2027"
+      },
+      "why": {
+       "ko": "고향 욀스테르의 풍경을 평생 그린 노르웨이 화가의 일본 첫 회고전이다. 유화에 더해, 그만의 경지를 연 목판화와 최근 다시 주목받는 직물 디자인까지 화업 전체를 보여 준다. 20세기 초 노르웨이에서 가장 뛰어난 화가 가운데 한 사람으로, 근래 세계적으로 평가가 높아지고 있다. QURATOR 12월 6일 오늘의 작품 〈디기탈리스〉와 함께 보면 좋다.",
+       "en": "The first retrospective in Japan of the Norwegian painter who spent his life painting his home valley of Jølster. Alongside oil paintings it shows the woodcuts in which he found a voice of his own and the textile designs now being rediscovered, covering his whole career. Counted among the finest Norwegian painters of the early 20th century, he has been gaining international recognition in recent years. Pair it with Foxgloves, our work of the day on 6 December."
+      },
+      "record": {
+       "ko": "이번 주 개막",
+       "en": "Opened this week"
+      },
+      "pd": true,
+      "sources": [
+       {
+        "label": "インターネットミュージアム",
+        "url": "https://www.museum.or.jp/event/121860"
+       },
+       {
+        "label": "美術手帖",
+        "url": "https://bijutsutecho.com/magazine/news/exhibition/31647"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "요시와라 격자 앞 그림",
+       "en": "Night Scene in the Yoshiwara"
+      },
+      "artist": {
+       "ko": "가쓰시카 오이",
+       "en": "Katsushika Ōi"
+      },
+      "year": "에도 시대 후기 · late Edo period",
+      "medium": {
+       "ko": "채색 육필화, 26.3×39.8cm",
+       "en": "Painting in colour, 26.3 × 39.8 cm"
+      },
+      "headline": {
+       "ko": "가쓰시카 오이 〈요시와라 격자 앞 그림〉 밤 풍경의 계보 · 오타 기념미술관 · 2026.10.06–12.06",
+       "en": "Katsushika Ōi's Night Scene in the Yoshiwara: A Lineage of Night Views · Ota Memorial Museum of Art · 6 Oct – 6 Dec 2026"
+      },
+      "why": {
+       "ko": "호쿠사이의 딸 오이의 대표작을 3년 만에 공개하며, 하루노부·히로시게·기요치카 등 우키요에가 밤을 그려 온 계보를 함께 보여 준다. 여러 개의 등불로 빛과 어둠을 극적으로 나눈 이 그림은 우키요에 야경의 걸작으로 꼽힌다. 서명 대신 등롱 세 개에 호와 이름을 숨긴 것을 직접 찾아볼 수 있는 마지막 기회다. QURATOR 12월 8일 오늘의 작품으로도 소개한다.",
+       "en": "Hokusai's daughter Ōi's masterpiece is on view for the first time in three years, alongside night scenes by Harunobu, Hiroshige, Kiyochika and others that trace how ukiyo-e painted the dark. Dramatically divided into light and shadow by many small lamps, the picture is regarded as a masterpiece of the ukiyo-e night view. It is the last chance to find for yourself the art name and real name she hid on three lanterns instead of a signature. It is also our work of the day on 8 December."
+      },
+      "record": {
+       "ko": "12월 6일 폐막",
+       "en": "Closes 6 December"
+      },
+      "pd": true,
+      "commons": "Yoshiwara Kōshisakinozu.jpg",
+      "sources": [
+       {
+        "label": "太田記念美術館 年間スケジュール",
+        "url": "https://www.ukiyoe-ota-muse.jp/schedule/"
+       },
+       {
+        "label": "インターネットミュージアム",
+        "url": "https://www.museum.or.jp/event/123905"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "note": {
+   "ko": "전시명·장소·기간은 기관 공식 페이지와 언론·전시 안내 가운데 두 곳 이상에서 확인했습니다. 프라도 〈마리아나 데 아우스트리아〉는 초기 예고(12월 1일)와 최신 안내(11월 26일)의 개막일이 달라 최신 안내를 따랐습니다. 일정은 기관 사정으로 바뀔 수 있으니 방문 전 공식 공지를 확인해 주세요. 공식 한국어명이 없는 전시명과 작품명은 QURATOR가 옮겼습니다. 대표작 이미지가 실제 출품된 바로 그 판본·인쇄본이 아닐 수 있으며(호쿠사이 판화 등), 저작권이 남은 작품이 섞인 전시는 이미지를 싣지 않았습니다.",
+   "en": "Exhibition titles, venues and dates were checked against at least two sources among venue pages and press or listings. For the Prado's Mariana of Austria, the early announcement (1 December) and the latest listings (26 November) differ, and we follow the latest. Schedules can change, so check the venue's own notice before you go. Where no official Korean title exists, the translation is QURATOR's. Images of key works may show a different impression or version from the one on display (as with the Hokusai print), and shows mixing works still in copyright are presented without images."
+  }
+ },
+ {
   "id": "ny-auctions-2026-november",
   "asof": "2026.11.20",
   "kicker": {
