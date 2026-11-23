@@ -23,7 +23,8 @@ DOCENT = {
 }
 
 def split(text):
-    parts = re.findall(r'[^.!?。！？]+(?:[.!?。！？]+["\'”’)\]]*|$)', text)
+    # 소수점(119.4·3.5)의 '.'은 문장 끝이 아니다 — 숫자 사이 마침표는 문장 안에 둔다(11/23 품질검수 발견)
+    parts = re.findall(r'(?:[^.!?。！？]|(?<=\d)\.(?=\d))+(?:[.!?。！？]+["\'”’)\]]*|$)', text)
     out, buf = [], ''
     for p in parts:
         buf += p
@@ -186,6 +187,8 @@ def main():
                 salt = 'st3' + (os.environ.get('SUPERTONIC_VOICE_KO') or 'M5') + os.environ.get('SUPERTONIC_SPEED', '') + os.environ.get('SUPERTONIC_STEPS', '')
             else:
                 salt = os.environ.get('KOKORO_VOICE', '') + 'misaki-g2p'
+            if re.search(r'\d\.\d', text):
+                salt += 'dec1'  # 소수점 분할 고침(11/23) — 소수점 있는 해설만 다시 녹음
             digest = hashlib.sha1((text + tts.__name__ + salt).encode()).hexdigest()[:12]
             d = os.path.join(ROOT, 'audio', w['id']); os.makedirs(d, exist_ok=True)
             mf = os.path.join(d, f'{stem}.json')
