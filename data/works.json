@@ -536,42 +536,42 @@
     "y": 0.35,
     "z": 1.3,
     "ko": 3,
-    "en": 4
+    "en": 3
    },
    {
     "x": 0.45,
     "y": 0.2,
     "z": 1.9,
     "ko": 6,
-    "en": 6
+    "en": 5
    },
    {
     "x": 0.91,
     "y": 0.2,
     "z": 2.4,
     "ko": 9,
-    "en": 9
+    "en": 8
    },
    {
     "x": 0.65,
     "y": 0.27,
     "z": 2.4,
     "ko": 12,
-    "en": 11
+    "en": 10
    },
    {
     "x": 0.3,
     "y": 0.6,
     "z": 1.8,
     "ko": 15,
-    "en": 14
+    "en": 13
    },
    {
     "x": 0.6,
     "y": 0.66,
     "z": 1.9,
     "ko": 18,
-    "en": 17,
+    "en": 16,
     "t": 4
    },
    {
@@ -579,28 +579,28 @@
     "y": 0.83,
     "z": 2.4,
     "ko": 21,
-    "en": 20
+    "en": 19
    },
    {
     "x": 0.7,
     "y": 0.72,
     "z": 1.4,
     "ko": 24,
-    "en": 23
+    "en": 22
    },
    {
     "x": 0.5,
     "y": 0.4,
     "z": 1.2,
     "ko": 27,
-    "en": 26
+    "en": 25
    },
    {
     "x": 0.5,
     "y": 0.5,
     "z": 1.0,
     "ko": 30,
-    "en": 29
+    "en": 28
    }
   ]
  },
@@ -1000,58 +1000,58 @@
     "x": 0.2,
     "y": 0.66,
     "z": 2.0,
-    "ko": 8,
-    "en": 10
+    "ko": 7,
+    "en": 8
    },
    {
     "x": 0.46,
     "y": 0.52,
     "z": 2.0,
-    "ko": 10,
-    "en": 12,
+    "ko": 9,
+    "en": 10,
     "t": -4
    },
    {
     "x": 0.6,
     "y": 0.33,
     "z": 2.2,
-    "ko": 13,
-    "en": 15
+    "ko": 12,
+    "en": 13
    },
    {
     "x": 0.82,
     "y": 0.45,
     "z": 2.2,
-    "ko": 16,
-    "en": 17
+    "ko": 15,
+    "en": 15
    },
    {
     "x": 0.68,
     "y": 0.5,
     "z": 1.4,
-    "ko": 19,
-    "en": 20
+    "ko": 18,
+    "en": 18
    },
    {
     "x": 0.42,
     "y": 0.5,
     "z": 1.25,
-    "ko": 21,
-    "en": 22
+    "ko": 20,
+    "en": 20
    },
    {
     "x": 0.6,
     "y": 0.45,
     "z": 1.35,
-    "ko": 23,
-    "en": 24
+    "ko": 22,
+    "en": 22
    },
    {
     "x": 0.5,
     "y": 0.5,
     "z": 1.0,
-    "ko": 25,
-    "en": 26
+    "ko": 24,
+    "en": 24
    }
   ]
  },
@@ -1143,21 +1143,21 @@
     "y": 0.15,
     "z": 2.4,
     "ko": 6,
-    "en": 7
+    "en": 6
    },
    {
     "x": 0.5,
     "y": 0.25,
     "z": 2.6,
     "ko": 9,
-    "en": 10
+    "en": 9
    },
    {
     "x": 0.46,
     "y": 0.3,
     "z": 2.6,
     "ko": 12,
-    "en": 13,
+    "en": 12,
     "t": -4
    },
    {
@@ -1165,49 +1165,49 @@
     "y": 0.42,
     "z": 1.9,
     "ko": 15,
-    "en": 16
+    "en": 15
    },
    {
     "x": 0.6,
     "y": 0.6,
     "z": 2.0,
     "ko": 18,
-    "en": 19
+    "en": 18
    },
    {
     "x": 0.47,
     "y": 0.77,
     "z": 2.0,
     "ko": 21,
-    "en": 22
+    "en": 21
    },
    {
     "x": 0.55,
     "y": 0.85,
     "z": 1.6,
     "ko": 24,
-    "en": 25
+    "en": 24
    },
    {
     "x": 0.5,
     "y": 0.4,
     "z": 1.3,
     "ko": 27,
-    "en": 28
+    "en": 27
    },
    {
     "x": 0.5,
     "y": 0.45,
     "z": 1.2,
     "ko": 29,
-    "en": 30
+    "en": 29
    },
    {
     "x": 0.5,
     "y": 0.45,
     "z": 1.1,
     "ko": 32,
-    "en": 33
+    "en": 32
    }
   ]
  },
@@ -1295,42 +1295,42 @@
     "y": 0.42,
     "z": 1.3,
     "ko": 3,
-    "en": 3
+    "en": 2
    },
    {
     "x": 0.5,
     "y": 0.17,
     "z": 2.0,
     "ko": 6,
-    "en": 6
+    "en": 5
    },
    {
     "x": 0.47,
     "y": 0.33,
     "z": 2.6,
     "ko": 8,
-    "en": 9
+    "en": 8
    },
    {
     "x": 0.38,
     "y": 0.44,
     "z": 2.4,
     "ko": 11,
-    "en": 11
+    "en": 10
    },
    {
     "x": 0.52,
     "y": 0.55,
     "z": 1.8,
     "ko": 14,
-    "en": 14
+    "en": 13
    },
    {
     "x": 0.62,
     "y": 0.41,
     "z": 2.8,
     "ko": 17,
-    "en": 17,
+    "en": 16,
     "t": 5
    },
    {
@@ -1338,28 +1338,28 @@
     "y": 0.66,
     "z": 1.9,
     "ko": 20,
-    "en": 20
+    "en": 19
    },
    {
     "x": 0.5,
     "y": 0.87,
     "z": 2.2,
     "ko": 22,
-    "en": 23
+    "en": 22
    },
    {
     "x": 0.5,
     "y": 0.45,
     "z": 1.3,
     "ko": 25,
-    "en": 26
+    "en": 25
    },
    {
     "x": 0.5,
     "y": 0.52,
     "z": 1.1,
     "ko": 27,
-    "en": 28
+    "en": 27
    }
   ]
  },
@@ -2331,72 +2331,72 @@
     "x": 0.5,
     "y": 0.42,
     "z": 1.3,
-    "ko": 4,
-    "en": 4
+    "ko": 3,
+    "en": 3
    },
    {
     "x": 0.5,
     "y": 0.32,
     "z": 2.0,
-    "ko": 6,
-    "en": 6
+    "ko": 5,
+    "en": 5
    },
    {
     "x": 0.67,
     "y": 0.47,
     "z": 2.6,
-    "ko": 9,
-    "en": 9,
+    "ko": 8,
+    "en": 8,
     "t": -5
    },
    {
     "x": 0.89,
     "y": 0.18,
     "z": 2.4,
-    "ko": 12,
-    "en": 12
+    "ko": 11,
+    "en": 11
    },
    {
     "x": 0.35,
     "y": 0.53,
     "z": 2.4,
-    "ko": 15,
-    "en": 15
+    "ko": 14,
+    "en": 14
    },
    {
     "x": 0.2,
     "y": 0.45,
     "z": 1.8,
-    "ko": 18,
-    "en": 18
+    "ko": 17,
+    "en": 17
    },
    {
     "x": 0.57,
     "y": 0.77,
     "z": 2.6,
-    "ko": 21,
-    "en": 21
+    "ko": 20,
+    "en": 20
    },
    {
     "x": 0.76,
     "y": 0.85,
     "z": 2.0,
-    "ko": 23,
-    "en": 23
+    "ko": 22,
+    "en": 22
    },
    {
     "x": 0.5,
     "y": 0.45,
     "z": 1.2,
-    "ko": 26,
-    "en": 26
+    "ko": 25,
+    "en": 25
    },
    {
     "x": 0.5,
     "y": 0.52,
     "z": 1.0,
-    "ko": 28,
-    "en": 28
+    "ko": 27,
+    "en": 27
    }
   ]
  },
@@ -3665,72 +3665,72 @@
     "x": 0.5,
     "y": 0.32,
     "z": 1.3,
-    "ko": 4,
-    "en": 3
+    "ko": 3,
+    "en": 2
    },
    {
     "x": 0.5,
     "y": 0.1,
     "z": 1.8,
-    "ko": 7,
-    "en": 6
+    "ko": 6,
+    "en": 5
    },
    {
     "x": 0.5,
     "y": 0.27,
     "z": 2.4,
-    "ko": 10,
-    "en": 9
+    "ko": 9,
+    "en": 8
    },
    {
     "x": 0.5,
     "y": 0.38,
     "z": 2.0,
-    "ko": 13,
-    "en": 12
+    "ko": 12,
+    "en": 11
    },
    {
     "x": 0.23,
     "y": 0.45,
     "z": 2.2,
-    "ko": 16,
-    "en": 15,
+    "ko": 15,
+    "en": 14,
     "t": -5
    },
    {
     "x": 0.8,
     "y": 0.33,
     "z": 2.0,
-    "ko": 19,
-    "en": 18
+    "ko": 18,
+    "en": 17
    },
    {
     "x": 0.5,
     "y": 0.85,
     "z": 1.8,
-    "ko": 21,
-    "en": 20
+    "ko": 20,
+    "en": 19
    },
    {
     "x": 0.5,
     "y": 0.62,
     "z": 1.4,
-    "ko": 24,
-    "en": 23
+    "ko": 23,
+    "en": 22
    },
    {
     "x": 0.5,
     "y": 0.5,
     "z": 1.2,
-    "ko": 26,
-    "en": 25
+    "ko": 25,
+    "en": 24
    },
    {
     "x": 0.5,
     "y": 0.4,
     "z": 1.1,
-    "ko": 29,
-    "en": 27
+    "ko": 28,
+    "en": 26
    }
   ],
   "commons": "Yun Du-seo.jpg"
@@ -5902,49 +5902,49 @@
     "y": 0.35,
     "z": 1.3,
     "ko": 3,
-    "en": 4
+    "en": 3
    },
    {
     "x": 0.3,
     "y": 0.24,
     "z": 2.0,
     "ko": 6,
-    "en": 7
+    "en": 6
    },
    {
     "x": 0.12,
     "y": 0.47,
     "z": 2.2,
     "ko": 9,
-    "en": 10
+    "en": 9
    },
    {
     "x": 0.3,
     "y": 0.82,
     "z": 2.4,
     "ko": 12,
-    "en": 13
+    "en": 12
    },
    {
     "x": 0.51,
     "y": 0.42,
     "z": 1.8,
     "ko": 15,
-    "en": 16
+    "en": 15
    },
    {
     "x": 0.7,
     "y": 0.5,
     "z": 2.0,
     "ko": 18,
-    "en": 19
+    "en": 18
    },
    {
     "x": 0.93,
     "y": 0.6,
     "z": 2.0,
     "ko": 20,
-    "en": 21,
+    "en": 20,
     "t": -5
    },
    {
@@ -5952,21 +5952,21 @@
     "y": 0.5,
     "z": 1.4,
     "ko": 23,
-    "en": 24
+    "en": 23
    },
    {
     "x": 0.6,
     "y": 0.4,
     "z": 1.2,
     "ko": 26,
-    "en": 27
+    "en": 26
    },
    {
     "x": 0.5,
     "y": 0.5,
     "z": 1.1,
     "ko": 29,
-    "en": 30
+    "en": 29
    }
   ]
  },
@@ -6631,56 +6631,56 @@
     "y": 0.45,
     "z": 1.3,
     "ko": 3,
-    "en": 3
+    "en": 2
    },
    {
     "x": 0.4,
     "y": 0.38,
     "z": 1.4,
     "ko": 5,
-    "en": 5
+    "en": 4
    },
    {
     "x": 0.16,
     "y": 0.17,
     "z": 2.0,
     "ko": 7,
-    "en": 7
+    "en": 6
    },
    {
     "x": 0.1,
     "y": 0.5,
     "z": 2.2,
     "ko": 9,
-    "en": 9
+    "en": 8
    },
    {
     "x": 0.22,
     "y": 0.6,
     "z": 2.6,
     "ko": 12,
-    "en": 12
+    "en": 11
    },
    {
     "x": 0.47,
     "y": 0.3,
     "z": 2.4,
     "ko": 14,
-    "en": 14
+    "en": 13
    },
    {
     "x": 0.72,
     "y": 0.72,
     "z": 2.0,
     "ko": 17,
-    "en": 17
+    "en": 16
    },
    {
     "x": 0.55,
     "y": 0.55,
     "z": 1.6,
     "ko": 20,
-    "en": 20,
+    "en": 19,
     "t": -4
    },
    {
@@ -6688,14 +6688,14 @@
     "y": 0.42,
     "z": 1.25,
     "ko": 22,
-    "en": 22
+    "en": 21
    },
    {
     "x": 0.5,
     "y": 0.5,
     "z": 1.1,
     "ko": 24,
-    "en": 24
+    "en": 23
    }
   ]
  },
@@ -7950,42 +7950,42 @@
     "y": 0.4,
     "z": 1.3,
     "ko": 3,
-    "en": 4
+    "en": 3
    },
    {
     "x": 0.55,
     "y": 0.12,
     "z": 1.6,
     "ko": 5,
-    "en": 6
+    "en": 5
    },
    {
     "x": 0.3,
     "y": 0.22,
     "z": 2.2,
     "ko": 8,
-    "en": 9
+    "en": 8
    },
    {
     "x": 0.46,
     "y": 0.52,
     "z": 2.0,
     "ko": 11,
-    "en": 12
+    "en": 11
    },
    {
     "x": 0.36,
     "y": 0.7,
     "z": 2.0,
     "ko": 14,
-    "en": 15
+    "en": 14
    },
    {
     "x": 0.78,
     "y": 0.24,
     "z": 2.0,
     "ko": 17,
-    "en": 18,
+    "en": 17,
     "t": -4
    },
    {
@@ -7993,28 +7993,28 @@
     "y": 0.76,
     "z": 1.8,
     "ko": 20,
-    "en": 21
+    "en": 20
    },
    {
     "x": 0.45,
     "y": 0.45,
     "z": 1.3,
     "ko": 23,
-    "en": 24
+    "en": 23
    },
    {
     "x": 0.35,
     "y": 0.45,
     "z": 1.2,
     "ko": 26,
-    "en": 27
+    "en": 26
    },
    {
     "x": 0.5,
     "y": 0.5,
     "z": 1.1,
     "ko": 29,
-    "en": 30
+    "en": 29
    }
   ]
  },
@@ -10589,7 +10589,7 @@
     "x": 0.5,
     "y": 0.5,
     "z": 1.1,
-    "ko": 26,
+    "ko": 25,
     "en": 24
    }
   ]
@@ -10821,63 +10821,63 @@
     "x": 0.5,
     "y": 0.45,
     "z": 1.25,
-    "ko": 7,
+    "ko": 6,
     "en": 5
    },
    {
     "x": 0.5,
     "y": 0.45,
     "z": 1.25,
-    "ko": 10,
+    "ko": 9,
     "en": 8
    },
    {
     "x": 0.42,
     "y": 0.4,
     "z": 1.45,
-    "ko": 13,
+    "ko": 12,
     "en": 10
    },
    {
     "x": 0.42,
     "y": 0.4,
     "z": 1.45,
-    "ko": 16,
+    "ko": 15,
     "en": 13
    },
    {
     "x": 0.58,
     "y": 0.55,
     "z": 1.45,
-    "ko": 20,
+    "ko": 19,
     "en": 16
    },
    {
     "x": 0.58,
     "y": 0.55,
     "z": 1.45,
-    "ko": 22,
+    "ko": 21,
     "en": 19
    },
    {
     "x": 0.5,
     "y": 0.62,
     "z": 1.3,
-    "ko": 26,
+    "ko": 25,
     "en": 23
    },
    {
     "x": 0.5,
     "y": 0.62,
     "z": 1.3,
-    "ko": 29,
+    "ko": 28,
     "en": 26
    },
    {
     "x": 0.5,
     "y": 0.5,
     "z": 1.1,
-    "ko": 31,
+    "ko": 30,
     "en": 28
    }
   ]
@@ -11402,57 +11402,57 @@
     "x": 0.5,
     "y": 0.45,
     "z": 1.25,
-    "ko": 7,
-    "en": 7
+    "ko": 6,
+    "en": 6
    },
    {
     "x": 0.5,
     "y": 0.45,
     "z": 1.25,
-    "ko": 10,
-    "en": 10
+    "ko": 9,
+    "en": 9
    },
    {
     "x": 0.42,
     "y": 0.4,
     "z": 1.45,
-    "ko": 12,
-    "en": 13
+    "ko": 11,
+    "en": 12
    },
    {
     "x": 0.58,
     "y": 0.55,
     "z": 1.45,
-    "ko": 16,
-    "en": 17
+    "ko": 15,
+    "en": 16
    },
    {
     "x": 0.58,
     "y": 0.55,
     "z": 1.45,
-    "ko": 19,
-    "en": 21
+    "ko": 18,
+    "en": 20
    },
    {
     "x": 0.5,
     "y": 0.62,
     "z": 1.3,
-    "ko": 23,
-    "en": 25
+    "ko": 22,
+    "en": 24
    },
    {
     "x": 0.5,
     "y": 0.62,
     "z": 1.3,
-    "ko": 26,
-    "en": 28
+    "ko": 25,
+    "en": 27
    },
    {
     "x": 0.5,
     "y": 0.5,
     "z": 1.1,
-    "ko": 28,
-    "en": 30
+    "ko": 27,
+    "en": 29
    }
   ]
  },
@@ -12401,64 +12401,64 @@
     "x": 0.5,
     "y": 0.45,
     "z": 1.25,
-    "ko": 7,
-    "en": 8
+    "ko": 6,
+    "en": 6
    },
    {
     "x": 0.5,
     "y": 0.45,
     "z": 1.25,
-    "ko": 10,
+    "ko": 9,
+    "en": 9
+   },
+   {
+    "x": 0.42,
+    "y": 0.4,
+    "z": 1.45,
+    "ko": 11,
     "en": 11
    },
    {
     "x": 0.42,
     "y": 0.4,
     "z": 1.45,
-    "ko": 12,
-    "en": 13
-   },
-   {
-    "x": 0.42,
-    "y": 0.4,
-    "z": 1.45,
-    "ko": 16,
-    "en": 17
+    "ko": 15,
+    "en": 15
    },
    {
     "x": 0.58,
     "y": 0.55,
     "z": 1.45,
-    "ko": 19,
-    "en": 20
+    "ko": 18,
+    "en": 18
    },
    {
     "x": 0.58,
     "y": 0.55,
     "z": 1.45,
-    "ko": 21,
-    "en": 23
+    "ko": 20,
+    "en": 21
    },
    {
     "x": 0.5,
     "y": 0.62,
     "z": 1.3,
-    "ko": 25,
-    "en": 26
+    "ko": 24,
+    "en": 24
    },
    {
     "x": 0.5,
     "y": 0.62,
     "z": 1.3,
-    "ko": 28,
-    "en": 29
+    "ko": 27,
+    "en": 27
    },
    {
     "x": 0.5,
     "y": 0.5,
     "z": 1.1,
-    "ko": 30,
-    "en": 31
+    "ko": 29,
+    "en": 29
    }
   ]
  },
@@ -13573,64 +13573,64 @@
     "x": 0.32,
     "y": 0.6,
     "z": 1.5,
-    "ko": 8,
-    "en": 8
+    "ko": 7,
+    "en": 7
    },
    {
     "x": 0.32,
     "y": 0.55,
     "z": 1.35,
-    "ko": 11,
-    "en": 11
+    "ko": 10,
+    "en": 10
    },
    {
     "x": 0.35,
     "y": 0.28,
     "z": 1.6,
-    "ko": 13,
-    "en": 13
+    "ko": 12,
+    "en": 12
    },
    {
     "x": 0.68,
     "y": 0.4,
     "z": 1.5,
-    "ko": 16,
-    "en": 16
+    "ko": 15,
+    "en": 15
    },
    {
     "x": 0.6,
     "y": 0.45,
     "z": 1.2,
-    "ko": 20,
-    "en": 19
+    "ko": 19,
+    "en": 18
    },
    {
     "x": 0.5,
     "y": 0.5,
     "z": 1.1,
-    "ko": 23,
-    "en": 23
+    "ko": 22,
+    "en": 22
    },
    {
     "x": 0.5,
     "y": 0.5,
     "z": 1.05,
-    "ko": 26,
-    "en": 28
+    "ko": 25,
+    "en": 27
    },
    {
     "x": 0.5,
     "y": 0.5,
     "z": 1.05,
-    "ko": 28,
-    "en": 30
+    "ko": 27,
+    "en": 29
    },
    {
     "x": 0.5,
     "y": 0.5,
     "z": 1.0,
-    "ko": 30,
-    "en": 33
+    "ko": 29,
+    "en": 32
    }
   ]
  },
@@ -13861,36 +13861,43 @@
     "x": 0.25,
     "y": 0.6,
     "z": 1.5,
-    "ko": 7,
-    "en": 7
+    "ko": 5,
+    "en": 5
    },
    {
     "x": 0.72,
     "y": 0.6,
     "z": 1.5,
-    "ko": 11,
-    "en": 11
+    "ko": 9,
+    "en": 9
    },
    {
     "x": 0.5,
     "y": 0.55,
     "z": 1.15,
-    "ko": 14,
-    "en": 15
+    "ko": 12,
+    "en": 13
    },
    {
     "x": 0.5,
     "y": 0.25,
     "z": 1.35,
-    "ko": 18,
-    "en": 19
+    "ko": 16,
+    "en": 17
    },
    {
     "x": 0.45,
     "y": 0.55,
     "z": 1.6,
+    "ko": 19,
+    "en": 20
+   },
+   {
+    "x": 0.5,
+    "y": 0.5,
+    "z": 1.05,
     "ko": 21,
-    "en": 22
+    "en": 24
    },
    {
     "x": 0.5,
@@ -13902,16 +13909,9 @@
    {
     "x": 0.5,
     "y": 0.5,
-    "z": 1.05,
-    "ko": 25,
-    "en": 28
-   },
-   {
-    "x": 0.5,
-    "y": 0.5,
     "z": 1.0,
-    "ko": 28,
-    "en": 31
+    "ko": 26,
+    "en": 29
    }
   ]
  },
@@ -13998,64 +13998,64 @@
     "x": 0.5,
     "y": 0.3,
     "z": 1.4,
-    "ko": 8,
-    "en": 8
+    "ko": 7,
+    "en": 7
    },
    {
     "x": 0.5,
     "y": 0.7,
     "z": 1.45,
-    "ko": 10,
-    "en": 11
+    "ko": 9,
+    "en": 10
    },
    {
     "x": 0.5,
     "y": 0.6,
     "z": 1.3,
-    "ko": 13,
-    "en": 14
+    "ko": 12,
+    "en": 13
    },
    {
     "x": 0.5,
     "y": 0.5,
     "z": 1.05,
-    "ko": 16,
-    "en": 16
+    "ko": 15,
+    "en": 15
    },
    {
     "x": 0.5,
     "y": 0.5,
     "z": 1.05,
-    "ko": 18,
-    "en": 18
+    "ko": 17,
+    "en": 17
    },
    {
     "x": 0.5,
     "y": 0.5,
     "z": 1.1,
-    "ko": 21,
-    "en": 21
+    "ko": 20,
+    "en": 20
    },
    {
     "x": 0.5,
     "y": 0.5,
     "z": 1.05,
-    "ko": 24,
-    "en": 23
+    "ko": 23,
+    "en": 22
    },
    {
     "x": 0.5,
     "y": 0.5,
     "z": 1.05,
-    "ko": 26,
-    "en": 25
+    "ko": 25,
+    "en": 24
    },
    {
     "x": 0.5,
     "y": 0.5,
     "z": 1.0,
-    "ko": 28,
-    "en": 27
+    "ko": 27,
+    "en": 26
    }
   ]
  },
@@ -14296,64 +14296,64 @@
     "x": 0.5,
     "y": 0.2,
     "z": 1.4,
-    "ko": 6,
-    "en": 7
+    "ko": 5,
+    "en": 5
    },
    {
     "x": 0.5,
     "y": 0.75,
     "z": 1.35,
-    "ko": 9,
-    "en": 10
+    "ko": 8,
+    "en": 8
    },
    {
     "x": 0.5,
     "y": 0.45,
     "z": 1.5,
-    "ko": 13,
-    "en": 14
+    "ko": 12,
+    "en": 12
    },
    {
     "x": 0.5,
     "y": 0.5,
     "z": 1.05,
-    "ko": 16,
-    "en": 17
+    "ko": 15,
+    "en": 15
    },
    {
     "x": 0.5,
     "y": 0.5,
     "z": 1.1,
-    "ko": 18,
-    "en": 20
+    "ko": 17,
+    "en": 18
    },
    {
     "x": 0.5,
     "y": 0.4,
     "z": 1.3,
-    "ko": 20,
-    "en": 22
+    "ko": 19,
+    "en": 20
    },
    {
     "x": 0.5,
     "y": 0.25,
     "z": 1.3,
-    "ko": 23,
-    "en": 25
+    "ko": 22,
+    "en": 23
    },
    {
     "x": 0.5,
     "y": 0.5,
     "z": 1.05,
-    "ko": 26,
-    "en": 27
+    "ko": 25,
+    "en": 25
    },
    {
     "x": 0.5,
     "y": 0.5,
     "z": 1.0,
-    "ko": 27,
-    "en": 28
+    "ko": 26,
+    "en": 26
    }
   ]
  },
@@ -14440,64 +14440,64 @@
     "x": 0.55,
     "y": 0.45,
     "z": 1.5,
-    "ko": 6,
-    "en": 6
+    "ko": 5,
+    "en": 5
    },
    {
     "x": 0.42,
     "y": 0.75,
     "z": 1.45,
-    "ko": 8,
-    "en": 9
+    "ko": 7,
+    "en": 8
    },
    {
     "x": 0.45,
     "y": 0.4,
     "z": 1.4,
-    "ko": 12,
-    "en": 12
+    "ko": 11,
+    "en": 11
    },
    {
     "x": 0.5,
     "y": 0.5,
     "z": 1.1,
-    "ko": 15,
-    "en": 15
+    "ko": 14,
+    "en": 14
    },
    {
     "x": 0.5,
     "y": 0.5,
     "z": 1.05,
-    "ko": 18,
-    "en": 18
+    "ko": 17,
+    "en": 17
    },
    {
     "x": 0.5,
     "y": 0.5,
     "z": 1.05,
-    "ko": 21,
-    "en": 21
+    "ko": 20,
+    "en": 20
    },
    {
     "x": 0.5,
     "y": 0.5,
     "z": 1.05,
-    "ko": 23,
-    "en": 23
+    "ko": 22,
+    "en": 22
    },
    {
     "x": 0.5,
     "y": 0.5,
     "z": 1.1,
-    "ko": 26,
-    "en": 26
+    "ko": 25,
+    "en": 25
    },
    {
     "x": 0.5,
     "y": 0.5,
     "z": 1.0,
-    "ko": 28,
-    "en": 27
+    "ko": 27,
+    "en": 26
    }
   ]
  },
@@ -14558,12 +14558,12 @@
    }
   ],
   "short": {
-   "ko": "어두운 밤, 격자 창 안쪽의 방이 환하게 밝고, 곱게 차려입은 여인들을 격자 밖의 남자들이 들여다봅니다. 호쿠사이의 딸 가쓰시카 오이가 그린 '요시와라 격자 앞 그림'입니다. 방 안의 등불과 손님들의 등롱, 여러 개의 불빛이 어둠 속에서 사람들을 꿈처럼 불러냅니다. 서명이 없는 대신, 등롱 세 개에 화가의 호와 이름을 뜻하는 글자가 숨어 있습니다. 오이의 작품으로 확인된 그림은 열 점 남짓뿐이고, 이 그림은 그중 가장 잘 알려진 육필화입니다. 도쿄 오타 기념미술관이 소장하고 있습니다.",
+   "ko": "어두운 밤, 격자 창 안쪽의 방이 환하게 밝고, 곱게 차려입은 여인들을 격자 밖의 남자들이 들여다봅니다. 호쿠사이의 딸 가쓰시카 오이가 그린 '요시와라 격자 앞 그림'입니다. 방 안의 등불과 손님들의 등롱, 여러 개의 불빛이 어둠 속에서 사람들을 꿈처럼 불러냅니다. 서명이 없는 대신, 등롱 세 개에 화가의 호와 이름을 뜻하는 글자가 숨어 있습니다. 오이의 작품으로 확인된 그림은 열 몇 점뿐이고, 이 그림은 그중 가장 잘 알려진 육필화입니다. 도쿄 오타 기념미술관이 소장하고 있습니다.",
    "en": "On a dark night a room behind a lattice glows with light, and men outside peer in at the finely dressed women. This is Night Scene in the Yoshiwara by Katsushika Ōi, a daughter of Hokusai. The lamps of the room and the lanterns of the visitors call figures out of the darkness like a dream. There is no signature; instead, characters spelling her art name and her real name are hidden on three lanterns. Only a dozen or so works by Ōi have been confirmed, and this is the best known of her paintings. It belongs to the Ota Memorial Museum of Art in Tokyo."
   },
   "text": {
-   "ko": "어두운 밤, 격자 창 안쪽이 환하게 밝습니다. 곱게 차려입은 여인들이 불빛 속에 앉아 있고, 격자 밖 어둠 속에서는 남자들이 그 안을 들여다봅니다. 가쓰시카 오이가 그린 '요시와라 격자 앞 그림'입니다. 세로 26.3센티미터, 가로 39.8센티미터의 작은 육필화입니다. 판화가 아니라 화가가 붓으로 직접 그린 단 한 점의 그림입니다. 도쿄의 오타 기념미술관이 소장하고 있습니다. 오이는 우키요에의 거장 호쿠사이의 딸입니다. 태어나고 죽은 해가 분명하지 않고, 지금까지 그의 작품으로 확인된 그림은 열 몇 점뿐입니다. 그런데도 아버지와는 다른 독특한 화풍으로 많은 사람을 사로잡고 있습니다. 이제 격자 안을 보십시오. 방 안의 등불이 여인들을 비추어, 화려한 옷의 색과 무늬가 어둠 위로 떠오릅니다. 미술관은 이 그림을 빛과 그림자로 그린 걸작이라고 소개합니다. 격자 가까이 다가온 한 여인을 찾아보십시오. 단골손님이라도 온 것일까요. 그녀의 얼굴은 검은 그림자로만 그려져 있어, 표정을 알 수 없습니다. 보여 주지 않음으로써 오히려 눈길을 붙잡습니다. 이제 격자 밖, 손님들의 손에 들린 등롱을 보십시오. 등불을 든 사람마다 몸의 한쪽만 밝고 나머지는 어둠에 잠깁니다. 여러 개의 불빛이 화면 곳곳에서 꿈처럼 사람들을 불러냅니다. 이 그림에는 화가의 서명이 없습니다. 대신 등롱 세 개에 글자가 숨어 있습니다. 오른쪽 큰 등롱에 응, 가운데 남자의 등롱에 위, 두건 쓴 남자의 긴 등롱에 영이라는 한자가 적혀 있습니다. 응과 위를 합치면 화가의 호인 오이가 되고, 영은 그의 본래 이름 에이를 가리킵니다. 그래서 이 세 글자는 화가가 몰래 남긴 서명으로 여겨집니다. 이 그림은 1929년 잡지에 처음 기록되었지만, 1946년을 끝으로 행방이 끊겼습니다. 1982년에야 오카야마의 옛 집안에 피란해 있던 것이 다시 알려졌고, 지금은 오타 기념미술관이 소장하고 있습니다. 미술관은 이 그림을 늘 걸어 두지 않습니다. 2026년 가을, 밤 풍경의 계보를 따라가는 전시에서 3년 만에 다시 공개했습니다. 우키요에가 밤을 어떻게 그려 왔는지 보여 주는 자리였습니다. 한 걸음 물러나 보십시오. 밝은 방과 어두운 거리, 그리고 그 사이의 격자. 오늘 밤 불 켜진 창 하나를 바라보게 된다면, 그 안과 밖에 어떤 이야기가 있을지 상상해 보시기 바랍니다.",
-   "en": "It is night. Behind a lattice window, a room glows with light. Finely dressed women sit inside the brightness, while out in the dark, men peer in through the bars. This is Night Scene in the Yoshiwara, painted by Katsushika Ōi. It is a small painting, 26.3 centimetres high and 39.8 centimetres wide. It is not a print but a nikuhitsu-ga, a one-of-a-kind picture painted directly by the artist's own brush. It belongs to the Ota Memorial Museum of Art in Tokyo. Ōi was a daughter of the great ukiyo-e master Hokusai. Her dates of birth and death are not known, and only a dozen or so works by her have been confirmed. Even so, her pictures, quite unlike her father's, continue to fascinate people. Look inside the lattice. The lamps of the room light up the women, so the colours and patterns of their robes float out of the darkness. The museum describes the work as a masterpiece painted in light and shadow. Find the woman who has come up close to the lattice. Perhaps a regular customer has arrived. Her face is drawn only as a black silhouette, so we cannot read her expression. By showing us nothing, the painter holds our gaze all the more. Now look outside the lattice, at the paper lanterns in the visitors' hands. Each figure holding a lantern is lit on one side and sinks into darkness on the other. These many small sources of light call people out of the dark here and there, like figures in a dream. There is no signature on this painting. Instead, characters are hidden on three lanterns. The large lantern on the right carries the character ō, the lantern of the man in the centre carries i, and the long lantern held by a man in a hood carries Ei. Put ō and i together and you have her art name, Ōi, while Ei is her real name, O-Ei. So the three characters are read as a hidden signature, left quietly inside the picture. The painting first appears in the record in a magazine of 1929, but after 1946 it vanished from view. Only in 1982 was it reported again, having been sheltered from the war in an old family house in Okayama. Today it belongs to the Ota Memorial Museum of Art. The museum does not keep it on permanent view. In the autumn of 2026 it was shown again for the first time in three years, at an exhibition tracing how ukiyo-e artists painted the night. Step back and look again: a bright room, a dark street, and the lattice between them. If you find yourself looking at a lit window tonight, imagine the stories on either side of it."
+   "ko": "어두운 밤, 격자 창 안쪽이 환하게 밝습니다. 곱게 차려입은 여인들이 불빛 속에 앉아 있고, 격자 밖 어둠 속에서는 남자들이 그 안을 들여다봅니다. 가쓰시카 오이가 그린 '요시와라 격자 앞 그림'입니다. 세로 26.3센티미터, 가로 39.8센티미터의 작은 육필화입니다. 판화가 아니라 화가가 붓으로 직접 그린 단 한 점의 그림입니다. 도쿄의 오타 기념미술관이 소장하고 있습니다. 오이는 우키요에의 거장 호쿠사이의 딸입니다. 태어나고 죽은 해가 분명하지 않고, 지금까지 그의 작품으로 확인된 그림은 열 몇 점뿐입니다. 그런데도 아버지와는 다른 독특한 화풍으로 많은 사람을 사로잡고 있습니다. 이제 격자 안을 보십시오. 방 안의 등불이 여인들을 비추어, 화려한 옷의 색과 무늬가 어둠 위로 떠오릅니다. 미술관은 이 그림을 빛과 그림자로 그린 걸작이라고 소개합니다. 격자 가까이 다가온 한 여인을 찾아보십시오. 단골손님이라도 온 것일까요. 그녀의 얼굴은 검은 그림자로만 그려져 있어, 표정을 알 수 없습니다. 보여 주지 않음으로써 오히려 눈길을 붙잡습니다. 이제 격자 밖, 손님들의 손에 들린 등롱을 보십시오. 등불을 든 사람마다 몸의 한쪽만 밝고 나머지는 어둠에 잠깁니다. 여러 개의 불빛이 화면 곳곳에서 꿈처럼 사람들을 불러냅니다. 이 그림에는 화가의 서명이 없습니다. 대신 등롱 세 개에 글자가 숨어 있습니다. 세 등롱에 응, 위, 영이라는 한자가 한 자씩 적혀 있습니다. 응과 위를 합치면 화가의 호인 오이가 되고, 영은 그의 본래 이름 에이를 가리킵니다. 그래서 이 세 글자는 화가가 몰래 남긴 서명으로 여겨집니다. 오이라는 화가가 널리 알려진 것은 전쟁이 끝난 뒤의 일입니다. 지금 이 그림은 도쿄의 오타 기념미술관이 소장하고 있습니다. 미술관은 이 그림을 늘 걸어 두지 않습니다. 2026년 가을, 밤 풍경의 계보를 따라가는 전시에서 3년 만에 다시 공개했습니다. 우키요에가 밤을 어떻게 그려 왔는지 보여 주는 자리였습니다. 한 걸음 물러나 보십시오. 밝은 방과 어두운 거리, 그리고 그 사이의 격자. 오늘 밤 불 켜진 창 하나를 바라보게 된다면, 그 안과 밖에 어떤 이야기가 있을지 상상해 보시기 바랍니다.",
+   "en": "It is night. Behind a lattice window, a room glows with light. Finely dressed women sit inside the brightness, while out in the dark, men peer in through the bars. This is Night Scene in the Yoshiwara, painted by Katsushika Ōi. It is a small painting, 26.3 centimetres high and 39.8 centimetres wide. It is not a print but a nikuhitsu-ga, a one-of-a-kind picture painted directly by the artist's own brush. It belongs to the Ota Memorial Museum of Art in Tokyo. Ōi was a daughter of the great ukiyo-e master Hokusai. Her dates of birth and death are not known, and only a dozen or so works by her have been confirmed. Even so, her pictures, quite unlike her father's, continue to fascinate people. Look inside the lattice. The lamps of the room light up the women, so the colours and patterns of their robes float out of the darkness. The museum describes the work as a masterpiece painted in light and shadow. Find the woman who has come up close to the lattice. Perhaps a regular customer has arrived. Her face is drawn only as a black silhouette, so we cannot read her expression. By showing us nothing, the painter holds our gaze all the more. Now look outside the lattice, at the paper lanterns in the visitors' hands. Each figure holding a lantern is lit on one side and sinks into darkness on the other. These many small sources of light call people out of the dark here and there, like figures in a dream. There is no signature on this painting. Instead, characters are hidden on three lanterns. Each of the three carries a single character: ō, i and Ei. Put ō and i together and you have her art name, Ōi, while Ei is her real name, O-Ei. So the three characters are read as a hidden signature, left quietly inside the picture. Ōi herself became widely known only after the Second World War. Today the painting belongs to the Ota Memorial Museum of Art in Tokyo. The museum does not keep it on permanent view. In the autumn of 2026 it was shown again for the first time in three years, at an exhibition tracing how ukiyo-e artists painted the night. Step back and look again: a bright room, a dark street, and the lattice between them. If you find yourself looking at a lit window tonight, imagine the stories on either side of it."
   },
   "tour": [
    {
@@ -14584,64 +14584,64 @@
     "x": 0.5,
     "y": 0.5,
     "z": 1.05,
-    "ko": 7,
-    "en": 8
+    "ko": 6,
+    "en": 6
    },
    {
     "x": 0.45,
     "y": 0.4,
     "z": 1.35,
-    "ko": 10,
-    "en": 11
+    "ko": 9,
+    "en": 9
    },
    {
     "x": 0.5,
     "y": 0.45,
     "z": 1.5,
-    "ko": 13,
-    "en": 14
+    "ko": 12,
+    "en": 12
    },
    {
     "x": 0.5,
     "y": 0.75,
     "z": 1.35,
-    "ko": 17,
-    "en": 18
+    "ko": 16,
+    "en": 16
    },
    {
     "x": 0.85,
     "y": 0.35,
     "z": 1.45,
-    "ko": 20,
-    "en": 21
+    "ko": 19,
+    "en": 19
    },
    {
     "x": 0.5,
     "y": 0.6,
     "z": 1.3,
-    "ko": 23,
+    "ko": 22,
+    "en": 22
+   },
+   {
+    "x": 0.5,
+    "y": 0.5,
+    "z": 1.05,
+    "ko": 24,
     "en": 24
    },
    {
     "x": 0.5,
     "y": 0.5,
     "z": 1.05,
-    "ko": 25,
+    "ko": 26,
     "en": 26
    },
    {
     "x": 0.5,
     "y": 0.5,
-    "z": 1.05,
-    "ko": 27,
-    "en": 29
-   },
-   {
-    "x": 0.5,
-    "y": 0.5,
     "z": 1.0,
-    "ko": 30,
-    "en": 31
+    "ko": 29,
+    "en": 28
    }
   ]
  },
