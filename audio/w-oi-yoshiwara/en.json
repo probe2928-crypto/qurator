@@ -1,13 +1,11 @@
 {
- "hash": "e0cae429e806",
+ "hash": "edfd3c65d3a3",
  "voice": "kokoro:af_heart",
  "sentences": [
   "It is night. Behind a lattice window, a room glows with light.",
   "Finely dressed women sit inside the brightness, while out in the dark, men peer in through the bars.",
   "This is Night Scene in the Yoshiwara, painted by Katsushika Ōi.",
-  "It is a small painting, 26.",
-  "3 centimetres high and 39.",
-  "8 centimetres wide.",
+  "It is a small painting, 26.3 centimetres high and 39.8 centimetres wide.",
   "It is not a print but a nikuhitsu-ga, a one-of-a-kind picture painted directly by the artist's own brush.",
   "It belongs to the Ota Memorial Museum of Art in Tokyo.",
   "Ōi was a daughter of the great ukiyo-e master Hokusai.",
@@ -67,8 +65,6 @@
   "en-28.mp3",
   "en-29.mp3",
   "en-30.mp3",
-  "en-31.mp3",
-  "en-32.mp3",
-  "en-33.mp3"
+  "en-31.mp3"
  ]
 }
