@@ -1,0 +1,275 @@
+<!doctype html>
+<!-- QURATOR Daily Art 「거울 속의 증인」 9:16 · 연출아 2026-11-24 · r2 (심사 r1 6.77 반영) -->
+<html lang="ko" data-resolution="1080x1920">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1080, height=1920" />
+<script src="assets/gsap.min.js"></script>
+<style>
+@font-face{font-family:"PlexL";src:url("assets/fonts/ibm-plex-sans-kr-latin-500-normal.woff2") format("woff2");font-weight:500}
+@font-face{font-family:"PlexK";src:url("assets/fonts/ibm-plex-sans-kr-korean-500-normal.woff2") format("woff2");font-weight:500}
+@font-face{font-family:"PlexMono";src:url("assets/fonts/ibm-plex-mono-latin-500-normal.woff2") format("woff2");font-weight:500}
+@font-face{font-family:"SerifKR";src:url("assets/fonts/serif-kr-semibold-subset.otf") format("opentype");font-weight:600}
+@font-face{font-family:"SerifKRB";src:url("assets/fonts/serif-kr-bold-hook.otf") format("opentype");font-weight:700}
+@font-face{font-family:"CormI";src:url("assets/fonts/cormorant-garamond-latin-500-italic.woff2") format("woff2");font-weight:500;font-style:italic}
+:root{--ground:#0F0D0B;--paper:#F3EFE6;--ink:#16140F;--seal:#A8361F;--seal-hi:#D4644A;
+  --serif:"SerifKR",serif;--f-body:"PlexL","PlexK",sans-serif;--f-mono:"PlexMono","PlexK",monospace}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--ground)}
+#root{position:relative;width:1080px;height:1920px;overflow:hidden;background:var(--ground);font-family:var(--f-body);color:var(--paper)}
+.full{position:absolute;left:0;top:0;width:1080px;height:1920px}
+.mono{font-family:var(--f-mono);font-weight:500;letter-spacing:.14em;text-transform:uppercase}
+.mask{display:block;overflow:hidden;padding:.06em .02em .14em}
+.mask > span{display:inline-block}
+.ko{word-break:keep-all}
+.serif{font-family:var(--serif);font-weight:600}
+
+/* painting camera (renderAt) */
+#artbox{z-index:5}
+#art{position:absolute;left:0;top:0;width:3840px;height:5253px;transform-origin:0 0}
+#art > img{position:absolute;left:0;top:0;width:3840px;height:5253px}
+#dim{position:absolute;left:1896px;top:1522px;width:100px;height:100px;border-radius:50%;box-shadow:0 0 0 5000px rgba(8,6,5,.3)}
+#ring{position:absolute;left:0;top:0;width:3840px;height:5253px;overflow:visible}
+#sweep{position:absolute;left:1585px;top:985px;width:570px;height:250px}
+#band{position:absolute;left:0;top:-30px;width:170px;height:310px;background:radial-gradient(closest-side,rgba(255,232,196,.5),rgba(255,232,196,0));mix-blend-mode:soft-light}
+#scrimT{position:absolute;left:0;top:0;width:1080px;height:640px;background:linear-gradient(to bottom,rgba(10,8,6,.9) 0%,rgba(10,8,6,.74) 55%,rgba(10,8,6,0) 100%)}
+#scrimH{position:absolute;left:0;top:1000px;width:1080px;height:920px;background:linear-gradient(to bottom,rgba(10,8,6,0) 0%,rgba(10,8,6,.66) 28%,rgba(10,8,6,.8) 100%)}
+#scrimB{position:absolute;left:0;top:1180px;width:1080px;height:740px;background:linear-gradient(to bottom,rgba(15,13,11,0) 0%,rgba(15,13,11,.74) 32%,rgba(15,13,11,.8) 100%)}
+
+/* hook */
+#hook{z-index:20}
+#tag{position:absolute;left:0;top:1196px;width:1080px;display:flex;justify-content:center;align-items:center;gap:16px;font-size:28px;color:rgba(243,239,230,.72)}
+#tag svg{width:42px;height:42px}
+#hookT em{font-style:normal;color:#E59A82}
+#hookT{position:absolute;left:0;top:1256px;width:1080px;text-align:center;font-family:"SerifKRB",serif;font-weight:700;font-size:74px;line-height:1.24;letter-spacing:-.02em;color:var(--paper);text-shadow:0 2px 28px rgba(0,0,0,.55)}
+
+/* phone */
+#phoneclip{z-index:4}
+#phonewrap{position:absolute;left:0;top:0;width:1080px;height:1920px}
+#floor{position:absolute;left:200px;top:1650px;width:680px;height:120px;border-radius:50%;background:radial-gradient(closest-side,rgba(0,0,0,.7),rgba(0,0,0,0))}
+#phone{position:absolute;left:238px;top:440px;width:604px;height:1274.5px;border-radius:76px;background:linear-gradient(160deg,#2b2722,#0c0b09 35%,#0c0b09 70%,#26221d);box-shadow:0 0 0 1.5px #3a352e,inset 0 0 0 1.5px rgba(255,230,190,.2),0 60px 120px rgba(0,0,0,.6)}
+#screen{position:absolute;left:252px;top:454px;width:576px;height:1246.5px;border-radius:62px;overflow:hidden;background:#0d0c0a}
+#screen img{position:absolute;left:0;top:0;width:576px;height:1246.5px}
+#scrfade{position:absolute;left:0;top:1040px;width:576px;height:207px;background:linear-gradient(to bottom,rgba(13,12,10,0),#0d0c0a 35%)}
+.hl{position:absolute;border-radius:8px;box-shadow:0 0 0 2px rgba(243,239,230,.9)}
+#hlEn{left:126px;top:267px;width:117px;height:63px;border-radius:32px}
+#hlRow{left:14px;top:255px;width:548px;height:82px}
+#shade{position:absolute;left:0;top:0;width:1080px;height:440px;background:linear-gradient(to bottom,rgba(15,13,11,.96) 0%,rgba(15,13,11,.9) 80%,rgba(15,13,11,0) 100%)}
+#botfade{position:absolute;left:0;top:1600px;width:1080px;height:320px;background:linear-gradient(to bottom,rgba(15,13,11,0),#0F0D0B 70%)}
+
+/* captions */
+#caps{z-index:21}
+.cap{position:absolute;left:0;top:190px;width:1080px;text-align:center}
+.cap .n{display:block;font-size:24px;color:rgba(243,239,230,.62);margin-bottom:14px}
+.cap .n b{font-size:30px;letter-spacing:0;color:rgba(212,100,74,.9)}
+.cap .t{font-size:62px;line-height:1.24;letter-spacing:-.02em;color:var(--paper)}
+
+/* signature + mirror */
+#siglab{z-index:21}
+#sigL{position:absolute;left:0;top:300px;width:1080px;text-align:center}
+#sigL .a{display:block;font-size:28px;color:#F3EFE6;text-shadow:0 2px 14px rgba(0,0,0,.9)}
+#sigL .b{display:block;margin-top:16px;font-size:52px;letter-spacing:-.01em;color:var(--paper);text-shadow:0 2px 20px rgba(0,0,0,.85)}
+#subs{z-index:22}
+.sub{position:absolute;left:60px;top:1392px;width:960px;text-align:center;font-size:52px;line-height:1.34;letter-spacing:-.02em;color:var(--paper);text-shadow:0 2px 20px rgba(0,0,0,.6)}
+#chipclip{z-index:21}
+#chip{position:absolute;left:600px;top:946px;width:300px;padding:20px 26px 22px;background:rgba(243,239,230,.95);border-radius:2px;color:var(--ink);box-shadow:0 20px 40px rgba(0,0,0,.4)}
+#chip .k{display:block;font-size:24px;color:rgba(22,20,15,.6);margin-bottom:6px}
+#chip b{display:block;font-family:"CormI",serif;font-style:italic;font-weight:500;font-size:60px;line-height:1;color:var(--ink)}
+#chip span{display:block;margin-top:10px;font-size:30px;color:rgba(22,20,15,.85)}
+#lead{position:absolute;left:600px;top:946px;width:1px;height:1px}
+#lead i{position:absolute;left:-36px;top:-36px;width:52px;height:1px;background:rgba(243,239,230,.85);transform-origin:0 50%;transform:rotate(45deg)}
+
+/* paper flood around the mirror glass → end medallion */
+#paper{z-index:30}
+#hole{position:absolute;left:40px;top:0;width:1000px;height:1000px;border-radius:50%;transform-origin:500px 500px;box-shadow:0 0 0 3.5px rgba(22,20,15,.22),0 0 0 4200px #F3EFE6}
+#end{z-index:31;color:var(--ink)}
+#lock{position:absolute;left:320px;top:848px;width:440px;height:146px}
+#endH{position:absolute;left:0;top:1030px;width:1080px;text-align:center;font-size:60px;line-height:1.3;letter-spacing:-.02em}
+#benefit{position:absolute;left:0;top:1228px;width:1080px;text-align:center;font-size:40px;color:var(--seal)}
+#cta{position:absolute;left:0;top:1298px;width:1080px;text-align:center}
+#cta u{text-decoration:none;display:inline-flex;align-items:center;height:86px;padding:0 46px;border-radius:999px;background:var(--ink);font-family:var(--serif);font-size:38px;font-weight:600;color:var(--paper)}
+#note{position:absolute;left:0;top:1412px;width:1080px;text-align:center;font-size:30px;color:rgba(22,20,15,.5)}
+#vig{z-index:40;background:radial-gradient(ellipse 95% 85% at 50% 48%,transparent 60%,rgba(0,0,0,.34) 100%)}
+#grain{z-index:41;opacity:.05;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="16.2" data-width="1080" data-height="1920">
+
+  <!-- the real painting: Jan van Eyck, The Arnolfini Portrait (1434), public domain (ad-assets), +12% brightness -->
+  <div id="artbox" class="clip full" data-start="0" data-duration="16.2" data-track-index="1" data-track-kind="graphics">
+    <div id="artfade" class="full">
+      <div id="art">
+        <img src="assets/img/arn.jpg" alt="">
+        <div id="sweep"><div id="band"></div></div>
+        <div id="dim"></div>
+        <svg id="ring" viewBox="0 0 3840 5253"><circle id="ringC" cx="1946" cy="1572" r="50" fill="none" stroke="rgba(243,239,230,.85)" stroke-width="2.2" vector-effect="non-scaling-stroke" pathLength="1" stroke-dasharray="1" stroke-dashoffset="0" transform="rotate(-90 1946 1572)"/></svg>
+      </div>
+      <div id="scrimT"></div><div id="scrimB"></div><div id="scrimH"></div>
+    </div>
+  </div>
+
+  <div id="phoneclip" class="clip full" data-start="2.4" data-duration="4.9" data-track-index="2" data-track-kind="graphics">
+    <div id="phonewrap">
+      <div id="floor"></div>
+      <div id="phone"></div>
+      <div id="screen">
+        <img id="uiTop" src="assets/img/ui-top.jpg" alt="">
+        <img id="uiEn" src="assets/img/ui-en.jpg" alt="">
+        <img id="uiLook" src="assets/img/ui-look.jpg" alt="">
+        <div id="scrfade"></div>
+        <div id="hlEn" class="hl"></div>
+        <div id="hlRow" class="hl"></div>
+      </div>
+    </div>
+    <div id="shade"></div><div id="botfade"></div>
+  </div>
+
+  <div id="hook" class="clip full" data-start="0" data-duration="2.4" data-track-index="3" data-track-kind="graphics">
+    <div id="tag" class="mono"><svg viewBox="20 20 164 164"><rect x="34" y="34" width="132" height="132" rx="40" fill="none" stroke="#F3EFE6" stroke-width="20"/><path d="M124 124 L170 170" stroke="#C2412B" stroke-width="20" stroke-linecap="square"/></svg>QURATOR · DAILY ART</div>
+    <div id="hookT" class="ko"><span class="mask"><span>이 거울 속 문간에,</span></span><span class="mask"><span><em>화가</em>가 서 있다고 합니다.</span></span></div>
+  </div>
+
+  <div id="caps" class="clip full" data-start="2.4" data-duration="4.9" data-track-index="4" data-track-kind="graphics">
+    <div id="capA" class="cap ko"><span class="n"><span class="mono">QURATOR</span><span style="margin:0 14px">·</span><b class="serif">매일 첫 작품 무료</b></span><div class="t serif"><span class="mask"><span>매일 아침 명작 세 점,</span></span><span class="mask"><span>보는 법까지.</span></span></div></div>
+    <div id="cap1" class="cap ko"><span class="n mono">01</span><div class="t serif"><span class="mask"><span>영어 해설 + 한국어 번역</span></span></div></div>
+    <div id="cap2" class="cap ko"><span class="n mono">02</span><div class="t serif"><span class="mask"><span>이것을 찾아보세요 · 매일 3가지</span></span></div></div>
+  </div>
+
+  <div id="siglab" class="clip full" data-start="7.3" data-duration="2.2" data-track-index="5" data-track-kind="graphics">
+    <div id="sigL"><span class="a mono">Johannes de eyck fuit hic · 1434</span><span class="b ko serif">얀 반 에이크가 여기 있었다</span></div>
+  </div>
+
+  <!-- docent line = audio/w-arnolfini/ko-12.mp3 (product narration) at 7.1 s: speech 7.58–9.70 and 10.03–12.82 -->
+  <div id="subs" class="clip full" data-start="7.5" data-duration="5.4" data-track-index="6" data-track-kind="captions">
+    <div id="sub1" class="sub ko serif">벽에 직접 쓴 듯한 이 서명은</div>
+    <div id="sub2" class="sub ko serif">화가가 이 장면의<br>증인이었음을 암시합니다.</div>
+  </div>
+
+  <div id="chipclip" class="clip full" data-start="10.0" data-duration="2.95" data-track-index="7" data-track-kind="graphics">
+    <div id="lead"><i></i></div>
+    <div id="chip"><span class="k mono">Words to know</span><b>witness</b><span class="ko">증인, 목격자</span></div>
+  </div>
+
+  <div id="paper" class="clip full" data-start="12.8" data-duration="3.4" data-track-index="8" data-track-kind="graphics"><div id="hole"></div></div>
+
+  <div id="end" class="clip full" data-start="13.1" data-duration="3.1" data-track-index="9" data-track-kind="graphics">
+    <img id="lock" src="assets/img/logo-lockup.svg" alt="">
+    <div id="endH" class="ko serif"><span class="mask"><span>매일 아침 명작 세 점,</span></span><span class="mask"><span>보는 법까지.</span></span></div>
+    <div id="benefit" class="ko serif">매일 첫 작품 무료</div>
+    <div id="cta"><u class="ko">오늘의 작품 보기 →</u></div>
+    <div id="note" class="ko">앱 설치 없이 바로 열려요</div>
+  </div>
+
+  <div id="vig" class="clip full" data-start="0" data-duration="12.9" data-track-index="10"></div>
+  <div id="grain" class="clip full" data-start="0" data-duration="16.2" data-track-index="11"></div>
+
+  <audio id="mix" src="assets/audio/mirror-mix.wav" data-start="0" data-duration="16.2" data-track-index="12" data-volume="1"></audio>
+</div>
+
+<script>
+(function(){
+const tl=gsap.timeline({paused:true});
+const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
+const seg=(t,a,b)=>clamp((t-a)/(b-a),0,1);
+const io=u=>u<.5?4*u*u*u:1-Math.pow(-2*u+2,3)/2;
+const sio=u=>-(Math.cos(Math.PI*u)-1)/2;
+
+/* camera keys over the painting (image px → screen px); scale interpolates in log space */
+const K=[
+ {t:0.00, s:1.75, ix:1946,iy:1568, sx:540,sy:780, e:sio},
+ {t:2.20, s:2.10, ix:1946,iy:1568, sx:540,sy:750,  e:io},
+ {t:3.20, s:0.118646, ix:1920,iy:2626.5, sx:540,sy:830.1, e:null},
+ {t:7.30, s:1.98, ix:1868,iy:1110, sx:556,sy:880, e:sio},
+ {t:9.20, s:1.90, ix:1868,iy:1110, sx:530,sy:880, e:io},
+ {t:9.80, s:1.58, ix:1946,iy:1568, sx:540,sy:900, e:sio},
+ {t:12.90,s:1.53, ix:1946,iy:1568, sx:540,sy:900, e:io},
+ {t:13.60,s:1.2, ix:1935,iy:1553, sx:540,sy:600, e:null}
+];
+const art=document.getElementById("art"), hole=document.getElementById("hole");
+function camAt(t){
+  let a=K[0],b=K[1];
+  for(let i=0;i<K.length-1;i++){ if(t>=K[i].t){a=K[i];b=K[i+1];} }
+  if(t>=K[K.length-1].t) return K[K.length-1];
+  if(!a.e) return a;
+  const u=a.e(seg(t,a.t,b.t));
+  return {s:Math.exp(Math.log(a.s)+(Math.log(b.s)-Math.log(a.s))*u), ix:a.ix+(b.ix-a.ix)*u, iy:a.iy+(b.iy-a.iy)*u, sx:a.sx+(b.sx-a.sx)*u, sy:a.sy+(b.sy-a.sy)*u};
+}
+function renderAt(t){
+  const c=camAt(t), tx=c.sx-c.s*c.ix, ty=c.sy-c.s*c.iy;
+  art.style.transform="translate("+tx.toFixed(2)+"px,"+ty.toFixed(2)+"px) scale("+c.s.toFixed(5)+")";
+  /* the mirror glass (centre 1932,1553 · r 171 image px) is the hole the paper floods around */
+  const gx=tx+c.s*1935, gy=ty+c.s*1553, r=164*c.s;
+  hole.style.transform="translate("+(gx-540).toFixed(2)+"px,"+(gy-500).toFixed(2)+"px) scale("+(r/500).toFixed(5)+")";
+}
+
+/* S1 hook — everything already on screen at frame 0 */
+tl.fromTo("#dim",{opacity:1},{opacity:1,duration:.01},0);
+tl.to("#hookT .mask > span",{yPercent:-110,duration:.22,ease:"power3.in",stagger:.04},2.08);
+tl.to("#tag",{opacity:0,duration:.2},2.1);
+tl.to("#ringC",{opacity:0,duration:.18},2.08);
+tl.to("#dim",{opacity:0,duration:.25},2.08);
+tl.to("#scrimT,#scrimH",{opacity:0,duration:.4},2.2);
+tl.set("#scrimB",{opacity:0},0);
+
+/* S2 pull-out lands in the phone */
+tl.fromTo("#phone,#floor",{opacity:0},{opacity:1,duration:.55,ease:"power2.out"},2.62);
+tl.set("#uiEn,#uiLook,#hlEn,#hlRow,#cap1,#cap2,#shade,#botfade",{opacity:0},0);
+tl.to("#artfade",{opacity:0,duration:.12,ease:"none"},3.22);
+tl.fromTo("#capA .n",{opacity:0},{opacity:1,duration:.3},2.5);
+tl.fromTo("#capA .mask > span",{yPercent:110},{yPercent:0,duration:.5,ease:"expo.out",stagger:.07},2.5);
+tl.to("#capA",{opacity:0,duration:.18,ease:"power2.in"},3.86);
+
+/* S3 camera pushes into the phone so the app text reads (screen 1.75x: body about 44 px) */
+tl.to("#phonewrap",{scale:1.55,duration:.45,ease:"power2.inOut",transformOrigin:"540px 454px"},3.9);
+tl.to("#shade,#botfade",{opacity:1,duration:.3},4.0);
+tl.set("#uiEn,#cap1",{opacity:1},4.35);
+tl.fromTo("#hlEn",{opacity:0,scale:1.08},{opacity:1,scale:1,duration:.3,ease:"expo.out"},4.6);
+tl.fromTo("#cap1 .mask > span",{yPercent:110},{yPercent:0,duration:.45,ease:"expo.out"},4.35);
+tl.to("#cap1",{opacity:0,duration:.12},5.7);
+tl.set("#uiLook,#cap2",{opacity:1},5.8);
+tl.set("#hlEn",{opacity:0},5.8);
+tl.fromTo("#cap2 .mask > span",{yPercent:110},{yPercent:0,duration:.45,ease:"expo.out"},5.8);
+tl.fromTo("#hlRow",{opacity:0,scale:1.04},{opacity:1,scale:1,duration:.3,ease:"expo.out"},6.3);
+tl.to("#cap2",{opacity:0,duration:.18,ease:"power2.in"},7.0);
+tl.to("#phonewrap",{scale:2.0,duration:.22,ease:"expo.in",transformOrigin:"540px 913px"},7.08);
+
+/* S4 hard cut to the real signature, then tilt down to the doorway */
+tl.set("#artfade,#scrimT,#scrimB",{opacity:1},7.3);
+tl.fromTo("#sigL .a",{opacity:0,y:10},{opacity:1,y:0,duration:.45,ease:"expo.out"},7.36);
+tl.fromTo("#sigL .b",{opacity:0,y:14},{opacity:1,y:0,duration:.45,ease:"expo.out"},7.46);
+tl.fromTo("#band",{x:-140,opacity:0},{x:520,opacity:1,duration:.9,ease:"sine.inOut"},7.6);
+tl.to("#band",{opacity:0,duration:.3},8.3);
+tl.to("#sigL",{opacity:0,y:-12,duration:.2,ease:"power3.in"},9.08);
+tl.fromTo("#sub1",{opacity:0},{opacity:1,duration:.3},7.5);
+tl.to("#sub1",{opacity:0,duration:.1},9.82);
+tl.fromTo("#sub2",{opacity:0},{opacity:1,duration:.12},9.94);
+tl.to("#scrimT",{opacity:.5,duration:.5},9.2);
+tl.set("#ringC",{opacity:1,attr:{"stroke-dashoffset":1}},9.6);
+tl.to("#ringC",{attr:{"stroke-dashoffset":0},duration:.32,ease:"power2.inOut"},10.0);
+tl.to("#dim",{opacity:1,duration:.4},10.0);
+tl.fromTo("#lead i",{scaleX:0},{scaleX:1,duration:.22,ease:"expo.out"},10.22);
+tl.fromTo("#chip",{opacity:0,y:20},{opacity:1,y:0,duration:.45,ease:"expo.out"},10.3);
+tl.to("#sub2,#chip,#lead",{opacity:0,duration:.25},12.75);
+tl.to("#ringC,#dim",{opacity:0,duration:.25},12.75);
+tl.to("#scrimT,#scrimB",{opacity:0,duration:.4},12.8);
+
+/* paper floods in around the mirror glass; the glass travels up and becomes the end medallion */
+tl.fromTo("#paper",{opacity:0},{opacity:1,duration:.16,ease:"none"},12.84);
+tl.fromTo("#lock",{opacity:0,y:14},{opacity:1,y:0,duration:.45,ease:"expo.out"},13.15);
+tl.fromTo("#endH .mask > span",{yPercent:110},{yPercent:0,duration:.5,ease:"expo.out",stagger:.06},13.25);
+tl.fromTo("#benefit",{opacity:0,y:10},{opacity:1,y:0,duration:.4,ease:"expo.out"},13.45);
+tl.fromTo("#cta u",{opacity:0,y:12},{opacity:1,y:0,duration:.4,ease:"expo.out"},13.55);
+tl.fromTo("#note",{opacity:0},{opacity:1,duration:.4},13.65);
+
+window.addEventListener("hf-seek",e=>renderAt(e.detail.time));
+window.__hf=window.__hf||{}; window.__hf.buildReady=window.__hf.buildReady||{};
+window.__hf.buildReady.fonts=Promise.all([document.fonts.load('600 30px SerifKR','명작'),document.fonts.load('500 30px PlexK','증인'),document.fonts.load('500 20px PlexMono','A'),document.fonts.load('italic 500 30px CormI','witness')]).then(()=>renderAt(0));
+renderAt(0);
+window.__timelines=window.__timelines||{};
+window.__timelines["main"]=tl;
+tl.seek(0);
+})();
+</script>
+</body>
+</html>
