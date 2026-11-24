@@ -1,5 +1,562 @@
 [
  {
+  "id": "christmas-in-paintings-14",
+  "asof": "2026.11.25",
+  "kicker": {
+   "ko": "테마 특집",
+   "en": "Theme"
+  },
+  "title": {
+   "ko": "명화 속 크리스마스, 성탄을 그린 14점",
+   "en": "Christmas in Paintings: 14 Nativities Across Seven Centuries"
+  },
+  "dek": {
+   "ko": "아기에게서 나오는 빛으로 밤을 밝힌 그림, 눈발 속에 숨은 동방박사, 반세기째 돌아오지 않은 카라바조까지. 조토에서 고갱까지 칠백 년 동안 화가들이 성탄을 그린 방식을 열네 점으로 따라갑니다.",
+   "en": "Nights lit only by a newborn child, three kings hidden in falling snow, and a Caravaggio missing for more than half a century: fourteen paintings that trace how artists pictured Christmas, from Giotto to Gauguin."
+  },
+  "intro": {
+   "ko": "대림절이 시작되는 11월 말, 크리스마스를 앞두고 서양 미술이 칠백 년 동안 되풀이해 그려 온 성탄 장면을 모았습니다. 같은 이야기를 그렸지만 화가마다 시대마다 묻는 질문이 다릅니다. 빛은 어디서 오는가, 왕들은 얼마나 화려한가, 그리고 그 이야기는 지금 우리 마을에서 일어날 수 있는가.\n세 갈래로 나누었습니다. 먼저 베들레헴의 밤을 빛으로 그린 다섯 점, 다음으로 별을 따라온 동방박사 네 점, 마지막으로 성탄을 플랑드르 마을과 타히티, 사라진 제단으로 옮겨 다시 그린 다섯 점입니다. 소장처와 연도는 미술관 공식 기록을 기준으로 했고, 학설이 갈리는 연도는 그대로 표기했습니다.",
+   "en": "As Advent begins at the end of November, we gathered the Nativity scenes that Western art has painted again and again for seven hundred years. The story is the same, but each painter and each age asks a different question: where does the light come from, how splendid are the kings, and could this happen in our own village today?\nThe feature has three parts: five paintings of the night at Bethlehem told through light, four of the Magi following the star, and five that move Christmas into a Flemish village, a Tahitian room or a vanished altar. Collections and dates follow the museums' own records, and disputed dates are given as disputed."
+  },
+  "cover": [
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Geertgen%20tot%20Sint%20Jans%2C%20The%20Nativity%20at%20Night%2C%20c%201490.jpg?width=1600",
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Adoration%20of%20the%20Magi%20in%20the%20Snow%2C%201563.jpg?width=1600",
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Sandro%20Botticelli%20-%20The%20Mystical%20Nativity%20-%20WGA2842.jpg?width=1600",
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Gauguin%20-%20Te%20Tamari%20no%20Atua%20%28Son%20of%20God%29.jpg?width=1600"
+  ],
+  "sections": [
+   {
+    "title": {
+     "ko": "베들레헴의 밤",
+     "en": "The Night at Bethlehem"
+    },
+    "dek": {
+     "ko": "조토의 푸른 밤하늘부터 아기에게서 빛이 나오는 코레조의 거룩한 밤까지.",
+     "en": "From Giotto's blue night sky to Correggio's holy night, lit by the child alone."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "그리스도의 탄생",
+       "en": "The Nativity"
+      },
+      "artist": {
+       "ko": "조토 디 본도네",
+       "en": "Giotto di Bondone"
+      },
+      "year": "1303–05년 · 1303–05",
+      "medium": {
+       "ko": "프레스코",
+       "en": "Fresco"
+      },
+      "headline": {
+       "ko": "스크로베니 예배당, 파도바 · 1303–1305년",
+       "en": "Scrovegni Chapel, Padua · 1303–1305"
+      },
+      "why": {
+       "ko": "파도바의 부자 엔리코 스크로베니가 고리대금업자로 비난받던 아버지의 영혼을 위해 지은 예배당 벽 전체를 조토가 성모와 그리스도의 이야기로 채웠고, 이 장면은 그 가운데 하나다. 금빛 배경 대신 별 박힌 푸른 하늘 아래 실제 공간과 무게를 지닌 인물을 세워, 비잔틴 전통을 넘어선 서양 회화의 출발점으로 꼽힌다.",
+       "en": "Giotto covered every wall of the chapel that Enrico Scrovegni, a rich Paduan, built for the soul of his father, a man accused of usury, with the lives of the Virgin and Christ; this nativity is one of the scenes. Placing solid, weighty figures in real space under a starry blue vault instead of a gold ground, the cycle is seen as a starting point of Western painting beyond the Byzantine tradition."
+      },
+      "pd": true,
+      "commons": "Giotto - Scrovegni - -17- - Nativity, Birth of Jesus.jpg",
+      "sources": [
+       {
+        "label": "Padova Cultura · Scrovegni Chapel",
+        "url": "https://padovacultura.padovanet.it/en/musei/scrovegni-chapel"
+       },
+       {
+        "label": "Wikipedia · Scrovegni Chapel",
+        "url": "https://en.wikipedia.org/wiki/Scrovegni_Chapel"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "그리스도의 탄생",
+       "en": "The Nativity"
+      },
+      "artist": {
+       "ko": "피에로 델라 프란체스카",
+       "en": "Piero della Francesca"
+      },
+      "year": "1480년대 초 · early 1480s",
+      "medium": {
+       "ko": "나무에 유채, 124.4×122.6cm",
+       "en": "Oil on wood, 124.4 × 122.6 cm"
+      },
+      "headline": {
+       "ko": "내셔널 갤러리, 런던 · 1480년대 초",
+       "en": "The National Gallery, London · early 1480s"
+      },
+      "why": {
+       "ko": "스웨덴의 성녀 브리지타가 본 환시를 바탕으로, 성모가 맨땅에 아기를 눕히고 무릎 꿇은 장면을 고향 산세폴크로의 토스카나 풍경 속에 옮겼다. 피에로 말년의 작품으로 집안 저택 침실에 걸려 있었고, 지나친 세척 탓에 오래 '미완성'으로 오해받다가 2022년 복원으로 본래 의도가 드러났다.",
+       "en": "Following a vision described by Saint Bridget of Sweden, Piero sets the Virgin kneeling before her child, laid on the bare ground, in the Tuscan countryside of his hometown, Sansepolcro. One of his last works, it hung in his family's house; damaged by overcleaning and long thought unfinished, it regained its original intent in a restoration completed in 2022."
+      },
+      "pd": true,
+      "commons": "Piero della Francesca - Nativity - WGA17620.jpg",
+      "sources": [
+       {
+        "label": "National Gallery, London",
+        "url": "https://www.nationalgallery.org.uk/paintings/piero-della-francesca-the-nativity"
+       },
+       {
+        "label": "Wikipedia · The Nativity (Piero della Francesca)",
+        "url": "https://en.wikipedia.org/wiki/The_Nativity_(Piero_della_Francesca)"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "밤의 그리스도 탄생",
+       "en": "The Nativity at Night"
+      },
+      "artist": {
+       "ko": "헤이르트헌 토트 신트 얀스",
+       "en": "Geertgen tot Sint Jans"
+      },
+      "year": "1490년 무렵 · possibly about 1490",
+      "medium": {
+       "ko": "나무에 유채, 34×25.3cm",
+       "en": "Oil on wood, 34 × 25.3 cm"
+      },
+      "headline": {
+       "ko": "내셔널 갤러리, 런던 · 1490년 무렵",
+       "en": "The National Gallery, London · possibly about 1490"
+      },
+      "why": {
+       "ko": "캄캄한 마구간에서 빛이 아기 예수에게서 나와 성모와 천사들의 얼굴을 비춘다. 아기에게서 나온 빛이 요셉의 촛불을 무색하게 했다는 성녀 브리지타의 글을 그림으로 옮긴 것으로, 같은 착상의 휘호 반 데르 후스 원작이 사라진 지금 '빛으로 그린 성탄'의 가장 오래된 걸작 가운데 하나로 남았다.",
+       "en": "In the dark stable, light streams from the Christ Child himself, catching the faces of Mary and the angels. It translates Saint Bridget's account of a divine light that made Joseph's candle useless, and with the lost night nativities by Hugo van der Goes that inspired it gone, it survives as one of the earliest masterpieces of a Christmas painted with light alone."
+      },
+      "pd": true,
+      "commons": "Geertgen tot Sint Jans, The Nativity at Night, c 1490.jpg",
+      "sources": [
+       {
+        "label": "National Gallery, London",
+        "url": "https://www.nationalgallery.org.uk/paintings/geertgen-tot-sint-jans-the-nativity-at-night"
+       },
+       {
+        "label": "Wikipedia · Nativity at Night",
+        "url": "https://en.wikipedia.org/wiki/Nativity_at_Night"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "신비의 탄생",
+       "en": "Mystic Nativity"
+      },
+      "artist": {
+       "ko": "산드로 보티첼리",
+       "en": "Sandro Botticelli"
+      },
+      "year": "1500년 · 1500",
+      "medium": {
+       "ko": "캔버스에 유채, 108.6×74.9cm",
+       "en": "Oil on canvas, 108.6 × 74.9 cm"
+      },
+      "headline": {
+       "ko": "내셔널 갤러리, 런던 · 1500년",
+       "en": "The National Gallery, London · 1500"
+      },
+      "why": {
+       "ko": "황금빛 하늘에서 천사들이 원을 그려 춤추고, 아래에서는 천사와 사람이 껴안으며 악마들이 바위 틈으로 달아난다. 위쪽 그리스어 글은 프랑스 침공과 피렌체의 내분을 '이탈리아의 혼란'이라 부르며 요한묵시록에 견주는데, 사보나롤라의 설교에 깊이 기운 말년의 보티첼리가 평화를 기다리며 그린 그림으로 읽힌다.",
+       "en": "Angels dance in a ring beneath a golden heaven, while below angels embrace men and little devils scurry into cracks in the rocks. The Greek inscription at the top links 'the troubles of Italy', the French invasions and civil strife in Florence, to the Book of Revelation, and the picture is read as the late Botticelli, deeply touched by Savonarola's preaching, waiting for peace."
+      },
+      "pd": true,
+      "commons": "Sandro Botticelli - The Mystical Nativity - WGA2842.jpg",
+      "sources": [
+       {
+        "label": "National Gallery, London",
+        "url": "https://www.nationalgallery.org.uk/paintings/sandro-botticelli-mystic-nativity"
+       },
+       {
+        "label": "Wikipedia · The Mystical Nativity",
+        "url": "https://en.wikipedia.org/wiki/The_Mystical_Nativity"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "거룩한 밤 (목자들의 경배)",
+       "en": "The Holy Night (Adoration of the Shepherds)"
+      },
+      "artist": {
+       "ko": "코레조",
+       "en": "Correggio"
+      },
+      "year": "1528–30년 무렵 · c. 1528–30",
+      "medium": {
+       "ko": "캔버스에 유채, 256.5×188cm",
+       "en": "Oil on canvas, 256.5 × 188 cm"
+      },
+      "headline": {
+       "ko": "드레스덴 국립미술관 고전거장회화관 · 1528–30년 무렵",
+       "en": "Gemäldegalerie Alte Meister, Dresden · c. 1528–30"
+      },
+      "why": {
+       "ko": "1522년 레조 에밀리아의 산 프로스페로 성당 가족 예배당을 위해 주문받아 1530년에 걸린 제단화로, 아기에게서 퍼지는 빛만으로 어두운 밤을 밝힌 명암 처리로 이름났다. 1640년 에스테 공작이 성당에서 빼내 자기 화랑으로 가져갔고 1746년 드레스덴으로 옮겨졌으며, 이후 레니·도메니키노 등 여러 세대 화가들의 본보기가 되었다.",
+       "en": "Commissioned in 1522 for a family chapel in San Prospero, Reggio Emilia, and installed in 1530, it is famous for lighting a dark night entirely from the radiance of the child. Duke Francesco I d'Este removed it to his own gallery in 1640, it went to Dresden in 1746, and generations of painters from Reni to Domenichino took it as a model."
+      },
+      "pd": true,
+      "commons": "Correggio - The Holy Night - Google Art Project.jpg",
+      "sources": [
+       {
+        "label": "Wikipedia · Nativity (Correggio)",
+        "url": "https://en.wikipedia.org/wiki/Nativity_(Correggio)"
+       },
+       {
+        "label": "Reggio Emilia Welcome · The Holy Night by Correggio",
+        "url": "https://www.reggioemiliawelcome.it/en/discover-reggio-emilia/art-and-culture/monuments-and-artworks/reggio-emilia/the-holy-night-by-il-correggio"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": {
+     "ko": "별을 따라온 사람들",
+     "en": "Following the Star"
+    },
+    "dek": {
+     "ko": "금박으로 빛나는 왕들의 행렬에서, 눈발 속에 숨은 브뤼헐의 마구간까지.",
+     "en": "From processions of kings in gleaming gold to Bruegel's stable hidden in the snow."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "동방박사의 경배",
+       "en": "Adoration of the Magi"
+      },
+      "artist": {
+       "ko": "젠틸레 다 파브리아노",
+       "en": "Gentile da Fabriano"
+      },
+      "year": "1423년 · 1423",
+      "medium": {
+       "ko": "나무에 템페라, 300×282cm",
+       "en": "Tempera on wood, 300 × 282 cm"
+      },
+      "headline": {
+       "ko": "우피치 미술관, 피렌체 · 1423년",
+       "en": "Uffizi Galleries, Florence · 1423"
+      },
+      "why": {
+       "ko": "은행가 팔라 스트로치가 산타 트리니타 성당 가족 예배당을 위해 주문한 제단화로, 화려한 옷의 세 왕과 이국의 동물이 섞인 행렬이 별을 따라 아기 앞에 이른다. 금속박을 도드라지게 붙여 박차와 칼자루를 입체로 만든 솜씨로, 이탈리아 국제 고딕 양식의 가장 중요한 작품으로 꼽힌다.",
+       "en": "Commissioned by the banker Palla Strozzi for his family chapel in Santa Trinita, it shows the three richly dressed kings and a procession of exotic animals arriving before the child, guided by the star. Its raised, embossed metal leaf, which makes spurs and sword hilts stand out in relief, makes it the most important example of International Gothic painting in Italy."
+      },
+      "pd": true,
+      "commons": "Gentile da Fabriano - Adorazione dei Magi - Google Art Project.jpg",
+      "sources": [
+       {
+        "label": "Uffizi · Adoration of the Magi (Gentile da Fabriano)",
+        "url": "https://www.uffizi.it/en/artworks/adoration-of-the-magi"
+       },
+       {
+        "label": "Wikipedia · Adoration of the Magi (Gentile da Fabriano)",
+        "url": "https://en.wikipedia.org/wiki/Adoration_of_the_Magi_(Gentile_da_Fabriano)"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "동방박사의 경배 (원형화)",
+       "en": "The Adoration of the Magi (tondo)"
+      },
+      "artist": {
+       "ko": "프라 안젤리코·프라 필리포 리피",
+       "en": "Fra Angelico and Fra Filippo Lippi"
+      },
+      "year": "1440/1460년 무렵 · c. 1440/1460",
+      "medium": {
+       "ko": "포플러 패널에 템페라, 지름 137.3cm",
+       "en": "Tempera on poplar panel, diameter 137.3 cm"
+      },
+      "headline": {
+       "ko": "워싱턴 내셔널 갤러리 오브 아트 · 1440/1460년 무렵",
+       "en": "National Gallery of Art, Washington · c. 1440/1460"
+      },
+      "why": {
+       "ko": "백 명이 넘는 인물이 산길을 굽이쳐 내려오는 둥근 그림으로, 메디치 집안이 프라 안젤리코에게 주문하고 그가 죽은 뒤 필리포 리피가 완성한 것으로 본다. 1492년 로렌초 데 메디치의 재산 목록에 그의 방에 걸린 가장 값진 그림으로 기록되었는데, 같은 방에 우첼로의 〈산 로마노 전투〉 세 폭도 함께 있었다.",
+       "en": "More than a hundred figures wind down the hills in this great round panel, probably commissioned by the Medici from Fra Angelico and completed after his death by Filippo Lippi. The 1492 inventory of Lorenzo de' Medici lists it as the most valuable painting in his room, the same room that held Uccello's three Battle of San Romano panels."
+      },
+      "pd": true,
+      "commons": "Fra Angelico, Fra Filippo Lippi, The Adoration of the Magi.jpg",
+      "sources": [
+       {
+        "label": "National Gallery of Art · The Adoration of the Magi",
+        "url": "https://www.nga.gov/collection/art-object-page.41581.html"
+       },
+       {
+        "label": "NGA · Art up Close",
+        "url": "https://www.nga.gov/stories/articles/art-close-fra-angelico-and-fra-filippo-lippis-spectacular-adoration-magi"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "동방박사의 경배",
+       "en": "Adoration of the Magi"
+      },
+      "artist": {
+       "ko": "알브레히트 뒤러",
+       "en": "Albrecht Dürer"
+      },
+      "year": "1504년 · 1504",
+      "medium": {
+       "ko": "나무에 유채, 99×113.5cm",
+       "en": "Oil on wood, 99 × 113.5 cm"
+      },
+      "headline": {
+       "ko": "우피치 미술관, 피렌체 · 1504년",
+       "en": "Uffizi Galleries, Florence · 1504"
+      },
+      "why": {
+       "ko": "이미 이탈리아를 한 번 다녀온 뒤라, 북유럽의 섬세한 세부와 이탈리아식의 단단한 인물·공간을 한 화면에 결합한 걸작으로 평가된다. 옆얼굴의 긴 금발 왕은 뒤러 자신의 모습으로 여겨지고, 성모 곁 회색 돌에 연도 '1504'와 'AD' 머리글자를 남겼다.",
+       "en": "Painted after his first journey to Italy, it is admired for joining Northern precision of detail with solid Italian figures and space. The king in profile with long blond curls is thought to be Dürer himself, and he left the date 1504 and his AD monogram on the grey stone beside the Virgin."
+      },
+      "pd": true,
+      "commons": "Albrecht Dürer - Adorazione dei Magi - Google Art Project.jpg",
+      "sources": [
+       {
+        "label": "Uffizi · Adoration of the Magi (Dürer)",
+        "url": "https://uffizi.it/en/artworks/adoration-of-the-magi-durer"
+       },
+       {
+        "label": "Wikipedia · Adoration of the Magi (Dürer)",
+        "url": "https://en.wikipedia.org/wiki/Adoration_of_the_Magi_(D%C3%BCrer)"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "눈 속의 동방박사 경배",
+       "en": "Adoration of the Magi in the Snow"
+      },
+      "artist": {
+       "ko": "피터르 브뤼헐(아버지)",
+       "en": "Pieter Bruegel the Elder"
+      },
+      "year": "1563년 · 1563",
+      "medium": {
+       "ko": "참나무 패널에 유채, 35×55cm",
+       "en": "Oil on oak panel, 35 × 55 cm"
+      },
+      "headline": {
+       "ko": "오스카 라인하르트 컬렉션 '암 뢰머홀츠', 빈터투어 · 1563년",
+       "en": "Oskar Reinhart Collection 'Am Römerholz', Winterthur · 1563"
+      },
+      "why": {
+       "ko": "동방박사의 경배가 왼쪽 아래 구석 마구간에 숨어 있고, 화면 전체에는 흰 점으로 찍은 눈발이 날린다. 두 이탈리아 예외를 빼면 서양 회화 최초로 '내리는 눈'을 그린 그림으로 꼽히며, 2019년 정밀 조사에서 연도가 1567년이 아닌 1563년으로 고쳐져 브뤼헐의 첫 눈 그림이 되었다.",
+       "en": "The adoration itself hides in a stable in the bottom left corner, while white dots of falling snow drift across the entire scene. With two Italian exceptions it is thought to be the first depiction of falling snow in Western painting, and technical study before 2019 re-read its date as 1563, not 1567, making it Bruegel's earliest snow scene."
+      },
+      "pd": true,
+      "commons": "Adoration of the Magi in the Snow, 1563.jpg",
+      "sources": [
+       {
+        "label": "Wikipedia · Adoration of the Magi in the Snow",
+        "url": "https://en.wikipedia.org/wiki/Adoration_of_the_Magi_in_the_Snow"
+       },
+       {
+        "label": "Am Römerholz · The Adoration of the Kings in the Snow",
+        "url": "https://www.roemerholz.admin.ch/sor/en/home/museum/the-collection/periods/the-netherlands--15th-to-17th-century/pieter-bruegel-the-elder--the-adoration-of-the-kings-in-the-snow.html"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": {
+     "ko": "다시 그린 성탄",
+     "en": "Christmas Retold"
+    },
+    "dek": {
+     "ko": "플랑드르의 겨울 마을, 촛불 하나의 방, 사라진 제단, 그리고 타히티.",
+     "en": "A Flemish winter village, a room lit by one candle, a vanished altar, and Tahiti."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "베들레헴의 인구 조사",
+       "en": "The Census at Bethlehem"
+      },
+      "artist": {
+       "ko": "피터르 브뤼헐(아버지)",
+       "en": "Pieter Bruegel the Elder"
+      },
+      "year": "1566년 · 1566",
+      "medium": {
+       "ko": "참나무 패널에 유채, 115.5×163.5cm",
+       "en": "Oil on oak panel, 115.5 × 163.5 cm"
+      },
+      "headline": {
+       "ko": "벨기에 왕립미술관(올드마스터스 뮤지엄), 브뤼셀 · 1566년",
+       "en": "Royal Museums of Fine Arts of Belgium (Oldmasters Museum), Brussels · 1566"
+      },
+      "why": {
+       "ko": "황제의 명으로 호적을 올리러 온 요셉과 나귀 탄 마리아가 눈 덮인 브라반트 마을의 군중 속에 섞여 있어, 성경 이야기가 16세기 플랑드르의 겨울 일상이 되었다. 세금 내는 사람들, 얼음 위 아이들까지 한 화면에 담아 성과 속을 잇는 그림으로, 1902년 경매에서 미술관이 사들였다.",
+       "en": "Joseph and Mary on her donkey, come to be registered at the emperor's command, are lost in the crowd of a snowy Brabant village, turning the Gospel story into an everyday Flemish winter. Taxpayers, children on the ice and all, it links the sacred and the ordinary; the museum bought it at auction in 1902."
+      },
+      "pd": true,
+      "commons": "Pieter Bruegel the Elder - The Numbering at Bethlehem - Google Art Project.jpg",
+      "sources": [
+       {
+        "label": "Royal Museums of Fine Arts of Belgium (Google Arts & Culture)",
+        "url": "https://artsandculture.google.com/asset/the-census-at-bethlehem-pieter-bruegel-the-elder/JwGxiyxYTZZEog"
+       },
+       {
+        "label": "Wikipedia · The Census at Bethlehem",
+        "url": "https://en.wikipedia.org/wiki/The_Census_at_Bethlehem"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "목자들의 경배",
+       "en": "The Adoration of the Shepherds"
+      },
+      "artist": {
+       "ko": "렘브란트 판 레인",
+       "en": "Rembrandt van Rijn"
+      },
+      "year": "1646년 · 1646",
+      "medium": {
+       "ko": "캔버스에 유채, 97×71.3cm",
+       "en": "Oil on canvas, 97 × 71.3 cm"
+      },
+      "headline": {
+       "ko": "알테 피나코테크, 뮌헨 · 1646년",
+       "en": "Alte Pinakothek, Munich · 1646"
+      },
+      "why": {
+       "ko": "네덜란드 총독 프레데릭 헨드릭을 위한 그리스도 연작의 마지막 그림으로, 숨은 광원 대신 아기에게서 나오는 듯한 빛이 목자들의 얼굴을 비춘다. 같은 해 그려진 런던 내셔널 갤러리의 비슷한 그림은 최근 조사에서 이 뮌헨 그림을 보고 렘브란트 공방의 뛰어난 제자가 그린 것으로 판단이 바뀌었다.",
+       "en": "The last of the Passion series painted for the stadtholder Frederik Hendrik, it lights the shepherds' faces with a glow that seems to come from the child. A similar picture of the same year in the National Gallery, London, has recently been reassessed as a study after this Munich canvas by a highly able pupil in Rembrandt's studio."
+      },
+      "pd": true,
+      "sources": [
+       {
+        "label": "Pinakothek · The Adoration of the Shepherds",
+        "url": "https://www.sammlung.pinakothek.de/en/artwork/k2xnEVN4Pd"
+       },
+       {
+        "label": "National Gallery, London",
+        "url": "https://www.nationalgallery.org.uk/paintings/pupil-of-rembrandt-the-adoration-of-the-shepherds"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "갓난아기",
+       "en": "The Newborn Child"
+      },
+      "artist": {
+       "ko": "조르주 드 라 투르",
+       "en": "Georges de La Tour"
+      },
+      "year": "1645–48년 무렵 · c. 1645–48",
+      "medium": {
+       "ko": "캔버스에 유채, 76×91cm",
+       "en": "Oil on canvas, 76 × 91 cm"
+      },
+      "headline": {
+       "ko": "렌 미술관, 렌 · 1645–48년 무렵",
+       "en": "Musée des Beaux-Arts, Rennes · c. 1645–48"
+      },
+      "why": {
+       "ko": "강보에 싸인 아기를 안은 어머니 곁에서 한 여인이 손으로 촛불을 가린 채 비추는, 후광도 천사도 없는 장면이다. 평범한 가정의 한순간처럼 그렸지만 성모와 아기, 성 안나로 보는 해석이 많아, 카라바조 계열의 명암법을 가장 고요한 성탄으로 바꾼 그림으로 꼽힌다.",
+       "en": "A woman shields a candle with her hand to light a mother holding her swaddled baby; there are no haloes and no angels. Painted like a moment in any household, it is often read as the Virgin, the Child and Saint Anne, turning Caravaggesque chiaroscuro into the quietest of Christmases."
+      },
+      "pd": true,
+      "commons": "Georges de La Tour - Newlyborn infant - Musée des Beaux-Arts de Rennes.jpg",
+      "sources": [
+       {
+        "label": "Musée des Beaux-Arts de Rennes (Google Arts & Culture)",
+        "url": "https://artsandculture.google.com/asset/qAEihRIrWH8Dfg"
+       },
+       {
+        "label": "Wikipedia · The Newborn Child",
+        "url": "https://en.wikipedia.org/wiki/The_Newborn_Child"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "성 프란치스코와 성 라우렌시오가 있는 탄생",
+       "en": "Nativity with Saint Francis and Saint Lawrence"
+      },
+      "artist": {
+       "ko": "카라바조",
+       "en": "Caravaggio"
+      },
+      "year": "1600년 또는 1609년 · 1600 or 1609",
+      "medium": {
+       "ko": "캔버스에 유채, 268×197cm",
+       "en": "Oil on canvas, 268 × 197 cm"
+      },
+      "headline": {
+       "ko": "1969년 도난, 행방불명 · 원래 팔레르모 산 로렌초 기도실",
+       "en": "Stolen in 1969, still missing · formerly Oratory of San Lorenzo, Palermo"
+      },
+      "why": {
+       "ko": "1969년 10월 팔레르모의 기도실 제단 위에서 캔버스째 잘려 나간 뒤 지금까지 돌아오지 않은, 미술사에서 가장 유명한 도난 사건의 주인공이다. 마피아 연루 증언이 수없이 엇갈렸고, 지금 제단에는 남은 사진을 바탕으로 만든 복제본이 걸려 있다. 제작 연도도 1600년과 1609년으로 학설이 갈린다.",
+       "en": "Cut from its frame above the altar of a Palermo oratory in October 1969, it has never been recovered, making it the subject of one of the most notorious art thefts in history. Testimony about the Mafia's role has conflicted endlessly, and a facsimile made from surviving photographs now hangs in its place; even its date is disputed, 1600 or 1609."
+      },
+      "pd": true,
+      "commons": "Michelangelo Merisi da Caravaggio - Nativity with St Francis and St Lawrence - WGA04193.jpg",
+      "sources": [
+       {
+        "label": "The Art Newspaper · 50 years since the theft",
+        "url": "https://www.theartnewspaper.com/2019/10/08/its-50-years-since-caravaggios-nativity-was-stolen-in-palermo-have-the-police-been-chasing-red-herrings-all-this-time"
+       },
+       {
+        "label": "Wikipedia · Nativity with Saint Francis and Saint Lawrence",
+        "url": "https://en.wikipedia.org/wiki/Nativity_with_Saint_Francis_and_Saint_Lawrence"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "신의 아들 (테 타마리 노 아투아)",
+       "en": "Te tamari no atua (The Birth)"
+      },
+      "artist": {
+       "ko": "폴 고갱",
+       "en": "Paul Gauguin"
+      },
+      "year": "1896년 · 1896",
+      "medium": {
+       "ko": "거친 삼베에 유채, 96×131.1cm",
+       "en": "Oil on hessian, 96 × 131.1 cm"
+      },
+      "headline": {
+       "ko": "바이에른 주립회화컬렉션 노이에 피나코테크, 뮌헨 · 1896년",
+       "en": "Bavarian State Painting Collections, Neue Pinakothek, Munich · 1896"
+      },
+      "why": {
+       "ko": "타히티 두 번째 체류 초기에 그린 그림으로, 제목은 폴리네시아 말로 '신의 아들'이다. 침대에 누운 타히티 여인과 뒤편의 마구간을 겹쳐 성탄을 남태평양으로 옮겼는데, 고갱의 동반자 파후라가 1896년 성탄 무렵 아이를 낳아 그 임신이 영감이 되었을 것으로 본다.",
+       "en": "Painted early in Gauguin's second stay in Tahiti, its title means 'the son of God' in Polynesian. It moves the Nativity to the South Seas, setting a Tahitian woman on a bed before a stable, and his companion Pahura's pregnancy, she gave birth around Christmas 1896, may have inspired it."
+      },
+      "pd": true,
+      "commons": "Gauguin - Te Tamari no Atua (Son of God).jpg",
+      "sources": [
+       {
+        "label": "Pinakothek · Die Geburt – Te tamari no atua",
+        "url": "https://www.sammlung.pinakothek.de/en/artwork/M0xydQB4pl"
+       },
+       {
+        "label": "Wikipedia · Te tamari no atua",
+        "url": "https://en.wikipedia.org/wiki/Te_tamari_no_atua"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "note": {
+   "ko": "모든 작품은 작가 사후 70년이 지난 퍼블릭 도메인이며, 이미지는 위키미디어 커먼즈의 퍼블릭 도메인 파일입니다(렘브란트는 같은 해 비슷한 그림과 혼동을 피하려고 글 카드로 실었습니다). 소장처·연도·크기는 각 미술관 공식 기록을 기준으로 2곳 이상 대조했습니다. 카라바조 그림은 1969년 도난 뒤 행방이 확인되지 않았고, 고갱 그림은 소장처 컬렉션 페이지에 현재 알테 피나코테크 1층 전시실로 표시되어 있습니다. 전시 위치는 바뀔 수 있으니 방문 전 확인하세요. 2026년 11월 25일 기준.",
+   "en": "All works are in the public domain (more than 70 years after the artist's death), and images are public-domain files on Wikimedia Commons (the Rembrandt appears as a text card to avoid confusion with a similar picture of the same year). Collections, dates and sizes were checked against museum records and at least one other source. The Caravaggio has not been seen since its theft in 1969, and the Gauguin is currently listed by its collection as on view on the ground floor of the Alte Pinakothek; displays change, so check before you visit. As of 25 November 2026."
+  }
+ },
+ {
   "id": "overseas-exhibitions-2026-winter",
   "asof": "2026.11.23",
   "kicker": {

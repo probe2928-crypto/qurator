@@ -9,7 +9,7 @@
 ## 작품 데이터
 | 출처 | 규모 | 해설 |
 |---|---|---|
-| `data/works.json` 큐레이션 | 101점 (국내 30, 해외 71) | 한·영 도슨트 해설, 감상 포인트, 영어 표현 |
+| `data/works.json` 큐레이션 | 106점 (국내 32, 해외 74) | 한·영 도슨트 해설, 감상 포인트, 영어 표현 |
 | Art Institute of Chicago API | 약 12만 점 | 미술관 원문 해설 → 브라우저 번역 |
 | The Met Collection API | 개별 작품만 (검색 API는 2026-10-01 종료) | 메타데이터 기반 안내 |
 | Cleveland Museum of Art Open Access | 약 6만 점 | 벽면 해설 원문 |

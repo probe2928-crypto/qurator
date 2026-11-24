@@ -1,0 +1,75 @@
+{
+ "id": "w-uccello-sanromano",
+ "segs": [
+  {
+   "ko": "흰 말을 탄 지휘관이 기병대를 이끌고 앞으로 나아갑니다. 바닥에는 부러진 창들이 이상하리만치 가지런히 놓여 있습니다. 피렌체 화가 파올로 우첼로가 그린 '산 로마노 전투'입니다.",
+   "en": "A commander on a white horse leads his cavalry forward into battle. On the ground, broken lances lie in a strangely tidy pattern. This is The Battle of San Romano, by the Florentine painter Paolo Uccello.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0
+  },
+  {
+   "ko": "1438년에서 1440년 무렵 포플러 나무 패널에 달걀 템페라로 그렸고, 일부에는 유화 물감도 썼습니다. 세로 182센티미터, 가로 320센티미터의 큰 그림으로, 런던 내셔널 갤러리가 1857년에 사들였습니다.",
+   "en": "It was probably painted around 1438 to 1440, in egg tempera with some oil on panels of poplar wood. It is a huge picture, 182 centimetres high and 320 centimetres wide, and the National Gallery in London bought it in 1857.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "먼저 가운데 흰 말을 탄 사람을 보십시오. 피렌체군 지휘관 니콜로 다 톨렌티노입니다. 붉고 금빛 나는 큰 모자를 쓰고, 지휘봉을 앞으로 내밀었습니다. 투구를 벗은 채 얼굴을 드러낸 몇 안 되는 인물입니다.",
+   "en": "Look first at the rider on the white horse in the centre. He is Niccolò da Tolentino, commander of the Florentine army. He wears a magnificent red and gold hat and thrusts his baton forward. He is one of the very few figures whose face is uncovered, while the others keep their visors down.",
+   "x": 0.5,
+   "y": 0.45,
+   "z": 1.45
+  },
+  {
+   "ko": "이 그림은 1432년 여름, 피렌체가 시에나 쪽 군대를 이긴 산 로마노 전투를 기념합니다. 왼쪽 끝에는 나팔수들이 줄지어 있고, 오른쪽에는 흰 말을 탄 기사가 세 명을 상대로 맞서고 있습니다.",
+   "en": "The picture celebrates the Battle of San Romano in the summer of 1432, when Florence defeated forces fighting on the side of Siena. At the far left, a row of mounted trumpeters sounds the charge, while on the right a knight on a white horse fights off three opponents at once.",
+   "x": 0.15,
+   "y": 0.45,
+   "z": 1.35
+  },
+  {
+   "ko": "이제 바닥을 보십시오. 부러진 창들이 격자처럼 놓여, 보이지 않는 한 점을 향해 줄지어 뻗어 있습니다. 얼굴을 묻고 쓰러진 병사까지 그 선에 맞추어 누워 있습니다. 당시 새로 발견된 선 원근법을 우첼로가 실험한 흔적입니다.",
+   "en": "Now look at the ground. The broken lances lie like a grid, running in lines towards a single invisible vanishing point. Even a dead soldier, lying face down, is stretched out along these lines. This is Uccello experimenting with linear perspective, which was still a recent discovery in his day.",
+   "x": 0.5,
+   "y": 0.85,
+   "z": 1.45
+  },
+  {
+   "ko": "뒤쪽의 산울타리도 보십시오. 분홍과 흰 장미, 오렌지, 석류가 달려 있습니다. 지금은 화면이 많이 어두워졌지만, 원래는 은박과 밝은 색이 반짝이는 화려한 그림이었습니다.",
+   "en": "Look also at the hedge behind the soldiers, dotted with pink and white roses, oranges and pomegranates. The painting has darkened a great deal over time, but it once sparkled with silver leaf and brilliant colours.",
+   "x": 0.5,
+   "y": 0.2,
+   "z": 1.35
+  },
+  {
+   "ko": "이 그림은 원래 세 폭 가운데 하나였습니다. 시에나에서 피렌체로 옮겨 온 부유한 살림베니 집안의 궁에 걸려 있었습니다. 그 뒤 로렌초 데 메디치가 세 폭을 강제로 가져가, 아치형 윗부분을 네모로 잘라 자기 궁에 걸었습니다.",
+   "en": "This was originally one of three panels, made for the palace of the wealthy Salimbeni family, who had moved to Florence from Siena. Later, Lorenzo de' Medici took the panels by force, had their arched tops cut down to rectangles, and hung them in his own palace.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1
+  },
+  {
+   "ko": "로렌초가 죽은 1492년 작성된 메디치 궁의 재산 목록에도, 세 폭이 그의 방에 걸려 있었던 기록이 남아 있습니다. 지금 세 폭은 런던 내셔널 갤러리, 피렌체 우피치, 파리 루브르로 흩어져 있습니다.",
+   "en": "The inventory drawn up in 1492, the year Lorenzo died, records the three panels hanging together in his room. Today they are scattered: one is in the National Gallery in London, one in the Uffizi in Florence, and one in the Louvre in Paris.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "그런데 2026년 12월 3일부터 2027년 3월 1일까지, 피렌체 피티 궁의 전시에서 세 폭이 역사상 처음으로 한자리에 모입니다. 메디치 궁에 걸렸던 모습을 다시 볼 수 있는 기회입니다. 우첼로는 1397년 무렵 태어나 1475년에 세상을 떠났습니다.",
+   "en": "This winter, however, from 3 December 2026 to 1 March 2027, an exhibition at the Pitti Palace in Florence brings the three panels together for the first time in history, so visitors can see them as they once hung in the Medici palace. Uccello was born around 1397 and died in 1475.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1
+  },
+  {
+   "ko": "한 걸음 물러나 다시 보십시오. 피와 혼란 대신, 장식처럼 정돈된 기사들과 바닥의 격자가 보입니다. 우리가 혼란스러운 순간을 기억할 때, 어떤 질서로 그것을 다시 그리게 되는지 떠올려 보시기 바랍니다.",
+   "en": "Step back and look again. Instead of blood and chaos, we see knights arranged like decoration and a grid laid across the ground. Think about how, when we remember a chaotic moment, we too redraw it with some kind of order.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0
+  }
+ ]
+}

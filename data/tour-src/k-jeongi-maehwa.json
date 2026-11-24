@@ -1,0 +1,75 @@
+{
+ "id": "k-jeongi-maehwa",
+ "segs": [
+  {
+   "ko": "눈 덮인 산 아래, 매화나무가 눈송이처럼 하얀 꽃을 피웠습니다. 그 사이에 작은 초가집 한 채가 숨어 있습니다. 조선 말기의 화가 고람 전기가 그린 '매화초옥도'입니다.",
+   "en": "Beneath snow-covered mountains, plum trees have burst into flowers as white as snowflakes. Hidden among them is a small thatched house. This is Plum Blossoms and a Thatched House, painted by Jeon Gi, who signed himself Goram, in the late Joseon period.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0
+  },
+  {
+   "ko": "종이에 색을 써서 그렸고, 세로 29.4센티미터, 가로 33.3센티미터의 작은 그림입니다. 국립중앙박물관이 소장하고 있으며, 박물관은 '겨울 산속의 매화에 둘러싸인 서옥'이라는 이름으로 소개합니다.",
+   "en": "It is painted in colour on paper, a small picture just 29.4 centimetres high and 33.3 centimetres wide. It belongs to the National Museum of Korea, which presents it as a scholar's study surrounded by plum blossoms in the winter mountains.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "먼저 가운데 초옥을 보십시오. 창 안에 초록 옷을 입은 사람이 앉아 있습니다. 박물관은 이 사람을, 그림을 선물받은 친구 오경석일 것이라고 봅니다.",
+   "en": "Look first at the thatched house in the middle of the picture. Inside, a figure dressed in green sits quietly by the window. The museum suggests that this is probably Oh Gyeong-seok, the friend who received the painting as a gift.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.45
+  },
+  {
+   "ko": "이제 매화를 보십시오. 줄기와 가지는 짙은 먹으로 이어 그렸고, 꽃은 흰 호분을 점으로 찍어 나타냈습니다. 그래서 매화가 마치 바람에 날리는 눈송이처럼 보입니다.",
+   "en": "Now look at the plum trees. Their trunks and branches are drawn in dark, continuous lines of ink, and every flower is a single dot of white pigment made from ground shell. That is why the blossoms seem to swirl around the house like snowflakes in the wind.",
+   "x": 0.42,
+   "y": 0.55,
+   "z": 1.3
+  },
+  {
+   "ko": "뒤쪽의 흰 산과 잔뜩 찌푸린 하늘도 보십시오. 엷은 먹을 부드럽게 겹쳐 산에 명암을 주었고, 그 위에 청록색 이끼 점을 세워 찍었습니다. 이 굵은 청록 점은 이 시기 채색 매화 그림의 특징으로 꼽힙니다.",
+   "en": "Look too at the white mountains and the heavy, frowning sky behind them. Pale ink is layered softly to give the slopes their light and shade, and blue-green moss dots are set upright on top of them. These bold blue-green dots are regarded as a hallmark of the coloured plum paintings of this period.",
+   "x": 0.5,
+   "y": 0.3,
+   "z": 1.3
+  },
+  {
+   "ko": "화면 아래쪽에는 짧은 글이 적혀 있습니다. 이 글을 보면 그림을 역매 오경석에게 그려 주었다는 것을 알 수 있습니다. 오경석은 중국을 오가던 역관이자, 훗날 개화파의 중요한 인물이 된 사람입니다.",
+   "en": "Near the bottom of the picture there is a short inscription. It tells us that the painting was made for Oh Gyeong-seok, whose pen name was Yeongmae. Oh was a government interpreter who travelled back and forth to China, and he later became an important figure among Korea's reformers.",
+   "x": 0.5,
+   "y": 0.85,
+   "z": 1.4
+  },
+  {
+   "ko": "이런 그림을 매화서옥도라고 부릅니다. 중국 송나라의 임포는 서호의 외딴 산에 숨어 살며 매화와 학을 사랑했다고 전합니다. 조선 말기 화가들은 그 이야기를 빌려, 매화에 둘러싸인 서재의 선비를 즐겨 그렸습니다.",
+   "en": "Pictures like this are known as plum-blossom studio paintings. The Song-dynasty poet Lin Bu is said to have lived alone on a remote hill by the West Lake, loving only his plum trees and his cranes. Late Joseon painters borrowed his story and loved to paint a scholar sitting in a study wrapped in blossom.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "전기는 1825년에 태어나 1854년에 세상을 떠났습니다. 약재를 다루는 중인으로, 옛 글씨와 그림을 모으고 감정했으며 그림 거래에도 관여했습니다. 추사 김정희에게 서화를 배웠고, 중인 문인들의 시 모임인 벽오사에서 활동했습니다.",
+   "en": "Jeon Gi was born in 1825 and died in 1854. He belonged to the jungin, the middle class of technical specialists, and ran a business in medicinal herbs. He also collected and judged old calligraphy and paintings, and dealt in them. He studied with the great scholar Kim Jeong-hui, known as Chusa, and was a member of Byeogosa, a poetry society of middle-class writers and artists.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "1849년 여름에는 그의 집에서, 김정희가 제자들의 글씨와 그림을 평가하는 경연이 열렸습니다. 그 평을 모은 책이 예림갑을록입니다. 전기는 서른이 채 되기 전에 세상을 떠나 남긴 작품이 많지 않습니다.",
+   "en": "In the summer of 1849, a contest was held at his own house in which Kim Jeong-hui judged the calligraphy and paintings of his pupils. The master's comments were gathered into a book called Yerim gabeullok. Because Jeon Gi died before he reached the age of thirty, only a small number of his works survive.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1
+  },
+  {
+   "ko": "한 걸음 물러나 다시 보십시오. 눈 내린 산, 하얗게 핀 매화, 그리고 그 속에서 손님을 기다리는 친구의 집. 올겨울 매화 소식을 전하고 싶은 사람이 있는지 떠올려 보시기 바랍니다.",
+   "en": "Step back and look at it again: snowy mountains, plum trees in white bloom, and a friend's house waiting for a visitor among them, a small picture made in friendship. This winter, think of someone you would like to send a little news of plum blossom to.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0
+  }
+ ]
+}
