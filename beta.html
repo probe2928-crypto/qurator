@@ -2,6 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
+<script>(function(){var h=location.hostname;if(h!=="probe2928-crypto.github.io")return;try{if(sessionStorage.getItem("q_play")==="1")return}catch(e){}var p=new URLSearchParams(location.search);if(p.get("src")==="twa"||document.referrer.indexOf("android-app://")===0)return;var s=document.createElement("script");s.async=true;s.src="https://www.googletagmanager.com/gtag/js?id=G-8YQ1BGBDR7";document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};var D={ad_storage:"denied",ad_user_data:"denied",ad_personalization:"denied"};gtag("consent","default",Object.assign({analytics_storage:"denied",region:["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IS","IE","IT","LV","LI","LT","LU","MT","NL","NO","PL","PT","RO","SK","SI","ES","SE","GB","CH"]},D));gtag("consent","default",Object.assign({analytics_storage:"granted"},D));gtag("js",new Date());gtag("config","G-8YQ1BGBDR7",{allow_google_signals:false,allow_ad_personalization_signals:false})})();</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>QURATOR 안드로이드 테스터 참여</title>
 <meta name="description" content="미술 앱 QURATOR 안드로이드 비공개 테스트 참여 방법 — 그룹 가입, 테스터 되기, 설치.">
@@ -34,13 +35,16 @@ li p{color:var(--mute);font-size:15px;margin-bottom:12px}
 <main class="wrap">
   <div class="top"><a class="wm" href="./"><img src="assets/logo-mark.svg" alt="">qurator</a><span class="tag">BETA TESTER</span></div>
   <h1>갤럭시 쓰시는 분,<br>잠깐만 <em>도와주세요</em></h1>
-  <p class="lead">매일 명화 한 점과 3분 음성 해설을 보여 주는 무료 미술 앱이에요. 구글 플레이 정식 출시 전, 테스터로 참여해 주세요. 버튼 세 번이면 끝나요.</p>
+  <p class="lead">매일 아침 명작 세 점을 글과 목소리 해설로 보여 주는 무료 미술 앱이에요. 구글 플레이 정식 출시 전, 테스터로 참여해 주세요. 버튼 세 번이면 끝나요.</p>
   <ol>
-    <li><span class="n">1</span><div><b>그룹 가입</b><p>열리는 화면에서 '그룹 가입'을 눌러 주세요.</p><a class="btn" href="https://groups.google.com/g/qurator-testers">그룹 가입하기</a></div></li>
-    <li><span class="n">2</span><div><b>테스터 되기</b><p>'테스터 되기'를 눌러 주세요. '테스터입니다'가 보이면 완료예요.</p><a class="btn" href="https://play.google.com/apps/testing/kr.qurator.dailyart">테스터 되기</a></div></li>
-    <li><span class="n">3</span><div><b>설치하고 2주만 유지</b><p>플레이스토어에서 설치하고, 2주 동안만 지우지 말아 주세요. 가끔 열어 보시면 큰 힘이 돼요.</p><a class="btn red" href="https://play.google.com/store/apps/details?id=kr.qurator.dailyart">플레이스토어에서 설치</a></div></li>
+    <li><span class="n">1</span><div><b>그룹 가입</b><p>열리는 화면에서 '그룹 가입'을 눌러 주세요.</p><a class="btn" data-step="1_group" href="https://groups.google.com/g/qurator-testers">그룹 가입하기</a></div></li>
+    <li><span class="n">2</span><div><b>테스터 되기</b><p>'테스터 되기'를 눌러 주세요. '테스터입니다'가 보이면 완료예요.</p><a class="btn" data-step="2_optin" href="https://play.google.com/apps/testing/kr.qurator.dailyart">테스터 되기</a></div></li>
+    <li><span class="n">3</span><div><b>설치하고 2주만 유지</b><p>플레이스토어에서 설치하고, 2주 동안만 지우지 말아 주세요. 가끔 열어 보시면 큰 힘이 돼요.</p><a class="btn red" data-step="3_install" href="https://play.google.com/store/apps/details?id=kr.qurator.dailyart">플레이스토어에서 설치</a></div></li>
   </ol>
-  <p class="note">폰에 로그인된 구글 계정으로 해 주세요. 아이폰은 앱스토어에서 바로 받을 수 있어요 → <a href="https://apps.apple.com/kr/app/qurator-daily-art/id6829093287">App Store</a></p>
+  <p class="note">폰에 로그인된 구글 계정으로 해 주세요. 아이폰은 앱스토어에서 바로 받을 수 있어요 → <a data-step="ios" href="https://apps.apple.com/kr/app/qurator-daily-art/id6829093287">App Store</a></p>
 </main>
+<script>
+document.querySelectorAll('a[data-step]').forEach(function(a){a.addEventListener('click',function(){try{var q=new URLSearchParams(location.search);gtag('event','beta_step',{step:a.dataset.step,src:q.get('utm_source')||q.get('src')||'direct'})}catch(e){}})});
+</script>
 </body>
 </html>
