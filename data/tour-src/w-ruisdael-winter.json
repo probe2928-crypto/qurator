@@ -1,0 +1,75 @@
+{
+ "id": "w-ruisdael-winter",
+ "segs": [
+  {
+   "ko": "검은 구름이 하늘을 덮고, 얼어붙은 물가에 작은 마을이 웅크리고 있습니다. 네덜란드 황금시대의 화가 야코프 판 라위스달이 그린 '겨울 풍경'입니다.",
+   "en": "Dark clouds fill the sky, and a small village huddles beside frozen water. This is Winter Landscape, by Jacob van Ruisdael, the great landscape painter of the Dutch Golden Age.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0
+  },
+  {
+   "ko": "1665년 무렵 캔버스에 유채로 그렸고, 세로 42센티미터, 가로 49.7센티미터의 작은 그림입니다. 1870년 한 수집가의 유증으로 암스테르담 라익스미술관에 들어왔습니다.",
+   "en": "It was painted in oil on canvas around 1665, and it is a small picture, just 42 centimetres high and 49.7 centimetres wide. It came to the Rijksmuseum in Amsterdam in 1870, as part of a collector's bequest.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "먼저 하늘을 보십시오. 화면 대부분을 불길한 먹구름이 차지합니다. 암스테르담 시절 라위스달의 그림에서는 하늘이 화면의 3분의 2를 차지하는 일이 많았습니다. 땅보다 날씨가 주인공입니다.",
+   "en": "Look first at the sky. Ominous dark clouds take up most of the canvas. In the pictures of his Amsterdam years the sky often fills two-thirds of the canvas, and here the weather, more than the land, is the true subject.",
+   "x": 0.5,
+   "y": 0.25,
+   "z": 1.3
+  },
+  {
+   "ko": "이제 왼쪽을 보십시오. 낮게 비껴 드는 햇빛이 왼쪽에서 들어와 눈 덮인 땅과 건물 일부만 밝힙니다. 미술관이 짚은 이 그림의 빛입니다. 빛이 닿은 곳과 닿지 않은 곳이 겨울의 깊이를 만듭니다.",
+   "en": "Now look to the left. A low, raking sunlight enters from the left and lights only parts of the snowy ground and the buildings. The museum singles out this light. Between the places it reaches and the places it does not, the depth of winter opens up.",
+   "x": 0.25,
+   "y": 0.6,
+   "z": 1.4
+  },
+  {
+   "ko": "마을을 보십시오. 네모난 탑과 몇 채의 집이 얼어붙은 물가에 늘어서 있고, 왼쪽에는 농가의 헛간이 있습니다. 탑은 이 작은 화면에서 하늘을 향해 선 유일한 수직선입니다.",
+   "en": "Look at the village. A square tower and a few houses stand along the frozen water, and on the left there is a farm barn. In this small picture, the tower is the one strong vertical reaching up towards the sky.",
+   "x": 0.55,
+   "y": 0.6,
+   "z": 1.45
+  },
+  {
+   "ko": "얼음 위의 사람들을 찾아보십시오. 썰매를 끄는 사람 몇이 보입니다. 따뜻하게 껴입었지만, 미술관의 말처럼 이 궂은 날씨 앞에서는 보잘것없이 작아 보입니다.",
+   "en": "Find the people on the ice. A few figures are there with a sled. They are warmly dressed, but as the museum observes, they seem insignificant in the face of this inclement weather.",
+   "x": 0.5,
+   "y": 0.82,
+   "z": 1.5
+  },
+  {
+   "ko": "라위스달은 겨울 풍경을 약 25점 그렸습니다. 같은 시대 아베르캄프의 얼음판에는 스케이트 타는 사람들이 북적이지만, 미술관은 즐거운 인파가 라위스달의 겨울에는 어울리지 않았을 것이라고 말합니다. 같은 얼음, 다른 기분입니다.",
+   "en": "Ruisdael painted around twenty-five winter landscapes. On the ice of his contemporary Avercamp, crowds of skaters enjoy themselves, but the museum remarks that a cheerful crowd would have been out of place in a winter scene by Ruisdael. It is the same frozen water, the same Dutch winter, in a completely different mood.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1
+  },
+  {
+   "ko": "그는 1628년이나 1629년에 하를럼의 화가 집안에서 태어났습니다. 아버지는 액자를 만들고 그림을 팔았고, 삼촌 살로몬은 강 풍경으로 이름난 화가였습니다. 1646년, 십대에 이미 서명과 날짜를 남긴 풍경화를 그렸습니다.",
+   "en": "He was born in Haarlem in 1628 or 1629, into a family of painters. His father, Isaack, was a frame-maker and art dealer, and his uncle Salomon was a well-known painter of river scenes. His earliest known landscapes, signed and dated 1646, were made when he was still a teenager.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "1657년 무렵 더 큰 시장이 있는 암스테르담으로 옮겨 평생을 그곳에서 일했고, 1682년 세상을 떠나 고향 하를럼의 성 바보 교회에 묻혔습니다. 이 그림에도 그의 서명이 또렷이 남아 있습니다.",
+   "en": "Around 1657 he moved to Amsterdam, a prosperous city with a bigger market for his work, and he lived and worked there for the rest of his life. He died in 1682 and was buried in the church of Saint Bavo in his native Haarlem. His signature, JVRuisdael, appears on this canvas.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "한 걸음 물러나 다시 보십시오. 손바닥만 한 화면에 하늘 전체의 무게가 실려 있습니다. 가장 추운 날, 창밖 하늘을 한번 올려다보시기 바랍니다.",
+   "en": "Step back and look once more. Into a picture hardly larger than a page, he has poured the whole weight of a winter sky, and the people below it seem to hold their breath. On the coldest day of the year, take a moment to look up at the sky outside your window.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0
+  }
+ ]
+}

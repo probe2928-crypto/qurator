@@ -1,5 +1,536 @@
 [
  {
+  "id": "canaletto-venice-london-13",
+  "asof": "2026.11.27",
+  "kicker": {
+   "ko": "작가 깊이 읽기",
+   "en": "Artist in Depth"
+  },
+  "title": {
+   "ko": "카날레토, 베네치아와 런던을 그린 13점",
+   "en": "Canaletto: Venice and London in 13 Paintings"
+  },
+  "dek": {
+   "ko": "무대 배경을 그리던 청년이 도시의 초상화가가 되기까지. 이번 주 베로나에서 다시 나타난 1744년 서명작을 계기로, 석공의 작업장에서 런던의 템스강까지 카날레토를 열세 점으로 읽습니다.",
+   "en": "How a young scene painter became the portraitist of a city. Prompted by a signed 1744 view that resurfaced in Verona this week, thirteen paintings follow Canaletto from a Venetian stonemason's yard to the Thames."
+  },
+  "intro": {
+   "ko": "이번 주 베로나의 팔라초 마페이가 카날레토의 1744년 서명작 한 점을 공개했습니다. 1975년 화랑 광고에 한 번 실린 뒤 연구자들의 눈에서 사라졌던 대운하 풍경입니다. 서명과 날짜를 남긴 일이 드물었던 화가라, 이 한 점이 그의 1740년대를 읽는 기준점이 됩니다. 이 소식을 계기로 18세기 베네치아를 가장 정확하게, 그리고 가장 연극적으로 그린 화가를 다시 읽어 봅니다.\n카날레토(1697–1768)는 베네치아에서 태어나 아버지와 함께 극장 무대 배경을 그리며 출발했습니다. 그랜드 투어로 찾아온 영국 귀족들이 그의 풍경을 사 갔고, 전쟁으로 손님이 끊기자 1746년 런던으로 건너가 약 9년을 머물렀습니다. 무대에서 광장으로, 축제와 상상의 대운하로, 그리고 런던과 귀향까지 세 갈래로 나누었습니다. 소장처·연도·크기는 각 미술관 공식 기록을 기준으로 두 곳 이상 대조했습니다.",
+   "en": "This week Palazzo Maffei in Verona unveiled a signed Canaletto of 1744, a Grand Canal view that appeared once in a dealer's advertisement in 1975 and then slipped out of scholars' sight. Because he rarely signed or dated his work, this one picture becomes a fixed point for his 1740s. We take the news as a reason to look again at the painter who recorded eighteenth-century Venice most exactly, and most theatrically.\nCanaletto (1697–1768) was born in Venice and began by painting theatre scenery with his father. British aristocrats on the Grand Tour bought his views, and when war cut off his clients he crossed to London in 1746 and stayed about nine years. The feature has three parts: from the stage to the square; festivals and an imagined Grand Canal; and London and the return home. Collections, dates and sizes were checked against museum records and at least one other source."
+  },
+  "cover": [
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Canaletto%20-%20The%20Stonemason%27s%20Yard.jpg?width=1600",
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Giovanni%20Antonio%20Canal%2C%20il%20Canaletto%20-%20Regatta%20on%20the%20Canale%20Grande%20-%20WGA03904.jpg?width=1600",
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Canaletto%20-%20Westminster%20Bridge%2C%20with%20the%20Lord%20Mayor%27s%20Procession%20on%20the%20Thames%20-%20Google%20Art%20Project.jpg?width=1600",
+   "https://commons.wikimedia.org/wiki/Special:FilePath/Piazza%20San%20Marco%20MET%20DT1583.jpg?width=1600"
+  ],
+  "sections": [
+   {
+    "title": {
+     "ko": "무대에서 광장으로",
+     "en": "From the Stage to the Square"
+    },
+    "dek": {
+     "ko": "1720~30년대, 극장 배경 화가가 실제 도시를 그리기 시작하다.",
+     "en": "The 1720s and 1730s: a theatre painter turns to the real city."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "산마르코 광장",
+       "en": "Piazza San Marco"
+      },
+      "artist": {
+       "ko": "카날레토",
+       "en": "Canaletto"
+      },
+      "year": "1720년대 후반 · late 1720s",
+      "medium": {
+       "ko": "캔버스에 유채, 68.6×112.4cm",
+       "en": "Oil on canvas, 68.6 × 112.4 cm"
+      },
+      "headline": {
+       "ko": "메트로폴리탄 미술관, 뉴욕 · 1720년대 후반",
+       "en": "The Metropolitan Museum of Art, New York · late 1720s"
+      },
+      "why": {
+       "ko": "카날레토는 1720~30년대에 이 광장을 적어도 열두 번 그렸다. 메트는 종탑 창 수를 줄이고 깃대를 높인 것 말고는 손댄 데가 거의 없다고 보며, 1725~27년에 깔린 바닥 포석이 그려져 있어 연대를 좁힐 수 있다. 무대 배경을 그리던 화가가 실제 도시를 정확한 '초상'으로 옮기기 시작한 시기의 그림이다.",
+       "en": "Canaletto painted this square at least a dozen times in the 1720s and 1730s. The Met notes that apart from fewer belfry windows and taller flagstaffs he took few liberties, and the paving, laid in stages between 1725 and 1727, helps to date the picture. It belongs to the years when a painter of stage scenery began turning the real city into an exact portrait."
+      },
+      "pd": true,
+      "commons": "Piazza San Marco MET DT1583.jpg",
+      "sources": [
+       {
+        "label": "The Met · Piazza San Marco",
+        "url": "https://www.metmuseum.org/art/collection/search/435839"
+       },
+       {
+        "label": "Wikimedia Commons · Met DT1583",
+        "url": "https://commons.wikimedia.org/wiki/File:Piazza_San_Marco_MET_DT1583.jpg"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "석공의 작업장",
+       "en": "The Stonemason's Yard"
+      },
+      "artist": {
+       "ko": "카날레토",
+       "en": "Canaletto"
+      },
+      "year": "1725년 무렵 · about 1725",
+      "medium": {
+       "ko": "캔버스에 유채, 123.8×162.9cm",
+       "en": "Oil on canvas, 123.8 × 162.9 cm"
+      },
+      "headline": {
+       "ko": "내셔널 갤러리, 런던 · 1725년 무렵",
+       "en": "The National Gallery, London · about 1725"
+      },
+      "why": {
+       "ko": "산 비달 성당 수리 때 잠시 석공 작업장이 된 광장을, 관광 명소가 아닌, 해 뜬 직후 건너편에서 빨래를 너는 평범한 동네의 아침으로 그렸다. 내셔널 갤러리는 초기 걸작으로 꼽으며, 무대처럼 짜인 구도에서 아버지와 함께 그리던 무대 배경의 기억을 읽는다. 맞은편 카리타 성당의 종탑은 1744년에 무너져 지금은 그림 속에만 남아 있다.",
+       "en": "A square briefly turned into a mason's yard during repairs to San Vidal is painted not as a sight for tourists but as an early morning in an ordinary neighbourhood, with washing being hung out across the canal. The National Gallery counts it among his finest early works and sees in its stage-like composition a memory of the theatre sets he painted with his father. The bell tower of the Carità church opposite collapsed in 1744 and now survives only in pictures like this."
+      },
+      "pd": true,
+      "commons": "Canaletto - The Stonemason's Yard.jpg",
+      "sources": [
+       {
+        "label": "The National Gallery · NG127",
+        "url": "https://www.nationalgallery.org.uk/paintings/canaletto-the-stonemason-s-yard"
+       },
+       {
+        "label": "Wikipedia · Canaletto",
+        "url": "https://en.wikipedia.org/wiki/Canaletto"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "산 로코 축일",
+       "en": "Venice: The Feast Day of Saint Roch"
+      },
+      "artist": {
+       "ko": "카날레토",
+       "en": "Canaletto"
+      },
+      "year": "1735년 무렵 · about 1735",
+      "medium": {
+       "ko": "캔버스에 유채, 147.7×199.4cm",
+       "en": "Oil on canvas, 147.7 × 199.4 cm"
+      },
+      "headline": {
+       "ko": "내셔널 갤러리, 런던 · 1735년 무렵",
+       "en": "The National Gallery, London · about 1735"
+      },
+      "why": {
+       "ko": "1576년 역병이 끝난 것을 기념해 매년 8월 16일 열린 축일에, 도제와 외국 사절들이 미사를 마치고 산 로코 성당을 나서는 장면이다. 카날레토는 광장을 실제보다 훨씬 넓혔고, 스쿠올라 건물 앞에 그림들이 내걸린 모습까지 그렸다. 내셔널 갤러리에 따르면 그가 이 의식을 그린 것은 이 한 번뿐이다.",
+       "en": "On the feast held every 16 August to mark the end of the plague of 1576, the doge and foreign ambassadors leave San Rocco after mass. Canaletto made the square far larger than it is and even shows paintings hung out on the façade of the Scuola. According to the National Gallery, this is the only time he painted the ceremony."
+      },
+      "pd": true,
+      "img": null,
+      "sources": [
+       {
+        "label": "The National Gallery · NG937",
+        "url": "https://www.nationalgallery.org.uk/paintings/canaletto-venice-the-feast-day-of-saint-roch"
+       },
+       {
+        "label": "Wikimedia Commons · La festa di San Rocco",
+        "url": "https://commons.wikimedia.org/wiki/File:Canaletto,_venezia,_la_festa_di_san_rocco,_1735_ca._01.jpg"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "산마르코 내항",
+       "en": "Bacino di San Marco, Venice"
+      },
+      "artist": {
+       "ko": "카날레토",
+       "en": "Canaletto"
+      },
+      "year": "1738년 무렵 · about 1738",
+      "medium": {
+       "ko": "캔버스에 유채, 124.5×204.5cm",
+       "en": "Oil on canvas, 124.5 × 204.5 cm"
+      },
+      "headline": {
+       "ko": "보스턴 미술관 · 1738년 무렵",
+       "en": "Museum of Fine Arts, Boston · about 1738"
+      },
+      "why": {
+       "ko": "가로 2미터가 넘는 화면에 화물선과 곤돌라가 시선을 물가의 건물로 이끌고, 왼쪽에는 도제궁, 오른쪽에는 산 조르조 마조레가 선다. 구름 낀 하늘의 빛이 물 위에 얼룩지듯 떨어진다. 영국 캐슬 하워드의 칼라일 백작 가문에 있다가 1939년 보스턴 미술관이 사들인 그림이다.",
+       "en": "Across a canvas more than two metres wide, cargo boats and gondolas lead the eye to the buildings along the shore, with the Doge's Palace at left and San Giorgio Maggiore at right, while light from a cloudy sky dapples the water. It hung with the Earls of Carlisle at Castle Howard before the Museum of Fine Arts bought it in 1939."
+      },
+      "pd": true,
+      "img": null,
+      "sources": [
+       {
+        "label": "Google Arts & Culture · MFA Boston",
+        "url": "https://artsandculture.google.com/asset/9wFUXnpnDkgUNQ"
+       },
+       {
+        "label": "MFA Custom Prints",
+        "url": "https://customprints.mfa.org/detail/478331"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": {
+     "ko": "축제와 상상의 대운하",
+     "en": "Festivals and an Imagined Grand Canal"
+    },
+    "dek": {
+     "ko": "영국 손님을 위한 축제 풍경, 지어지지 않은 다리, 그리고 1744년의 서명.",
+     "en": "Festival views for British clients, a bridge never built, and a signature of 1744."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "승천 대축일의 산마르코 내항",
+       "en": "The Bacino di San Marco on Ascension Day"
+      },
+      "artist": {
+       "ko": "카날레토",
+       "en": "Canaletto"
+      },
+      "year": "1733–34년 무렵 · c. 1733–34",
+      "medium": {
+       "ko": "캔버스에 유채, 76.8×125.4cm",
+       "en": "Oil on canvas, 76.8 × 125.4 cm"
+      },
+      "headline": {
+       "ko": "영국 왕실 컬렉션 · 1733–34년 무렵",
+       "en": "Royal Collection · c. 1733–34"
+      },
+      "why": {
+       "ko": "도제가 바다와 혼인하는 의식을 마치고 금빛 배 부친토로가 부두로 돌아오는 장면이다. 이 부친토로는 1728~29년에 지어진, 공화국의 마지막 배였다. 영국 영사가 되는 조지프 스미스가 소장했고, 1762년 조지 3세가 그의 수집품을 통째로 사들이면서 왕실 컬렉션에 들어갔다.",
+       "en": "The gilded state barge, the Bucintoro, returns to the quay after the ceremony in which the doge wedded Venice to the sea; this vessel, built in 1728–29, was the Republic's last. It belonged to Joseph Smith, later British consul, and entered the Royal Collection when George III bought Smith's collection in 1762."
+      },
+      "pd": true,
+      "commons": "Giovanni Antonio Canal - The Return of the Bucintoro at the Mole on Ascension Day - Royal Collection Buckingham Palace - c. 1733-4.jpg",
+      "sources": [
+       {
+        "label": "Royal Collection Trust · RCIN 404417",
+        "url": "https://www.rct.uk/collection/404417/the-bacino-di-san-marco-on-ascension-day"
+       },
+       {
+        "label": "Wikimedia Commons · RCIN 404417",
+        "url": "https://commons.wikimedia.org/wiki/File:Giovanni_Antonio_Canal_-_The_Return_of_the_Bucintoro_at_the_Mole_on_Ascension_Day_-_Royal_Collection_Buckingham_Palace_-_c._1733-4.jpg"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "대운하의 레가타",
+       "en": "A Regatta on the Grand Canal"
+      },
+      "artist": {
+       "ko": "카날레토",
+       "en": "Canaletto"
+      },
+      "year": "1740년 무렵 · about 1740",
+      "medium": {
+       "ko": "캔버스에 유채, 122.1×182.8cm",
+       "en": "Oil on canvas, 122.1 × 182.8 cm"
+      },
+      "headline": {
+       "ko": "내셔널 갤러리, 런던 · 1740년 무렵",
+       "en": "The National Gallery, London · about 1740"
+      },
+      "why": {
+       "ko": "카니발 기간인 2월 2일 대운하에서 열린 곤돌라 경주를, 왼쪽 아래 임시 관람 무대까지 넣어 그렸다. 승천 대축일 장면과 짝을 이루는 그림으로, 내셔널 갤러리는 부유한 여행자를 위해 만든 가장 웅장한 베네치아 풍경으로 꼽는다. 18세기 영국 액자를 그대로 두르고 있다.",
+       "en": "The gondola race held on the Grand Canal on 2 February, during Carnival, is shown complete with the temporary stand for spectators at lower left. It is the pendant to a view of Ascension Day, and the National Gallery counts the pair among the grandest views of Venice he made for wealthy visitors. It still sits in its original eighteenth-century English frame."
+      },
+      "pd": true,
+      "commons": "Giovanni Antonio Canal, il Canaletto - Regatta on the Canale Grande - WGA03904.jpg",
+      "sources": [
+       {
+        "label": "The National Gallery · NG4454",
+        "url": "https://www.nationalgallery.org.uk/paintings/canaletto-a-regatta-on-the-grand-canal"
+       },
+       {
+        "label": "Wikimedia Commons · WGA03904",
+        "url": "https://commons.wikimedia.org/wiki/File:Giovanni_Antonio_Canal,_il_Canaletto_-_Regatta_on_the_Canale_Grande_-_WGA03904.jpg"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "팔라디오의 리알토 다리 설계가 있는 카프리치오",
+       "en": "Capriccio View with Palladio's Design for the Rialto Bridge"
+      },
+      "artist": {
+       "ko": "카날레토",
+       "en": "Canaletto"
+      },
+      "year": "1742년 · 1742",
+      "medium": {
+       "ko": "캔버스에 유채, 90.5×130cm",
+       "en": "Oil on canvas, 90.5 × 130 cm"
+      },
+      "headline": {
+       "ko": "영국 왕실 컬렉션 · 1742년",
+       "en": "Royal Collection · 1742"
+      },
+      "why": {
+       "ko": "1570년에 제안됐지만 끝내 지어지지 않은 팔라디오의 리알토 다리를 실제 풍경처럼 세운 상상화다. 당시 비평가 알가로티는 베네치아 사람들이 이곳이 어디냐고 물었다고 적었다. 정확한 기록 화가로 알려진 카날레토가, 사실과 상상을 얼마나 자연스럽게 섞을 수 있었는지 보여 준다.",
+       "en": "An imaginary view in which Palladio's Rialto Bridge, proposed in 1570 but never built, stands as if real. The critic Algarotti recorded that Venetians asked where this spot was. It shows how easily Canaletto, famed as an exact recorder, could blend fact and invention."
+      },
+      "pd": true,
+      "commons": "Canaletto (Venice 1697-Venice 1768) - Capriccio View with Palladio's Design for the Rialto Bridge - RCIN 404029 - Royal Collection.jpg",
+      "sources": [
+       {
+        "label": "Royal Collection Trust · RCIN 404029",
+        "url": "https://www.rct.uk/collection/404029"
+       },
+       {
+        "label": "Wikimedia Commons · RCIN 404029",
+        "url": "https://commons.wikimedia.org/wiki/File:Canaletto_(Venice_1697-Venice_1768)_-_Capriccio_View_with_Palladio%27s_Design_for_the_Rialto_Bridge_-_RCIN_404029_-_Royal_Collection.jpg"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "남동쪽을 본 대운하, 카 페사로에서 폰다코 데이 테데스키까지",
+       "en": "The Grand Canal Looking Southeast, from Palazzo Pesaro to the Fondaco dei Tedeschi"
+      },
+      "artist": {
+       "ko": "카날레토",
+       "en": "Canaletto"
+      },
+      "year": "1744년 · 1744",
+      "medium": {
+       "ko": "캔버스에 유채, 60.1×95.2cm",
+       "en": "Oil on canvas, 60.1 × 95.2 cm"
+      },
+      "headline": {
+       "ko": "팔라초 마페이, 베로나 · 1744년 (2026년 11월 공개)",
+       "en": "Palazzo Maffei, Verona · 1744 (unveiled November 2026)"
+      },
+      "why": {
+       "ko": "왼쪽 아래에 'Ant. Canal Fecit'와 1744년이 로마 숫자로 적힌 드문 서명작이다. 1975년 화랑 광고에 한 번 실린 뒤 잊혔다가, 적외선·자외선 조사와 복원, 카날레토 연구자 코발치크의 연구로 확인되어 이번 주 베로나 팔라초 마페이 소장품으로 공개됐다. 같은 구도의 1734년 무렵 그림이 워번 애비에 있어, 화가가 10년 뒤 같은 풍경을 어떻게 다시 그렸는지 비교할 수 있다.",
+       "en": "A rare signed work, inscribed 'Ant. Canal Fecit' with the date 1744 in Roman numerals at lower left. Seen once in a 1975 dealer's advertisement and then forgotten, it was confirmed through infrared and ultraviolet study, restoration and research by the Canaletto scholar Kowalczyk, and was unveiled this week in the collection of Palazzo Maffei, Verona. An earlier version of about 1734 at Woburn Abbey lets us compare how he repainted the same view a decade later."
+      },
+      "record": {
+       "ko": "2026.11 새로 확인된 서명작",
+       "en": "Signed work confirmed, Nov 2026"
+      },
+      "pd": true,
+      "img": null,
+      "sources": [
+       {
+        "label": "ANSA · 2026.11.25",
+        "url": "https://www.ansa.it/canale_viaggi/regione/veneto/2026/11/25/un-canaletto-ritrovato-nella-collezione-di-palazzo-maffei-a-verona_7726eafc-6dc1-4d6f-81e0-1c039da7559d.html"
+       },
+       {
+        "label": "Finestre sull'Arte · 2026.11.24",
+        "url": "https://www.finestresullarte.info/en/ancient-art/a-previously-unseen-canaletto-resurfaces-after-nearly-three-centuries-the-painting-joins-the-collection-at-palazzo-maffei"
+       },
+       {
+        "label": "The Art Insider · 2026.11.26",
+        "url": "https://www.art-insider.com/signed-canaletto-1744-grand-canal-palazzo-maffei/9005"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "title": {
+     "ko": "런던의 9년, 그리고 귀향",
+     "en": "Nine Years in London, and Home"
+    },
+    "dek": {
+     "ko": "템스강과 잉글랜드의 성, 그리고 아카데미에 남긴 마지막 자기소개.",
+     "en": "The Thames, an English castle, and a last self-introduction to the Academy."
+    },
+    "items": [
+     {
+      "title": {
+       "ko": "웨스트민스터 다리, 런던 시장의 행렬",
+       "en": "Westminster Bridge, with the Lord Mayor's Procession on the Thames"
+      },
+      "artist": {
+       "ko": "카날레토",
+       "en": "Canaletto"
+      },
+      "year": "1747년 · 1747",
+      "medium": {
+       "ko": "캔버스에 유채, 95.9×127.6cm",
+       "en": "Oil on canvas, 95.9 × 127.6 cm"
+      },
+      "headline": {
+       "ko": "예일 영국미술센터, 뉴헤이븐 · 1747년",
+       "en": "Yale Center for British Art, New Haven · 1747"
+      },
+      "why": {
+       "ko": "1746년 5월 런던에 도착한 카날레토가 템스강에 띄운 시장의 행렬과 공사 중이던 웨스트민스터 다리를 그렸다. 다리는 1750년에야 개통했기에 모습이 상당 부분 상상이며, 실제로는 지어지지 않은 감실과 조각상까지 들어 있다. 오스트리아 왕위 계승 전쟁으로 영국 여행객이 끊기자 손님을 찾아 직접 런던으로 간 결과다.",
+       "en": "Soon after arriving in London in May 1746, Canaletto painted the Lord Mayor's procession on the Thames and the still-unfinished Westminster Bridge. The bridge did not open until 1750, so much of it is imagined, including alcoves and statues that were never built. With war cutting off British travellers to Venice, he had gone to London to find his clients."
+      },
+      "pd": true,
+      "commons": "Canaletto - Westminster Bridge, with the Lord Mayor's Procession on the Thames - Google Art Project.jpg",
+      "sources": [
+       {
+        "label": "Yale Center for British Art · B1976.7.94",
+        "url": "https://collections.britishart.yale.edu/catalog/tms:4994"
+       },
+       {
+        "label": "Wikimedia Commons · Google Art Project",
+        "url": "https://commons.wikimedia.org/wiki/File:Canaletto_-_Westminster_Bridge,_with_the_Lord_Mayor%27s_Procession_on_the_Thames_-_Google_Art_Project.jpg"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "런던 시장의 날, 템스강",
+       "en": "London: The River Thames on Lord Mayor's Day"
+      },
+      "artist": {
+       "ko": "카날레토",
+       "en": "Canaletto"
+      },
+      "year": "1748년 무렵 · c. 1748",
+      "medium": {
+       "ko": "캔버스에 유채",
+       "en": "Oil on canvas"
+      },
+      "headline": {
+       "ko": "롭코비츠 컬렉션, 프라하 성 롭코비츠 궁전 · 1748년 무렵",
+       "en": "Lobkowicz Collections, Lobkowicz Palace, Prague Castle · c. 1748"
+      },
+      "why": {
+       "ko": "그랜드 투어 중이던 보헤미아의 롭코비츠 공작을 위해 그린 것으로 보이며, 웨스트민스터 쪽을 본 짝 그림과 함께 공작의 침실에 걸려 있었다. 올해 빈 미술사박물관 《카날레토와 벨로토》전(9월 6일 폐막)에 나갔다가 프라하로 돌아와 상설 전시에 다시 걸렸다.",
+       "en": "Probably painted for Prince Lobkowicz of Bohemia during his Grand Tour, it hung in his bedroom together with a companion view towards Westminster. Lent this year to the Kunsthistorisches Museum's 'Canaletto & Bellotto' exhibition in Vienna (closed 6 September), it has returned to the permanent display in Prague."
+      },
+      "pd": true,
+      "img": null,
+      "sources": [
+       {
+        "label": "Lobkowicz Collections",
+        "url": "https://www.lobkowicz.cz/en/the-story-of-the-painting-london-the-river-thames-on-lord-mayors-day"
+       },
+       {
+        "label": "KHM · Canaletto & Bellotto",
+        "url": "https://largeprint.khm.at/en/canaletto-bellotto/canaletto-london"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "워릭 성, 바깥뜰에서 본 동쪽 정면",
+       "en": "Warwick Castle, the East Front from the Outer Court"
+      },
+      "artist": {
+       "ko": "카날레토",
+       "en": "Canaletto"
+      },
+      "year": "1752년 · 1752",
+      "medium": {
+       "ko": "캔버스에 유채, 73×122cm",
+       "en": "Oil on canvas, 73 × 122 cm"
+      },
+      "headline": {
+       "ko": "버밍엄 박물관 · 1752년",
+       "en": "Birmingham Museums · 1752"
+      },
+      "why": {
+       "ko": "카날레토는 워릭 성을 다섯 번 그렸고, 이 그림은 잠시 베네치아에 다녀온 뒤에 그렸다. 지형은 정확하지만 하늘은 유난히 짙은 푸른색이라, 잉글랜드 성 위에 이탈리아의 빛을 얹은 듯하다. 1977년 해외 반출이 막힌 뒤 이듬해 시민 모금으로 버밍엄에 남게 됐다.",
+       "en": "Canaletto painted Warwick Castle five times, and this view came after a brief return to Venice. The topography is exact, but the sky is an unusually intense blue, as if Italian light had been laid over an English castle. After its export was blocked in 1977, a public appeal kept it in Birmingham the following year."
+      },
+      "pd": true,
+      "commons": "Giovanni Antonio Canal, il Canaletto - Warwick Castle - the East Front - WGA03951.jpg",
+      "sources": [
+       {
+        "label": "Art UK · Birmingham Museums",
+        "url": "https://artuk.org/discover/artworks/warwick-castle-east-front-from-the-outer-court-33276"
+       },
+       {
+        "label": "Wikimedia Commons · WGA03951",
+        "url": "https://commons.wikimedia.org/wiki/File:Giovanni_Antonio_Canal,_il_Canaletto_-_Warwick_Castle_-_the_East_Front_-_WGA03951.jpg"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "런던 래닐러의 로툰다 내부",
+       "en": "London: Interior of the Rotunda at Ranelagh"
+      },
+      "artist": {
+       "ko": "카날레토",
+       "en": "Canaletto"
+      },
+      "year": "1754년 · 1754",
+      "medium": {
+       "ko": "캔버스에 유채, 47×75.6cm",
+       "en": "Oil on canvas, 47 × 75.6 cm"
+      },
+      "headline": {
+       "ko": "내셔널 갤러리, 런던 · 1754년",
+       "en": "The National Gallery, London · 1754"
+      },
+      "why": {
+       "ko": "1742년 첼시에 문을 연 유원지 래닐러 가든의 거대한 원형 홀, 음악과 사교의 무대를 그렸다. 베네치아의 광장을 그리던 눈으로 런던 사교계의 실내를 담았다. 이 건물은 1805년에 헐려 지금은 그림으로만 남았다.",
+       "en": "The vast round hall of Ranelagh Gardens, the Chelsea pleasure garden opened in 1742, was a stage for music and society. Here the eye that had surveyed Venetian squares turns to an interior of London society. The building was demolished in 1805 and survives only in pictures."
+      },
+      "pd": true,
+      "commons": "Canaletto Ranelegh 1754.jpg",
+      "sources": [
+       {
+        "label": "The National Gallery · NG1429",
+        "url": "https://www.nationalgallery.org.uk/paintings/NG1429"
+       },
+       {
+        "label": "Wikimedia Commons · Ranelagh 1754",
+        "url": "https://commons.wikimedia.org/wiki/File:Canaletto_Ranelegh_1754.jpg"
+       }
+      ]
+     },
+     {
+      "title": {
+       "ko": "주랑과 안뜰이 있는 카프리치오",
+       "en": "Capriccio with a Colonnade and Courtyard"
+      },
+      "artist": {
+       "ko": "카날레토",
+       "en": "Canaletto"
+      },
+      "year": "1765년 · 1765",
+      "medium": {
+       "ko": "캔버스에 유채, 131×93cm",
+       "en": "Oil on canvas, 131 × 93 cm"
+      },
+      "headline": {
+       "ko": "아카데미아 미술관, 베네치아 · 1765년",
+       "en": "Gallerie dell'Accademia, Venice · 1765"
+      },
+      "why": {
+       "ko": "1763년 베네치아 아카데미 회원이 된 카날레토가 입회 기념으로 아카데미에 바친 그림이다. 실제 장소가 아닌, 원근법만으로 지은 주랑과 안뜰을 세로 화면에 펼쳤다. 무대 배경 화가로 출발한 그가 말년에 원근법 자체를 주제로 삼아 남긴 자기 소개서인 셈이다.",
+       "en": "Elected to the Venetian Academy in 1763, Canaletto presented this picture to it as his reception piece. It is not a real place but a colonnade and courtyard built from perspective alone, set in an upright format. For a painter who began with stage scenery, it reads as a late self-introduction in which perspective itself is the subject."
+      },
+      "pd": true,
+      "commons": "Giovanni Antonio Canal, il Canaletto - Perspective View with Portico - WGA03965.jpg",
+      "sources": [
+       {
+        "label": "Wikipedia · Canaletto",
+        "url": "https://en.wikipedia.org/wiki/Canaletto"
+       },
+       {
+        "label": "Wikimedia Commons · WGA03965",
+        "url": "https://commons.wikimedia.org/wiki/File:Giovanni_Antonio_Canal,_il_Canaletto_-_Perspective_View_with_Portico_-_WGA03965.jpg"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "note": {
+   "ko": "카날레토는 1768년에 세상을 떠나 모든 작품이 퍼블릭 도메인입니다. 이미지는 미술관이 공개한 스캔을 옮긴 위키미디어 커먼즈 파일만 썼고, 사진가 촬영본만 있는 작품(산 로코 축일·보스턴 산마르코 내항)과 이미지 사용 조건을 확인하지 못한 작품(롭코비츠 템스강·마페이 1744년작)은 글 카드로 보여 드립니다. 소장처·연도·크기는 미술관 공식 기록을 기준으로 두 곳 이상 대조했고, 보스턴 미술관·아카데미아 미술관은 공식 페이지를 직접 열지 못해 미술관 제공 자료와 커먼즈 기록으로 대조했습니다. 생몰 날짜는 자료마다 하루씩 달라 연도만 적었습니다. 마페이 1744년작은 2026년 11월 24~25일 이탈리아 언론 보도 기준입니다. 2026년 11월 27일 기준.",
+   "en": "Canaletto died in 1768, so all his works are in the public domain. Images are Wikimedia Commons files taken from museum scans; works available only as visitor photographs (Saint Roch, the Boston Bacino) or whose image terms we could not confirm (the Lobkowicz Thames, the 1744 Maffei picture) appear as text cards. Collections, dates and sizes were checked against museum records and at least one other source; for the MFA Boston and the Accademia we could not open the official pages and relied on museum-supplied material and Commons records. Sources differ by a day on his birth and death dates, so only years are given. The Maffei picture follows Italian press reports of 24–25 November 2026. As of 27 November 2026."
+  }
+ },
+ {
   "id": "christmas-in-paintings-14",
   "asof": "2026.11.25",
   "kicker": {

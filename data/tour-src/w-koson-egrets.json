@@ -1,0 +1,75 @@
+{
+ "id": "w-koson-egrets",
+ "segs": [
+  {
+   "ko": "회청색 하늘에 눈송이가 흩날리고, 하얀 백로 다섯 마리가 눈 속에 서 있습니다. 일본 화가 오하라 고손이 디자인한 목판화 '눈 속의 백로 무리'입니다.",
+   "en": "Snowflakes drift across a grey-blue sky, and five white egrets stand together in the falling snow. This is Group of Egrets in Snow, a woodblock print designed by the Japanese artist Ohara Koson.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0
+  },
+  {
+   "ko": "1925년에서 1936년 사이에 도쿄의 판원 와타나베 쇼자부로가 펴냈고, 화면은 세로 36.2센티미터, 가로 23.6센티미터입니다. 암스테르담 라익스미술관이 1999년 한 수집가에게서 기증받았습니다.",
+   "en": "It was published in Tokyo by Watanabe Shōzaburō sometime between 1925 and 1936, and the image measures 36.2 centimetres high and 23.6 centimetres wide. The Rijksmuseum in Amsterdam received it in 1999 as a gift from the collector Jan Perrée.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "먼저 새들을 보십시오. 흰 새를 흰 눈 속에 세웠습니다. 화가는 하얀 깃털을 바탕의 회청색과 맞세워, 같은 흰빛이 눈송이와 새로 나뉘어 보이게 했습니다.",
+   "en": "Look first at the birds. White birds have been placed inside white snow, a quiet game of white upon white. The artist set their pale feathers against the grey-blue ground, so that the same whiteness separates into falling snowflakes on one side and living birds on the other.",
+   "x": 0.5,
+   "y": 0.55,
+   "z": 1.35
+  },
+  {
+   "ko": "이제 다섯 마리를 하나씩 세어 보십시오. 모두 같은 자리에 서 있지만 목을 굽힌 모양과 방향이 조금씩 다릅니다. 한 무리이면서도 저마다 따로 추위를 견디는 모습입니다.",
+   "en": "Now count the five birds one by one. They stand in the same place, yet the bend of each neck and the way each one faces is slightly different. Together they form a group, huddled close, but each one seems to be enduring the cold on its own terms.",
+   "x": 0.45,
+   "y": 0.6,
+   "z": 1.5
+  },
+  {
+   "ko": "눈송이를 보십시오. 이 판화는 검은 윤곽선을 새긴 판 하나 위에 색을 맡은 판 여러 장을 차례로 찍어 만들었습니다. 흩날리는 눈은 종이에 남긴 작은 흰 점들입니다.",
+   "en": "Look at the snowflakes. The print was made from a key block cut with black outlines, followed by several colour blocks printed one after another. The swirling snow is a scatter of small white marks left on the paper.",
+   "x": 0.5,
+   "y": 0.25,
+   "z": 1.4
+  },
+  {
+   "ko": "오하라 고손은 1877년 가나자와에서 태어나 1945년 도쿄에서 세상을 떠났습니다. 꽃과 새를 그린 화조화의 대가로, 평생 약 500점의 판화를 남겼고 고손, 쇼손, 호손이라는 세 이름을 썼습니다.",
+   "en": "Ohara Koson was born in Kanazawa in 1877 and died in Tokyo in 1945. A master of kachō-e, prints of birds and flowers, he produced around five hundred designs during his career and worked under three names: Koson, Shōson and Hōson.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "그는 본명이 마타오였습니다. 스승 스즈키 가손에게 그림을 배운 뒤, 관례에 따라 '가손의 아들'이라는 뜻의 고손으로 이름을 바꾸어 스승에 대한 고마움을 드러냈습니다. 젊은 시절에는 러일전쟁 장면을 그린 세 폭 판화도 만들었지만, 그의 본령은 늘 새와 꽃이었습니다.",
+   "en": "He was born Ohara Matao. After training with the painter Suzuki Kason, he followed Japanese custom and took the name Koson, meaning son of Kason, in recognition of his debt to his teacher. In his early years in Tokyo he made some triptychs showing episodes of the Russo-Japanese War, but birds and flowers were always the heart of his work, usually printed in flat colour in a tall, narrow, borderless format.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "1926년 무렵부터 그는 와타나베와 손잡고 쇼손이라는 이름으로 서명했습니다. 와타나베는 1915년 '신판화'라는 말을 만든 사람입니다. 화가, 조각사, 인쇄공, 판원이 일을 나누는 옛 우키요에 방식을 지키면서 서양 회화의 빛과 분위기를 들여왔습니다.",
+   "en": "From around 1926 he worked with Watanabe and signed as Shōson. Watanabe had coined the term shin-hanga, new prints, in 1915. The movement kept the old ukiyo-e system, in which the designer, the carver, the printer and the publisher each did their own part, while bringing in the light and mood of Western painting.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.1
+  },
+  {
+   "ko": "이런 판화는 주로 미국과 유럽으로 팔려 나갔습니다. 일본에서 관심이 적었기 때문입니다. 고손은 고국에서 오래 잊혔다가 1970년대 이후 인기를 얻으면서, 해외로 나간 판화들이 거꾸로 일본에 돌아왔습니다.",
+   "en": "Prints like this were sold mainly to the United States and Europe, because there was little interest in them at home. Koson himself remained largely unknown in Japan for much of his career, and when his work became popular there from the 1970s onward, his prints had to be brought back from abroad.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.05
+  },
+  {
+   "ko": "한 걸음 물러나 다시 보십시오. 하얀 새와 하얀 눈, 그리고 그 사이의 고요입니다. 가장 추운 날 서로 곁에 서 있어 줄 사람이 누구인지 떠올려 보시기 바랍니다.",
+   "en": "Step back and look once more: white birds, white snow, and the silence between them. Think of the people who would stand beside you on the coldest day of the year.",
+   "x": 0.5,
+   "y": 0.5,
+   "z": 1.0
+  }
+ ]
+}
